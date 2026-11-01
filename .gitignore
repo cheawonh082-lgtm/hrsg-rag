@@ -1,0 +1,18 @@
+# 논문 원문·비밀정보는 저장소에 올리지 않는다 (협업안 1절 자료·보안 원칙)
+*.pdf
+# 문헌 정리본(R???.json)과 매핑 — 저장소에 올리지 않는다 (문헌 원문·자료 보안 원칙)
+rag_corpus/
+.env
+.env.*
+!.env.example
+
+# 생성물
+index/
+results/
+data/local_*/
+data/corpus_md/
+data/rag/
+__pycache__/
+.venv/
+.pytest_cache/
+results_*.log

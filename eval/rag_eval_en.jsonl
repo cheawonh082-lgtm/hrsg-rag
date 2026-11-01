@@ -1,0 +1,41 @@
+{"qid": "EN01", "lang": "en", "query": "What oxygen-to-coal ratio and oxygen purity are specified for the gasifier in the European CO2 capture benchmark guidelines?", "gold_doc": "R004", "gold_ids": ["R004-019"]}
+{"qid": "EN02", "lang": "en", "query": "At which afterburning loads were the jalousie driving bar position tests carried out?", "gold_doc": "R005", "gold_ids": ["R005-011"]}
+{"qid": "EN03", "lang": "en", "query": "How does a single-shaft STAG combined cycle configuration differ from a multi-shaft one?", "gold_doc": "R006", "gold_ids": ["R006-006"]}
+{"qid": "EN04", "lang": "en", "query": "Which code was used to simulate single-phase natural circulation in parallel channels, and what initial conditions were assumed?", "gold_doc": "R010", "gold_ids": ["R010-012"]}
+{"qid": "EN05", "lang": "en", "query": "In the field CCGT plant with four gas turbines, how are the HP and LP steam headers formed and how is the LP turbine exhaust condensed?", "gold_doc": "R012", "gold_ids": ["R012-024"]}
+{"qid": "EN06", "lang": "en", "query": "Which commercially available post-combustion CO2 separation options are listed for gas-fired power plants?", "gold_doc": "R014", "gold_ids": ["R014-060"]}
+{"qid": "EN07", "lang": "en", "query": "Where in the IAPWS-IF97 release are computing-time comparisons with IFC-67 reported for region 1?", "gold_doc": "R015", "gold_ids": ["R015-015"]}
+{"qid": "EN08", "lang": "en", "query": "During a startup, why must a condenser leak be distinguished from air in-leakage, and which instrument is suggested?", "gold_doc": "R016", "gold_ids": ["R016-071"]}
+{"qid": "EN09", "lang": "en", "query": "How should HP evaporator tubes be marked before they are removed for deposit sampling?", "gold_doc": "R017", "gold_ids": ["R017-027"]}
+{"qid": "EN10", "lang": "en", "query": "Why would a combined cycle plant add a supplementary firing burner even though it lowers cycle efficiency?", "gold_doc": "R019", "gold_ids": ["R019-004"]}
+{"qid": "EN11", "lang": "en", "query": "Which online performance monitoring system was used at the Naco Nogales combined cycle plant?", "gold_doc": "R023", "gold_ids": ["R023-040"]}
+{"qid": "EN12", "lang": "en", "query": "What duct burner fuel flow was chosen for the fired mode of the single- and dual-pressure repowered cycles?", "gold_doc": "R024", "gold_ids": ["R024-023"]}
+{"qid": "EN13", "lang": "en", "query": "What did the AiResearch tests with a finned-tube module in diesel exhaust investigate?", "gold_doc": "R025", "gold_ids": ["R025-159"]}
+{"qid": "EN14", "lang": "en", "query": "Which working fluid and exhaust temperature range was the Sundstrand organic Rankine bottoming cycle designed for?", "gold_doc": "R025", "gold_ids": ["R025-119"]}
+{"qid": "EN15", "lang": "en", "query": "Under which ambient conditions was the energy model validated on the SCC5-8000H cycle?", "gold_doc": "R026", "gold_ids": ["R026-043"]}
+{"qid": "EN16", "lang": "en", "query": "Why does a higher ambient temperature reduce steam generation in the intercooled steam-injected gas turbine cycle?", "gold_doc": "R026", "gold_ids": ["R026-058"]}
+{"qid": "EN17", "lang": "en", "query": "Which component shows the largest exergy loss in the triple-pressure HRSG exergy analysis?", "gold_doc": "R027", "gold_ids": ["R027-027"]}
+{"qid": "EN18", "lang": "en", "query": "Which gas turbine model is used in the thermoeconomic optimization of the triple pressure HRSG?", "gold_doc": "R028", "gold_ids": ["R028-006"]}
+{"qid": "EN19", "lang": "en", "query": "Which water and steam property formulation does the HRSG thermal design module implement?", "gold_doc": "R030", "gold_ids": ["R030-105"]}
+{"qid": "EN20", "lang": "en", "query": "Where does the largest exergy destruction occur in the gas turbine system of the combined cycle studied with minimum temperature difference optimization?", "gold_doc": "R031", "gold_ids": ["R031-018"]}
+{"qid": "EN21", "lang": "en", "query": "What trade-off does the thermoeconomic optimization aim for when the initial and optimized cases are compared?", "gold_doc": "R031", "gold_ids": ["R031-023"]}
+{"qid": "EN22", "lang": "en", "query": "How do the heat exchanger arrangement cases of the triple pressure HRSG differ in off-design behaviour as gas turbine load varies?", "gold_doc": "R032", "gold_ids": ["R032-033"]}
+{"qid": "EN23", "lang": "en", "query": "How was the flue gas enthalpy across the HRSG components calculated for methane and syngas firing?", "gold_doc": "R033", "gold_ids": ["R033-043"]}
+{"qid": "EN24", "lang": "en", "query": "How does AMP-PZ compare with MEA in the steam needed for solvent regeneration?", "gold_doc": "R033", "gold_ids": ["R033-068"]}
+{"qid": "EN25", "lang": "en", "query": "What oxygen concentration do gas turbine exhaust gases have, making supplementary firing upstream of the HRSG possible?", "gold_doc": "R034", "gold_ids": ["R034-020"]}
+{"qid": "EN26", "lang": "en", "query": "What main equipment makes up the CCGT-420T unit at Mosenergo CHP Plant 16?", "gold_doc": "R034", "gold_ids": ["R034-003"]}
+{"qid": "EN27", "lang": "en", "query": "When was the Hamitabat combined cycle plant renovated and what is its installed capacity?", "gold_doc": "R035", "gold_ids": ["R035-046"]}
+{"qid": "EN28", "lang": "en", "query": "Why did Ansaldo launch a full lifetime FEM study of thick wall grade 92 components?", "gold_doc": "R036", "gold_ids": ["R036-037"]}
+{"qid": "EN29", "lang": "en", "query": "Where is the TEG dehydration unit placed in the CO2 compression train and to what moisture level does it dry the CO2?", "gold_doc": "R037", "gold_ids": ["R037-106"]}
+{"qid": "EN30", "lang": "en", "query": "What share of raw water consumption does cooling tower makeup represent in the PC cases with and without capture?", "gold_doc": "R037", "gold_ids": ["R037-291"]}
+{"qid": "EN31", "lang": "en", "query": "What sections make up the ferrosilicon furnace HRSG and which of them use pin-finned tubes?", "gold_doc": "R038", "gold_ids": ["R038-008"]}
+{"qid": "EN32", "lang": "en", "query": "What primary mover does the Sabiya plant use and why was it selected?", "gold_doc": "R039", "gold_ids": ["R039-010"]}
+{"qid": "EN33", "lang": "en", "query": "Roughly what share of total plant output comes from the steam turbine with a single-pressure HRSG?", "gold_doc": "R040", "gold_ids": ["R040-002"]}
+{"qid": "EN34", "lang": "en", "query": "Which three elements are used in three-element drum level control, and when does the HRSG switch to single-element control?", "gold_doc": "R007", "gold_ids": ["R007-008"]}
+{"qid": "EN35", "lang": "en", "query": "How many superheater tube temperatures were measured at the 400 MW combined cycle plant, and how long did the campaign last?", "gold_doc": "R008", "gold_ids": ["R008-006"]}
+{"qid": "EN36", "lang": "en", "query": "In the 100 kW-class gas engine cogeneration test rig, how much LNG is supplied at full load and how much extra air is added?", "gold_doc": "R002", "gold_ids": ["R002-010"]}
+{"qid": "EN37", "lang": "en", "query": "How large was the heat loss from the once-through subcritical HRSG test facility?", "gold_doc": "R021", "gold_ids": ["R021-031"]}
+{"qid": "EN38", "lang": "en", "query": "How does the reheater spray attemperator control loop adjust the reheater outlet steam temperature?", "gold_doc": "R022", "gold_ids": ["R022-006"]}
+{"qid": "EN39", "lang": "en", "query": "Which three arrangements of the HP economizer and LP superheater were compared in the triple-pressure HRSG design study?", "gold_doc": "R020", "gold_ids": ["R020-020"]}
+{"qid": "EN40", "lang": "en", "query": "Which reference plant and data source were used to assess recovering condenser heat with a heat pump for district heating?", "gold_doc": "R018", "gold_ids": ["R018-004"]}
+{"qid": "EN41", "lang": "en", "query": "In the Modelica dynamic model of the three-pressure reheat HRSG, how did turbine output change when plant load was reduced?", "gold_doc": "R001", "gold_ids": ["R001-001"]}
