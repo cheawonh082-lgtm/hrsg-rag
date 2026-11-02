@@ -10,6 +10,8 @@
 - 2안: qwen + bm25 → RRF
 - 3안: bge + qwen + bm25 → RRF
 - 4안: 3안 검색기 → 질문 언어(한글 비율)별 가중 RRF   score(d) = Σ w_r / (k + rank_r(d))
+
+한국어 질문은 모든 방식에서 한↔영 용어 사전으로 영어 용어를 덧붙인 질의로 검색한다 (RAG_EXPAND_KO, rag.glossary).
 """
 
 from __future__ import annotations
@@ -25,6 +27,7 @@ from rag.bm25 import BM25Searcher
 from rag.corpus import Paragraph
 from rag.corpus_all import Doc, Para, load_corpus_all
 from rag.embedder import BGEM3Embedder, Qwen3Embedder
+from rag.glossary import expand_query
 from rag.lang import detect_lang
 from rag.rag_config import RagSettings
 from rag.tokenizer import tokenize
@@ -122,8 +125,15 @@ class RagEngine:
                 r.query_vector("warmup")
 
     # ---- 검색 ----
+    def search_query(self, query: str) -> str:
+        """검색기에 실제로 넣는 질의 — 한국어 질문이면 영어 용어를 덧붙인다"""
+        if self.settings.expand_ko and detect_lang(query, self.settings.ko_ratio) == "ko":
+            return expand_query(query)
+        return query
+
     def retrieve(self, query: str, names: tuple[str, ...], top_k: int) -> tuple[dict[str, list[Hit]], dict[str, float]]:
         """검색기별 결과와 걸린 시간(ms)"""
+        query = self.search_query(query)
         hits, timings = {}, {}
         for name in names:
             if name not in self.retrievers:
@@ -162,7 +172,7 @@ class RagEngine:
                 "retrievers": {r: {"rank": ranks[r][pid][0], "score": round(float(ranks[r][pid][1]), 4)}
                                for r in hits if pid in ranks[r]},
             })
-        return {"query": query, "query_lang": lang, "method": method, "method_label": spec["label"],
+        return {"query": query, "query_lang": lang, "search_query": self.search_query(query), "method": method, "method_label": spec["label"],
                 "weights": weights or {r: 1.0 for r in spec["retrievers"]}, "top_k": top_k, "top_n": top_n,
                 "timings_ms": timings, "results": results}
 

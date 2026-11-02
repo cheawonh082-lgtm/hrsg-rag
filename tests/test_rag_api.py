@@ -110,8 +110,20 @@ def test_methods_use_their_retrievers(engine):
 def test_method4_weights_follow_query_language(engine):
     ko = engine.search("핀치 포인트를 낮추면 어떻게 되나?", "4")
     en = engine.search("What happens to CO2 capture?", "4")
-    assert ko["query_lang"] == "ko" and ko["weights"]["bm25"] == 0.5
+    assert ko["query_lang"] == "ko" and ko["weights"]["bm25"] == 0.0
     assert en["query_lang"] == "en" and en["weights"]["bm25"] == 1.0
+
+
+def test_glossary_expands_korean_queries_only(engine):
+    from rag.glossary import english_terms
+
+    # 띄어쓰기 무시, 긴 용어 우선 ("고압 증발기"가 "증발기"를 덮는다)
+    assert english_terms("고압증발기 튜브의 침착물") == ["HP evaporator", "tube", "deposit deposition"]
+    ko = engine.search("배열 회수 보일러 핀치 포인트", "4")
+    assert ko["search_query"].startswith("배열 회수 보일러 핀치 포인트 ") and "pinch point" in ko["search_query"]
+    assert engine.search("What is a pinch point?", "4")["search_query"] == "What is a pinch point?"
+    engine.settings.expand_ko = False
+    assert engine.search("핀치 포인트", "4")["search_query"] == "핀치 포인트"
 
 
 def test_missing_index_disables_methods(settings):

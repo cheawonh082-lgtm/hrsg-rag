@@ -42,9 +42,11 @@ class RagSettings:
     top_n: int = 5                  # 최종 결과 수
     rrf_k: int = 60
     ko_ratio: float = KO_RATIO      # 질문 언어 판별: 한글 비율이 이 값 이상이면 ko
-    # 4안: 질문 언어별 검색기 가중치. 한국어 질문은 BM25가 한국어 문헌(41편 중 8편)에만 걸리기 쉬워 낮춘다.
-    weights_ko: dict[str, float] = field(default_factory=lambda: {"bge": 1.0, "qwen": 1.0, "bm25": 0.5})
+    # 4안: 질문 언어별 검색기 가중치. 한국어 질문은 정답 대부분이 영어 문단이라 BM25가 엉뚱한 한국어 문단을
+    # 올리기만 해서 끈다 (용어 확장 후에도 0이 가장 좋았다 — eval/RESULTS.md).
+    weights_ko: dict[str, float] = field(default_factory=lambda: {"bge": 1.0, "qwen": 1.0, "bm25": 0.0})
     weights_en: dict[str, float] = field(default_factory=lambda: {"bge": 1.0, "qwen": 1.0, "bm25": 1.0})
+    expand_ko: bool = True          # 한국어 질문에 한↔영 용어 사전(rag.glossary)의 영어 용어를 덧붙여 검색
     device: str | None = None
     warmup: bool = False            # 서버 시작 때 모델을 미리 불러올지
 
@@ -79,6 +81,7 @@ class RagSettings:
             s.weights_ko = parse_weights(v)
         if v := env.get("RAG_WEIGHTS_EN"):
             s.weights_en = parse_weights(v)
+        s.expand_ko = env.get("RAG_EXPAND_KO", "1").lower() not in ("0", "false", "no")
         s.device = env.get("RAG_DEVICE") or None
         s.warmup = env.get("RAG_WARMUP", "").lower() in ("1", "true", "yes")
         return s

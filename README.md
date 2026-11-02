@@ -31,11 +31,11 @@ curl -X POST localhost:8100/search -H "Content-Type: application/json" \
 | `1` | bge + bm25 → RRF (k=60) |
 | `2` | qwen + bm25 → RRF |
 | `3` | bge + qwen + bm25 → RRF |
-| `4` | 3안 검색기 → 질문 언어별 가중 RRF. 한글/(한글+라틴) ≥ 0.3이면 ko. 기본 가중치 ko `bge=1,qwen=1,bm25=0.5`, en `1,1,1` (`RAG_WEIGHTS_KO/EN`) |
+| `4` | 3안 검색기 → 질문 언어별 가중 RRF. 한글/(한글+라틴) ≥ 0.3이면 ko. 기본 가중치 ko `bge=1,qwen=1,bm25=0`, en `1,1,1` (`RAG_WEIGHTS_KO/EN`) |
 
 엔드포인트: `GET /health` · `GET /methods` · `POST /search` · `POST /search/compare`(1~4안 한 번에) · `GET /paragraphs/{id}` · `GET /documents/{doc_id}`.
 결과 문단마다 `retrievers`에 검색기별 순위·점수가 있어 어느 검색기가 끌어올렸는지 볼 수 있다. 인덱스가 없는 방식은 503과 이유를 돌려준다.
-4안 가중치는 근거 없는 초기값이다(한국어 문단이 144개뿐이라 한국어 질문의 BM25는 한국어 문헌 쪽으로 치우치기 쉬움) — 평가셋으로 정한다.
+한국어 질문은 모든 방식에서 한↔영 용어 사전(`rag/glossary.py`)의 영어 용어를 덧붙인 질의로 검색한다(`RAG_EXPAND_KO`, 응답의 `search_query`). 코퍼스 문단의 95%가 영어라 한국어 질문 대부분이 교차언어 검색이 되기 때문이다. 4안 한국어 가중치(BM25 끔)와 함께 평가셋으로 정했다 — `eval/RESULTS.md`.
 
 ## 구성
 
