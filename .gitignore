@@ -16,3 +16,6 @@ __pycache__/
 .venv/
 .pytest_cache/
 results_*.log
+
+# HRSG 검색 평가셋 v1 — 논문 발췌(corpus)와 임베딩 캐시는 올리지 않는다
+hrsg_eval_set_v1/
