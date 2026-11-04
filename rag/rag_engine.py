@@ -165,7 +165,10 @@ class RagEngine:
         for rank, (pid, score) in enumerate(fused[:top_n], start=1):
             p, d = self.para_by_id[pid], self.docs[self.para_by_id[pid].doc_id]
             results.append({
-                "rank": rank, "id": p.id, "doc_id": p.doc_id, "title": d.title, "section": p.section,
+                "rank": rank, "id": p.id, "doc_id": p.doc_id, "title": d.title,
+                # 출처 표기(저자 (연도). 제목. 발행처, p. 쪽)용 서지 정보
+                "authors": list(d.authors), "year": d.year, "venue": d.venue, "doi": d.doi, "url": d.url,
+                "section": p.section,
                 "page_start": p.page_start, "page_end": p.page_end, "content_type": p.content_type,
                 "source_type": p.source_type, "lang": p.lang, "doc_lang": d.lang, "text": p.text, "terms": list(p.terms),
                 "score": round(score, 6),

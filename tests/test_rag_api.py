@@ -105,6 +105,9 @@ def test_methods_use_their_retrievers(engine):
         assert all(set(r["retrievers"]) <= used for r in out["results"])
     top = engine.search("IF97 enthalpy kJ/kg", "1")["results"][0]
     assert top["id"] == "R002-001" and top["retrievers"]["bm25"]["rank"] == 1
+    # 출처 표기용 서지 정보가 결과에 실린다
+    assert top["title"] == "Title R002" and top["year"] == 2020 and top["authors"] == []
+    assert {"venue", "doi", "url", "page_start", "page_end"} <= set(top)
 
 
 def test_method4_weights_follow_query_language(engine):
