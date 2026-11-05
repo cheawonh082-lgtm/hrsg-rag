@@ -1,0 +1,14 @@
+# HRSG 논문 검색 Worker — 배포: scripts/cloudflare_sync.py deploy (README "Cloudflare 배포")
+name = "hrsg-rag-search"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+workers_dev = true
+
+[ai]
+binding = "AI"
+
+[[vectorize]]
+binding = "VECTORIZE"
+index_name = "hrsg-bge-m3"
+
+# RAG_API_KEY는 비밀 값 — wrangler secret put RAG_API_KEY (여기에 쓰지 않는다)

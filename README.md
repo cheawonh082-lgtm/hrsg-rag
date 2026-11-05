@@ -81,9 +81,10 @@ python -m venv .venv
 .venv/Scripts/python scripts/evaluate_search.py --corpus data/corpus.json --index index/bge-m3 \
     --questions data/eval_questions.json --glossary data/glossary.json --unit doc
 
-# 3) (오프라인 평가 후) Cloudflare — .env에 CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN
-.venv/Scripts/python scripts/cloudflare_sync.py parity --corpus data/corpus.json
-.venv/Scripts/python scripts/cloudflare_sync.py upload --index index/bge-m3 --name hrsg-bge-m3
+# 3) Cloudflare 배포 (배포판 앱용 검색 Worker) — 아래 "Cloudflare 배포" 참고
+.venv/Scripts/python scripts/cloudflare_sync.py parity
+.venv/Scripts/python scripts/cloudflare_sync.py upload          # parity 실패 시 --reembed
+.venv/Scripts/python scripts/cloudflare_sync.py deploy
 .venv/Scripts/python scripts/cloudflare_sync.py query "감온기 분사수 제어 방식"
 
 # 테스트
@@ -172,3 +173,25 @@ done
 ## 보안
 
 `.gitignore`: `*.pdf`, `.env`, `index/`, `results/`, `data/local_*/`, `data/corpus_md/`. API 토큰은 환경변수로만 읽는다.
+
+## Cloudflare 배포 (배포판 앱의 논문 검색)
+
+배포판 앱(Render 무료 플랜)은 임베딩 모델을 올릴 수 없으므로, 검색을 Cloudflare Worker(`cloudflare/worker`)에서 한다.
+
+- **질문 임베딩:** Workers AI `@cf/baai/bge-m3`. 한국어 질문은 `rag/glossary.py`의 영어 용어를 덧붙인다(`src/query.js`가 같은 규칙).
+- **검색:** Vectorize 인덱스 `hrsg-bge-m3`(1,024차원 · cosine). 문단 본문과 서지 정보는 메타데이터에 있다(`paragraph_metadata`, 10 KiB 이하).
+- **응답:** `POST /search`는 이 저장소 RAG API와 같은 형식이라, 앱은 `RAG_API_URL`·`RAG_API_KEY`만 바꾸면 된다. 모든 요청에 `Authorization: Bearer <RAG_API_KEY>`가 필요하다.
+- **검색 방식:** bge-m3 단독이다. 로컬 4안의 Qwen3와 영어 질문 BM25는 쓰지 않는다.
+
+**자격 증명** (`.env`, Git 제외)
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_API_TOKEN`: 권한은 Account의 Workers Scripts Edit · Workers AI Read · Vectorize Edit · Account Settings Read
+- `RAG_API_KEY`: `deploy`가 없으면 만들어 `.env`에 저장한다. 같은 값을 앱(Render)의 `RAG_API_KEY`에 넣는다.
+
+**순서**
+1. `parity`: 로컬 벡터와 Workers AI 벡터가 같은지(코사인 0.99 이상) 확인한다. 다르면 `upload --reembed`로 올린다.
+2. `upload`: 반영은 비동기라 1~2분 뒤 `query`로 확인한다.
+3. `deploy`
+4. 서지 정보를 고치면 `upload`만 다시 한다.
+
+**Worker 테스트:** `cloudflare_sync.py worker-data` 후 `node --test cloudflare/worker/test/`

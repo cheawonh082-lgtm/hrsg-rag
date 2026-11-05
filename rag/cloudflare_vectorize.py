@@ -176,3 +176,34 @@ class VectorizeClient(_Client):
         body = {"vector": [float(x) for x in vector], "topK": top_k, "returnValues": False, "returnMetadata": return_metadata}
         result = self._call("POST", f"/vectorize/v2/indexes/{name}/query", json=body)
         return [(m["id"], float(m["score"])) for m in result.get("matches", [])]
+
+
+# ---- 배포용 Worker(cloudflare/worker)가 읽는 메타데이터 ----
+METADATA_LIMIT = 10 * 1024  # Vectorize: 벡터 하나의 메타데이터 최대 10 KiB
+
+
+def paragraph_metadata(doc, para) -> dict:
+    """문단 하나의 Vectorize 메타데이터 — Worker가 RAG API /search와 같은 결과를 만들 수 있게 본문·서지 정보를 담는다.
+    doc: rag.corpus_all.Doc · para: rag.corpus_all.Para. 저자는 '; '로 합친다(메타데이터 값은 단순 타입으로)."""
+    meta = {
+        "doc_id": para.doc_id,
+        "title": doc.title,
+        "authors": "; ".join(doc.authors),
+        "year": doc.year,
+        "venue": doc.venue,
+        "doi": doc.doi,
+        "url": doc.url,
+        "doc_lang": doc.lang,
+        "section": para.section,
+        "page_start": para.page_start,
+        "page_end": para.page_end,
+        "content_type": para.content_type,
+        "source_type": para.source_type,
+        "lang": para.lang,
+        "text": para.text,
+    }
+    meta = {k: v for k, v in meta.items() if v not in (None, "")}
+    size = len(json.dumps(meta, ensure_ascii=False).encode("utf-8"))
+    if size > METADATA_LIMIT:
+        raise CloudflareError(f"{para.id}: 메타데이터 {size}바이트 > {METADATA_LIMIT} — 문단을 나누세요")
+    return meta
