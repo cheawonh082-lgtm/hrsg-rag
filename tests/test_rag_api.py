@@ -154,5 +154,16 @@ def test_http_endpoints(engine):
             assert client.get("/paragraphs/R001-001").json()["title"] == "Title R001"
             assert client.get("/documents/R002").json()["paragraphs"] == 3
             assert client.get("/paragraphs/none").status_code == 404
+            # 서지 정보만 고친 코퍼스는 재시작 없이 반영, 문단이 바뀌면 거절
+            import json
+            corpus = engine.settings.corpus
+            data = json.loads(corpus.read_text(encoding="utf-8"))
+            data["documents"][0]["title"] = "Edited title"
+            corpus.write_text(json.dumps(data), encoding="utf-8")
+            assert client.post("/documents/reload").json()["documents"] == len(data["documents"])
+            assert client.get("/paragraphs/R001-001").json()["title"] == "Edited title"
+            data["paragraphs"] = data["paragraphs"][1:]
+            corpus.write_text(json.dumps(data), encoding="utf-8")
+            assert client.post("/documents/reload").status_code == 409
     finally:
         api.set_engine(None)

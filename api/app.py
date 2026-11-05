@@ -9,6 +9,7 @@
 - POST /search/compare         {"query", "top_n", "top_k"} → 1~4안 결과를 한 번에 (검색기는 한 번씩만 실행)
 - GET  /paragraphs/{id}        문단 하나
 - GET  /documents/{doc_id}     문헌 정보 (출처 표시용)
+- POST /documents/reload       corpus_all.json의 문헌 정보(제목·저자 등)만 다시 읽는다 — 앱 관리자 화면에서 서지 정보를 고친 뒤 호출
 
 설정은 환경변수(RAG_*)로 바꾼다 — rag/rag_config.py 참고. 생성(LLM 답변)은 이 API 범위 밖이다.
 """
@@ -26,6 +27,7 @@ from pydantic import BaseModel, Field
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from rag.corpus_all import load_corpus_all  # noqa: E402
 from rag.rag_config import RagSettings  # noqa: E402
 from rag.rag_engine import METHODS, IndexUnavailable, RagEngine  # noqa: E402
 
@@ -128,3 +130,17 @@ def document(doc_id: str) -> dict:
     if d is None:
         raise HTTPException(404, f"문헌 {doc_id}가 없습니다")
     return {**asdict(d), "paragraphs": sum(p.doc_id == doc_id for p in e.paras)}
+
+
+@app.post("/documents/reload")
+def reload_documents() -> dict:
+    """서지 정보만 교체한다. 문단이 바뀌었으면 인덱스를 다시 만들어야 하므로 거절한다(409)."""
+    e = get_engine()
+    try:
+        docs, paras = load_corpus_all(e.settings.corpus)
+    except (OSError, ValueError) as err:
+        raise HTTPException(422, f"코퍼스를 읽을 수 없습니다: {err}") from err
+    if [p.id for p in paras] != [p.id for p in e.paras]:
+        raise HTTPException(409, "문단 구성이 바뀌었습니다 — 인덱스를 다시 만들고 서버를 재시작하세요")
+    e.docs = docs
+    return {"documents": len(docs)}
