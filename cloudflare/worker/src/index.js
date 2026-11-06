@@ -3,18 +3,23 @@
 //   POST /search  {"query", "top_n"}  → RAG API(api/app.py)와 같은 형식의 상위 문단
 //   GET  /health                      → 코퍼스 규모·검색 방식
 //
-// 질문 임베딩: Workers AI @cf/baai/bge-m3 (코퍼스 벡터와 같은 모델) · 검색: Vectorize(cosine)
-// 문단 본문·서지 정보는 Vectorize 메타데이터에 있다 (scripts/cloudflare_sync.py upload).
+// 검색: 로컬 RAG API 4안과 같은 bge:qwen:BM25 = 1:1:0 — 두 검색기 상위 top_k(50)개를 가중 RRF(k=60)로 합친다.
+//   bge  — Workers AI @cf/baai/bge-m3 → Vectorize hrsg-bge-m3 (1,024차원)
+//   qwen — Workers AI @cf/qwen/qwen3-embedding-0.6b (질문 instruction 포함) → 앞 512차원 → Vectorize hrsg-qwen3-06b-512
+// 문단 본문·서지 정보는 두 인덱스 모두 Vectorize 메타데이터에 있다 (scripts/cloudflare_sync.py upload).
+// 가중치·instruction 등은 search_config.json (scripts/cloudflare_sync.py worker-data가 rag_config에서 만든다).
 // 모든 요청은 Authorization: Bearer <RAG_API_KEY> 가 필요하다 (wrangler secret put RAG_API_KEY).
 
 import GLOSSARY from './glossary.json'
+import CONFIG from './search_config.json'
 import STATS from './stats.json'
-import { detectLang, expandQuery, glossaryEntries, sameSecret } from './query.js'
+import { detectLang, expandQuery, glossaryEntries, sameSecret, truncateNormalize, weightedRrf } from './query.js'
 
-const MODEL = '@cf/baai/bge-m3'
+const MODELS = { bge: '@cf/baai/bge-m3', qwen: '@cf/qwen/qwen3-embedding-0.6b' }
 const ENTRIES = glossaryEntries(GLOSSARY)
-const MAX_TOP_N = 20 // Vectorize: 메타데이터를 함께 받으면 topK ≤ 50
-const METHOD_LABEL = 'bge-m3 (Workers AI + Vectorize)'
+const MAX_TOP_N = 20
+const TOP_K = Math.min(CONFIG.top_k, 50) // Vectorize: 메타데이터를 함께 받으면 topK ≤ 50
+const METHOD_LABEL = 'bge-m3 + Qwen3 → 가중 RRF (4안, bge:qwen:BM25 = 1:1:0)'
 
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json; charset=utf-8' } })
@@ -27,7 +32,20 @@ function vectorFrom(result) {
   throw new Error(`Workers AI 응답에서 임베딩을 찾지 못했습니다: ${Object.keys(result ?? {})}`)
 }
 
-function toResult(match, rank) {
+async function retrieve(env, searchQuery) {
+  const [bgeOut, qwenOut] = await Promise.all([
+    env.AI.run(MODELS.bge, { contexts: [{ text: searchQuery }] }),
+    env.AI.run(MODELS.qwen, { queries: [searchQuery], instruction: CONFIG.qwen_instruction }),
+  ])
+  const opts = { topK: TOP_K, returnMetadata: 'all' }
+  const [bge, qwen] = await Promise.all([
+    env.VECTORIZE.query(vectorFrom(bgeOut), opts),
+    env.VECTORIZE_QWEN.query(truncateNormalize(vectorFrom(qwenOut), CONFIG.qwen_dims), opts),
+  ])
+  return { bge: bge.matches ?? [], qwen: qwen.matches ?? [] }
+}
+
+function toResult(match, rank, score, retrievers) {
   const m = match.metadata ?? {}
   return {
     rank,
@@ -47,7 +65,8 @@ function toResult(match, rank) {
     lang: m.lang ?? '',
     doc_lang: m.doc_lang ?? '',
     text: m.text ?? '',
-    score: Math.round(match.score * 1e6) / 1e6,
+    score: Math.round(score * 1e6) / 1e6,
+    retrievers,
   }
 }
 
@@ -64,16 +83,29 @@ async function search(request, env) {
 
   const lang = detectLang(query)
   const searchQuery = lang === 'ko' ? expandQuery(query, ENTRIES) : query
-  const embedded = await env.AI.run(MODEL, { contexts: [{ text: searchQuery }] })
-  const found = await env.VECTORIZE.query(vectorFrom(embedded), { topK: topN, returnMetadata: 'all' })
+  const weights = CONFIG.weights[lang]
+  const hits = await retrieve(env, searchQuery)
+  const byId = new Map()
+  const ranks = {}
+  for (const [name, matches] of Object.entries(hits)) {
+    ranks[name] = new Map(matches.map((m, i) => [m.id, { rank: i + 1, score: Math.round(m.score * 1e4) / 1e4 }]))
+    for (const m of matches) if (!byId.has(m.id)) byId.set(m.id, m)
+  }
+  const fused = weightedRrf(Object.fromEntries(Object.entries(hits).map(([n, ms]) => [n, ms.map((m) => m.id)])), CONFIG.rrf_k, weights)
+  const results = fused.slice(0, topN).map(([id, score], i) => {
+    const retrievers = Object.fromEntries(Object.keys(hits).filter((n) => ranks[n].has(id)).map((n) => [n, ranks[n].get(id)]))
+    return toResult(byId.get(id), i + 1, score, retrievers)
+  })
   return json({
     query,
     query_lang: lang,
     search_query: searchQuery,
-    method: 'cf',
+    method: '4',
     method_label: METHOD_LABEL,
+    weights,
+    top_k: TOP_K,
     top_n: topN,
-    results: (found.matches ?? []).map((m, i) => toResult(m, i + 1)),
+    results,
   })
 }
 
@@ -88,9 +120,10 @@ async function health(env) {
   return json({
     status: 'ok',
     corpus: { documents: STATS.documents, paragraphs: STATS.paragraphs, version: STATS.corpus_version, vectors },
-    methods: { cf: true },
+    methods: { 4: true },
     missing: {},
-    models: { bge: MODEL },
+    models: { ...MODELS, qwen_dims: CONFIG.qwen_dims },
+    weights: CONFIG.weights,
   })
 }
 

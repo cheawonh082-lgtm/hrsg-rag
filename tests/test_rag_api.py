@@ -111,6 +111,9 @@ def test_methods_use_their_retrievers(engine):
 
 
 def test_method4_weights_follow_query_language(engine):
+    # 기본값은 두 언어 모두 bge:qwen:BM25 = 1:1:0 (평가셋 v1 dev)
+    assert engine.settings.weights_ko == engine.settings.weights_en == {"bge": 1.0, "qwen": 1.0, "bm25": 0.0}
+    engine.settings.weights_en = {"bge": 1.0, "qwen": 1.0, "bm25": 1.0}
     ko = engine.search("핀치 포인트를 낮추면 어떻게 되나?", "4")
     en = engine.search("What happens to CO2 capture?", "4")
     assert ko["query_lang"] == "ko" and ko["weights"]["bm25"] == 0.0

@@ -53,3 +53,26 @@ export function sameSecret(a, b) {
   for (let i = 0; i < Math.max(x.length, y.length); i++) diff |= (x[i] ?? 0) ^ (y[i] ?? 0)
   return diff === 0
 }
+
+/** rag/rag_engine.py weighted_rrf와 같다 — rankings: {검색기: [문단 ID, 1위부터]}, 가중치 없는 검색기는 0.
+ *  동점이면 어느 검색기에서든 더 높은 순위였던 문단, 그다음 ID 순. 반환: [[ID, 점수], …] */
+export function weightedRrf(rankings, k, weights) {
+  const score = new Map()
+  const best = new Map()
+  for (const [name, ranking] of Object.entries(rankings)) {
+    const w = weights?.[name] ?? 0
+    ranking.forEach((id, i) => {
+      const rank = i + 1
+      score.set(id, (score.get(id) ?? 0) + w / (k + rank))
+      best.set(id, Math.min(rank, best.get(id) ?? rank))
+    })
+  }
+  return [...score.entries()].sort((a, b) => b[1] - a[1] || best.get(a[0]) - best.get(b[0]) || (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0))
+}
+
+/** Qwen3-Embedding MRL — 앞 dims 차원만 남기고 L2 정규화 (scripts/cloudflare_sync.py mrl과 같다) */
+export function truncateNormalize(vector, dims) {
+  const v = vector.slice(0, dims)
+  const norm = Math.hypot(...v)
+  return v.map((x) => x / norm)
+}

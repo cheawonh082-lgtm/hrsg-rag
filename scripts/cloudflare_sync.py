@@ -1,11 +1,16 @@
-"""Cloudflare 배포 — 배포판 앱(Render)이 쓰는 논문 검색 Worker (Workers AI bge-m3 + Vectorize).
+"""Cloudflare 배포 — 배포판 앱(Render)이 쓰는 논문 검색 Worker (Workers AI bge-m3 · Qwen3-Embedding + Vectorize).
+
+검색은 로컬 4안과 같은 bge:qwen:BM25 = 1:1:0 (두 검색기 상위 50개 → 가중 RRF k=60). BM25는 가중치 0이라 쓰지 않는다.
+qwen 인덱스는 무료 플랜 저장 한도(계정당 500만 차원) 때문에 Qwen3의 MRL로 512차원만 쓴다
+(평가셋 v1 dev에서 1,024차원과 같거나 나았다).
 
     # 0) .env에 CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN (README "Cloudflare 배포")
     # 1) 로컬 BGE-M3 ↔ Workers AI 벡터 일치 확인 — 로컬로 만든 코퍼스 벡터를 그대로 올려도 되는지
     python scripts/cloudflare_sync.py parity --sample 20
     # 2) 코퍼스 벡터 + 문단 본문·서지 정보(메타데이터)를 Vectorize에 업로드 (인덱스 자동 생성)
-    python scripts/cloudflare_sync.py upload                 # 로컬 인덱스 벡터 (parity 통과 시)
-    python scripts/cloudflare_sync.py upload --reembed       # Workers AI로 다시 임베딩해 업로드 (parity 실패 시)
+    python scripts/cloudflare_sync.py upload                 # bge: 로컬 인덱스 벡터 (parity 통과 시)
+    python scripts/cloudflare_sync.py upload --reembed       # bge: Workers AI로 다시 임베딩해 업로드 (parity 실패 시)
+    python scripts/cloudflare_sync.py upload --model qwen    # qwen: 로컬 인덱스 벡터 앞 512차원 (질문 벡터 코사인 1.0 확인)
     # 3) Worker 배포 (용어 사전·코퍼스 규모 내보내기 → wrangler deploy → 비밀키 등록)
     python scripts/cloudflare_sync.py deploy
     # 4) 확인
@@ -27,6 +32,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+import numpy as np
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
@@ -45,6 +52,8 @@ from rag.vector_index import LocalVectorIndex  # noqa: E402
 
 WORKER_DIR = ROOT / "cloudflare" / "worker"
 DEFAULT_INDEX = "hrsg-bge-m3"
+QWEN_INDEX = "hrsg-qwen3-06b-512"
+QWEN_DIMS = 512  # Qwen3-Embedding MRL — 앞 512차원만 쓰고 다시 정규화
 SAMPLE_QUERIES = ["감온기 분사수 제어 방식", "HRSG 핀치 포인트 온도차의 의미", "superheater tube fouling effect on exhaust back pressure"]
 
 
@@ -57,10 +66,23 @@ def write_worker_data(corpus: Path, out_dir: Path = WORKER_DIR / "src") -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "glossary.json").write_text(json.dumps(KO_EN, ensure_ascii=False, indent=1), encoding="utf-8")
     (out_dir / "stats.json").write_text(json.dumps(stats, ensure_ascii=False), encoding="utf-8")
+    s = RagSettings.from_env()
+    weights = {lang: {r: w for r, w in ws.items() if r in ("bge", "qwen")} for lang, ws in (("ko", s.weights_ko), ("en", s.weights_en))}
+    for lang, ws in (("ko", s.weights_ko), ("en", s.weights_en)):
+        if ws.get("bm25", 0):
+            raise SystemExit(f"{lang} 가중치 {ws}: Worker에는 BM25가 없어 bm25=0인 설정만 배포할 수 있습니다")
+    config = {"top_k": s.top_k, "rrf_k": s.rrf_k, "weights": weights, "qwen_instruction": s.qwen_instruction, "qwen_dims": QWEN_DIMS}
+    (out_dir / "search_config.json").write_text(json.dumps(config, ensure_ascii=False, indent=1), encoding="utf-8")
     return stats
 
 
-def upload(creds: Credentials, corpus: Path, index_dir: Path, name: str, reembed: bool) -> None:
+def mrl(vectors: np.ndarray, dims: int) -> np.ndarray:
+    """Matryoshka: 앞 dims 차원만 남기고 L2 정규화"""
+    v = np.asarray(vectors, dtype=np.float32)[:, :dims]
+    return v / np.linalg.norm(v, axis=1, keepdims=True)
+
+
+def upload(creds: Credentials, corpus: Path, index_dir: Path, name: str, reembed: bool, dims: int | None = None) -> None:
     docs, paras = load_corpus_all(corpus)
     index = LocalVectorIndex.load(index_dir)
     if index.paragraph_ids != [p.id for p in paras]:
@@ -71,6 +93,8 @@ def upload(creds: Credentials, corpus: Path, index_dir: Path, name: str, reembed
         vectors = WorkersAIEmbedder(creds).embed([p.embed_input for p in paras])
     else:
         vectors = index.vectors
+    if dims:
+        vectors = mrl(vectors, dims)
     client = VectorizeClient(creds)
     client.ensure_index(name, dimensions=vectors.shape[1], metric="cosine")
     mutations = client.upsert(name, index.paragraph_ids, vectors, metadata)
@@ -110,9 +134,8 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--sample", type=int, default=20)
     p.add_argument("--threshold", type=float, default=0.99)
     u = sub.add_parser("upload")
-    u.add_argument("--index", type=Path, default=RagSettings().bge_index)
-    u.add_argument("--name", default=DEFAULT_INDEX)
-    u.add_argument("--reembed", action="store_true", help="로컬 벡터 대신 Workers AI로 다시 임베딩")
+    u.add_argument("--model", choices=("bge", "qwen"), default="bge")
+    u.add_argument("--reembed", action="store_true", help="bge만: 로컬 벡터 대신 Workers AI로 다시 임베딩")
     sub.add_parser("worker-data")
     sub.add_parser("deploy")
     q = sub.add_parser("query")
@@ -140,7 +163,12 @@ def main(argv: list[str] | None = None) -> None:
         print("✓ 로컬 벡터를 그대로 올려도 됩니다 (upload)" if report.ok(args.threshold)
               else "✗ 차이가 큽니다 — upload --reembed 로 Workers AI 벡터를 올리세요")
     elif args.cmd == "upload":
-        upload(creds, args.corpus, args.index, args.name, args.reembed)
+        if args.model == "qwen":
+            if args.reembed:
+                raise SystemExit("--reembed는 bge만 됩니다")
+            upload(creds, args.corpus, RagSettings().qwen_index, QWEN_INDEX, False, QWEN_DIMS)
+        else:
+            upload(creds, args.corpus, RagSettings().bge_index, DEFAULT_INDEX, args.reembed)
     else:
         vector = WorkersAIEmbedder(creds).embed([args.text])[0]
         _, paras = load_corpus_all(args.corpus)

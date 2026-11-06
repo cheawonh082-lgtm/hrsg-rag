@@ -11,4 +11,9 @@ binding = "AI"
 binding = "VECTORIZE"
 index_name = "hrsg-bge-m3"
 
+# 4안(bge:qwen:BM25 = 1:1:0)의 qwen 검색기 — Qwen3-Embedding 0.6B, MRL 512차원 (무료 플랜 저장 한도)
+[[vectorize]]
+binding = "VECTORIZE_QWEN"
+index_name = "hrsg-qwen3-06b-512"
+
 # RAG_API_KEY는 비밀 값 — wrangler secret put RAG_API_KEY (여기에 쓰지 않는다)

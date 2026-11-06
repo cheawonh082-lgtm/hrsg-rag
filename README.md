@@ -31,7 +31,7 @@ curl -X POST localhost:8100/search -H "Content-Type: application/json" \
 | `1` | bge + bm25 → RRF (k=60) |
 | `2` | qwen + bm25 → RRF |
 | `3` | bge + qwen + bm25 → RRF |
-| `4` | 3안 검색기 → 질문 언어별 가중 RRF. 한글/(한글+라틴) ≥ 0.3이면 ko. 기본 가중치 ko `bge=1,qwen=1,bm25=0`, en `1,1,1` (`RAG_WEIGHTS_KO/EN`) |
+| `4` | 3안 검색기 → 질문 언어별 가중 RRF. 한글/(한글+라틴) ≥ 0.3이면 ko. 기본 가중치 ko `bge=1,qwen=1,bm25=0`, en도 `bge=1,qwen=1,bm25=0` (`RAG_WEIGHTS_KO/EN`). 평가셋 v1 dev에서 가중치 91개 조합을 비교해 두 언어 모두 1:1:0으로 정했다 |
 
 엔드포인트: `GET /health` · `GET /methods` · `POST /search` · `POST /search/compare`(1~4안 한 번에) · `GET /paragraphs/{id}` · `GET /documents/{doc_id}`.
 결과 문단마다 `retrievers`에 검색기별 순위·점수가 있어 어느 검색기가 끌어올렸는지 볼 수 있다. 인덱스가 없는 방식은 503과 이유를 돌려준다.
@@ -50,7 +50,7 @@ curl -X POST localhost:8100/search -H "Content-Type: application/json" \
 | `rag/cloudflare_vectorize.py` | Workers AI 임베딩 · 로컬↔Workers AI 일치 확인 · Vectorize 생성/업서트/조회 |
 | `scripts/embed_corpus.py` | 코퍼스 임베딩 → 로컬 인덱스 저장 |
 | `scripts/evaluate_search.py` | dev 튜닝 → test 1회 측정, BM25 기준선과 비교 표 |
-| `scripts/cloudflare_sync.py` | Cloudflare 시험 (parity / upload / query) |
+| `scripts/cloudflare_sync.py` | Cloudflare 배포 (parity / upload [--model qwen] / deploy / query) |
 | `scripts/smoke_crosslingual.py` | 공식 데이터 전, 참고문헌 PDF 일부로 교차 언어 검색 점검 (로컬 전용) |
 | `scripts/ingest_pdfs.py` | 참고문헌 PDF를 로컬 실험 코퍼스(`data/local_smoke/`)에 증분 추가·임베딩 (PyMuPDF, 중복·스캔본 건너뜀) |
 | `rag/md_corpus.py` | `rag_corpus/`의 EN/KO 병렬 md → 청크 (frontmatter 분리, `##` 절 단위, 700단어 넘는 절은 `###` 단위, EN/KO 같은 청크 ID) · 스펙 검증 |
@@ -178,10 +178,10 @@ done
 
 배포판 앱(Render 무료 플랜)은 임베딩 모델을 올릴 수 없으므로, 검색을 Cloudflare Worker(`cloudflare/worker`)에서 한다.
 
-- **질문 임베딩:** Workers AI `@cf/baai/bge-m3`. 한국어 질문은 `rag/glossary.py`의 영어 용어를 덧붙인다(`src/query.js`가 같은 규칙).
-- **검색:** Vectorize 인덱스 `hrsg-bge-m3`(1,024차원 · cosine). 문단 본문과 서지 정보는 메타데이터에 있다(`paragraph_metadata`, 10 KiB 이하).
+- **질문 임베딩:** Workers AI `@cf/baai/bge-m3`와 `@cf/qwen/qwen3-embedding-0.6b`(질문에 `RAG_QWEN_INSTRUCTION`). 한국어 질문은 `rag/glossary.py`의 영어 용어를 덧붙인다(`src/query.js`가 같은 규칙).
+- **검색:** Vectorize 인덱스 `hrsg-bge-m3`(1,024차원)와 `hrsg-qwen3-06b-512`(Qwen3 MRL 512차원, cosine). 무료 플랜 저장 한도가 계정당 500만 차원이라 qwen은 앞 512차원만 쓴다(평가셋 v1 dev에서 1,024차원과 같거나 나았다). 문단 본문과 서지 정보는 두 인덱스 모두 메타데이터에 있다(`paragraph_metadata`, 10 KiB 이하).
 - **응답:** `POST /search`는 이 저장소 RAG API와 같은 형식이라, 앱은 `RAG_API_URL`·`RAG_API_KEY`만 바꾸면 된다. 모든 요청에 `Authorization: Bearer <RAG_API_KEY>`가 필요하다.
-- **검색 방식:** bge-m3 단독이다. 로컬 4안의 Qwen3와 영어 질문 BM25는 쓰지 않는다.
+- **검색 방식:** 로컬 4안과 같은 bge:qwen:BM25 = 1:1:0. 검색기마다 상위 50개를 가중 RRF(k=60)로 합친다(`weightedRrf`, Python `weighted_rrf`와 같은 동점 처리). 가중치·instruction은 `worker-data`가 `rag_config`에서 `src/search_config.json`으로 내보내며, BM25 가중치가 0이 아니면 배포를 멈춘다.
 
 **자격 증명** (`.env`, Git 제외)
 - `CLOUDFLARE_ACCOUNT_ID`
@@ -190,8 +190,8 @@ done
 
 **순서**
 1. `parity`: 로컬 벡터와 Workers AI 벡터가 같은지(코사인 0.99 이상) 확인한다. 다르면 `upload --reembed`로 올린다.
-2. `upload`: 반영은 비동기라 1~2분 뒤 `query`로 확인한다.
+2. `upload`(bge)와 `upload --model qwen`(로컬 qwen 벡터 앞 512차원. Workers AI 질문 벡터와 코사인 1.0 확인함): 반영은 비동기라 1~2분 뒤 `query`로 확인한다.
 3. `deploy`
-4. 서지 정보를 고치면 `upload`만 다시 한다.
+4. 서지 정보를 고치면 `upload`와 `upload --model qwen`을 다시 한다.
 
 **Worker 테스트:** `cloudflare_sync.py worker-data` 후 `node --test cloudflare/worker/test/`

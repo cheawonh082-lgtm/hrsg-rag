@@ -23,4 +23,5 @@ hrsg_eval_set_v1/
 # Cloudflare Worker — 생성물(scripts/cloudflare_sync.py worker-data)과 wrangler 캐시
 cloudflare/worker/src/glossary.json
 cloudflare/worker/src/stats.json
+cloudflare/worker/src/search_config.json
 cloudflare/worker/.wrangler/
