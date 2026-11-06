@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440" font-family="Arial, Helvetica, sans-serif">
+<rect width="1000" height="440" fill="#FFFFFF"/>
+<text x="56" y="28" font-size="18" font-weight="700" fill="#111">Retrieval by language — eval set v1, k = 8, split = dev</text>
+<text x="56" y="50" font-size="12" fill="#555">Scored with eval_retrieval.mjs definitions; answerable questions only; y axis fixed 0–1</text>
+<text x="56" y="84" font-size="14" font-weight="700" fill="#111">English (en)  n = 32 (page@8 n = 25)</text>
+<line x1="56" x2="500" y1="370" y2="370" stroke="#9CA3AF"/><text x="50" y="374" font-size="11" fill="#555" text-anchor="end">0.0</text>
+<line x1="56" x2="500" y1="314.4" y2="314.4" stroke="#E5E7EB"/><text x="50" y="318.4" font-size="11" fill="#555" text-anchor="end">0.2</text>
+<line x1="56" x2="500" y1="258.79999999999995" y2="258.79999999999995" stroke="#E5E7EB"/><text x="50" y="262.79999999999995" font-size="11" fill="#555" text-anchor="end">0.4</text>
+<line x1="56" x2="500" y1="203.2" y2="203.2" stroke="#E5E7EB"/><text x="50" y="207.2" font-size="11" fill="#555" text-anchor="end">0.6</text>
+<line x1="56" x2="500" y1="147.6" y2="147.6" stroke="#E5E7EB"/><text x="50" y="151.6" font-size="11" fill="#555" text-anchor="end">0.8</text>
+<line x1="56" x2="500" y1="92" y2="92" stroke="#E5E7EB"/><text x="50" y="96" font-size="11" fill="#555" text-anchor="end">1.0</text>
+<rect x="69.5" y="125.3" width="26.0" height="244.7" fill="#9AA0A6"/><text x="82.5" y="121.3" font-size="9" fill="#333" text-anchor="middle">0.88</text>
+<rect x="97.5" y="102.1" width="26.0" height="267.9" fill="#2563EB"/><text x="110.5" y="98.1" font-size="9" fill="#333" text-anchor="middle">0.96</text>
+<rect x="125.5" y="99.2" width="26.0" height="270.8" fill="#F59E0B"/><text x="138.5" y="95.2" font-size="9" fill="#333" text-anchor="middle">0.97</text>
+<text x="111.5" y="388" font-size="12" fill="#111" text-anchor="middle">recall@8</text>
+<rect x="180.5" y="118.1" width="26.0" height="251.9" fill="#9AA0A6"/><text x="193.5" y="114.1" font-size="9" fill="#333" text-anchor="middle">0.91</text>
+<rect x="208.5" y="92.0" width="26.0" height="278.0" fill="#2563EB"/><text x="221.5" y="88.0" font-size="9" fill="#333" text-anchor="middle">1.00</text>
+<rect x="236.5" y="92.0" width="26.0" height="278.0" fill="#F59E0B"/><text x="249.5" y="88.0" font-size="9" fill="#333" text-anchor="middle">1.00</text>
+<text x="222.5" y="388" font-size="12" fill="#111" text-anchor="middle">hit@8</text>
+<rect x="291.5" y="141.6" width="26.0" height="228.4" fill="#9AA0A6"/><text x="304.5" y="137.6" font-size="9" fill="#333" text-anchor="middle">0.82</text>
+<rect x="319.5" y="126.6" width="26.0" height="243.4" fill="#2563EB"/><text x="332.5" y="122.6" font-size="9" fill="#333" text-anchor="middle">0.88</text>
+<rect x="347.5" y="129.7" width="26.0" height="240.3" fill="#F59E0B"/><text x="360.5" y="125.7" font-size="9" fill="#333" text-anchor="middle">0.86</text>
+<text x="333.5" y="388" font-size="12" fill="#111" text-anchor="middle">MRR</text>
+<rect x="402.5" y="181.0" width="26.0" height="189.0" fill="#9AA0A6"/><text x="415.5" y="177.0" font-size="9" fill="#333" text-anchor="middle">0.68</text>
+<rect x="430.5" y="114.2" width="26.0" height="255.8" fill="#2563EB"/><text x="443.5" y="110.2" font-size="9" fill="#333" text-anchor="middle">0.92</text>
+<rect x="458.5" y="114.2" width="26.0" height="255.8" fill="#F59E0B"/><text x="471.5" y="110.2" font-size="9" fill="#333" text-anchor="middle">0.92</text>
+<text x="444.5" y="388" font-size="12" fill="#111" text-anchor="middle">page@8</text>
+<text x="540" y="84" font-size="14" font-weight="700" fill="#111">Korean (ko)  n = 32 (page@8 n = 25)</text>
+<line x1="540" x2="984" y1="370" y2="370" stroke="#9CA3AF"/><text x="534" y="374" font-size="11" fill="#555" text-anchor="end">0.0</text>
+<line x1="540" x2="984" y1="314.4" y2="314.4" stroke="#E5E7EB"/><text x="534" y="318.4" font-size="11" fill="#555" text-anchor="end">0.2</text>
+<line x1="540" x2="984" y1="258.79999999999995" y2="258.79999999999995" stroke="#E5E7EB"/><text x="534" y="262.79999999999995" font-size="11" fill="#555" text-anchor="end">0.4</text>
+<line x1="540" x2="984" y1="203.2" y2="203.2" stroke="#E5E7EB"/><text x="534" y="207.2" font-size="11" fill="#555" text-anchor="end">0.6</text>
+<line x1="540" x2="984" y1="147.6" y2="147.6" stroke="#E5E7EB"/><text x="534" y="151.6" font-size="11" fill="#555" text-anchor="end">0.8</text>
+<line x1="540" x2="984" y1="92" y2="92" stroke="#E5E7EB"/><text x="534" y="96" font-size="11" fill="#555" text-anchor="end">1.0</text>
+<rect x="553.5" y="202.0" width="26.0" height="168.0" fill="#9AA0A6"/><text x="566.5" y="198.0" font-size="9" fill="#333" text-anchor="middle">0.60</text>
+<rect x="581.5" y="118.8" width="26.0" height="251.2" fill="#2563EB"/><text x="594.5" y="114.8" font-size="9" fill="#333" text-anchor="middle">0.90</text>
+<rect x="609.5" y="106.2" width="26.0" height="263.8" fill="#F59E0B"/><text x="622.5" y="102.2" font-size="9" fill="#333" text-anchor="middle">0.95</text>
+<text x="595.5" y="388" font-size="12" fill="#111" text-anchor="middle">recall@8</text>
+<rect x="664.5" y="178.9" width="26.0" height="191.1" fill="#9AA0A6"/><text x="677.5" y="174.9" font-size="9" fill="#333" text-anchor="middle">0.69</text>
+<rect x="692.5" y="100.7" width="26.0" height="269.3" fill="#2563EB"/><text x="705.5" y="96.7" font-size="9" fill="#333" text-anchor="middle">0.97</text>
+<rect x="720.5" y="92.0" width="26.0" height="278.0" fill="#F59E0B"/><text x="733.5" y="88.0" font-size="9" fill="#333" text-anchor="middle">1.00</text>
+<text x="706.5" y="388" font-size="12" fill="#111" text-anchor="middle">hit@8</text>
+<rect x="775.5" y="232.2" width="26.0" height="137.8" fill="#9AA0A6"/><text x="788.5" y="228.2" font-size="9" fill="#333" text-anchor="middle">0.50</text>
+<rect x="803.5" y="136.9" width="26.0" height="233.1" fill="#2563EB"/><text x="816.5" y="132.9" font-size="9" fill="#333" text-anchor="middle">0.84</text>
+<rect x="831.5" y="130.0" width="26.0" height="240.0" fill="#F59E0B"/><text x="844.5" y="126.0" font-size="9" fill="#333" text-anchor="middle">0.86</text>
+<text x="817.5" y="388" font-size="12" fill="#111" text-anchor="middle">MRR</text>
+<rect x="886.5" y="247.7" width="26.0" height="122.3" fill="#9AA0A6"/><text x="899.5" y="243.7" font-size="9" fill="#333" text-anchor="middle">0.44</text>
+<rect x="914.5" y="158.7" width="26.0" height="211.3" fill="#2563EB"/><text x="927.5" y="154.7" font-size="9" fill="#333" text-anchor="middle">0.76</text>
+<rect x="942.5" y="158.7" width="26.0" height="211.3" fill="#F59E0B"/><text x="955.5" y="154.7" font-size="9" fill="#333" text-anchor="middle">0.76</text>
+<text x="928.5" y="388" font-size="12" fill="#111" text-anchor="middle">page@8</text>
+<rect x="56" y="406" width="12" height="12" fill="#9AA0A6"/><text x="74" y="416" font-size="12" fill="#111">BM25</text>
+<rect x="216" y="406" width="12" height="12" fill="#2563EB"/><text x="234" y="416" font-size="12" fill="#111">m5-current</text>
+<rect x="376" y="406" width="12" height="12" fill="#F59E0B"/><text x="394" y="416" font-size="12" fill="#111">m5-current-q512</text>
+</svg>

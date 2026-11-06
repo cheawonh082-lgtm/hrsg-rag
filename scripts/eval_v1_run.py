@@ -77,7 +77,11 @@ def main(argv: list[str] | None = None) -> None:
     ap.add_argument("--root", default="hrsg_eval_set_v1", help="평가셋 폴더 (App/ 가 있는 곳)")
     ap.add_argument("--methods", default="1,2,3,4")
     ap.add_argument("--batch", type=int, default=64, help="캐시 저장 단위(passage 수)")
+    ap.add_argument("--label", help="결과 파일 이름(방식을 하나만 줄 때). 기본은 LABELS — 설정을 바꿔 다시 돌릴 때 이전 결과를 덮지 않게")
+    ap.add_argument("--qwen-dims", type=int, help="Qwen 벡터 앞 N차원만 쓰고 다시 정규화 (MRL, 배포 Worker는 512)")
     args = ap.parse_args(argv)
+    if args.label and "," in args.methods:
+        ap.error("--label은 --methods에 방식을 하나만 줄 때 쓴다")
     root = Path(args.root).resolve()
     s = RagSettings.from_env()
 
@@ -96,14 +100,17 @@ def main(argv: list[str] | None = None) -> None:
                                                               device=s.device), s.qwen_model, texts, s, cache_dir, args.batch),
     }
     embedders = {"bge": bge, "qwen": qwen}
+    mrl = (lambda v: _truncate(v, args.qwen_dims)) if args.qwen_dims else (lambda v: v)  # noqa: E731
+    if args.qwen_dims:
+        vectors["qwen"] = mrl(vectors["qwen"])
     bm25 = BM25Searcher([Paragraph(pid, ref_of[pid], t) for pid, t in zip(ids, texts)], tokenizer=tokenize)
 
     runs: dict[str, list[dict]] = {m: [] for m in args.methods.split(",")}
     for q in questions:
         lang = detect_lang(q["question"], s.ko_ratio)
         query = expand_query(q["question"]) if s.expand_ko and lang == "ko" else q["question"]
-        hits = {r: [ids[i] for i in np.argsort(-(vectors[r] @ embedders[r].embed_queries([query])[0]), kind="stable")[:s.top_k]]
-                for r in ("bge", "qwen")}
+        qvec = {"bge": embedders["bge"].embed_queries([query])[0], "qwen": mrl(embedders["qwen"].embed_queries([query]))[0]}
+        hits = {r: [ids[i] for i in np.argsort(-(vectors[r] @ qvec[r]), kind="stable")[:s.top_k]] for r in ("bge", "qwen")}
         hits["bm25"] = [h.paragraph_id for h in bm25.search(query, s.top_k)]
         for m in runs:
             spec = METHODS[m]
@@ -118,10 +125,18 @@ def main(argv: list[str] | None = None) -> None:
     out_dir = root / ".cache/eval"
     out_dir.mkdir(parents=True, exist_ok=True)
     for m, rows in runs.items():
-        path = out_dir / f"{LABELS[m]}.json"
-        path.write_text(json.dumps({"k": K, "method": m, "label": METHODS[m]["label"], "questions": rows},
+        label = args.label or LABELS[m]
+        path = out_dir / f"{label}.json"
+        setup = {"weights_ko": s.weights_ko, "weights_en": s.weights_en, "expand_ko": s.expand_ko, "qwen_dims": args.qwen_dims}
+        path.write_text(json.dumps({"k": K, "method": m, "label": METHODS[m]["label"], "settings": setup, "questions": rows},
                                    ensure_ascii=False, indent=1), encoding="utf-8")
-        print(f"{LABELS[m]} → {path}")
+        print(f"{label} → {path}")
+
+
+def _truncate(v: np.ndarray, dims: int) -> np.ndarray:
+    """Qwen3-Embedding MRL — 앞 dims 차원만 남기고 L2 정규화 (cloudflare_sync.py mrl, Worker truncateNormalize와 같다)"""
+    v = np.asarray(v, dtype=np.float32)[..., :dims]
+    return v / np.linalg.norm(v, axis=-1, keepdims=True)
 
 
 if __name__ == "__main__":
