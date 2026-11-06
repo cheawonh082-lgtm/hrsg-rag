@@ -194,4 +194,4 @@ done
 3. `deploy`
 4. 서지 정보를 고치면 `upload`와 `upload --model qwen`을 다시 한다.
 
-**Worker 테스트:** `cloudflare_sync.py worker-data` 후 `node --test cloudflare/worker/test/`
+**Worker 테스트:** `cloudflare_sync.py worker-data` 후 `node --test cloudflare/worker/test/query.test.mjs`
