@@ -1,0 +1,1118 @@
+{
+  "document": {
+    "doc_id": "R041",
+    "title": "Energetic and Exergetic Analysis of Combined Cycle Power Plant: Part-1 Operation and Performance",
+    "authors": [
+      "Abdulrahman Almutairi",
+      "Pericles Pilidis",
+      "Nawaf Al-Mutawa"
+    ],
+    "year": 2015,
+    "venue": "Energies 2015, 8, 14118–14135 (MDPI)",
+    "doi": "10.3390/en81212418",
+    "url": "https://doi.org/10.3390/en81212418",
+    "license": "© 2015 by the authors; licensee MDPI, Basel, Switzerland. Open access article distributed under the Creative Commons by Attribution (CC-BY) license (http://creativecommons.org/licenses/by/4.0/) (CC BY 4.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R041-001",
+      "doc_id": "R041",
+      "section": "Abstract",
+      "page_start": 14118,
+      "page_end": 14118,
+      "text": "Energetic and exergetic analyses are conducted using operating data for Sabiya, a combined cycle power plant (CCPP) with an advanced triple pressure reheat heat recovery steam generator (HRSG). Furthermore, a sensitivity analysis is carried out on the HRSG using a recent approach to differentiate between the sources of irreversibility. The proposed system was modelled using the IPSEpro software and further validated by the manufacturer’s data. The performance of the Sabiya CCPP was examined for different climatic conditions, pressure ratios, pinch point temperatures, high-pressure steam, and condenser pressure values. The results confirmed that 60.9% of the total exergy destruction occurs in the combustion chamber, which constitutes the main source of irreversibilities within a system. The exergy destruction was significantly affected by both the pressure ratio and the high-pressure steam, where the relation between them was seen to be inversely proportional. The high-pressure stage contributes about 50% of the exergy destruction within the HRSG compared to other stages and the reheat system, due to the high temperature difference between the streams and the large number of components, which leads to high energy loss to the surroundings. Numerous possibilities for improving the CCPP’s performance are introduced, based on the obtained results. Keywords: combined cycle; heat recovery steam generator (HRSG); reheat; exergy; destruction",
+      "terms": [
+        "Sabiya",
+        "combined cycle power plant (CCPP)",
+        "triple pressure reheat heat recovery steam generator (HRSG)",
+        "IPSEpro",
+        "exergy destruction",
+        "combustion chamber",
+        "pinch point temperatures",
+        "condenser pressure"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-002",
+      "doc_id": "R041",
+      "section": "1. Introduction",
+      "page_start": 14118,
+      "page_end": 14118,
+      "text": "Power systems diagnosis is conducted, using thermal analysis tools, to determine the locations, magnitudes, and types of waste and losses within these systems. Identifying the sizes and locations of the deficiencies will assist in making modifications to improve the system. The primary analysis and assessment tools used in optimising the thermal energy systems are energy and exergy analyses [1,2]. Thermal energy systems have long been analysed and evaluated using energy tools; however, in the last two decades, exergy analysis has been increasingly used to evaluate and optimise the thermal system designs, for more efficient usage of energy resources. Currently, many researchers perform exergy and energy analysis simultaneously, to increase the value of the research, and provide a complete illustration of energy system characteristics.",
+      "terms": [
+        "Power systems diagnosis",
+        "thermal analysis tools",
+        "energy and exergy analyses",
+        "exergy analysis",
+        "thermal energy systems"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-003",
+      "doc_id": "R041",
+      "section": "1. Introduction",
+      "page_start": 14118,
+      "page_end": 14119,
+      "text": "Energy analysis, based on the first law of thermodynamics, cannot provide sufficient information about the degradation of energy during a process, or the quality of the various forms of energy. These limitations have been overcome by exergetic analysis, which is based on both the first and second law of thermodynamics. Exergy analysis allows the identification of irreversibility sources, or the inefficiencies in a thermal power system, to be revealed. Exergy within a thermal process is constantly consumed due to irreversibilities [2]. As energy analysis is unable to determine the irreversibilities within a thermal system, this successfully demonstrates the importance of exergy analysis, which allows for, and increases, the possibility of enhancing thermal systems, by using different modifications, to reduce the irreversibilities resulted from entropy generation [3,4].",
+      "terms": [
+        "first law of thermodynamics",
+        "exergetic analysis",
+        "second law of thermodynamics",
+        "irreversibility sources",
+        "irreversibilities",
+        "entropy generation"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-004",
+      "doc_id": "R041",
+      "section": "1. Introduction",
+      "page_start": 14119,
+      "page_end": 14119,
+      "text": "In the current work, a CCPP, with triple pressure HRSG system, was investigated, due to their high energy conversion efficiency, which is necessary in order to delay the depletion of non-renewable resources, by reducing fossil fuel consumption, through utilising and recovering part of the waste energy from a gas turbine engine. From an environmental perspective, it reduces greenhouse gas emissions, and, thus, the changes in the climate decrease significantly. The environment is significantly affected by inefficiencies within the power system.",
+      "terms": [
+        "CCPP",
+        "triple pressure HRSG system",
+        "energy conversion efficiency",
+        "gas turbine engine",
+        "greenhouse gas emissions",
+        "waste energy"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-005",
+      "doc_id": "R041",
+      "section": "1. Introduction",
+      "page_start": 14119,
+      "page_end": 14119,
+      "text": "Many researchers, such as Kotas [5], Facchini et al. [6], Moran et al. [7], Rahim [8,9], Ersayin and Ozgener [10], Ameri et al. [11], Deng-Chern and Chuang [12] and Petrakopoulou et al. [13] have carried out exergy analyses on combined cycles power plants. Although numerous studies are available in the literature for CCPP, nevertheless none have explored a triple pressure reheat HRSG using a real set of data based on exergy analysis.",
+      "terms": [
+        "exergy analyses",
+        "combined cycles power plants",
+        "CCPP",
+        "triple pressure reheat HRSG",
+        "Kotas"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-006",
+      "doc_id": "R041",
+      "section": "1. Introduction",
+      "page_start": 14119,
+      "page_end": 14119,
+      "text": "The aims of the present study are to analyse a very advanced CCPP, with a triple pressure reheat HRSG, using actual operating data from an energetic and exergetic perspective, which has not previously been considered in literature. Furthermore, the study aims to investigate an HRSG’s performance, using recent methods, in order to distinguish between the sources of irreversibilities. Finally, in the context of the results, the study will introduce certain suggestions in order to improve plant performance.",
+      "terms": [
+        "CCPP",
+        "triple pressure reheat HRSG",
+        "actual operating data",
+        "energetic and exergetic perspective",
+        "irreversibilities",
+        "plant performance"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-007",
+      "doc_id": "R041",
+      "section": "2. Sabiya Power Plant Specification",
+      "page_start": 14119,
+      "page_end": 14119,
+      "text": "The Sabiya CCPP consists of three blocks. Each containing two GE gas turbine frame 9FAs, with two triple pressure reheat HRSGs, and one steam turbine. A typical block is illustrated in Figure 1. The plant’s power output and efficiency is more than 2000 MW at local conditions, and 54.5%, respectively. The exhaust gases’ stream passes through 14 heat exchangers in each HRSG before it reaches the stack. The pressure and a temperature at the exit of stack are 101.325 kPa and 107 °C respectively. In the steam cycles there are three levels of steam pressures on each evaporator. Which are at 131.8, 28.78, and 5.208 bars. The steam inlet temperatures for the high pressure (HP) and intermediate pressure (IP) steam turbine are equal to 565 °C. They are identical and this is a consequence of the reheat effect. As seen in Figure 1, there are two high pressure superheaters (HP SH) as well as two reheaters (RH-1&2). Between both the two superheaters and reheaters there are two attemperators, which help to adjust the steam temperature. The intermediate pressure steam stream exits from the superheater (IP SH) and mixes with the reheat stream, before entering reheater-1. The low pressure superheater (LP SH) before entering the (LP) low pressure steam turbine mixes with the exit stream coming from the intermediate steam turbine. The low pressure stream expands to 0.1 bar, before entering the deaerating condenser, which is the more preferable equipment in the combined cycle power plant, rather than the separating one, due to its smaller size, which saves equipment space and is easy to deaerate makeup water. The steam condensate is then directed to the condensate pump, to convey the feed water to the low pressure economizer (LP EC). In the low pressure evaporator (LP EV), the flow is divided into three streams, based on the flow pressure, to continue the cycle. The operational data at different operating conditions was collected from the Ministry of Electricity and Water (MEW) and the plant manufacturer. This data includes the state of all streams and the power output at different ambient conditions and loads.",
+      "terms": [
+        "Sabiya CCPP",
+        "GE gas turbine frame 9FAs",
+        "triple pressure reheat HRSGs",
+        "high pressure superheaters (HP SH)",
+        "reheaters (RH-1&2)",
+        "attemperators",
+        "deaerating condenser",
+        "low pressure economizer (LP EC)"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-008",
+      "doc_id": "R041",
+      "section": "2. Sabiya Power Plant Specification",
+      "page_start": 14120,
+      "page_end": 14120,
+      "text": "Figure 1. Schematic diagram for a Single Block of Sabiya Combined Cycle Power Plant [14].",
+      "terms": [
+        "Schematic diagram",
+        "Sabiya Combined Cycle Power Plant"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-009",
+      "doc_id": "R041",
+      "section": "3. Performance Analysis",
+      "page_start": 14120,
+      "page_end": 14120,
+      "text": "The present study introduces a comparative energy and exergy analysis for Sabiya power plant. The analysis investigated the effects of different ambient temperatures, pressure ratios, pinch point temperatures, and condenser pressures. The following assumptions were made in modelling the gas turbine: • The gas turbine model operated at a steady state. • An ideal gas mixture concept is applied in both air and combustion products. • Gas leakage is negligible. • The kinetic and potential exergies of fluid streams are negligible. • The combustion reaction is complete and N2 is inert. • Heat transfer from the combustor is 2% of the natural gas lower heating value (LHV) • Natural gas is supplied to the system as fuel (the composition is given in Table 1).",
+      "terms": [
+        "Sabiya power plant",
+        "pinch point temperatures",
+        "gas turbine",
+        "ideal gas mixture",
+        "kinetic and potential exergies",
+        "lower heating value (LHV)",
+        "Natural gas",
+        "N2 is inert"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-010",
+      "doc_id": "R041",
+      "section": "3. Performance Analysis",
+      "page_start": 14120,
+      "page_end": 14120,
+      "text": "Table 1. Molar fraction of the natural gas components. Methane (CH4): Molar Fraction (%)=93.34. Ethane (C2H6): Molar Fraction (%)=0.211. Propane (C3H8): Molar Fraction (%)=0.029. Nitrogen (N2): Molar Fraction (%)=6.42.",
+      "terms": [
+        "natural gas",
+        "Methane (CH4)",
+        "Ethane (C2H6)",
+        "Propane (C3H8)",
+        "Nitrogen (N2)",
+        "Molar Fraction"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-011",
+      "doc_id": "R041",
+      "section": "3. Performance Analysis",
+      "page_start": 14121,
+      "page_end": 14121,
+      "text": "The fuel is provided to the combustor at high pressure with different mass flow rates, depending on the load variations and inlet temperature to the annular combustor. The air stream mass flow rate also varies, in the cold section, where the air composition is given in Table 2. The air-to-fuel ratio (AFR) should always be higher than the stoichiometric air-to-fuel ratio, which means more air than theoretical air is used, and the mixture is called weak or lean. The stoichiometric air-to-fuel ratio represents the minimum amount of air required to achieve a complete burning of a given mass of fuel [1]. In reality, it is difficult to have a stoichiometric combustion system due to time limitations, air-fuel mixing and the presence of inert molecules, which obstruct the reaction between the active molecules. For these reasons, most combustion systems supply excess air in order to avoid the formation of smoke and carbon monoxide, and to achieve good, clean combustion.",
+      "terms": [
+        "combustor",
+        "annular combustor",
+        "air composition",
+        "air-to-fuel ratio (AFR)",
+        "stoichiometric air-to-fuel ratio",
+        "excess air",
+        "carbon monoxide",
+        "inert molecules"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-012",
+      "doc_id": "R041",
+      "section": "3. Performance Analysis",
+      "page_start": 14121,
+      "page_end": 14121,
+      "text": "Table 2. Molar fraction of air. Nitrogen (N2): Molar Fraction (%)=77.48. Oxygen (O2): Molar Fraction (%)=20.59. Water Vapour (H2O): Molar Fraction (%)=1.9. Carbon dioxide (CO2): Molar Fraction (%)=0.03.",
+      "terms": [
+        "Molar fraction of air",
+        "Nitrogen (N2)",
+        "Oxygen (O2)",
+        "Water Vapour (H2O)",
+        "Carbon dioxide (CO2)"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-013",
+      "doc_id": "R041",
+      "section": "3.1 Energy Analysis",
+      "page_start": 14121,
+      "page_end": 14121,
+      "text": "The energy analysis is based on the first law of thermodynamics, which states that the exchange of energy for a system is the result of the applied work and heat transfer through that region. The first law of thermodynamics is based on two main concepts: (1) the energy cannot be destroyed; and (2) the energy can be transferred to other forms. In a thermal power plant, the energy is transferred from the chemical energy of the fuel to mechanical and/or electrical energies. The first law of thermodynamics in steady state form can be expressed as: Q̇ − Ẇ = ΔH + ΔKe + ΔPe (1) (net rate of heat transfer minus work = rate of change in enthalpy + kinetic energy + potential energy) The left-hand side of Equation (1) represents the net energy transfer by either heat and/or work, whereas the right-hand side shows the rate of change in enthalpy, kinetic and potential energies, respectively.",
+      "terms": [
+        "first law of thermodynamics",
+        "steady state",
+        "Q̇",
+        "Ẇ",
+        "ΔH",
+        "ΔKe",
+        "ΔPe",
+        "net energy transfer"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-014",
+      "doc_id": "R041",
+      "section": "3.1 Energy Analysis",
+      "page_start": 14121,
+      "page_end": 14121,
+      "text": "The combustion chamber performance is affected significantly by the plant operating conditions, which are based on the AFR variations. Molar analyses were performed in order to calculate the stoichiometric AFR, as elaborated by Bejan and Moran [1] and Moran et al. [7]. The molar analyses and energy balances for the proposed system components are derived, as illustrated in Appendix A.",
+      "terms": [
+        "combustion chamber",
+        "AFR",
+        "stoichiometric AFR",
+        "Molar analyses",
+        "energy balances",
+        "Appendix A"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-015",
+      "doc_id": "R041",
+      "section": "3.2 Exergy Analysis",
+      "page_start": 14121,
+      "page_end": 14122,
+      "text": "Exergy is the maximum amount of useful work that may be produced by a system in a reversible operation. Exergy consists of four components: physical, kinetic, potential and chemical. The general exergy balance of a system can be written as: Ė_x = Ė_ph + Ė_ke + Ė_pe + Ė_ch (2) (total exergy rate = physical + kinetic + potential + chemical exergy rates) The kinetic Ė_ke and potential Ė_pe exergies are related to ordered movement and to the elevation of particles, respectively. These forms of exergy, which do not function as substance or mixture, depend only on the mass and are fully convertible to work. There are no destruction or entropy generation terms in both types, and their equations are identical to potential and kinetic energies. Ė_ke = (1/2) ṁ V^2 (3) (kinetic exergy rate = ½ × mass flow rate × velocity squared) Ė_pe = ṁ g z (4) (potential exergy rate = mass flow rate × gravity × elevation) The kinetic exergy is curial when exhaust gases directly interact with the environment at high velocity, where it is considered an exergy loss. Otherwise, in the present study, the kinetic and potential exergies are omitted due to insignificant effects in other locations.",
+      "terms": [
+        "Exergy",
+        "exergy balance",
+        "Ė_x",
+        "Ė_ph",
+        "Ė_ke",
+        "Ė_pe",
+        "Ė_ch",
+        "exergy loss"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-016",
+      "doc_id": "R041",
+      "section": "3.2 Exergy Analysis",
+      "page_start": 14122,
+      "page_end": 14122,
+      "text": "Physical exergy is the maximum useful work that can be extracted from a unit mass of substance passing through a specified state (T_s, p_s) to the environmental or reference state (T_o, p_o) in purely physical processes. The physical exergy consists of two parts, mechanical and thermal exergy, and it is given by the expression: Ė_ph = ṁ[(h_s − h_o) − T_o (s_s − s_o)] (5) (physical exergy rate from enthalpy and entropy differences between the specified state and the reference state) Once the specified temperature is equal to the reference temperature T_s = T_o with the ideal gas relation, the Equation (5) becomes: Ė_ph = ṁ_e R T_o ln(P_e/P_o) (6) (physical exergy rate of an ideal gas at T_s = T_o, from the pressure ratio)",
+      "terms": [
+        "Physical exergy",
+        "reference state",
+        "mechanical and thermal exergy",
+        "Ė_ph",
+        "T_o",
+        "h_s",
+        "s_s",
+        "ideal gas relation"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-017",
+      "doc_id": "R041",
+      "section": "3.2 Exergy Analysis",
+      "page_start": 14122,
+      "page_end": 14122,
+      "text": "Chemical exergy represents the maximum useful energy that can be extracted while the flow moves from an environmental state to a dead state due to differences in concentration and molecular structure. In the environmental state, the system is mechanically and thermally at equilibrium state, but not chemically. The chemical exergy of a gas mixture can be calculated by: Ė_ch = ṅ[∑ y_k e‾_k^ch + R‾ T_o ∑ y_k ln y_k] (7) (chemical exergy rate of a gas mixture from component molar chemical exergies and the mixing term) where e‾_k^ch k is the molar chemical exergy for component k in the mixture, which can be selected from the standard chemical exergies table, as presented in [9]. The chemical exergy for fuel stream is given by: Ė_ch = ṅ LHV‾ (8) (chemical exergy rate of fuel = molar flow rate × molar lower heating value)",
+      "terms": [
+        "Chemical exergy",
+        "dead state",
+        "gas mixture",
+        "Ė_ch",
+        "e‾_k^ch",
+        "molar chemical exergy",
+        "standard chemical exergies table",
+        "LHV‾"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-018",
+      "doc_id": "R041",
+      "section": "3.2 Exergy Analysis",
+      "page_start": 14122,
+      "page_end": 14122,
+      "text": "In all system components, the rate of exergy outlet is less than the rate at inlet due to exergy destruction and exergy loss. These quantities in steady state can be related by the following: Ė_i = Ė_e + Ė_d + Ė_L (9) (exergy rate at inlet = exergy rate at outlet + exergy destruction rate + exergy loss rate) where Ė_d and Ė_L represent rates of exergy destruction and exergy loss, respectively. The exergy destruction during a process is proportional to entropy generation due to irreversibilities within each component in the process. There are many sources that cause irreversibilities, such as chemical reaction, mixing, friction, heat transfer driven by finite temperature difference, and non-quasi-equilibrium compression or expansion. The system inefficiencies can be measured from exergy destruction and exergy loss, as illustrated in Table 3, for all components.",
+      "terms": [
+        "exergy destruction",
+        "exergy loss",
+        "Ė_i",
+        "Ė_d",
+        "Ė_L",
+        "entropy generation",
+        "irreversibilities",
+        "non-quasi-equilibrium compression"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-019",
+      "doc_id": "R041",
+      "section": "3.2 Exergy Analysis",
+      "page_start": 14122,
+      "page_end": 14122,
+      "text": "Table 3. Exergy destruction rate and exergetic efficiency for different component at steady state [1]. Compressor & Pump: Exergy Destruction Ė_d=Ė_e − Ė_i; Exergetic Efficiency η_ex=(Ė_e − Ė_i)/Ẇ_i. Gas & Steam Turbine: Exergy Destruction Ė_d=Ė_i − Ė_e; Exergetic Efficiency η_ex=Ẇ_e/(Ė_i − Ė_e). Combustion Chamber: Exergy Destruction Ė_d=Ė_i1 + Ė_i2 − Ė_e; Exergetic Efficiency η_ex=Ė_e/(Ė_i1 + Ė_i2). Heat Exchanger: Exergy Destruction Ė_d=Ė_hi + Ė_ce − Ė_he − Ė_ci; Exergetic Efficiency η_ex=(Ė_he + Ė_ci)/(Ė_hi + Ė_ce). Cycle components: Exergy Destruction Ė_d=∑ Ė_d,k; Exergetic Efficiency η_ex=1 − (Ė_d + Ė_L)/Ė_f.",
+      "terms": [
+        "Exergy Destruction",
+        "Exergetic Efficiency",
+        "η_ex",
+        "Compressor & Pump",
+        "Gas & Steam Turbine",
+        "Combustion Chamber",
+        "Heat Exchanger",
+        "Cycle components"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-020",
+      "doc_id": "R041",
+      "section": "3.2 Exergy Analysis",
+      "page_start": 14123,
+      "page_end": 14123,
+      "text": "The exergetic efficiency measures the performance of the thermal plant system from a thermodynamic prospective. The type of product and fuel are necessary to be defined because exergy analysis depends on the quality of energy. In the thermal plant system with single generation, thermal and exergetic efficiency are close to each other, whereas, in a multi-generation thermal plant system, the difference between them is obvious. The exergetic efficiency indicates how much can be extracted from the maximum available work, whereas thermal efficiency shows how much work output can be extracted from a specified input fuel. However, the exergetic efficiency is defined as the ratio of total exergy output to the total exergy input or the ratio of produced exergy to fuel exergy supplied to the system.",
+      "terms": [
+        "exergetic efficiency",
+        "thermal efficiency",
+        "exergy analysis",
+        "multi-generation thermal plant system",
+        "fuel exergy",
+        "total exergy output"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-021",
+      "doc_id": "R041",
+      "section": "3.3 Waste Exergy in Heat Recovery Steam Generator (HRSG)",
+      "page_start": 14123,
+      "page_end": 14123,
+      "text": "The HRSG consists of an economizer, an evaporator with a drum, and a superheater. In the economizer and the superheater, the phase does not change, whereas, in an evaporator, the latent heat dominates, by changing the phase of the water from liquid into the gaseous form (steam). Exergy waste in thermal power systems is divided into two parts: exergy destruction, which is directly related to irreversibility within a system, and exergy loss, which is associated with the rejection of energy to the environment, at the end of the process. There are three forms of exergy waste across the heat exchanger, listed as follows: • Exergy destroyed due to temperature difference between fluids. • Exergy destroyed due to fluid friction as a result of movement along the pipes; and • Energy release to the heat exchanger surroundings.",
+      "terms": [
+        "HRSG",
+        "economizer",
+        "evaporator",
+        "drum",
+        "superheater",
+        "latent heat",
+        "exergy destruction",
+        "exergy loss"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-022",
+      "doc_id": "R041",
+      "section": "3.3 Waste Exergy in Heat Recovery Steam Generator (HRSG)",
+      "page_start": 14123,
+      "page_end": 14123,
+      "text": "The waste exergy value of HRSG unit can be obtained based on the source of irreversibilities, using a new approach proposed by Paniagua et al. [15]. The waste exergy results from exergy destruction and exergy release to the environment, and can be calculated by: Ė_w = −Q̇_sur + T_o Ṡ_ΔT + T_o Ṡ_ΔP (10) (wasted exergy = heat released to surroundings term + exergy destroyed by temperature difference + exergy destroyed by pressure drop) where Ė_w and Ṡ are the total wasted exergy and entropy generation respectively. Applying exergetic analysis into the HRSG or a heat exchanger is required to evaluate all three terms independently, which are highly affected by the temperature distribution inside each of the components in the HRSG. Thus, this shows some difficulty in calculation, as reported by Zunlong et al. [16].Theoretically, each term in Equation (9) can be developed as follows: Q̇_sur = ∫ dQ̇_surr (1 − T_o/T) (11) (exergy of heat released to the surroundings) Ṡ_ΔT = ∫ dQ̇_exch (1/T_c − 1/T_h) (12) (entropy generation due to heat exchange across the temperature difference between cold and hot streams) Ṡ_ΔP = −ṁ_c ∫_c (v_c dP_c/T_c) − ṁ_h ∫_h (v_h dP_h/T_h) (13) (entropy generation due to pressure drop in the cold and hot streams) where the subscripts c and h represent cold and hot fluid and v is the specific volume.",
+      "terms": [
+        "waste exergy",
+        "Paniagua",
+        "Ė_w",
+        "Q̇_sur",
+        "Ṡ_ΔT",
+        "Ṡ_ΔP",
+        "entropy generation",
+        "specific volume"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-023",
+      "doc_id": "R041",
+      "section": "3.3 Waste Exergy in Heat Recovery Steam Generator (HRSG)",
+      "page_start": 14123,
+      "page_end": 14123,
+      "text": "The proposed method is also known as the “black-box”, which evaluates all sources of irreversibilities, from a thermodynamic perspective, at specified boundary conditions. The first step is to calculate the total wasted exergy, then obtain the temperature distribution in order to solve both the Equations (10) and (11). Finally, from Equation (9), the entropy generation due to pressure drop can be determined. There are a number of ways to solve the integral, using numerical integration. The Gaussian numerical integration was used in the analysis to simplify the calculations with more accurate results. More details about the proposed method and the Gaussian numerical integration are fully discussed in reference [15].",
+      "terms": [
+        "black-box",
+        "irreversibilities",
+        "wasted exergy",
+        "temperature distribution",
+        "entropy generation",
+        "pressure drop",
+        "Gaussian numerical integration"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-024",
+      "doc_id": "R041",
+      "section": "4. Simulation Tools",
+      "page_start": 14124,
+      "page_end": 14124,
+      "text": "The proposed models in the current study have been modelled using a software package called IPSEpro (SimTech GmbH, Graz, Austria). This software is highly flexible for modelling and analysing processes in energy systems and in several other related areas. IPSEpro can perform heat balance calculations and simulates industrial processes. In general, the thermal process can be simulated and examined according to the specified thermodynamic properties. The Sabiya combined cycle power plant was validated with manufacturer’s published data for different operating conditions and the results showed high compatibility with the proposed model.",
+      "terms": [
+        "IPSEpro",
+        "SimTech GmbH",
+        "heat balance calculations",
+        "Sabiya combined cycle power plant",
+        "manufacturer’s published data"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-025",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14124,
+      "page_end": 14124,
+      "text": "In this section, the results of energy and exergy analysis are presented for Sabiya CCPP at different ambient temperatures, pressure ratios, pinch point temperatures, condenser pressure and high pressure steam. A proper diagnosis leads to the identification of the sizes and locations of any deficiencies, which would assist in the modification or improvement of the plant, to reduce the environmental impact and energy costs and to achieve sustainable development, especially when fossil fuels are employed.",
+      "terms": [
+        "energy and exergy analysis",
+        "Sabiya CCPP",
+        "ambient temperatures",
+        "pressure ratios",
+        "pinch point temperatures",
+        "condenser pressure",
+        "high pressure steam"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-026",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14124,
+      "page_end": 14124,
+      "text": "Similarly, analyses were performed at different operation conditions. The environmental state was selected at a temperature of 288 K, and an ambient pressure of 1.01 bar, for all streams. Tables B1 and B2 in Appendix-B present the thermodynamic data, which include the exergy analysis at International Standards Organization (ISO) condition for the bottoming cycle and topping cycle and, respectively. Figure 1 illustrates two cycle streams at different states, with the topping cycle states (air and exhaust gases) indicated with letters, while the bottoming cycle states (steam) are represented by numbers.",
+      "terms": [
+        "environmental state",
+        "288 K",
+        "International Standards Organization (ISO)",
+        "bottoming cycle",
+        "topping cycle",
+        "Tables B1 and B2"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-027",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14124,
+      "page_end": 14124,
+      "text": "Figure 2 shows the effect of ambient temperature variation on the exergetic efficiency, and the net power output per block in Sabiya CCPP. The rising ambient temperature leads to an increased exergy loss, which then leads to adverse effects on the system performance. The effect of ambient temperature is extended to the compressor’s power consumption, which increases with high ambient temperatures, due to the increase in air density. Thus, the net power output will reduce as the ambient temperature rises. The exergetic efficiency and the net power output have the same trend, with ambient temperature variation, as they are inversely proportional with the ambient temperature.",
+      "terms": [
+        "ambient temperature",
+        "exergetic efficiency",
+        "net power output",
+        "exergy loss",
+        "compressor",
+        "air density"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-028",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14124,
+      "page_end": 14124,
+      "text": "The slope of the net power is higher than that of the exergetic efficiency, due to more power consumption in the compressor compared to energy saving as a result of increasing combustion chamber inlet temperature. The exergy destruction rates, for all Sabiya CCPP components at the ISO conditions, is shown in Figure 3. The greatest exergy destruction rate is shown at the combustion chamber, due to chemical reactions, mixing and large temperature differences, as confirmed by Kotas [5] and Ersayin and Ozgener [10].",
+      "terms": [
+        "net power",
+        "exergetic efficiency",
+        "compressor",
+        "exergy destruction rate",
+        "combustion chamber",
+        "chemical reactions",
+        "ISO conditions"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-029",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14125,
+      "page_end": 14125,
+      "text": "The gas turbine represents the second major source of irreversibility, as a result of high exergy input, temperature difference, expansion and friction. It is notable that the compressor has higher exergy destruction when compared to all bottoming cycle components. The HRSG represents the fourth source of irreversibility in the system, which may attribute to the temperature differences among the streams, friction and the heat dissipated to the surroundings. The fifth source of irreversibility occurs in deaerating condenser, due to the high energy loss to the coolant during the condensation process, in order to continue the cycle. The steam turbine constitutes the lowest source of irreversibility in the system. In spite of the fact that it occurs due to the same reasons as the gas turbine—due to the differences in the inlet temperature and the type of working fluid, which highly affect the heat capacity—the effect of reheat in HRSG leads to improve the steam turbine performance.",
+      "terms": [
+        "gas turbine",
+        "irreversibility",
+        "compressor",
+        "exergy destruction",
+        "HRSG",
+        "deaerating condenser",
+        "steam turbine",
+        "reheat"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-030",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14125,
+      "page_end": 14125,
+      "text": "Figure 4 illustrates the exergetic efficiency and gas turbine exhaust gases temperature, against the pressure ratios for Sabiya CCPP. Numerous outcomes can be extracted from this figure. Initially, as the pressure ratio increases, the performance of the gas turbine improves—the reverse occurs for steam turbines—due to the substantial reduction in the exhaust gas temperatures. In spite of that, the whole plant’s exergetic efficiency improves, because the reduction rate in the fuel consumption is higher than the steam turbine net power output. The reason behind that may be attributed to the result of the high inlet temperature in the combustion chamber for the former, and low gas turbine exhaust gases temperature, which significantly affects the steam capacity in the bottoming cycle and the steam turbine inlet temperature for the latter. The exhaust gas temperatures decrease as the pressure ratio increases at a constant power output due to the increase in the expansion ratio. The main constraint for increasing pressure ratio is the gas turbine exhaust temperature, which is confined by the HRSG configuration. The maximum exergetic efficiency is achievable at pressure ratio of 24.8, while, beyond that, the HRSG arrangement should be changed, due to low exhaust gases temperature. The Sabiya CCPP can be improved by using another gas turbine engine, with high pressure ratio, such as an industrial reheat gas turbine, in order to guarantee the high exhaust temperature, which will be more compatible with existing advanced HRSG.",
+      "terms": [
+        "exergetic efficiency",
+        "pressure ratio",
+        "exhaust gas temperatures",
+        "steam turbine",
+        "HRSG configuration",
+        "industrial reheat gas turbine",
+        "bottoming cycle",
+        "fuel consumption"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-031",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14126,
+      "page_end": 14126,
+      "text": "The relation between exergetic efficiency and condenser pressure is shown in Figure 5. Increasing the pressure in the condenser leads to creating an adverse effect in the performance, due to a reduction in the power output from the steam turbine. In addition, the temperature difference in the low pressure economizer is reduced, which is highly effective on heat transfer rate and increasing stack temperature. Adjusting condenser pressure significantly can have an effect on the plant performance and is highly recommended to sustain it at low level.",
+      "terms": [
+        "exergetic efficiency",
+        "condenser pressure",
+        "steam turbine",
+        "low pressure economizer",
+        "stack temperature",
+        "heat transfer rate"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-032",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14126,
+      "page_end": 14126,
+      "text": "A triple-pressure reheat combined cycle consists of three levels of steam pressures at three different evaporators. The high pressure steam was investigated at different values, which are higher or lower than the design point at constant mass flow rate. It has significant influence on the CCPP performance, as illustrated in Figure 6. The relation between high pressure steam in HRSG, with exergetic efficiency, and block net power output is directly proportional. Increasing the pressure leads to reducing the latent heat of vaporisation, as well as the energy required to change the phase of water. Additionally, more power is produced due to an increase in the expansion range across the steam turbine with enthalpy. The exergetic efficiency increases, mainly due to the increase of net power output, which is interpreted by the trend similarity. The relation between steam pressure and plant performance is clear; therefore, high pressure is always preferable and is considered to be one of the important recommendations to achieve high plant efficiency.",
+      "terms": [
+        "triple-pressure reheat combined cycle",
+        "high pressure steam",
+        "HRSG",
+        "exergetic efficiency",
+        "block net power output",
+        "latent heat of vaporisation",
+        "steam turbine",
+        "design point"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-033",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14127,
+      "page_end": 14127,
+      "text": "Another significant parameter in plant performance is the pinch point of HRSG across three stages. The pinch point temperature is defined as the difference between the saturation temperature of the evaporator at specified pressure and the outlet exhaust gas temperature. From an operational perspective, adjusting the pinch point is achievable by changing the evaporator pressure, otherwise by modifying the HRSG design by changing the heat transfer area.",
+      "terms": [
+        "pinch point",
+        "HRSG",
+        "pinch point temperature",
+        "saturation temperature",
+        "evaporator pressure",
+        "heat transfer area"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-034",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14127,
+      "page_end": 14127,
+      "text": "The effect of HP pinch temperature on plant performance was investigated while keeping the IP and LP pinch temperatures at design values, as seen in Figure 7. It is noticed that, as HP pinch temperature reduces, the plant exergetic efficiency increases, due to the improvement of HRSG performance and the reduction of irreversibilities. The exergy destruction rate decreased as a result of improving the effectiveness of the evaporator and enhancement of the heat transfer rate between the two streams. The effect of HP pinch temperature and operating conditions are extremely dependent on HRSG configurations and the approach temperature, which represents the difference between the saturation temperature at the evaporator and water temperature, which exit from the economizer. The higher approach temperature at the same pinch temperature leads to a more efficient HRSG, and it increases the heat recovery. Thermodynamic and economical views must be taken into account, in order to achieve optimum HRSG design, that reflect on the plant’s efficiency. In spite of the impact of the pinch and approach temperatures on thermal system performance, they are highly limited for existing systems in comparison to new plants. The HRSG configuration is considered to be a crucial factor in determining the behaviour of CCPP performance, specifically in the wasted heat recovery from the gas turbine.",
+      "terms": [
+        "HP pinch temperature",
+        "exergetic efficiency",
+        "exergy destruction rate",
+        "evaporator",
+        "approach temperature",
+        "economizer",
+        "heat recovery",
+        "HRSG configuration"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-035",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14128,
+      "page_end": 14128,
+      "text": "The exergetic analysis was performed on triple pressure reheat HRSG, using the new approach, in order to determine the sources of irreversibilities and exergy destruction per stage pressure. Figure 8 shows the exergy destruction for all HRSG stages. The exergy destruction at the high pressure stage [HP] achieves a high level, which is equivalent to all other stages. This is due to many reasons, such as the large number of components, high loss to the surroundings and high temperature difference between the streams. In contrast, the lowest level of exergy destruction occurs in the intermediate pressure stages [IP], as a result of the low heat loss, temperature differences between the streams, especially at superheater components, and mass flow rate. In the reheat section [RH] and low pressure stage [LP], the effect of the temperature difference is obvious.",
+      "terms": [
+        "triple pressure reheat HRSG",
+        "exergy destruction",
+        "high pressure stage [HP]",
+        "intermediate pressure stages [IP]",
+        "reheat section [RH]",
+        "low pressure stage [LP]",
+        "superheater",
+        "irreversibilities"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-036",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14128,
+      "page_end": 14128,
+      "text": "The exergy destruction is significantly affected by the streams’ pressures, and the relation between them is directly proportional. The overall exergy destruction of the HRSG, with the sources of irreversibilities, is illustrated in Figure 9. The highest source of irreversibilities caused from the temperature difference can be treated by preheating the cold stream, or adjusting the stream pressure. The second source comes from the heat loss to the surroundings, which mainly occurs due to a high temperature difference between the saturated temperature at the evaporator, and superheated steam at the inlet of steam turbine. The third source is related to the fluid friction, as a result of the movement along the pipes, and it appears in the form of pressure reduction. The order of exergy destruction is exactly identical to the previous literature [15], whereas, the level change is based on the HRSG configuration. However, knowing the sources of irreversibilities is considered to be useful information, in order to improve the component by eliminating, or limiting, the causes behind that.",
+      "terms": [
+        "exergy destruction",
+        "HRSG",
+        "sources of irreversibilities",
+        "temperature difference",
+        "heat loss to the surroundings",
+        "fluid friction",
+        "pressure reduction",
+        "evaporator"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-037",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14129,
+      "page_end": 14129,
+      "text": "Finally, integrating Sabiya CCPP with low-grade heat source technologies, such as the organic Rankine cycle, absorption chiller and desalination plant, is highly recommended to improve plant efficiency. It is well known that an improvement in energy conversion level can be achieved by producing more useful types of energy from the same source of fuel. Low-grade heat source technologies will enhance plant performance without adding extra fuel in different forms. For example, this will: • Produce more power by using the organic Rankine cycle. • Improve the primary mover performance by cooling the intake area using an absorption chiller. • Alternatively, save amount of energy consumed to cool the plant building. • Save a considerable amount of the fuel required by the industrial boiler to operate the desalination system.",
+      "terms": [
+        "Sabiya CCPP",
+        "low-grade heat source technologies",
+        "organic Rankine cycle",
+        "absorption chiller",
+        "desalination plant",
+        "industrial boiler",
+        "primary mover"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-038",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14124,
+      "page_end": 14125,
+      "text": "Figure 2. Exergetic efficiency and block net power output verses ambient temperatures. Figure 3. Exergy destruction rates for all components in Sabiya CCPP at ISO condition.",
+      "terms": [
+        "Exergetic efficiency",
+        "block net power output",
+        "ambient temperatures",
+        "Exergy destruction rates",
+        "Sabiya CCPP",
+        "ISO condition"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-039",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14126,
+      "page_end": 14126,
+      "text": "Figure 4. Exergetic efficiency and gas turbine exhaust gases temperature versus pressure ratios at ISO condition. Figure 5. Exergetic efficiency versus condenser pressure at ISO condition.",
+      "terms": [
+        "Exergetic efficiency",
+        "gas turbine exhaust gases temperature",
+        "pressure ratios",
+        "condenser pressure",
+        "ISO condition"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-040",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14127,
+      "page_end": 14127,
+      "text": "Figure 6. Exergetic efficiency and block net power output versus high pressure steam in HRSG. Figure 7. Exergetic efficiency and exergy destruction versus HP Pinch Temperature.",
+      "terms": [
+        "Exergetic efficiency",
+        "block net power output",
+        "high pressure steam",
+        "HRSG",
+        "exergy destruction",
+        "HP Pinch Temperature"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-041",
+      "doc_id": "R041",
+      "section": "5. Results and Discussion",
+      "page_start": 14128,
+      "page_end": 14128,
+      "text": "Figure 8. Exergy destruction for all HRSG stages at ISO condition. Figure 9. HRSG exergy destruction with different sources of Irreversibilities at ISO condition.",
+      "terms": [
+        "Exergy destruction",
+        "HRSG stages",
+        "ISO condition",
+        "sources of Irreversibilities"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-042",
+      "doc_id": "R041",
+      "section": "6. Conclusions",
+      "page_start": 14129,
+      "page_end": 14129,
+      "text": "A detailed energetic and exergetic analysis of a 2000 MW CCPP has been carried out, based on a very advanced HRSG. The thermodynamic data were extracted from the CCPP model, developed by the IPSEpro software and validated with the manufacturer’s published data, and it presented a high level of compatibility. The main conclusions that have been extracted from this study are listed below.",
+      "terms": [
+        "energetic and exergetic analysis",
+        "CCPP",
+        "HRSG",
+        "IPSEpro",
+        "manufacturer’s published data"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-043",
+      "doc_id": "R041",
+      "section": "6. Conclusions",
+      "page_start": 14129,
+      "page_end": 14129,
+      "text": "• The combustion chamber is the main source of irreversibility, with high exergy destruction attributable to three reasons: (i.) combined diffusion/fuel oxidation; (ii.) internal energy exchange–heat transfer; and (iii.) the mixing process. • Inefficiency in the combustor can be reduced by improving the combustion process, adding an air preheater and reducing the air-to-fuel ratio. • The steam turbine constitutes the lowest source of irreversibility as a result of the reheating system and the type of working fluid. • The variation in ambient temperature has a significant effect on the CCPP’s exergetic efficiency and net power output, and it is recommended to use a cooling system at the point of intake of the gas turbine engine in order to achieve high power output and exergetic efficiency. • The reheat gas turbine engine, with a high-pressure ratio, will achieve substantial improvement in the CCPP due to a reduction in the fuel consumption, producing more power and maintaining the exhaust temperature at a high level, which is compatible with the triple pressure reheat HRSG. • Adjusting the steam pressure at a high value and the condenser pressure at a low value can be proposed in order to improve the CCPP’s efficiency. • Regulating the HP pinch temperature at a low level will augment the CCPP’s efficiency, while a high approach temperature is always preferable in order to recover more energy from the exhaust gases from the gas turbine. • The temperature difference between the streams represents the major source of irreversibilities in the HRSG, and can be reduced either by preheating or adjusting the stream pressure. • A large number of components in high pressure stream is not desirable, and can create an adverse effect on the performance, based on the optimum design criteria of the thermal system.",
+      "terms": [
+        "combustion chamber",
+        "exergy destruction",
+        "air preheater",
+        "steam turbine",
+        "reheat gas turbine engine",
+        "condenser pressure",
+        "HP pinch temperature",
+        "approach temperature"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-044",
+      "doc_id": "R041",
+      "section": "6. Conclusions",
+      "page_start": 14129,
+      "page_end": 14129,
+      "text": "From the analysis conducted above, it can be concluded that there are abundant possibilities for improving the Sabiya CCPP, using the existing designs, by optimising the operating conditions. Improving the thermodynamic performance always has both economic and environmental implications, as will be published in the forthcoming second part of this study, using exergoeconomic and exergoenvironmental analysis of the same power plant.",
+      "terms": [
+        "Sabiya CCPP",
+        "operating conditions",
+        "thermodynamic performance",
+        "exergoeconomic",
+        "exergoenvironmental analysis"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-045",
+      "doc_id": "R041",
+      "section": "Nomenclature",
+      "page_start": 14130,
+      "page_end": 14130,
+      "text": "Nomenclature: Ė = Rate of exergy flow in stream; ė_k^ch = Specific molar chemical exergy; g = Acceleration of gravity; h = Specific enthalpy; h_fg = Latent heat of vaporisation; LHV‾ = Low heating value in molar basis; ṁ = Mass flow rate; ṅ = Number of mole; P = Pressure of the stream; Q̇ = Heat transfer rate; R = Gas constant; R‾ = Universal gas constant; s = Specific entropy; Ṡ = Entropy generation; T = Temperature of the stream; y = Mole fraction; v = Velocity; V = Specific volume; Z = Altitude; ẇ = Power. Greek letters: η_ex = Exergetic Efficiency; Δ = Difference; λ‾ = Fuel-to-air ratio.",
+      "terms": [
+        "Rate of exergy flow",
+        "ė_k^ch",
+        "h_fg",
+        "LHV‾",
+        "Entropy generation",
+        "Mole fraction",
+        "η_ex",
+        "Fuel-to-air ratio"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-046",
+      "doc_id": "R041",
+      "section": "Nomenclature",
+      "page_start": 14130,
+      "page_end": 14131,
+      "text": "Superscripts: ac = Actual; c = Cold Stream; ch = Chemical; cv = Control volume; d = Destruction; e = Outlet; f = Fuel; h = Hot Stream; i = Inlet; k = Component; ke = Kinetic energy; L = Loss; o = Reference state; p = Product; ph = Physical; pe = Potentials; S = Steam; st = Stoichiometric; sur = Surrounding. Abbreviations: AFR = Air to fuel ratio; AC = Air compressor; ATT = Attemperator; CC = Combustion chamber; CCPP = Combined Cycles Power Plant; EC = Economizer; EV = Evaporator; GE = General Electric; GT = Gas Turbine; HP = High-Pressure; IP = Intermediate-Pressure; ISO = International Standards Organization; LP = Low-Pressure; MEW = Ministry of Electricity and Water; RH = Reheat; SH = Super-Heater; ST = Steam Turbine.",
+      "terms": [
+        "Superscripts",
+        "Control volume",
+        "Reference state",
+        "Stoichiometric",
+        "AFR",
+        "ATT",
+        "CCPP",
+        "MEW"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-047",
+      "doc_id": "R041",
+      "section": "Appendix A: Molar and Energy Analysis",
+      "page_start": 14131,
+      "page_end": 14131,
+      "text": "The molar air flow rate to fuel is related by: 1/λ‾ = ṅ_a/ṅ_f (A1) (inverse of the molar fuel-to-air ratio = molar flow rate of air / molar flow rate of fuel) where λ‾ is the fuel-to-air ratio on a molar basis, while ṅ_a and ṅ_f represent the number of moles rate for air and fuel, respectively [1]. The number of mole rate is the ratio of mass flow rate to molecular weight. ṅ = ṁ/M (A2) (molar flow rate = mass flow rate / molecular weight)",
+      "terms": [
+        "molar air flow rate",
+        "λ‾",
+        "fuel-to-air ratio",
+        "ṅ_a",
+        "ṅ_f",
+        "molecular weight",
+        "mass flow rate"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-048",
+      "doc_id": "R041",
+      "section": "Appendix A: Molar and Energy Analysis",
+      "page_start": 14131,
+      "page_end": 14132,
+      "text": "The chemical equation in mole fraction (y) terms takes the form: λ‾ [0.9334 CH_4; 0.00211 C_2H_6; 0.00029 C_3H_8; 0.0642 N_2] + [0.7748 N_2; 0.2059 O_2; 0.019 H_2O; 0.0003 CO_2] → (1 + λ‾) [y_N2 N_2; y_O2 O_2; y_H2O H_2O; y_CO2 CO_2] (A3) (combustion of λ‾ mol of natural gas with 1 mol of air gives (1 + λ‾) mol of products) Accordingly, the mole fractions of the combustion products at equilibrium mixture are: y_N2 = (0.7748 + 0.0642λ‾)/(1 + λ‾) (A4) y_CO2 = (0.0003 + 0.93849λ‾)/(1 + λ‾) (A5) y_O2 = (0.2059 − 1.8763075λ‾)/(1 + λ‾) (A6) y_H2O = (0.019 + 1.87429λ‾)/(1 + λ‾) (A7) (mole fractions of N_2, CO_2, O_2 and H_2O in the combustion products as functions of λ‾) Once calculating λ‾, the composition of combustion products can be determined. The AFR is obtained from the energy equation across the combustion chamber: Q̇_cv = ṅ_p h‾_p − ṅ_f h‾_f − ṅ_a h‾_a (A8) (heat transfer rate of the combustion chamber control volume = molar enthalpy flow of products − fuel − air)",
+      "terms": [
+        "mole fraction",
+        "chemical equation",
+        "combustion products",
+        "y_N2",
+        "y_CO2",
+        "AFR",
+        "combustion chamber",
+        "Q̇_cv"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-049",
+      "doc_id": "R041",
+      "section": "Appendix A: Molar and Energy Analysis",
+      "page_start": 14132,
+      "page_end": 14132,
+      "text": "The heat transfer rate can be calculated from the LHV in molar bases while taking into account a 2% heat loss: Q̇_cv = −0.02 ṅ_f LHV‾ = ṅ_a (−0.02λ‾) LHV‾ (A9) (combustor heat loss taken as 2% of the fuel molar LHV) The fuel mass flow rate can be calculated by the balance between energy supplied by the fuel and combustion product enthalpies changed due to heat addition. Both air and combustion product enthalpies were determined at inlet and outlet temperatures of combustor using the principles of ideal gas mixture.",
+      "terms": [
+        "heat transfer rate",
+        "LHV",
+        "2% heat loss",
+        "Q̇_cv",
+        "fuel mass flow rate",
+        "combustion product enthalpies",
+        "ideal gas mixture"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-050",
+      "doc_id": "R041",
+      "section": "Appendix A: Molar and Energy Analysis",
+      "page_start": 14132,
+      "page_end": 14132,
+      "text": "The energy rate balance for gas turbine rotating adiabatic components is given by: Compressor: Ẇ_Ac = ṁ_a (h_e − h_i) (A10) (compressor power = air mass flow × enthalpy rise) Gas Turbine: Ẇ_GT = ṁ_p (h_i − h_e) (A11) (gas turbine power = product mass flow × enthalpy drop) The adiabatic superheaters or reheaters, evaporators and economizers are the constituents of the heat recovery steam generator (HRSG) unit, and their energy rate balance equations are listed as follows: Superheater: ṁ_s (h_e − h_i) = ṁ_p (h_i − h_e) (A12) Evaporator: ṁ_s h_fg = ṁ_p (h_i − h_e) (A13) Economizer: ṁ_w (h_e − h_i) = ṁ_p (h_i − h_e) (A14) (heat gained by steam/water = heat released by combustion products in each HRSG component) where the subscripts p, s and w represent the combustion product, steam and water, respectively. The energy balance equations for the remaining steam cycle components (adiabatic steam turbine, deaerating condenser and the adiabatic pump) are given below: Steam Turbine: Ẇ_ST = ṁ_s (h_i − h_e) (A15) (steam turbine power) Dea-Condenser: Q̇_out = ṁ_w (h_i − h_e) (A16) (heat rejected in the deaerating condenser) Pump: Ẇ_p = ṁ_w (h_e − h_i) (A17) (pump power)",
+      "terms": [
+        "energy rate balance",
+        "Ẇ_Ac",
+        "Ẇ_GT",
+        "heat recovery steam generator (HRSG)",
+        "h_fg",
+        "Ẇ_ST",
+        "Q̇_out",
+        "deaerating condenser"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-051",
+      "doc_id": "R041",
+      "section": "Appendix B: Properties and Exergy Flow Rates",
+      "page_start": 14133,
+      "page_end": 14133,
+      "text": "Table B1. Exergetic data for the bottoming cycle at ISO condition (points 1–10′). Point 1: Location inlet=HP-Valve; Location outlet=HP SH-2; Fluid=Steam; Mass flow rate (kg/s)=149.65; Temperature (K)=838.44; Pressure (bar)=119.90; Enthalpy (kJ/kg)=3521.05; Entropy (kJ/kg. K)=6.70; Exergy rate (MW)=238.28. Point 1′: Location inlet=HP ST; Location outlet=HP-Valve; Fluid=Steam; Mass flow rate (kg/s)=149.65; Temperature (K)=838.06; Pressure (bar)=118.90; Enthalpy (kJ/kg)=3521.05; Entropy (kJ/kg. K)=6.71; Exergy rate (MW)=238.12. Point 2: Location inlet=Splitter; Location outlet=HP ST; Fluid=Steam; Mass flow rate (kg/s)=149.65; Temperature (K)=625.82; Pressure (bar)=27.89; Enthalpy (kJ/kg)=3126.91; Entropy (kJ/kg. K)=6.79; Exergy rate (MW)=175.37. Point 3: Location inlet=To other HRSG; Location outlet=Splitter; Fluid=Steam; Mass flow rate (kg/s)=72.00; Temperature (K)=625.82; Pressure (bar)=27.89; Enthalpy (kJ/kg)=3126.91; Entropy (kJ/kg. K)=6.79; Exergy rate (MW)=84.37. Point 4: Location inlet=Mixer; Location outlet=Splitter; Fluid=Steam; Mass flow rate (kg/s)=77.65; Temperature (K)=625.82; Pressure (bar)=27.89; Enthalpy (kJ/kg)=3126.91; Entropy (kJ/kg. K)=6.79; Exergy rate (MW)=91.00. Point 5: Location inlet=RH-1; Location outlet=Mixer; Fluid=Steam; Mass flow rate (kg/s)=88.36; Temperature (K)=620.05; Pressure (bar)=26.71; Enthalpy (kJ/kg)=3116.11; Entropy (kJ/kg. K)=6.80; Exergy rate (MW)=102.55. Point 6: Location inlet=IP ATT; Location outlet=RH-1; Fluid=Steam; Mass flow rate (kg/s)=88.36; Temperature (K)=785.00; Pressure (bar)=25.21; Enthalpy (kJ/kg)=3488.76; Entropy (kJ/kg. K)=7.35; Exergy rate (MW)=121.25. Point 7: Location inlet=RH-2; Location outlet=IP ATT; Fluid=Steam; Mass flow rate (kg/s)=88.36; Temperature (K)=765.00; Pressure (bar)=25.21; Enthalpy (kJ/kg)=3444.20; Entropy (kJ/kg. K)=7.30; Exergy rate (MW)=118.77. Point 8: Location inlet=Mixer; Location outlet=RH-2; Fluid=Steam; Mass flow rate (kg/s)=88.36; Temperature (K)=838.00; Pressure (bar)=24.01; Enthalpy (kJ/kg)=3608.43; Entropy (kJ/kg. K)=7.52; Exergy rate (MW)=127.50. Point 9: Location inlet=Mixer; Location outlet=From other HRSG; Fluid=Steam; Mass flow rate (kg/s)=78.00; Temperature (K)=838.00; Pressure (bar)=25.15; Enthalpy (kJ/kg)=3607.43; Entropy (kJ/kg. K)=7.50; Exergy rate (MW)=112.98. Point 10: Location inlet=IP-Valve; Location outlet=Mixer; Fluid=Steam; Mass flow rate (kg/s)=166.36; Temperature (K)=837.75; Pressure (bar)=23.91; Enthalpy (kJ/kg)=3607.96; Entropy (kJ/kg. K)=7.53; Exergy rate (MW)=239.92. Point 10′: Location inlet=IP ST; Location outlet=IP-Valve; Fluid=Steam; Mass flow rate (kg/s)=166.36; Temperature (K)=837.74; Pressure (bar)=23.89; Enthalpy (kJ/kg)=3607.96; Entropy (kJ/kg. K)=7.53; Exergy rate (MW)=239.89.",
+      "terms": [
+        "bottoming cycle",
+        "ISO condition",
+        "Steam",
+        "Exergy rate (MW)",
+        "Enthalpy (kJ/kg)",
+        "Entropy (kJ/kg. K)",
+        "Mass flow rate (kg/s)"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-052",
+      "doc_id": "R041",
+      "section": "Appendix B: Properties and Exergy Flow Rates",
+      "page_start": 14133,
+      "page_end": 14133,
+      "text": "Table B1. Exergetic data for the bottoming cycle at ISO condition (points 11–20). Point 11: Location inlet=Mixer; Location outlet=IP ST; Fluid=Steam; Mass flow rate (kg/s)=166.36; Temperature (K)=605.76; Pressure (bar)=4.60; Enthalpy (kJ/kg)=3132.86; Entropy (kJ/kg. K)=7.62; Exergy rate (MW)=156.59. Point 12: Location inlet=LP ST; Location outlet=Mixer; Fluid=Steam; Mass flow rate (kg/s)=184.31; Temperature (K)=603.55; Pressure (bar)=4.60; Enthalpy (kJ/kg)=3128.31; Entropy (kJ/kg. K)=7.61; Exergy rate (MW)=173.05. Point 13: Location inlet=DEA-Condenser; Location outlet=LP ST; Fluid=Steam; Mass flow rate (kg/s)=184.31; Temperature (K)=324.34; Pressure (bar)=0.13; Enthalpy (kJ/kg)=2516.56; Entropy (kJ/kg. K)=7.82; Exergy rate (MW)=49.17. Point 14: Location inlet=Condensate Pump; Location outlet=DEA-Condenser; Fluid=Water; Mass flow rate (kg/s)=192.99; Temperature (K)=322.19; Pressure (bar)=0.13; Enthalpy (kJ/kg)=205.30; Entropy (kJ/kg. K)=0.69; Exergy rate (MW)=1.51. Point 15: Location inlet=Splitter; Location outlet=Condensate Pump; Fluid=Water; Mass flow rate (kg/s)=192.99; Temperature (K)=322.33; Pressure (bar)=22.31; Enthalpy (kJ/kg)=207.81; Entropy (kJ/kg. K)=0.69; Exergy rate (MW)=1.95. Point 16: Location inlet=To other HRSG; Location outlet=Splitter; Fluid=Water; Mass flow rate (kg/s)=96.49; Temperature (K)=322.33; Pressure (bar)=22.31; Enthalpy (kJ/kg)=207.81; Entropy (kJ/kg. K)=0.69; Exergy rate (MW)=0.98. Point 17: Location inlet=LP EC; Location outlet=Mixer; Fluid=Water; Mass flow rate (kg/s)=193.05; Temperature (K)=367.77; Pressure (bar)=18.26; Enthalpy (kJ/kg)=397.73; Entropy (kJ/kg. K)=1.24; Exergy rate (MW)=7.91. Point 17′: Location inlet=Splitter; Location outlet=LP EC; Fluid=Water; Mass flow rate (kg/s)=193.05; Temperature (K)=411.17; Pressure (bar)=12.26; Enthalpy (kJ/kg)=581.20; Entropy (kJ/kg. K)=1.72; Exergy rate (MW)=17.01. Point 18: Location inlet=LP EV -Value; Location outlet=LP EC; Fluid=Water; Mass flow rate (kg/s)=96.55; Temperature (K)=411.15; Pressure (bar)=12.26; Enthalpy (kJ/kg)=581.20; Entropy (kJ/kg. K)=1.72; Exergy rate (MW)=8.51. Point 18′: Location inlet=LP EV; Location outlet=LP EV -Value; Fluid=Water; Mass flow rate (kg/s)=96.55; Temperature (K)=411.27; Pressure (bar)=5.31; Enthalpy (kJ/kg)=581.20; Entropy (kJ/kg. K)=1.72; Exergy rate (MW)=8.46. Point 19: Location inlet=Splitter; Location outlet=LP EV; Fluid=Water; Mass flow rate (kg/s)=87.58; Temperature (K)=426.56; Pressure (bar)=5.71; Enthalpy (kJ/kg)=646.91; Entropy (kJ/kg. K)=1.88; Exergy rate (MW)=9.47. Point 20: Location inlet=LP SH; Location outlet=LP EV; Fluid=Steam; Mass flow rate (kg/s)=8.97; Temperature (K)=426.52; Pressure (bar)=5.21; Enthalpy (kJ/kg)=2749.92; Entropy (kJ/kg. K)=6.81; Exergy rate (MW)=7.10.",
+      "terms": [
+        "bottoming cycle",
+        "ISO condition",
+        "Steam",
+        "Water",
+        "Exergy rate (MW)",
+        "Enthalpy (kJ/kg)",
+        "Entropy (kJ/kg. K)",
+        "Mass flow rate (kg/s)"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-053",
+      "doc_id": "R041",
+      "section": "Appendix B: Properties and Exergy Flow Rates",
+      "page_start": 14133,
+      "page_end": 14133,
+      "text": "Table B1. Exergetic data for the bottoming cycle at ISO condition (points 21–30). Point 21: Location inlet=Mixer; Location outlet=LP SH; Fluid=Steam; Mass flow rate (kg/s)=8.97; Temperature (K)=584.85; Pressure (bar)=4.91; Enthalpy (kJ/kg)=3088.99; Entropy (kJ/kg. K)=7.51; Exergy rate (MW)=8.32. Point 22: Location inlet=Mixer; Location outlet=From other HRSG; Fluid=Steam; Mass flow rate (kg/s)=8.97; Temperature (K)=582.00; Pressure (bar)=4.85; Enthalpy (kJ/kg)=3083.24; Entropy (kJ/kg. K)=7.51; Exergy rate (MW)=8.28. Point 23: Location inlet=LP-Valve; Location outlet=Mixer; Fluid=Steam; Mass flow rate (kg/s)=17.95; Temperature (K)=583.39; Pressure (bar)=4.85; Enthalpy (kJ/kg)=3086.11; Entropy (kJ/kg. K)=7.51; Exergy rate (MW)=16.59. Point 23′: Location inlet=Mixer; Location outlet=LP-Valve; Fluid=Steam; Mass flow rate (kg/s)=17.95; Temperature (K)=583.28; Pressure (bar)=4.75; Enthalpy (kJ/kg)=3086.11; Entropy (kJ/kg. K)=7.52; Exergy rate (MW)=16.54. Point 24: Location inlet=IP Feed pump; Location outlet=Splitter; Fluid=Water; Mass flow rate (kg/s)=11.43; Temperature (K)=426.56; Pressure (bar)=5.71; Enthalpy (kJ/kg)=646.91; Entropy (kJ/kg. K)=1.88; Exergy rate (MW)=1.24. Point 25: Location inlet=HP Feed pump; Location outlet=Splitter; Fluid=Water; Mass flow rate (kg/s)=76.15; Temperature (K)=426.56; Pressure (bar)=5.71; Enthalpy (kJ/kg)=646.91; Entropy (kJ/kg. K)=1.88; Exergy rate (MW)=8.23. Point 26: Location inlet=Splitter; Location outlet=IP Feed pump; Fluid=Water; Mass flow rate (kg/s)=11.43; Temperature (K)=426.89; Pressure (bar)=29.38; Enthalpy (kJ/kg)=649.79; Entropy (kJ/kg. K)=1.88; Exergy rate (MW)=1.27. Point 27: Location inlet=IP EC; Location outlet=Splitter; Fluid=Water; Mass flow rate (kg/s)=11.11; Temperature (K)=426.89; Pressure (bar)=29.38; Enthalpy (kJ/kg)=649.79; Entropy (kJ/kg. K)=1.88; Exergy rate (MW)=1.23. Point 28: Location inlet=IP ATT -Value; Location outlet=Splitter; Fluid=Water; Mass flow rate (kg/s)=0.32; Temperature (K)=426.89; Pressure (bar)=29.38; Enthalpy (kJ/kg)=649.79; Entropy (kJ/kg. K)=1.88; Exergy rate (MW)=0.04. Point 29: Location inlet=IP EV -Value; Location outlet=IP EC; Fluid=Water; Mass flow rate (kg/s)=11.11; Temperature (K)=499.14; Pressure (bar)=28.98; Enthalpy (kJ/kg)=971.52; Entropy (kJ/kg. K)=2.57; Exergy rate (MW)=2.58. Point 29′: Location inlet=IP EV; Location outlet=IP EV -Value; Fluid=Water; Mass flow rate (kg/s)=11.11; Temperature (K)=499.13; Pressure (bar)=28.88; Enthalpy (kJ/kg)=971.52; Entropy (kJ/kg. K)=2.57; Exergy rate (MW)=2.58. Point 30: Location inlet=IP SH; Location outlet=IP EV; Fluid=Steam; Mass flow rate (kg/s)=11.11; Temperature (K)=504.71; Pressure (bar)=28.78; Enthalpy (kJ/kg)=2803.15; Entropy (kJ/kg. K)=6.20; Exergy rate (MW)=10.91.",
+      "terms": [
+        "bottoming cycle",
+        "ISO condition",
+        "Steam",
+        "Water",
+        "Exergy rate (MW)",
+        "Enthalpy (kJ/kg)",
+        "Entropy (kJ/kg. K)",
+        "Mass flow rate (kg/s)"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-054",
+      "doc_id": "R041",
+      "section": "Appendix B: Properties and Exergy Flow Rates",
+      "page_start": 14134,
+      "page_end": 14134,
+      "text": "Table B1 (Cont.). Exergetic data for the bottoming cycle at ISO condition (points 31–35). Point 31: Location inlet=RH -Value; Location outlet=IP SH; Fluid=Steam; Mass flow rate (kg/s)=10.71; Temperature (K)=588.15; Pressure (bar)=27.88; Enthalpy (kJ/kg)=3037.76; Entropy (kJ/kg. K)=6.65; Exergy rate (MW)=12.05. Point 31′: Location inlet=Mixer; Location outlet=RH -Value; Fluid=Steam; Mass flow rate (kg/s)=10.71; Temperature (K)=588.13; Pressure (bar)=27.87; Enthalpy (kJ/kg)=3037.76; Entropy (kJ/kg. K)=6.65; Exergy rate (MW)=12.05. Point 32: Location inlet=HP EC -Value; Location outlet=HP Feed pump; Fluid=Water; Mass flow rate (kg/s)=76.15; Temperature (K)=428.68; Pressure (bar)=158.30; Enthalpy (kJ/kg)=665.44; Entropy (kJ/kg. K)=1.88; Exergy rate (MW)=9.55. Point 32′: Location inlet=Splitter; Location outlet=HP EC -Value; Fluid=Water; Mass flow rate (kg/s)=76.15; Temperature (K)=429.06; Pressure (bar)=132.30; Enthalpy (kJ/kg)=665.44; Entropy (kJ/kg. K)=1.89; Exergy rate (MW)=9.41. Point 33: Location inlet=HP EC-1; Location outlet=Splitter; Fluid=Water; Mass flow rate (kg/s)=76.15; Temperature (K)=429.06; Pressure (bar)=132.30; Enthalpy (kJ/kg)=665.44; Entropy (kJ/kg. K)=1.89; Exergy rate (MW)=9.31. Point 34: Location inlet=HP EC-2; Location outlet=HP EC-1; Fluid=Water; Mass flow rate (kg/s)=75.36; Temperature (K)=506.45; Pressure (bar)=132.25; Enthalpy (kJ/kg)=1007.74; Entropy (kJ/kg. K)=2.62; Exergy rate (MW)=19.21. Point 35: Location inlet=HP EC-3; Location outlet=HP EC-2; Fluid=Water; Mass flow rate (kg/s)=75.36; Temperature (K)=583.98; Pressure (bar)=131.85; Enthalpy (kJ/kg)=1401.50; Entropy (kJ/kg. K)=3.34; Exergy rate (MW)=33.21.",
+      "terms": [
+        "bottoming cycle",
+        "ISO condition",
+        "Steam",
+        "Water",
+        "Exergy rate (MW)",
+        "Enthalpy (kJ/kg)",
+        "Entropy (kJ/kg. K)",
+        "Mass flow rate (kg/s)"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-055",
+      "doc_id": "R041",
+      "section": "Appendix B: Properties and Exergy Flow Rates",
+      "page_start": 14134,
+      "page_end": 14134,
+      "text": "Table B1 (Cont.). Exergetic data for the bottoming cycle at ISO condition (points 36–42). Point 36: Location inlet=HP EV; Location outlet=HP EC-3; Fluid=Steam; Mass flow rate (kg/s)=75.36; Temperature (K)=604.01; Pressure (bar)=131.80; Enthalpy (kJ/kg)=1530.68; Entropy (kJ/kg. K)=3.56; Exergy rate (MW)=38.23. Point 37: Location inlet=HP SP-1; Location outlet=HP EV; Fluid=Steam; Mass flow rate (kg/s)=74.65; Temperature (K)=604.79; Pressure (bar)=131.30; Enthalpy (kJ/kg)=2659.79; Entropy (kJ/kg. K)=5.43; Exergy rate (MW)=82.02. Point 38: Location inlet=HP ATT; Location outlet=HP SP-1; Fluid=Steam; Mass flow rate (kg/s)=74.65; Temperature (K)=693.29; Pressure (bar)=128.30; Enthalpy (kJ/kg)=3101.54; Entropy (kJ/kg. K)=6.12; Exergy rate (MW)=100.00. Point 39: Location inlet=HP ATT -Value; Location outlet=Splitter; Fluid=Water; Mass flow rate (kg/s)=0.78; Temperature (K)=429.06; Pressure (bar)=132.30; Enthalpy (kJ/kg)=665.44; Entropy (kJ/kg. K)=1.89; Exergy rate (MW)=0.10. Point 40: Location inlet=HP SP-2; Location outlet=IP ATT; Fluid=Steam; Mass flow rate (kg/s)=74.65; Temperature (K)=672.29; Pressure (bar)=128.20; Enthalpy (kJ/kg)=3028.95; Entropy (kJ/kg. K)=6.02; Exergy rate (MW)=96.87. Point 41: Location inlet=Mixer; Location outlet=HP SP-2; Fluid=Steam; Mass flow rate (kg/s)=74.65; Temperature (K)=841.65; Pressure (bar)=125.20; Enthalpy (kJ/kg)=3524.21; Entropy (kJ/kg. K)=6.69; Exergy rate (MW)=119.42. Point 42: Location inlet=Mixer; Location outlet=From other HRSG; Fluid=Steam; Mass flow rate (kg/s)=75.00; Temperature (K)=838.00; Pressure (bar)=122.00; Enthalpy (kJ/kg)=3517.91; Entropy (kJ/kg. K)=6.69; Exergy rate (MW)=119.42.",
+      "terms": [
+        "bottoming cycle",
+        "ISO condition",
+        "Steam",
+        "Water",
+        "Exergy rate (MW)",
+        "Enthalpy (kJ/kg)",
+        "Entropy (kJ/kg. K)",
+        "Mass flow rate (kg/s)"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-056",
+      "doc_id": "R041",
+      "section": "Appendix B: Properties and Exergy Flow Rates",
+      "page_start": 14134,
+      "page_end": 14134,
+      "text": "Table B2. Exergetic data for the topping cycle at ISO condition (points A–J). Point A: Location inlet outlet=AC Air; Fluid=Air; Mass flow rate (kg/s)=577.22; Temperature (K)=288.00; Pressure (bar)=1.01; Enthalpy (kJ/kg)=15.01; Entropy (kJ/kg. K)=6.85; Exergy rate (MW)=0.00. Point B: Location inlet outlet=CC AC; Fluid=Air; Mass flow rate (kg/s)=577.22; Temperature (K)=684.64; Pressure (bar)=17.02; Enthalpy (kJ/kg)=426.47; Entropy (kJ/kg. K)=6.93; Exergy rate (MW)=223.91. Point C: Location inlet outlet=CC Fuel; Fluid=Fuel; Mass flow rate (kg/s)=14.05; Temperature (K)=368.00; Pressure (bar)=18.91; Enthalpy (kJ/kg)=142.27; Entropy (kJ/kg. K)=—-; Exergy rate (MW)=663.47. Point D: Location inlet outlet=GT CC; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=1550.00; Pressure (bar)=16.52; Enthalpy (kJ/kg)=1532.68; Entropy (kJ/kg. K)=8.22; Exergy rate (MW)=717.15. Point E: Location inlet outlet=HP SH-3 GT; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=897.81; Pressure (bar)=1.05; Enthalpy (kJ/kg)=702.14; Entropy (kJ/kg. K)=8.34; Exergy rate (MW)=205.62. Point F: Location inlet outlet=RH-2 HP SH-3; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=845.64; Pressure (bar)=1.05; Enthalpy (kJ/kg)=639.61; Entropy (kJ/kg. K)=8.27; Exergy rate (MW)=180.77. Point G: Location inlet outlet=RH-1 RH-2; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=825.00; Pressure (bar)=1.05; Enthalpy (kJ/kg)=615.07; Entropy (kJ/kg. K)=8.24; Exergy rate (MW)=171.17. Point H: Location inlet outlet=HP SH-2 RH-1; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=777.80; Pressure (bar)=1.05; Enthalpy (kJ/kg)=559.38; Entropy (kJ/kg. K)=8.17; Exergy rate (MW)=149.98. Point I: Location inlet outlet=HP EV HP SH-2; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=730.00; Pressure (bar)=1.05; Enthalpy (kJ/kg)=503.61; Entropy (kJ/kg. K)=8.10; Exergy rate (MW)=129.51. Point J: Location inlet outlet=HP EC-3 HP EV; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=613.00; Pressure (bar)=1.04; Enthalpy (kJ/kg)=369.78; Entropy (kJ/kg. K)=7.90; Exergy rate (MW)=84.29.",
+      "terms": [
+        "topping cycle",
+        "ISO condition",
+        "Exhaust Gases",
+        "Air",
+        "Fuel",
+        "Exergy rate (MW)",
+        "Enthalpy (kJ/kg)",
+        "Temperature (K)"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R041-057",
+      "doc_id": "R041",
+      "section": "Appendix B: Properties and Exergy Flow Rates",
+      "page_start": 14134,
+      "page_end": 14134,
+      "text": "Table B2. Exergetic data for the topping cycle at ISO condition (points K–S). Point K: Location inlet outlet=IP SH HP EC-3; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=598.37; Pressure (bar)=1.04; Enthalpy (kJ/kg)=353.32; Entropy (kJ/kg. K)=7.87; Exergy rate (MW)=79.09. Point L: Location inlet outlet=LP SH IP SH; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=594.59; Pressure (bar)=1.04; Enthalpy (kJ/kg)=349.07; Entropy (kJ/kg. K)=7.86; Exergy rate (MW)=77.69. Point M: Location inlet outlet=HP EC-2 LP SH; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=590.00; Pressure (bar)=1.04; Enthalpy (kJ/kg)=343.92; Entropy (kJ/kg. K)=7.86; Exergy rate (MW)=76.03. Point N: Location inlet outlet=IP EV HP EC-2; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=545.00; Pressure (bar)=1.04; Enthalpy (kJ/kg)=293.73; Entropy (kJ/kg. K)=7.77; Exergy rate (MW)=61.33. Point O: Location inlet outlet=IP EC IP EV; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=513.87; Pressure (bar)=1.03; Enthalpy (kJ/kg)=259.33; Entropy (kJ/kg. K)=7.70; Exergy rate (MW)=51.96. Point P: Location inlet outlet=HP EC-1 IP EC; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=508.38; Pressure (bar)=1.03; Enthalpy (kJ/kg)=253.28; Entropy (kJ/kg. K)=7.69; Exergy rate (MW)=50.30. Point Q: Location inlet outlet=LP EV HP EC-1; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=468.55; Pressure (bar)=1.03; Enthalpy (kJ/kg)=209.65; Entropy (kJ/kg. K)=7.60; Exergy rate (MW)=39.62. Point R: Location inlet outlet=LP EC LP EV; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=429.50; Pressure (bar)=1.03; Enthalpy (kJ/kg)=167.23; Entropy (kJ/kg. K)=7.51; Exergy rate (MW)=30.54. Point S: Location inlet outlet=——- LP EC; Fluid=Exhaust Gases; Mass flow rate (kg/s)=591.27; Temperature (K)=373.88; Pressure (bar)=1.03; Enthalpy (kJ/kg)=107.33; Entropy (kJ/kg. K)=7.36; Exergy rate (MW)=20.46.",
+      "terms": [
+        "topping cycle",
+        "ISO condition",
+        "Exhaust Gases",
+        "Exergy rate (MW)",
+        "Enthalpy (kJ/kg)",
+        "Temperature (K)"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    }
+  ],
+  "report": {
+    "paragraph_count": 57,
+    "pages_processed": "14118-14135 (PDF 1-18쪽 전체; 14135쪽은 참고문헌·라이선스 문구만 있어 제외)",
+    "last_paragraph_id": "R041-057",
+    "skipped": [
+      "14118쪽 \"Article\" 표시, 저자 소속·이메일·전화/팩스(Correspondence), Received/Accepted/Published 날짜, Academic Editor: 저자 연락처/머리 정보",
+      "각 쪽 머리글(Energies 2015, 8, 14118–14135)과 쪽번호, 첫 쪽 바닥글(doi, www.mdpi.com/journal/energies): 머리글/바닥글",
+      "14129쪽 Acknowledgments: 감사의 글; Author Contributions, Conflicts of Interest: 지시에 따라 제외",
+      "14135쪽 References 1-16: 참고문헌 목록; © 2015 by the authors; licensee MDPI ... CC-BY license 문구: 저작권 문구(license 필드에 반영)",
+      "Figure 1-9의 도식·그래프 내용: 캡션만 수록"
+    ],
+    "uncertain": [
+      "페이지는 인쇄 쪽번호(14118-14135) 사용(PDF 1쪽 = 14118)",
+      "식 (1)-(13), (A1)-(A17)과 Table 3은 추출 텍스트의 기호 폰트가 깨져(“ ´ ` ˘ 등) PDF 페이지 이미지로 확인해 선형 표기로 옮김(점 기호 Ė, ṁ, ṅ, Q̇, Ṡ, Ẇ; 아래첨자 _; 윗줄(몰 기준) 기호는 λ‾, LHV‾, R‾, h‾_p처럼 ‾로 표기; 위첨자 ^). 식 (A3)의 행렬은 [a; b; c; d] 형태로 표기",
+      "산문 속 기호도 같은 방식으로 표기(T_s, p_s, T_o, p_o, Ė_ke, Ė_pe, e‾_k^ch, Ė_d, Ė_L, Ė_w, Ṡ, ṅ_a, ṅ_f, λ‾). 산문의 화학식(N2, CH4, CO2 등)은 기존 코퍼스와 검색 일관성을 위해 추출 표기 유지",
+      "Nomenclature의 ė_k^ch(이미지상 점과 위첨자 ch), \"Superscripts\" 표제(실제로는 아래첨자 목록)는 원문 그대로",
+      "Table B1의 점 번호 1′, 10′, 17′, 18′, 23′, 29′, 31′, 32′(추출본에서 11, 101 등으로 깨짐)는 이미지로 확인해 복원. Table B2의 Location 열은 inlet/outlet 구분 없이 한 칸으로 인쇄되어 \"Location inlet outlet=...\" 형태로 원문 그대로 둠; 점 S의 inlet은 \"——-\", 점 C의 Entropy는 \"—-\"로 인쇄",
+      "Table B1(50행)과 B2(19행)는 350단어 규칙에 따라 행 그룹으로 나눔(B1: 1–10′, 11–20, 21–30 [14133쪽], 31–35, 36–42 [14134쪽]; B2: A–J, K–S)",
+      "원문 표기·오탈자(예: \"curial\", \"verses\", \"RH -Value\", \"LP EV -Value\", \"prospective\", \"[16].Theoretically\", \"exergetic analysis into the HRSG ... Equation (9)\")는 verbatim 원칙에 따라 유지",
+      "원문 bullet 목록(가정, exergy waste 형태, 저등급 열원 활용, 결론)은 \"• \" 기호로 한 문단 안에 이어 씀"
+    ]
+  }
+}

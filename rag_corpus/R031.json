@@ -1,0 +1,527 @@
+{
+  "document": {
+    "doc_id": "R031",
+    "title": "Thermodynamics Performance Evaluation in Combined Cycle Power Plant by Using Combined Pinch and Exergy Analysis",
+    "authors": [
+      "M I Riady",
+      "D Santoso",
+      "M D Bustan"
+    ],
+    "year": 2019,
+    "venue": "Journal of Physics: Conference Series 1198 (2019) 042006 (SENTEN 2018 - Symposium of Emerging Nuclear Technology and Engineering Novelty), IOP Publishing",
+    "doi": "10.1088/1742-6596/1198/4/042006",
+    "url": "https://doi.org/10.1088/1742-6596/1198/4/042006",
+    "license": "Content from this work may be used under the terms of the Creative Commons Attribution 3.0 licence. Published under licence by IOP Publishing Ltd (CC BY 3.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R031-001",
+      "doc_id": "R031",
+      "section": "Abstract",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Abstract. In this paper, combination between pinch and exergy analysis for a 326 MW Combined Cycle Power Plant (CCPP) at Tanjung Priok is performed. These cycles are made of a gas turbine, a steam turbine and Heat Recovery Steam Generator (HRSG). In addition to analyze the performance of each component (compressor, combustion chamber, turbine, heat recovery steam generator) of the Combined Cycle Power Plant CCPP Tanjung Priok, this study also analyzes the impact of changes in the operating costs of the power plant after optimizing the parameters (pinch point and steam drum pressure). By using exergy analysis, the initial data used to analyze the performance and identified which components of the system that has the potential to do the performance improvement. The experience-based values for the pressure of the high-pressure and the low-pressure drum are selected and held constant during this step. One of the initial steps taken in the optimization of this system is to determine the optimum temperature difference in the heat exchange process that occurs in heat recovery steam generator (The value for the pinch point is varied in the range of 5 to 40 °C in steps of 0.5 °C). Then, through the developed optimization process, other optimal operating parameters were identified. The optimized combined cycle was compared with the Initial data. The application results of combined pinch and exergy analysis (CPEA) in the power plant showed that the net power could be increased by 2.67% and the exergetic efficiency could be increased from 45.9% to 47.1%. Keyword: Combined pinch and exergy analysis, physical and chemical exergy, heat recovery steam generator, exergetic efficiency",
+      "terms": [
+        "combined cycle power plant",
+        "CCPP",
+        "Heat Recovery Steam Generator",
+        "pinch point",
+        "steam drum pressure",
+        "exergy analysis",
+        "CPEA",
+        "exergetic efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-002",
+      "doc_id": "R031",
+      "section": "1. Introduction",
+      "page_start": 1,
+      "page_end": 2,
+      "text": "Energy plays an important role in our lives. Energy is one of the important inputs for the socioeconomic development of any country. Some of the energy can be stored, modified, and amplified for use in a variety of ways, such as in a power plant. Sustainability of various forms of activity in the community and the national industrial sector highly dependent on the availability of electrical energy. Therefore, the electricity sector has a strategic role in improving the welfare of the community and encourage the passage of the national economy. Because of its strategic role, the electrical energy is expected to available in sufficient quantity with good quality and a good level of reliability. However, due to population growth, rapid economic growth and also the development of industry and technology, the demand for electricity is increasing. It requires each country to reassess their energy policies and to take decisive action in handling waste and emissions produced from processes that occur in steam-powered plants, gas-powered plants, etc. It also encourages the experts and scientists to study and develop new methods for utilization of limited energy resources.",
+      "terms": [
+        "Energy",
+        "socioeconomic development",
+        "power plant",
+        "electrical energy",
+        "demand for electricity",
+        "energy policies",
+        "emissions",
+        "steam-powered plants"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-003",
+      "doc_id": "R031",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Among these methods, heat recovery steam generators (HRSGs) are regarded as very effective ones. This heat recovery is carried out in a more effective way when design parameters are chosen in their optimum state [1]. Heat Recovery Steam Generator (HRSG) have numerous applications such as cogeneration of hot steam utility, generation of the steam needed for injection into the combustion chamber, and also a more common application, in combined cycle power plants [2][3]. In combined cycle power plants, exhaust gas of the gas turbine enters the heat recovery steam generator (HRSG) and transfer its thermal energy to the water which is flowing into the chamber [4]. The heat recovery steam generator (HRSG) is one of the most important components of a combined cycle power plant (CCGT) that significantly affect the efficiency and the cost of the whole plant. The HRSG is an interface between the gas cycle and the steam cycle in a CCGT [5]. Heat Recovery Steam Generator (HRSG) is based on the Rankine and Brayton Cycle which is designed to utilize the exhaust gas from the gas turbine that used as a heat source to produce steam.",
+      "terms": [
+        "heat recovery steam generators",
+        "HRSG",
+        "combined cycle power plants",
+        "CCGT",
+        "exhaust gas",
+        "gas turbine",
+        "Rankine and Brayton Cycle"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-004",
+      "doc_id": "R031",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "In order to improve the heat recovery in the HRSG, more than one pressure level is used. With a single-pressure HRSG, about 30% of the total plant output is generated in the steam turbine [5]. An arrangement using a dual-pressure can increase the power generated in the steam cycle up to 10%, and reached 13% when using the three-cycle pressure. Combined cycle power plant with a modern triple-pressure HRSG and steam heating can easily achieve thermal efficiency to more than 55% [6]. One of the other important parameters in designing heat recovery steam generators is the pinch temperature difference [3]. Pinch temperature difference reduction causes the gas flow pressure drop within the boiler to increase and consequently increases the rate of irreversibility [7].",
+      "terms": [
+        "single-pressure HRSG",
+        "dual-pressure",
+        "triple-pressure HRSG",
+        "steam turbine",
+        "pinch temperature difference",
+        "pressure drop",
+        "irreversibility",
+        "thermal efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-005",
+      "doc_id": "R031",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "In 2009, Ataei et al performs an analysis using the combined pinch and exergy analysis (CPEA) on the simulation of a 325 MW steam power plant. The application results of CPEA in the power plants may indicate the magnitude of the amount of fuel savings and performance improvement of thermal cycles in a generation [8]. Behbahani-Nia et al present an exergy based thermoeconomic method, which is applied to find optimal values of design parameters (the pinch point and gas-side velocity) for a specific HRSG used in combined cycle power plants [2]. In 2010, Simulation and Optimization of Refrigeration Cycle in NGL Recovery Plants with Exergy-Pinch Analysis by B. Ghorbani, shows one of the main limitations of pinch analysis technique in optimizing energy recovery systems, it is said that pinch analysis technique can only deal with heat transfer processes and not processes involving power utilization [9]. For optimization of shaft work, an exergy-pinch method should be used. Efficiency improvement of the CCGT plants is achieved through the optimization of operating parameters: temperature difference between the gas and steam (pinch point) and the steam pressure in the HRSG [5]. Defining the optimal pinch point is the first step in the optimization procedure. Then, through the developed optimization process, other optimal operating parameters (steam pressure and condenser pressure) are identified. The power to heat ratio increases along with an increase in pinch point. On the other hand, the efficiency of first-law and second-law efficiency decreases with an increase in pinch point. An increase in process steam pressure raises power to heat ratio and second-law efficiency significantly, yet decreases the first-law efficiency[10]. Reheat in combine cycle provide significant improvement in electrical power output, process heat production, fuel-utilization (energetic) efficiency and second-law (exergetic) efficiency.",
+      "terms": [
+        "combined pinch and exergy analysis",
+        "CPEA",
+        "thermoeconomic",
+        "pinch point",
+        "gas-side velocity",
+        "exergy-pinch",
+        "power to heat ratio",
+        "second-law efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-006",
+      "doc_id": "R031",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 3,
+      "text": "In 2013, research on A New Simple Method for Estimating Exergy Destruction in Heat Exchangers by Ignacio Lopez Paniagua et al, presents an abbreviated method for estimating exergy destruction in a heat exchanger, requiring only black-box data of the exchanger’s inputs and outputs, and eliminating part of the mathematical difficulties associated with the calculations. A well-known model for temperature distributions in an exchanger is adapted to this case and used to distinguish the contributions of the three major causes of the total exergetic loss: heat transfer, fluid friction and energy dissipation to the surroundings [11]. This provides insight into the relative importance of the three, allowing for identification of potential improvements to a given design. On the other hand, this reduction results in a decreasing of temperature difference of gas and steam flow. Since irreversibility depends to the temperature difference of gas and steam, it also decreased when heat transfer is reduced, this matter in turn causes a reduction of exergy destruction.",
+      "terms": [
+        "exergy destruction",
+        "heat exchanger",
+        "black-box data",
+        "heat transfer",
+        "fluid friction",
+        "temperature difference"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-007",
+      "doc_id": "R031",
+      "section": "1. Introduction",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "The capital costs required to generate electrical energy is larger than the value of the energy produced due to the low efficiency of the system. Therefore, the maximum effort is needed in order to increase the efficiency of the power plant. In addition to analyzing the performance of each major component (compressor, combustion chamber, turbine, heat recovery steam generator) of the CCPP Tanjung Priok, this study also analyzes the impact of changes in the operating costs of the power plant after optimizing the parameters (pinch point and steam drum pressure). The main purpose of this research is to evaluate the performance of combined cycle power plants and its components and to develop a new system for optimization of parameters for combine cycle power plants (CCPP) with dual-pressure heat recovery steam generator (HRSG) by using combine pinch and exergy analysis.",
+      "terms": [
+        "CCPP Tanjung Priok",
+        "combustion chamber",
+        "heat recovery steam generator",
+        "pinch point",
+        "steam drum pressure",
+        "dual-pressure heat recovery steam generator",
+        "HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-008",
+      "doc_id": "R031",
+      "section": "2. Research Methodology",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "In this work, the system is simplified into a control volume to differentiate the inlet and outlet of each component in a power plant. System components that will be analyzed are: compressor, combustor, gas turbine, steam turbine and HRSG. Analysis of each component will provide information for the entire system. General assumptions that will be used in the calculation of the generating plant performance analysis are: • Each component/subcomponent of the system is assumed to be steady state. • Parameters of the gas at the gas turbine outlet (i.e. the mass flow m_GT,out and the temperature T_GT,out) are fixed and they are used as input data for optimization of the HRSG • Reference conditions that will be used at ambient temperature. • All components/subcomponents system assumed to operate without any loss of heat. • The system operates at steady state. • To perform a power plant optimization a cost hypothesis for all components of the plant had to be assumed. Two different types of optimization of the HRSG, thermodynamic and thermoeconomic optimization were performed. The subject of both optimizations was the cycle operating parameters: pinch point, steam drum pressures and condenser pressure. These parameters have greater effects on the cost of the HRSG than all the other operating parameters together.",
+      "terms": [
+        "control volume",
+        "compressor",
+        "combustor",
+        "steady state",
+        "m_GT,out",
+        "T_GT,out",
+        "pinch point, steam drum pressures and condenser pressure",
+        "thermoeconomic optimization"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-009",
+      "doc_id": "R031",
+      "section": "2. Research Methodology",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Necessary data information was taken from Combined Cycle Power Plant at Tanjung Priok. The data will be analyzed, collected and then processed using the worksheet \"Microsoft office excel\" to calculate the efficiency of each component. Furthermore, the result of the calculation is arranged into a table and then displayed in graphical form. The data used in this analysis includes: • Operating data CCPP UBP Priok. • Technical data UBP Priok CCPP including: pressure, temperature, mass flow rate, and other technical data that supports this research. • Flow diagram or steam cycle heat balance of CCPP UBP Priok. • Manual design of CCPP UBP Priok. • Operating data • The coefficient value of air and flue gas drawn from secondary data.",
+      "terms": [
+        "Combined Cycle Power Plant at Tanjung Priok",
+        "Microsoft office excel",
+        "CCPP UBP Priok",
+        "heat balance",
+        "mass flow rate",
+        "flue gas"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-010",
+      "doc_id": "R031",
+      "section": "2. Research Methodology",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Figure 1. Flowsheet diagram of Combined Cycle Power Plant Priok.",
+      "terms": [
+        "Figure 1",
+        "Flowsheet diagram",
+        "Combined Cycle Power Plant Priok"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-011",
+      "doc_id": "R031",
+      "section": "2. Research Methodology",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "The objective of the optimization is to enhance the efficiency of the CCGT and minimize the production costs of electricity of the plant. Here, a CCGT cycle with a dual-pressure HRSG will be considered. This case is the most complex one. The same procedure can be applied for single-pressure or triple-pressure of the HRSG CCGT.",
+      "terms": [
+        "CCGT",
+        "dual-pressure HRSG",
+        "single-pressure",
+        "triple-pressure",
+        "production costs of electricity"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-012",
+      "doc_id": "R031",
+      "section": "3. Results",
+      "page_start": 4,
+      "page_end": 5,
+      "text": "Combined Cycle Power Plant (CCPP) in Tanjung Priok was considered as a case study. It included three units of gas turbine, one unit steam turbine and three units HRSG with dual pressure. Details related to the CCPP are shown in Table 1. Exergy analysis has been performed on all CCPP to evaluate the exergy destruction of each component in the cycle, while pinch analysis is performed to optimize the heat exchange in the HRSG. Exergy rate in each state (table 2 and 3) were obtained by entering the enthalpy and entropy values into the exergy balance.",
+      "terms": [
+        "Combined Cycle Power Plant (CCPP)",
+        "Tanjung Priok",
+        "HRSG with dual pressure",
+        "exergy destruction",
+        "pinch analysis",
+        "enthalpy and entropy",
+        "exergy balance"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-013",
+      "doc_id": "R031",
+      "section": "3. Results",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Table 1. Primary information for component performances of the CCPP with the dual-pressure HRSG selected for the optimization. Power plant nominal capacity = 326 MW; Ambient air pressure = 1.013 bar; Ambient air temperature = 305 K; Pressure ratio = 9; Inlet gas turbine temperature = 1193 K; Exhaust gas temperature at the gas turbine outlet = 750 K; Exhaust gas pressure at the gas turbine outlet = 1.037 bar; Inlet compressor mass flow = 426.44 kg/s; The minimum ∆T between the gas turbine exhaust gases and live/reheat steam = 40 K; The heat recovery steam generator efficiency = 90 %.",
+      "terms": [
+        "dual-pressure HRSG",
+        "Pressure ratio",
+        "Inlet gas turbine temperature",
+        "Exhaust gas temperature",
+        "Inlet compressor mass flow",
+        "live/reheat steam",
+        "heat recovery steam generator efficiency"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-014",
+      "doc_id": "R031",
+      "section": "3. Results",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Table 2. Exergy rate at each state of the gas turbine cycle. Columns: Substance; Exergy rate [MW]: Ė^PH, Ė^CH, Ė. Air: Ė^PH=0; Ė^CH=0; Ė=0. Air: Ė^PH=328,501; Ė^CH=0,000; Ė=328,501. Combustion product: Ė^PH=896,260; Ė^CH=2,729; Ė=898,990. Combustion product: Ė^PH=193,677; Ė^CH=2,729; Ė=196,406.",
+      "terms": [
+        "Exergy rate",
+        "gas turbine cycle",
+        "Ė^PH",
+        "Ė^CH",
+        "Combustion product"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-015",
+      "doc_id": "R031",
+      "section": "3. Results",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Table 3. Exergy rate at each state of the HRSG. Columns: Total exergy rate [MW]: Ė^PH, Ė^CH, Ė. LP economizer inlet: Ė^PH=0,460; Ė^CH=0,076; Ė=0,536. LP economizer outlet: Ė^PH=1,814; Ė^CH=0,076; Ė=1,891. LP evaporator inlet: Ė^PH=3,326; Ė^CH=0,233; Ė=3,559. LP evaporator outlet: Ė^PH=4,638; Ė^CH=0,233; Ė=4,871. HP economizer 1 inlet: Ė^PH=1,814; Ė^CH=0,076; Ė=1,891. HP economizer 1 outlet: Ė^PH=18,742; Ė^CH=0,076; Ė=18,818. HP economizer 2 inlet: Ė^PH=4,638; Ė^CH=0,233; Ė=4,871. HP economizer 2 outlet: Ė^PH=24,098; Ė^CH=0,233; Ė=24,331. HP evaporator inlet: Ė^PH=24,098; Ė^CH=0,233; Ė=24,331. HP evaporator oulet: Ė^PH=92,941; Ė^CH=0,233; Ė=93,175. HP superheater inlet: Ė^PH=92,941; Ė^CH=0,233; Ė=93,175. HP superheater outlet: Ė^PH=116,58; Ė^CH=0,233; Ė=116,82. Flue gas inlet: Ė^PH=187,73; Ė^CH=2,729; Ė=190,46. Flue gas outlet: Ė^PH=0,295; Ė^CH=2,729; Ė=3,024.",
+      "terms": [
+        "Total exergy rate",
+        "HRSG",
+        "LP economizer",
+        "LP evaporator",
+        "HP economizer",
+        "HP evaporator",
+        "HP superheater",
+        "Flue gas"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-016",
+      "doc_id": "R031",
+      "section": "3. Results",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "The physical exergy is associated with the temperature and pressure of a stream matter. The physical component of the exergy associated with a stream is: Ė^PH = ṁ(h − h_o) − T_o(s − s_o) (physical exergy rate of a stream = mass flow rate × [enthalpy difference − dead-state temperature × entropy difference] relative to T_o, p_o; closing bracket as printed) Ė^PH = ṁ [(h̄ − h̄_o) − T_o(s̄ − s̄_o)] / M (same physical exergy rate written with molar specific enthalpy h̄ and entropy s̄ divided by molar mass M) Where ho and so denote the specific enthalpy and entropy, respectively, of the same stream of matter at the state where the temperature is T_o and the pressure is p_o.",
+      "terms": [
+        "physical exergy",
+        "Ė^PH",
+        "ṁ",
+        "T_o",
+        "specific enthalpy and entropy",
+        "p_o"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-017",
+      "doc_id": "R031",
+      "section": "3. Results",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Figure 2. Exergy destruction at each major component of the gas turbine cycle. Figure 3. Effect of ΔTmin variation on the CCPP net power and exergy destruction.",
+      "terms": [
+        "Figure 2",
+        "Exergy destruction",
+        "gas turbine cycle",
+        "Figure 3",
+        "ΔTmin",
+        "CCPP net power"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-018",
+      "doc_id": "R031",
+      "section": "3. Results",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "From figure 2, the exergy destruction contribution in the gas turbine system can be clearly viewed and it indicates that the biggest exergy destruction in the gas turbine system occurs in the combustion chamber. In a combined cycle power plant, the whole plant performance is improved by ΔTmin optimization of heat exchange in the HRSG. Figures 3 and 4 shows the effect of ΔTmin variation on the combined cycle net power.",
+      "terms": [
+        "exergy destruction",
+        "gas turbine system",
+        "combustion chamber",
+        "ΔTmin optimization",
+        "HRSG",
+        "net power"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-019",
+      "doc_id": "R031",
+      "section": "3. Results",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "Figure 4. Effect of ΔTmin variation on the combined cycle exergetic efficiency. Figure 5. Effect of pinch temperature different on the production cost of electricity.",
+      "terms": [
+        "Figure 4",
+        "ΔTmin",
+        "exergetic efficiency",
+        "Figure 5",
+        "pinch temperature different",
+        "production cost of electricity"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-020",
+      "doc_id": "R031",
+      "section": "3. Results",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "It is evident that when ΔTmin decreases, then exergy destruction of combined cycle decreases and the other hand its exergetic efficiency increases. This decrease in temperature difference augments the heat recovery in the HRSG. For a decrease of ΔTmin from 40 K to 5 K the exergy destruction decreases from 404.94 MW to 359.23 MW and exergetic efficiency increases by 1.23 percent. It is easy to conclude that the maximum efficiency and maximum steam turbine power will be reached at a null value for ΔTmin.",
+      "terms": [
+        "ΔTmin",
+        "exergy destruction",
+        "exergetic efficiency",
+        "heat recovery",
+        "HRSG",
+        "steam turbine power"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-021",
+      "doc_id": "R031",
+      "section": "3. Results",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "The success for the completion of a thermoeconomic optimization requires estimation of the major costs involved in the project i.e., Total capital investment, fuel cost, operating and maintenance expenses, and cost of the final products. These estimations consider various assumptions and predictions referring to the economic, technological, and legal environments and use techniques from engineering economics. One of the most important factors affecting the selection of an evaluation option for a thermal system is the cost of the final product. Figure 5 shows the effect of ΔTmin variation on the production cost of electricity. The production cost of electricity is decreasing with a reduction of ΔTmin. Figures 6 and 7 show the effect of pressure variations in the HP and LP drum to the production cost of electricity (c$/kWh).",
+      "terms": [
+        "thermoeconomic optimization",
+        "Total capital investment",
+        "fuel cost",
+        "engineering economics",
+        "production cost of electricity",
+        "ΔTmin",
+        "HP and LP drum",
+        "c$/kWh"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-022",
+      "doc_id": "R031",
+      "section": "3. Results",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "Figure 6. Effect of steam drum pressure variation on the production cost of electricity. Figure 7. Effect of LP drum pressure variation on the production cost of electricity.",
+      "terms": [
+        "Figure 6",
+        "steam drum pressure",
+        "Figure 7",
+        "LP drum pressure",
+        "production cost of electricity"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-023",
+      "doc_id": "R031",
+      "section": "3. Results",
+      "page_start": 8,
+      "page_end": 9,
+      "text": "Table 4 shows a result comparison between the initial case and optimized case. The results show that the financial parameters are significantly better than the initial case. Thermoeconomic optimization intends to achieve a trade-off between enhancing the efficiency and minimizing the production costs of electricity. In our case, by applying the developed method the efficiency of the selected combined cycle could be increased to about 1.23 % and the electrical output to more than 9 MW. On the other hand, the production costs of electricity were decreased by 0.25 cents-dollar per kilowatt-hour by optimal selection of the parameters.",
+      "terms": [
+        "initial case",
+        "optimized case",
+        "Thermoeconomic optimization",
+        "production costs of electricity",
+        "electrical output",
+        "cents-dollar per kilowatt-hour"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-024",
+      "doc_id": "R031",
+      "section": "3. Results",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "Table 4. Comparison between the initial case and the optimized case. ΔTmin: Initial case=40; Optimized case=5; unit=K. HP drum pressure: Initial case=40; Optimized case=30; unit=bar. LP drum pressure: Initial case=2.4; Optimized case=3.8; unit=Bar. Exergy destruction: Initial case=404.94; Optimized case=396.15; unit=MW. Net power output: Initial case=349.88; Optimized case=359.23; unit=MW. Exergetic efficiency: Initial case=45.913; Optimized case=47.141; unit=%. Production cost: Initial case=9.24; Optimized case=8.99; unit=C$/kWh.",
+      "terms": [
+        "ΔTmin",
+        "HP drum pressure",
+        "LP drum pressure",
+        "Exergy destruction",
+        "Net power output",
+        "Exergetic efficiency",
+        "Production cost",
+        "C$/kWh"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-025",
+      "doc_id": "R031",
+      "section": "4. Conclusions",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "The thermodynamic and thermoeconomic optimization of a dual pressure HRSG for combined cycle was performed in this study. Technically and economically speaking, exergy is valuable, and as a consequence, whenever it is intended to solve a problem through the scope of exergy analysis, a specific exergy loss should be found, which minimizes operational costs. The exergy analysis results on the gas turbine cycle indicated that the combustion chamber had the highest irreversibility. These results show that exergy destruction on combustion chamber is 191.55 MW. Combined cycle net power is directly dependent to the heat recovery potential in the HRSG. Pinch and exergy analysis were used to improve the overall exergetic efficiency of the combined cycle through decreasing the temperature difference in the HRSG. In addition, the HP and LP drum pressure also had a significant impact on the performance of the power plant, it was evident by the increase of the whole plant exergetic efficiency as a result of optimization on the drum pressure. Overall, the exergetic efficiency and the network produced by the CCPP were increased by 1.23 percent and 2.67 percent, respectively. This result is expected since the investment for the heat recovery steam generator system stays constant for a given gas turbine system while the net power output for the combined cycle power plant increases with increasing the heat exchanger effectiveness.",
+      "terms": [
+        "dual pressure HRSG",
+        "thermoeconomic optimization",
+        "combustion chamber",
+        "irreversibility",
+        "191.55 MW",
+        "Pinch and exergy analysis",
+        "drum pressure",
+        "heat exchanger effectiveness"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R031-026",
+      "doc_id": "R031",
+      "section": "4. Conclusions",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "Thermoeconomic analysis generally involves more uncertainties than a thermodynamic analysis. This fact should not deter engineers from conducting detailed economic analysis using the best available data, however. Sensitivity studies are recomended to investigate the effect of major assumptions (e.g,. cost of money, inflation rate, and real escalation rate of fuel) on the results of an thermoeconomic analysis. In addition, for optimal results, thermoeconomic and thermodynamic analysis of a power plant must be accompanied by an analysis of the impacts occurring to the environment, so that results can be achieved by an accurate reference in designing and analyzing the performance of power plants.",
+      "terms": [
+        "Thermoeconomic analysis",
+        "thermodynamic analysis",
+        "Sensitivity studies",
+        "inflation rate",
+        "real escalation rate of fuel"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    }
+  ],
+  "report": {
+    "paragraph_count": 26,
+    "pages_processed": "인쇄 1-10쪽(PDF 1-11쪽 전체; PDF 1쪽 표지는 제외 대상만 있음). 본문 인쇄 1-9쪽 처리, 9-10쪽은 참고문헌",
+    "last_paragraph_id": "R031-026",
+    "skipped": [
+      "PDF 1쪽(인쇄 번호 없음) 표지: \"You may also like\" 추천 논문 목록 3건, \"To cite this article\"·\"View the article online\" 안내, \"This content was downloaded from IP address ... on 21/10/2026\" 다운로드 IP 문구: IOP 표지/머리 정보",
+      "각 쪽 IOP 머리글(SENTEN 2018 - Symposium of Emerging Nuclear Technology and Engineering Novelty / IOP Publishing / IOP Conf. Series: Journal of Physics: Conf. Series 1198 (2019) 042006 / doi:10.1088/1742-6596/1198/4/042006)과 쪽번호: 머리글/바닥글",
+      "1쪽 저자 소속(1, 2)과 이메일(mihsanriady@ft.unsri.ac.id): 저자 연락처",
+      "1쪽 바닥 \"Content from this work may be used under the terms of the Creative Commons Attribution 3.0 licence ... Published under licence by IOP Publishing Ltd\": 저작권 문구(document.license에 반영)",
+      "9-10쪽 5. References [1]-[11]: 참고문헌 목록",
+      "Figure 1-7의 도식·그래프 내용(계통도 라벨 HRSG/CC/Com/GT/ST, 축 눈금, 막대그래프): 캡션만 수록, 그림 내용은 추측하지 않음",
+      "7쪽 \"(c$/kWh).\" 다음 줄의 단독 마침표 \".\": 추출 잡음"
+    ],
+    "uncertain": [
+      "쪽 번호는 인쇄 번호(1-10)를 사용(인쇄 n쪽 = PDF n+1쪽). PDF 1쪽 표지는 인쇄 번호가 없고 내용이 모두 제외 대상이라 문단 없음",
+      "2. Research Methodology의 글머리 기호가 추출본에서 \"x\"(Symbol 글꼴 깨짐)로 나와 \"• \"로 바꾸어 항목을 이어 씀",
+      "물리 엑서지 식 2개는 번호가 없으며 PDF 페이지 이미지(400dpi)로 기호를 확인해 선형 표기로 옮김(Ė^PH, ṁ, h_o, s_o, T_o, 윗줄 기호 h̄·s̄, M). 첫 식의 괄호 \"T_o(s − s_o)\"와 짝이 맞지 않는 h_o 뒤 닫는 괄호 모양은 인쇄 그대로 둠. 설명 괄호는 추가한 의미 설명임",
+      "Table 2·3의 열 머리 Ė^PH, Ė^CH, Ė는 추출본에 없어 이미지로 확인해 보충. Table 3은 첫 열 머리가 비어 있음. 표 값의 소수 쉼표(328,501 등)와 \"HP evaporator oulet\", Table 4의 \"Bar\" 표기는 인쇄 그대로",
+      "Table 1은 열 머리가 없는 2열(값, 단위) 표라 \"항목 = 값 단위\" 형태로 풀어 씀",
+      "m_GT,out, T_GT,out은 이미지·좌표상 아래첨자라 _ 표기. ΔTmin은 원문에서 아래첨자 없이 한 단어로 인쇄되어 그대로 둠",
+      "원문 오탈자·비문(\"combine cycle\", \"Ataei et al performs\", \"recomended\", \"e.g,.\", \"the network produced\", \"pinch temperature different\" 등)은 verbatim 원칙에 따라 그대로 유지",
+      "1절 첫 문단(인쇄 1-2쪽, 374단어)은 350단어 초과라 문장 경계 \"Among these methods\" 앞에서 둘로 나눔. 50단어 미만 짧은 문단 병합: 1절 마지막 두 문단, 2절 \"Two different types...\" 문단(앞 문단과), 3절 첫 문단(+\"Exergy analysis has been performed...\", 인쇄 4-5쪽), \"From figure 2...\"+\"In a combined cycle...\", \"Table 4 shows...\"+\"In our case...\"(인쇄 8-9쪽). 같은 쪽의 그림 캡션은 쪽 단위로 묶음(Fig 2+3, 4+5, 6+7)"
+    ]
+  }
+}

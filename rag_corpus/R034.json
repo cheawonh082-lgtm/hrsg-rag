@@ -1,0 +1,451 @@
+{
+  "document": {
+    "doc_id": "R034",
+    "title": "The extension of the operational range of combined-cycle power plant with a triple-pressure heat recovery steam generator",
+    "authors": [
+      "B D Teplov",
+      "V D Burov"
+    ],
+    "year": 2017,
+    "venue": "Journal of Physics: Conference Series 891 (2017) 012208 (PTPPE-2017), IOP Publishing",
+    "doi": "10.1088/1742-6596/891/1/012208",
+    "url": "https://doi.org/10.1088/1742-6596/891/1/012208",
+    "license": "Content from this work may be used under the terms of the Creative Commons Attribution 3.0 licence. Published under licence by IOP Publishing Ltd (CC BY 3.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R034-001",
+      "doc_id": "R034",
+      "section": "Abstract",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Abstract. In the article, the issues of operational flexibility improvement for CCGT with a triple-pressure heat recovery steam generator are described. The factors limiting the operational range of CCGT were identified and analyzed. Analytical dependences for the minimum and maximum load of the CCGT on the ambient air temperature were obtained. The ways of expanding an operational range due to water spray into air-intake path, supplementary firing before the heat recovery steam generator, intensifying regulation of compressor airflow using the IGV and its pre-heating are described.",
+      "terms": [
+        "operational flexibility",
+        "CCGT",
+        "triple-pressure heat recovery steam generator",
+        "minimum and maximum load",
+        "ambient air temperature",
+        "water spray",
+        "supplementary firing",
+        "IGV"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-002",
+      "doc_id": "R034",
+      "section": "1. Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Currently, at the domestic thermal power plants powerful combined-cycle units with heat recovery steam generator (HRSG) of the three pressures and reheat are introduced, which are the most efficient type of generating plants on natural gas. Thus, they were designed as base load plants. However, in terms of Power Joint Market and the limited possibilities of load regulations of power systems, CCGT operating modes significantly differ from the basic adjustments. The reduction of electricity rate at night in Russia led to the necessity for deep discharges. There is also another problem. The dispatch schedule of power loads is made on the basis of certified value of electric power CCGT. High ambient temperatures at derated hours lead generating companies to losses because of reduced production of electricity and decrease of pay for capacity characteristics. Under such conditions, the extension of the adjusting range limit of loads of the CCGT would be relevant.",
+      "terms": [
+        "combined-cycle units",
+        "heat recovery steam generator",
+        "HRSG",
+        "reheat",
+        "base load",
+        "CCGT",
+        "deep discharges",
+        "adjusting range"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-003",
+      "doc_id": "R034",
+      "section": "2. A short description of the object of study",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "In December 2014, the CCGT-420T power-generating unit was put into operation at the Combined Heat and Power Plant 16, an affiliated company of Mosenergo. The basic equipment of the power-generating unit comprises: an SGT5-4000F gas-turbine with an electric generator manufactured by Siemens AG; an SST5-5000 steam turbine with an electric generator manufactured by Siemens AG; and a horizontal triple-pressure drum waste heat boiler with a reheater manufactured by EMAl’yans. The electrical capacity of the power-generating unit is 421 MW and its thermal efficiency reaches 58.2% at the contract ambient conditions.",
+      "terms": [
+        "CCGT-420T",
+        "SGT5-4000F",
+        "SST5-5000",
+        "Siemens AG",
+        "triple-pressure drum waste heat boiler",
+        "reheater",
+        "421 MW",
+        "thermal efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-004",
+      "doc_id": "R034",
+      "section": "2. A short description of the object of study",
+      "page_start": 1,
+      "page_end": 2,
+      "text": "To investigate the characteristics of the CCGT, it was tested in 2014 – 2015, using a sufficiently complete, precise and automated authorized measuring system. In the course of the thermal tests, 92 modes were studied within the wide ranges of power outputs (from 5 to 302) MW and ambient temperatures from –12 to +24°C. The experimental data is made in accordance with [1]. Results of thermal tests and their analysis is given in [2]. On the basis of experimental characteristics was generated a calculation model of the generating unit CCGT-420 [3], which allowed to examine its modes, parameters and indicators, and patterns of their changes in various loads and ambient temperatures. On the basis of computations and data, obtained during the experimental work, were identified and analyzed the factors limiting the adjustment range of power of the CCGT and of ways of its expansion.",
+      "terms": [
+        "thermal tests",
+        "92 modes",
+        "power outputs",
+        "ambient temperatures",
+        "calculation model",
+        "CCGT-420",
+        "adjustment range"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-005",
+      "doc_id": "R034",
+      "section": "3. CCGT adjustment range of load",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Currently the most relevant operational flexibility characteristic for generating companies and system operator is the adjustment range of load, defined as the difference between the maximum and minimum electrical loads, achieved without changing the composition of the equipment units. In accordance with the requirements of the supplier, the gas turbine can be operated in the range of ambient temperatures from -45 to +40 ^0C. Figure 1 shows the dependences of the technological maximum load of CCGT-420 and the respective loads of the gas turbine (GT) and the steam turbine (ST). The maximum capacity of the GT is limited when reaching the maximum permissible level under the ambient conditions of the temperature of gases at the inlet to the gas turbine and the airflow through the compressor according to the strength conditions for rotor and row of blades. For the concerned GT the maximum electric capacity is obtained when the compressor inlet temperature is equal to -12 ^0C and is about 302 MW, the corresponding value of the CCGT electrical power is 436,8 MW. Thermal efficiency of GT in this case is 39.8%, and the thermal efficiency of the CCGT is 57.7 %.",
+      "terms": [
+        "operational flexibility",
+        "adjustment range of load",
+        "gas turbine (GT)",
+        "steam turbine (ST)",
+        "CCGT-420",
+        "compressor inlet temperature",
+        "436,8 MW",
+        "thermal efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-006",
+      "doc_id": "R034",
+      "section": "3. CCGT adjustment range of load",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Figure 1. Change in maximum and minimum electrical output of the CCGT (N_e,max^CCGT, N_e,min^CCGT), the GT (N_e,max^GT, N_e,min^GT) and the ST (N_e,max^ST, N_e,min^ST), depending on the ambient air temperature (t_aa).",
+      "terms": [
+        "Figure 1",
+        "electrical output",
+        "CCGT",
+        "N_e,max^CCGT",
+        "N_e,min^GT",
+        "ambient air temperature",
+        "t_aa"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-007",
+      "doc_id": "R034",
+      "section": "3. CCGT adjustment range of load",
+      "page_start": 2,
+      "page_end": 3,
+      "text": "The maintenance of the GT capacity on the maximum permissible value at a further reduction of the ambient air temperature is achieved with the decrease of the airflow and fuel due to the simultaneous cover of the IGV compressor and a fuel valve of the fuel handling system. In accordance with the requirements of the supplier, the GT should not be operated when the compressor inlet temperature is below - 20°. At lower temperatures in the preheat system it increases to the minimum permissible value according to operating conditions. In this region of ambient air temperatures, the rate of opening IGV and the fuel valve, and the GT exhaust temperature and flow as well as the steam properties in the steam turbine and its capacity remain constant. With increasing ambient air temperature the capacity of the GT and CCGT are reduced to 266 and 400 MW at ambient air temperature of 25℃. In this connection, the thermal efficiency of the GT is reduced to 38.8%, and the thermal efficiency of the CCGT to 56.8%. Thus, unlike the conventional steam power units, the base load of combined cycle power plant is a variable value and its dependence on ambient air temperature should be considered when planning the unit commitment in the control of the power system. According to the data obtained in the current study of the operation modes of the CCGT-420, minimum permissible load of the GT and CCGT (solid lines in figure 1) in the range of ambient temperatures from -45 C to +40 C following analytical dependencies were obtained:",
+      "terms": [
+        "IGV",
+        "fuel valve",
+        "compressor inlet temperature",
+        "preheat system",
+        "GT exhaust temperature",
+        "base load",
+        "unit commitment",
+        "CCGT-420"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-008",
+      "doc_id": "R034",
+      "section": "3. CCGT adjustment range of load",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "N_e,max^GT = 0,0264 · t_aa^2 − 0,5194 · t_aa + 292,9 at t_aa > −12℃ (1) (GT electrical output N_e,max^GT as a quadratic function of ambient air temperature t_aa, valid above −12℃) N_e,max^GT = 302 at t_aa ≤ −12℃. (2) (GT electrical output N_e,max^GT is constant at 302 MW when t_aa ≤ −12℃) N_e,max^CCGT = −0,0359 · t_aa^2 − 0,5917 · t_aa + 425,5 at t_aa > −12℃ (3) (CCGT electrical output N_e,max^CCGT as a quadratic function of t_aa, valid above −12℃) N_e,max^CCGT = 436,8 at t_aa ≤ −12℃ (4) (CCGT electrical output N_e,max^CCGT is constant at 436,8 MW when t_aa ≤ −12℃)",
+      "terms": [
+        "N_e,max^GT",
+        "N_e,max^CCGT",
+        "t_aa",
+        "−12℃",
+        "302",
+        "436,8"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-009",
+      "doc_id": "R034",
+      "section": "3. CCGT adjustment range of load",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "As the experience of using modern CCGT reveals, the lower limit of the adjustment range of CCGT loads is determined by the decrease in the reliability, the decline of the environmental performance and thermal efficiency of the unit when it is working at partial loads. Operation of the SGT5-4000F gas turbine with an annular combustion chamber and hybrid burners at low load after the full cover of compressor IGV increases concentration of NOx and CO in the exhaust gases. Adjustment of the airflow by using a compressor inlet guide vanes (IGV) allows to operate the combustion chamber with practically constant air-fuel ratio and to burn prepared homogeneous fuel-air mix with low NOx emissions (figure 2). At the load range from 50 to 100%. The combustion chamber operates almost without underburning and formation of carbon monoxide (figure 3). By decreasing the load of the GT after full cover of IGV, when the airflow remains constant, and fuel consumption continues to decline; what causes the increase of air-fuel ratio in the combustion chamber, burning of prepared fuel-air mix is stabilized by diffusion-flame burner, which is included in the two-stage hybrid burner, emissions of oxides of nitrogen begin to increase (figure 2). The minimum permissible load of the GT, corresponding to completely covered IGV, is ≈ 90-110 MW.",
+      "terms": [
+        "lower limit of the adjustment range",
+        "SGT5-4000F",
+        "annular combustion chamber",
+        "hybrid burners",
+        "compressor inlet guide vanes (IGV)",
+        "NOx",
+        "air-fuel ratio",
+        "diffusion-flame burner"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-010",
+      "doc_id": "R034",
+      "section": "3. CCGT adjustment range of load",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Figure 2. Change of the NOx concentration in the combustion products, depending on capacity of GT. Figure 3. Change of the CO concentration in the combustion products, depending on capacity of GT.",
+      "terms": [
+        "Figure 2",
+        "NOx concentration",
+        "Figure 3",
+        "CO concentration",
+        "combustion products",
+        "capacity of GT"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-011",
+      "doc_id": "R034",
+      "section": "3. CCGT adjustment range of load",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Calculations carried out on the basis of the designed model of CCGT-420 show that, while declining power of GT after full cover of IGV, lowering the exhaust gases temperature in GT that leads to the temperature fall of the steam, generated in the HRSG, leads to an increase of the final moisture content, which creates the danger of erosion wear of ST last stage blades. This is connected with the reducing of the load of GT, which leads to a decrease of the steam temperature in the low-pressure steam turbine and increase of the vacuum in the condenser while the inlet steam pressure in low-pressure turbine remains almost unchanged. The steam expansion inside the ST in h,s-Diagram for Water-Steam shifts to the left and the final moisture content increases. The ambient air temperature decrease causes a decrease in the temperature of exhaust gases in GT and temperature of superheated steam at the steam turbine inlet, causing an exceeding of the minimum permissible load of GT, corresponding to rating value of final moisture content (≈12 %). While the ambient temperature is -20 C, the minimum load of GT would be 100 MW.",
+      "terms": [
+        "CCGT-420",
+        "IGV",
+        "exhaust gases temperature",
+        "HRSG",
+        "final moisture content",
+        "erosion wear",
+        "h,s-Diagram for Water-Steam",
+        "minimum permissible load"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-012",
+      "doc_id": "R034",
+      "section": "3. CCGT adjustment range of load",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Thus, the power range of GT, in which it is regulated using a compressor IGV, is acceptable. After the further decreasing of load after full cover of IGV it is necessary to control concentrations of NOx and CO in combustion products and final moisture content in the ST. On the basis of these prerequisites analytical dependences for determination of the minimum load of the CCGT-420 (dotted lines figure 1) in the range of ambient temperatures from -45 to +40 C were obtained:",
+      "terms": [
+        "power range of GT",
+        "compressor IGV",
+        "NOx",
+        "final moisture content",
+        "minimum load",
+        "CCGT-420",
+        "analytical dependences"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-013",
+      "doc_id": "R034",
+      "section": "3. CCGT adjustment range of load",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "N_e,min^GT = 0,0016 · t_aa^2 − 0,4527 · t_aa + 111,4 at t_aa > −20℃ (5) (minimum GT electrical output N_e,min^GT as a quadratic function of ambient air temperature t_aa, valid above −20℃) N_e,min^GT = 110 at t_aa ≤ −20℃. (6) (minimum GT electrical output is constant at 110 MW when t_aa ≤ −20℃) N_e,min^CCGT = −0,003 · t_aa^2 − 0,5386 · t_aa + 196,1 at t_aa > −20℃ (7) (minimum CCGT electrical output N_e,min^CCGT as a quadratic function of t_aa, valid above −20℃) N_e,min^CCGT = 197,5 at t_aa ≤ −20℃ (8) (minimum CCGT electrical output is constant at 197,5 MW when t_aa ≤ −20℃) When ambient air temperature is < -20 °C minimum load of CCGT-420 is 197,5 MW (48% of rated power). In case of increasing the compressor inlet temperature up to 40 °C the minimum load decreases to 141 MW (34 % of nominal power).",
+      "terms": [
+        "N_e,min^GT",
+        "N_e,min^CCGT",
+        "t_aa",
+        "minimum load",
+        "CCGT-420",
+        "197,5 MW",
+        "141 MW",
+        "compressor inlet temperature"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-014",
+      "doc_id": "R034",
+      "section": "4. Decreasing of the minimum load of the CCGT",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Further decreasing of the load of CCGT can be accomplished by heating the air before the compressor and intensifying regulation of its airflow using the IGV (reclosing IGV) while maintaining the air-fuel ratio in the combustion chamber at a level corresponding to the completely covered IGV. The calculations showed that the decrease of the load of GT in this case is accompanied by an increase of exhaust gas temperature, the maximum value of which according to the GT manual is ≈ 600 °C. It limits the possibility of reducing the minimum load of the CCGT on the one hand, but on the other hand does not cause cooling of thick-walled elements of the HRSG and does not limit the ability of quick load increase.",
+      "terms": [
+        "minimum load",
+        "compressor",
+        "IGV",
+        "reclosing IGV",
+        "air-fuel ratio",
+        "exhaust gas temperature",
+        "thick-walled elements",
+        "HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-015",
+      "doc_id": "R034",
+      "section": "4. Decreasing of the minimum load of the CCGT",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "For air heating before the compressor can be used anti-icing system of the GT. The calculations revealed that by the ambient air temperature < -15 ° possibilities of declining the minimum load due to preheating of air are limited by thermal power of the air heater, built in the complex air-cleaning installation, in which the maximum temperature increase is ≈ 50-55°C. At higher ambient air temperatures its heating before the compressor to 40 °C allows to reduce the minimum load up to 141 MW (34% of rated capacity) (figure 4), thermal efficiency of CCGT will amount to 48.6 %.",
+      "terms": [
+        "anti-icing system",
+        "preheating",
+        "air heater",
+        "complex air-cleaning installation",
+        "141 MW",
+        "thermal efficiency",
+        "CCGT"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-016",
+      "doc_id": "R034",
+      "section": "4. Decreasing of the minimum load of the CCGT",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Intensifying regulation of airflow using the IGV leads to a significant decline of GT electric power, but to significant decline in ST electrical power caused by the reduction of the exhaust gases, incoming to the HRSG (figure 4). When ambient air temperature < -20 °C, reclosing IGV at a constant air-fuel ratio allows to reduce the CCGT minimum load to 105.4 MW (21 % of rated power), thermal efficiency of CCGT will amount to 45.5 %. At higher ambient temperatures reducing minimum load due to reclosing IGV is possible, but in less degree. However, it should be mentioned that the intensifying of airflow adjustment using IGV will reduce the efficiency of compressor and shift its characteristics to the surging boundary, therefore, the possibility of using such a way needs to be confirmed experimentally.",
+      "terms": [
+        "regulation of airflow",
+        "IGV",
+        "ST electrical power",
+        "HRSG",
+        "reclosing IGV",
+        "air-fuel ratio",
+        "105.4 MW",
+        "surging boundary"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-017",
+      "doc_id": "R034",
+      "section": "4. Decreasing of the minimum load of the CCGT",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Figure 4. Change of the minimum electrical output of the CCGT (N_e,min^CCGT),the GT (N_e,min^GT), the ST (N_e,min^ST) when heating compressor inlet air and intensifying regulation of airflow using the IGV, depending on the ambient air temperature (t_aa).",
+      "terms": [
+        "Figure 4",
+        "minimum electrical output",
+        "N_e,min^CCGT",
+        "N_e,min^GT",
+        "N_e,min^ST",
+        "compressor inlet air",
+        "IGV",
+        "t_aa"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-018",
+      "doc_id": "R034",
+      "section": "5. The increase of available capacity of CCGT at high ambient temperatures.",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "The increase of ambient air temperatures leads to the decrease of available capacity of CCGT, and failure of the operations schedule. Stabilizing electrical power of GT by increasing the gas-inlet temperature is impractical because of the accelerated exhaustion of durability of expensive hot gas path’s parts. Without such aftereffects the capacity of GT during the peak hours can be boosted due to water injection in the inlet path of GT directly before the compressor. When using “wet compression” after inlet air filter, an spray nozzles system is installed. Part of the injected water supplied through the spray nozzles has time to evaporate before the compressor, lowering temperature and increasing airflow through it. Most of the water gets in the compressor. The maximum flow rate of the injected water is determined by the rate of evaporation of the drops on compressor.",
+      "terms": [
+        "available capacity",
+        "CCGT",
+        "gas-inlet temperature",
+        "hot gas path",
+        "water injection",
+        "wet compression",
+        "spray nozzles",
+        "compressor"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-019",
+      "doc_id": "R034",
+      "section": "5. The increase of available capacity of CCGT at high ambient temperatures.",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "According to the calculations, the water injection in the amount of ≈ 1.8% of the airflow when the ambient air temperature is 35 °C allows to stabilize the electric capacity of CCGT at rated level and increase its efficiency to 0.3 % (figure 5). This rate is close to the maximum possible by the terms of the evaporation of water during its being in the compressor. Possible increase as well as direct water injection after the compressor, can additionally increase the power but without reduction in the work of compressor and with some reduction in efficiency of GT.",
+      "terms": [
+        "water injection",
+        "airflow",
+        "electric capacity",
+        "CCGT",
+        "efficiency",
+        "direct water injection",
+        "compressor"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-020",
+      "doc_id": "R034",
+      "section": "5. The increase of available capacity of CCGT at high ambient temperatures.",
+      "page_start": 5,
+      "page_end": 6,
+      "text": "Additional power production on CCGT to cover peak ratings is possible by using supplementary firing. The GT exhaust gases have a high temperature, and bulk concentration of oxygen is from 13 to 16%. They can be considered as quite an active oxidizer in the combustion process. The burning of fuel before the HRSG allows to increase the temperature of combustion products, to increase the quantity of generated steam and ST power. By the ambient air temperature 35 °C, burning supplementary fuel before the HRSG in the amount of 1.7 kg/c also allows to stabilize the electric power of CCGT at rated level (figure 5). Power of CCGT in this case is increased by forcing steam circuit through a direct supply in the fuel heat. The temperature of the gases at the inlet to the HRSG is increased to ≈700 °C, and the efficiency of CCGT decreases to 1.14 %. Inasmuch as in this case the increase of CCGT power is done due to the expense of a corresponding increase in power of the steam turbine, produced with a lower thermodynamic efficiency, for CCGT of this type supplementary firing is always accompanied by a decrease in its efficiency.",
+      "terms": [
+        "supplementary firing",
+        "GT exhaust gases",
+        "concentration of oxygen",
+        "oxidizer",
+        "HRSG",
+        "ST power",
+        "1.7 kg/c",
+        "steam turbine"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R034-021",
+      "doc_id": "R034",
+      "section": "5. The increase of available capacity of CCGT at high ambient temperatures.",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Figure 5. Change in the electrical capacity of CCGT-420 (N_e^CCGT), GT (N_e^GT) ST (N_e^ST), depending on the ambient air temperature (t_aa) with water injection at the compressor inlet and supplementary firing.",
+      "terms": [
+        "Figure 5",
+        "electrical capacity",
+        "CCGT-420",
+        "N_e^CCGT",
+        "t_aa",
+        "water injection",
+        "supplementary firing"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    }
+  ],
+  "report": {
+    "paragraph_count": 21,
+    "pages_processed": "인쇄 1-6쪽(PDF 1-7쪽 전체; PDF 1쪽 표지는 제외 대상만 있음). 본문 인쇄 1-6쪽 처리, 6쪽 하단은 참고문헌",
+    "last_paragraph_id": "R034-021",
+    "skipped": [
+      "PDF 1쪽(인쇄 번호 없음) 표지: \"You may also like\" 추천 논문 목록 3건, \"To cite this article\"·\"View the article online\" 안내, \"This content was downloaded from IP address ... on 21/10/2026\" 다운로드 IP 문구: IOP 표지 정보",
+      "각 쪽 IOP 머리글(PTPPE-2017 / IOP Publishing / IOP Conf. Series: Journal of Physics: Conf. Series 891 (2017) 012208 / doi:10.1088/1742-6596/891/1/012208, 추출본의 숨은 문자열 \"1234567890\" 포함)과 쪽번호: 머리글/바닥글",
+      "1쪽 저자 소속 \"Moscow Power Engineering Institute\": 저자 연락처·소속",
+      "1쪽 바닥 \"Content from this work may be used under the terms of the Creative Commons Attribution 3.0 licence ... Published under licence by IOP Publishing Ltd\": 저작권 문구(document.license에 반영)",
+      "6쪽 References [1]-[3]: 참고문헌 목록",
+      "Figure 1-5의 그래프 내용(축 눈금, 곡선 라벨, 범례 Reclosing IGV/Heating compressor inlet air): 캡션만 수록, 그림 내용은 추측하지 않음"
+    ],
+    "uncertain": [
+      "쪽 번호는 인쇄 번호(1-6)를 사용(인쇄 n쪽 = PDF n+1쪽). PDF 1쪽 표지는 인쇄 번호가 없고 내용이 모두 제외 대상이라 문단 없음",
+      "식 (1)-(8)과 Figure 1·4·5 캡션의 기호는 추출본에서 수학 글꼴이 깨져(𝑁𝑁𝑒𝑒… 등) PDF 페이지 이미지(300dpi)로 확인해 선형 표기로 옮김: 아래첨자 e와 max/min은 N_e,max, 위첨자 GT/CCGT/ST는 ^, 주변 공기온도 t_aa, 제곱 t_aa^2. 식 번호 (1)-(8)은 각 식 뒤에 두고, 그 뒤 괄호는 추가한 의미 설명임",
+      "식 (1)-(4)는 인쇄본에서 아래첨자가 \"max\"(N_e,max^GT, N_e,max^CCGT)인데 바로 앞 문장은 \"minimum permissible load of the GT and CCGT (solid lines in figure 1)\"라고 적혀 있음. 원문 그대로 두었고 설명 괄호는 기호(max) 기준으로 중립적으로 작성",
+      "온도 표기 \"+40 0C\", \"-12 0C\"는 0이 위첨자로 인쇄되어 \"^0C\"로 표기. \"-45 C\", \"-20 C\", \"below - 20°\", \"< -15 °\", \"1.7 kg/c\", 소수 쉼표(436,8 등) 등은 인쇄 그대로",
+      "절 제목 \"3.CCGT...\", \"4.Decreasing...\", \"5.The increase...\"는 번호 뒤 공백 없이 인쇄되어 section 필드에서만 공백을 넣음. 5절 제목 끝 마침표는 인쇄 그대로",
+      "원문 비문·오탈자(\"was generated a calculation model\", \"an spray nozzles\", \"At the load range from 50 to 100%. The combustion chamber...\" 등)는 verbatim 원칙에 따라 그대로 유지",
+      "50단어 미만 짧은 문단 병합: 식 (5)-(8) 뒤의 \"When ambient air temperature is < -20 °C ...\" 문단(약 40단어)을 같은 절의 식 문단에 붙임. Figure 2·3 캡션(같은 쪽)은 하나로 묶음"
+    ]
+  }
+}

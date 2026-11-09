@@ -1,0 +1,1395 @@
+{
+  "document": {
+    "doc_id": "R016",
+    "title": "Technical Guidance Document – 2015 Revision: Volatile treatments for the steam-water circuits of fossil and combined cycle/HRSG power plants",
+    "authors": [
+      "IAPWS"
+    ],
+    "year": 2015,
+    "venue": "International Association for the Properties of Water and Steam, IAPWS TGD3-10(2015), Stockholm, Sweden, July 2015",
+    "doi": "",
+    "url": "http://www.iapws.org",
+    "license": "© 2015 International Association for the Properties of Water and Steam. Publication in whole or in part is allowed in all countries provided that attribution is given to IAPWS (출처 표기 시 전재 허용 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R016-001",
+      "doc_id": "R016",
+      "section": "Cover page",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "This Technical Guidance Document has been authorized by the International Association for the Properties of Water and Steam (IAPWS) at its meeting in Stockholm, Sweden, 28 June to 3 July, 2015. The members of IAPWS are: Britain and Ireland, Canada, Czech Republic, Germany, Japan, Russia, Scandinavia (Denmark, Finland, Norway, Sweden), and the United States of America. Associate Members are Argentina and Brazil, Australia, France, Greece, New Zealand, and Switzerland. The President at the time of adoption of this document is Dr. David Guzonas of Canada.",
+      "terms": [
+        "IAPWS",
+        "Technical Guidance Document"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-002",
+      "doc_id": "R016",
+      "section": "Summary",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "This Technical Guidance Document was first issued in 2010. This 2015 revision includes a small number of minor updates and clarifications, and adds guidance for Heat Recovery Steam Generators (HRSGs) that start frequently and those that are required to fast start with minimal delays to startup times. These do not constitute significant changes to the scope of the document or to the guidelines for normal operation.",
+      "terms": [
+        "Heat Recovery Steam Generators",
+        "HRSGs",
+        "fast start",
+        "startup"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-003",
+      "doc_id": "R016",
+      "section": "Summary",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "In order to control corrosion throughout the steam/water circuits of fossil and combined cycle/HRSG plants, it is essential for the operator of the plant to choose and optimize a chemical treatment scheme that is customized to that plant. Normal target values for the appropriate level of instrumentation around the cycle must be chosen. This Technical Guidance Document considers fossil and combined cycle/HRSG plants and identifies the normal target values for each plant type when operating with a volatile treatment. It is emphasized that this is an IAPWS guidance document and that, depending on local requirements, the normal or target values will need to be customized for each plant depending on the actual conditions of operation, the equipment and materials installed, and the condenser cooling media.",
+      "terms": [
+        "corrosion",
+        "combined cycle/HRSG",
+        "chemical treatment",
+        "volatile treatment",
+        "target values",
+        "condenser cooling media"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-004",
+      "doc_id": "R016",
+      "section": "1. Nomenclature and Definitions",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "1. Nomenclature and Definitions (part 1; columns: Term; Alternative or Acronym; Definition). Air-cooled Condensers: Alternative or Acronym=ACC; Definition=System to condense steam from a turbine by indirect air cooling. All-volatile Treatment: Alternative or Acronym=AVT; Definition=Conditioning regime in which only volatile alkalizing agents are added to the feedwater (commonly ammonia but volatile amines may also be employed). May be either: AVT(R) Reducing conditions (added reducing agent) or AVT(O) Oxidizing conditions (residual oxygen present). Air Removal Section: Alternative or Acronym=ARS; Definition=Part of water-cooled or air-cooled condenser where non-condensable gases are removed under vacuum. Condensate: Definition=Water that derives from condensation of steam after expansion in a steam turbine and passage through a condenser or process heat exchanger. Condensate Polishing Plant: Alternative or Acronym=CPP; Definition=System containing ion exchange resins to purify condensate. Can also include a filtration system. Condensate Pump Discharge: Alternative or Acronym=CPD. Conductivity: Alternative or Acronym=Specific Conductivity, Direct Conductivity; Definition=Electrical conductivity of the water sample as measured directly without any treatment [1]. Conductivity after cation exchange: Alternative or Acronym=CACE, Cation Conductivity, Acid Conductivity; Definition=Conductivity of a water sample after passage through a strongly acidic cation exchanger in the hydrogen form. Caustic Treatment: Alternative or Acronym=CT; Definition=Involves addition of NaOH to the boiler or HRSG evaporator. Corrosion Fatigue: Alternative or Acronym=CF; Definition=Boiler/HRSG tube failure mechanism. Degassed conductivity after cation exchange: Alternative or Acronym=Degassed Cation Conductivity, DCACE; Definition=Conductivity after cation exchange of a sample from which volatile weak acids (predominantly carbonic acid) have been stripped.",
+      "terms": [
+        "AVT(R)",
+        "AVT(O)",
+        "CACE",
+        "DCACE",
+        "CPP",
+        "CPD",
+        "ACC",
+        "Caustic Treatment"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-005",
+      "doc_id": "R016",
+      "section": "1. Nomenclature and Definitions",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "1. Nomenclature and Definitions (part 2; columns: Term; Alternative or Acronym; Definition). Drum boiler: Definition=Boiler in which steam (generated in heated evaporator tubes) is separated from water in an unheated horizontal pressure vessel (drum). The liquid phase is recirculated to the evaporator. Economizer: Definition=First heat transfer section in boiler or HRSG to heat feedwater located in the cold end of the plant. Fast Start Combined Cycle / HRSG Plant: Definition=Combined cycle plant able to have accelerated hot, warm and cold starts. Feedwater: Definition=Water that is being pumped into a boiler or HRSG to balance the steam production. Flow-accelerated Corrosion: Alternative or Acronym=FAC; Definition=Accelerated dissolution of the protective oxide (magnetite) on the surface of carbon steel components in the feedwater system and HRSG evaporators as a result of flow. Heat Recovery Steam Generator: Alternative or Acronym=HRSG; Definition=Plant that generates steam using heat transfer from the exhaust gas of a combustion (gas) turbine. Makeup Water: Definition=Water which is added to compensate for losses of water and steam from the system. Once-through boiler or HRSG: Definition=Boiler in which output steam is generated from input water by complete evaporation. There is no recirculation of boiler water. Oxidation/Reduction Potential: Alternative or Acronym=ORP; Definition=Electrochemical potential of an inert electrode responding to the concentrations of oxidizing and reducing agents in a water sample. Oxygenated Treatment: Alternative or Acronym=OT, Combined Water Treatment, CWT; Definition=Conditioning regime in which alkalizing agents and oxygen are added to the feedwater. Phase-transition Zone: Alternative or Acronym=PTZ; Definition=Region in low pressure steam turbine where superheated steam changes to moisture.",
+      "terms": [
+        "Drum boiler",
+        "Economizer",
+        "Fast Start",
+        "FAC",
+        "HRSG",
+        "Once-through boiler",
+        "ORP",
+        "Oxygenated Treatment"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-006",
+      "doc_id": "R016",
+      "section": "1. Nomenclature and Definitions",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "1. Nomenclature and Definitions (part 3; columns: Term; Alternative or Acronym; Definition). Phosphate Treatment: Alternative or Acronym=PT; Definition=Conditioning regime for drum boilers in which alkalinity is achieved by dosing a sodium phosphate compound or blend of compounds to the boiler water. Preheater: Definition=A circuit in an HRSG prior to the economizer and LP drum to preheat condensate. Recirculation Ratio: Definition=The ratio of oxygen at the economizer inlet to the oxygen in the downcomer from a drum. Total Organic Carbon: Alternative or Acronym=TOC; Definition=A convenient measure of total organic components in the water or steam. Under-deposit Corrosion: Alternative or Acronym=UDC; Definition=Boiler/HRSG tube failure mechanism. Water Treatment Plant: Alternative or Acronym=WTP; Definition=Facility where high purity water is prepared and stored.",
+      "terms": [
+        "Phosphate Treatment",
+        "PT",
+        "Preheater",
+        "Recirculation Ratio",
+        "TOC",
+        "UDC",
+        "WTP"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-007",
+      "doc_id": "R016",
+      "section": "2. Introduction: Purpose of Document and How to Use it",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "All-volatile treatment (AVT) represents the simplest form of chemical conditioning for fossil and combined cycle/HRSG plants, and is the subject of this part of the suite of IAPWS Technical Guidance Documents (TGD). The purpose of this document is to provide guidance on the selection of the most appropriate chemical conditions and limits around the water/steam circuit, which can be used by chemists and plant operators, and to develop international, national, company and manufacturer’s guidelines which will provide the maximum protection for fossil and combined cycle plants. The development of operating cycle chemistry guidance for conventional fossil and combined cycle/HRSG plants should follow a number of steps. The starting point in this document is Section 5, which contains the Tables of normal/target chemistry limits for five of the most common combinations of fossil/HRSG plants.",
+      "terms": [
+        "All-volatile treatment",
+        "AVT",
+        "chemical conditioning",
+        "TGD",
+        "chemistry limits"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-008",
+      "doc_id": "R016",
+      "section": "2. Introduction: Purpose of Document and How to Use it",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "It is emphasized that this is an IAPWS Technical Guidance Document representing the cumulative experience of the IAPWS Power Cycle Chemistry (PCC) Working Group (with representation from 21 countries), and as such should be regarded as guidance for operating cycle chemistry limits for plants under stable operating conditions. The guidance document can form the basis of, but should not restrict, other derivative guidelines around the world. Experience has indicated that, depending on local requirements, the normal or target values for volatile treatments presented in the five Tables for the five base plants (Section 5) will provide good reliability and availability if they are customized for each plant depending on the actual conditions of operation, the equipment installed, the materials used in different parts of the cycle, and the condenser cooling media. This customization is accomplished in two steps. The first step involves developing a set of Action and Shutdown Levels, which will require the plant operator or chemist to take some avoiding action. The second step involves customizing these tables to the specific unit conditions, materials and possible damage mechanisms following the suggested roadmap approach in Section 6. It is further emphasized that these guidance values should not be considered as manufacturer’s guarantees. Each manufacturer should provide a set of target values representing the plant as designed, and these may be slightly different than the operating guidance provided in this document. It should be noted that industrial steam raising plants are not covered within this IAPWS Technical Guidance Document.",
+      "terms": [
+        "Power Cycle Chemistry (PCC) Working Group",
+        "Action and Shutdown Levels",
+        "roadmap",
+        "condenser cooling media",
+        "manufacturer’s guarantees"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-009",
+      "doc_id": "R016",
+      "section": "3. Background to Corrosion in the Water/Steam Circuits of Power Plants",
+      "page_start": 5,
+      "page_end": 6,
+      "text": "The purpose of good cycle chemistry is to prevent and/or reduce corrosion and deposits in the water/steam circuit of power plants. A combination of techniques is used to achieve this. Fossil and combined cycle/HRSG plants operate at different temperatures and pressures. Both once-through and drum boilers coupled to high pressure (HP), intermediate pressure (IP) and low pressure (LP) steam turbines are employed in traditional fossil-fired plants. Multi-pressure drum-type heat recovery steam generators (HRSGs) are normally used in combined cycle plants, but there are also a number of HRSGs with once-through HP or HP/IP circuits. Mainly mild and low alloy steels are used in the construction of boilers and feedwater heaters, although copper alloys are also used for some condensers and feedwater heaters. High alloy steels and austenitic stainless materials are used in superheaters, reheaters and steam turbines. Protection against corrosion is provided by the protective oxides that grow on the surfaces of all these materials.",
+      "terms": [
+        "cycle chemistry",
+        "once-through",
+        "drum boilers",
+        "HRSGs",
+        "low alloy steels",
+        "copper alloys",
+        "austenitic stainless",
+        "protective oxides"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-010",
+      "doc_id": "R016",
+      "section": "3. Background to Corrosion in the Water/Steam Circuits of Power Plants",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "In conventional fossil and HRSG plants, several types of corrosion can occur in the water/steam cycle. These include: • Under-deposit corrosion (UDC). This is an on-load phenomenon, which can lead to hydrogen damage and caustic gouging failures in drum units typically operating above ~8 MPa (~1100 psi). • Flow-accelerated corrosion (FAC), due to the accelerated dissolution of the protective oxide (magnetite) on the surface of carbon steel components caused by flow. • Corrosion fatigue (CF), due to repetitive applied stress causing damage to the internal protective oxide layer (magnetite). • Pitting corrosion due to inadequate shutdown procedures throughout the cycle, and • Stress corrosion cracking (SCC) of sensitive steel components in the superheater, reheater and steam turbine due to the presence of impurities, such as sodium hydroxide and chloride.",
+      "terms": [
+        "Under-deposit corrosion (UDC)",
+        "hydrogen damage",
+        "caustic gouging",
+        "Flow-accelerated corrosion (FAC)",
+        "magnetite",
+        "Corrosion fatigue (CF)",
+        "Pitting corrosion",
+        "Stress corrosion cracking (SCC)"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-011",
+      "doc_id": "R016",
+      "section": "3. Background to Corrosion in the Water/Steam Circuits of Power Plants",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The feedwater system is the major source of corrosion products, which can flow into the fossil boiler or HRSG evaporator and then deposit on the heat transfer surfaces of the water/steam cycle. Corrosion is increased by the presence of impurities in the feedwater and cooling water, and can also be exacerbated by flow-accelerated corrosion (FAC). Corrosion of copper alloys, if present in the feedwater heaters, can lead to the transport of copper into the fossil boiler and deposition in the evaporator and on the high pressure turbine. Some early combined cycle/HRSG plants also had feedwater heaters fed by extraction steam. The build-up of deposits in the steam generating tubes of the boiler or HRSG, in combination with the presence of impurities, can lead to under-deposit corrosion (UDC) during operation, and be the locations of pitting during shutdown.",
+      "terms": [
+        "feedwater system",
+        "corrosion products",
+        "flow-accelerated corrosion (FAC)",
+        "copper",
+        "extraction steam",
+        "under-deposit corrosion (UDC)",
+        "pitting"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-012",
+      "doc_id": "R016",
+      "section": "3. Background to Corrosion in the Water/Steam Circuits of Power Plants",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The carryover of impurities into the steam can lead to deposits in the steam turbine, stress corrosion cracking in the superheaters and steam turbines, and pitting (particularly in reheaters) during off-load conditions. Leaks in water-cooled condensers are a common source of impurities, such as chloride and sulfate, entering the water/steam circuit, whereas air-cooled condensers are subject to low-temperature flow-accelerated corrosion and can be a source of high levels of corrosion products and air ingress.",
+      "terms": [
+        "carryover",
+        "stress corrosion cracking",
+        "reheaters",
+        "water-cooled condensers",
+        "air-cooled condensers",
+        "air ingress",
+        "chloride",
+        "sulfate"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-013",
+      "doc_id": "R016",
+      "section": "3.1 Chemical Conditioning to Minimize Corrosion",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "Chemical conditioning can be applied to both the feedwater and boiler water. Guidance limits have to be developed to control the corrosion processes mentioned above. The first requirement is for high purity feedwater recycled from the condenser, or added as makeup. The purity is monitored by measurement of the conductivity after cation exchange of the condensate, feedwater, boiler and evaporator water, and steam. These measurements include contributions from corrosive species such as chloride, sulfate, carbon dioxide, and organic anions. The higher the temperature and pressure of operation, the higher the purity of water required to prevent corrosion and, thus, the lower the CACE allowed.",
+      "terms": [
+        "Chemical conditioning",
+        "conductivity after cation exchange",
+        "CACE",
+        "chloride",
+        "sulfate",
+        "carbon dioxide",
+        "organic anions"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-014",
+      "doc_id": "R016",
+      "section": "3.1 Chemical Conditioning to Minimize Corrosion",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "A volatile alkalizing agent, usually ammonia, is added to the feedwater to increase the pH. In some specific cases, an organic amine can be added instead. There are three variations of volatile conditioning that can be applied to the feedwater (See Section 4 for descriptions of the treatments): • Reducing all-volatile treatment (AVT(R)), • Oxidizing all-volatile treatment (AVT(O)), and • Oxygenated treatment (OT)",
+      "terms": [
+        "ammonia",
+        "organic amine",
+        "AVT(R)",
+        "AVT(O)",
+        "Oxygenated treatment (OT)",
+        "volatile conditioning"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-015",
+      "doc_id": "R016",
+      "section": "3.1 Chemical Conditioning to Minimize Corrosion",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "All-volatile treatment (AVT(R), AVT(O), or OT) has to be used for once-through boilers and is used without any further addition of chemicals in the boiler. AVT(R), AVT(O) or OT can also be used for drum boilers of fossil plants or combined cycle / HRSGs without any further addition of chemicals to the boiler / HRSG drum. However, impurities can accumulate in the boiler water of drum-type boilers and it is necessary to impose restrictive limits on these contaminants as a function of drum pressure both to protect the boiler from corrosion and to limit the amount of impurities possibly carried over into the steam, which could put at risk the superheaters, reheaters, and turbines. It should be recognized that AVT has essentially no capability to neutralize or buffer feedwater / boiler water dissolved solids contamination. Ammonia is a rather poor alkalizing agent at high temperatures, offering very limited protection against corrosive impurities. For some drum-type boilers, the addition of solid alkalizing agents to the boiler / HRSG water may be necessary in order to improve the tolerance to impurities and reduce the risk of corrosion. The alkalizing agents which can be used for this are tri-sodium phosphate (phosphate treatment (PT)) or sodium hydroxide (caustic treatment (CT)) used alone. The two can also be used in combination. The amounts of sodium hydroxide added have to be strictly limited to avoid excessively alkaline conditions, which can result in another UDC mechanism (caustic gouging), which destroys the protective oxide layer. The amounts of both sodium hydroxide and tri-sodium phosphate added to the cycle also have to be controlled to avoid an increase of carryover of these conditioning chemicals into the steam, possibly putting the superheaters and turbines at risk. Phosphate and NaOH treatments are covered in another IAPWS Technical Guidance Document [2].",
+      "terms": [
+        "once-through boilers",
+        "drum pressure",
+        "carryover",
+        "tri-sodium phosphate",
+        "phosphate treatment (PT)",
+        "caustic treatment (CT)",
+        "caustic gouging",
+        "NaOH"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-016",
+      "doc_id": "R016",
+      "section": "4. Descriptions and Applications of Volatile Chemistries (AVT and OT)",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "Feedwater chemistry is critical to the overall reliability of fossil and HRSG plants. Corrosion takes place in the feedwater system (heaters and interconnecting pipework), and the associated corrosion products flow into the boiler / HRSG where they may deposit in various areas. These deposits can act in the boiler / HRSG evaporator as initiating centers for many of the tube failure mechanisms, and in the steam turbine as a source of either efficiency losses or blade / disk failures. The choice of feedwater chemistry depends primarily on the materials of construction and secondly on the feasibility of maintaining purity around the water-steam cycle. There are three distinct treatments:",
+      "terms": [
+        "Feedwater chemistry",
+        "corrosion products",
+        "tube failure mechanisms",
+        "steam turbine",
+        "materials of construction"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-017",
+      "doc_id": "R016",
+      "section": "4.1 AVT(R) – All-volatile Treatment (Reducing)",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "AVT(R) – All-volatile Treatment (Reducing). This treatment involves the addition of ammonia (or an amine or blend of amines of lower volatility than ammonia) and a reducing agent (usually hydrazine or one of the acceptable substitutes) to the condensate or feedwater of the plant. In combination with a relatively low oxygen level (from air in-leakage) of ~10 μg/kg or less in the condensate (usually measured at the condensate pump discharge, CPD), the resulting feedwater will have a reducing redox condition (usually measured as Oxidation-Reduction Potential, ORP). Higher levels of oxygen (due to high air in-leakage) will usually preclude generation of the reducing environment, but are often accompanied by excessive dosing of the reducing agent. AVT(R) provides protection to copper-based alloys in mixed-metallurgy feedwater systems. Under optimum conditions, a fossil plant should be able to operate with feedwater corrosion products which are Fe < 2 μg/kg and Cu < 2 μg/kg [3] (Fe and Cu refer to the total concentrations of particulate metal oxides plus dissolved metal ions). In multi-pressure HRSG systems, AVT(O) should be used in these cycles due to concerns for single-phase FAC [4], and because the corrosion product levels in the feedwater would be likely to exceed 2 μg/kg. Reducing agents concentrate in the LP evaporator circuits.",
+      "terms": [
+        "AVT(R)",
+        "reducing agent",
+        "hydrazine",
+        "condensate pump discharge, CPD",
+        "Oxidation-Reduction Potential, ORP",
+        "mixed-metallurgy",
+        "single-phase FAC",
+        "μg/kg"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-018",
+      "doc_id": "R016",
+      "section": "4.2 AVT(O) – All-volatile Treatment (Oxidizing)",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "AVT(O) – All-volatile Treatment (Oxidizing). This all-volatile treatment has emerged as the much preferred treatment over the last 20 years for feedwater systems which only contain all-ferrous materials (copper alloys can nevertheless be present in the condenser; see Section 6.4). In these cases, a reducing agent should not be used during any operating or shutdown period. Ammonia (or an amine or blend of amines of lower volatility than ammonia) is added at the CPD or polisher outlet (if a polisher is included within the cycle). This is the treatment of choice for multi-pressure combined cycle/HRSG plants which have no copper alloys in the feedwater. In combined cycle/HRSG plants with relatively good control of air in-leakage (oxygen levels in the range 10–20 μg/kg), the resulting feedwater will yield a mildly oxidizing ORP. Under optimum conditions, a plant should be able to operate with corrosion product levels of total Fe < 2 μg/kg in the feedwater [3].",
+      "terms": [
+        "AVT(O)",
+        "all-ferrous",
+        "CPD",
+        "polisher",
+        "air in-leakage",
+        "ORP",
+        "total Fe",
+        "μg/kg"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-019",
+      "doc_id": "R016",
+      "section": "4.3 OT – Oxygenated Treatment",
+      "page_start": 8,
+      "page_end": 9,
+      "text": "OT – Oxygenated Treatment. For conventional fossil plants, optimized OT involves one oxygen injection location at the condensate polisher outlet (CPO), operating with the vents on the feedwater heaters and deaerator closed, and with knowledge of the total iron levels at the economizer inlet and in the feedwater heater cascading drain lines. Ammonia is added at the condensate polisher outlet. There is often a minimum level of oxygen which is required to provide full passivation of the single-phase flow locations in the main feedwater line and the drain lines, and to maintain this protection. For drum units this is usually between 30 and 50 μg/kg at the economizer inlet (with the actual level being set in accord with the recirculation ratio), and for once-through/supercritical units this is usually 30–150 μg/kg at the economizer inlet. Application of OT in combined cycle/HRSG plants is much rarer, but often it is found that the use of AVT(O) with low levels of oxygen (< 10 μg/kg) on these plants does not provide sufficient oxidizing power to passivate the very large internal surface areas associated with preheaters, LP, IP and HP economizers, and LP evaporators, especially if a deaerator is included in the LP circuit. In these cases, oxygen can be added at the same level as for conventional recirculating cycles. This is the feedwater of choice for units with all-ferrous feedwater heaters and a condensate polisher and with an ability to maintain a CACE of < 0.15 μS/cm under all operating conditions. The Tables of Section 5 show the typical values under optimum conditions for fossil and combined cycle plants operating with OT, which should be able to achieve corrosion product levels of Fe < 1 μg/kg [3].",
+      "terms": [
+        "OT",
+        "condensate polisher outlet (CPO)",
+        "deaerator",
+        "recirculation ratio",
+        "once-through/supercritical",
+        "AVT(O)",
+        "CACE",
+        "μS/cm"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-020",
+      "doc_id": "R016",
+      "section": "5.1 Five Tables of Cycle Chemistry Limits",
+      "page_start": 9,
+      "page_end": 10,
+      "text": "Five Tables of Cycle Chemistry Limits. Five tables of cycle chemistry limits have been included in this IAPWS Technical Guidance Document as Tables 1-5. These base Tables cover the most common units and cycle chemistries in use around the world in conventional fossil and multi-pressure combined cycle/HRSG plants. Variations to the limits in these base cases are included in Section 6. The operator or chemist should determine which variation(s) to use by following the Road Map in Section 6 and customizing the appropriate base Table. The Base Tables include the following: a) Table 1. Applicable to fossil plants with drum units, with drum pressure ~17 MPa (~2500 psi), all-ferrous feedwater systems, no reducing agent, non-copper tubed condensers, with a condensate polisher, and not cooled by seawater or brackish water. b) Table 2. Applicable to fossil plants with drum units, with drum pressure ~17 MPa (~2500 psi), mixed-metallurgy feedwater systems, copper tubed condensers, without a condensate polisher, and not cooled by seawater or brackish water. c) Table 3. Applicable to fossil plants with once-through subcritical and supercritical units, all-ferrous feedwater systems, non-copper tubed condensers, with a condensate polisher, and not cooled by seawater or brackish water. d) Table 4. Applicable to multi-pressure combined cycle/HRSG drum units, no copper alloys, independently fed LP, IP, and HP circuits, no condensate polisher for AVT(O), no reducing agent added to the cycle, and not cooled by seawater or brackish water. The drum pressures on this base case are considered to be LP 0.5 MPa (70 psi), IP 2.4 MPa (350 psi), and HP 14 MPa (2000 psi). e) Table 5. Applicable to multi-pressure combined cycle/HRSG drum units, no copper alloys, with the LP drum feeding the IP and HP circuits, no condensate polisher for AVT(O), no reducing agent added to the cycle, and not cooled by seawater or brackish water. The drum pressures on this base case are considered to be LP 0.5 MPa (70 psi), IP 2.4 MPa (350 psi), and HP 14 MPa (2000 psi).",
+      "terms": [
+        "cycle chemistry limits",
+        "Road Map",
+        "drum pressure",
+        "all-ferrous",
+        "mixed-metallurgy",
+        "condensate polisher",
+        "once-through",
+        "multi-pressure combined cycle/HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-021",
+      "doc_id": "R016",
+      "section": "5.2 Chemistry Limits for Requisite Parameters at Specified Locations",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "Chemistry Limits for Requisite Parameters at Specified Locations. Each table contains the cycle chemistry limits for the requisite parameters at prescribed locations from Table 1 of the IAPWS Instrumentation Technical Guidance Document [5]. Throughout this document, conductivity limits are provided in units of μS/cm. It is recognized that conductivity units of μS/m are preferred in the SI system; this document uses μS/cm to be consistent with the most common industrial practice.",
+      "terms": [
+        "cycle chemistry limits",
+        "Instrumentation Technical Guidance Document",
+        "conductivity",
+        "μS/cm",
+        "μS/m",
+        "SI system"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-022",
+      "doc_id": "R016",
+      "section": "5.3 Development of Action Levels",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "Development of Action Levels. The normal or target values in Tables 1-5 represent the accumulated experience of the IAPWS Power Cycle Chemistry (PCC) Working Group with representation from 21 countries. The limits on these tables after modification through use of Section 6 are considered as the normal operating values during stable operation. They represent the current state of knowledge and research worldwide to avoid the damage mechanisms delineated in Section 3. They are therefore consistent with longterm plant reliability. It is strongly suggested that each plant operator, chemist or owner develops a set of Action Levels, which define when the operators need to take some avoiding action in response to values outside the limits. It should be decided whether to include two or three Action Levels with gradually increasing values. Because adequate research has not been conducted, most organizations find it acceptable to double the normal/target value for the First Action Level, and then double that value for the Second Action Level. It is recognized that it is always desirable to operate with the lowest achievable impurity levels for the longest time to prevent accumulation of damage. It is also advisable to develop an action plan on an annual basis to determine when some overall action is required: for instance retubing a condenser or conducting a fossil boiler/HRSG evaporator chemical cleaning.",
+      "terms": [
+        "Action Levels",
+        "normal or target values",
+        "First Action Level",
+        "Second Action Level",
+        "impurity levels",
+        "chemical cleaning"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-023",
+      "doc_id": "R016",
+      "section": "5.4 Development of Shutdown Limits",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "Development of Shutdown Limits. As well as developing a set of Action Levels, there will be a need to also define a set of cycle chemistry conditions when a unit will need to be shut down because of severe contamination. For fossil and HRSG drum units, this will usually relate to defining a drum pH or a CACE, which indicates serious acidic contaminant. Typically a pH of 7 or 8 can be used under conditions which are coincident with a continuously decreasing pH. It should be recognized that the local pH will be much lower at or in porous fossil waterwall or HRSG HP evaporator deposits. For once-through or supercritical units, a CACE in the feedwater which exceeds 2 μS/cm for two minutes and is increasing can be used. Alternatively a sodium level at the condensate polisher outlet can be used which exceeds 20 μg/kg in the same time period and doesn’t show any decreasing trend.",
+      "terms": [
+        "Shutdown Limits",
+        "drum pH",
+        "CACE",
+        "once-through",
+        "supercritical",
+        "condensate polisher outlet",
+        "μS/cm",
+        "μg/kg"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-024",
+      "doc_id": "R016",
+      "section": "5.5 Dealing with Condenser Leaks",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "Dealing with Condenser Leaks. For fossil drum boilers and the HP drum/evaporator on multi-pressure HRSGs operating with one of the volatile treatments, the most important developments of guidance customization are for the case where the unit develops a condenser leak, which may be acidic or alkaline depending on the cooling water source. In cases where the unit has no condensate polisher, this is obviously of paramount importance. There are two extremes. The first is where there is a major condenser leak perhaps of multiple tubes: this case should be dealt with expeditiously by developing an immediate shutdown limit as described in Section 5.4. The second is where there are persistent smaller leaks (multiple times per year) which exceed the Level One Action as described in Section 5.3. In the important case of an acidic in-leakage, as with seawater, the preferred option is to have the facility dose solid alkali (either tri-sodium phosphate or NaOH) into the drum. However, it must be remembered that this will only increase the boiler/evaporator pH and can only suppress under-deposit corrosion in the boiler/evaporator if applied at the right level. It is very well understood that hydrogen damage can occur with high chloride levels in the boiler/evaporator under alkaline conditions and that caustic gouging can develop if NaOH is over dosed. The leaking condenser tubes must be identified and plugged; ultimately the condenser will need to be retubed. For units operating on OT, there is also a requirement to stop injecting oxygen into the feedwater if the feedwater CACE exceeds 0.3 μS/cm; many operators choose a lower CACE such as 0.2–0.25 μS/cm.",
+      "terms": [
+        "condenser leak",
+        "seawater",
+        "tri-sodium phosphate",
+        "NaOH",
+        "under-deposit corrosion",
+        "hydrogen damage",
+        "caustic gouging",
+        "CACE"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-025",
+      "doc_id": "R016",
+      "section": "5. Tables of Chemistry Limits – Table 1",
+      "page_start": 12,
+      "page_end": 12,
+      "text": "Table 1. IAPWS Guidance for AVT and OT. Applicable to fossil plants with drum units, with drum pressures ~17 MPa (~2500 psi), all-ferrous feedwater systems, no reducing agent, non-copper tubed condensers, with a condensate polisher, and not cooled by seawater or brackish water. Normal / Target Values (AVT (O), OT). Condensate Pump Discharge (CPD) – Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.3; OT=< 0.3. Dissolved Oxygen, μg/kg: AVT (O)=< 10; OT=< 10. Sodium, μg/kg: AVT (O)=< 3; OT=< 3. Condensate Polisher Outlet (CPO) – Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.2; OT=< 0.15. Sodium, μg/kg: AVT (O)=< 2; OT=< 2. Economizer Inlet (EI) – Conductivity, μS/cm: AVT (O)=Consistent with pH; OT=Consistent with pH. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.2; OT=< 0.15. pH: AVT (O)=9.2 - 9.8; OT=8.6 - 9.8. Dissolved Oxygen, μg/kg: AVT (O)=5 - 10; OT=Per Recirculation Ratio. Boiler Drum / Blowdown (BD) / Downcomer (BDC) (preferred for OT) – Conductivity, μS/cm: AVT (O)=Consistent with pH; OT=Consistent with pH. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 1.5; OT=< 1.5. pH: AVT (O)=9 - 9.6; OT=8.5 – 9.5. Dissolved Oxygen (for OT), μg/kg: AVT (O)=not applicable; OT=< 10. Saturated Steam (SS) – Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.2; OT=< 0.15. Sodium, μg/kg: AVT (O)=< 2; OT=< 2. Main Steam (MS) / Reheat Steam (RH) – Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.2; OT=< 0.15. Sodium, μg/kg: AVT (O)=< 2; OT=< 2. Makeup (MU) – Conductivity, μS/cm: AVT (O)=< 0.1; OT=< 0.1. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.1; OT=< 0.1. SiO_2, μg/kg: AVT (O)=< 10; OT=< 10.",
+      "terms": [
+        "AVT (O)",
+        "OT",
+        "Condensate Polisher Outlet (CPO)",
+        "Economizer Inlet (EI)",
+        "Per Recirculation Ratio",
+        "Saturated Steam (SS)",
+        "μS/cm",
+        "μg/kg"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-026",
+      "doc_id": "R016",
+      "section": "5. Tables of Chemistry Limits – Table 2",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "Table 2. IAPWS Guidance for AVT and OT. Applicable to fossil plants with drum units, with drum pressures ~17 MPa (~2500 psi), mixed-metallurgy feedwater system, copper tubed condenser, without a condensate polisher, and not cooled by seawater or brackish water. Normal / Target Values (AVT (R)). Condensate Pump Discharge (CPD) – Conductivity after Cation Exchange, μS/cm: AVT (R)=< 0.3. Dissolved Oxygen, μg/kg: AVT (R)=< 10. Sodium, μg/kg: AVT (R)=< 3. Deaerator Inlet (DAI) – Oxidation / Reduction Potential, mV: AVT (R)=Reducing (< 20). Economizer Inlet (EI) – Conductivity, μS/cm: AVT (R)=Consistent with pH. Conductivity after Cation Exchange, μS/cm: AVT (R)=< 0.2. pH: AVT (R)=9.1 - 9.3. Dissolved Oxygen, μg/kg: AVT (R)=< 10. Boiler Drum / Blowdown (BD) / Downcomer (BDC) – Conductivity, μS/cm: AVT (R)=Consistent with pH. Conductivity after Cation Exchange, μS/cm: AVT (R)=< 1.5. pH: AVT (R)=8.9 - 9.2. Saturated Steam (SS) – Conductivity after Cation Exchange, μS/cm: AVT (R)=< 0.2. Sodium, μg/kg: AVT (R)=< 2. Main Steam (MS) / Reheat Steam (RH) – Conductivity after Cation Exchange, μS/cm: AVT (R)=< 0.2. Sodium, μg/kg: AVT (R)=< 2. Makeup (MU) – Conductivity, μS/cm: AVT (R)=< 0.1. Conductivity after Cation Exchange, μS/cm: AVT (R)=< 0.1. SiO_2, μg/kg: AVT (R)=< 10.",
+      "terms": [
+        "AVT (R)",
+        "mixed-metallurgy",
+        "Deaerator Inlet (DAI)",
+        "Oxidation / Reduction Potential",
+        "Reducing (< 20)",
+        "Economizer Inlet (EI)",
+        "μS/cm",
+        "μg/kg"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-027",
+      "doc_id": "R016",
+      "section": "5. Tables of Chemistry Limits – Table 3",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Table 3. IAPWS Guidance for AVT and OT. Applicable to fossil plants with once-through subcritical and supercritical units, all-ferrous feedwater systems, non-copper tubed condensers, with a condensate polisher, and not cooled by seawater or brackish water. Normal / Target Values (AVT (O), OT). Condensate Pump Discharge (CPD) – Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.3; OT=< 0.3. Dissolved Oxygen, μg/kg: AVT (O)=< 10; OT=< 10. Sodium, μg/kg: AVT (O)=< 3; OT=< 3. Condensate Polisher Outlet (CPO) – Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.2; OT=< 0.15. Sodium, μg/kg: AVT (O)=< 2; OT=< 2. Economizer Inlet (EI) – Conductivity, μS/cm: AVT (O)=Consistent with pH; OT=Consistent with pH. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.2; OT=< 0.15. pH: AVT (O)=9.2 - 9.8; OT=8.0 - 9.8. Dissolved Oxygen, μg/kg: AVT (O)=5 - 10; OT=30 - 150. Main Steam (MS) / Reheat Steam (RH) – Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.2; OT=< 0.15. Sodium, μg/kg: AVT (O)=< 2; OT=< 2. Makeup (MU) – Conductivity, μS/cm: AVT (O)=< 0.1; OT=< 0.1. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.1; OT=< 0.1. SiO_2, μg/kg: AVT (O)=< 10; OT=< 10.",
+      "terms": [
+        "once-through",
+        "supercritical",
+        "AVT (O)",
+        "OT",
+        "Economizer Inlet (EI)",
+        "Dissolved Oxygen",
+        "μS/cm",
+        "μg/kg"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-028",
+      "doc_id": "R016",
+      "section": "5. Tables of Chemistry Limits – Table 4",
+      "page_start": 15,
+      "page_end": 15,
+      "text": "Table 4. IAPWS Guidance for AVT and OT. Applicable to multi-pressure combined cycle/HRSG drum units, no copper alloys, independently fed low pressure (LP), intermediate pressure (IP) and high pressure (HP) circuits, no condensate polisher for AVT(O), no reducing agent added to the cycle, and not cooled by seawater or brackish water. The drum pressures on this base case are considered to be LP 0.5 MPa (70 psi), IP 2.4 MPa (350 psi), and HP 14 MPa (2000 psi). Normal / Target Values (AVT (O), OT). Condensate Pump Discharge (CPD) – Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.3; OT=< 0.3. Dissolved Oxygen, μg/kg: AVT (O)=< 10; OT=< 10. Sodium, μg/kg: AVT (O)=< 3; OT=< 3. Economizer Inlet (EI), Preheater Inlet or Feed Pump Discharge – Conductivity, μS/cm: AVT (O)=Consistent with pH; OT=Consistent with pH. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.3; OT=< 0.15. pH: AVT (O)=9.2 - 9.8; OT=9.0 - 9.8. Dissolved Oxygen, μg/kg: AVT (O)=5 - 10; OT=Per Recirculation Ratio. LP Drum (0.5 MPa, 70 psi) Blowdown (LPBD) / Downcomer (LPDC) – Conductivity, μS/cm: AVT (O)=Consistent with pH; OT=Consistent with pH. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 25; OT=< 25. pH: AVT (O)=9.0 - 9.8; OT=9.0 - 9.8. Dissolved Oxygen (for OT), μg/kg: AVT (O)=not applicable; OT=< 10. IP Drum (2.4 MPa, 350 psi) Blowdown (IPBD) / Downcomer (IPDC) – Conductivity, μS/cm: AVT (O)=Consistent with pH; OT=Consistent with pH. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 25; OT=< 25. pH: AVT (O)=9.0 - 9.8; OT=9.0 - 9.8. Dissolved Oxygen (for OT), μg/kg: AVT (O)=not applicable; OT=< 10.",
+      "terms": [
+        "multi-pressure combined cycle/HRSG",
+        "AVT (O)",
+        "OT",
+        "Feed Pump Discharge",
+        "LP Drum",
+        "IP Drum",
+        "Per Recirculation Ratio",
+        "μS/cm"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-029",
+      "doc_id": "R016",
+      "section": "5. Tables of Chemistry Limits – Table 4",
+      "page_start": 15,
+      "page_end": 16,
+      "text": "Table 4. IAPWS Guidance for AVT and OT. Applicable to multi-pressure combined cycle/HRSG drum units, no copper alloys, independently fed low pressure (LP), intermediate pressure (IP) and high pressure (HP) circuits, no condensate polisher for AVT(O), no reducing agent added to the cycle, and not cooled by seawater or brackish water. The drum pressures on this base case are considered to be LP 0.5 MPa (70 psi), IP 2.4 MPa (350 psi), and HP 14 MPa (2000 psi). (continued) Normal / Target Values (AVT (O), OT). HP Drum (14 MPa, 2000 psi) Blowdown (HPBD) / Downcomer (HPDC) – Conductivity, μS/cm: AVT (O)=Consistent with pH; OT=Consistent with pH. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 3.5; OT=< 3.5. pH: AVT (O)=9.0 - 9.8; OT=9.0 - 9.8. Dissolved Oxygen (for OT), μg/kg: AVT (O)=not applicable; OT=< 10. Saturated Steam on LP, IP and HP Drums – Sodium on LP Drum, μg/kg: AVT (O)=< 2; OT=< 2. Sodium on IP Drum, μg/kg: AVT (O)=< 2; OT=< 2. Sodium on HP Drum, μg/kg: AVT (O)=< 2; OT=< 2. HP Steam / RH Steam – Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.2; OT=< 0.15. Sodium, μg/kg: AVT (O)=< 2; OT=< 2. Makeup (MU) – Conductivity, μS/cm: AVT (O)=< 0.1; OT=< 0.1. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.1; OT=< 0.1. SiO_2, μg/kg: AVT (O)=< 10; OT=< 10.",
+      "terms": [
+        "HP Drum",
+        "HPBD",
+        "Saturated Steam",
+        "HP Steam / RH Steam",
+        "Makeup (MU)",
+        "SiO_2",
+        "μS/cm",
+        "μg/kg"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-030",
+      "doc_id": "R016",
+      "section": "5. Tables of Chemistry Limits – Table 5",
+      "page_start": 17,
+      "page_end": 17,
+      "text": "Table 5. IAPWS Guidance for AVT and OT. Applicable to multi-pressure combined cycle/HRSG drum units, no copper alloys, with the low pressure (LP) drum feeding the intermediate pressure (IP) and high pressure (HP) circuits, no condensate polisher for AVT(O), no reducing agent added to the cycle, and not cooled by seawater or brackish water. The drum pressures on this base case are considered to be LP 0.5 MPa (70 psi), IP 2.4 MPa (350 psi), and HP 14 MPa (2000 psi). Normal / Target Values (AVT (O), OT). Condensate Pump Discharge – Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.3; OT=< 0.3. Dissolved Oxygen, μg/kg: AVT (O)=< 10; OT=< 10. Sodium, μg/kg: AVT (O)=< 3; OT=< 3. IP/HP Economizer Inlet / Feed Pump Discharge (LP Boiler Water) – Conductivity, μS/cm: AVT (O)=Consistent with pH; OT=Consistent with pH. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.3; OT=< 0.15. pH: AVT (O)=9.2 - 9.8; OT=9.0 - 9.8. Dissolved Oxygen, μg/kg: AVT (O)=5 - 10; OT=Per Recirculation Ratio. IP Drum (2.4 MPa, 350 psi) Blowdown (IPBD) / Downcomer (IPDC) – Conductivity, μS/cm: AVT (O)=Consistent with pH; OT=Consistent with pH. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 25; OT=< 25. pH: AVT (O)=9.0 - 9.8; OT=9.0 - 9.8. Dissolved Oxygen (for OT), μg/kg: AVT (O)=not applicable; OT=< 10.",
+      "terms": [
+        "low pressure (LP) drum",
+        "AVT (O)",
+        "OT",
+        "IP/HP Economizer Inlet",
+        "LP Boiler Water",
+        "IP Drum",
+        "Per Recirculation Ratio",
+        "μS/cm"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-031",
+      "doc_id": "R016",
+      "section": "5. Tables of Chemistry Limits – Table 5",
+      "page_start": 17,
+      "page_end": 18,
+      "text": "Table 5. IAPWS Guidance for AVT and OT. Applicable to multi-pressure combined cycle/HRSG drum units, no copper alloys, with the low pressure (LP) drum feeding the intermediate pressure (IP) and high pressure (HP) circuits, no condensate polisher for AVT(O), no reducing agent added to the cycle, and not cooled by seawater or brackish water. The drum pressures on this base case are considered to be LP 0.5 MPa (70 psi), IP 2.4 MPa (350 psi), and HP 14 MPa (2000 psi). (continued) Normal / Target Values (AVT (O), OT). HP Drum (14 MPa, 2000 psi) Blowdown (HPBD) / Downcomer (HPDC) – Conductivity, μS/cm: AVT (O)=Consistent with pH; OT=Consistent with pH. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 3.5; OT=< 3.5. pH: AVT (O)=9.0 - 9.8; OT=9.0 - 9.8. Dissolved Oxygen (for OT), μg/kg: AVT (O)=not applicable; OT=< 10. Saturated Steam on IP and HP Drums – Sodium on IP Drum, μg/kg: AVT (O)=< 2; OT=< 2. Sodium on HP Drum, μg/kg: AVT (O)=< 2; OT=< 2. HP Steam / RH Steam – Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.2; OT=< 0.15. Sodium, μg/kg: AVT (O)=< 2; OT=< 2. Makeup (MU) – Conductivity, μS/cm: AVT (O)=< 0.1; OT=< 0.1. Conductivity after Cation Exchange, μS/cm: AVT (O)=< 0.1; OT=< 0.1. SiO_2, μg/kg: AVT (O)=< 10; OT=< 10.",
+      "terms": [
+        "HP Drum",
+        "HPDC",
+        "Saturated Steam on IP and HP Drums",
+        "HP Steam / RH Steam",
+        "Makeup (MU)",
+        "SiO_2",
+        "μS/cm",
+        "μg/kg"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-032",
+      "doc_id": "R016",
+      "section": "6. Road Map Approach to Customize the Chemistry Limits for Plants with Different Operating Pressures and Specific Features",
+      "page_start": 19,
+      "page_end": 19,
+      "text": "Tables 1-5 will provide general guidance for the wide majority of fossil and combined cycle/HRSG plants around the world. However, it is emphasized again that this is an IAPWS Technical Guidance Document and that, depending on local requirements, the normal/target values presented in Tables 1-5 will need to be adapted to each plant as there are no sets of tables of cycle chemistry limits which can be applied to every plant worldwide. This customization of Tables 1-5 is the most important step in deriving cycle chemistry limits for plants with different operating pressures, unique equipment, materials, and possible damage/failure mechanisms applicable to that plant. The most common of these features constitute the topics in Sections 6.1 to 6.10.",
+      "terms": [
+        "Tables 1-5",
+        "cycle chemistry limits",
+        "customization",
+        "operating pressures",
+        "damage/failure mechanisms"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-033",
+      "doc_id": "R016",
+      "section": "6. Road Map Approach to Customize the Chemistry Limits for Plants with Different Operating Pressures and Specific Features",
+      "page_start": 19,
+      "page_end": 19,
+      "text": "As each plant is unique, the IAPWS Road Map (Figure 1) provides the approach envisioned. This will identify the necessary customizations required and assist in moving from one of Tables 1-5 to a set of limits that more accurately addresses the actual unit. For units that match the descriptions of the base plants and chemistries in Tables 1-5, the only customization required will be to develop operating chemistry limits that include Action Levels and a specific set of Shutdown Limits. For units that have operating regimes or include equipment outside of the descriptions and chemistries for plants in Tables 1-5, some further customization will be required to ensure that cycle chemistry influenced damage will not occur. Alternatively, a plant might already have experienced some of the damage or failure associated with the additional categories and the current cycle chemistry limits will thus need customization.",
+      "terms": [
+        "IAPWS Road Map",
+        "Action Levels",
+        "Shutdown Limits",
+        "customization",
+        "cycle chemistry"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-034",
+      "doc_id": "R016",
+      "section": "6. Road Map Approach to Customize the Chemistry Limits for Plants with Different Operating Pressures and Specific Features",
+      "page_start": 20,
+      "page_end": 20,
+      "text": "Figure 1. IAPWS Roadmap to Develop Cycle Chemistry Limits from the Base Tables 1-5 to Actual Unit Operating Pressure, Specific Configuration and Limits.",
+      "terms": [
+        "IAPWS Roadmap",
+        "Cycle Chemistry Limits",
+        "Operating Pressure"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-035",
+      "doc_id": "R016",
+      "section": "6.1 Customization of Base Tables to Include the Effect of Drum Pressure",
+      "page_start": 21,
+      "page_end": 21,
+      "text": "Consideration of the drum pressure is vital in the customization process for cycle chemistry guidelines for many reasons; the two most important are protecting the steam turbine from damage and/or failure, and helping to eliminate the conditions which lead to under-deposit corrosion in the waterwalls of fossil drum boilers and the HP evaporators of HRSGs. The fossil limits in Tables 1 and 2 are for boilers with drum pressure of ~17 MPa (~2500 psi). The HRSG limits in Tables 4 and 5 are for units with HP drum pressure of ~14 MPa (~2000 psi). The following features need to be considered for drum pressures varying from these values.",
+      "terms": [
+        "drum pressure",
+        "steam turbine",
+        "under-deposit corrosion",
+        "waterwalls",
+        "HP evaporators",
+        "HRSGs"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-036",
+      "doc_id": "R016",
+      "section": "6.1 Customization of Base Tables to Include the Effect of Drum Pressure",
+      "page_start": 21,
+      "page_end": 21,
+      "text": "a) Carryover, both volatile and mechanical, increases with increasing pressure (see the IAPWS Technical Guidance Document on Carryover [6]). Most importantly, only above pressures of about 16 MPa (2300 psi) does vaporous carryover become significant for most of the solids dissolved in boiler water. Of course silica and the copper hydroxides are transported into steam as volatile compounds across the range of pressures applicable to fossil and HRSG plants. The steam limits included in Tables 1 and 2 have been derived to control the risk of deposition of harmful salts (chlorides, sulfate, etc.) in the phase transition zone of the steam turbine, and these limits are directly related to carryover and deposition. For any drum pressure, it is important to know the total carryover and check it every 6-12 months as part of the steam turbine protection. At drum pressures above ~17 MPa (~2500 psi) on fossil and HRSG HP drums, the steam volatility of solutes becomes increasingly significant. For units with mixed-metallurgy feedwater systems (Table 2), operating above this pressure will cause an increasing solubility of copper hydroxides in steam which will be transported to, and deposit in, the HP turbine. For fast start HRSGs and those HRSGs cycling frequently (such as daily start / stop), carryover becomes additionally important and thus should be checked on a more frequent basis. It is also advisable to conduct a drum level test so that operators will be cognizant of the drum level where excessive carryover occurs.",
+      "terms": [
+        "Carryover",
+        "vaporous carryover",
+        "silica",
+        "copper hydroxides",
+        "phase transition zone",
+        "mixed-metallurgy",
+        "fast start HRSGs",
+        "drum level test"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-037",
+      "doc_id": "R016",
+      "section": "6.1 Customization of Base Tables to Include the Effect of Drum Pressure",
+      "page_start": 21,
+      "page_end": 22,
+      "text": "b) The important tube failure mechanisms of under-deposit corrosion (UDC) are a function of pressure and can be experienced in the waterwalls of fossil plants operating at ~8 MPa (~1100 psi) and in some severe cases at lower pressures, and similarly on the leading HRSG HP evaporator tubes (closest to the gas turbine). These mechanisms involve two parallel aspects: i) increasing deposits on the internal heat transfer surfaces and ii) concentration of contaminants (chloride or sulfate) or incorrect boiler/evaporator chemicals (acid phosphates or excessive amounts of NaOH). The higher the pressure of the fossil/HRSG drum, the greater is the risk of damage which relates to an increased concentration factor within the deposit. In fossil plants there is thus a need to keep the feedwater corrosion products at or below those suggested in Sections 6.2 and 6.3. In combined cycle/HRSG cycles, the corrosion products in the LP circuits become the controlling feature, and it is well understood that keeping the total iron below 2 μg/kg in the feedwater and below 5 μg/kg in each drum [3] will provide the cleanest evaporator circuits with minimum risk of UDC occurring in the HP evaporator. For fast start HRSGs and those HRSGs cycling frequently (such as daily start / stop), increased levels of corrosion products (total iron) will be transported to the higher pressure circuits during startup. In the future, IAPWS will publish a guidance document to assist operators to reliably monitor the iron levels during these periods. In the meantime, it is of paramount importance for these fast start HRSGs that adequate shutdown protection is applied [7] to help minimize the transported iron during startup.",
+      "terms": [
+        "under-deposit corrosion (UDC)",
+        "waterwalls",
+        "HP evaporator",
+        "acid phosphates",
+        "NaOH",
+        "concentration factor",
+        "total iron",
+        "shutdown protection"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-038",
+      "doc_id": "R016",
+      "section": "6.1 Customization of Base Tables to Include the Effect of Drum Pressure",
+      "page_start": 22,
+      "page_end": 22,
+      "text": "c) Items a) and b) require that the CACE limits for fossil boilers and for HRSG HP evaporators provided in Tables 1 and 2, and also 4 and 5, of 1.5 μS/cm (at 17 MPa, 2500 psi) and 3.5 μS/cm (at 14 MPa, 2000 psi), respectively, are customized to actual operating drum pressures. Table 6 shows the suggested boiler/evaporator limits for CACE for volatile treatment as a function of drum pressure.",
+      "terms": [
+        "CACE",
+        "HRSG HP evaporators",
+        "drum pressures",
+        "μS/cm",
+        "Table 6"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-039",
+      "doc_id": "R016",
+      "section": "6.1 Customization of Base Tables to Include the Effect of Drum Pressure",
+      "page_start": 22,
+      "page_end": 22,
+      "text": "Table 6. Suggested CACE limits for boiler/HRSG evaporator water as a function of drum pressure. Drum Pressure MPa (psi) < 6 (870): CACE μS/cm=< 25. Drum Pressure MPa (psi) 6 – 10 (870 – 1450): CACE μS/cm=< 7. Drum Pressure MPa (psi) 10 – 12 (1450 – 1740): CACE μS/cm=< 5. Drum Pressure MPa (psi) 12 – 14 (1740 – 2030): CACE μS/cm=< 3.5. Drum Pressure MPa (psi) 14 – 17 (2030 – 2465): CACE μS/cm=< 1.5. Drum Pressure MPa (psi) > 17 (2465): CACE μS/cm=< 1.",
+      "terms": [
+        "CACE",
+        "Drum Pressure",
+        "MPa",
+        "psi",
+        "μS/cm",
+        "boiler/HRSG evaporator water"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-040",
+      "doc_id": "R016",
+      "section": "6.1 Customization of Base Tables to Include the Effect of Drum Pressure",
+      "page_start": 22,
+      "page_end": 22,
+      "text": "d) The purity of feedwater that is used for attemperation to give fine control over superheated steam outlet temperature is a further key consideration. The required purity of steam can become seriously compromised if fault conditions lead to contamination of the feedwater that is used in attemperator sprays. The targets for steam purity depend on the application. Direct injection of contaminated feedwater into steam can cause serious deposition in secondary superheaters, steam turbines and other pressure reducing components. Consideration must be given to developing procedures and maybe changes to the DCS to preclude attemperation being used during serious feedwater contamination periods. Where steam is generated for industrial processes, there will be process-specific considerations and criteria.",
+      "terms": [
+        "attemperation",
+        "attemperator sprays",
+        "superheated steam",
+        "steam purity",
+        "secondary superheaters",
+        "DCS"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-041",
+      "doc_id": "R016",
+      "section": "6.2 Customization of Base Tables to Consider Materials Protection in Feedwater Heater Drains and Other Two-phase Flow Areas",
+      "page_start": 22,
+      "page_end": 23,
+      "text": "Two-phase FAC is a common failure mechanism as well as a source of increased corrosion products in parts of the feedwater of conventional fossil plants (heater shells and drains, and deaerators), in HRSG LP or IP evaporators, and in IP or HP economizer circuits. As such, maximum attention needs to be given to customizing the limits in Tables 1-5. Basically, the only way to deal chemically with the two-phase regions is to ensure that the pH of the liquid phase is as high as the particular unit/materials/chemistry will allow. Those plants of most concern are where the feedwater pH is at 9.0 or lower. Obviously drain lines should be designed to drain off water (single-phase) from feedwater heaters. For fossil plants, a number of locations are important: drain or emergency (high level) drain lines downstream of control valves, and feedwater heater and deaerator shells and internals in the vicinity of cascading drain fluid entries [4]. For units operating with feedwater at pH levels below 9.0, especially once-through or supercritical units on OT operating in the pH range 8.0–9.0 with the vents on the heaters and DA open, the drain lines and other areas are particularly susceptible. With total iron levels in the feedwater drain lines much greater than ~10 μg/kg [3], it may be necessary to increase the pH up to 9.8 as included in Table 3. For other drum and once-through units operating with the feedwater pH ranges of Tables 1-3, there is also a need to optimize the local pH to provide local two-phase protection from FAC.",
+      "terms": [
+        "Two-phase FAC",
+        "heater shells and drains",
+        "deaerators",
+        "drain lines",
+        "OT",
+        "pH",
+        "total iron",
+        "μg/kg"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-042",
+      "doc_id": "R016",
+      "section": "6.2 Customization of Base Tables to Consider Materials Protection in Feedwater Heater Drains and Other Two-phase Flow Areas",
+      "page_start": 23,
+      "page_end": 23,
+      "text": "Ideally in economizer sections (LP, IP, and HP) of combined cycle/HRSG plants the fluid should be single-phase; however, in practice two-phase FAC can be prevalent due to steaming. Again the customization or confirmation of the values in Tables 4 and 5 will require detailed monitoring of total iron levels in conjunction with elevation of the pH to possibly as high as 9.8. Special sampling locations may need to be installed at the economizer outlet. Two-phase FAC is also predominant in the LP and IP evaporator and riser circuits of both horizontal and vertical gas path HRSG designs. Chemical customization is possible only in those units with independently fed LP, IP, and HP circuits, and in these drums (Table 4) it is preferable to add a solid alkali such as tri-sodium phosphate or NaOH. In cycles where the LP drum feeds the higher pressure IP and HP circuits and any superheater/reheater attemperation (Table 5), the only chemistry customization involves increasing the ammonia or the addition of an amine feed in the condensate to achieve pH up to 9.8 as suggested above.",
+      "terms": [
+        "economizer",
+        "two-phase FAC",
+        "steaming",
+        "total iron",
+        "tri-sodium phosphate",
+        "NaOH",
+        "LP drum",
+        "attemperation"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-043",
+      "doc_id": "R016",
+      "section": "6.2 Customization of Base Tables to Consider Materials Protection in Feedwater Heater Drains and Other Two-phase Flow Areas",
+      "page_start": 23,
+      "page_end": 23,
+      "text": "In all HRSG cases, monitoring of total iron will provide a key indicator of the need for customization, and it should be noted that FAC can be considered minimal when the total iron levels are < 2 μg/kg in the feedwater and < 5 μg/kg in the LP drum [3]. Armoring the known FAC locations with a chromium-containing tubing or piping material (such as 1.25% Cr) is a greatly preferable solution compared to trying to operate with ammonia or an amine to provide pH protection. For new and particularly for fast start HRSG, the design specification should include armoring of all the susceptible, well-known FAC locations with chromium-containing tubing or piping material [4].",
+      "terms": [
+        "total iron",
+        "FAC",
+        "LP drum",
+        "Armoring",
+        "chromium-containing",
+        "1.25% Cr",
+        "fast start HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-044",
+      "doc_id": "R016",
+      "section": "6.2 Customization of Base Tables to Consider Materials Protection in Feedwater Heater Drains and Other Two-phase Flow Areas",
+      "page_start": 23,
+      "page_end": 24,
+      "text": "In some plants, particularly those in which the final superheat temperature is significantly below 450 °C, the use of selected amines that favor the water phase more strongly than ammonia and provide a higher pH at high temperature may be considered. Their use can suppress rates of FAC and iron transport within the circuit. However, the risk of decomposition of amines and formation of organic acids by eventual oxidation of the organic fraction is greatest in the highest temperature zones of superheaters and reheaters. Thus the use of ammonia is favored over amine alternatives for steam to high pressure power plant turbines, whereas the use of amines may be more favorable for lower temperature cogeneration applications. Commonly used amines include mono-ethanolamine, morpholine and cyclohexylamine among others. Selection of the optimum option will be dependent upon the steam application.",
+      "terms": [
+        "amines",
+        "ammonia",
+        "FAC",
+        "organic acids",
+        "superheaters",
+        "cogeneration",
+        "morpholine",
+        "cyclohexylamine"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-045",
+      "doc_id": "R016",
+      "section": "6.3 Customization of Base Tables to Consider Single-phase FAC and Changing of Feedwater Heater Materials",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "FAC occurring in the single-phase flow regions of plants has been found to be the most damaging and dangerous from a plant personnel viewpoint, as it has been responsible for a number of fatalities in both fossil and nuclear plants worldwide [4]. There are a number of important customization aspects associated with minimizing single-phase FAC and with regards to changing the tube materials of feedwater heaters.",
+      "terms": [
+        "FAC",
+        "single-phase flow",
+        "fatalities",
+        "nuclear",
+        "feedwater heaters"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-046",
+      "doc_id": "R016",
+      "section": "6.3 Customization of Base Tables to Consider Single-phase FAC and Changing of Feedwater Heater Materials",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "Fossil units with all-ferrous feedwater systems (which can nevertheless have copper-based tubing in the condenser; see Section 6.4) should be operating with an oxidizing treatment, AVT(O) or OT (Tables 1 and 3). These units acquire protection in their single-phase regions through the formation of FeOOH on the magnetite which grows on the carbon steel surfaces. As such, the pH range in Tables 1 and 3 is designed to provide as much protection in the two-phase areas as discussed in Section 6.2. The higher the pH, the better the protection. Any all-ferrous units operating under reducing conditions, AVT(R), will have magnetite as the semi-protective oxide where its solubility is a strong function of pH; raising the pH (as measured at 25 °C) from 8.7 to 9.6 decreases the solubility of magnetite at 200 °C by about ten times. So the higher the pH, the better for reducing single-phase FAC and minimizing corrosion product transport.",
+      "terms": [
+        "all-ferrous",
+        "AVT(O)",
+        "OT",
+        "FeOOH",
+        "magnetite",
+        "AVT(R)",
+        "solubility of magnetite",
+        "single-phase FAC"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-047",
+      "doc_id": "R016",
+      "section": "6.3 Customization of Base Tables to Consider Single-phase FAC and Changing of Feedwater Heater Materials",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "Fossil and early combined cycle plants with mixed-metallurgy feedwater heaters (copper alloys in the LP and/or the HP feedwater) cannot tolerate the high ammonia concentrations needed for operation above pH 9.3. They should operate under the reducing conditions of AVT(R) with pH in the range 9.1–9.3 (Table 2). Here it is required to customize the treatment to balance any increasing corrosion of the copper alloys with minimizing the solubility of magnetite and any associated FAC.",
+      "terms": [
+        "mixed-metallurgy",
+        "copper alloys",
+        "ammonia",
+        "AVT(R)",
+        "magnetite",
+        "FAC"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-048",
+      "doc_id": "R016",
+      "section": "6.3 Customization of Base Tables to Consider Single-phase FAC and Changing of Feedwater Heater Materials",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "An important variant for the mixed-metallurgy plants is when a decision is made to eliminate the copper alloys and change the feedwater system to all-ferrous (which may still have a copper alloy tubed condenser). Once this decision is reached, then it is equally important first to elevate the feedwater pH (into the 9.2–9.6 range) for a now all-ferrous system, and subsequently to change to an oxidizing treatment, if the contaminant levels (CACE) are sufficiently low, as this will provide more complete single-phase passivation for the carbon steel piping (interconnecting and attemperation).",
+      "terms": [
+        "mixed-metallurgy",
+        "all-ferrous",
+        "feedwater pH",
+        "oxidizing treatment",
+        "CACE",
+        "passivation",
+        "attemperation"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-049",
+      "doc_id": "R016",
+      "section": "6.4 Customization of Base Tables to Consider Condensers with Copper-based Tube Materials as Alternative to Tables 1 and 3",
+      "page_start": 24,
+      "page_end": 25,
+      "text": "Only the mixed-metallurgy fossil plant with limits in Table 2 has been included in this IAPWS Technical Guidance Document with copper alloy based condenser tubing. However, copper alloy tubing is relatively common also in plants described by Tables 1 and 3. Under the limit requirements of those plants, there is usually no significant problem of increased corrosion of the condenser copper alloys unless the air removal section (ARS) and the surrounding precooling section of the condenser has not been tubed, or retubed, in a more resistant alloy (such as stainless steel in freshwater cooling situations) to resist ammonia grooving. If the pH is increased to 9.8 or higher in the feedwater to provide additional two-phase protection (as in the customizations of Sections 6.2 and 6.3), then in association with high levels of air in-leakage, it will be important to ensure that the ARS, and maybe the tubes immediately surrounding the ARS, are tubed with a resistant alloy. As the dimensions of the affected zone vary with parameters such as load and air in-leakage, it is prudent not to go to the upper pH limits of AVT but stay below 9.6. Monitoring of copper in the condensate and feedwater should be conducted if the pH is raised to ensure that increased corrosion of the copper alloys is not occurring; but most importantly the ARS, and tubes immediately surrounding the ARS, will need to be inspected on a regular basis with eddy current inspection techniques to ensure severe ammonia grooving does not occur. Some mixed-metallurgy and all-ferrous plants have copper-based alloys in LP coolers for gland steam and hydrogen. A plant materials survey should always be conducted if the feedwater pH is above 9.4.",
+      "terms": [
+        "copper alloy",
+        "condenser",
+        "air removal section (ARS)",
+        "ammonia grooving",
+        "stainless steel",
+        "eddy current",
+        "air in-leakage",
+        "materials survey"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-050",
+      "doc_id": "R016",
+      "section": "6.5 Customization of Base Tables to Consider Different Cooling Media and Systems",
+      "page_start": 25,
+      "page_end": 25,
+      "text": "Tables 1-5 have been developed for situations where the cooling water was from freshwater, city water, a lake or river, but did not include seawater or brackish water containing high levels of chloride. In these cases, customization needs to include identification of early ingress of contaminant into the cycle. This has been dealt with in the IAPWS Instrumentation Guidance Document [5] by including a continuous sodium analyzer at the condensate pump discharge and by ensuring that the plant is controlled by a series of CACE instruments at the condensate pump discharge, economizer inlet, drum downcomer or blowdown and in steam. In this way, a plant operator will immediately have no uncertainty when a contamination event occurs and should have no doubt when there is a need to reduce pressure or shutdown the unit. This key level of instrumentation should be installed to reduce the time delay of an operator checking an instrument and/or contacting the chemist for assistance.",
+      "terms": [
+        "seawater",
+        "brackish water",
+        "chloride",
+        "sodium analyzer",
+        "CACE",
+        "condensate pump discharge",
+        "contamination event"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-051",
+      "doc_id": "R016",
+      "section": "6.5 Customization of Base Tables to Consider Different Cooling Media and Systems",
+      "page_start": 25,
+      "page_end": 25,
+      "text": "This aspect has also been covered in the IAPWS Technical Guidance Document (TGD) for Steam Purity [8], where it is important to identify a condenser leak and distinguish contamination from air in-leakage (carbon dioxide) during a startup, so that a relaxation of the CACE limits can be adopted. This then fully supports the requirements mandated for fast start HRSGs to have no chemistry holds during startup. As suggested in the IAPWS Instrumentation TGD [5], it is considered useful to monitor degassed conductivity after ion exchange (DCACE) in superheated steam of these units.",
+      "terms": [
+        "Steam Purity",
+        "condenser leak",
+        "air in-leakage",
+        "CACE",
+        "fast start HRSGs",
+        "DCACE",
+        "superheated steam"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-052",
+      "doc_id": "R016",
+      "section": "6.5 Customization of Base Tables to Consider Different Cooling Media and Systems",
+      "page_start": 25,
+      "page_end": 26,
+      "text": "Plants that have wet cooling towers, where cycles of concentration may vary through factors of 3 to 5 or more, will also need to provide similar customization. As discussed in Section 5.5, operators of fossil drum plants without condensate polishing and with seawater cooling will need to consider the addition of a solid alkali (tri-sodium phosphate or NaOH) in the drum. Operators of multi-pressure HRSGs will need to consider the same for all evaporator circuits with particular emphasis on the HP. It is most important that action or operating procedures are developed as discussed in Sections 5.3 to 5.5.",
+      "terms": [
+        "wet cooling towers",
+        "cycles of concentration",
+        "condensate polishing",
+        "seawater cooling",
+        "tri-sodium phosphate",
+        "NaOH",
+        "multi-pressure HRSGs"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-053",
+      "doc_id": "R016",
+      "section": "6.6 Customization of Base Tables to Consider Dry Cooling Systems",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "Air-cooled Condenser with Carbon Steel Tubes. An increasing number of plants worldwide in all categories are equipped with air-cooled condensers (ACC). Operating units with ACC at the lower regimes of pH provided in the base Tables 1-5 may result in serious corrosion and FAC in the ACC tubes, most predominantly at the entries to the cooling tubes [9]. Whether this is occurring can easily be determined by monitoring the total iron at the condensate pump discharge (CPD) [3]. To rectify the corrosion/FAC situation, it will be necessary to conduct a series of tests with gradually increasing levels of pH while monitoring total iron. The most recent information indicates that a feedwater pH of around 9.8 (as measured at 25 °C) will be needed to reduce the corrosion/FAC to low enough levels to observe total iron values at the CPD of around 5 μg/kg (ppb) or less [3, 9]. If the total iron values cannot be reduced to less than 5 μg/kg by increasing the pH, then there may be a requirement to include a 5 μm absolute condensate filter or a pre-filter prior to a condensate polisher if included in the cycle. Condensate polishing is not universal on plants with ACC. There is an added importance of having a condensate filter on frequently started or fast start HRSGs with an ACC to ensure that large amounts of iron do not transport to the HRSG during the frequent startups.",
+      "terms": [
+        "air-cooled condensers (ACC)",
+        "FAC",
+        "total iron",
+        "condensate pump discharge",
+        "CPD",
+        "condensate filter",
+        "condensate polisher",
+        "fast start HRSGs"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-054",
+      "doc_id": "R016",
+      "section": "6.6 Customization of Base Tables to Consider Dry Cooling Systems",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "Operating with elevated pH to control low temperature FAC in the ACC will also assist in addressing two-phase FAC in the other areas of the plant as delineated in Section 6.2. For a plant operating with AVT(R) (Table 2), the elevated pH levels will also be beneficial in reducing the solubility of magnetite and thus assisting in reducing single-phase FAC, but cognizance needs to be given to Section 6.4 on different condenser materials. For plants operating in the oxidizing mode, AVT(O) or OT, (Tables 1 and 3), the customization can be useful to improve the conditions in the two-phase regions but will be of little relevance for the single-phase flow regions because, in the absence of contaminant anions, corrosion is suppressed to a very low level across the pH range 7–10.",
+      "terms": [
+        "low temperature FAC",
+        "ACC",
+        "two-phase FAC",
+        "AVT(R)",
+        "magnetite",
+        "single-phase FAC",
+        "AVT(O)",
+        "OT"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-055",
+      "doc_id": "R016",
+      "section": "6.6 Customization of Base Tables to Consider Dry Cooling Systems",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "Cooling Systems with Aluminum Tubes. This customization relates to units with a jet-spray condenser and a dry-cooled heat exchanger tower with aluminum tubes. Part of the recirculating water is extracted and used as feedwater, and contains aluminum corrosion products which may be present as dissolved cationic aluminum as well as particles of hydroxide or oxide. Measures have to be taken to control the quantities of aluminum released by the heat exchanger. It is known that high levels of aluminum in a cycle from any source can cause deposits in the boiler/evaporator tubes or on HP turbine blades in the same way that copper does, because of the significant volatility of aluminum compounds.",
+      "terms": [
+        "Aluminum Tubes",
+        "jet-spray condenser",
+        "dry-cooled heat exchanger tower",
+        "aluminum corrosion products",
+        "HP turbine blades",
+        "copper"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-056",
+      "doc_id": "R016",
+      "section": "6.6 Customization of Base Tables to Consider Dry Cooling Systems",
+      "page_start": 27,
+      "page_end": 27,
+      "text": "In order to avoid such deposits, the quantities in feedwater should be monitored. The limits will depend on boiler pressure and chemistry, and condensate chemistry. It is, however, a reasonable approach to limit the feedwater of units with drum boilers/evaporators to < 5 μg/kg aluminum, boiler water to < 1 mg/kg and steam to < 5 μg/kg total aluminum. For boilers with < 10 MPa drum pressure, a larger aluminum limit in the boiler water could be considered. For plants with once-through supercritical boilers, a limit of < 3 μg/kg total aluminum at the economizer inlet will be required. As in previous sections, the customization will be derived from monitoring of the aluminum content around the cycle.",
+      "terms": [
+        "aluminum",
+        "feedwater",
+        "boiler water",
+        "drum pressure",
+        "once-through supercritical",
+        "economizer inlet",
+        "μg/kg",
+        "mg/kg"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-057",
+      "doc_id": "R016",
+      "section": "6.6 Customization of Base Tables to Consider Dry Cooling Systems",
+      "page_start": 27,
+      "page_end": 27,
+      "text": "To meet these aluminum levels, there are basically two options for the cycle chemistry: a) Low pH option with condensate pH = 7.7–8.0, corresponding to a feedwater pH = 8.0–8.3. Depending on the plant (drum or once-through) and pressure rating, condensate polishing may not be required. b) High pH option with condensate pH = 8.4–8.7, corresponding to a feedwater pH = 8.7–9.0. 100% condensate polishing will be required.",
+      "terms": [
+        "aluminum",
+        "Low pH option",
+        "High pH option",
+        "condensate pH",
+        "feedwater pH",
+        "condensate polishing"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-058",
+      "doc_id": "R016",
+      "section": "6.6 Customization of Base Tables to Consider Dry Cooling Systems",
+      "page_start": 27,
+      "page_end": 27,
+      "text": "As both options will operate at the lower pH ranges within Tables 1-5, the customization within Section 6.2 for two-phase FAC will also have to be considered. The material aspects to address two-phase FAC in new plants will also have to be addressed. In a new power plant, it may take up to one year until the aluminum levels in the steam/water cycle have stabilized. During this period, aluminum levels may be elevated if the aluminum tubes are not preconditioned. It should be noted that this guidance customization for aluminum in a plant cycle is preliminary. IAPWS has issued an IAPWS Certified Research Need (ICRN) to define the missing practical and chemistry data (volatility, partitioning and solubility of aluminum compounds), and to encourage research in these areas.",
+      "terms": [
+        "two-phase FAC",
+        "aluminum",
+        "aluminum tubes",
+        "IAPWS Certified Research Need (ICRN)",
+        "volatility",
+        "partitioning",
+        "solubility"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-059",
+      "doc_id": "R016",
+      "section": "6.7 Customization of Base Tables to Consider Application of a Condensate Polisher",
+      "page_start": 27,
+      "page_end": 27,
+      "text": "The base Tables 1 and 3 include a condensate polisher in the cycle. Condensate polishing is rarely included in the plants represented by Table 2, and is even rarer in HRSG plants included in Tables 4 and 5. The design most commonly used, the so-called “naked mixed bed”, employs deep beds containing mixtures of small beads of cation and anion exchange resin that are regenerated upon exhaustion. Separate beds of anion and cation resins are also successfully used with the claim being made that they are simpler to use, and can be regenerated automatically. Alternatively, thin layers of disposable powdered ion exchange resins can be used as coatings on filter candles (septa). These and other designs that are available each have advantages and disadvantages, with deep bed plants offering a greater capacity for the removal of impurities and the “filter/demineralizer” plants being more effective at removing particulate matter.",
+      "terms": [
+        "Condensate polishing",
+        "naked mixed bed",
+        "deep beds",
+        "cation and anion exchange resin",
+        "powdered ion exchange resins",
+        "filter/demineralizer"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-060",
+      "doc_id": "R016",
+      "section": "6.7 Customization of Base Tables to Consider Application of a Condensate Polisher",
+      "page_start": 27,
+      "page_end": 28,
+      "text": "Many factors have to be taken into account when selecting the most appropriate design of polisher to be used on a particular plant. They include: the quality of the final polished condensate in terms of concentrations of common ionic and particulate impurities, the expected level of ammonia in the condensate, probability of condenser leaks, nature of the coolant water, likely station operating pattern, effluent discharge constraints, the predicted capital and operating costs and the total space requirements of any proposed polisher systems. The demands that any proposed design could make upon the time and skill levels of station personnel must also be considered.",
+      "terms": [
+        "polisher",
+        "ionic",
+        "particulate impurities",
+        "ammonia",
+        "condenser leaks",
+        "effluent discharge"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-061",
+      "doc_id": "R016",
+      "section": "6.7 Customization of Base Tables to Consider Application of a Condensate Polisher",
+      "page_start": 28,
+      "page_end": 28,
+      "text": "Two general types of deep bed polishers are currently used, with the simplest and possibly the least costly being the “naked mixed bed”. Operated in the conventional way, it produces condensate containing < 1 μg/kg of sodium, chloride and sulfate. It is known to be capable of consistently purifying condensate to a level far more pure than the levels required for fossil plants (Tables 1 and 3), i.e., < 0.1 μg/kg, and such polishers are being used by some stations in the economical ammonium form. Ammonium form operation cannot be used to advantage by all stations, and it is necessary for operators to understand its disadvantages. Nevertheless, it allows resin beds to be used for many months without regeneration while still offering protection against impurity ingress and yielding condensate with ionic impurity levels of < 1 μg/kg. An alternative design of a deep bed polisher involves the two types of resins being used in separate vessels or in separate layers in a single vessel of proprietary design. The latest “separate bed” plants are reported to be producing condensate with ionic impurity levels very much less than 1 μg/kg when operating in the conventional mode or < 1 μg/kg in the economical ammonium form. Thus, there is a wide choice of designs of deep bed polishing plants, all of which can yield condensate qualities of an acceptable quality. However, stations are advised to carefully select the design most appropriate for their particular situation. Condensate polishers on plants with seawater cooling should be designed for 100% flow, independent of the condenser tube materials.",
+      "terms": [
+        "deep bed polishers",
+        "naked mixed bed",
+        "ammonium form",
+        "separate bed",
+        "seawater cooling",
+        "μg/kg",
+        "100% flow"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-062",
+      "doc_id": "R016",
+      "section": "6.8 Customization of Base Tables to Consider Makeup Requirements",
+      "page_start": 28,
+      "page_end": 28,
+      "text": "For each of the sets of units and chemistries defined in Tables 1-5, it has been assumed that makeup added to the cycle meets the following limits: Na, Cl, and SO_4 < 3 μg/kg, SiO_2 < 10 μg/kg, conductivity < 0.1 μS/cm, and TOC < 300 μg/kg. This is independent of whether the plant is fossil or HRSG and should be easily achieved by well designed makeup water treatment plants. It should be noted that the actual makeup values will change with equipment in the makeup plant. Note that any returned condensate, for example from external processes, should also meet these guidelines, or be purified before reuse. Seasonal variations in suspended solids also have to be addressed.",
+      "terms": [
+        "makeup",
+        "SiO_2",
+        "SO_4",
+        "TOC",
+        "conductivity",
+        "μg/kg",
+        "μS/cm",
+        "returned condensate"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-063",
+      "doc_id": "R016",
+      "section": "6.8 Customization of Base Tables to Consider Makeup Requirements",
+      "page_start": 28,
+      "page_end": 29,
+      "text": "The raw water used for makeup is taken from city water / town mains, bore holes, rivers, lakes, or seawater and normally contains hundreds to thousands of mg/kg of salts (e.g., sodium, calcium, chloride, sulfate, and carbonate) and tens of mg/kg of organic matter. The ionic components (salts) must be reduced to just a few µg/kg, and the total organic carbon (TOC) to a few tens of µg/kg, before it can be used as makeup. For large power stations, the makeup plant would need to be capable of producing several million liters per day and potentially much more, if some of the steam is used for external processes and is not returned for reuse as condensate, or if water is used in the gas turbine to control NOx levels.",
+      "terms": [
+        "raw water",
+        "makeup",
+        "total organic carbon (TOC)",
+        "mg/kg",
+        "µg/kg",
+        "NOx"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-064",
+      "doc_id": "R016",
+      "section": "6.8 Customization of Base Tables to Consider Makeup Requirements",
+      "page_start": 29,
+      "page_end": 29,
+      "text": "The processes used for purifying the makeup water are flocculation, filtration, electro-dialysis, reverse osmosis, evaporation, and ion exchange. Not all of the processes would be used in a single plant, though most plants use ion exchange, at least for the final stage of purification, in order to obtain the water purity required for makeup. This is achieved using beds of cation or anion exchange resin. If several cation/anion stages are required to achieve purity, this can be done using a mixed bed of cation and anion resins.",
+      "terms": [
+        "flocculation",
+        "filtration",
+        "electro-dialysis",
+        "reverse osmosis",
+        "ion exchange",
+        "mixed bed"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-065",
+      "doc_id": "R016",
+      "section": "6.8 Customization of Base Tables to Consider Makeup Requirements",
+      "page_start": 29,
+      "page_end": 29,
+      "text": "Once the water has been purified, it should be stored in such a way that prevents it from becoming contaminated again, for example in tanks where the vents prevent or at least minimize the ingress of impurities in the air (CO_2) or, for example, by covering the surface with floating balls, using a floating roof or using a nitrogen blanket. This latter process also has the advantage that it minimizes oxygen ingress. Oxygen levels can also be reduced by installing a gas transfer membrane between the storage tank and the makeup addition location for the plant.",
+      "terms": [
+        "CO_2",
+        "floating balls",
+        "floating roof",
+        "nitrogen blanket",
+        "oxygen ingress",
+        "gas transfer membrane"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-066",
+      "doc_id": "R016",
+      "section": "6.9 Customization of Base Tables to Consider Combined Cycle Units with or without a Deaerator (DA)",
+      "page_start": 29,
+      "page_end": 29,
+      "text": "Often a feedwater storage tank (FWST) is used to provide a defined water level to the feedwater pump suction. The gas phase above the water level is maintained by a steam blanket, which, if vented, provides deaeration. The FWST can therefore, but not necessarily, be combined with a deaerator (DA). In modern combined cycle units with multi-pressure HRSGs and wet condenser cooling, the oxygen levels in the condensate can be < 10 μg/kg due to good air in-leakage control. Also in combined cycle/HRSG combinations with independent feed of LP, IP, and HP circuits (Table 4), a deaerator is included downstream of the CPD and it feeds the feedpumps for the LP, IP, and HP economizer circuits. So the level of oxygen in the feed to the economizer circuits can be very low (< 5 μg/kg) and is often found to be insufficient to provide enough oxidizing power to passivate the large economizer circuit surfaces and the LP evaporator in the single-phase flow areas. With dry condenser cooling, deaeration in the condenser is poorer, and therefore a DA may be required, also in cycles with large non-deaerated makeup water usage. In these cases, oxygen levels in the feedwater may be low and plants cannot meet the important feedwater requirement of < 2 μg/kg of total iron in the feedwater [3]. Two customizations are possible: closing the vents on the DA and periodically opening them, or adding oxygen into the LP feed line at the feedpump. Closing the DA vent will not impair functioning of the FWST. With time, an equilibrium with the same oxygen concentration in condensate and feedwater will be reached. The time to reach equilibrium may however be many hours, for example resulting in unstable oxygen levels in plants with numerous load changes. It may therefore be useful not to close the vent flow completely but leave it at a position to be determined by operating experience.",
+      "terms": [
+        "feedwater storage tank (FWST)",
+        "deaerator (DA)",
+        "air in-leakage",
+        "CPD",
+        "economizer circuits",
+        "LP evaporator",
+        "total iron",
+        "single-phase"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-067",
+      "doc_id": "R016",
+      "section": "6.9 Customization of Base Tables to Consider Combined Cycle Units with or without a Deaerator (DA)",
+      "page_start": 30,
+      "page_end": 30,
+      "text": "In the combined cycle/HRSG combinations where the LP drum feeds the higher pressure IP and HP circuits (Table 5), there are a number of possibilities: a) sometimes there is no DA and deaeration may be partly accomplished in the condenser; b) sometimes the DA is integral with the LP drum; and c) the DA feeds a preheater prior to the LP drum and the feedpumps. In these cases, the preheater or economizer circuits prior to the DA can usually be passivated by the oxygen level in the condensate from air in-leakage unless, as above, it is very low (around 2–3 μg/kg), but the LP evaporator may not have sufficient passivation against single-phase FAC. The key to each of these separate and distinct variants is to conduct a monitoring campaign for total iron at the economizer inlet or feedpump, and in the LP drum. As already mentioned in Sections 6.2 and 6.3, FAC has been found to be minimal when the total iron levels are < 2 μg/kg in the feedwater and < 5 μg/kg in the LP drum.",
+      "terms": [
+        "LP drum",
+        "DA",
+        "preheater",
+        "single-phase FAC",
+        "total iron",
+        "economizer inlet",
+        "μg/kg"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-068",
+      "doc_id": "R016",
+      "section": "6.10 Frequently Started and Fast Start HRSGs",
+      "page_start": 30,
+      "page_end": 30,
+      "text": "Because of the economic and fuel supply situations in numerous countries worldwide, many combined cycle units require rapid startup and/or are cycled frequently (such as daily or twice daily start / stop). While these conditions do not necessitate a change of the normal or target IAPWS guideline limits provided in Tables 4 and 5, there are a number of aspects that operators of currently operating units need to consider. Owners of future combined cycle units where fast start requirements are anticipated should consider incorporating these features into the initial specifications. Some of these are at the cutting edge of combined cycle / HRSG plant technology and, as such, have not become standard practice or had much operational experience. The following points represent the consensus experience of the IAPWS Power Cycle Chemistry (PCC) Working Group with representation from 21 countries. The order of listing is not meant to provide any priority of importance.",
+      "terms": [
+        "rapid startup",
+        "combined cycle",
+        "Tables 4 and 5",
+        "fast start",
+        "Power Cycle Chemistry (PCC) Working Group"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-069",
+      "doc_id": "R016",
+      "section": "6.10 Frequently Started and Fast Start HRSGs",
+      "page_start": 30,
+      "page_end": 30,
+      "text": "a) The IAPWS Instrumentation Technical Guidance Document has been amended to cover additional instrumentation and sampling requirements for frequently cycled and fast start HRSGs [5]. For fast start combined cycle / HRSG units, it is necessary to reduce the time to acquire correct and representative analysis values [10, 11]. b) Carryover, as discussed in Section 6.1, becomes very important for fast start HRSGs and should be checked on a more frequent basis using the IAPWS TGD on Carryover [6]. Because of the frequent startups and fast load transients, it is also advisable to conduct a drum level test with varying drum water level while monitoring carryover and saturated steam parameters. This should allow operators to become cognizant of the drum level at which increased carryover starts.",
+      "terms": [
+        "Instrumentation Technical Guidance Document",
+        "fast start HRSGs",
+        "Carryover",
+        "drum level test",
+        "saturated steam"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-070",
+      "doc_id": "R016",
+      "section": "6.10 Frequently Started and Fast Start HRSGs",
+      "page_start": 30,
+      "page_end": 31,
+      "text": "c) Increased levels of corrosion products (total iron) will be transported more frequently to the higher pressure circuits during startups, as discussed in Section 6.1. Until IAPWS guidance is provided to assist operators to reliably monitor the iron levels during these transient periods, monitoring total iron levels under the current IAPWS guidance [3] should be conducted during periods when the unit is at stable or repetitively similar operation. d) To assist in controlling the transport of feedwater corrosion products, new fast start HRSGs should be armored with chromium-containing tube or pipe materials in all the typical FAC locations, which are well understood [4]. Further, for cycling plants or plants running for extended periods at low loads, all plant components and locations that will operate within an FAC risk range [4] during all expected modes of operation with changing temperature profiles across the HRSG should be protected.",
+      "terms": [
+        "corrosion products",
+        "total iron",
+        "startups",
+        "chromium-containing",
+        "FAC locations",
+        "FAC risk range",
+        "low loads"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-071",
+      "doc_id": "R016",
+      "section": "6.10 Frequently Started and Fast Start HRSGs",
+      "page_start": 31,
+      "page_end": 31,
+      "text": "e) It is always most important to identify a condenser leak and distinguish contamination from air in-leakage (carbon dioxide) during a startup, so that a relaxation of the CACE limits can be adopted as suggested in the IAPWS TGD on Steam Purity [8]. The recently amended IAPWS TGD on Instrumentation [5] suggests that DCACE should be added as a fundamental instrument in superheated steam and at the condensate pump discharge to provide additional guidance for fast start HRSGs. f) For fast start combined cycle units with an ACC, there is added importance of having a condensate filter to ensure that large amounts of iron do not transport to the HP evaporator of the HRSG during the frequent starts / stops. Experience indicates that a 5 μm absolute condensate filter will keep the total iron in the condensate consistently less than 10 μg/kg.",
+      "terms": [
+        "condenser leak",
+        "air in-leakage",
+        "CACE",
+        "Steam Purity",
+        "DCACE",
+        "ACC",
+        "condensate filter",
+        "μg/kg"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R016-072",
+      "doc_id": "R016",
+      "section": "6.10 Frequently Started and Fast Start HRSGs",
+      "page_start": 31,
+      "page_end": 31,
+      "text": "g) In terms of sampling for guideline parameters (Tables 4 and 5) and corrosion products, locating sampling systems close to the sample origin will be required to procure reliable analytical results [5]. h) The pH should be within startup limits prior to or very quickly after the startup. Consideration should be given to automating the dosing control, where practical, to minimize the duration of chemical excursions and the need for operator intervention during startups. i) The shutdown periods become important on fast start HRSGs and need to be as flexible as possible due to changing situations where short shutdown periods can change to longer shutdown periods, and vice versa [7]. Many plants may start only by demand of the grid and less as a routine plan. Consequently, adequate layup procedures should be adopted to cover shutdowns of greater than 24 hours because, on further unprotected shutdowns, corrosion can quickly become a serious issue.",
+      "terms": [
+        "sampling systems",
+        "pH",
+        "dosing control",
+        "startups",
+        "fast start HRSGs",
+        "layup procedures",
+        "shutdowns"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    }
+  ],
+  "report": {
+    "paragraph_count": 72,
+    "pages_processed": "1-31 (PDF 1-32; 본문 전체, 7절 참고문헌 32쪽 제외)",
+    "last_paragraph_id": "R016-072",
+    "skipped": [
+      "표지의 저작권/전재 허용 문구('2015 International Association for the Properties of Water and Steam. Publication in whole or in part is allowed...') 및 'Please cite as' 문구: 규칙상 저작권 문구 제외 (서지·license 필드에 반영)",
+      "표지의 'This Technical Guidance Document contains 32 pages, including this cover page.' 및 Executive Secretary 연락처(이메일)·웹사이트 안내 문장: 저자 연락처/행정 정보로 제외",
+      "목차(Contents, 2쪽): 규칙상 제외",
+      "머리글('IAPWS TGD3-10(2015)')·바닥글 페이지 번호: 규칙상 제외",
+      "7. Bibliography and References (32쪽, 참고문헌 1-11): 규칙상 제외",
+      "Figure 1 (20쪽) 흐름도 내부 문자(Yes/No 분기, 'Effect of Drum Pressure – Section 6.1' 등 항목): 규칙상 캡션만 수록"
+    ],
+    "uncertain": [
+      "표지(1쪽)에는 인쇄 페이지 번호가 없음 — 2쪽부터 인쇄 번호가 PDF 쪽번호와 일치하므로 표지 문단은 PDF 쪽번호 1로 기재",
+      "추출본에서 기호 폰트(\\uf06d)로 깨진 6.7절(28쪽)의 '< 1 g/kg', '< 0.1 g/kg' 등 5곳은 페이지 이미지 확인 결과 μg/kg이므로 'μg/kg'으로 복원",
+      "원문은 마이크로 기호를 대부분 'μ'(U+03BC)로, 6.8절 일부(28쪽 'a few µg/kg', 'a few tens of µg/kg')는 'µ'(U+00B5)로 표기 — 추출 문자 그대로 유지",
+      "Table 1-5의 행 구조(위치 그룹 행 / 파라미터 행 / AVT (O)·OT 열)와 'Per Recirculation Ratio' 셀 배치는 pdftotext -layout 결과와 12쪽 페이지 이미지로 확인; Table 4·5는 쪽 경계에서 이어지므로 위치 그룹 단위로 두 문단씩 분할",
+      "Table 6 행/열(Drum Pressure ↔ CACE)은 22쪽 페이지 이미지로 확인; 원문 '<6', '<7' 등은 '< 6', '< 7'처럼 공백을 넣어 통일 표기(값 변경 없음)",
+      "'1. Nomenclature and Definitions' 표는 번호 없는 용어표로, 3쪽·4쪽 두 문단으로 나누어 '용어: Alternative or Acronym=; Definition=' 형태로 풀어 씀 (약어 칸이 빈 용어는 Definition만 기재)",
+      "2단/박스 편집은 없음(단일 단). 'NOx'의 x 아래첨자 여부는 이미지에서 확인하지 못해 원문 추출대로 'NOx' 유지"
+    ]
+  }
+}

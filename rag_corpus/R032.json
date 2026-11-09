@@ -1,0 +1,727 @@
+{
+  "document": {
+    "doc_id": "R032",
+    "title": "Performance Analysis of a Triple Pressure HRSG",
+    "authors": [
+      "Jee-Young Shin",
+      "Young-Seok Son",
+      "Moo-Geun Kim",
+      "Jae-Soo Kim",
+      "Yong-Joon Jeon"
+    ],
+    "year": 2003,
+    "venue": "KSME International Journal, Vol. 17, No. 11, pp. 1746-1755, 2003",
+    "doi": "",
+    "url": "",
+    "license": "KSME International Journal (Korean Society of Mechanical Engineers) 게재 논문, PDF에 저작권·공개 라이선스 표기 없음 (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R032-001",
+      "doc_id": "R032",
+      "section": "Abstract",
+      "page_start": 1746,
+      "page_end": 1746,
+      "text": "The paper studies how a triple pressure reheat HRSG behaves in operation, using the commercial package Gate Cycle (GE Enter Software). In design mode the routine fixes every design parameter, including the configuration and the area of each heat exchanger, while the off-design part can simulate how operating parameters such as power load, process demand and operating mode influence plant performance. The authors rearrange the high-temperature and intermediate-temperature HRSG components and examine the consequences for the steam turbine and for HRSG characteristics. HRSG size can differ considerably even when thermal performance changes little, so whether an optimum design point exists must be reviewed from both an economic and a steam turbine viewpoint. Because plants run at many off-design conditions (ambient temperature, gas turbine load, etc.), off-design behaviour may be a main factor in arranging HRSG components; configurations that are nearly equal at the design point respond differently to ambient temperature. Key Words: Triple Pressure Heat Recovery Steam Generator, Combined Cycle Power Plant, Performance Analysis, Efficiency, Optimum Design.",
+      "terms": [
+        "triple pressure reheat HRSG",
+        "Gate Cycle",
+        "GE Enter Software",
+        "off-design",
+        "steam turbine",
+        "ambient temperature",
+        "gas turbine load",
+        "Optimum Design"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-002",
+      "doc_id": "R032",
+      "section": "Nomenclature",
+      "page_start": 1746,
+      "page_end": 1746,
+      "text": "Nomenclature list of the paper. Symbols: A = area; c_p = specific heat; i = enthalpy; ṁ = mass flow rate; NTU = number of transfer unit; Q̇ = heat transfer rate; U = overall heat transfer coefficient. Greek symbol: ε = effectiveness. Subscripts: g = gas side; s = steam/water side; in = inlet; max = maximum; out = outlet.",
+      "terms": [
+        "NTU",
+        "c_p",
+        "ε",
+        "effectiveness",
+        "overall heat transfer coefficient",
+        "heat transfer rate",
+        "mass flow rate",
+        "enthalpy"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-003",
+      "doc_id": "R032",
+      "section": "1. Introduction",
+      "page_start": 1746,
+      "page_end": 1747,
+      "text": "Gas/steam combined cycles are described as a mature and important power generation technology because of many benefits: efficient use of energy resources, low emissions, short construction time, low initial investment, low operation and maintenance cost and freedom in fuel choice (El-Masri and Foster-Pegg, 1996), which makes these plants competitive in the power market. The heat recovery steam generator (HRSG) belongs to the bottoming steam cycle: it takes up energy from the gas turbine exhaust gas and raises steam for a process or for further power generation in a steam turbine. Engineers can design the HRSG and bottoming cycle themselves at the early stage, whereas the gas turbine is not built to order and the steam turbine is chosen to suit the steam supplied by the HRSG. For this reason HRSG design is essential for raising overall efficiency and output and for lowering main equipment cost (Ganapathy, 1985; Manen, 1994; Pasha and Jolly, 1995; Ahn and Antonovsky, 2001).",
+      "terms": [
+        "combined cycle",
+        "heat recovery steam generator (HRSG)",
+        "bottoming steam cycle",
+        "exhaust gas",
+        "gas turbine",
+        "steam turbine",
+        "equipment cost"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-004",
+      "doc_id": "R032",
+      "section": "1. Introduction",
+      "page_start": 1747,
+      "page_end": 1747,
+      "text": "Depending on how many drums the boiler has, HRSGs are single, dual or triple pressure types. Dual pressure units became common because they were more efficient than single pressure units and cheaper than triple pressure ones, but high efficiency gas turbines have now pushed the use of triple pressure HRSGs. With a triple pressure reheat HRSG and a high performance gas turbine, overall plant efficiency can approach 60%. The complexity of the triple pressure HRSG, however, makes it hard to see how design parameter changes influence overall plant performance. Many studies have addressed triple pressure reheat or non-reheat HRSG design (Eisenkolb et al., 1996; Lee et al., 2002). The authors argue that the effect of arranging heat exchangers such as the high pressure (HP) superheater, reheater and HP economizer should also be made known to power producers, who need the plant's behaviour at various off-design conditions to generate electricity most efficiently (Kehlhofer, 1991); key quantities such as heat recovery capacity and efficiency must be checked as operating conditions vary.",
+      "terms": [
+        "triple pressure",
+        "dual",
+        "drums",
+        "60%",
+        "high pressure (HP) superheater",
+        "reheater",
+        "HP economizer",
+        "heat recovery capacity"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-005",
+      "doc_id": "R032",
+      "section": "1. Introduction",
+      "page_start": 1747,
+      "page_end": 1747,
+      "text": "Scope of the present work: the operating characteristics of triple pressure reheat HRSGs are analysed with the computer program Gate Cycle by GE Enter Software (2001). The study investigates how the configuration of the HP superheater and reheater affects plant thermal performance and economics, and it alters the arrangement of intermediate-temperature components, namely the intermediate pressure (IP) superheater, HP economizer and low pressure (LP) superheater, to see the consequence for steam turbine performance. Off-design behaviour is also checked over the plant's operating range, e.g. ambient temperature and gas turbine load.",
+      "terms": [
+        "Gate Cycle",
+        "triple pressure reheat HRSGs",
+        "HP superheater",
+        "reheater",
+        "intermediate pressure (IP) superheater",
+        "low pressure (LP) superheater",
+        "HP economizer",
+        "ambient temperature"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-006",
+      "doc_id": "R032",
+      "section": "2. Plant Description",
+      "page_start": 1747,
+      "page_end": 1747,
+      "text": "The model gas turbine is a General Electric unit (model PG7251FB) rated at 190 MW at ISO condition when firing natural gas. The HRSG is a triple pressure reheat design supplying HP, IP and LP steam to the steam turbine (Fig. 1). A deaerator heated with saturated HP steam supplies feed water to the HP, IP and LP pumps, and a condensate-water preheater is added to make full use of exhaust gas energy. Pressure levels are set to typical values and may be altered for other applications. HP steam is superheated to 565°C in the HP superheater and admitted to the HP steam turbine (HPT); the HPT exhaust is combined with superheated IP steam and reheated in the reheater. After expansion in the IP steam turbine (IPT), the steam is combined with superheated LP steam.",
+      "terms": [
+        "PG7251FB",
+        "190 MW",
+        "ISO condition",
+        "deaerator",
+        "condensate-water preheater",
+        "HP steam turbine (HPT)",
+        "IP steam turbine (IPT)",
+        "565°C"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-007",
+      "doc_id": "R032",
+      "section": "2. Plant Description",
+      "page_start": 1748,
+      "page_end": 1748,
+      "text": "Fig. 1 caption: schematic of the combined cycle power plant equipped with a triple pressure reheat HRSG (component labels shown include RH, HPSH, HPEV, IPSH, HPEC2, LPSH, IPEV, IPEC, HPEC1, LPEV, PHTR).",
+      "terms": [
+        "Fig. 1",
+        "triple pressure reheat HRSG",
+        "RH",
+        "HPSH",
+        "HPEC2",
+        "PHTR"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-008",
+      "doc_id": "R032",
+      "section": "3. Performance Analysis",
+      "page_start": 1748,
+      "page_end": 1748,
+      "text": "Inside the HRSG the water and/or steam passes through the tubes while gas turbine exhaust gas passes over their outside, and the two exchange heat in cross-flow at each section (economizer, evaporator, superheater). To simplify the simulation, every heat exchanger is treated as counter-flow across the whole HRSG, since the water inlet and the gas inlet are on opposite sides. The heat duty of each module follows from the energy balance Q̇ = ṁ_g(i_g,in − i_g,out) = ṁ_s(i_s,out − i_s,in) (1) (heat transfer rate = gas mass flow × gas enthalpy drop = steam/water mass flow × steam/water enthalpy rise), and this balance gives the gas side and water/steam side temperatures at the inlet and outlet of each HRSG section.",
+      "terms": [
+        "cross-flow",
+        "counter-flow",
+        "economizer",
+        "evaporator",
+        "superheater",
+        "energy balance",
+        "Q̇ = ṁ_g(i_g,in − i_g,out) = ṁ_s(i_s,out − i_s,in)"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-009",
+      "doc_id": "R032",
+      "section": "3. Performance Analysis",
+      "page_start": 1748,
+      "page_end": 1748,
+      "text": "For design, the effectiveness-NTU method with the overall heat transfer coefficient U_design is used to compute HRSG heat transfer area and related parameters: A = (ṁc_p)_min NTU / U_design (2) (heat transfer area = minimum heat capacity rate × number of transfer units ÷ design overall heat transfer coefficient). Here NTU = f(ε, (ṁc_p)_min/(ṁc_p)_max) and ε = Q̇/Q̇_max, Q̇_max being the largest heat transfer rate the exchanger could possibly deliver (Incropera and DeWitt, 1996). The area is also obtained from tube/fin geometry data, and an iterative procedure adjusts it until the geometry-based value and the effectiveness-NTU value agree within a set criterion.",
+      "terms": [
+        "effectiveness-NTU",
+        "U_design",
+        "A = (ṁc_p)_min NTU / U_design",
+        "NTU = f(ε, (ṁc_p)_min/(ṁc_p)_max)",
+        "ε = Q̇/Q̇_max",
+        "tube/fin geometry",
+        "iterative"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-010",
+      "doc_id": "R032",
+      "section": "3. Performance Analysis",
+      "page_start": 1748,
+      "page_end": 1748,
+      "text": "Off-design analysis of the HRSG (Kehlhofer, 1991) uses the design parameters obtained above; the thermodynamic properties at each section (T, p, i) are recalculated repeatedly until the parameters converge to the assumed values. The off-design NTU is NTU = A·U_off-design / (ṁc_p)_min (3) (number of transfer units = area × off-design overall heat transfer coefficient ÷ minimum heat capacity rate). Effectiveness is then found as a function of NTU, and the actual heat transfer rate is Q̇_off-design = εQ̇_max (4) (off-design heat transfer rate = effectiveness × maximum possible heat transfer rate); from this, temperature, pressure and enthalpy at every heat exchanger in off-design operation can be obtained.",
+      "terms": [
+        "Off-design",
+        "NTU = A·U_off-design / (ṁc_p)_min",
+        "Q̇_off-design = εQ̇_max",
+        "effectiveness",
+        "(T, p, i)",
+        "Kehlhofer"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-011",
+      "doc_id": "R032",
+      "section": "3. Performance Analysis",
+      "page_start": 1748,
+      "page_end": 1749,
+      "text": "Calculations were run with Gate Cycle version 5.40 (GE Enter Software, 2001). Gas turbine off-design behaviour is taken from the performance curve sets in the software library, the steam turbine is assumed to work in sliding pressure mode under off-design conditions, and each steam turbine section is evaluated with the Spencer/Cotton/Cannon correlations (Spencer et al., 1963). Ambient design conditions and cycle parameters appear in Table 1. Under these conditions the gas turbine exhaust is 451 kg/s at 625°C, which suits a conventional reheat steam turbine.",
+      "terms": [
+        "Gate Cycle version 5.40",
+        "sliding pressure",
+        "Spencer/Cotton/Cannon",
+        "performance curve",
+        "451 kg/s",
+        "625°C",
+        "reheat"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-012",
+      "doc_id": "R032",
+      "section": "3. Performance Analysis",
+      "page_start": 1749,
+      "page_end": 1749,
+      "text": "Table 1 Design conditions and cycle parameters. Design conditions — Temperature: Unit=°C; Data=15. Altitude: Unit=m; Data=0. Relative humidity: Unit=%; Data=60. Cycle parameters — HP and/or RH steam temp.: Unit=°C; Data=565. HP steam pressure: Unit=MPa; Data=10. IP steam pressure: Unit=MPa; Data=2. LP steam pressure: Unit=MPa; Data=0.2. Condenser pressure: Unit=kPa; Data=5.",
+      "terms": [
+        "Table 1",
+        "Relative humidity",
+        "HP and/or RH steam temp.",
+        "HP steam pressure",
+        "IP steam pressure",
+        "LP steam pressure",
+        "Condenser pressure",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-013",
+      "doc_id": "R032",
+      "section": "4. Results",
+      "page_start": 1749,
+      "page_end": 1749,
+      "text": "The study is concerned with the best arrangement of sections such as the HP superheater (HPSH), reheater (RH) and/or HP economizer (HPEC). Many design parameters influence combined cycle performance, but because the plant is complex, a single cycle simulation reveals the influence of only one parameter. The paper therefore concentrates on the component arrangement in the high and intermediate temperature zones, which are known to affect system performance, and adds off-design performance because it reflects how the plant actually operates. The base model uses a parallel HPSH and RH configuration (case III, Table 2 and Fig. 1). Results are reviewed in three categories: the high-temperature zone arrangement, the intermediate-temperature zone arrangement, and the effect on steam turbine off-design performance.",
+      "terms": [
+        "HP superheater (HPSH)",
+        "reheater (RH)",
+        "HP economizer (HPEC)",
+        "base model",
+        "case III",
+        "high-temperature",
+        "intermediate-temperature"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-014",
+      "doc_id": "R032",
+      "section": "4.1 The effects of the arrangement of components in the high-temperature zone",
+      "page_start": 1749,
+      "page_end": 1749,
+      "text": "Table 2 Cases with different arrangement of components in the high-temperature zone. Case I: Order of heat exchangers=HPSH → RH. Case II: Order of heat exchangers=RH → HPSH. Case III: Order of heat exchangers=HPSH/RH (Parallel).",
+      "terms": [
+        "Table 2",
+        "HPSH → RH",
+        "RH → HPSH",
+        "HPSH/RH (Parallel)"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-015",
+      "doc_id": "R032",
+      "section": "4.1 The effects of the arrangement of components in the high-temperature zone",
+      "page_start": 1749,
+      "page_end": 1749,
+      "text": "Fig. 2 caption: heat transfer rate versus temperature diagram for the triple pressure HRSG in case III.",
+      "terms": [
+        "Fig. 2",
+        "heat transfer rate",
+        "case III"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-016",
+      "doc_id": "R032",
+      "section": "4.1 The effects of the arrangement of components in the high-temperature zone",
+      "page_start": 1749,
+      "page_end": 1750,
+      "text": "Where the HPSH and RH are placed may strongly influence steam cycle performance, so three cases (Table 2) are compared. Fig. 2 plots heat transfer rate against exhaust gas temperature through the HRSG for the base model (case III), in which the high-temperature zone is HPSH/RH (parallel) and the intermediate-temperature zone runs IPSH, HPEC2, LPSH (Fig. 1). The HRSG transfers 237.2 MW. Condensate flow is 71.1 kg/s, split as 54.9, 8.8 and 7.4 kg/s of HP, IP and LP steam. The steam turbine gross output is 100.9 MW, with 22.9, 39.7 and 38.3 MW from the HP, IP and LP turbines.",
+      "terms": [
+        "237.2 MW",
+        "71.1 kg/s",
+        "100.9 MW",
+        "IPSH",
+        "HPEC2",
+        "LPSH",
+        "exhaust gas temperature",
+        "HPSH/RH (parallel)"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-017",
+      "doc_id": "R032",
+      "section": "4.1 The effects of the arrangement of components in the high-temperature zone",
+      "page_start": 1750,
+      "page_end": 1750,
+      "text": "Table 3 indicates that only in case III can both the HPSH and RH outlet steam be brought to 565°C. In cases I and II the approach temperature difference (gas in − steam out) of the second heat exchanger (RH in case I, HPSH in case II) is fixed at 15°C, so the RH outlet (case I) and HPSH outlet (case II) are capped at 523°C and 546°C, respectively, by the gas temperature entering the second exchanger, i.e. leaving the first. Thus in case I the gas reaching the RH can heat the reheat steam only up to 523°C.",
+      "terms": [
+        "Table 3",
+        "approach temperature difference",
+        "565°C",
+        "15°C",
+        "523°C",
+        "546°C",
+        "RH",
+        "HPSH"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-018",
+      "doc_id": "R032",
+      "section": "4.1 The effects of the arrangement of components in the high-temperature zone",
+      "page_start": 1750,
+      "page_end": 1750,
+      "text": "In case I the colder steam entering the IPT lowers thermal efficiency, lowers turbine exit steam quality and reduces power output if steam flow stays about the same; the lower LPT inlet steam temperature is taken as the main cause of the reduced LPT output. In case II the reduced HPT inlet (HPSH outlet) temperature explains the lower HPT output, and case III gives more HPT power than case II because of its hotter HPSH outlet steam. Even so, although steam flows, temperatures and individual turbine outputs differ somewhat among the three cases, the net steam turbine output hardly changes. Hence the optimization in this study should aim at minimizing criteria such as an economic factor or heat transfer area.",
+      "terms": [
+        "IPT",
+        "LPT",
+        "HPT",
+        "steam quality",
+        "thermal efficiency",
+        "net steam turbine output",
+        "heat transfer area"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-019",
+      "doc_id": "R032",
+      "section": "4.1 The effects of the arrangement of components in the high-temperature zone",
+      "page_start": 1750,
+      "page_end": 1750,
+      "text": "Table 3 Performance data of the HRSG and steam turbine (Changes in the arrangement of high-temperature components), part 1 (values given as Case I / Case II / Case III). HPSH: Mass flow rate (kg/s)=57.2 / 55.2 / 54.9; Outlet temp. (°C)=565.3 / 546.3 / 565.0; Outlet pressure (MPa)=10.0 / 10.0 / 10.0; Inlet temp. (°C)=310.9 / 311.0 / 311.0. RH: Mass flow rate (kg/s)=65.6 / 64.0 / 63.7; Outlet temp. (°C)=522.6 / 564.9 / 565.0; Outlet pressure (MPa)=2.0 / 2.0 / 2.0; Inlet temp. (°C)=338.0 / 325.0 / 337.9. IPSH: Mass flow rate (kg/s)=8.4 / 8.8 / 8.8; Outlet temp. (°C)=310.8 / 311.0 / 311.0; Outlet pressure (MPa)=2.1 / 2.1 / 2.1; Inlet temp. (°C)=216.6 / 216.6 / 216.6. LPSH: Mass flow rate (kg/s)=6.9 / 7.3 / 7.4; Outlet temp. (°C)=253.5 / 255.2 / 255.1; Outlet pressure (MPa)=0.2 / 0.2 / 0.2; Inlet temp. (°C)=121.6 / 121.6 / 121.6.",
+      "terms": [
+        "Table 3",
+        "HPSH",
+        "RH",
+        "IPSH",
+        "LPSH",
+        "Mass flow rate",
+        "Outlet temp.",
+        "Inlet temp."
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-020",
+      "doc_id": "R032",
+      "section": "4.1 The effects of the arrangement of components in the high-temperature zone",
+      "page_start": 1750,
+      "page_end": 1750,
+      "text": "Table 3 Performance data of the HRSG and steam turbine (Changes in the arrangement of high-temperature components), part 2 (values given as Case I / Case II / Case III). LPT inlet (IPT outlet + LPSH outlet): Mass flow rate (kg/s)=72.5 / 71.3 / 71.2; Temperature (°C)=228.7 / 255.3 / 258.1. Heating steam to deaerator (kg/s)=2.0 / 1.8 / 1.9. HPT power (MW)=23.9 / 22.3 / 22.9. IPT power (MW)=38.9 / 40.2 / 39.7. LPT power (MW)=37.1 / 38.2 / 38.3. Total power, net (MW)=97.1 / 97.9 / 98.1. Deviation in total power (%)=- / 0.8 / 0.9.",
+      "terms": [
+        "Table 3",
+        "LPT inlet",
+        "Heating steam to deaerator",
+        "HPT power",
+        "IPT power",
+        "LPT power",
+        "Total power, net",
+        "Deviation in total power"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-021",
+      "doc_id": "R032",
+      "section": "4.1 The effects of the arrangement of components in the high-temperature zone",
+      "page_start": 1750,
+      "page_end": 1750,
+      "text": "To isolate the effect of arrangement, only component order is changed; all other parameters, including pinch point temperature difference and approach temperature difference, are kept constant. In case III the HP part (HPSH, RH, HPEVAP) occupies roughly 40% of total surface (Fig. 3) yet accounts for about 60% of heat recovery (Fig. 2). Apart from its key role in steam generation, the HP part matters for cost: HRSG price is very sensitive to HP area because high temperature materials cost about 20% more than those of other parts, as inferred from HRSG manufacturers' data (Dechamps, 1997).",
+      "terms": [
+        "pinch point temperature difference",
+        "approach temperature difference",
+        "HPEVAP",
+        "40%",
+        "60%",
+        "20%",
+        "Fig. 3"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-022",
+      "doc_id": "R032",
+      "section": "4.1 The effects of the arrangement of components in the high-temperature zone",
+      "page_start": 1751,
+      "page_end": 1751,
+      "text": "Relative to case III, total heat transfer area is larger by 3.1% in case I and 4.2% in case II (Table 4); for the HPSH and RH alone the differences are 8.0% and 24.4%. Exact HRSG cost is hard to determine because prices are proprietary to each company. As a simple estimate, taking US $120/m^2 for HP components and US $100/m^2 for the rest, the area-only price difference between case II and case III is roughly six hundred thousand dollars, about 4% of the estimated HRSG price, an investment gap the authors consider not ignorable when power output is nearly identical.",
+      "terms": [
+        "Table 4",
+        "3.1%",
+        "4.2%",
+        "8.0%",
+        "24.4%",
+        "US $120/m^2",
+        "US $100/m^2",
+        "investment"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-023",
+      "doc_id": "R032",
+      "section": "4.1 The effects of the arrangement of components in the high-temperature zone",
+      "page_start": 1751,
+      "page_end": 1751,
+      "text": "Table 4 Area of each heat exchanger of the HRSG (m^2) (Changes in the arrangement of high-temperature components). HP part: I=95,152; II=95,521; III=90,595. IP part: I=18,773; II=19,201; III=19,272. LP part: I=24,104; II=24,665; III=23,950. Total area: I=138,029; II=139,387; III=133,817. Deviation in total area: I=3.1%; II=4.2%; III=-. Area of HPSH+RH: I=20,352; II=23,435; III=18,842. Deviation in area of HPSH+RH only: I=8.0%; II=24.4%; III=-.",
+      "terms": [
+        "Table 4",
+        "HP part",
+        "IP part",
+        "LP part",
+        "Total area",
+        "HPSH+RH",
+        "138,029",
+        "133,817"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-024",
+      "doc_id": "R032",
+      "section": "4.1 The effects of the arrangement of components in the high-temperature zone",
+      "page_start": 1751,
+      "page_end": 1751,
+      "text": "Fig. 3 caption: how the heat transfer area of the HRSG is distributed among sections in case III.",
+      "terms": [
+        "Fig. 3",
+        "heat transfer area",
+        "case III"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-025",
+      "doc_id": "R032",
+      "section": "4.2 The effects of the arrangement of components in the intermediate-temperature zone",
+      "page_start": 1751,
+      "page_end": 1751,
+      "text": "Table 5 lists three cases that reorder the HP economizer, IP superheater and LP superheater. Total HRSG area differs by about 5% between cases IV and V, a gap governed by the HP economizer, whose area is about 16700, 14400 and 20700 m^2 in cases III, IV and V (Table 6). Considering only the second HP economizer (HPEC2), cases IV and V differ by as much as 44%.",
+      "terms": [
+        "Table 5",
+        "Table 6",
+        "HP economizer",
+        "IP superheater",
+        "LP superheater",
+        "HPEC2",
+        "44%",
+        "20700 m^2"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-026",
+      "doc_id": "R032",
+      "section": "4.2 The effects of the arrangement of components in the intermediate-temperature zone",
+      "page_start": 1751,
+      "page_end": 1752,
+      "text": "Following the gas temperature profile through the intermediate temperature zone, case V gives the lowest gas temperature at the HP economizer inlet of cases III, IV and V, since its HP economizer sits at the back end of the IP part. Gas-to-feedwater temperature difference is consequently smallest in case V, because the HP economizer outlet water temperature is the same in all three cases; a larger area is then needed for equal thermal performance, as HPEC2 thermal performance (inlet and outlet temperatures and water flow) was fixed at the design stage. The case V HP economizer therefore has the largest area, and the economic discussion is not repeated. Power output differs little even though steam conditions change slightly (Table 7).",
+      "terms": [
+        "gas temperature profile",
+        "HP economizer",
+        "feedwater",
+        "HPEC2",
+        "case V",
+        "Table 7",
+        "design stage"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-027",
+      "doc_id": "R032",
+      "section": "4.2 The effects of the arrangement of components in the intermediate-temperature zone",
+      "page_start": 1751,
+      "page_end": 1751,
+      "text": "Table 5 Cases with different arrangement of components in the intermediate-temperature zone. Case III: Order of heat exchangers=IPSH → HPEC2 → LPSH. Case IV: Order of heat exchangers=HPEC2 → IPSH → LPSH. Case V: Order of heat exchangers=IPSH → LPSH → HPEC2.",
+      "terms": [
+        "Table 5",
+        "IPSH → HPEC2 → LPSH",
+        "HPEC2 → IPSH → LPSH",
+        "IPSH → LPSH → HPEC2"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-028",
+      "doc_id": "R032",
+      "section": "4.2 The effects of the arrangement of components in the intermediate-temperature zone",
+      "page_start": 1751,
+      "page_end": 1751,
+      "text": "Table 6 Area of each heat exchanger of the HRSG (m^2) (Changes in the arrangement of intermediate-temperature components). HP part: III=90,595; IV=87,879; V=94,655. IP part: III=19,272; IV=19,672; V=18,816. LP part: III=23,950; IV=24,779; V=24,883. Total area: III=133,817; IV=132,330; V=138,354. Deviation in total area: III=1.1%; IV=-; V=4.6%. Area of HPEC2: III=16,715; IV=14,396; V=20,710. Deviation in area of HPEC2 only: III=16.1%; IV=-; V=43.9%.",
+      "terms": [
+        "Table 6",
+        "HP part",
+        "Total area",
+        "Area of HPEC2",
+        "132,330",
+        "138,354",
+        "43.9%"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-029",
+      "doc_id": "R032",
+      "section": "4.2 The effects of the arrangement of components in the intermediate-temperature zone",
+      "page_start": 1752,
+      "page_end": 1752,
+      "text": "Table 7 Performance data of the HRSG and steam turbine (Changes in the arrangement of intermediate-temperature components), part 1 (values given as Case III / Case IV / Case V). HPSH: Mass flow rate (kg/s)=54.9 / 54.4 / 55.0; Outlet temp. (°C)=565.0 / 565.0 / 564.9; Outlet pressure (MPa)=10.0 / 10.0 / 10.0; Inlet temp. (°C)=311.0 / 311.0 / 311.0. RH: Mass flow rate (kg/s)=63.7 / 63.7 / 63.5; Outlet temp. (°C)=565.0 / 564.9 / 565.1; Outlet pressure (MPa)=2.0 / 2.0 / 2.0; Inlet temp. (°C)=337.9 / 329.6 / 338.0. IPSH: Mass flow rate (kg/s)=8.8 / 9.4 / 8.5; Outlet temp. (°C)=311.0 / 259.8 / 311.0; Outlet pressure (MPa)=2.1 / 2.1 / 2.1; Inlet temp. (°C)=216.6 / 216.6 / 216.6. LPSH: Mass flow rate (kg/s)=7.4 / 7.5 / 7.5; Outlet temp. (°C)=255.1 / 257.5 / 306.8; Outlet pressure (MPa)=0.2 / 0.2 / 0.2; Inlet temp. (°C)=121.6 / 121.6 / 208.0.",
+      "terms": [
+        "Table 7",
+        "HPSH",
+        "RH",
+        "IPSH",
+        "LPSH",
+        "Mass flow rate",
+        "Outlet temp.",
+        "Inlet temp."
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-030",
+      "doc_id": "R032",
+      "section": "4.2 The effects of the arrangement of components in the intermediate-temperature zone",
+      "page_start": 1752,
+      "page_end": 1752,
+      "text": "Table 7 Performance data of the HRSG and steam turbine (Changes in the arrangement of intermediate-temperature components), part 2 (values given as Case III / Case IV / Case V). LPT inlet (IPT outlet + LPSH outlet): Mass flow rate (kg/s)=71.2 / 71.2 / 70.9; Temperature (°C)=258.1 / 258.3 / 263.5. Heating steam to deaerator (kg/s)=1.9 / 1.9 / 1.8. HPT power (MW)=22.9 / 22.7 / 22.9. IPT power (MW)=39.7 / 39.7 / 39.5. LPT power (MW)=38.3 / 38.4 / 38.2. Total power, net (MW)=98.1 / 97.9 / 98.2. Deviation in total power (%)=0.2 / - / 0.3.",
+      "terms": [
+        "Table 7",
+        "LPT inlet",
+        "Heating steam to deaerator",
+        "HPT power",
+        "IPT power",
+        "LPT power",
+        "Total power, net",
+        "Deviation in total power"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-031",
+      "doc_id": "R032",
+      "section": "4.3 Off-design performance",
+      "page_start": 1752,
+      "page_end": 1753,
+      "text": "Figs. 4 to 6 give off-design results for varying ambient temperature and gas turbine load. Steam turbine output falls as ambient temperature rises, except between 5 and 15°C (Fig. 4), because off-design changes in gas turbine exhaust flow and temperature drive steam turbine performance. Fig. 5 shows that exhaust gas flow changes little with ambient temperature near 10°C compared with above 15°C, while exhaust temperature changes gradually over the whole range; so near 10°C steam turbine output rises although gas flow drops, which the authors attribute to the higher exhaust gas temperature governing HRSG steam production there. They stress that how exhaust flow and temperature vary depends entirely on each gas turbine's control algorithm, which holds either turbine inlet temperature or mass flow rate constant depending on the manufacturer.",
+      "terms": [
+        "ambient temperature",
+        "gas turbine load",
+        "exhaust gas",
+        "15°C",
+        "10°C",
+        "control algorithm",
+        "turbine inlet temperature",
+        "steam production"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-032",
+      "doc_id": "R032",
+      "section": "4.3 Off-design performance",
+      "page_start": 1753,
+      "page_end": 1753,
+      "text": "In Fig. 4(a) the output curves of cases II and III cross near 20°C. If the plant always ran above 20°C, case II rather than case III would yield more power, and where this difference is not negligible, operating cost can be cut by choosing the scheme that fits the plant's actual working conditions, which is one reason off-design characteristics deserve careful study. For cases III, IV and V the difference appears insignificant and the trends are almost identical (Fig. 4(b)).",
+      "terms": [
+        "Fig. 4(a)",
+        "Fig. 4(b)",
+        "20°C",
+        "case II",
+        "case III",
+        "operating cost",
+        "off-design"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-033",
+      "doc_id": "R032",
+      "section": "4.3 Off-design performance",
+      "page_start": 1753,
+      "page_end": 1753,
+      "text": "With varying gas turbine load (Fig. 6), cases I, II and III show different slopes and fairly linear curves (Fig. 6(a)), whereas cases III, IV and V differ little (Fig. 6(b)). Given lifetime revenue from electricity sales, differences in part-load behaviour may be important, so the heat exchanger configuration should be chosen with the plant's operating range (temperature and/or load) in mind. For example, case I is worst because of poor steam turbine performance and case II is worst because of high HRSG investment cost; however, investment cost should be re-evaluated against annual electricity sales revenue, which also depends on economic factors such as net price per unit power, inflation rate and interest rate.",
+      "terms": [
+        "gas turbine load",
+        "Fig. 6(a)",
+        "Fig. 6(b)",
+        "lifetime revenue",
+        "heat exchanger configuration",
+        "investment cost",
+        "inflation rate",
+        "interest rate"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-034",
+      "doc_id": "R032",
+      "section": "4.3 Off-design performance",
+      "page_start": 1752,
+      "page_end": 1753,
+      "text": "Fig. 4 caption: steam turbine off-design performance versus ambient temperature, (a) cases I, II and III, (b) cases III, IV and V. Fig. 5 caption: how gas turbine exhaust gas flow rate and temperature change with ambient temperature. Fig. 6 caption: steam turbine off-design performance versus gas turbine load, (a) cases I, II and III, (b) cases III, IV and V.",
+      "terms": [
+        "Fig. 4",
+        "Fig. 5",
+        "Fig. 6",
+        "ambient temperature",
+        "gas turbine load",
+        "exhaust gas"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-035",
+      "doc_id": "R032",
+      "section": "5. Concluding Remarks",
+      "page_start": 1754,
+      "page_end": 1754,
+      "text": "The work used Gate Cycle (GE Enter Software) to analyse operating characteristics of triple pressure reheat HRSGs and to study how the HP superheater and reheater configuration affects plant thermal performance and economics. HRSG area and investment cost can vary considerably with the arrangement of exchangers such as the HP superheater and reheater while thermal performance stays close. Of the cases examined, the parallel configuration (case III) performed better in both HRSG investment cost and thermal performance. Rearranging intermediate-temperature components (IP superheater, HP economizer, LP superheater) produced a large change in HP economizer area, and placing the HP economizer upstream in the HRSG is recommended.",
+      "terms": [
+        "Gate Cycle",
+        "triple pressure reheat HRSGs",
+        "HP superheater",
+        "reheater",
+        "parallel configuration (case III)",
+        "HP economizer",
+        "investment cost"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R032-036",
+      "doc_id": "R032",
+      "section": "5. Concluding Remarks",
+      "page_start": 1754,
+      "page_end": 1754,
+      "text": "Whether an optimum design criterion exists across HRSG configurations must be reviewed carefully from the standpoint of both economics and heat recovery efficiency. Off-design performance also depends on exchanger arrangement: the HP superheater and reheater arrangement strongly affects steam turbine performance, including off-design operation, whereas the intermediate temperature zone arrangement has negligible effect even with a 5% change in HRSG area. Configuration effects should thus be predicted well for economical operation, and off-design performance, which may be decisive for an optimum design given the plant's operating range, should be built into the design beforehand. The authors offer the results as a guideline for estimating the optimum triple pressure HRSG configuration.",
+      "terms": [
+        "optimum design criterion",
+        "heat recovery efficiency",
+        "off-design",
+        "HP superheater",
+        "reheater",
+        "intermediate temperature zone",
+        "5%",
+        "triple pressure HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 36,
+    "pages_processed": "1746-1755 (PDF 1-10쪽 전체)",
+    "last_paragraph_id": "R032-036",
+    "skipped": [
+      "p.1746 저자 소속·교신저자 연락처(E-mail, TEL/FAX)·원고 접수일 각주: 저자 연락처 제외 규칙",
+      "p.1754 Acknowledgment(Dong-Eui University Grant No. 2002AA145): 감사의 글 제외",
+      "p.1754-1755 References 목록: 참고문헌 제외",
+      "각 쪽 머리글(저널명·권호, 논문 제목, 저자명)과 쪽 번호: 머리글/바닥글 제외",
+      "Fig. 1-6 그림 내부 수치·곡선(예: Fig. 3 원그래프 백분율, Fig. 4-6 축 값): 그림 내용 추측 금지 규칙에 따라 캡션만 수록"
+    ],
+    "uncertain": [
+      "원본 PDF는 스캔 이미지+OCR 텍스트층(잡음: 'School o f', 'VoL', 'H R S G', '565*(]', '5960' 등)이어서 모든 수치·표·수식을 페이지 이미지(PDF 1, 3-9쪽)와 대조해 바로잡음",
+      "p.1748 Eq. (2) 아래 정의식이 원문에 'UTU = f(ε, (ṁc_p)min/(ṁc_p)max)'로 인쇄되어 있으나 문맥상 NTU의 오식으로 보고 'NTU'로 기재함",
+      "p.1749 본문은 'Spencer/Cotton/Cannon correlations'로, 참고문헌은 'Canon, C. N.'으로 철자가 다름 → 본문 철자 유지",
+      "p.1751 4.2절 HP economizer 면적 '약 16700, 14400, 20700 m^2'는 본문 표기(어림값)이며 Table 6 값은 16,715/14,396/20,710",
+      "Fig. 1 캡션에 덧붙인 구성요소 약어(RH, HPSH 등)는 그림 하단에 인쇄된 라벨을 그대로 옮긴 것",
+      "DOI가 PDF에 인쇄되어 있지 않아 doi 빈 문자열"
+    ]
+  }
+}

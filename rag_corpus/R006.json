@@ -1,0 +1,1695 @@
+{
+  "document": {
+    "doc_id": "R006",
+    "title": "GE Combined-Cycle Product Line and Performance",
+    "authors": [
+      "D.L. Chase",
+      "P.T. Kehoe"
+    ],
+    "year": 2000,
+    "venue": "GE Power Systems, GER-3574G (10/00)",
+    "doi": "",
+    "url": "",
+    "license": "GE Power Systems technical paper GER-3574G; no copyright or license statement printed in the document (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R006-001",
+      "doc_id": "R006",
+      "section": "Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Over about four decades, gas turbine designs grew to larger capacities (50 MW to 380 MW) with higher specific power, and efficient, economical combined-cycle systems were developed in step with them. GE names its pre-engineered combined-cycle line STAG™, short for STeam And Gas. Every STAG system is supplied as an Engineered Equipment Package (EEP) comprising GE gas turbines and steam turbines together with generators, controls and Heat Recovery Steam Generators (HRSGs). The highest-efficiency STAG configuration is built around the GE \"H\" model gas turbine, planned to enter commercial operation by 2003 and expected to reach 60 percent (LHV) thermal efficiency.",
+      "terms": [
+        "STAG",
+        "Engineered Equipment Package",
+        "EEP",
+        "HRSGs",
+        "\"H\" model gas turbine",
+        "LHV",
+        "specific power",
+        "combined-cycle"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-002",
+      "doc_id": "R006",
+      "section": "Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "The EEP is described as an optimized, matched set of high-technology generating equipment, software and services, arranged for easy integration with balance of plant and auxiliaries provided by the owner. Since GE is the single source for the EEP, it is able to guarantee plant thermal and emission performance and to warrant system operation. The line covers both 50 and 60 Hz service, and its many configurations with standard options let each plant be fitted to its economic needs. It has two main categories: pre-engineered systems fired on oil or natural gas for producing electricity, and pre-engineered building blocks for combined-cycle cogeneration and for coal- or oil-fired integrated gasification combined-cycle (IGCC) plants. The authors identify economical performance as the defining trait of STAG systems; the contributing features are listed in Table 1 (power generation) and Table 2 (thermal energy and power systems).",
+      "terms": [
+        "EEP",
+        "balance of plant",
+        "50 and 60 Hz",
+        "cogeneration",
+        "IGCC",
+        "integrated gasification combined-cycle",
+        "Table 1",
+        "Table 2"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-003",
+      "doc_id": "R006",
+      "section": "Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Table 1. STAG combined-cycle power generation system features: Feature 1=High Thermal Efficiency; Feature 2=Low Installed Cost; Feature 3=Fuel Flexibility – Wide Range of Gas and Liquid Fuels; Feature 4=Low Operation and Maintenance Cost; Feature 5=Operating Flexibility – Base, Mid-range, Daily Start; Feature 6=High Reliability; Feature 7=High Availability; Feature 8=Short Installation Time; Feature 9=High Efficiency in Small Capacity Increments.",
+      "terms": [
+        "Table 1",
+        "High Thermal Efficiency",
+        "Fuel Flexibility",
+        "Operating Flexibility",
+        "High Availability",
+        "Short Installation Time"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-004",
+      "doc_id": "R006",
+      "section": "Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Table 2. STAG combined-cycle thermal energy and power system features: Feature 1=High Thermal Efficiency; Feature 2=Low Installed Cost; Feature 3=Low Operation and Maintenance Costs, with indented sub-items listed beneath it: Steam Generation at Process Conditions; Extraction/Condensing Steam Turbine; Non-Condensing Turbine Exhausting to Process; Unfired/Fired HRSGs; Gas Turbine DLN/Steam Injection; Feature 4=High Power to Thermal Energy Ratio; Feature 5=High Reliability/Availability; Feature 6=Short Installation Time.",
+      "terms": [
+        "Table 2",
+        "Extraction/Condensing Steam Turbine",
+        "Non-Condensing Turbine",
+        "Unfired/Fired HRSGs",
+        "DLN",
+        "Steam Injection",
+        "High Power to Thermal Energy Ratio"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-005",
+      "doc_id": "R006",
+      "section": "STAG Product Line Designations",
+      "page_start": 1,
+      "page_end": 2,
+      "text": "Table 3. STAG combined-cycle system designations (codes for single-shaft and multi-shaft configurations): S207FA-MS: S=STAG™; 2=Two GTs; 07FA=GT Model Series; MS=Multi-Shaft Configuration; diagram shows two GEN–GT–HRSG trains feeding one ST GEN. S107FA-SS: S=STAG™; 1=One GT; 07FA=GT Model Series; SS=Single-Shaft Configuration; diagram shows one GT and ST GEN on a common train with one HRSG. The table also notes that STAG stands for STeam And Gas.",
+      "terms": [
+        "Table 3",
+        "S207FA-MS",
+        "S107FA-SS",
+        "Multi-Shaft",
+        "Single-Shaft",
+        "GT Model Series",
+        "STAG"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-006",
+      "doc_id": "R006",
+      "section": "STAG Product Line Configurations",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "The STAG line is offered in single-shaft and multi-shaft forms, illustrated with simplified block diagrams in Figure 1. A single-shaft unit consists of a gas turbine, a steam turbine, a generator and an HRSG, one of each, with the gas turbine and steam turbine driving the single generator in tandem on one shaft. A multi-shaft system uses one or more gas turbine generators, each with an HRSG, whose steam is collected in a common header and sent to one separate steam turbine generator.",
+      "terms": [
+        "single-shaft",
+        "multi-shaft",
+        "Figure 1",
+        "HRSG",
+        "tandem",
+        "common header",
+        "steam turbine generator"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-007",
+      "doc_id": "R006",
+      "section": "STAG Product Line Configurations",
+      "page_start": 2,
+      "page_end": 3,
+      "text": "Non-reheat steam cycles with one or several pressure levels are used with GE gas turbines whose rating point exhaust gas temperature is about 1000°F / 538°C or lower. Whether a single- or multiple-pressure cycle is chosen for a given plant depends on an economic evaluation that weighs installed plant cost, fuel cost and quality, plant-duty cycle, and O&M cost. Reheat steam cycles with multiple pressures are used with GE gas turbines whose rating point exhaust gas temperature is about 1100°F / 593°C or higher.",
+      "terms": [
+        "non-reheat",
+        "rating point exhaust gas temperature",
+        "1000°F / 538°C",
+        "1100°F / 593°C",
+        "plant-duty cycle",
+        "reheat",
+        "economic evaluation"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-008",
+      "doc_id": "R006",
+      "section": "STAG Product Line Configurations",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Figure 2 gives a generalized capability map of combined-cycle power output and thermal energy, representative of a plant delivering process steam at 150 psig/11.4 bars with a gas turbine of 100 MW rated output. On its vertical axis, where thermal energy is zero,, it shows power and thermal efficiency for unfired, supplementary-fired and fully-fired steam cycles. Unfired HRSGs built from modular pre-engineered components give the best power generation efficiency and also the lowest cost, which is why the STAG power generation line uses them. Supplementary-fired combined cycles are supplied for particular customers whose need for extra power outweighs the accompanying loss of thermal efficiency.",
+      "terms": [
+        "Figure 2",
+        "150 psig/11.4 bars",
+        "100 MW",
+        "unfired",
+        "supplementary-fired",
+        "fully-fired",
+        "HRSGs",
+        "thermal efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-009",
+      "doc_id": "R006",
+      "section": "STAG Product Line Configurations",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "For cogeneration, Figure 2 indicates that fully-fired HRSGs give the highest efficiency at maximum thermal energy output. However, they are expensive because of water wall construction and the need to erect them in the field, and they can raise emission issues when plant siting requirements are assessed. The cogeneration region of main interest is therefore covered by unfired and supplementary-fired steam cycles, which span a thermal energy to electric power ratio of 0–12,000 Btu thermal energy per kW (0–12,660 kJ per kW); this range defines the cogeneration capability offered by the product line.",
+      "terms": [
+        "cogeneration",
+        "fully-fired HRSGs",
+        "water wall construction",
+        "supplementary-fired",
+        "0–12,000 Btu",
+        "0–12,660 kJ per kW",
+        "Figure 2"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-010",
+      "doc_id": "R006",
+      "section": "STAG Product Line Configurations",
+      "page_start": 2,
+      "page_end": 3,
+      "text": "Figure 1 caption: STAG system configurations. Figure 2 caption: Generalized combined-cycle performance capability.",
+      "terms": [
+        "Figure 1",
+        "STAG system configurations",
+        "Figure 2",
+        "combined-cycle performance capability"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-011",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 3,
+      "page_end": 5,
+      "text": "The power generation line offers several steam cycle choices so that each plant can match its fuels, fuel cost, duty cycle and other economic and operating requirements. The first is the Single-Pressure, Non-Reheat Heat Recovery Feedwater Heating cycle (Figure 3; HRSG schematic in Figure 4). Its unfired HRSG has finned tube superheater, evaporator and economizer sections, and heat is taken from the exhaust gas by convective heat transfer. As the simplest cycle usable in a combined cycle, it is widely applied and has low installed cost. It does not give the best combined-cycle efficiency, but it is a sensible choice when fuel is cheap, when the plant serves peaking duty, or when ash-bearing, high-sulfur fuel is burned. In the STAG line it is mainly paired with GE gas turbines whose baseload exhaust gas temperature is about 1000°F / 538°C or lower, and its HRSG stack gas temperature is roughly 340°F / 171°C.",
+      "terms": [
+        "Single-Pressure, Non-Reheat",
+        "finned tube",
+        "superheater",
+        "evaporator",
+        "economizer",
+        "convective heat transfer",
+        "340°F / 171°C",
+        "1000°F / 538°C"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-012",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "In the Multiple-Pressure, Non-Reheat Heat Recovery / Feedwater Heating cycle, steam is raised at more than one pressure to recover as much gas turbine exhaust energy as possible. The gas-side and steam-side temperature profiles in Figures 5 and 6 (single-pressure versus multiple-pressure) show that adding pressure levels narrows the energy gap between the exhaust gas and the steam/water. Two- and three-pressure cycles are more efficient than single-pressure ones but cost more to install, so they pay off when fuel is expensive or the duty cycle demands a high load factor. The three-pressure cycle (Figure 7; HRSG schematic in Figure 8) resembles the single-pressure cycle with added low-pressure and intermediate-pressure sections. The performance gain comes from the extra heat transfer surface in the HRSG, and the stack gas temperature falls to between 200°F / 93°C and 260°F / 127°C.",
+      "terms": [
+        "Multiple-Pressure, Non-Reheat",
+        "temperature profiles",
+        "three-pressure",
+        "low-pressure",
+        "intermediate-pressure",
+        "heat transfer surface",
+        "200°F / 93°C",
+        "260°F / 127°C"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-013",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 5,
+      "page_end": 7,
+      "text": "The Three-Pressure, Reheat Heat Recovery Feedwater Heating cycle is matched to the \"EC,\" \"F,\" and \"H\" technology gas turbines. Their exhaust gas temperature of 1100°F / 593°C or more supplies enough high-temperature energy to the HRSG for reheat to be worthwhile. With the \"EC\" and \"F\" machines, the cycle also heats fuel gas to about 365°F / 185°C using water taken from the HRSG IP economizer discharge. The cycle diagram is Figure 9 and the HRSG schematic is Figure 10.",
+      "terms": [
+        "Three-Pressure, Reheat",
+        "\"EC,\" \"F,\" and \"H\"",
+        "1100°F / 593°C",
+        "reheat",
+        "fuel gas",
+        "365°F / 185°C",
+        "IP economizer",
+        "HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-014",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "The \"H\" platform gas turbines, MS7001H and MS9001H, cool their hot gas path components with a closed-loop steam-cooling system combined with an open-loop air-cooling system. The reheat steam cycle used with them is tightly coupled to the gas turbine steam-cooling system, which gives a further reason to adopt the single-shaft STAG arrangement for these machines. The S107H and S109H steam cycle is shown in Figure 11 and the HRSG schematic in Figure 12. According to the authors, no power generation systems available at that time were more efficient than these STAG units.",
+      "terms": [
+        "\"H\" platform",
+        "MS7001H",
+        "MS9001H",
+        "closed-loop",
+        "steam-cooling",
+        "open-loop",
+        "S107H",
+        "S109H"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-015",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 7,
+      "page_end": 8,
+      "text": "The base configuration of the STAG power generation line targets high efficiency on natural gas or distillate fuel, and its equipment and system arrangement is summarized in Table 4. Ratings for the 60 Hz line are in Table 5 with the corresponding major equipment in Table 6; the 50 Hz ratings are in Table 7 and equipment in Table 8. All ratings assume gas turbine base load on natural gas fuel, while Table 9 defines nominal throttle and reheat steam conditions for both the non-reheat and reheat lines. The natural gas ratings of Tables 5 and 7 reflect the thermodynamic optimum, which is expected to coincide with the economic optimum for baseload and mid-range dispatch on clean fuels priced at about $2.50 per 10^6 Btu, HHV ($2.64 per 10^6 kJ, HHV).",
+      "terms": [
+        "base configuration",
+        "Table 4",
+        "60 Hz",
+        "50 Hz",
+        "throttle",
+        "$2.50 per 10^6 Btu, HHV",
+        "mid-range dispatch",
+        "natural gas"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-016",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "Table 4. STAG power generation combined-cycle base configuration: Steam cycle=Unfired, three-pressure; Non-reheat=for rated exhaust gas temperature less than 1000°F/538°C; Reheat=for rated exhaust gas temperature higher than 1050°F/566°C, with fuel heating; Feedwater heating=heat recovery feedwater heating; Deaeration=feedwater deaeration in condenser; HRSG evaporators=natural circulation; Gas turbine=Dry Low NOx combustors; Condenser cooling=once-through cooling water system; Shaft arrangements=multi-shaft systems and single-shaft systems (single-shaft: integrated equipment and control system).",
+      "terms": [
+        "Table 4",
+        "three-pressure",
+        "1000°F/538°C",
+        "1050°F/566°C",
+        "fuel heating",
+        "natural circulation",
+        "Dry Low NOx",
+        "once-through"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-017",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 8,
+      "page_end": 9,
+      "text": "Beyond the base configuration, Table 10 lists the options most often applied. Non-reheat cycles with one or two pressures and reheat cycles with two pressures can also be supplied, with typical performance differences given in Table 11. HRSGs with forced circulation evaporators are offered for particular site conditions or owner preference; Figure 13 shows a two-pressure, non-reheat cycle with such an HRSG. A deaerator integral to the HRSG can be fitted, using low-pressure evaporator energy to deaerate feedwater at positive pressure for a small loss in thermal efficiency. Where a low-pressure economizer is included for high efficiency, corrosion-resistant material is needed, because the feedwater in that section may carry high oxygen and the outer tube surface may be colder than the exhaust gas dew point. Figure 14 shows a three-pressure non-reheat HRSG with integral deaerator.",
+      "terms": [
+        "Table 10",
+        "Table 11",
+        "forced circulation",
+        "deaerator",
+        "low-pressure evaporator",
+        "low-pressure economizer",
+        "dew point",
+        "Figure 14"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-018",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "Table 5. 60 Hz STAG product line performance (columns: Net Plant Power (MW); Net Plant Heat Rate (LHV) Btu/kWhr; Net Plant Heat Rate (LHV) kJ/kWhr; Thermal Efficiency (%, LHV); steam cycle note in parentheses). S106B (4): Net Plant Power=64.3; Btu/kWhr=6960; kJ/kWhr=7340; Thermal Efficiency=49.0. S206B (4): Net Plant Power=130.7; Btu/kWhr=6850; kJ/kWhr=7230; Thermal Efficiency=49.8. S406B (4): Net Plant Power=261.3; Btu/kWhr=6850; kJ/kWhr=7230; Thermal Efficiency=49.8. S106FA (5): Net Plant Power=107.1; Btu/kWhr=6440; kJ/kWhr=6795; Thermal Efficiency=53.0. S206FA (5): Net Plant Power=217.0; Btu/kWhr=6355; kJ/kWhr=6705; Thermal Efficiency=53.7. S107EA (4): Net Plant Power=130.2; Btu/kWhr=6800; kJ/kWhr=7175; Thermal Efficiency=50.2. S207EA (4): Net Plant Power=263.6; Btu/kWhr=6700; kJ/kWhr=7070; Thermal Efficiency=50.9. S107FA (5): Net Plant Power=262.6; Btu/kWhr=6090; kJ/kWhr=6425; Thermal Efficiency=56.0. S207FA (5): Net Plant Power=529.9; Btu/kWhr=6040; kJ/kWhr=6375; Thermal Efficiency=56.5. S107FB (5): Net Plant Power=280.3; Btu/kWhr=5950; kJ/kWhr=6280; Thermal Efficiency=57.3. S207FB (5): Net Plant Power=562.5; Btu/kWhr=5940; kJ/kWhr=6260; Thermal Efficiency=57.5. S107H (6): Net Plant Power=400.0; Btu/kWhr=5690; kJ/kWhr=6000; Thermal Efficiency=60.0. Notes: 1=site conditions 59 F, 14.7 psia, 60% RH (15 C, 1.013 bar); 2=steam turbine exhaust pressure 1.2 inches Hg,A (30.48 mm Hg,A); 3=net plant performance allowing for equipment and plant auxiliaries, including those of a once-through cooling water system; 4=three-pressure, non-reheat, heat-recovery feedwater heating steam cycle; 5=three-pressure, reheat, heat-recovery feedwater heating steam cycle with integrated fuel gas-heating system; 6=three-pressure, reheat, heat-recovery feedwater heating steam cycle with integrated turbine steam- and air-cooling and fuel-heating systems.",
+      "terms": [
+        "Table 5",
+        "Net Plant Heat Rate",
+        "Btu/kWhr",
+        "kJ/kWhr",
+        "S107FA",
+        "S107H",
+        "LHV",
+        "once-through"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-019",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "Table 6. 60 Hz STAG product line equipment (Heavy Duty GT; columns: Gas Turbine No.; Gas Turbine Frame; HRSG No.; HRSG Type; Steam Turbine Exhaust No.; LSB Inches; LSB mm; Exhaust Config.). S106B: GT No.=1; Frame=PG6581 B; HRSG No.=1; Type=Non-Reheat, Unfired; Exhaust No.=1; LSB=23 in / 584 mm; Exhaust Config.=Axial. S206B: GT No.=2; Frame=PG6581 B; HRSG No.=1; Type=Non-Reheat, Unfired; Exhaust No.=1; LSB=33.5 in / 851 mm; Exhaust Config.=Axial. S406B: GT No.=4; Frame=PG6581 B; HRSG No.=2; Type=Non-Reheat, Unfired; Exhaust No.=2; LSB=33.5 in / 851 mm; Exhaust Config.=Down. S106FA: GT No.=1; Frame=PG6101 FA; HRSG No.=1; Type=Reheat, Unfired; Exhaust No.=1; LSB=30 in / 762 mm; Exhaust Config.=Axial. S206FA: GT No.=2; Frame=PG6101 FA; HRSG No.=1; Type=Reheat, Unfired; Exhaust No.=2; LSB=30 in / 762 mm; Exhaust Config.=Down. S107EA: GT No.=1; Frame=PG7121 EA; HRSG No.=1; Type=Non-Reheat, Unfired; Exhaust No.=1; LSB=33.5 in / 851 mm; Exhaust Config.=Axial. S207EA: GT No.=2; Frame=PG7121 EA; HRSG No.=2; Type=Non-Reheat, Unfired; Exhaust No.=2; LSB=33.5 in / 851 mm; Exhaust Config.=Down. S107FA: GT No.=1; Frame=PG7241 FA; HRSG No.=1; Type=Reheat, Unfired; Exhaust No.=2; LSB=30 in / 762 mm; Exhaust Config.=Down. S207FA: GT No.=2; Frame=PG7241 FA; HRSG No.=2; Type=Reheat, Unfired; Exhaust No.=4; LSB=30 in / 762 mm; Exhaust Config.=Down. S107FB: GT No.=1; Frame=PG7251 FB; HRSG No.=1; Type=Reheat, Unfired; Exhaust No.=2; LSB=30 in / 762 mm; Exhaust Config.=Down. S207FB: GT No.=2; Frame=PG7251 FB; HRSG No.=2; Type=Reheat, Unfired; Exhaust No.=4; LSB=30 in / 762 mm; Exhaust Config.=Down. S107H: GT No.=1; Frame=PG7001 H; HRSG No.=1; Type=Reheat, Unfired; Exhaust No.=2; LSB=40 in / 1016 mm; Exhaust Config.=Down.",
+      "terms": [
+        "Table 6",
+        "LSB",
+        "PG7241 FA",
+        "PG7001 H",
+        "Non-Reheat, Unfired",
+        "Reheat, Unfired",
+        "Axial",
+        "Down"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-020",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 9,
+      "page_end": 10,
+      "text": "Fuel properties influence combined-cycle performance in several ways. Hydrogen-rich fuels such as natural gas produce combustion products with much water, and because water carries more heat than air or the other combustion products, such fuels raise output and efficiency. Ash-bearing fuels foul both the gas turbine and the HRSG, so the design allowances needed to tolerate fouling lower plant output and efficiency. Fuel sulfur may require raising the stack gas temperature and the temperature of water entering the HRSG economizer so that corrosive sulfuric acid does not condense; the higher stack temperature that more sulfur demands reduces output and efficiency. Table 12 gives the performance change with fuel type, reflecting the typical hydrogen, ash and sulfur content of each.",
+      "terms": [
+        "hydrogen",
+        "natural gas",
+        "Ash-bearing fuels",
+        "fouling",
+        "sulfur",
+        "stack gas temperature",
+        "economizer",
+        "sulfuric acid"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-021",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "Table 7. 50 Hz STAG product line performance (columns: Net Plant Power (MW); Net Plant Heat Rate (LHV) Btu/kWhr; Net Plant Heat Rate (LHV) kJ/kWhr; Thermal Efficiency (%, LHV); steam cycle note in parentheses as printed). S106B (4): Net Plant Power=64.3; Btu/kWhr=6950; kJ/kWhr=7340; Thermal Efficiency=49.0. S206B (4): Net Plant Power=130.7; Btu/kWhr=6850; kJ/kWhr=7230; Thermal Efficiency=49.8. S406B (5): Net Plant Power=261.3; Btu/kWhr=6850; kJ/kWhr=7230; Thermal Efficiency=49.8. S106FA (5): Net Plant Power=107.4; Btu/kWhr=6420; kJ/kWhr=6775; Thermal Efficiency=53.2. S206FA (4): Net Plant Power=218.7; Btu/kWhr=6305; kJ/kWhr=6650; Thermal Efficiency=54.1. S109E (4): Net Plant Power=189.2; Btu/kWhr=6570; kJ/kWhr=6935; Thermal Efficiency=52.0. S209E (4): Net Plant Power=383.7; Btu/kWhr=6480; kJ/kWhr=6840; Thermal Efficiency=52.7. S109EC (5): Net Plant Power=259.3; Btu/kWhr=6315; kJ/kWhr=6660; Thermal Efficiency=54.0. S209EC (5): Net Plant Power=522.6; Btu/kWhr=6270; kJ/kWhr=6615; Thermal Efficiency=54.4. S109FA (5): Net Plant Power=390.8; Btu/kWhr=6020; kJ/kWhr=6350; Thermal Efficiency=56.7. S209FA (5): Net Plant Power=786.9; Btu/kWhr=5980; kJ/kWhr=6305; Thermal Efficiency=57.1. S109H (6): Net Plant Power=480.0; Btu/kWhr=5690; kJ/kWhr=6000; Thermal Efficiency=60.0. Notes: 1=site conditions 59 F, 14.7 psia, 60% RH (15 C, 1.013 bar); 2=steam turbine exhaust pressure 1.2 Inches HgA (30.48 mm HgA); 3=net plant performance allowing for equipment and plant auxiliaries, including those of a once-through cooling water system; 4=three-pressure, non-reheat, heat recovery feedwater heating steam cycle; 5=three-pressure, reheat, heat-recovery feedwater heating steam cycle with integrated fuel gas heating system; 6=three-pressure, reheat, heat-recovery feedwater heating steam cycle with integrated turbine steam and air cooling and fuel heating systems.",
+      "terms": [
+        "Table 7",
+        "Net Plant Heat Rate",
+        "Btu/kWhr",
+        "kJ/kWhr",
+        "S109FA",
+        "S109H",
+        "LHV",
+        "50 Hz"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-022",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "Table 8. 50 Hz STAG product line equipment (Heavy Duty GT; columns: Gas Turbine No.; Gas Turbine Frame; HRSG No.; HRSG Type; Steam Turbine Exhaust No.; LSB Inches; LSB mm; Exhaust Config.). S106B: GT No.=1; Frame=PG6581 B; HRSG No.=1; Type=Non-Reheat, Unfired; Exhaust No.=1; LSB=17 in / 432 mm; Exhaust Config.=Axial. S206B: GT No.=2; Frame=PG6581 B; HRSG No.=1; Type=Non-Reheat, Unfired; Exhaust No.=1; LSB=33.5 in / 851 mm; Exhaust Config.=Axial. S406B: GT No.=4; Frame=PG6581 B; HRSG No.=2; Type=Non-Reheat, Unfired; Exhaust No.=2; LSB=33.5 in / 851 mm; Exhaust Config.=Down. S106FA: GT No.=1; Frame=PG6101 FA; HRSG No.=1; Type=Reheat, Unfired; Exhaust No.=1; LSB=26 in / 660 mm; Exhaust Config.=Axial. S206FA: GT No.=2; Frame=PG6101 FA; HRSG No.=2; Type=Reheat, Unfired; Exhaust No.=1; LSB=42 in / 1066 mm; Exhaust Config.=Axial. S109E: GT No.=1; Frame=PG9171 E; HRSG No.=1; Type=Non-Reheat, Unfired; Exhaust No.=1; LSB=42 in / 1066 mm; Exhaust Config.=Down. S209E: GT No.=2; Frame=PG9171 E; HRSG No.=2; Type=Non-Reheat, Unfired; Exhaust No.=2; LSB=42 in / 1066 mm; Exhaust Config.=Down. S109EC: GT No.=1; Frame=PG9231 EC; HRSG No.=1; Type=Reheat, Unfired; Exhaust No.=1; LSB=42 in / 1066 mm; Exhaust Config.=Down. S209EC: GT No.=2; Frame=PG9231 EC; HRSG No.=2; Type=Reheat, Unfired; Exhaust No.=2; LSB=42 in / 1066 mm; Exhaust Config.=Down. S109FA: GT No.=1; Frame=PG9351 FA; HRSG No.=1; Type=Reheat, Unfired; Exhaust No.=2; LSB=33.5 in / 851 mm; Exhaust Config.=Down. S209FA: GT No.=2; Frame=PG9351 FA; HRSG No.=2; Type=Reheat, Unfired; Exhaust No.=4; LSB=33.5 in / 851 mm; Exhaust Config.=Down. S109H: GT No.=1; Frame=PG9001 H; HRSG No.=1; Type=Reheat, Unfired; Exhaust No.=2; LSB=42 in / 1066 mm; Exhaust Config.=Down.",
+      "terms": [
+        "Table 8",
+        "LSB",
+        "PG9351 FA",
+        "PG9001 H",
+        "PG9231 EC",
+        "Non-Reheat, Unfired",
+        "Reheat, Unfired",
+        "Down"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-023",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "Gas turbines in the STAG line can be fitted with Dry Low NOx (DLN) combustors that hold stack gas NOx down to 9 ppmvd at 15% oxygen (15.5 g/GJ) on natural gas without any water or steam injection. On distillate oil, water or steam injection may still be needed to satisfy NOx limits. Conventional diffusion flame combustors, run with water or steam injection to meet NOx limits, are also available. Table 13 lists stack gas NOx for gas turbines in typical STAG combined cycles burning natural gas with either DLN or diffusion flame combustors, and also shows the influence of water or steam injection on NOx reduction and thermal performance.",
+      "terms": [
+        "Dry Low NOx",
+        "DLN",
+        "9 ppmvd",
+        "15% oxygen",
+        "15.5 g/GJ",
+        "diffusion flame",
+        "steam injection",
+        "Table 13"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-024",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 10,
+      "page_end": 11,
+      "text": "Selective catalytic reduction (SCR) lowers stack gas NOx by having ammonia react with NOx on a catalyst, converting it to nitrogen and water. SCR adds to installation and operating cost but can bring NOx below 9 ppmvd at 15% oxygen (15.5 g/GJ) for every combined-cycle system in the line. Because the SCR catalyst normally works between 570°F/300°C and 750°F/400°C, it is usually placed inside the high-pressure evaporator, as in Figure 15. The ammonia injection grid sits upstream of that evaporator, at a point where the gas is cooler than the temperature at which ammonia would oxidize to NOx, so ammonia and NOx mix thoroughly while flowing through the pre-evaporator section.",
+      "terms": [
+        "Selective catalytic reduction",
+        "SCR",
+        "ammonia",
+        "570°F/300°C",
+        "750°F/400°C",
+        "high-pressure evaporator",
+        "ammonia injection grid",
+        "pre-evaporator"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-025",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 11,
+      "page_end": 12,
+      "text": "Carbon monoxide (CO) emissions stay low when gas turbine load exceeds 50%, typically below 5–25 ppmvd (9-43 g/GJ), owing to very efficient combustion. If lower CO is required, catalytic CO abatement can be added; the CO catalyst is placed in the exhaust gas path, normally upstream of the HRSG superheater. For raising combined-cycle plant output, the available options are compressor inlet cooling, power augmentation by steam or water injection, HRSG supplementary firing, and gas turbine peak load capability, used chiefly to add capacity during peak periods.",
+      "terms": [
+        "Carbon monoxide",
+        "CO",
+        "5–25 ppmvd",
+        "9-43 g/GJ",
+        "superheater",
+        "compressor inlet cooling",
+        "supplementary firing",
+        "power augmentation"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-026",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "Table 9. STAG product line steam turbine throttle and admission steam conditions (Heat Recovery Feedwater Heater Steam Cycle; columns: Non-Reheat Three-Pressure with steam turbine size ≤ 40 MW, > 40 and <60 MW, ≥ 60 MW; Reheat Three-Pressure with steam turbine size > 60 MW). Throttle Pressure psig (Kg/cm^2,g): ≤40 MW=820 (58); >40 <60 MW=960 (68); ≥60 MW=1200 (84); Reheat >60 MW=1400-1800 (98). Throttle Temperature °F (°C): Non-Reheat columns=40 (22) approach to gas turbine exhaust gas temperature; Reheat=1000-1050 (538-566). Reheat Pressure psig (Kg/cm^2,g): Non-Reheat columns=--; Reheat=300-400 (21-28). Reheat Temperature °F (°C): Non-Reheat columns=--; Reheat=1000-1050 (538-566). IP Admission Pressure psig (Kg/cm^2,g): ≤40 MW=100 (7); >40 <60 MW=120 (8); ≥60 MW=155 (11); Reheat=300-400 (21-28). IP Admission Temperature °F (°C): all columns=20 (11) approach to exhaust gas temperature upstream of superheater. LP Admission Pressure psig (Kg/cm^2,g): ≤40 MW=25 (1.8); >40 <60 MW=25 (1.8); ≥60 MW=25 (1.8); Reheat=40 (2.8). LP Admission Temperature °F (°C): all columns=20 (11) approach to exhaust gas temperature upstream of superheater.",
+      "terms": [
+        "Table 9",
+        "Throttle Pressure",
+        "Kg/cm^2,g",
+        "Reheat Pressure",
+        "IP Admission Pressure",
+        "LP Admission Pressure",
+        "superheater",
+        "1400-1800"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-027",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "Table 10. Power generation combined-cycle product line system options (* marks the base configuration). STEAM CYCLE: Single pressure; Two pressure; Three pressure*; Reheat; Non-reheat. DEAERATION: Deaerating condenser*; Deaerator/evaporator integral with HRSG. HRSG DESIGN: Natural circulation evaporators*; Forced circulation evaporators; Unfired*; Supplementary fired. NOx CONTROL: Water injection; Steam injection; SCR (NOx and/or CO); Dry Low NOx combustion*. CONDENSER: Water cooled (once-through system)*; Water cooled (evaporative cooling tower); Air-cooled condenser. FUEL: Natural gas*; Distillate oil; Ash bearing oil; Low BTU coal and oil-derived gas; Multiple fuel systems.",
+      "terms": [
+        "Table 10",
+        "Deaerating condenser",
+        "Natural circulation evaporators",
+        "Forced circulation evaporators",
+        "SCR",
+        "Dry Low NOx combustion",
+        "Air-cooled condenser",
+        "Low BTU"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-028",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "Table 11. Performance variation with steam cycle (Net Plant Output (%); Net Plant Thermal Efficiency (%)). STAG 207EA: Three Pressure, Reheat: Output=+0.7; Efficiency=+0.7. Three Pressure, Non-Reheat: Output=BASE; Efficiency=BASE. Two Pressure, Non-Reheat: Output=-1.0; Efficiency=-1.0. Single Pressure, Non-Reheat: Output=-4.7; Efficiency=-4.7. STAG 107EA: Three Pressure, Reheat: Output=BASE; Efficiency=BASE. Two Pressure, Reheat: Output=-1.1; Efficiency=-1.1. Three Pressure, Non-Reheat: Output=-1.2; Efficiency=-1.2. Two Pressure, Non-Reheat: Output=-2.0; Efficiency=-2.0.",
+      "terms": [
+        "Table 11",
+        "STAG 207EA",
+        "STAG 107EA",
+        "Three Pressure, Reheat",
+        "Two Pressure, Non-Reheat",
+        "Single Pressure, Non-Reheat",
+        "Net Plant Output",
+        "BASE"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-029",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 12,
+      "page_end": 12,
+      "text": "Table 12. STAG combined-cycle performance variation with fuel characteristics (STAG 209E; Net Plant Output (%); Net Plant Thermal Efficiency (%)). Natural Gas: Output=BASE; Efficiency=BASE. Distillate Oil: Output=-3.0; Efficiency=-2.1. Residual Oil: Output=-9.3; Efficiency=-7.6. Notes: 1=operating point base load; 2=two pressure, non-reheat recovery feedwater heating system cycle.",
+      "terms": [
+        "Table 12",
+        "STAG 209E",
+        "Natural Gas",
+        "Distillate Oil",
+        "Residual Oil",
+        "base load",
+        "non-reheat"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-030",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "Table 13. Effect of NOx control on combined-cycle performance (rows: NOx PMVD at 15% O2 (g/GJ); Water/Fuel by Wt; Steam/Fuel by Wt; Net Power (∆%); Net Heat Rate (∆%)). MS7001EA, Non-Reheat, Three Pressure steam cycle: DLN: NOx=9 (15.5); Water/Fuel=0; Steam/Fuel=0; Net Power=Base; Net Heat Rate=Base. Diffusion Flame, no injection: NOx=160 (275); Water/Fuel=0; Steam/Fuel=0; Net Power=Base; Net Heat Rate=Base. Diffusion Flame, water injection: NOx=42 (72); Water/Fuel=0.81; Net Power=+3.5; Net Heat Rate=+3.6. Diffusion Flame, steam injection: NOx=42 (72); Steam/Fuel=1.22; Net Power=+1.0; Net Heat Rate=+2.1. Diffusion Flame, water injection: NOx=25 (43); Water/Fuel=1.04; Net Power=+5.0; Net Heat Rate=+5.2. Diffusion Flame, steam injection: NOx=25 (43); Steam/Fuel=1.58; Net Power=+1.1; Net Heat Rate=+3.4. MS7001FA, Reheat, Three Pressure steam cycle: DLN: NOx=9 (15.5); Water/Fuel=0; Steam/Fuel=0; Net Power=Base; Net Heat Rate=Base. Diffusion Flame, no injection: NOx=212 (365); Water/Fuel=0; Steam/Fuel=0; Net Power=Base; Net Heat Rate=Base. Diffusion Flame, water injection: NOx=42 (72); Water/Fuel=0.89; Net Power=+5.4; Net Heat Rate=+3.9. Diffusion Flame, steam injection: NOx=42 (72); Steam/Fuel=1.62; Net Power=+2.8; Net Heat Rate=+3.1. Notes: 1=site conditions 59°F, 14.7 psia, 60% RH (15°C, 1.013 bars); 2=fuel natural gas.",
+      "terms": [
+        "Table 13",
+        "MS7001EA",
+        "MS7001FA",
+        "DLN",
+        "Diffusion Flame",
+        "Water/Fuel",
+        "Steam/Fuel",
+        "Net Heat Rate"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-031",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "Evaporative compressor inlet cooling is an effective way to add capacity where ambient air is hot and dry. A cooler of 85% effectiveness is expected to lift plant output by about 5% at site conditions of 90°F / 32°C and 30% relative humidity. Evaporative and mechanical chiller systems can bring gas turbine inlet air down to as low as 45°F / 7°C, giving up to 11% more capacity at 90°F / 32°C and 30% relative humidity. Neither evaporative cooling nor chilling raises combined-cycle plant efficiency, but either can be an economic source of extra peak power in warm summer periods.",
+      "terms": [
+        "compressor inlet cooling",
+        "evaporative",
+        "85%",
+        "90°F / 32°C",
+        "30% relative humidity",
+        "chiller",
+        "45°F / 7°C",
+        "11%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-032",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 13,
+      "page_end": 14,
+      "text": "HRSG supplementary firing can raise steam turbine capability by up to 100%, which adds about 25% to plant capacity. It is usually justified by cogeneration of power and process energy, though peaking capacity credits or evening out fuel use across the ambient temperature range to suit \"take-or-pay\" fuel contracts can also warrant it. Power produced by supplemental firing has an incremental efficiency of 34–36%, on the fuel's lower heating value. Gas turbine water or steam injection can boost output as well as lower NOx, but it worsens plant efficiency. Gas turbine peak load capability, offered on many configurations, can add 3–10% combined-cycle capacity; it may be the cheapest route to small, short-duration capacity additions, since running at peak load markedly shortens gas turbine parts life and raises maintenance cost. Table 14 gives a summary of how these enhancement options affect performance.",
+      "terms": [
+        "supplementary firing",
+        "100%",
+        "25%",
+        "\"take-or-pay\"",
+        "34–36%",
+        "lower heating value",
+        "peak load",
+        "3–10%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-033",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Combining combined-cycle plants with gasification yields efficient coal- or oil-fired plants with strong environmental performance, and the standard STAG modules can easily be adapted for integrated gasification combined cycles (IGCCs). Figure 16 depicts an advanced \"H\" platform IGCC with an oxygen-blown gasifier and an air separation unit integrated with the gas turbine. The authors expect this system to generate power economically on fuels such as coal, petroleum coke and heavy residual oil, as well as other solid or low-grade liquid fuels. Its ratings are given as ranges because they depend on gasifier type, gas clean-up systems, air and steam cycle integration, the analysis of the coal or other fuel, and fuel moisture content.",
+      "terms": [
+        "IGCCs",
+        "integrated gasification combined cycles",
+        "oxygen-blown gasifier",
+        "air separation unit",
+        "petroleum coke",
+        "gas clean-up",
+        "fuel moisture content",
+        "Figure 16"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-034",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Untitled table of advanced technology IGCC ratings (columns: Frequency (Hz); Capacity Range (MW); Net LHV Thermal Eff. Range (LHV)). STAG 107H: Frequency=60; Capacity Range=400-460 MW; Thermal Eff. Range=49-51 %. STAG 109H: Frequency=50; Capacity Range=480-550 MW; Thermal Eff. Range=49-51%.",
+      "terms": [
+        "IGCC",
+        "STAG 107H",
+        "STAG 109H",
+        "Capacity Range",
+        "400-460",
+        "480-550",
+        "49-51%"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-035",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Table 14. STAG system power enhancement options (Typical Performance Impact: ∆ Output; ∆ Heat Rate). Base Configuration: ∆ Output=Base; ∆ Heat Rate=Base. Evaporative Cooling GT Inlet Air (85% Effective Cooler): ∆ Output=+5.2%; ∆ Heat Rate=-. Chill GT Inlet Air to 45 °F: ∆ Output=+10.7%; ∆ Heat Rate=+1.6%. GT Peak Load: ∆ Output=+5.2%; ∆ Heat Rate=-1.0%. GT Steam Injection (5% of GT Air Flow): ∆ Output=+3.4%; ∆ Heat Rate=+4.2%. GT Water Injection (2.9% of GT Air Flow): ∆ Output=+5.9%; ∆ Heat Rate=+4.8%. HRSG Supplementary Firing: ∆ Output=+28%; ∆ Heat Rate=+9%. Notes: 1=site conditions 90°F, 30% RH; 2=fuel natural gas; 3=three pressure, reheat steam cycle.",
+      "terms": [
+        "Table 14",
+        "Evaporative Cooling",
+        "Chill GT Inlet Air",
+        "GT Peak Load",
+        "GT Steam Injection",
+        "GT Water Injection",
+        "HRSG Supplementary Firing",
+        "∆ Heat Rate"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-036",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 4,
+      "page_end": 6,
+      "text": "Figure 3 caption: Single-pressure non-reheat cycle diagram. Figure 4 caption: Single-pressure non-reheat HRSG diagram. Figure 5 caption: Typical exhaust gas/steam cycle temperature profile for a single-pressure system. Figure 6 caption: Typical exhaust gas/steam cycle temperature profile for a three-pressure system. Figure 7 caption: Three-pressure non-reheat cycle diagram. Figure 8 caption: Three-pressure non-reheat HRSG diagram.",
+      "terms": [
+        "Figure 3",
+        "Single-pressure non-reheat",
+        "Figure 5",
+        "temperature profile",
+        "Figure 6",
+        "three-pressure",
+        "Figure 8",
+        "HRSG diagram"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-037",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 7,
+      "page_end": 8,
+      "text": "Figure 9 caption: Three-pressure reheat cycle diagram. Figure 10 caption: Three-pressure reheat HRSG diagram. Figure 11 caption: STAG 107H/S109H cycle diagram. Figure 12 caption: HRSG schematic for S107H/S109H.",
+      "terms": [
+        "Figure 9",
+        "Three-pressure reheat",
+        "Figure 10",
+        "Figure 11",
+        "STAG 107H/S109H",
+        "Figure 12",
+        "HRSG schematic"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-038",
+      "doc_id": "R006",
+      "section": "STAG Power Generation Product Line",
+      "page_start": 12,
+      "page_end": 15,
+      "text": "Figure 13 caption: Two-pressure non-reheat steam cycle with a forced circulation HRSG. Figure 14 caption: Three-pressure non-reheat HRSG with integral deaerator. Figure 15 caption: Three-pressure reheat HRSG with SCR. Figure 16 caption: Advanced technology IGCC system.",
+      "terms": [
+        "Figure 13",
+        "forced circulation HRSG",
+        "Figure 14",
+        "integral deaerator",
+        "Figure 15",
+        "SCR",
+        "Figure 16",
+        "IGCC"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-039",
+      "doc_id": "R006",
+      "section": "STAG Combined-Cycle Major Equipment",
+      "page_start": 15,
+      "page_end": 15,
+      "text": "The principal equipment of STAG combined-cycle power generation plants is made up of packaged gas turbine generating units, steam turbine-generators, unfired HRSGs and controls. The authors describe this as a proven, reliable equipment line with very good performance for combined-cycle use. GE builds the gas turbine generators and steam turbine generators, while HRSGs and controls are selected so that every application forms a coordinated combined-cycle system. The sections that follow describe the equipment features that matter most for efficient, reliable combined cycles.",
+      "terms": [
+        "unfired HRSGs",
+        "steam turbine-generators",
+        "gas turbine generators",
+        "controls",
+        "combined-cycle"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-040",
+      "doc_id": "R006",
+      "section": "Gas Turbines",
+      "page_start": 15,
+      "page_end": 15,
+      "text": "The GE gas turbines used in STAG plants and their ratings are listed in Table 15. Figure 17 gives a cross-section of the PG7121EA, representative of GE gas turbines with a 2035°F / 1113°C firing temperature, while the PG9171E fires at 2055°F / 1124°C. Figure 18 is a cross-section of the PG9351FA, representative of the 2420°F / 1327°C firing-temperature machines, PG7241FA among them. The next-generation \"FB\" and \"H\" platforms were anticipated to begin commercial operation during the early part of the 2000s decade, per the paper. The \"H\" machine (cross-section in Figure 19) has a four-stage turbine whose stages one and two are cooled by closed-loop steam cooling, and, to get the best performance at a 2600°F / 1426°C firing temperature, its compressor has a raised pressure ratio and is derived from the GE CF680C2 aircraft engine.",
+      "terms": [
+        "PG7121EA",
+        "2035°F / 1113°C",
+        "PG9171E",
+        "PG9351FA",
+        "2420°F / 1327°C",
+        "closed-loop steam cooling",
+        "2600°F / 1426°C",
+        "CF680C2"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-041",
+      "doc_id": "R006",
+      "section": "Gas Turbines",
+      "page_start": 15,
+      "page_end": 17,
+      "text": "The gas turbine property with the greatest influence on combined-cycle performance is specific power, meaning the gas turbine's power divided by its airflow, expressed as kW output per lb/sec of compressor airflow. As Figure 20 shows, combined-cycle thermal efficiency increases with gas turbine specific power, and firing temperature is the main factor setting specific power. Gains in combined-cycle efficiency have therefore come mostly from higher firing temperatures, made possible by high-temperature / high strength materials, corrosion-resistant coatings and better cooling technology; combined-cycle development and efficiency have advanced alongside gas turbine technology.",
+      "terms": [
+        "specific power",
+        "kW output per lb/sec",
+        "compressor airflow",
+        "Figure 20",
+        "firing temperature",
+        "corrosion-resistant coatings",
+        "cooling technology"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-042",
+      "doc_id": "R006",
+      "section": "Gas Turbines",
+      "page_start": 17,
+      "page_end": 17,
+      "text": "STAG systems using \"F\" technology gas turbines reach net thermal efficiencies of 53% (LHV) or more, and those using \"H\" technology reach 58–60% (LHV); the respective rated firing temperatures are 2420°F / 1327°C and 2600°F / 1426°C. The \"FA\" turbine has a 15.5 pressure ratio and the \"H\" turbine a 23.0 pressure ratio, giving the highest specific power for their firing temperatures, which yields the lowest simple-cycle installed cost together with high combined-cycle efficiency. An exhaust gas temperature band of 1000–1100°F / 538–566°C is especially suitable for combined cycles, since heat moves from exhaust gas to the steam cycle across a small temperature difference, maximizing thermodynamic availability with the hottest, most efficient steam cycles.",
+      "terms": [
+        "53% (LHV)",
+        "58–60% (LHV)",
+        "15.5 pressure ratio",
+        "23.0 pressure ratio",
+        "specific power",
+        "1000–1100°F / 538–566°C",
+        "thermodynamic availability"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-043",
+      "doc_id": "R006",
+      "section": "Gas Turbines",
+      "page_start": 17,
+      "page_end": 18,
+      "text": "Multiple can-annular combustors using film and impingement cooling meet environmental requirements worldwide and operate dependably at high firing temperatures across fuels ranging from natural gas up to residual oil. The chosen materials, coatings and cooling arrangements permit reliable high-firing-temperature operation, which gives high specific power and high combined-cycle efficiency. Most current GE gas turbines cool the hot gas path in an open loop, largely by film cooling with compressor air. This produces a substantial temperature drop across the first stage nozzle and requires a large amount of \"chargeable air\" to cool the turbine stages; both the nozzle temperature drop and the chargeable cooling losses grow as turbine inlet temperature rises.",
+      "terms": [
+        "can-annular",
+        "film and impingement cooling",
+        "residual oil",
+        "open loop",
+        "film cooling",
+        "first stage nozzle",
+        "\"chargeable air\"",
+        "turbine inlet temperature"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-044",
+      "doc_id": "R006",
+      "section": "Gas Turbines",
+      "page_start": 18,
+      "page_end": 18,
+      "text": "The advanced \"H\" platform instead uses an integrated closed-loop steam-cooling system. Dropping film cooling in favor of closed-loop steam cooling lets turbine inlet temperature rise without a higher combustion temperature, since the first stage nozzle temperature drop is greatly reduced (Figure 21); NOx can thus remain low even at the higher inlet temperature. The system also removes the need for \"chargeable cooling air\" for the stationary and rotating airfoils of stages one and two, which improves combined cycle thermal efficiency by two percentage points.",
+      "terms": [
+        "\"H\" platform",
+        "closed-loop steam-cooling",
+        "first stage nozzle",
+        "Figure 21",
+        "NOx",
+        "\"chargeable cooling air\"",
+        "airfoils",
+        "two percentage points"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-045",
+      "doc_id": "R006",
+      "section": "Gas Turbines",
+      "page_start": 18,
+      "page_end": 18,
+      "text": "Factory packaging and containerized shipping of small parts keep installed cost low and installation short. Reliability is credited to step-by-step design evolution of parts, quality-focused manufacturing that includes running factory tests on the gas turbine and its accessories, follow-up support from experienced installation and service staff, and good spare parts support. Maintenance costs are low thanks to these features plus a design that allows easy access, including borescope ports for inspecting key parts without dismantling. Through its accessory systems, combustion systems and turbine components, the heavy-duty line can burn a wide range of fuels: 150-400 Btu/scf (6520-16,850 kJ/nm^3) gaseous fuels, including those derived from coal, coke or heavy petroleum products, and liquid fuels such as naphtha, light distillates, heavy distillates, crude oil and residual oil.",
+      "terms": [
+        "Factory packaging",
+        "containerized shipping",
+        "factory tests",
+        "borescope ports",
+        "150-400 Btu/scf",
+        "naphtha",
+        "residual oil"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-046",
+      "doc_id": "R006",
+      "section": "Gas Turbines",
+      "page_start": 16,
+      "page_end": 16,
+      "text": "Table 15. GE gas turbines applied to STAG product line (Heavy-Duty; columns: Output (kW); Frequency (Hz)). PG6581 B: Output=42,100; Frequency=50 and 60. PG6101 FA: Output=70,140; Frequency=50 and 60. PG7121 EA: Output=85,400; Frequency=60. PG7241 FA: Output=171,700; Frequency=60. PG9171 E: Output=123,400; Frequency=50. PG9231 EC: Output=169,000; Frequency=50. PG7251 FB: Output=184,400; Frequency=60. PG9351 FA: Output=255,600; Frequency=60. MS7001 H: Output=* (single-shaft STAG combined cycle configuration only); Frequency=60. MS9001 H: Output=* (single-shaft STAG combined cycle configuration only); Frequency=50. Notes: 1=fuel natural gas; 2=site conditions ISO ambient; 3=operating mode base load, simple cycle.",
+      "terms": [
+        "Table 15",
+        "PG6581 B",
+        "PG7241 FA",
+        "PG9351 FA",
+        "MS7001 H",
+        "MS9001 H",
+        "ISO ambient",
+        "simple cycle"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-047",
+      "doc_id": "R006",
+      "section": "Gas Turbines",
+      "page_start": 16,
+      "page_end": 19,
+      "text": "Figure 17 caption: MS7001EA heavy-duty gas turbine. Figure 18 caption: MS9001FA heavy-duty gas turbine. Figure 19 caption: \"H\" gas turbine cross-section; the figure's feature list names Closed Loop Steam Cooling, 4-Stage Turbine, Compressor Scaled From Proven Design, and Dry Low Nox Combustor. Figure 20 caption: Gas turbine performance thermodynamics. Figure 21 caption: Impact of stage-one nozzle cooling method.",
+      "terms": [
+        "Figure 17",
+        "MS7001EA",
+        "MS9001FA",
+        "Closed Loop Steam Cooling",
+        "4-Stage Turbine",
+        "Dry Low Nox Combustor",
+        "stage-one nozzle cooling"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-048",
+      "doc_id": "R006",
+      "section": "HRSG",
+      "page_start": 18,
+      "page_end": 19,
+      "text": "STAG HRSGs are unfired and of modular construction, with finned-tube heat transfer surface and either natural- or forced-circulation evaporators. Figure 22 shows a modular natural circulation HRSG, and Figure 23 an installation of two such units serving MS7001EA gas turbines; Figure 24 shows the modular forced-circulation type and Figure 25 an installation of it in a STAG 107EA plant. Normally each gas turbine has its own HRSG. In STAG plants with the MS6001B gas turbine, however, the standard ducting routes the exhaust of two gas turbines into one HRSG, although one HRSG per gas turbine can also be supplied. The HRSG and its auxiliaries are designed around the specific operating needs of the STAG combined cycle.",
+      "terms": [
+        "modular construction",
+        "finned-tube",
+        "forced-circulation evaporators",
+        "MS7001EA",
+        "STAG 107EA",
+        "MS6001B",
+        "ducting",
+        "Figure 22"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-049",
+      "doc_id": "R006",
+      "section": "HRSG",
+      "page_start": 19,
+      "page_end": 20,
+      "text": "Listed HRSG design features: an exhaust gas bypass system that enables fast startup and shutdown and operating flexibility in multi-shaft STAG plants (single-shaft units do not use exhaust gas bypass); a flexible tube support system for fast startup and load following; low gas side pressure drop to optimize gas turbine performance; large factory-tested modules that ship ready for short installation time and low construction cost; and fuel flexibility, meaning reliable, efficient operation on exhaust from gas turbines burning anything from natural gas to residual oil.",
+      "terms": [
+        "exhaust gas bypass",
+        "fast startup",
+        "flexible tube support",
+        "load following",
+        "gas side pressure drop",
+        "factory-tested modules",
+        "residual oil"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-050",
+      "doc_id": "R006",
+      "section": "HRSG",
+      "page_start": 20,
+      "page_end": 21,
+      "text": "Figure 22 caption: Modular construction of a natural-circulation HRSG. Figure 23 caption: Two natural-circulation HRSGs operating with MS7001EA gas turbines. Figure 24 caption: Modular construction of a forced-circulation HRSG. Figure 25 caption: Forced-circulation HRSG with PG7111EA gas turbines.",
+      "terms": [
+        "Figure 22",
+        "natural-circulation HRSG",
+        "MS7001EA",
+        "Figure 24",
+        "forced-circulation HRSG",
+        "PG7111EA"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-051",
+      "doc_id": "R006",
+      "section": "Steam Turbine",
+      "page_start": 20,
+      "page_end": 21,
+      "text": "GE supplies a full range of steam turbines for combined cycles, with at least two choices for every STAG offering. Turbines with different exhaust annulus areas allow optimization for site condenser cooling conditions. A large exhaust annulus costs more but increases capability and can be the best value where steam turbine exhaust pressure is low; where exhaust pressure is high, a small-annulus turbine gives equal or greater capability at lower cost and is the economic choice. Figure 26 compares four last-stage buckets available for the STAG 107FA. Across the STAG line, last-stage bucket lengths span 14.3 inches / 363 mm up to 42 inches / 1067 mm.",
+      "terms": [
+        "exhaust annulus areas",
+        "condenser cooling",
+        "exhaust pressure",
+        "last-stage buckets",
+        "STAG 107FA",
+        "14.3 inches / 363 mm",
+        "42 inches / 1067 mm",
+        "Figure 26"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-052",
+      "doc_id": "R006",
+      "section": "Steam Turbine",
+      "page_start": 21,
+      "page_end": 22,
+      "text": "With no extractions for feedwater heating and steam admitted at three pressures, exhaust flow is roughly 30% higher than throttle flow. The last stage can produce up to 15% of steam turbine output, so last-stage efficiency and exhaust annulus sizing matter greatly in combined cycles. Like all current GE last-stage buckets, these use a continuously-coupled design for efficiency and reliability, which allows many fairly slender blades with narrow, tightly controlled flow passages, especially at the high-velocity tip. Covers cut tip leakage losses, add damping and help keep the flow passage under control.",
+      "terms": [
+        "feedwater heating",
+        "three pressures",
+        "30%",
+        "throttle flow",
+        "15%",
+        "exhaust annulus",
+        "continuously-coupled",
+        "tip leakage"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-053",
+      "doc_id": "R006",
+      "section": "Steam Turbine",
+      "page_start": 22,
+      "page_end": 22,
+      "text": "Designs for high exhaust pressure, as needed with air-cooled condensers at high ambient temperature, are offered and can operate dependably and efficiently with exhaust pressure as high as 15 inches Hg,a/381mm Hg,a. For steam turbines above 80 MW, advanced 3D aero packages combining advanced vortex design, contoured sidewalls in the inlet section and added radial tip spill strips help maximize combined cycle efficiency. The line includes axial exhaust and down exhaust arrangements; axial exhaust is favored for single-flow turbines, usually in small STAG plants (Figure 27). Reheat steam turbines designed for combined cycles are offered for \"EC,\" \"F,\" and \"H\" plants. The single-shaft STAG 107FA, STAG 109FA and STAG 109H are integrated machines with a solid turbine/generator coupling and a single-thrust bearing, sharing lubrication, hydraulic and control systems between gas and steam turbine. Figure 28 shows a two-flow reheat steam turbine.",
+      "terms": [
+        "air-cooled condenser",
+        "15 inches Hg,a/381mm Hg,a",
+        "3D aero",
+        "advanced vortex design",
+        "radial tip spill strips",
+        "axial exhaust",
+        "down exhaust",
+        "single-thrust bearing"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-054",
+      "doc_id": "R006",
+      "section": "Steam Turbine",
+      "page_start": 22,
+      "page_end": 23,
+      "text": "Features of steam turbines designed for combined-cycle duty: shippable assembled modules with a low profile installation that cuts installation time and cost (and building cost for indoor plants); borescopic inspection of nozzles and buckets possible with the upper casing left in place; quick starting and load following enabled by a shaft kept to minimum diameter around the first stage, generous fillets where the wheels join the rotor, long coupling spans, vertical flexible plate support near the centerline with keys to maintain alignment, and off-shell valves with full-arc steam admission; main steam, cold reheat and hot reheat pipes all attached to the lower half of the shell, easing upper-half removal for maintenance and avoiding bolted joints in high temperature piping; and sliding pressure operation with control valves wide open, so no inlet control stage is needed. At 1800 psig/124 bar,g, the high-pressure stages and reheat inlet use single wall construction; at 2400 psig/165 bar,g, a short inner shell surrounds the early high-pressure stages, lowering the load on horizontal joint bolting and the shell flange thickness.",
+      "terms": [
+        "low profile",
+        "borescopic inspection",
+        "full-arc steam admission",
+        "cold reheat",
+        "hot reheat",
+        "sliding pressure",
+        "1800 psig/124 bar,g",
+        "2400 psig/165 bar,g"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-055",
+      "doc_id": "R006",
+      "section": "Steam Turbine",
+      "page_start": 22,
+      "page_end": 23,
+      "text": "Figure 26 caption: STAG steam turbine last-stage bucket selection. Figure 27 caption: Non-reheat, single casing, axial exhaust steam turbine. Figure 28 caption: Two-flow, reheat steam turbine.",
+      "terms": [
+        "Figure 26",
+        "last-stage bucket",
+        "Figure 27",
+        "axial exhaust",
+        "Figure 28",
+        "Two-flow, reheat"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-056",
+      "doc_id": "R006",
+      "section": "Generators",
+      "page_start": 23,
+      "page_end": 24,
+      "text": "Generators for STAG gas and steam turbines are assembled and tested in the factory. Smaller STAG plants built around PG6581B, PG6101FA and PG7121EA gas turbines use air-cooled generators as standard, which may be open-ventilated or of the totally enclosed water-to-air cooled type. When open-ventilated, they are fitted with self-cleaning air filters suited to deserts and other dusty or dirty locations (Figure 29). Single-shaft and larger multi-shaft STAG plants use hydrogen-cooled generators as standard, cooled either by plant cooling water or by ambient air through water-to-air heat exchangers; a typical packaged hydrogen-cooled generator for a gas turbine appears in Figure 30.",
+      "terms": [
+        "Air-cooled",
+        "PG6581B",
+        "PG6101FA",
+        "PG7121EA",
+        "open-ventilated",
+        "self-cleaning air filters",
+        "Hydrogen-cooled",
+        "water-to-air"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-057",
+      "doc_id": "R006",
+      "section": "Generators",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "Figure 29 caption: Air-cooled generator with a self-cleaning air filter. Figure 30 caption: Typical packaged hydrogen-cooled generator.",
+      "terms": [
+        "Figure 29",
+        "Air-cooled generator",
+        "self-cleaning air filter",
+        "Figure 30",
+        "hydrogen-cooled generator"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-058",
+      "doc_id": "R006",
+      "section": "Controls",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "Plant control uses a distributed digital control system whose data highway is redundant, and the station operator consoles give interactive color graphic views of the whole plant in enough detail for convenient operation. Multi-shaft and single-shaft control systems share the same core aims: simplicity, easy starting, automated operation and very good load following. Each main plant component has its own control panel and interface, which pass information and commands to and from the operator via data highways to the console, whose detailed graphics allow informative interaction with the plant.",
+      "terms": [
+        "distributed digital control system",
+        "data highway",
+        "operator consoles",
+        "multi-shaft",
+        "single-shaft",
+        "load following",
+        "control panel"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-059",
+      "doc_id": "R006",
+      "section": "Controls",
+      "page_start": 24,
+      "page_end": 25,
+      "text": "In the single-shaft case, the power train is an uncomplicated tandem layout without an exhaust bypass system, rigidly coupled to one generator with a shared overspeed protection device and fewer auxiliaries; Figures 31 and 32 give block diagrams for multi-shaft and single-shaft plants. The heat recovery combined cycle needs few control loops, as the control diagram for a single-pressure, multi-shaft STAG plant shows (Figure 33). This simplicity, combined with well-proven automatic operation of individual components, allows the entire plant to be automated and keeps control room staffing small; most STAG plants run with one control room operator plus one roving operator.",
+      "terms": [
+        "single-shaft",
+        "tandem",
+        "exhaust bypass",
+        "overspeed protection",
+        "control loops",
+        "Figure 33",
+        "control room operator",
+        "roving operator"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-060",
+      "doc_id": "R006",
+      "section": "Controls",
+      "page_start": 25,
+      "page_end": 25,
+      "text": "Multi-shaft STAG control supports automated startup and operation once plant auxiliaries are started by remote manual action, remote manual control of the individual major components, or running the gas turbine-generators from local control compartments. This arrangement maximizes availability, because remote operation needs no additional control room operators. Equipment protection resides in the unit controls, so normal protection stays active in every operating mode, local or remote manual operation included.",
+      "terms": [
+        "Multi-shaft",
+        "automated startup",
+        "remote manual",
+        "gas turbine-generator",
+        "local control compartments",
+        "availability",
+        "equipment protection"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-061",
+      "doc_id": "R006",
+      "section": "Controls",
+      "page_start": 25,
+      "page_end": 26,
+      "text": "Each single-shaft unit has a microprocessor-based controller that coordinates its own components and exchanges information with the plant-level control. With a simple steam cycle, gas and steam turbines coupled in tandem to one generator, and no HRSG exhaust-gas bypass system, this control is very simple, and starting, operation and shutdown of each unit are automatic. A local unit control system links to the central control room console through a data highway, letting one control room operator, helped by one local operator, run one or more single-shaft units.",
+      "terms": [
+        "microprocessor-based controller",
+        "single-shaft",
+        "tandem",
+        "HRSG exhaust-gas",
+        "bypass system",
+        "data highway",
+        "local operator"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-062",
+      "doc_id": "R006",
+      "section": "Controls",
+      "page_start": 25,
+      "page_end": 26,
+      "text": "Figure 31 caption: Distributed control system for a plant with multi-shaft STAG combined cycle. Figure 32 caption: Distributed control system for a plant with single-shaft STAG combined cycle. Figure 33 caption: Multi-shaft STAG control diagram.",
+      "terms": [
+        "Figure 31",
+        "Distributed control system",
+        "multi-shaft",
+        "Figure 32",
+        "single-shaft",
+        "Figure 33",
+        "control diagram"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-063",
+      "doc_id": "R006",
+      "section": "Auxiliaries",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "STAG ratings assume a once-through condenser cooling system using seawater or river water. Configurations can also be built with many owner-specified auxiliaries, such as evaporative cooling towers and air-cooled condensers. With these alternatives, plant capability and efficiency are expected to be lower, since steam turbine exhaust pressure and the power drawn by cooling system auxiliaries both increase.",
+      "terms": [
+        "once-through",
+        "seawater",
+        "condenser cooling",
+        "evaporative cooling towers",
+        "air-cooled condensers",
+        "steam turbine exhaust pressure"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-064",
+      "doc_id": "R006",
+      "section": "Plant Operation",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "Figure 34 presents ambient-temperature effect curves for heat rate and output capability, illustrating how a typical STAG plant varies with ambient air temperature. Heat rate stays low across the whole ambient range, and the low heat rate and rising output at lower ambient temperature result from gas turbine characteristics and optimal equipment matching. Gas turbine exhaust flow and temperature change with ambient temperature and barometric pressure, and steam production and steam turbine output follow the exhaust flow and temperature delivered to the HRSG. Steam turbines are chosen for each application, and in the standard systems they are sized so their rated flow equals the steam production.",
+      "terms": [
+        "heat rate",
+        "ambient temperature",
+        "Figure 34",
+        "exhaust flow",
+        "barometric pressure",
+        "steam production",
+        "rated flow",
+        "HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-065",
+      "doc_id": "R006",
+      "section": "Plant Operation",
+      "page_start": 26,
+      "page_end": 27,
+      "text": "Very good part-load heat rate is obtained on multi-shaft plants or groups of single-shaft units by loading gas turbines one after another to meet demand (Figure 35). The same curve shows the plant can follow load efficiently with all gas turbines running, heat rate rising only 1% at about 80% of rating. Modulated inlet guide vanes (IGV) on the compressor are a major contributor: they regulate airflow between the \"hash mark\" and point \"B\", holding firing temperature almost constant so cycle thermodynamic quality is essentially unchanged; stack and condenser losses scale roughly with output, keeping heat rate nearly flat. Below the hash mark, airflow is held constant and firing temperature drops as load falls.",
+      "terms": [
+        "part-load",
+        "heat rate",
+        "inlet guide vanes",
+        "IGV",
+        "\"hash mark\"",
+        "firing temperature",
+        "Figure 35",
+        "80% of rating"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-066",
+      "doc_id": "R006",
+      "section": "Plant Operation",
+      "page_start": 27,
+      "page_end": 27,
+      "text": "STAG plants start and load quickly, suiting them to mid-range and daily start peaking duty as well as baseload. Full load is typically reached within one hour on a hot start and in about three hours on a cold start. In multi-shaft plants the gas turbines can start independently of the steam cycle, reaching about 65% of plant capability in 15–25 minutes (the time depends on gas turbine size) for hot, warm and cold starts (Figure 36). Single-shaft plants reach full capacity in roughly the same time, but their startup sequence and load profile differ because gas and steam turbines start as one integrated unit rather than two; see Figure 37.",
+      "terms": [
+        "daily start",
+        "hot start",
+        "cold start",
+        "multi-shaft",
+        "65%",
+        "15–25 minutes",
+        "Figure 36",
+        "Single-shaft"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-067",
+      "doc_id": "R006",
+      "section": "Plant Operation",
+      "page_start": 27,
+      "page_end": 29,
+      "text": "Figure 34 caption: Combined-cycle ambient air temperature effect curve. Figure 35 caption: STAG 200 part-load performance. Figure 36 caption: Multi-shaft STAG starting times. Figure 37 caption: Single-shaft STAG starting times.",
+      "terms": [
+        "Figure 34",
+        "ambient air temperature",
+        "Figure 35",
+        "STAG 200 part-load",
+        "Figure 36",
+        "Multi-shaft STAG starting times",
+        "Figure 37"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-068",
+      "doc_id": "R006",
+      "section": "Plant Arrangements",
+      "page_start": 27,
+      "page_end": 28,
+      "text": "STAG equipment can be fitted to the installation needs set by different climates, system configurations and owner/operator preferences, and is suited to outdoor, semi-outdoor or fully enclosed plants; arrangements have been developed for every STAG system. Plan views cover the multi-shaft S406B (Figure 38), multi-shaft S207EA (Figure 39), single-shaft S109E (Figure 40), multi-shaft S207FA (Figure 41) and single-shaft S107FA (Figure 42), with an elevation of the single-shaft S107FA in Figure 43. Figure 44 gives S107H and S109H plan and elevation views; the S107H delivers about 58% more combined-cycle output with only about 10% more footprint area.",
+      "terms": [
+        "outdoor",
+        "semi-outdoor",
+        "fully enclosed",
+        "S406B",
+        "S207EA",
+        "S109E",
+        "S107FA",
+        "footprint area"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-069",
+      "doc_id": "R006",
+      "section": "Plant Arrangements",
+      "page_start": 28,
+      "page_end": 28,
+      "text": "Further examples: Figure 45 shows a 220 MW STAG 207E installation, Figure 46 a STAG 109FA plant, and Figure 47 a 4000 MW site with eight STAG 107F and four STAG 207FA systems, which uses indoor turbine-generator equipment with outdoor HRSGs. Figure 48 shows a plant housing two STAG multi-shaft units indoors. For outdoor plants, the standard gas turbine enclosures are built weatherproof, and steam turbines can be given weatherproof lagging for the steam turbines.",
+      "terms": [
+        "220 MW",
+        "STAG 207E",
+        "STAG 109FA",
+        "4000 MW",
+        "STAG 107F",
+        "STAG 207FA",
+        "outdoor HRSGs",
+        "weatherproof lagging"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-070",
+      "doc_id": "R006",
+      "section": "Plant Arrangements",
+      "page_start": 29,
+      "page_end": 31,
+      "text": "Figure 38 caption: STAG 406B combined-cycle plan. Figure 39 caption: STAG 207EA combined-cycle plan. Figure 40 caption: STAG 109E combined-cycle plan (labels include Heat Recovery Generator, Generator, Steam Turbine, Gas Turbine and Condenser). Figure 41 caption: STAG 207FA multi-shaft combined-cycle plan. Figure 42 caption: Four-unit STAG 107FA combined-cycle plan. Figure 43 caption: STAG 107FA single-shaft combined-cycle elevation. Figure 44 caption: Single-shaft S107H and S109H plan and elevation.",
+      "terms": [
+        "Figure 38",
+        "STAG 406B",
+        "STAG 207EA",
+        "STAG 109E",
+        "STAG 207FA",
+        "STAG 107FA",
+        "S107H",
+        "S109H"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-071",
+      "doc_id": "R006",
+      "section": "Plant Arrangements",
+      "page_start": 31,
+      "page_end": 33,
+      "text": "Figure 45 caption: STAG 207E installation. Figure 46 caption: Indoor S109FA installation. Figure 47 caption: 4000 MW multi-shaft STAG installation. Figure 48 caption: Installation of two 207FA multi-shaft combined-cycle units.",
+      "terms": [
+        "Figure 45",
+        "STAG 207E",
+        "Figure 46",
+        "S109FA",
+        "Figure 47",
+        "4000 MW",
+        "207FA"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-072",
+      "doc_id": "R006",
+      "section": "Installation",
+      "page_start": 28,
+      "page_end": 28,
+      "text": "STAG plants are economical partly because they install quickly and cheaply, because every major component is factory packaged and small parts travel in containers (containerized shipping). Beyond lower direct construction cost, the short schedule cuts interest paid during construction, and standard factory modules and designs reduce plant engineering time and cost. For pre-engineered, standardized STAG designs, order to commercial operation typically takes 24 months, excluding permitting. Multi-shaft plants can be built in two phases to shorten the time to first power: the gas turbines supply 65% of plant capacity and can usually be installed in under 18 months, generating while the steam system is completed. Figure 49 gives a typical two-phase multi-shaft schedule.",
+      "terms": [
+        "factory packaged",
+        "containerized shipping",
+        "24 months",
+        "permitting",
+        "multi-shaft",
+        "two phases",
+        "65%",
+        "18 months"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-073",
+      "doc_id": "R006",
+      "section": "Installation",
+      "page_start": 33,
+      "page_end": 33,
+      "text": "Figure 49 caption: Typical multi-shaft combined-cycle project schedule.",
+      "terms": [
+        "Figure 49",
+        "multi-shaft",
+        "project schedule"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-074",
+      "doc_id": "R006",
+      "section": "Utility Load Growth",
+      "page_start": 28,
+      "page_end": 32,
+      "text": "Adding generating capacity in small steps as utility load grows can improve power generation economics, and STAG plants suit this because efficient, low-cost units come in small capacity blocks. The pro-generation approach adds further flexibility: simple-cycle gas turbine plants initially fired on natural gas/distillate oil can later be converted to combined cycle as demand rises. When first committing to simple-cycle gas turbines, the main points to plan for are the plot plan area reserved for later steam cycle equipment and the capability of the transmission line. Later conversion to coal-derived fuels is another way to hedge long-term uncertainty in conventional fuel availability and price.",
+      "terms": [
+        "utility load",
+        "pro-generation",
+        "simple-cycle",
+        "natural gas/distillate oil",
+        "plot plan area",
+        "transmission line",
+        "coal-derived fuels"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-075",
+      "doc_id": "R006",
+      "section": "Thermal Energy and Power System Product Line",
+      "page_start": 32,
+      "page_end": 32,
+      "text": "The thermal energy and power line (cogeneration and district heating combined cycles) is built with structured flexibility to cover a broad span of power and thermal capacities. The most commonly supplied systems are: (1) steam generation at process conditions with an HRSG and no steam turbine, using an unfired or supplemental-fired HRSG; (2) an HRSG with a non-condensing steam turbine exhausting to process, using an unfired one-pressure, unfired two-pressure, or supplemental-fired one-pressure HRSG; and (3) an HRSG with an extraction/condensing steam turbine, with the same three HRSG choices.",
+      "terms": [
+        "cogeneration",
+        "district heating",
+        "process conditions",
+        "Supplemental-fired HRSG",
+        "non-condensing steam turbine",
+        "extraction/condensing",
+        "one-pressure",
+        "two-pressure"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-076",
+      "doc_id": "R006",
+      "section": "Thermal Energy and Power System Product Line",
+      "page_start": 32,
+      "page_end": 33,
+      "text": "Capabilities of these systems are specific to each gas turbine frame size and each set of process steam conditions, both for unfired process HRSGs and for unfired HRSGs paired with non-condensing steam turbines. Systems combining fired HRSGs with condensing steam turbines offer very wide flexibility in thermal energy and power capacity for every frame size. The performance parameters reported are net plant power, LHV heat content of the fuel consumed, thermal energy in steam sent to process, thermal efficiency, and fuel charged to power (FCP).",
+      "terms": [
+        "frame size",
+        "process steam conditions",
+        "unfired",
+        "non-condensing steam turbines",
+        "fired HRSGs",
+        "condensing steam turbines",
+        "LHV",
+        "FCP"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-077",
+      "doc_id": "R006",
+      "section": "Thermal Energy and Power System Product Line",
+      "page_start": 33,
+      "page_end": 33,
+      "text": "Thermal efficiency equation: η_TH = 100 x (Q_p + Q_TE) / Q_F (thermal efficiency = 100 × (net power output + process steam thermal energy) ÷ fuel LHV heat input). Symbols: η_TH = thermal efficiency - LHV (%); Q_F = LHV heat content of fuel consumption (Btu/hr, kJ/hr); Q_p = net power output (Btu/hr, kJ/hr); Q_TE = thermal energy in process steam (Btu/hr, kJ/hr).",
+      "terms": [
+        "η_TH",
+        "Q_p",
+        "Q_TE",
+        "Q_F",
+        "thermal efficiency",
+        "LHV",
+        "Btu/hr, kJ/hr"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-078",
+      "doc_id": "R006",
+      "section": "Thermal Energy and Power System Product Line",
+      "page_start": 33,
+      "page_end": 33,
+      "text": "Fuel charged to power (FCP) is used to compare an integrated thermal energy and power plant against separate facilities producing the same power and thermal energy. To obtain it, the LHV fuel heat that a conventional fired boiler would need to make the same thermal energy is deducted from the integrated system's LHV heat consumption. The resulting FCP is then set against the heat rate of a stand-alone power generation plant, which indicates how the integrated system performs relative to separate thermal energy and power generation.",
+      "terms": [
+        "Fuel charged to power",
+        "FCP",
+        "integrated thermal energy and power plant",
+        "LHV",
+        "fired boiler",
+        "heat rate"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-079",
+      "doc_id": "R006",
+      "section": "Thermal Energy and Power System Product Line",
+      "page_start": 33,
+      "page_end": 34,
+      "text": "FCP equation as printed: FCP = 100 x (Q_p - [Q_TE/η_B]) / p (fuel charged to power = integrated-system fuel heat minus the fuel a fired boiler would need for the same process heat, per unit of net electrical output). Symbols: FCP = fuel charged to power = LHV (Btu/kWH, kJ/hr); Q_F = LHV heat content of fuel consumption (Btu/hr, kJ/hr); Q_TE = thermal energy in process steam (Btu/hr, kJ/hr); η_B = LHV efficiency of fired boiler producing equivalent thermal energy (%); P = net electrical output (kW).",
+      "terms": [
+        "FCP",
+        "Q_TE",
+        "η_B",
+        "Q_F",
+        "fired boiler",
+        "net electrical output",
+        "Btu/kWH"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-080",
+      "doc_id": "R006",
+      "section": "Thermal Energy and Power System Product Line",
+      "page_start": 34,
+      "page_end": 34,
+      "text": "Figure 50 presents cycle diagrams of thermal energy and power combined cycles producing steam at process conditions, using either an unfired or a supplementary-fired HRSG; an HRSG designed for supplementary firing gives the largest process steam energy supply. Figure 51 covers cogeneration combined cycles equipped with non-condensing steam turbines. Many variants can meet particular process energy needs, such as single automatic-extraction steam turbines supplying steam efficiently at two or three pressures, and multi-pressure HRSGs delivering steam at several pressure and temperature conditions. Extraction condensing steam turbines give the greatest flexibility; Figure 52 shows typical single automatic extraction systems, which can run at reduced process steam demand and use surplus steam for power in the condensing section. Systems may also be supplied with double automatic extraction turbines combined with HRSGs of multiple pressures for specific process steam requirements.",
+      "terms": [
+        "Figure 50",
+        "supplementary-fired HRSG",
+        "non-condensing steam turbines",
+        "automatic-extraction",
+        "multi-pressure HRSGs",
+        "extraction condensing",
+        "condensing section",
+        "double automatic extraction"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-081",
+      "doc_id": "R006",
+      "section": "Thermal Energy and Power System Product Line",
+      "page_start": 34,
+      "page_end": 35,
+      "text": "Figure 50 caption: Cycle diagrams – thermal energy and power combined cycle with steam generation at process conditions (panels labeled UNFIRED HRSG and SUPPLEMENTAL FIRED HRSG). Figure 51 caption: Cycle diagrams – thermal energy and power combined cycle with non-condensing steam turbine. Figure 52 caption: Cycle diagrams – thermal energy and power combined cycle with extraction/condensing steam turbines.",
+      "terms": [
+        "Figure 50",
+        "UNFIRED HRSG",
+        "SUPPLEMENTAL FIRED HRSG",
+        "Figure 51",
+        "non-condensing steam turbine",
+        "Figure 52",
+        "extraction/condensing"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-082",
+      "doc_id": "R006",
+      "section": "Engineered Equipment Package",
+      "page_start": 34,
+      "page_end": 35,
+      "text": "GE's Combined-Cycle Engineered Equipment Package (EEP) bundles equipment and services in a distinctive way. The owner receives a plant performance guarantee and operating warranty, plus service capability covering the whole power generation system, while still allowing the plant design, auxiliaries and structures to be customized. This is accomplished by putting in GE's scope the major combined-cycle equipment that must be closely coordinated to ensure performance and operating objectives are met. Table 16 shows how equipment scope is divided between GE and the owner, and Table 17 the division of services and software. The key items in GE's EEP scope are the combined-cycle system design and interface definition, which allow the owner, or the owner's architect-engineer or engineer-constructor, to design the plant for project-specific requirements.",
+      "terms": [
+        "Engineered Equipment Package",
+        "EEP",
+        "performance guarantee",
+        "operating warranty",
+        "interface definition",
+        "architect-engineer",
+        "engineer-constructor",
+        "Table 16"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-083",
+      "doc_id": "R006",
+      "section": "Engineered Equipment Package",
+      "page_start": 36,
+      "page_end": 36,
+      "text": "Table 16. Equipment scope split with engineered equipment package. General Electric scope=Gas Turbine(s); Steam Turbine(s); Generator(s); Heat Recovery Steam Generator(s); Plant Controls. Owner scope=Mechanical Auxiliaries; Electrical Auxiliaries; Main Electrical Connections; Balance of Plant (Foundations and Structures; Switchyard; Fuel Handling and Storage; Plant Cooling System; Construction Materials; Site Preparation Materials).",
+      "terms": [
+        "Table 16",
+        "Gas Turbine(s)",
+        "Heat Recovery Steam Generator(s)",
+        "Plant Controls",
+        "Mechanical Auxiliaries",
+        "Balance of Plant",
+        "Switchyard"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-084",
+      "doc_id": "R006",
+      "section": "Engineered Equipment Package",
+      "page_start": 36,
+      "page_end": 36,
+      "text": "Table 17. Services and software split with engineered equipment package. General Electric scope=Plant performance and environmental guarantee; Combined cycle system design and warranty; Balance of plant equipment functional specifications; Equipment interface drawings; Steady state and dynamic interface definition; Equipment operation and maintenance; Operation and maintenance training; Construction and operation permit support; Performance and environmental test support. Owner scope=Construction and operation permits; Plant design; Plant construction; Plant start-up, commissioning and operation; Performance and environmental testing; Site preparation; Project administration.",
+      "terms": [
+        "Table 17",
+        "environmental guarantee",
+        "functional specifications",
+        "interface drawings",
+        "dynamic interface definition",
+        "commissioning",
+        "Project administration"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R006-085",
+      "doc_id": "R006",
+      "section": "Conclusion",
+      "page_start": 36,
+      "page_end": 36,
+      "text": "The authors conclude that the STAG combined-cycle line, spanning 60 MW to 750 MW and including both power generation systems and thermal energy and power systems, offers efficient, low-cost plants that satisfy environmental requirements in every country. The GE combined cycle EEP assures that performance and operating objectives are met while still permitting a customized plant reflecting the owner's practices and preferences. Given their favorable economics, reliability and operating flexibility, the authors recommend considering these systems for all power generation applications.",
+      "terms": [
+        "STAG",
+        "60 MW to 750 MW",
+        "thermal energy and power systems",
+        "EEP",
+        "operating flexibility",
+        "power generation"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 85,
+    "pages_processed": "1-40 (printed; PDF 1-44, i.e. cover through printed p.40)",
+    "last_paragraph_id": "R006-085",
+    "skipped": [
+      "Cover page (PDF p.1) and blank PDF p.2: title/author block only; metadata used in document fields",
+      "Contents (printed p.i) and blank page (p.ii): table of contents excluded by rule",
+      "List of Figures (printed pp.37-38) and List of Tables (p.39): navigation lists excluded (captions taken from the figures themselves)",
+      "Blank final page (printed p.40)",
+      "Running headers ('GE Combined-Cycle Product Line and Performance') and footers ('GE Power Systems GER-3574G (10/00)', page numbers) on every page",
+      "Figure-internal labels, drawing numbers (e.g., GT19939, GT21520B) and diagram contents not described; only captions kept",
+      "Trademark line in Table 3 ('STAG IS A REGISTERED TRADEMARK OF GENERAL ELECTRIC(USA)') omitted as a legal notice; only the acronym meaning retained",
+      "No reference list, acknowledgments or author contact details exist in the document"
+    ],
+    "uncertain": [
+      "year: no copyright year printed; 2000 taken from footer date code '(10/00)' and PDF CreationDate 2000-11-08; no copyright/license statement found",
+      "Page numbers are printed numbers (printed p.1 = PDF p.5); printed footer on p.18 reads '(81000)' instead of '(10/00)' (typo, ignored)",
+      "FCP equation (p.33): printed numerator is 'Q_p - [Q_TE/η_B]' and denominator lowercase 'p', while the symbol list defines Q_F and P (net electrical output) but not Q_p; recorded exactly as printed; FCP unit printed as '(Btu/kWH, kJ/hr)'",
+      "Table 7 (50 Hz): S106B heat rate printed 6950 Btu/kWhr vs 6960 in Table 5 with the same kJ/kWhr (7340); steam-cycle note numbers for S406B (5) and S206FA (4) appear swapped relative to Table 5 and Table 8 HRSG types; all kept as printed",
+      "Table 9: units for '40 Approach'/'20 Approach' implied as °F with °C in parentheses (22)/(11); column grouping of steam turbine size headers (≤40, >40 <60, ≥60 non-reheat; >60 reheat) read from page image",
+      "Table 13: row label printed 'NOx PMVD' (presumably ppmvd); column pairing of water vs steam injection read from the page image layout",
+      "Table 2: sub-items printed indented under 'Low Operation and Maintenance Costs'; hierarchy reproduced as printed though they may be separate features",
+      "Price note p.8: printed '$2.64 per 106 Kj, HHV' rendered as 10^6 kJ (superscript lost in PDF)",
+      "Caption/text mismatches kept as printed: Figure 11 caption 'STAG 107H/S109H' (list says 107H/109H); Figure 17 caption MS7001EA vs text PG7121EA; Figure 18 caption MS9001FA vs text PG9351FA; Figure 25 caption PG7111EA vs text STAG 107EA",
+      "Table 4 says reheat for exhaust temperature higher than 1050°F/566°C, while text says ~1100°F/593°C or greater; both kept as printed",
+      "CO emissions p.12: printed as 'typically less than 5--25 ppmvd (9-43 g/GJ)'; kept as range"
+    ]
+  }
+}

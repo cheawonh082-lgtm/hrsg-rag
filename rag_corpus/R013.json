@@ -1,0 +1,621 @@
+{
+  "document": {
+    "doc_id": "R013",
+    "title": "Study on effective parameter of the triple-pressure reheat combined cycle performance",
+    "authors": [
+      "Thamir K. Ibrahim",
+      "Mustafizur M. Rahman"
+    ],
+    "year": 2013,
+    "venue": "Thermal Science, Year 2013, Vol. 17, No. 2, pp. 497-508",
+    "doi": "10.2298/TSCI111016143I",
+    "url": "",
+    "license": "© 2013. This work is licensed under https://creativecommons.org/licenses/by-nc-nd/4.0/ (CC BY-NC-ND 4.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R013-001",
+      "doc_id": "R013",
+      "section": "Abstract",
+      "page_start": 497,
+      "page_end": 497,
+      "text": "The thermodynamic analyses of the triple-pressure reheat combined cycle gas turbines with duct burner are presented and discussed in this paper. The overall performance of a combined cycle gas turbine power plant is influenced by the ambient temperature, compression ratio, and turbine inlet temperature. These parameters affect the overall thermal efficiency, power output, and the heat-rate. In this study a thermodynamic model was developed on an existing actual combined cycle gas turbine. The code of the performance model for combined cycle gas turbine power plant was developed utilizing the THERMOFLEX software. The simulating results show that the total power output and overall efficiency of a combined cycle gas turbine decrease with increase the ambient temperature because increase the consumption power in the air compressor of a gas turbine. The totals power of a combined cycle gas turbine decreases with increase the compression rate, while the overall efficiency of a combined cycle gas turbine increases with increase the compression ratio to 21, after that the overall efficiency will go down. Far there more the turbine inlet temperature increases the both total power and overall efficiency increase, so the turbine inlet temperature has a strong effect on the overall performance of combined cycle gas turbine power plant. Also the simulation model give a good result compared with MARAFIQ combined cycle gas turbine power plant. With these variables, the turbine inlet temperature causes the greatest overall performance variation. Key words: combined cycle, gas turbine, heat recovery steam generator, ambient temperature, compression ratio, triple pressure, reheat",
+      "terms": [
+        "triple-pressure reheat combined cycle gas turbines",
+        "duct burner",
+        "ambient temperature",
+        "compression ratio",
+        "turbine inlet temperature",
+        "THERMOFLEX",
+        "MARAFIQ",
+        "heat recovery steam generator"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-002",
+      "doc_id": "R013",
+      "section": "Introduction",
+      "page_start": 497,
+      "page_end": 498,
+      "text": "Over the last four decades the improvement for efficiency of a combined cycle gas turbine (CCGT) has been driven by utilizing higher turbine inlet temperatures (TIT), which has also allowed for the wide application of multiple-pressure reheat CCGT. The main reason for multiple-pressure levels in a CCGT power plant is to achieve maximum efficiency. A single-pressure CCGT power plant typically has stack temperatures for exhaust gases in the range of 110-140 °C while a triple-pressure plant can obtain stack temperatures as low as 80-100 °C. The resultant gain in efficiency is about 3%. Recently the CCGT are the most efficient energy conversion system technology. The heat recovery steam generator (HRSG) is a vital component of the CCGT power plants design, because it is the connection between the gas turbine (GT) and the steam turbine (ST) power plants. Regardless of the technology of the CCGT power plant is well developed today, more improvements are wanted [1]. CCGT are gorgeous in power plant generation unit attributable their higher thermal efficiency than individual thermal efficiency of steam power plant or thermal efficiency of GT power plant. Consequently, the finest design of the combined cycles is of huge importance due to increasing fuel prices [2]. The major challenge in a combined cycle designing is appropriate utilization of the GT exhaust heat in the steam cycle in order to achieve optimum STO. According to the benefits of CCGT, the power output of such cycles has increased recently [3]. CCGT have the higher thermal efficiency as well as net power output in comparison with GT power plant and ST plant. Higher efficiencies of combined CCGT compared to Brayton GT or Ranking ST cycles have made them quite striking for power generation unit. Based on these advantages and less emissions, CCGT have extensively been used comprehensive the world [4].",
+      "terms": [
+        "combined cycle gas turbine (CCGT)",
+        "turbine inlet temperatures (TIT)",
+        "multiple-pressure reheat CCGT",
+        "stack temperatures",
+        "triple-pressure plant",
+        "heat recovery steam generator (HRSG)",
+        "gas turbine (GT)",
+        "steam turbine (ST)"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-003",
+      "doc_id": "R013",
+      "section": "Introduction",
+      "page_start": 498,
+      "page_end": 498,
+      "text": "Many researcher focus on improve the modeling of CCGT power plant system utilizing the Brayton cycle GT and Rankine cycle ST with air (gases) and water (steam) as working fluids achieve efficient, reliable, and economic power generation. Current commercially available generation CCGT power plants achieve total thermal efficiency typically in the 50-60% lower heating value range [5, 6]. Further development of simple cycle GT, metal surface cooling technology, and high temperature bleed materials show promise for near term generation power for CCGT power plants capable of reaching more than 60% plant thermal efficiency. Additional the development in GT technology, as well as increases in ST cycle temperature, and pressure, HRSG stage design enhancement, is expected to achieve further CCGT power plants efficiency improvement [7, 8]. The combination of the GT Brayton cycle and the ST power plant Rankine cycle complement each other to form efficient CCGT power plants. The Brayton cycle has high source temperature and rejects heat at a temperature that is conveniently used as the energy source for the Rankine cycle plant. The most commonly used working fluid for CCGT power plants are air and steam [9].",
+      "terms": [
+        "Brayton cycle",
+        "Rankine cycle",
+        "lower heating value",
+        "metal surface cooling",
+        "HRSG stage design",
+        "working fluid",
+        "CCGT power plants"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-004",
+      "doc_id": "R013",
+      "section": "Introduction",
+      "page_start": 498,
+      "page_end": 498,
+      "text": "Kaushika, et al., [7] studied optimum performance of a combined cycle power plant; the combined cycle power plant has been modeled and simulated. The behavior of the GT was studied at part load. Results of a sensitivity analysis of the effect of atmospheric temperature on the GT performance are presented. The best combination of process parameters of steam leaving the steam generator that will give optimum performance of the combined cycle power plant were determined at part load operation. Results for the optimum values of thermal efficiency and power output together with values of the decision variables are presented [10, 11]. Khaliq and Kaushik [12] created simulator of the combined cycle co-generation power plant. The simulator is built by the mathematical model, which is model for power plant modeling. The simulator is divided in two parts, the first is a simulation of fluid flow in the power plant and the other part is a simulation of the control system of the plant [13, 14].",
+      "terms": [
+        "combined cycle power plant",
+        "part load",
+        "sensitivity analysis",
+        "atmospheric temperature",
+        "thermal efficiency",
+        "co-generation power plant",
+        "simulator"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-005",
+      "doc_id": "R013",
+      "section": "Introduction",
+      "page_start": 498,
+      "page_end": 498,
+      "text": "Consequently, a parametric simulation study on the effect of the operation conditions (ambient temperature, compression ratio, and TIT) on the power outputs, steam mass flow rate, thermal efficiencies, and heat rate requires managing the operation conditions of the system. Thus, the aim of the present work is to develop a strategy to enhancing the overall performance of CCGT plant utilizing the effect of operating conditions, then comparison the results with data from real combined cycle.",
+      "terms": [
+        "parametric simulation",
+        "ambient temperature",
+        "compression ratio",
+        "TIT",
+        "steam mass flow rate",
+        "heat rate",
+        "CCGT plant"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-006",
+      "doc_id": "R013",
+      "section": "Description of the triple-pressure reheat combined cycle",
+      "page_start": 498,
+      "page_end": 499,
+      "text": "Figure 1 shows a schematic diagram of the combined cycle power plant with simple GT cycle under consideration, which could generate 840 MW at TIT of 1600 K. In this figure, the majority of the air at 1 is compressed to a higher pressure (HP) at 2 where the air enters the combustion chamber (CC), and is combusted using an added fuel, resulting in a combustion gas at 3. The gas at 3 expands in the GT, to chimney or HRSG at 4. The gas at 4 enters the HRSG to transfer heat to steam and exits at the stack temperature at 5. In the HRSG, the steam at the outlet of HP superheater at 6 expands in the HP steam turbine (HPST) to a lower pressure (LP) and temperature at 7. Steam at 7 is reheated in the reheat (RH) section to a higher temperature at 8 where steam expands further in the intermediate-pressure (IP) steam turbine (IPST) to the LP at 10. The superheated steam at the outlet of IP section of the HRSG at 9 expands in the IPST to a LP and temperature at 10 where enter to LP steam turbine (LPST). The superheated steam at the outlet of LP section of the HRSG at 11 and steam at 10 expands further in the LPST to LP and temperature at 12. Steam is extracted from the LPST at 2 bar and fed to the open feed water heater (deaerator) at 13. The steams with LP and low-temperature at 12 will condensate in the condenser at 14 to saturated water. The saturated water out of the condenser at 14 mixed with the steam at 13 inside the deaerating condenser, the resulting water at 15. The saturated water out of the deaerating condenser at 15 is pumped to a HP at (T_w1LP). The water at (T_w1LP) is heated in LP economizer section of the HRSG, resulting in saturated water at (T_w2LP) where the water enters the LP steam drum (D1).",
+      "terms": [
+        "combustion chamber (CC)",
+        "HRSG",
+        "HP superheater",
+        "HP steam turbine (HPST)",
+        "reheat (RH)",
+        "intermediate-pressure (IP) steam turbine (IPST)",
+        "LP steam turbine (LPST)",
+        "deaerator"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-007",
+      "doc_id": "R013",
+      "section": "Description of the triple-pressure reheat combined cycle",
+      "page_start": 499,
+      "page_end": 500,
+      "text": "The saturated steam at the outlet of drum D1 at (T_sLP) is superheated in LP superheater of the HRSG, resulting in superheated steam at (T_ssLP). Steam at (T_ssLP) enters the LPST where the steam expanded to the condenser pressure at 14. The saturated water at the outlet of drum D1 is pumped to the pressure of drum D2 at (T_w1IP). The water at (T_w1IP) is heated in intermediate-pressure economizer section of the HRSG to the saturated water condition. The saturated water at (T_w2IP) is heated and partially evaporated in IP evaporator section of the HRSG. The saturated vapor at the top of drum D2 at (T_sIP) is superheated to a higher temperature at (T_ssIP) in intermediate-pressure superheater section of the HRSG. Steam at (T_ssIP) enters the IPST where the steam expanded to the condenser pressure at 14. The saturated water at the outlet of drum D2 is pumped to the pressure of drum D3 at (T_w1HP). The water at (T_w1HP) is heated in HP economizer section of the HRSG to the saturated water condition. The saturated water at (T_w2HP) is heated and partially evaporated in HP section of the HRSG. The saturated vapor at the top of drum D3 at (T_sHP) is superheated to a higher temperature at (T_ssHP) in HP superheater section of the HRSG. The superheated steam at (T_ssHP) enters the HPST where the steam expanded to the reheat section at 7. The steam at 7 is superheated to a higher temperature at 8 in reheat section of the HRSG with effect the duct burner. All the steam at 12 will condensate in the condenser to water at 14, and then pumped to 16. Figure 2 shows the temperature-entropy diagram for the combined cycle. Figure 3 shows the temperature-transferred diagram for the combined cycle power plant with simple GT cycle.",
+      "terms": [
+        "LP superheater",
+        "drum D2",
+        "intermediate-pressure economizer",
+        "IP evaporator",
+        "intermediate-pressure superheater"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-008",
+      "doc_id": "R013",
+      "section": "Description of the triple-pressure reheat combined cycle",
+      "page_start": 499,
+      "page_end": 499,
+      "text": "Figure 1. A schematic diagram of the triple-pressure steam-reheat combined cycle power plant",
+      "terms": [
+        "triple-pressure steam-reheat combined cycle power plant"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-009",
+      "doc_id": "R013",
+      "section": "Description of the triple-pressure reheat combined cycle",
+      "page_start": 500,
+      "page_end": 500,
+      "text": "Figure 2. Temperature-entropy diagram for supplementary firing triple pressure RH HRSG combined cycle Figure 3. A typical temperature heat transfer diagram for supplementary firing triple pressure RH HRSG combined cycle",
+      "terms": [
+        "Temperature-entropy diagram",
+        "temperature heat transfer diagram",
+        "supplementary firing",
+        "RH HRSG"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-010",
+      "doc_id": "R013",
+      "section": "Thermodynamic model and analysis",
+      "page_start": 500,
+      "page_end": 501,
+      "text": "CCGT are attractive development in power generation due to their higher overall thermal efficiency than individual steam or GT cycles. So, the optimal design of CCGT cycles is of great importance due to decreasing fossil fuel resources and increasing fuel prices [2]. The following assumptions have been made during the analysis of the combined cycle [15, 16]: – atmospheric condition is taken as pressure 1.01325 bar and temperature range from 273 K to 328 K, – TIT in GT cycle is range from 1100 K to 2000 K, – isentropic efficiencies of compressor and GT are range from 75% to 95%, – heat loss from the combustion chamber is considered to be 3% of the fuel lower heating value [17]; moreover, all other components are considered adiabatic, – steam cycle maximum temperature is 873 K, – the condenser pressure is taken as 0.07 bar, – the rotational speed is assumed to be constant for ST and GT cycle, – the pinch points in HP, IP, and LP evaporators (minimum temperature difference between the flue gas and the saturated steam) are taken as 15 °C – the terminal temperature difference in the HP, IP, and LP super heaters (temperature difference between flue gas and superheated steam) are taken as 20 °C, – the degree of superheat in the LP and IP super heater (temperature difference between superheated steam and the saturated steam) is taken as 60 °C, – the temperature difference between steam and outlet cooling water in condenser is taken as 15 °C, – isentropic efficiency of ST is taken as 90%, – pressure drops in CC, HRSG, and condenser are neglected, – heat losses in CC, HRSG, turbines, and condenser are neglected, – all the processes are steady-state and steady flow, and – the fuel injected to the CC is assumed to be natural gas.",
+      "terms": [
+        "assumptions",
+        "TIT",
+        "isentropic efficiencies",
+        "condenser pressure",
+        "pinch points",
+        "terminal temperature difference",
+        "degree of superheat",
+        "natural gas"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-011",
+      "doc_id": "R013",
+      "section": "Thermodynamic model and analysis: Gas turbine model",
+      "page_start": 501,
+      "page_end": 501,
+      "text": "The net work of the GT (W_Gnet) is calculated from the equation: W_Gnet = C_pg TIT η_t (1 - 1/r_p^((γ_a-1)/γ_a)) - C_pa T_1 (r_p^((γ_a-1)/γ_a)/(η_m η_c))   (1) (GT net work = turbine expansion work minus compressor work, per unit mass) where C_pa is the specific heat of air which can be fitted by eq. (2) for the range of 200 K < T < 800 K and η_m – the mechanical efficiency of the compressor and turbine [18]: C_pa = 1.0189·10^3 - 0.13784T_a + 1.9843·10^-4 T_a^2 + 4.2399·10^-7 T_a^3 - 3.7632·10^-10 T_a^4   (2) (polynomial fit of air specific heat versus temperature T_a) where T_a = (T_2 – T_1)/2 in Kelvin. The specific heat of flue gas (C_pg) is given by [18]: C_pg = 1.8083 - 2.3127·10^-3 T + 4.045·10^-6 T^2 - 1.7363·10^-9 T^3   (3) (polynomial fit of flue gas specific heat versus temperature T)",
+      "terms": [
+        "W_Gnet",
+        "C_pg",
+        "TIT",
+        "η_t",
+        "r_p",
+        "γ_a",
+        "C_pa",
+        "η_m"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-012",
+      "doc_id": "R013",
+      "section": "Thermodynamic model and analysis: Gas turbine model",
+      "page_start": 501,
+      "page_end": 501,
+      "text": "The output power from the turbine (P) is expressed as: P = ṁ_4 W_Gnet   (4) (turbine output power = exhaust gas mass flow rate × GT net work) where ṁ_g is the mass flow rate of the exhaust gases through the GT, and it expressed as in (5): ṁ_4 = ṁ_a + ṁ_f   (5) (exhaust gas flow = air flow + fuel flow) The specific fuel consumption (SFC) is determined by eq. (6): SFC = 3600 f / W_Gnet   (6) (specific fuel consumption from fuel-air ratio f and GT net work)",
+      "terms": [
+        "output power",
+        "ṁ_4",
+        "W_Gnet",
+        "mass flow rate of the exhaust gases",
+        "specific fuel consumption (SFC)"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-013",
+      "doc_id": "R013",
+      "section": "Thermodynamic model and analysis: Gas turbine model",
+      "page_start": 501,
+      "page_end": 501,
+      "text": "The heat supplied is also expressed as: Q_add = C_pgm [TIT - T_1 (1 + (r_p^((γ_a-1)/γ_a) - 1)/η_c)]   (7) (heat added in the combustion chamber = mean gas specific heat × rise from compressor outlet temperature to TIT) The GT efficiency (η_th) can be determined by eq. (8) [19]: η_th = W_Gnet / Q_add   (8) (GT thermal efficiency = net work / heat supplied)",
+      "terms": [
+        "heat supplied",
+        "Q_add",
+        "C_pgm",
+        "η_c",
+        "GT efficiency",
+        "η_th"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-014",
+      "doc_id": "R013",
+      "section": "Thermodynamic model and analysis: Duct burner",
+      "page_start": 501,
+      "page_end": 502,
+      "text": "The duct burner employed to burn additional fuel in the supplementary firing, lead to the increase of the temperature of the exhaust gas that passes through the HRSG. In a duct burner: ṁ_4 C_pg4 T_4 + ṁ_fdb LHV = (ṁ_4 + ṁ_fdb) C_pg4b T_4b + (1 - η_db) ṁ_fdb LHV   (9) (duct burner energy balance: GT exhaust enthalpy + duct fuel heat = heated gas enthalpy + burner loss) where η_db is the duct burner efficiency, taken as 93% [16], ṁ_g = ṁ_4 + ṁ_fdb and T_g1= T_4b. From eq. (9) T_g1 cane be optained.",
+      "terms": [
+        "duct burner",
+        "supplementary firing",
+        "exhaust gas",
+        "HRSG",
+        "ṁ_fdb",
+        "LHV",
+        "η_db",
+        "T_g1"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-015",
+      "doc_id": "R013",
+      "section": "Thermodynamic model and analysis: HRSG model",
+      "page_start": 502,
+      "page_end": 502,
+      "text": "The analysis of HRSG unit is based on the pinch and approach point. The pinch point is simply define as the difference between the saturation temperature of water and the gas temperature prior to entry to the economizer, which is denoted as T_pp and T_ap, as shown in fig. 3. The greater the pinch point, the smaller the surface area available for thermal energy transfer from the hot exhaust gas to the steam. Therefore, this would result in a higher HRSG exit temperature. Approach point is used in the sizing of the economizer. As demonstrated in fig. 3 the approach point is the difference between the economizer water outlet temperature (T_w2) and the saturation temperature (T_s) of the steam. This temperature will guarantee that no steaming will occur in the economizer section.",
+      "terms": [
+        "pinch point",
+        "approach point",
+        "saturation temperature",
+        "economizer",
+        "T_pp",
+        "T_ap",
+        "HRSG exit temperature",
+        "steaming"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-016",
+      "doc_id": "R013",
+      "section": "Thermodynamic model and analysis: HRSG model",
+      "page_start": 502,
+      "page_end": 502,
+      "text": "From fig. 3 it is clear that the energy balance for the high-pressure steam evaporator side of the HRSG gives: T_g4 = T_sHP + T_pp   (10) (gas temperature leaving the HP evaporator = HP saturation temperature + pinch point) T_w2HP = T_sHP + T_ap   (11) (HP economizer water outlet temperature as printed: HP saturation temperature + approach point)",
+      "terms": [
+        "energy balance",
+        "high-pressure steam evaporator",
+        "T_g4",
+        "T_sHP",
+        "T_pp",
+        "T_w2HP",
+        "T_ap"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-017",
+      "doc_id": "R013",
+      "section": "Thermodynamic model and analysis: HRSG model",
+      "page_start": 502,
+      "page_end": 502,
+      "text": "The temperature of the exhaust gases exit from the low-pressure economizer of the HRSG could be found by considering the energy balance of the low-pressure economizer, fig. 3, yields: T_g11 = C_pg10 T_g10 / C_pg11 - ṁ_sLP (h_sLP - h_w2LP) / (ṁ_g C_pg11 h_1f)   (12) (gas temperature leaving the LP economizer from the LP economizer energy balance) Heat available with exhaust gases from GT can give as: Q_av = ṁ_g (C_pg1 T_g1 - C_pg11 T_g11) h_1f   (13) (heat available to the HRSG from inlet to exit gas states)",
+      "terms": [
+        "low-pressure economizer",
+        "energy balance",
+        "T_g11",
+        "ṁ_sLP",
+        "h_w2LP",
+        "Q_av",
+        "h_1f"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-018",
+      "doc_id": "R013",
+      "section": "Thermodynamic model and analysis: ST model",
+      "page_start": 502,
+      "page_end": 502,
+      "text": "By performing the energy balance for a ST, as shown in fig. 1, the following relation is obtained: W_ST = ṁ_sHP h_6 - ṁ_sHP h_7 + ṁ_sRH h_8 + ṁ_sIP h_9 + ṁ_sLP h_7 - ṁ_w h_12   (14) (steam turbine work from the enthalpy flows entering and leaving the HP, IP and LP turbines) where ṁ_w is the water mass flow rate and it is determined from eq. (29) as: ṁ_w = ṁ_sHP + ṁ_sIP + ṁ_sLP   (15) (total water flow = HP + IP + LP steam flows)",
+      "terms": [
+        "energy balance",
+        "W_ST",
+        "ṁ_sHP",
+        "ṁ_sRH",
+        "water mass flow rate",
+        "ṁ_w"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-019",
+      "doc_id": "R013",
+      "section": "Thermodynamic model and analysis: Condenser model",
+      "page_start": 502,
+      "page_end": 502,
+      "text": "The heat reject from condenser is: Q_cond = ṁ_w (h_12 - h_14)   (16) (condenser heat rejection = water flow × enthalpy drop from turbine exhaust to condensate)",
+      "terms": [
+        "heat reject",
+        "condenser",
+        "Q_cond"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-020",
+      "doc_id": "R013",
+      "section": "Thermodynamic model and analysis: Pump model",
+      "page_start": 502,
+      "page_end": 502,
+      "text": "The condensate water from the condenser is extracted by the pump and is raised to the economizer pressure. The corresponding work for three levels is given by: W_p = ṁ_w v_f16 (p_shLP - p_c) + (ṁ_w - ṁ_sLP) v_f17 (p_shIP - p_shLP) + (ṁ_w - ṁ_sIP - ṁ_sLP) v_f18 (p_shHP - p_shIP)   (17) (pump work for the three pressure levels = flow × specific volume × pressure rise) Therefore the net work for the ST power plant is: W_snet = W_st W_p   (18) (ST plant net work from turbine work and pump work; operator between W_st and W_p not printed)",
+      "terms": [
+        "condensate water",
+        "economizer pressure",
+        "W_p",
+        "v_f16",
+        "p_shLP",
+        "W_snet"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-021",
+      "doc_id": "R013",
+      "section": "Thermodynamic model and analysis: Pump model",
+      "page_start": 503,
+      "page_end": 503,
+      "text": "The performances of CCGT power plant, including the thermal efficiencies for GT cycle, ST cycle, and overall efficiency are calculated as given below, respectively [2]: – the efficiency for the steam turbine power plant is: η_st = W_snet / Q_av   (19) (ST cycle efficiency = ST net work / heat available from exhaust gases) – the overall thermal efficiency for the CCGT power plant is: η_all = (3W_Gnet + W_snet) / (3Q_add)   (20) (overall efficiency of the plant with three GT units and one ST) – the total heat rate (HR) is: HR_t = 3600 / η_all   (21) (total heat rate from overall efficiency)",
+      "terms": [
+        "thermal efficiencies",
+        "overall efficiency",
+        "η_st",
+        "overall thermal efficiency",
+        "η_all",
+        "total heat rate (HR)",
+        "HR_t"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-022",
+      "doc_id": "R013",
+      "section": "Result and discussion",
+      "page_start": 503,
+      "page_end": 503,
+      "text": "The first stage air compressor of a GT, inlet condition was set at 1.015 bar, relative humidity 60% and the ambient temperature ranged from 273 K to 323 K. In the results, the effect of the ambient temperature, compression ratio, and TIT, on the overall performance in the CCGT, is demonstrated, validated with MARAFIQ power plant and discussed. MARAFIQ CCGT power plant consist from three GT unit and three HRSG unit connected with one ST unit as shown in fig. 4.",
+      "terms": [
+        "air compressor",
+        "relative humidity",
+        "ambient temperature",
+        "compression ratio",
+        "TIT",
+        "MARAFIQ",
+        "HRSG unit"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-023",
+      "doc_id": "R013",
+      "section": "Result and discussion",
+      "page_start": 504,
+      "page_end": 504,
+      "text": "Figure 4. A schematic diagram of the MARAFIQ CCGT power plant",
+      "terms": [
+        "MARAFIQ CCGT power plant"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-024",
+      "doc_id": "R013",
+      "section": "Result and discussion: Effect of ambient temperature on CCGT performance",
+      "page_start": 503,
+      "page_end": 503,
+      "text": "The variation of ambient temperature influences the GT and ST cycle performance and, consequently the overall performance of a CCGT. When the ambient temperature rise, the GT operates at off-design point and as a result the energy transfer to the HRSG varies (because of variation of exhaust gas temperature and mass flow rate). As well the ST cycle performance is influenced because the condenser now operates under off-design conditions and its performance is linked to the condenser cooling system adopted. In this case, the air temperature increase determines an increase in the cooling water temperature and then in the condenser pressure [20]. As an outcome, the ST electric power output decrease.",
+      "terms": [
+        "ambient temperature",
+        "off-design point",
+        "exhaust gas temperature",
+        "condenser",
+        "condenser cooling system",
+        "cooling water temperature",
+        "condenser pressure"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-025",
+      "doc_id": "R013",
+      "section": "Result and discussion: Effect of ambient temperature on CCGT performance",
+      "page_start": 503,
+      "page_end": 503,
+      "text": "Figure 5 illustrates the variation in the overall efficiency of a CCGT and power output in the GT cycle, ST cycle, and the CCGT power plant in relation to the ambient temperature. TIT, compression ratio, and the components efficiency are of 1600 K, 15.7, and 0.9, respectively. Since a lower ambient temperature leads to a higher air density and a lower compressor work that in turn gives a higher GT power output as shown in fig. 5. The strong influence of ambient temperature produces a fall in the power output in the three gas unit from 571 MW to 487 MW when the ambient temperature increases from 273 K to 323 K (0-500 °C). It is because increases the power consumption in the compressor of a GT with increases the ambient temperature. The ST power output was found increasing with increase the ambient temperature; it is because the ambient temperature had a parallel effect on the steam generated in the ST cycle as shown in the fig. 6. Figure 6 shows increase the steam product in the ST cycle from 81.6 kg/s to 85.5 kg/s when the ambient temperature increases from 273 K to 323 K. The CCGT total power output increases with decreasing the ambient temperature at constant air fuel ratio as shown in fig. 5. It is because the CCGT total power output decreases with increases the ambient temperature this lead to increases the steam flow rate in ST cycle and increases the consumption power in the compressor of a GT.",
+      "terms": [
+        "overall efficiency",
+        "ambient temperature",
+        "compression ratio",
+        "air density",
+        "compressor work",
+        "GT power output",
+        "ST power output",
+        "steam product"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-026",
+      "doc_id": "R013",
+      "section": "Result and discussion: Effect of ambient temperature on CCGT performance",
+      "page_start": 503,
+      "page_end": 505,
+      "text": "Therefore the total power output for CCGT decreasing with increasing the ambient temperature, it is because the increases in ST cycle less than the GT cycle power output. Figure 7 show the comparison between simulated power outputs of a CCGT vs. practical results from MARAFIQ CCGT power plant with effect the ambient temperature. It can be seen that in the both case the power output decreases with increase the ambient temperature. The simulated power output higher than the MARAFIQ CCGT power plant. The overall efficiency of a CCGT decreases with increases the ambient temperature. It is because of the decrease the thermal efficiency for GT compared with thermal efficiency of the ST cycle. The overall efficiency also decreases due to increases the losses of the exhaust gases. It can be seen that the CCGT overall efficiency variation lies within the range between 52.6% and 55.5% when the ambient temperature varies between 273 K and 323 K as shown in fig. 5. While the ambient temperature rises, the CCGT HR increases (this is mean, the CCGT overall efficiency decreases) as shown in fig. 6.",
+      "terms": [
+        "MARAFIQ CCGT power plant",
+        "overall efficiency",
+        "exhaust gases",
+        "CCGT HR"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-027",
+      "doc_id": "R013",
+      "section": "Result and discussion: Effect of ambient temperature on CCGT performance",
+      "page_start": 505,
+      "page_end": 505,
+      "text": "Figure 5. Effect of ambient temperature on the overall performance CCGT Figure 6. Effect of ambient temperature on the CCGT HR and steam mass flow rate Figure 7. Comparison between simulated power outputs of a CCGT vs. practical results from MARAFIQ CCGT power plant with effect ambient temperature",
+      "terms": [
+        "ambient temperature",
+        "CCGT HR",
+        "steam mass flow rate",
+        "MARAFIQ CCGT power plant"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-028",
+      "doc_id": "R013",
+      "section": "Result and discussion: Effect of compression ratio on CCGT performance",
+      "page_start": 505,
+      "page_end": 506,
+      "text": "The effect of compression ratio on the overall efficiency of a combined cycle, total power output, GT power output and ST power output, is shown in fig. 8, for ambient temperature 288.15 K (15 °C) and TIT 1600 K. The overall efficiency of a CC CCGT was found to increase with compression ratio, and reach to maximum value at compression ratio 21, after that the overall efficiency was found decrease with increase the compression ratio. The GT power output was found increase with compression ratio until the compression ratio reach to 15, after that the GT power output was decrease with increase the compression ratio. The ST power output was decreasing with increase the compression ratio; it is because the compression ratio had an opposite effect on the steam generated in the ST power plant as shown in the fig. 9. Figure 9 shows decrease the steam generated in the ST cycle from 98 kg/s to 66.5 kg/s when the compression ratio increases from 9.6 to 26. The GT cycle power output, being higher in magnitude than the ST cycle power output, has a stronger influence on the CCGT power output. This however, increases to an optimum value, after which the drop in ST cycle power output and the increasing the required power for compressor of a GT, cause the CCGT power output and overall efficiency to drop at higher compression ratio as shown in fig. 8. Figure 10 shows the comparison between simulated power outputs of a CCGT vs. practical results from MARAFIQ CCGT power plant with effect compression ratio. It can be seen that the power output from the CCGT power plant is much higher compare to practical CCGT (MARAFIQ CCGT) Figure 8. Effect of compression ratio on the overall performance CCGT Figure 9. Effect of compression ratio on the CCGT HR and steam mass flow rate power plant. In fig. 9, it can be seen that the HR of a CCGT deceased with increase the compression ratio, it is because the heat rate decreases with increase the overall efficiency.",
+      "terms": [
+        "compression ratio",
+        "overall efficiency",
+        "GT power output",
+        "ST power output",
+        "steam generated",
+        "CCGT power output",
+        "MARAFIQ CCGT",
+        "HR"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-029",
+      "doc_id": "R013",
+      "section": "Result and discussion: Effect of compression ratio on CCGT performance",
+      "page_start": 506,
+      "page_end": 506,
+      "text": "Figure 8. Effect of compression ratio on the overall performance CCGT Figure 9. Effect of compression ratio on the CCGT HR and steam mass flow rate Figure 10. Comparison between simulated power outputs of a CCGT vs. practical results from MARAFIQ CCGT power plant with effect compression ratio",
+      "terms": [
+        "compression ratio",
+        "CCGT HR",
+        "steam mass flow rate",
+        "MARAFIQ CCGT power plant"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-030",
+      "doc_id": "R013",
+      "section": "Result and discussion: Effect of TIT on CCGT performance",
+      "page_start": 506,
+      "page_end": 506,
+      "text": "Figure 11 shows the effect of TIT on the power output of the GT, ST, CCGT cycle, and the overall efficiency of a CCGT at a constant compression ratio 15.7 and ambient temperature 288.15 K. However, the GT power output increases with increase the TIT, it is because increase the increases the work of a GT relative to air compressor of a GT. The ST power output was found increasing with increase the TIT; it is because the steam generated in the ST cycle was found increased with increase the TIT as shown in the fig. 12. Figure 12 shows increase the steam generated in the ST cycle from 55 kg/s to 122 kg/s when the TIT increases from 1300 K to 1900 K, also this figure shown decreases the HR with increase the turbine inlet temperature. The CCGT total power output increases with increasing the TIT at constant air fuel ratio as shown in fig. 11. The different between the GT, ST cycle, and CCGT power output represent the significant improvement has been made from recovering the waste heat from the GT exhaust gases. The strong influence of TIT produces an increase in the power output in the CCGT power plant from 453 MW to 1287 MW when the TIT increases from 1300 K to 1900 K. The TIT has a positive effect on the overall performance of a CCGT. The overall efficiency, like CCGT power output, increase almost linearly with the TIT. The overall efficiency also increases due to decreases the losses of the exhaust gases. It can be seen that the CCGT overall efficiency variation lies within the range between 46.6% and 59% when the TIT varies between 1300 K and 1900 K as shown in fig. 11.",
+      "terms": [
+        "TIT",
+        "compression ratio",
+        "GT power output",
+        "ST power output",
+        "steam generated",
+        "HR",
+        "waste heat",
+        "overall efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-031",
+      "doc_id": "R013",
+      "section": "Result and discussion: Effect of TIT on CCGT performance",
+      "page_start": 507,
+      "page_end": 507,
+      "text": "Figure 11. Effect of TIT on the overall performance CCGT Figure 12. Effect of turbine inlet temperature on the CCGT heat rate and steam mass flow rate",
+      "terms": [
+        "TIT",
+        "turbine inlet temperature",
+        "heat rate",
+        "steam mass flow rate"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R013-032",
+      "doc_id": "R013",
+      "section": "Conclusions",
+      "page_start": 507,
+      "page_end": 507,
+      "text": "The simulated modeling results shows that the influence of ambient temperature, compression ratio, and TIT are significantly effect on the overall performance of CCGT power plant. The simulated modeling results shows as follow. · The compression ratios and TIT are strongly influence on the overall efficiency of the combined cycle GT power plant. · The increase of the ambient temperature has a significant influence on this type of power plant. The power output and the overall efficiency of a combined cycle GT power plant decrease with increase the ambient temperature. · Higher overall efficiency for CCGT power plant was found about 59% with TIT 1900 K. · The overall thermal efficiency increases and total power output decreases linearly with increase of the compression ratio with constant TIT.",
+      "terms": [
+        "ambient temperature",
+        "compression ratio",
+        "TIT",
+        "overall efficiency",
+        "combined cycle GT power plant",
+        "overall thermal efficiency",
+        "total power output"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    }
+  ],
+  "report": {
+    "paragraph_count": 32,
+    "pages_processed": "497-508 (PDF 1-12쪽 전체; 13쪽은 라이선스 문구만 있음)",
+    "last_paragraph_id": "R013-032",
+    "skipped": [
+      "497쪽 저자 소속(a, b, c), \"Original scientific paper\" 표시, 교신저자 각주(e-mail): 저자 연락처/머리 정보",
+      "각 쪽 머리글(Ibrahim, T. K., Rahman, M. M.: Study on Effective Parameter ... / THERMAL SCIENCE: Year 2013, Vol. 17, No. 2, pp. 497-508)과 쪽번호: 머리글/바닥글",
+      "507쪽 Acknowledgments: 감사의 글",
+      "507-508쪽 References [1]-[20], Paper submitted/revised/accepted 날짜: 참고문헌 목록/투고 정보",
+      "마지막 쪽 \"© 2013. This work is licensed under ... (the \"License\"). Notwithstanding the ProQuest Terms ...\" 문구: 저작권 문구(document.license에 반영)",
+      "Figure 1-12의 도식·그래프 내용: 캡션만 수록, 그림 내용은 추측하지 않음"
+    ],
+    "uncertain": [
+      "본문 중간에 끼어든 그림 캡션(Fig. 1, 4, 5, 6, 7, 10)과 교신저자 각주, 쪽 경계 하이픈(sat-urated, ef-ficiency, compres-sion)은 페이지 이미지 기준으로 제거·연결해 문장을 복원함",
+      "501쪽 가정 목록 뒤 5개 항목은 추출본에서 대시(–)와 문장이 분리되어 있어 이미지 기준으로 \"– 항목\" 순서로 재배열",
+      "식 (1)-(21)은 PDF 이미지에서 기호를 확인해 선형 표기로 옮김(ṁ = 질량유량, 아래첨자 _, 지수 ^). 식 (2)의 계수는 이미지상 1.0189·10^3, 0.13784, 1.9843·10^-4, 4.2399·10^-7, 3.7632·10^-10; 식 (3)은 1.8083, 2.3127·10^-3, 4.045·10^-6, 1.7363·10^-9",
+      "식 (18) \"W_snet = W_st W_p\"는 W_st와 W_p 사이 연산자(아마 −)가 인쇄되어 있지 않아 인쇄 그대로 수록",
+      "식 (4) 뒤 문장은 ṁ_g를 설명하지만 식에는 ṁ_4가 쓰임; 식 (15) 앞 문장 \"determined from eq. (29)\"는 논문에 식 (29)가 없음 — 원문 그대로",
+      "원문 오탈자·비문(예: \"Bryton\", \"Far there more\", \"cane be optained\", \"deceased\", \"0-500 °C\", \"Ranking ST cycles\")은 verbatim 원칙에 따라 그대로 유지",
+      "긴 원문 문단(서론 둘째 문단, Description 문단, ambient temperature 결과 문단)은 350단어 규칙에 따라 문장 경계에서 분할"
+    ]
+  }
+}

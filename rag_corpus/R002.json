@@ -1,0 +1,408 @@
+{
+  "document": {
+    "doc_id": "R002",
+    "title": "온수, 증기 동시 발생형 가스엔진 열병합발전의 배열회수 특성: 100 kW급 모형 실험",
+    "authors": [
+      "안준",
+      "김혁주",
+      "최규성",
+      "송대석"
+    ],
+    "year": null,
+    "venue": "대한설비공학회 [판독 불가]계학술발표대회 논문집",
+    "doi": "",
+    "url": "",
+    "license": "원문에 저작권·라이선스 표기 없음 (DBpia/NuriMedia 제공 PDF, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "ko"
+  },
+  "paragraphs": [
+    {
+      "id": "R002-001",
+      "doc_id": "R002",
+      "section": "Abstract",
+      "page_start": 345,
+      "page_end": 345,
+      "text": "This work set out to build a heat recovery system for a cogeneration plant whose prime mover is a 1 MW class gas engine. Two heat sources are tapped: the jacket water and the exhaust gas. Jacket water heat is transferred through a plate type heat exchanger and then serves room heating and/or hot water supply, while exhaust gas heat is turned into steam. Each of the two heat recovery devices was examined in 1/5 scaled tests, and the measured data were checked against conventional design correlations. Key words: Cogeneration (열병합), HRSG (열회수 보일러), Heat transfer (열전달).",
+      "terms": [
+        "cogeneration",
+        "gas engine",
+        "jacket water",
+        "exhaust gas",
+        "plate type heat exchanger",
+        "steam",
+        "HRSG",
+        "1/5 scaled"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-002",
+      "doc_id": "R002",
+      "section": "기호 설명",
+      "page_start": 345,
+      "page_end": 345,
+      "text": "논문에서 쓰는 기호는 다음과 같다. D는 튜브 직경으로 단위는 [m]이다. h는 열전달계수이며 단위는 [W/m^2K]이다. Nu는 Nusselt 수로 h D / k로 정의된다. Re는 Reynolds 수로 u D / ν로 정의된다. T는 온도이며 [℃, K] 단위를 쓴다. T_c,i는 판형열교환기 저온부로 들어가는 물의 입구온도를 뜻하며 단위는 [℃, K]이다. 그리스 문자 ν는 동점성 계수이고 단위는 [m^2/s]이다.",
+      "terms": [
+        "Nusselt",
+        "Reynolds",
+        "열전달계수",
+        "동점성 계수",
+        "T_c,i",
+        "판형열교환기",
+        "h D / k",
+        "u D / ν"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-003",
+      "doc_id": "R002",
+      "section": "1. 서론",
+      "page_start": 345,
+      "page_end": 345,
+      "text": "국내에서는 제2차 전력수급 기본계획에 따라 2017년까지 2,700 MW 규모의 전력을 소형 열병합발전으로 공급하려는 계획이 세워져 있다. 그런데 지금까지 보급된 소형열병합발전은 주로 아파트 단지용이었고 대부분 200~500kW 정도의 작은 용량이어서, 이 방식만으로 2,700MW 목표에 이르기는 어렵다. 목표 달성을 위해서는 1~5MW급 가스엔진 열병합발전 시스템이나 5~10MW급 소형가스터빈 열병합발전 시스템이 적극 보급될 필요가 있다. 이 연구는 1MW급 가스엔진을 기반으로 열병합시스템을 꾸밀 때 가장 핵심이 되는 배열회수 기술을 개발하는 것을 목표로 한다.",
+      "terms": [
+        "전력수급 기본계획",
+        "소형열병합발전",
+        "2,700 MW",
+        "가스엔진",
+        "소형가스터빈",
+        "열병합발전",
+        "배열회수"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-004",
+      "doc_id": "R002",
+      "section": "1. 서론",
+      "page_start": 345,
+      "page_end": 346,
+      "text": "1MW에서 10MW급에 이르는 소형 열병합 시스템은 규모상 공동주택보다는 대형 병원, 주상복합 건물, 자립형 공장, 온천 리조트 등에 주로 쓰인다. 이런 수요처에서는 온수를 쓰는 급탕·난방 외에 증기 형태의 열을 필요로 하는 경우가 늘어난다. 그래서 본 연구에서는 Fig. 1(a)처럼 엔진 냉각수의 열은 온수로, 배가스의 열은 증기로 회수하는 시스템을 구성하였다. 연구는 지식경제부 에너지·자원기술 개발 사업의 하나로 수행되었으며, 과제의 원동기는 Waukesha 16V150LTD이다. 엔진 공급사 자료(1)로 분석한 에너지 밸런스는 Fig. 1(b)에 있으며, 엔진 냉각수와 배가스에서 회수되는 열량은 각각 487 kW와 621 kW이다. 연구진은 이 시스템의 약 1/5 스케일에 해당하는 100 kW급 모형 실험장치를 만들어 열회수 설계용 실험을 진행하였다.",
+      "terms": [
+        "소형 열병합",
+        "급탕",
+        "증기",
+        "엔진 냉각수",
+        "배가스",
+        "Waukesha 16V150LTD",
+        "에너지 밸런스",
+        "100 kW급"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-005",
+      "doc_id": "R002",
+      "section": "1. 서론",
+      "page_start": 346,
+      "page_end": 346,
+      "text": "Fig. 1 shows the gas engine CHP system, with (a) the way the system is composed and (b) its energy balance.",
+      "terms": [
+        "Fig. 1",
+        "gas engine CHP system",
+        "energy balance"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-006",
+      "doc_id": "R002",
+      "section": "2.1 엔진냉각수 열회수 실험장치",
+      "page_start": 346,
+      "page_end": 346,
+      "text": "가스엔진 열병합 발전에서 엔진 냉각수가 가진 에너지는 판형열교환기를 통해 온수로 바뀌어 급탕이나 난방에 쓰인다. 이 때문에 배열회수 시스템은 Fig. 2(a)와 같이 폐회로로 구성되며, 저온부 유량이 엔진 냉각수보다 많고 열교환기 입출구 온도차는 고온부보다 작은 조건에서 운전된다. 판형열교환기는 같은 모양의 판을 여러 장 반복해 겹친 구조(Fig. 2(b))(2)이므로, 난방과 급탕 용도로 설계할 때에는 고온부·저온부의 유량과 온도차에 따라 열교환 특성이 어떻게 달라지는지 반영해야 한다.",
+      "terms": [
+        "엔진 냉각수",
+        "판형열교환기",
+        "배열회수 시스템",
+        "폐회로",
+        "저온부",
+        "고온부",
+        "급탕",
+        "난방"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-007",
+      "doc_id": "R002",
+      "section": "2.1 엔진냉각수 열회수 실험장치",
+      "page_start": 346,
+      "page_end": 347,
+      "text": "급탕이나 난방 조건을 재현하면서 판형 열교환기 성능을 알아보기 위해, Fig. 3처럼 고온부와 저온부에 각각 폐회로를 둔 실험장치를 설계·제작하였다. 실제 엔진 냉각수는 약 10 t/h 유량, 98℃로 나오지만 본 실험에서는 1/5 용량에 맞추어 2 t/h가 공급되도록 설계하였다. 고온부에 들어가는 냉각수 대체용 물은, 해당 온도의 온수를 내보내도록 제어 장치를 고친 온수 보일러(경동 나비엔 GTG1035)에서 공급하였다. 열병합 시스템에서 수용가 쪽에 해당하는 저온부는 수용가가 온수를 쓰는 상황을 열교환기 출구에서 온수 일부를 빼내는 방식으로 구현했고, 빼내는 양은 열교환기 입구 온도와 연동되게 하였다. 보일러 버너에는 별도 밸브를 달아 부분부하 조건에서도 실험할 수 있게 하였다. 설계 자료를 마련하려고 엔진 부하와 수용가 부하에 따라 열전달 및 유동 특성이 어떻게 변하는지 측정하였다. 열교환기 입구와 출구 온도는 백금저항온도계(RTD)로 쟀고, 고온부 유량은 열교환기 고온부 출구에서, 저온부 유량은 저온부 입구에서 각각 전자식 유량계로 측정하였다. 또한 보일러 배가스 출구에 가스 분석기를 달아 연소 특성을 확인할 수 있게 하였다.",
+      "terms": [
+        "판형 열교환기",
+        "폐회로",
+        "10 t/h",
+        "98℃",
+        "2 t/h",
+        "경동 나비엔 GTG1035",
+        "수용가",
+        "부분부하"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-008",
+      "doc_id": "R002",
+      "section": "2.1 엔진냉각수 열회수 실험장치",
+      "page_start": 346,
+      "page_end": 347,
+      "text": "Fig. 2: jacket water heat recovery, (a) configuration of the system and (b) the heat exchanger. Fig. 3: test rig for jacket water heat recovery, given as (a) a schematic and (b) a photograph.",
+      "terms": [
+        "Fig. 2",
+        "Fig. 3",
+        "jacket water",
+        "heat exchanger",
+        "test rig"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-009",
+      "doc_id": "R002",
+      "section": "2.2 열회수 보일러 실험장치",
+      "page_start": 347,
+      "page_end": 347,
+      "text": "열회수 보일러는 1MW급뿐 아니라 더 큰 시스템에도 적용할 수 있도록 수관식으로 하였다. Fig. 4처럼 증발관에 Fin을 붙여, 온도가 낮은 배가스로도 증기를 만들면서 시스템 부피를 작게 유지하였다. 증발관마다 증발량을 정확히 예측할 수 있도록 Fig. 4(a)와 같이 모듈 형태로 설계하였다. 증발관 Fin은 연소배가스의 벌크 온도가 떨어지는 하류 쪽에서 전열면적을 넓혀 수순환 균형을 맞추는 역할을 하며, 이를 위해 Fig. 4(b)처럼 하류 증발관의 Fin 밀도를 상류의 2배로 하였다.",
+      "terms": [
+        "열회수 보일러",
+        "수관식",
+        "증발관",
+        "Fin",
+        "모듈",
+        "벌크 온도",
+        "전열면적",
+        "수순환"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-010",
+      "doc_id": "R002",
+      "section": "2.2 열회수 보일러 실험장치",
+      "page_start": 347,
+      "page_end": 348,
+      "text": "모형 실험장치는 Fig. 5처럼 가스엔진 배가스 조건을 만들어 내는 부분과 모형 열회수 보일러 부분, 두 부분으로 크게 나뉜다. 연료는 가스엔진과 동일한 LNG이며, 버너에서 연소된 가스가 노통보일러를 지나며 냉각되고 여기에 공기를 더 넣어 가스엔진을 통과한 배가스를 흉내 낸다. 실험 규모는 실제 가스엔진의 1/5로, 100% 부하 조건에서 LNG 40 Nm^3/h가 공급된다. 배가스 산소 농도 2%에서 완전 연소가 이루어질 때 연소로 생기는 배가스량은 691 kg/h이며, 가스엔진 배가스 유량의 1/5을 맞추기 위해 330 kg/h의 추가공기를 넣었다.",
+      "terms": [
+        "모형 실험장치",
+        "LNG",
+        "버너",
+        "노통보일러",
+        "40 Nm^3/h",
+        "691 kg/h",
+        "330 kg/h",
+        "추가공기"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-011",
+      "doc_id": "R002",
+      "section": "2.2 열회수 보일러 실험장치",
+      "page_start": 348,
+      "page_end": 348,
+      "text": "약 430℃인 가스엔진 배가스는 3열의 나관(bare tube)으로 된 열교환기를 먼저 지난 뒤, fin-tube로 이루어진 모형 열회수 보일러로 들어간다. 모형 열회수 보일러 안에 열전대를 설치해 가스 유동 온도를 재고, 그 값으로 열설계 프로그램을 검증할 수 있게 하였다. 모듈에는 증기드럼 수위에 맞추어 물이 공급되며, 공급된 물의 양을 측정해 배가스 엔탈피 변화로 산정한 증발량과 비교하였다.",
+      "terms": [
+        "430℃",
+        "나관",
+        "bare tube",
+        "fin-tube",
+        "열전대",
+        "열설계 프로그램",
+        "증기드럼",
+        "엔탈피"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-012",
+      "doc_id": "R002",
+      "section": "2.2 열회수 보일러 실험장치",
+      "page_start": 347,
+      "page_end": 348,
+      "text": "Fig. 4: heat exchange module of the waste heat boiler, (a) schematic and (b) details of the finned tubes. Fig. 5: the test setup built for the waste heat boiler, shown as (a) a schematic and (b) a photograph.",
+      "terms": [
+        "Fig. 4",
+        "Fig. 5",
+        "waste heat boiler",
+        "heat exchange module",
+        "finned tube",
+        "test setup"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-013",
+      "doc_id": "R002",
+      "section": "3.1 엔진 냉각수 열회수 특성",
+      "page_start": 348,
+      "page_end": 349,
+      "text": "엔진 냉각수 열회수 모형에서, 원동기로 쓰는 엔진(1)은 부하에 따라 냉각수 유량을 조절하는 방식이므로 고온부 실험도 이를 따라 부하율 100%에서는 2 Nm^3/h, 50%에서는 1 Nm^3/h의 유량으로 열교환기에 물을 넣었다. 저온부 유량이 고온부와 비슷한 2 Nm^3/h이고 저온부 입구 온도가 20℃로 낮으면 열교환기 효율은 거의 1에 가까웠다(Fig. 6(a)). 저온부 유량을 늘릴수록 효율은 내려가서, 유량이 고온부의 2배인 4 Nm^3/h이고 부하율이 50%일 때 열교환기 효율은 0.8 근처까지 떨어졌다. 난방이나 부분부하 급탕처럼 저온측 입구온도가 상온보다 높은 40℃인 조건에서는 Fig. 6(b)에 나타난 대로 열교환기 효율이 한층 더 낮아진다. 저온측으로 들어가는 물이 상온보다 따뜻하면 열교환기 효율이 엔진 부하율에 더 민감하게 반응하며, 부하율 50%에서 저온측 급수량을 가장 많은 4 Nm^3/h로 하면 효율이 70% 이하로 내려가는 것이 관찰되었다.",
+      "terms": [
+        "엔진 냉각수",
+        "고온부",
+        "저온부",
+        "부하율",
+        "2 Nm^3/h",
+        "4 Nm^3/h",
+        "열교환기 효율",
+        "Fig. 6(a)"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-014",
+      "doc_id": "R002",
+      "section": "3.1 엔진 냉각수 열회수 특성",
+      "page_start": 349,
+      "page_end": 349,
+      "text": "Figure 7은 실험에서 얻은 여유 면적률을 Kumar 상관식(3)의 열전달 계수로 계산한 예측값과 나란히 보여 준다. 저온부 유량이 설계조건인 2 Nm^3/h에서 멀어질수록 실험값과 예측값의 차이는 커진다. 다만 여유 면적률 자체가 저온측 유량 증가와 함께 커지므로, 탈설계점에서 열전달 면적이 모자라는 상황은 생기지 않는다고 판단된다. 설계점에서는 Kumar 상관식(3) 예측값과 실험값의 차이가 약 15%였다.",
+      "terms": [
+        "Figure 7",
+        "여유 면적률",
+        "Kumar 상관식",
+        "열전달 계수",
+        "설계조건",
+        "탈설계점",
+        "열전달 면적",
+        "설계점"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-015",
+      "doc_id": "R002",
+      "section": "3.1 엔진 냉각수 열회수 특성",
+      "page_start": 348,
+      "page_end": 349,
+      "text": "Fig. 6: performance of jacket water heat recovery, (a) at T_c,i = 20℃ and (b) at T_c,i = 40℃. Fig. 7: margin of heat transfer area for the jacket water heat exchanger.",
+      "terms": [
+        "Fig. 6",
+        "Fig. 7",
+        "jacket water",
+        "T_c,i",
+        "heat transfer area"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-016",
+      "doc_id": "R002",
+      "section": "3.2 열회수 보일러 성능 특성",
+      "page_start": 349,
+      "page_end": 349,
+      "text": "설계된 모형 열회수 보일러(Fig. 5)는 Fig. 4에서 본 것처럼 유동 방향을 따라 Fin 밀도가 바뀌므로, Ahn 등(4)의 방법처럼 Zhukauskas 상관식(5)을 증발관 열마다 따로 적용해 설계하였다. 상관식으로 예측한 열회수 보일러 내 유동방향 온도분포를 실험값과 비교하면(Fig. 8) 전반적으로 잘 맞았으나, Fin 밀도가 바뀌는 1번열과 4번열에서는 실험으로 잰 온도가 더 낮게 나왔다. 증발관을 지나는 연소가스의 엔탈피 변화에서 열전달계수를 구해 보면(Fig. 9), 상류 쪽 열보다 Fin 밀도가 커지는 1번열과 4번열의 열전달계수가 Zhukauskas 상관식 값보다 크게 나타났다. Fin 밀도가 커지면서 유동이 가속되기 때문으로 추정되며, Fin 효율까지 포함해 정확한 원인을 밝히기 위해 수치해석을 진행할 계획이다.",
+      "terms": [
+        "모형 열회수 보일러",
+        "Fin 밀도",
+        "Zhukauskas 상관식",
+        "증발관",
+        "온도분포",
+        "Fig. 8",
+        "1번열",
+        "4번열"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-017",
+      "doc_id": "R002",
+      "section": "3.2 열회수 보일러 성능 특성",
+      "page_start": 349,
+      "page_end": 349,
+      "text": "증발관을 통과한 연소가스의 엔탈피 변화로 계산한 증발량과 실제 급수량을 비교하면, 상류 쪽 증발관(Fig. 10(a))에서는 급수량이 더 많게 나타났다. 이 경향은 부하율이 높을수록 두드러졌으며, 증발관 출구에서 액적류가 생겨 드럼에서 완전히 분리되지 못하고 빠져나가기 때문으로 해석된다. 특히 상류 증발관은 원주방향 열유속 차이 때문에 증발관 출구 건도가 불안정해지는 것으로 보이며, 이를 확인하려고 증발관 출구에서 기포율을 측정할 예정이다.",
+      "terms": [
+        "증발량",
+        "급수량",
+        "Fig. 10(a)",
+        "부하율",
+        "액적류",
+        "열유속",
+        "건도",
+        "기포율"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-018",
+      "doc_id": "R002",
+      "section": "3.2 열회수 보일러 성능 특성",
+      "page_start": 349,
+      "page_end": 350,
+      "text": "Fig. 8: bulk temperature change along the streamwise direction in the model HRSG. Fig. 9: how heat transfer behaves in the riser pips (spelled as printed), given as (a) Nusselt number and (b) normalized Nusselt number. Fig. 10: evaporation rate (a) at finned tube 1 and (b) at finned tube 2.",
+      "terms": [
+        "Fig. 8",
+        "Fig. 9",
+        "Fig. 10",
+        "bulk temperature",
+        "model HRSG",
+        "Nusselt number",
+        "evaporation rate",
+        "finned tube"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R002-019",
+      "doc_id": "R002",
+      "section": "4. 결론",
+      "page_start": 349,
+      "page_end": 350,
+      "text": "1MW급 가스엔진 열병합 발전용 열회수 장치를 1/5 스케일 모형으로 실험해 다음 결론을 얻었다. (1) 엔진 냉각수 열을 급탕·난방에 쓰는 경우, 50% 부분부하 운전에서 저온측에 고온측의 2배 유량을 40℃ 온수로 넣으면 열교환 효율이 최대 30%까지 떨어진다. (2) 셰브론 형태 판형 열교환기를 온수 열교환에 쓸 때에는 Kumar의 상관식으로 공학적인 열설계를 할 수 있다. (3) 수관식 열회수 보일러 증발관에서는 유동 방향으로 Fin 밀도가 달라지는 위치에서 열전달계수가 커지는 경향이 있다. (4) 수관식 열회수 보일러에서는 국소 열유속 변화가 큰 상류 증발관을 중심으로 급수량이 증발량을 웃돌았으며, 기수분리 기술을 개선할 필요가 있다.",
+      "terms": [
+        "1/5 스케일",
+        "부분부하",
+        "열교환 효율",
+        "셰브론",
+        "판형 열교환기",
+        "Kumar",
+        "Fin 밀도",
+        "기수분리"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 19,
+    "pages_processed": "345-350 (PDF 1-6쪽 전체)",
+    "last_paragraph_id": "R002-019",
+    "skipped": [
+      "참고문헌 목록(350쪽): 규칙상 제외",
+      "후기(350쪽, 연구비 지원 감사): 감사의 글로 제외",
+      "교신저자 연락처(345쪽, Tel/fax/E-mail): 저자 연락처로 제외",
+      "머리글(학술대회명·pp.)과 우측 상단 번호 상자 '0--0', 바닥글 쪽번호: 제외",
+      "그림 1~10의 내부 내용(도식·사진·그래프 수치): 캡션만 문단화하고 내용은 추측하지 않음"
+    ],
+    "uncertain": [
+      "pdftotext로 한글이 추출되지 않아(Adobe-Korea1 폰트 매핑 누락) 300dpi 렌더링 후 tesseract(kor+eng) OCR을 했으나 품질이 낮아, 본문은 6쪽 페이지 이미지를 직접 보고 확인·작성함.",
+      "연도: 1쪽(및 전체 PDF)에 발행 연도가 인쇄되어 있지 않아 year=null로 둠. 파일명 'CFKO2008...'과 본문 내 '지식경제부'·2007년 참고문헌으로 2008년 발표로 보이나 확정하지 않음.",
+      "학회명: 머리글이 '대한설비공학회 계학술발표대회 논문집 pp. ~'로 인쇄되어 '계' 앞 글자(하/동)가 비어 있음 → venue에 '[판독 불가]'로 표기. 권호·쪽 범위도 머리글에 비어 있음.",
+      "페이지: 바닥글의 인쇄 쪽번호 345~350을 사용함.",
+      "3.1절에서 엔진 냉각수(물) 유량 단위가 원문에 'Nm^3/h'로 인쇄되어 있어 그대로 옮김(1~4 Nm^3/h).",
+      "Fig. 9 캡션의 'riser pips'는 원문 철자 그대로(riser pipes의 오기로 보임).",
+      "Abstract·Key words·그림 캡션은 원문이 영어라 영어로 paraphrase함(규칙: 원문 언어 유지)."
+    ]
+  }
+}

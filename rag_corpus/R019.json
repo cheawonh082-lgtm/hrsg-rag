@@ -1,0 +1,430 @@
+{
+  "document": {
+    "doc_id": "R019",
+    "title": "Numerical Computation of Pressure Drop across an Off Supplementary Firing Burner in Heat Recovery Steam Generator",
+    "authors": [
+      "Shervin Karimkashi",
+      "Mohammad J. Kermani",
+      "Ahmad Sharifian",
+      "Javad Hashempour"
+    ],
+    "year": 2012,
+    "venue": "18th Australasian Fluid Mechanics Conference, Launceston, Australia, 3-7 December 2012",
+    "doi": "",
+    "url": "",
+    "license": "원문에 저작권·라이선스 표기 없음 (학술대회 논문, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R019-001",
+      "doc_id": "R019",
+      "section": "Abstract",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Combined gas and steam turbine plants are now widely used for distributed generation of power and heat, and designing them well in thermodynamic and economic terms means examining their main parts, namely the Heat Recovery Steam Generator (HRSG) together with the gas and steam turbines. The HRSG is described as a heat exchanger that takes heat from the gas turbine cycle to make steam and/or hot water, either for a downstream steam cycle or for industrial/civil users. Some units add Supplementary Firing (SF), i.e. extra burners that supply more energy at a lower capital cost. The penalty is a pressure loss across the duct burner bars, which raises the gas turbine exhaust pressure; earlier studies indicate that every extra 10 millibars of gas-side pressure drop in the HRSG cuts gas turbine output by roughly 1%, so this loss must be kept small. The authors simulate the pressure drop of an off-Supplementary Firing burner with 2D and 3D models, find that it grows as the burner-section inlet flow becomes hotter, and report very good agreement with semi-empirical values. Keywords: HRSG, Supplementary Firing, Pressure Drop in an SF, Numerical Computation.",
+      "terms": [
+        "HRSG",
+        "Supplementary Firing",
+        "SF",
+        "duct burner bars",
+        "pressure drop",
+        "10 millibars",
+        "gas turbine",
+        "semi-empirical"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-002",
+      "doc_id": "R019",
+      "section": "Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Gas turbine use for generating power has grown recently and is expected to keep growing, especially for distributed power and heat in both large and small plants [9]. Among plant components the HRSG, which recovers gas turbine heat to make steam and/or hot water, is one of the most common, and how it performs and how it is matched to the other components are key questions when optimising cogeneration and combined cycle plants [11]. Many theoretical studies have treated HRSG thermodynamic optimisation with respect to heat exchanger tube displacement, heat transfer area, operating mode and steam circulation; useful models and optimisation strategies are given in [4] and [5].",
+      "terms": [
+        "HRSG",
+        "cogeneration",
+        "combined cycle",
+        "heat transfer area",
+        "tube displacement",
+        "steam circulation",
+        "optimisation"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-003",
+      "doc_id": "R019",
+      "section": "Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "HRSG design has more recently benefited from the growth and wide use of CFD. Reference [13] simulated a complete existing fired HRSG of horizontal type and compared it with measurements, with particular attention to measured and computed pressure drop through the HRSG and exhaust duct. Reference [11] treats CFD of the gas-side flow path as an integral design tool, showing how it can evaluate the effect of gas-side flow on HRSG performance and point to design changes. Reference [7] applied CFD of flow and heat transfer to vertical- and horizontal-tube HRSG designs, comparing two design modifications and studying the better one in detail. Reference [2] used CFD to study inlet duct flow distribution of an HRSG in a combined cycle operating in partial by-pass mode, modelling the HRSG/by-pass system at its maximum-open and minimum-open-to-HRSG positions and observing recirculation flow in both. Practical HRSG design information is harder to locate: [12] lists the main characteristics an HRSG needs in single shaft combined cycle systems, and [8] outlines the thermodynamic, structural and economic aspects to analyse for an optimal HRSG design.",
+      "terms": [
+        "CFD",
+        "fired HRSG",
+        "horizontal type",
+        "gas-side flow",
+        "vertical- and horizontal-tube",
+        "partial by-pass mode",
+        "recirculation flow",
+        "single shaft combined cycle"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-004",
+      "doc_id": "R019",
+      "section": "Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "In a combined gas turbine-steam cycle the HRSG may include a supplementary firing burner located downstream of the gas turbine to raise the amount of steam produced. Without SF the combined cycle efficiency is higher, yet SF lets the plant answer excess electrical load demand [10]. A supplementary fired plant can also deliver extra output when electricity prices are high, which gives it an economic edge that depends on demand and on how long high prices last. Since numerous factors matter, for example plant design and regional wholesale electricity prices, each application has to be studied in detail to judge whether adding SF pays off [1]. Gas turbine compressors are constant volume machines, so hotter ambient air, being less dense, reduces turbine air mass flow and therefore net gas turbine power; SF can make up this loss in hot summer periods. A supplementary firing unit, called a duct burner in this study, raises turbine exhaust energy at high ambient temperatures so that design throttle flow to the steam turbine is kept. Even a small duct burner can give a short payback, particularly during summer on-peak hours [1].",
+      "terms": [
+        "supplementary firing",
+        "SF",
+        "combined cycle",
+        "constant volume machines",
+        "air mass flow",
+        "duct burner",
+        "throttle flow",
+        "on-peak hours"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-005",
+      "doc_id": "R019",
+      "section": "Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Figure 1 is a schematic of a combined-cycle plant.",
+      "terms": [
+        "Figure 1",
+        "combined-cycle"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-006",
+      "doc_id": "R019",
+      "section": "Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Studies of SF benefits are summarised as follows [1]. If the electricity price is below the production cost, unfired and fired plants both lose income, and the fired plant loses more since its production cost is higher. If the price exceeds the production cost, both earn a net gain, and the fired plant earns more because it has extra generating capacity to sell. Against this background the paper computes, by several methods, the pressure drop in an HRSG with SF off. The motivation is that supplementary burners (also called duct burners or secondary burners) placed in the HRSG channel strengthen the steam cycle but carry penalties: the pressure loss across the duct burner bars forces the gas turbine to exhaust at a higher pressure and lowers net GT power (see Figure 1). To get the most power from the combined cycle (GT-steam cycle), this pressure drop should be calculated and corrected where needed. A simplified SF-off case is studied, with air as the working fluid, and results are tabulated for several fixed temperatures so that they come closer to real operation in which combustion heats the air.",
+      "terms": [
+        "SF",
+        "unfired",
+        "fired",
+        "duct burners",
+        "secondary burners",
+        "SF-off",
+        "GT-steam cycle",
+        "working fluid"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-007",
+      "doc_id": "R019",
+      "section": "Modelling",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "The CFD work uses the Fluent© package for 2D and 3D cases, and its results are checked against semi-empirical methods in which the duct burner bars are given a drag coefficient. Flow in the HRSG is treated as incompressible and turbulent, with a Reynolds number of order 10^5, far above critical values. Because the SF is off and there is no combustion, the flow is isothermal, and the standard k-ε model is selected in Fluent.",
+      "terms": [
+        "CFD",
+        "Fluent©",
+        "drag coefficient",
+        "incompressible",
+        "turbulent",
+        "Reynolds number",
+        "isothermal",
+        "k-ε"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-008",
+      "doc_id": "R019",
+      "section": "Modelling",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "The 2D and 3D models were solved separately with the commercial Fluent© solver, and grids were built with Gambit© (GAMBIT 2.0.0 by Fluent© Inc.). Grid sizes are 15,660 cells for 2D and 130,000 cells for 3D. On a PENTIUM4 1.83GHz CPU computer with 256 MB of RAM, the 2D model needs about 5 minutes and the 3D model about 30 minutes. Reported solutions reached residuals no larger than order 10^-3.",
+      "terms": [
+        "Fluent©",
+        "Gambit©",
+        "GAMBIT 2.0.0",
+        "15,660 cells",
+        "130,000 cells",
+        "residuals",
+        "10^-3"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-009",
+      "doc_id": "R019",
+      "section": "Pressure Drop Computation by Semi-empirical Method",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Figure 2 gives the problem geometry with exact dimensions. All models use unit depth for the HRSG, since the 2D solver applies unit depth automatically, and the same unit depth is used in the 3D and semi-empirical calculations so the three can be compared. The case study is a real combined-gas and steam-turbine plant in Iran with a V94.2 gas unit. In reality the plant has an inlet mass flow rate of 500 kg/s and its HRSG inflow area is 9 m^2; with unit depth the inflow area becomes 3 m^2 and the inlet mass flow is set to (500/3) kg/s so that the final results stay consistent with the real plant.",
+      "terms": [
+        "unit depth",
+        "V94.2",
+        "inlet mass flow rate",
+        "500 kg/s",
+        "9 m^2",
+        "3 m^2",
+        "(500/3) kg/s"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-010",
+      "doc_id": "R019",
+      "section": "Pressure Drop Computation by Semi-empirical Method",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Semi-empirical relations for pressure drop, taken from [3]: (1) V = ṁ/(ρA_ch) (speed = mass flow rate divided by density times channel inlet area); (2) Re = ρVL/μ (Reynolds number from density, speed, characteristic length of the body and dynamic viscosity); (3) D = C_D × (1/2 ρA_pV^2) = C_D × (1/2 ṁV) (drag force = pressure drag coefficient times dynamic pressure acting on the projected area A_p); (4) ΔP = D/A_ch (static pressure drop = drag force divided by channel inlet area).",
+      "terms": [
+        "V = ṁ/(ρA_ch)",
+        "Re = ρVL/μ",
+        "C_D",
+        "A_p",
+        "ΔP = D/A_ch",
+        "drag force",
+        "Reynolds number"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-011",
+      "doc_id": "R019",
+      "section": "Pressure Drop Computation by Semi-empirical Method",
+      "page_start": 2,
+      "page_end": 3,
+      "text": "These relations were used to obtain the pressure drop at an ambient temperature of 30⁰C, which first requires the Reynolds number. Because the burner geometry is bluff, pressure drag dominates and friction drag is neglected. With T=30⁰C, P=1atm and L=0.2m (the characteristic length of the duct burner body in Figure 2), equations (1) and (2) give Re of about 6.0×10^5. For cuboids C_D=2.0 is used when Re≥10^4 [6]. The drag force D is found from equation (3), and equation (4) then gives a pressure drop of 397.6 Pa, i.e. 0.392% of P_1=1atm=101325Pascal.",
+      "terms": [
+        "30⁰C",
+        "pressure drag",
+        "friction drag",
+        "L=0.2m",
+        "6.0×10^5",
+        "C_D=2.0",
+        "397.6 Pa",
+        "0.392%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-012",
+      "doc_id": "R019",
+      "section": "Pressure Drop Computation by Semi-empirical Method",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Figure 2 shows the geometry of the computational domain.",
+      "terms": [
+        "Figure 2",
+        "computational domain"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-013",
+      "doc_id": "R019",
+      "section": "Screening Modelling Results",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Detailed results are shown only for 30˚C; results at the higher temperatures are omitted for space, but a summary of the isothermal runs at the other fixed temperatures is given in table1, with Re and D changed for each case. Since no heat transfer is computed, no correlations are required. Figure 3a plots velocity magnitude contours of the 3D model at the mid-depth station: wake regions form behind the bluff burner bodies, with the lowest velocity directly behind each burner (dark blue), and velocity recovers gradually through diffusion as flow is entrained into the wake. Stagnation regions ahead of the burners appear in green, and the 2D and 3D runs show similar trends.",
+      "terms": [
+        "30˚C",
+        "isothermal",
+        "Figure 3a",
+        "velocity magnitude",
+        "wake regions",
+        "diffusion",
+        "entrained",
+        "Stagnation regions"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-014",
+      "doc_id": "R019",
+      "section": "Screening Modelling Results",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Figure 3b plots 2D velocity vectors at station O-O upstream and at several stations downstream of the burners, which sit at x=0, and makes the diffusion process visible; turbulent viscosity is identified as the main cause of the velocity becoming uniform. Station locations: O-O section (inflow) at x=-1.2 upstream of the burner; A-A section at x=0.2, B-B section at x=1.1 and C-C section at x=1.8, all downstream of the burner. Figure 3c gives 2D stream-wise velocity profiles at these sections, with the horizontal axis giving the position across the channel. Velocity on the burners themselves (three black lines) is zero because of the no slip condition; the inflow profile is uniform, and downstream the profile returns step by step toward uniformity with increasing distance from the burners.",
+      "terms": [
+        "Figure 3b",
+        "O-O",
+        "x=-1.2",
+        "A-A",
+        "turbulent viscosity",
+        "Figure 3c",
+        "stream-wise velocity",
+        "no slip condition"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-015",
+      "doc_id": "R019",
+      "section": "Screening Modelling Results",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Figure 4a plots static pressure contours; static pressure peaks just ahead of the burners, close to stagnation values. Figure 4b plots static pressure profiles at the various sections, again with the horizontal axis being the position across the channel.",
+      "terms": [
+        "Figure 4a",
+        "static pressure",
+        "stagnation",
+        "Figure 4b"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-016",
+      "doc_id": "R019",
+      "section": "Screening Modelling Results",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Table1 collects the 2D and 3D numerical results together with the semi-empirical ones; for 2D and 3D the pressure drop is taken from the mean inlet and mean outlet pressures. The pressure drop ratio rises with temperature. Higher temperature lowers flue gas density, and reading equations (1) and (3) together shows that lower density (ρ) gives a larger drag force (D), which by equation (4) increases the pressure drop. Only temperature was varied, so the mass flow, set at the inflow boundary, is the same in every run. The table also shows that both 2D and 3D numerical values confirm the semi-empirical values, with very good agreement among the methods.",
+      "terms": [
+        "Table1",
+        "pressure drop ratio",
+        "density",
+        "drag force",
+        "mass flow",
+        "inflow boundary",
+        "flue gas density"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-017",
+      "doc_id": "R019",
+      "section": "Screening Modelling Results",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Table 1. Percentage pressure drop in the HRSG channel, computed by different methods at several fixed temperatures (values are %ΔP/P_1). case 1: Temperature (⁰C)=30; semi-empirical=0.392; 2D model=0.431; 3D model=0.415. case 2: Temperature (⁰C)=100; semi-empirical=0.495; 2D model=0.531; 3D model=0.494. case 3: Temperature (⁰C)=200; semi-empirical=0.622; 2D model=0.660; 3D model=0.622. case 4: Temperature (⁰C)=300; semi-empirical=0.750; 2D model=0.798; 3D model=0.752. case 5: Temperature (⁰C)=400; semi-empirical=0.881; 2D model=0.943; 3D model=0.899. case 6: Temperature (⁰C)=500; semi-empirical=1.012; 2D model=1.073; 3D model=1.014. case 7: Temperature (⁰C)=600; semi-empirical=1.152; 2D model=1.211; 3D model=1.141.",
+      "terms": [
+        "Table 1",
+        "%ΔP/P_1",
+        "semi-empirical",
+        "2D model",
+        "3D model",
+        "HRSG channel"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-018",
+      "doc_id": "R019",
+      "section": "Screening Modelling Results",
+      "page_start": 3,
+      "page_end": 4,
+      "text": "Figure 3. (a) Mean velocity magnitude on the mid-depth plane; (b) 2D-case mean velocity vectors at several sections; (c) mean velocity magnitude profiles at several sections, showing gradual diffusion of mean velocity in front of the burners (burners at x=0). Figure 4. (a) Contours of static pressure; (b) profiles of static pressure at several sections (burners at x=0).",
+      "terms": [
+        "Figure 3",
+        "mean velocity magnitude",
+        "mean velocity vectors",
+        "Figure 4",
+        "static pressure",
+        "x=0"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-019",
+      "doc_id": "R019",
+      "section": "Conclusions",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Adding SF raises steam production in the steam cycle, but it also raises the turbine exit pressure and so lowers gas turbine unit output; a full cost-benefit study is therefore needed before stating the net performance gain of the system.",
+      "terms": [
+        "SF",
+        "steam production",
+        "exit pressure",
+        "gas turbine"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-020",
+      "doc_id": "R019",
+      "section": "Conclusions",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "The study computed the pressure drop of a supplementary firing (SF)-off burner in a Heat Recovery Steam Generator (HRSG) assuming isothermal flow at several temperatures, which is justified because no combustion takes place with SF off. Numerical 2D and 3D models were used to test the accuracy of the semi-empirical relations, in which a drag coefficient yields the drag forces acting on the burner gas delivery bars and the pressure drop across the bars follows from them. All methods agree well, numerical pressure drops confirm the empirical predictions, and every result shows the pressure drop ratio rising with inflow temperature. Velocity and static pressure contours and profiles at several stations along the flow are also presented to explain the flow physics.",
+      "terms": [
+        "SF",
+        "HRSG",
+        "isothermal",
+        "semi-empirical",
+        "burner gas delivery bars",
+        "drag coefficient",
+        "pressure drop ratio",
+        "static pressure"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R019-021",
+      "doc_id": "R019",
+      "section": "Nomenclature",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Nomenclature list: V = speed; ṁ = mass flow rate; ρ = density; A_ch = channel inlet area; D = drag force; D_p = pressure drag force; C_D = pressure drag coefficient; A_p = projected area; Re = Reynolds number; L = characteristic length of body; μ = dynamic viscosity; ΔP = static pressure drop; T = static temperature (printed as 'Temprature'); P = static pressure.",
+      "terms": [
+        "A_ch",
+        "D_p",
+        "C_D",
+        "A_p",
+        "Re",
+        "μ",
+        "ΔP",
+        "static pressure"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 21,
+    "pages_processed": "1-4 (PDF 전체 4쪽)",
+    "last_paragraph_id": "R019-021",
+    "skipped": [
+      "1쪽 저자 소속(학과·대학·국가): 저자 연락처 정보로 제외(서지 저자명만 반영)",
+      "1쪽 머리글(18th Australasian Fluid Mechanics Conference / Launceston / 3-7 December 2012): 서지정보로만 반영",
+      "4쪽 References [1]~[14]: 참고문헌 목록",
+      "그림 1~4 내부 내용(계통도 라벨, 형상 치수, 속도·압력 컨투어 범례값, 프로파일 그래프): 캡션만 수록, 그림 1·2 캡션은 각 절 위치에 단독 caption 문단으로 둠"
+    ],
+    "uncertain": [
+      "논문에 인쇄된 페이지 번호가 없어 page_start/page_end는 PDF 쪽 번호(1~4)를 사용함",
+      "2단 편집: 2쪽 좌단 하단에 'Pressure Drop Computation by Semi-empirical Method' 제목이 오고 우단(형상·사례·식 (1)~(4)·30⁰C 계산)이 이어지는 읽기 순서로 판단해 해당 절에 배정함(pdftotext 순서와 다름)",
+      "식 (1)~(4)는 텍스트 레이어에서 깨져(∆ 등만 추출) 150dpi 페이지 이미지로 판독함",
+      "Table 1 열 머리 '%ΔP/P_1'은 분수 표기 이미지를 판독해 옮김",
+      "Nomenclature의 'Temprature'는 원문 철자 오기로 보고 'static temperature'로 적고 원문 표기를 괄호로 남김"
+    ]
+  }
+}

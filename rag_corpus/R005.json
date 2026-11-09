@@ -1,0 +1,467 @@
+{
+  "document": {
+    "doc_id": "R005",
+    "title": "Afterburning Installation of 2xST 18 Cogeneration Power Plant – Investigations on Combustion and NOx Emissions",
+    "authors": [
+      "Ene Barbu",
+      "Gheorghe Fetea",
+      "Romulus Petcu",
+      "Valeriu Vilag",
+      "Luminita Dragasanu"
+    ],
+    "year": 2013,
+    "venue": "Chemical Engineering Transactions, Vol. 34, 2013, pp. 37-42 (Guest Editors: Neven Duić, Petar Sabev Varbanov)",
+    "doi": "10.3303/CET1334007",
+    "url": "",
+    "license": "Copyright © 2013, AIDIC Servizi S.r.l. (공개 라이선스 표기 없음 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R005-001",
+      "doc_id": "R005",
+      "section": "Abstract",
+      "page_start": 37,
+      "page_end": 37,
+      "text": "Next-generation afterburning installations for gas turbine cogeneration groups must balance emissions, efficiency and process demands. The paper reports work at the 2xST 18 cogeneration power plant in Suplacu de Barcau, Romania, on the flow in the afterburning installation and on NOx emissions, covering CFD simulations and test bench experiments. To analyze the afterburning installation as a whole under different operating configurations of the group, three quantities were examined: NOx emission at the heat recovery steam generator stack, the burning gas temperature at the outlet of the afterburning chamber, and infrared images of the burner's upper part. Analysis of partial-load data led to an experimental burner emitting 30 % less NOx than the plant burner. Tests of this burner at nominal load, now installed on the test bench, are intended to validate the numerical model and confirm its performance.",
+      "terms": [
+        "afterburning installations",
+        "2xST 18",
+        "NOx",
+        "CFD",
+        "heat recovery steam generator stack",
+        "afterburning chamber",
+        "30 %",
+        "test bench"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-002",
+      "doc_id": "R005",
+      "section": "1. Introduction",
+      "page_start": 37,
+      "page_end": 37,
+      "text": "Legislation on NOx emissions calls for new technologies and investigation methods for combustion installations (Belohradsky and Kermes, 2012). Afterburning installations and the combustion chambers of stationary gas turbines have to reach very low emissions together with high efficiency at partial loads. Work on combustion control using special sensors, and demonstration applications on burners and gas turbines, has aimed at technologies that keep gas turbine efficiency high with afterburning (Samuelson and Miyasoto, 2002). Controlling flame shape and temperature over the whole process is named as critical parameters for cutting NOx emissions, and a uniform flow distribution supports proper afterburning and secures the performance of the heat recovery steam generator.",
+      "terms": [
+        "NOx emissions",
+        "Afterburning installations",
+        "stationary gas turbines",
+        "partial loads",
+        "combustion control",
+        "flame shape",
+        "uniform",
+        "heat recovery steam generator"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-003",
+      "doc_id": "R005",
+      "section": "1. Introduction",
+      "page_start": 37,
+      "page_end": 37,
+      "text": "Because developing a new afterburning installation consumes much time and other resources, CFD modelling is a convenient way to compare burner geometries (Cammarata et al., 2008). The coupled processes between gas turbine, afterburning installation and heat recovery steam generator require that the afterburning installation be analyzed as part of the whole cogeneration group (Barbu et al., 2010). Starting from the afterburning installation already in service at the 2xST 18 - Suplacu de Barcau plant, the authors pursued an afterburning burner with 30 % lower NOx emissions. The work was carried out in stages, both in the power plant and on a test bench, and focused on the flow inside the burner (assessed by infrared analysis of the burner's upper part, tIR, and the gas temperature at the end of the afterburning chamber, tpc) and on NOx emissions measured at the heat recovery steam generator stack.",
+      "terms": [
+        "CFD",
+        "burner",
+        "cogeneration group",
+        "2xST 18 - Suplacu de Barcau",
+        "30 %",
+        "tIR",
+        "tpc",
+        "heat recovery steam generator stack"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-004",
+      "doc_id": "R005",
+      "section": "2.1 Cogeneration power plant 2xST 18 – Suplacu de Barcau",
+      "page_start": 38,
+      "page_end": 38,
+      "text": "The 2xST 18 - Suplacu de Barcau plant (Romania) consists of two cogeneration groups that can run in parallel or separately; the components of each group are shown in Figure 1 (left). Its heat recovery steam generator is a fire-tube unit made up of an uncooled afterburning chamber, a superheater, a pressure body and an economizer-water preheater system that supplies feedwater to the pressure body at the required parameters (Barbu et al., 2012). The afterburning installation mainly comprises the burner, the gas combustible/air control system, the fuel gas supply system and automation linked to the plant automation. The burners of the two groups are arranged as mirror images. Each is a \"FlueFire\" type burner (inset of Figure 1 left) delivering a nominal temperature of 770 °C at the end of the combustion chamber; it sits directly in the gas turbine exhaust and has 21 burning modules (called ST 18) mounted on 3 ramps of combustible gas.",
+      "terms": [
+        "fire-tube",
+        "afterburning chamber",
+        "superheater",
+        "pressure body",
+        "economizer-water preheater",
+        "FlueFire",
+        "770 °C",
+        "ST 18"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-005",
+      "doc_id": "R005",
+      "section": "2.1 Cogeneration power plant 2xST 18 – Suplacu de Barcau",
+      "page_start": 38,
+      "page_end": 38,
+      "text": "Gas turbine exhaust gases, or fresh air supplied by the fan, reach the \"FlueFire\" burner through an adjustment section joined to the by-pass system. Commissioning tests made it necessary to add a fixed concentrator upstream of the burner, in the path of the air or turbine exhaust behind the burning modules. Burner CFD simulations (Barbu et al., 2008) indicated that a mobile concentrator, shaped as a \"v\" pointing against the flow of the oxygen carrier, could improve the flow distribution in the burner.",
+      "terms": [
+        "by-pass system",
+        "fixed concentrator",
+        "mobile concentrator",
+        "CFD simulations",
+        "FlueFire",
+        "oxygen carrier"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-006",
+      "doc_id": "R005",
+      "section": "2.1 Cogeneration power plant 2xST 18 – Suplacu de Barcau",
+      "page_start": 38,
+      "page_end": 38,
+      "text": "Figure 1: Layout of the equipment in a cogeneration group with the measurement points (left) and the area of the burner's upper part viewed by infrared imaging (right).",
+      "terms": [
+        "Figure 1",
+        "cogeneration group",
+        "measurement points",
+        "infrared"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-007",
+      "doc_id": "R005",
+      "section": "2.1 Cogeneration power plant 2xST 18 – Suplacu de Barcau",
+      "page_start": 38,
+      "page_end": 38,
+      "text": "The mobile concentrator can be set to any chosen position, changing how the fuel gas jet interacts with the turbine exhaust or air. Before testing it was fitted only on group 1, while group 2 kept the fixed concentrator. A group can operate in three versions, with Version I as the base case, and the by-pass ensemble (Figure 1 left) allows easy switching among them. In version I the afterburning installation fires combustible gas in the gas turbine exhaust. In version II afterburning is off and the heat recovery steam generator is heated by turbine exhaust alone. Version III applies when the gas turbine is not running: the afterburning installation and heat recovery steam generator operate on combustible gas with fresh air.",
+      "terms": [
+        "mobile concentrator",
+        "group 1",
+        "Version I",
+        "version II",
+        "Version III",
+        "by-pass ensemble",
+        "heat recovery steam generator"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-008",
+      "doc_id": "R005",
+      "section": "2.1 Cogeneration power plant 2xST 18 – Suplacu de Barcau",
+      "page_start": 38,
+      "page_end": 38,
+      "text": "In version III the air/combustible gas ratio is set by an actuator – cam strip positioner system with two interconnection bars. Air flow is regulated by closing off the fan's fresh-air suction with a jalousie system, driven by an arm that has a recess along its length. One interconnection bar, linked to the actuator - cam strip positioner, moves this arm and normally sits in the middle recess; the other bar moves the control lappet for the fuel flow. Together they fix a predetermined combustible gas/air ratio.",
+      "terms": [
+        "version III",
+        "actuator – cam strip positioner",
+        "interconnection bars",
+        "jalousie system",
+        "middle recess",
+        "control lappet"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-009",
+      "doc_id": "R005",
+      "section": "2.2 Methodology and apparatus",
+      "page_start": 38,
+      "page_end": 39,
+      "text": "Plant measurements examined how the mobile concentrator affects the flow inside the burner. To avoid disturbing production, the cogeneration groups were measured at partial loads: group 1 (mobile concentrator moved to its maximum position in the gas flow direction) only in version III, and group 2 (fixed concentrator) in configurations I and II. NOx was measured with an MRU type - Analyzer Vario Plus Ind. placed at the foot of the heat recovery steam generator stack (inset of Figure 1 left); it determines NOx via NO conversion over 0...1,000 ppm (±5 ppm) and was configured for gas fuels at 3 % oxygen. Referred to normal conditions (0 °C and 101.325 kPa), NOx is reported in mg/Nm^3, dry basis, at 3 % O_2.",
+      "terms": [
+        "mobile concentrator",
+        "partial loads",
+        "MRU type - Analyzer Vario Plus Ind.",
+        "0...1,000 ppm (±5 ppm)",
+        "101.325 kPa",
+        "mg/Nm^3",
+        "3 % O_2",
+        "NOx"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-010",
+      "doc_id": "R005",
+      "section": "2.2 Methodology and apparatus",
+      "page_start": 39,
+      "page_end": 39,
+      "text": "The burning gas temperature at the outlet of the afterburning chambers (tpc) was taken with a thermocouple (error ±5 °C per EN 60584 part 2) located 2,970 mm from the burner fixing flange, ahead of the superheater (inset of Figure 1 left). The outer surface temperature was obtained with a Fluke infrared camera - type Ti45FT (error ±2 °C) aimed at the burner's upper part (Figure 1 right). A specially equipped mobile laboratory measured air quality, and operating parameters of the gas turbine, heat recovery steam generator and afterburning installation were taken from displays or read locally. Emission data were matched with the surface temperature profile by measurement time.",
+      "terms": [
+        "tpc",
+        "thermocouple",
+        "EN 60584 part 2",
+        "2,970 mm",
+        "Ti45FT",
+        "±2 °C",
+        "±5 °C",
+        "mobile laboratory"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-011",
+      "doc_id": "R005",
+      "section": "2.2 Methodology and apparatus",
+      "page_start": 39,
+      "page_end": 39,
+      "text": "The gas combustible/air control system was assessed in terms of bar position relative to the jalousie driving arm, recording stack emissions and infrared views of the burner's upper part as in the burner flow study. Tests were run at identical afterburning loads (58.8 %, 63.3 % and 65.7 %) with the arm-driving bar set in each of its three positions (left, middle, right), using the same instruments as in the burner flow investigation. The CFD simulations were then repeated with the plant measurements as input; the new results showed that flaring the flame limiting at 15° lowers NOx emissions, which led to a new burning module named ST 18-15.",
+      "terms": [
+        "gas combustible/air control system",
+        "jalousie",
+        "58.8 %, 63.3 % and 65.7 %",
+        "CFD simulations",
+        "15°",
+        "ST 18-15",
+        "NOx emissions"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-012",
+      "doc_id": "R005",
+      "section": "2.2 Methodology and apparatus",
+      "page_start": 39,
+      "page_end": 39,
+      "text": "For the numerical work, the execution drawings of the burning module were converted into a 3D model. Considering the total number of burning modules and their arrangement in the afterburning chamber, the computational domain was reduced to a single module with periodicity boundary conditions and inlet/outlet conditions given by mass flows and pressures. The simulations used the k-ε turbulence model, no slip walls and a PDF reaction table for combustion; this PDF model relies on the NASA thermodynamic equilibrium model and coefficients to obtain the composition in the reacting region from cell parameters computed by the flow solver. The mesh, unstructured, held about 2 millions cells, refined most near the burning module. The reference temperature 2.5 m away (towards the burning module) was set to 770 °C, with an evaluation error under 1 %.",
+      "terms": [
+        "3D model",
+        "periodicity",
+        "k-ε turbulence model",
+        "PDF reaction table",
+        "NASA thermodynamic equilibrium model",
+        "2 millions cells",
+        "770 °C",
+        "unstructured"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-013",
+      "doc_id": "R005",
+      "section": "2.2 Methodology and apparatus",
+      "page_start": 39,
+      "page_end": 39,
+      "text": "To check the simulation data and study NOx under laboratory conditions, an experimental monomodular burner was built with a geometry different from the plant burner (test bench adaptation – Figure 5). Partial-load tests were done on a test bench formed by a parallelepipedous enclosure (890x890x990 mm) with glass side walls and an access door on one side (Barbu et al., 2011). Only the burner internal flow and NOx emission were studied there, with the combustible gas/air ratio adjusted by hand. The monomodular burner was first run on natural gas and air with the ST 18 module at natural gas flow rates of 0.4, 0.56 and 0.7 kg/h, and then with the ST 18-15 module under the same conditions (natural gas and burning air flow rates, etc.). Using ST 18 as reference, the target was an oxygen concentration at the enclosure exit comparable to that measured at the heat recovery steam generator stack.",
+      "terms": [
+        "monomodular burner",
+        "test bench",
+        "890x890x990 mm",
+        "ST 18",
+        "ST 18-15",
+        "0.4, 0.56 and 0.7 kg/h",
+        "oxygen concentration",
+        "parallelepipedous enclosure"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-014",
+      "doc_id": "R005",
+      "section": "2.2 Methodology and apparatus",
+      "page_start": 39,
+      "page_end": 39,
+      "text": "The bench used the same instruments as the plant measurements. The temperature distribution in the flame was measured with thermocouples of PtRh30% - PtRh46% type mounted on the frame. NOx results were processed with Microsoft applications and infrared data with the Fluke - Ti45FT type camera's own software. Combining theoretical and experimental findings, the ST 18-15 module was joined with the mobile concentrator used on group 1, giving a new burner module model, type ST 18-R.",
+      "terms": [
+        "PtRh30% - PtRh46%",
+        "thermocouples",
+        "Fluke - Ti45FT",
+        "ST 18-15",
+        "mobile concentrator",
+        "ST 18-R",
+        "NOx"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-015",
+      "doc_id": "R005",
+      "section": "3. Results and discussions",
+      "page_start": 39,
+      "page_end": 39,
+      "text": "Figure 2 (left) gives the NOx emission trend measured for group 1 at the heat recovery steam generator stack (version III with mobile concentrator). Figure 3 presents infrared isotherm images of the upper part of the afterburning installation (Figure 1 right) taken during plant operation, with group 1 in version III with mobile concentrator and group 2 in version I with fixed concentrator. Markers delimit isotherms with measured temperatures (tIR) above 125 °C (light region). The zone of high temperature isotherms (tIR>125 °C) is far larger for group 1 (Figure 3 left) than for group 2 (Figure 3 right). Although the burner could not be viewed completely, the isotherm patterns point to stronger interaction between the comburent and the natural gas carrier jet and hence better flow in the upper burner region of group 1.",
+      "terms": [
+        "NOx",
+        "version III",
+        "mobile concentrator",
+        "isotherms",
+        "tIR",
+        "125 °C",
+        "comburent",
+        "natural gas carrier jet"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-016",
+      "doc_id": "R005",
+      "section": "3. Results and discussions",
+      "page_start": 39,
+      "page_end": 40,
+      "text": "Figure 2 right shows stack NOx emissions from the combustible gas/air control system tests for all three bar positions. Between the minimum (58.8 %) and maximum (65.7 %) partial loads, the burning gas temperature at the afterburning chamber outlet varies by 72 °C (left), 67 °C (middle) and 59 °C (right) depending on bar position (table 1). Moving the driving bar from left to right therefore narrows the gas temperature adjustment range while raising the associated maximum temperatures; infrared analysis confirms this, the high temperature isotherm area expanding as load rises from 58.8 % to 65.7 %. As a compromise between adjustment range and maximum outlet gas temperature, the interconnection bar was set in the middle of the recess. In both cases the NOx trend (Figure 2) follows an exponential curve rising fairly slowly over the 500 - 700 °C range studied.",
+      "terms": [
+        "bar positions",
+        "58.8 %",
+        "65.7 %",
+        "72 °C",
+        "67 °C",
+        "59 °C",
+        "interconnection bar",
+        "500 - 700 °C"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-017",
+      "doc_id": "R005",
+      "section": "3. Results and discussions",
+      "page_start": 40,
+      "page_end": 40,
+      "text": "Comparing plant data with numerical simulation, the simulation was satisfactory (within ± 10 %) only for the temperature variation and the oxygen content at the heat recovery steam generator stack (Barbu et al., 2008). The simulations also indicated that a flare greater than 15° on the ST 18-15 burning module worsens NOx emissions, which the authors suggest may reflect boundary layer detachment; they note this effect is not yet well studied and needs more theoretical and experimental work. In comparative laboratory tests (Figure 4, 5) the ST 18-15 flame filled the furnace better and NOx fell by about 30 % with 0.7 kg/h of natural gas. At that flow rate the temperature along the enclosure height was lower around the ST 18-15 module (Figure 4 right) than around ST 18, and the temperature markers of Figure 5 indicate a homogeneous temperature distribution for ST 18-15.",
+      "terms": [
+        "± 10 %",
+        "oxygen content",
+        "15°",
+        "ST 18-15",
+        "boundary layer",
+        "30 %",
+        "0.7 kg/h",
+        "homogeneous"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-018",
+      "doc_id": "R005",
+      "section": "3. Results and discussions",
+      "page_start": 40,
+      "page_end": 40,
+      "text": "Figure 2: Stack NOx emissions of the heat recovery steam generator plotted against gas temperature at the afterburning chamber outlet, for group 1 (left) and combined over all three driving bar positions (right), version III with mobile concentrator. Figure 3: Infrared isotherm patterns from afterburning installation tests on groups 1 and 2, at tpc=552 °C (left, group 1, version III with mobile concentrator) and tpc=536 °C (right, group 2, version I with fixed concentrator).",
+      "terms": [
+        "Figure 2",
+        "Figure 3",
+        "NOx",
+        "isotherm",
+        "tpc=552 °C",
+        "tpc=536 °C",
+        "mobile concentrator",
+        "driving bar"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-019",
+      "doc_id": "R005",
+      "section": "3. Results and discussions",
+      "page_start": 40,
+      "page_end": 40,
+      "text": "Table 1: Burning gas temperature at the end of the afterburning chamber (tpc), for different partial loads and driving bar positions (tpc [°C]; Load [%] = 58.8, 63.3, 65.7). Left: Load 58.8 %=513; Load 63.3 %=582; Load 65.7 %=585. Middle: Load 58.8 %=529; Load 63.3 %=594; Load 65.7 %=596. Right: Load 58.8 %=567; Load 63.3 %=602; Load 65.7 %=626.",
+      "terms": [
+        "Table 1",
+        "tpc",
+        "tpc [°C]",
+        "Load [%]",
+        "afterburning chamber",
+        "Left",
+        "Middle",
+        "Right"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-020",
+      "doc_id": "R005",
+      "section": "3. Results and discussions",
+      "page_start": 41,
+      "page_end": 41,
+      "text": "Figure 4: Temperature profile along the enclosure height in test bench runs of the monomodular burner with the ST 18 module (left) and the ST 18-15 module (right). Figure 5: Infrared isotherm patterns from test bench runs of the monomodular burner with the ST 18 module (left) and the ST 18-15 module (right), firing natural gas with air at 0.7 kg/h of natural gas.",
+      "terms": [
+        "Figure 4",
+        "Figure 5",
+        "monomodular burner",
+        "ST 18",
+        "ST 18-15",
+        "isotherm",
+        "0.7 kg/h"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-021",
+      "doc_id": "R005",
+      "section": "3. Results and discussions",
+      "page_start": 41,
+      "page_end": 41,
+      "text": "For natural gas flow rates of 0.4 - 0.7 kg/h, the test bench NOx trends of the ST 18 and ST 18-15 burning modules are given by Equations (1) and (2): NOx_ST18 = 0.258exp[0.0065(273.15+t_pc)]   (1) (NOx of the ST 18 module as an exponential function of the absolute afterburning chamber outlet gas temperature, 273.15+t_pc) and NOx_ST18-15 = 0.102exp[0.0073(273.15+t_pc)]   (2) (same exponential form for the ST 18-15 module with coefficient 0.102 and exponent factor 0.0073). Although the bench module was of the same ST 18 type, differences in burner (burning chamber) geometry, thermal loads and other factors affected NOx, so Equation (1) does not describe the plant burner. The combined work yielded the ST 18-R burning module (ST 18-15 with mobile concentrator); at the nominal afterburning temperature (770 °C) simulations predict a threefold NOx reduction for ST 18-R relative to the old ST 18.",
+      "terms": [
+        "NOx_ST18",
+        "NOx_ST18-15",
+        "273.15+t_pc",
+        "0.4 - 0.7 kg/h",
+        "ST 18-R",
+        "mobile concentrator",
+        "770 °C",
+        "thermal loads"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R005-022",
+      "doc_id": "R005",
+      "section": "4. Conclusions",
+      "page_start": 41,
+      "page_end": 41,
+      "text": "Plant experiments on the afterburning installation of the 2xST 18 cogeneration power plant (ST 18 modules) demonstrated that adding the mobile concentrator improves the flow inside the burner. Laboratory tests on a monomodular burner showed that the ST 18-15 module, derived through numerical simulation, cuts NOx emissions by more than 30 % at 0.7 kg/h natural gas. CFD and tests toward an experimental multimodular burner with ST 18-R modules give simulated NOx emissions three times lower than the plant burner. A burner with ST 18-R modules (3 modules), geometrically similar to the plant burner, is now on the test bench for further experiments, which should provide emissions at nominal load and refine the numerical NOx model. Higher noise level and a pressure drop at the burner relative to the plant burner are expected, requiring further optimization.",
+      "terms": [
+        "2xST 18",
+        "mobile concentrator",
+        "ST 18-15",
+        "more than 30 %",
+        "multimodular burner",
+        "ST 18-R",
+        "noise level",
+        "pressure drop"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 22,
+    "pages_processed": "37-42 (PDF 1-6쪽 전체)",
+    "last_paragraph_id": "R005-022",
+    "skipped": [
+      "37쪽 저널 머리 영역(학회 로고·AIDIC 문구·Guest Editors·Copyright·ISBN/ISSN): 머리글·저작권 문구 (DOI·편집자는 document 메타데이터에 반영)",
+      "37쪽 저자 소속·이메일(barbu.ene@comoti.ro): 저자 연락처",
+      "37쪽 'Please cite this article as' 인용 안내문: 바닥글",
+      "42쪽 References: 참고문헌 목록",
+      "그림 1~5 내부 내용(그래프 점·적외선 영상 수치 표시): 캡션만 수록"
+    ],
+    "uncertain": [
+      "원문에서 위첨자 0으로 표기된 온도 단위(예: '0 0C', '125 0C', '15 0')를 °C 및 ° 로 정리함",
+      "식 (1),(2)의 NOx 단위가 식 자체에 명시되어 있지 않음(그림 2 축은 mg/Nm^3) — text에 단위를 추가하지 않음",
+      "원문 'version I/II/III', 'configuration I and II' 표기를 그대로 사용(대소문자 혼용 원문 그대로)"
+    ]
+  }
+}

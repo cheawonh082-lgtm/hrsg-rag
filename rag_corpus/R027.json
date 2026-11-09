@@ -1,0 +1,671 @@
+{
+  "document": {
+    "doc_id": "R027",
+    "title": "Modelling, sensitivity and exergy analysis of triple-pressure heat recovery steam generator",
+    "authors": [
+      "Suha Orçun Mert",
+      "Zehra Özçelik",
+      "Ceyda Kök"
+    ],
+    "year": 2020,
+    "venue": "MANAS Journal of Engineering, Volume 8 (Issue 2) (2020) Pages 106-114",
+    "doi": "",
+    "url": "",
+    "license": "© 2020 MANAS Journal of Engineering (공개 라이선스 명시 없음 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R027-001",
+      "doc_id": "R027",
+      "section": "Abstract",
+      "page_start": 106,
+      "page_end": 106,
+      "text": "Combined cycle power plants (CCPP) are gaining importance as both electricity demand and environmental concerns grow, so raising plant performance and output while cutting carbon emissions is needed. Because the heat recovery steam generator is a key CCPP component, any change to its design has a direct effect on plant performance. In the study, an HRSG (Heat Recovery Steam Generator) operating within a CCPP is modelled and analysed for sensitivity and exergy: a three-pressure HRSG is built in the Aspen Plus simulation program, sensitivity analyses are carried out and assessed, and energy and exergy analyses are made for every CCPP component. Research article; manuscript received 11.09.2020 and accepted 13.12.2020. Listed keywords: ASPEN Plus, Exergy Analysis, Sensitivity Analysis, heat recovery steam generator, Combined cycle power plant.",
+      "terms": [
+        "CCPP",
+        "HRSG",
+        "three-pressure",
+        "Aspen Plus",
+        "exergy analysis",
+        "sensitivity analyses",
+        "carbon emissions"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-002",
+      "doc_id": "R027",
+      "section": "1. Introduction",
+      "page_start": 106,
+      "page_end": 106,
+      "text": "Electricity is described as central to sustainable development, and its demand keeps rising in developed and developing countries as population and industrial use grow. Power plants burning oil, natural gas and coal turn chemical energy into electricity, but fossil fuel use brings global warming, acid rain and ozone layer thinning. Energy scenarios aimed at better plant performance and cleaner energy therefore include low-impact fossil fuel technologies, renewable sources and efficient use of all sources. The CCPP has a strong place in these scenarios because it offers adequate load response, flexibility across stages, good thermal efficiency and lower environmental impact than other fossil options.",
+      "terms": [
+        "CCPP",
+        "fossil fuel",
+        "thermal efficiency",
+        "load response",
+        "acid rain",
+        "ozone layer"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-003",
+      "doc_id": "R027",
+      "section": "1. Introduction",
+      "page_start": 106,
+      "page_end": 106,
+      "text": "A CCPP is built from three main devices: the gas turbine, the heat recovery unit and the steam turbine generator. In the gas turbine, compressed air is mixed with fuel and the hot mixture passes over the blades, spinning a turbine that drives a generator. The Heat Recovery Steam Generator (HRSG) raises steam from the gas turbine exhaust heat and sends it to the steam turbine, whose generator delivers extra electricity from that otherwise wasted exhaust heat. Turbines in conventional plants reach about 33% efficiency, whereas CCPP reach 50% or more, meaning roughly half the fuel for the same energy output. The literature reports that producing heat and electricity simultaneously from one fuel source can lift efficiency from 30% to 90%, lowering emissions and using resources more economically [1].",
+      "terms": [
+        "CCPP",
+        "HRSG",
+        "gas turbine",
+        "steam turbine",
+        "exhaust heat",
+        "33%",
+        "50%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-004",
+      "doc_id": "R027",
+      "section": "1. Introduction",
+      "page_start": 106,
+      "page_end": 107,
+      "text": "The HRSG has to satisfy the requirements of the steam turbine and the limits imposed by the gas turbine, so its design should maximize heat transfer and thermal efficiency at minimum cost; HRSG design changes directly alter CCPP efficiency, net power and production cost. Gas turbines are offered for various operating conditions such as exhaust gas and back pressure, and for a chosen gas turbine the steam turbine and HRSG must be matched, with steam cycle efficiency depending heavily on HRSG design. The HRSG recovers exhaust heat to make steam at roughly 650 °C and 13-20 MPa, and despite the development of flow loop systems, heat recovery steam systems are still used under subcritical conditions [2]. Advanced multi-pressure HRSGs are favored for their high efficiency in spite of higher cost, with two or three parallel steam streams added for the high, intermediate and low pressure stages of the steam turbines to raise thermal efficiency.",
+      "terms": [
+        "HRSG",
+        "650 °C",
+        "13-20 MPa",
+        "subcritical",
+        "multi-pressure HRSGs",
+        "net power",
+        "back pressure"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-005",
+      "doc_id": "R027",
+      "section": "1. Introduction",
+      "page_start": 107,
+      "page_end": 107,
+      "text": "Recent HRSG literature covers pressure level selection [3], modeling and design [4], the effect of heat transfer surface on thermal performance [5], structural use of the genetic algorithm [6], thermodynamic and thermo-economic parameter design [7], and exergy, environmental and economic analysis of CCCP [8]. A three-pressure-level HRSG coupling steam and gas turbines is regarded today as the latest technology, and since the HRSG strongly governs steam cycle thermal efficiency it has been widely studied [9,10]. Pelster et al. compared CCPP efficiency of steam reheat models and of double versus triple pressure HSRGs [11]; Sirinas et al. optimized single, double and triple pressure HRSGs for heat recovery and exergy efficiency [12]; Ahmadi et al. analyzed a double pressure HSRG thermodynamically and used multi-purpose optimization with cost and exergy efficiency as objectives [13].",
+      "terms": [
+        "HRSG",
+        "pressure level selection",
+        "genetic algorithm",
+        "thermo-economic",
+        "exergy efficiency",
+        "triple pressure",
+        "steam reheat"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-006",
+      "doc_id": "R027",
+      "section": "1. Introduction",
+      "page_start": 107,
+      "page_end": 107,
+      "text": "Alus and Petrovi optimized a three pressure CCGT with the goal of minimizing electricity generation cost [14]. Alobaid et al. built a detailed digital model of three pressure HRSGs in Aspen Plus from real plant data and assessed the control structure in Aspen Plus Dynamics [15]. Ali et al. carried out energy and exergy analysis of triple pressure HRSGs and found, from component-wise exergy destructions, that high pressure components destroy more exergy than low pressure ones [16]. Moosavi et al. proposed a way to improve HRSG performance in hot summer; net power rose, but HSRG exergy destruction also rose because of large temperature differences between flows [17]. Boyaghchi et al. used sensitivity analysis on compressor pressure ratio and saw thermal and exergy efficiency increase with that ratio [18]. The present work gives a comprehensive exergy analysis of a three-pressure HRSG, performs energy and exergy analyses of every CCPP component, and models the three-level HRSG system in Aspen Plus with sensitivity analysis.",
+      "terms": [
+        "CCGT",
+        "Aspen Plus Dynamics",
+        "exergy destruction",
+        "compressor pressure ratio",
+        "sensitivity analysis",
+        "HRSG",
+        "high pressure components"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-007",
+      "doc_id": "R027",
+      "section": "2.1. Modeling in ASPEN PLUS",
+      "page_start": 107,
+      "page_end": 107,
+      "text": "ASPEN (Advanced System for Process Engineering) is software used for modeling advanced power plant systems; it was created in 1981 by the United States Department of Energy together with the Massachusetts Institute of Technology (MIT) [19]. ASPEN Plus examines process behavior using engineering relations including chemical balance, mass and energy balances and reaction kinetics, and with realistic operating conditions and thermodynamic data it can reproduce actual plant behavior, helping to improve existing plants and design better ones. It is also used to study fluid configurations and look for new alternatives, and it outputs PFD-style drawings, reports, graphs and spreadsheets.",
+      "terms": [
+        "ASPEN Plus",
+        "mass and energy balances",
+        "reaction kinetics",
+        "PFD",
+        "MIT",
+        "1981"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-008",
+      "doc_id": "R027",
+      "section": "2.2. Exergy Analysis",
+      "page_start": 107,
+      "page_end": 108,
+      "text": "An energy-efficiency evaluation relies on the first law of thermodynamics, yet this law alone does not fully reveal the potentials and usage limits of the individual components of an energy system, which weakens design and manufacturing decisions. Exergy, or available energy, is the most useful work obtainable from a system as it comes to equilibrium with its environment, i.e. a measure of the work potential for a given environmental state. The second law of thermodynamics, applied as exergy analysis, gives better results for design and performance analysis of energy systems and has become important for thermal systems. Unlike energy, exergy is not conserved; it is destroyed by irreversibilities, so an overall exergy analysis shows how much loss occurs and where, exposing the thermodynamic inefficiencies of the system [20].",
+      "terms": [
+        "exergy",
+        "first law of thermodynamics",
+        "second law of thermodynamics",
+        "available energy",
+        "irreversibilities",
+        "exergy analysis"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-009",
+      "doc_id": "R027",
+      "section": "2.3. Modeling Sensitivity Analysis",
+      "page_start": 108,
+      "page_end": 108,
+      "text": "Sensitivity analysis quantifies how mathematical modeling choices or changes in system parameters affect system outputs or performance, attributing output variation to uncertain sources among the inputs. One parameter is varied by a set amount while the others are held fixed, the system is run, and the percentage change in chosen outputs is recorded. The method is used to check robustness and accuracy of model results, to understand them, and to study links between input parameters and performance; tracking parameter changes matters for identifying inputs that create uncertainty in performance, so sensitivity analysis helps remove parameter uncertainty and raise system reliability [21].",
+      "terms": [
+        "sensitivity analysis",
+        "robustness",
+        "uncertainty",
+        "reliability",
+        "input parameters"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-010",
+      "doc_id": "R027",
+      "section": "2.3. Modeling Sensitivity Analysis",
+      "page_start": 108,
+      "page_end": 108,
+      "text": "In Aspen Plus the sensitivity blocks do not alter the base simulation; they add information to the base case results, and the simulation itself runs fully independently of the sensitivity analysis. Each combination of values of the varied variables makes up one row of the sensitivity table, and the blocks are arranged in loops so that each row is evaluated a single time. The program sequences the blocks on its own.",
+      "terms": [
+        "Aspen Plus",
+        "sensitivity table",
+        "base case",
+        "blocks"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-011",
+      "doc_id": "R027",
+      "section": "3. Case study",
+      "page_start": 108,
+      "page_end": 108,
+      "text": "Figure 1 presents a typical triple pressure HRSG. With multiple pressures, duct (channel) firing and other features, HRSGs can become complex; the diagram depicts steam drums, HRSG heating surfaces, and the principal flows of gas, steam and condensate. Flue gas from the combustion turbine enters the HRSG and cools while crossing heater, reheater, drum evaporator surfaces and economizer. Condensate from the combined cycle condenser enters the economizer drum; steam goes first to the superheater and then to the high-pressure turbine, after which it returns to the heater and on to the intermediate pressure turbines. Pinch points and approach temperatures are the key HRSG design parameters, and lowering them aids cycle efficiency; avoiding operating problems also calls for optimization work, detailed heat transfer calculations and heat balances of the steam cycle.",
+      "terms": [
+        "triple pressure HRSG",
+        "steam drums",
+        "reheater",
+        "economizer",
+        "superheater",
+        "pinch points",
+        "approach temperatures",
+        "Flue gas"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-012",
+      "doc_id": "R027",
+      "section": "3. Case study",
+      "page_start": 108,
+      "page_end": 108,
+      "text": "Modeling a thermal system chiefly means computing its operating variables, normally for a given steady state, and detailed HRSG modeling and simulation is complex because many variables are involved. Operating parameters can be found through thermodynamic and exergetic analysis [22]. All results were calculated and evaluated in ASPEN Plus, with mass, energy, exergy and design equations and thermodynamic properties set up from the relevant operating variables. The calculations assume steady-state operation at ambient 15 C with 27% RH, with fuel gas composition on a molar basis of 82% CH_4, 10% C_2H_6, 2.2% C_3H_8, 2% C_4H_10, 0.8% C_5H_12, 2% CO_2 and 1% N_2. The HRSG configuration built in the ASPEN Plus Simulation Program is shown in Figure 1.",
+      "terms": [
+        "ASPEN Plus",
+        "steady-state",
+        "27% RH",
+        "CH_4",
+        "C_2H_6",
+        "CO_2",
+        "N_2",
+        "exergetic analysis"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-013",
+      "doc_id": "R027",
+      "section": "3. Case study",
+      "page_start": 109,
+      "page_end": 109,
+      "text": "Figure 1. Configuration of the Heat Recovery Steam Generator.",
+      "terms": [
+        "Heat Recovery Steam Generator",
+        "Figure 1"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-014",
+      "doc_id": "R027",
+      "section": "3.1. Exergy Calculations",
+      "page_start": 108,
+      "page_end": 108,
+      "text": "Like energy, the exergy of a stream can be split into components; neglecting nuclear, magnetic, electrical and surface tension effects, exergy (E) is: E = E_k + E_p + E_phy + E_ch   (1) (total exergy = kinetic + potential + physical + chemical exergy). E_k, E_p, E_phy and E_ch are the kinetic, potential, physical and chemical exergy; kinetic and potential exergy are neglected in this work. Physical exergy is the maximum work available when a stream at a given temperature and pressure is brought to the reference state by physical processes involving heat; chemical exergy stems from the composition difference between the stream and the reference state [20].",
+      "terms": [
+        "E_k",
+        "E_p",
+        "E_phy",
+        "E_ch",
+        "physical exergy",
+        "chemical exergy",
+        "reference state"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-015",
+      "doc_id": "R027",
+      "section": "3.1. Exergy Calculations",
+      "page_start": 108,
+      "page_end": 108,
+      "text": "The physical and chemical exergy terms are written as: E_phy = (H_1 - T_0S_1) - (H_0 - T_0S_0)   (2) (physical exergy = difference of H - T_0S between the stream state 1 and the reference state 0). E_ch = E^o_ch + Σ(xln(x))   (3) (chemical exergy = standard chemical exergy plus a mixing term summed over mole fractions x).",
+      "terms": [
+        "E_phy",
+        "E_ch",
+        "E^o_ch",
+        "T_0",
+        "Σ(xln(x))"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-016",
+      "doc_id": "R027",
+      "section": "3.1. Exergy Calculations",
+      "page_start": 108,
+      "page_end": 108,
+      "text": "For an isolated control volume at steady state the exergy balance is: E_i = E_o + W + E_D   (4) (exergy in = exergy out + work exchanged + exergy destroyed), where E_i enters the system, E_o leaves it, W is work transfer between system and environment and E_D is exergy destroyed inside. With this approach, exergy calculations were performed for the gas turbines, waste heat boilers and steam turbines of one of the two energy blocks of the combined cycle plant. The reference state is ordinary atmospheric composition (21% O_2, 79% N_2) at 20°C and 1 atm, and Figure 2 gives the basic combined cycle layout.",
+      "terms": [
+        "E_i",
+        "E_o",
+        "E_D",
+        "exergy balance",
+        "waste heat boilers",
+        "21% O_2",
+        "79% N_2",
+        "reference state"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-017",
+      "doc_id": "R027",
+      "section": "3.1. Exergy Calculations",
+      "page_start": 110,
+      "page_end": 110,
+      "text": "Figure 2. Schematic of the basic combined cycle.",
+      "terms": [
+        "Figure 2",
+        "combined cycle"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-018",
+      "doc_id": "R027",
+      "section": "3.1.1. Gas Turbine",
+      "page_start": 110,
+      "page_end": 110,
+      "text": "The gas turbine has three parts: a compressor supplying combustion and cooling air, a combustion chamber where fuel burns with the compressed air, and the turbine. Compressor: air enters at atmospheric conditions (T = 293.15 K, P = 1 atm) and is compressed with a 1/14 compression ratio, and the compressor is calculated with: E_1 + E_11 = E_3 + E_D   (5) (compressor exergy balance: inlet air exergy plus work input = outlet air exergy plus destruction); η = (E_3 - E_1) / (E_11)   (6) (compressor exergy efficiency = exergy gain of the air divided by the work input E_11).",
+      "terms": [
+        "compressor",
+        "combustion chamber",
+        "293.15 K",
+        "1/14 compression ratio",
+        "E_D",
+        "E_11",
+        "η"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-019",
+      "doc_id": "R027",
+      "section": "3.1.1. Gas Turbine",
+      "page_start": 110,
+      "page_end": 110,
+      "text": "Combustion Chamber: complete combustion is assumed, and temperature, pressure and flow are set from operating data; fuel exergy is obtained with (3) and (4). The chamber is computed with: E_3 + E_2 = E_4 + E_D   (7) (combustor exergy balance: compressed air exergy plus fuel exergy = hot gas exergy plus destruction); η = E_4/(E_3 + E_4)   (8) (combustor exergy efficiency as printed in the paper). Turbine: the gas expands to roughly atmospheric pressure (1,044 bar) with an operating outlet temperature of 900 K, and inlet conditions are T = 1570 K and P = 14 barg. Its relations are E_4 = E_11 + E_5 + E_6   (9) (turbine exergy balance: inlet gas exergy = compressor work + exhaust exergy + net work E_6) and η = (E_11 + E_6) / (E_4 - E_5)   (10) (turbine exergy efficiency = total work output over the exergy drop of the gas).",
+      "terms": [
+        "Combustion Chamber",
+        "complete combustion",
+        "E_4",
+        "1,044 bar",
+        "900 K",
+        "1570 K",
+        "14 barg",
+        "η"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-020",
+      "doc_id": "R027",
+      "section": "3.1.2. Heat recovery steam generator",
+      "page_start": 110,
+      "page_end": 110,
+      "text": "The HRSG produces superheated steam at three pressures: LP (4.3 bar), IP (25 bar) and HP (122 bar). Fifteen modules with different duties, acting as heat exchangers or evaporators, are used, and these modules and the HRSG overall are evaluated with: E_5 + E_7 = e_6 + E_8   (11) (HRSG exergy balance relating the gas stream exergies E_5, e_6 and water/steam stream exergies E_7, E_8, symbols as printed); η = (E_7 - E_8) / (e_6 - E_5)   (12) (HRSG exergy efficiency as a ratio of water/steam-side to gas-side exergy differences, as printed).",
+      "terms": [
+        "HRSG",
+        "LP (4.3 bar)",
+        "IP (25 bar)",
+        "HP (122 bar)",
+        "evaporators",
+        "E_7",
+        "e_6",
+        "η"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-021",
+      "doc_id": "R027",
+      "section": "3.1.3. Steam Turbine",
+      "page_start": 110,
+      "page_end": 110,
+      "text": "Three separate steam turbines on a common shaft are included. Inlet conditions taken from operating values are 838 K and 122 bar for HP, 835 K and 25.5 bar for IP, and 564 K and 5 bar for LP. Outlet values are given as 624 K for HP, 566.5 K at 29.4 bar for IP, and 314 K and 0.0077 bar for the stage the paper labels \"5 bar IP\".",
+      "terms": [
+        "steam turbines",
+        "HP",
+        "IP",
+        "LP",
+        "838 K",
+        "122 bar",
+        "0.0077 bar"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-022",
+      "doc_id": "R027",
+      "section": "4.1. Exergy Analysis Results",
+      "page_start": 110,
+      "page_end": 110,
+      "text": "The calculations yield exergy values, exergy losses and efficiencies at the inlets and outlets of the analyzed combined cycle equipment. For Table 1 the gas temperature is assumed not to vary across the HRSG cross-section (horizontally) on the gas side, and temperature and enthalpy changes come from energy balances; gas side nomenclature refers to the combustion products. Assuming complete combustion, the products are taken in mole fraction as 0,11 O_2, 0.78 N_2, 0.04 CO_2 and 0.07 H_2O, treated as ideal gases, and their enthalpy and entropy are evaluated on that basis.",
+      "terms": [
+        "exergy losses",
+        "energy balances",
+        "combustion products",
+        "O_2",
+        "H_2O",
+        "ideal",
+        "enthalpy",
+        "entropy"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-023",
+      "doc_id": "R027",
+      "section": "4.1. Exergy Analysis Results",
+      "page_start": 110,
+      "page_end": 111,
+      "text": "Table 1. The temperature and enthalpy changes in HRSG (modules listed in gas flow order; Energy Transfer Rate is for the hot and cold stream). Unit 14 (Superheater HP): Energy Transfer Rate [MW]=954.9; Gas side Enthalpy change [MW]=954.9; T gas i [K]=899.0; T gas o [K]=861.9; T steam i [K]=763.8; T stm o [K]=841.5. Unit 8 (Preheater): Energy Transfer Rate [MW]=2832.5; Gas side Enthalpy change [MW]=2832.5; T gas i [K]=861.9; T gas o [K]=797.6; T steam i [K]=713.0; T stm o [K]=838.3. Unit 13 (Superheater HP): Energy Transfer Rate [MW]=1081.6; Gas side Enthalpy change [MW]=1081.6; T gas i [K]=797.6; T gas o [K]=757.7; T steam i [K]=683.0; T stm o [K]=767.9. Unit 7 (Preheater): Energy Transfer Rate [MW]=2492.0; Gas side Enthalpy change [MW]=2492.0; T gas i [K]=757.7; T gas o [K]=696.7; T steam i [K]=618.3; T stm o [K]=739.0. Unit 12 (Superheater HP): Energy Transfer Rate [MW]=1037.1; Gas side Enthalpy change [MW]=1037.1; T gas i [K]=696.7; T gas o [K]=657.2; T steam i [K]=598.7; T stm o [K]=683.0. Unit 11 (Evaporator HP): Energy Transfer Rate [MW]=4.6; Gas side Enthalpy change [MW]=4.6; T gas i [K]=657.2; T gas o [K]=654.6; T steam i and T stm o = (blank). Unit 15 (Economizer HP): Energy Transfer Rate [MW]=885.4; Gas side Enthalpy change [MW]=885.4; T gas i [K]=654.6; T gas o [K]=617.9; T steam i [K]=547.7; T stm o [K]=596.7. Unit 6 (Superheater IP): Energy Transfer Rate [MW]=151.1; Gas side Enthalpy change [MW]=151.1; T gas i [K]=617.9; T gas o [K]=602.7; T steam i [K]=496.0; T stm o [K]=583.5.",
+      "terms": [
+        "Table 1",
+        "Superheater HP",
+        "Preheater",
+        "Evaporator HP",
+        "Economizer HP",
+        "Superheater IP",
+        "T gas i [K]",
+        "T stm o [K]"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-024",
+      "doc_id": "R027",
+      "section": "4.1. Exergy Analysis Results",
+      "page_start": 111,
+      "page_end": 111,
+      "text": "Table 1 (continued). The temperature and enthalpy changes in HRSG. Unit 3 (Superheater LP): Energy Transfer Rate [MW]=351.0; Gas side Enthalpy change [MW]=351.0; T gas i [K]=602.7; T gas o [K]=579.5; T steam i [K]=424.0; T stm o [K]=559.4. Unit 10 (Economizer HP): Energy Transfer Rate [MW]=772.6; Gas side Enthalpy change [MW]=772.6; T gas i [K]=579.5; T gas o [K]=545.3; T steam i [K]=498.9; T stm o [K]=547.7. Unit 5 (Evaporator IP): Energy Transfer Rate [MW]=0.1; Gas side Enthalpy change [MW]=0.1; T gas i [K]=545.3; T gas o [K]=544.9; T steam i and T stm o = (blank). Unit 4 (Economizer IP): Energy Transfer Rate [MW]=202.2; Gas side Enthalpy change [MW]=202.2; T gas i [K]=544.9; T gas o [K]=527.2; T steam i [K]=420.2; T stm o [K]=490.0. Unit 9 (Economizer HP): Energy Transfer Rate [MW]=1758.7; Gas side Enthalpy change [MW]=1758.7; T gas i [K]=527.2; T gas o [K]=474.9; T steam i [K]=422.2; T stm o [K]=498.9. Unit 2 (Evaporator LP): Energy Transfer Rate [MW]=0.2; Gas side Enthalpy change [MW]=0.2; T gas i [K]=474.9; T gas o [K]=474.4; T steam i and T stm o = (blank). Unit 1 (Preheater): Energy Transfer Rate [MW]=3521.6; Gas side Enthalpy change [MW]=3521.6; T gas i [K]=474.4; T gas o [K]=401.0; T steam i [K]=333.0; T stm o [K]=416.0.",
+      "terms": [
+        "Table 1",
+        "Superheater LP",
+        "Economizer HP",
+        "Evaporator IP",
+        "Economizer IP",
+        "Evaporator LP",
+        "Preheater",
+        "T gas o [K]"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-025",
+      "doc_id": "R027",
+      "section": "4.1. Exergy Analysis Results",
+      "page_start": 111,
+      "page_end": 111,
+      "text": "Table 2 lists the gas-side and steam-side exergy changes of each module. Exergy losses from heat transfer are expected, but the large gaps found may partly result from treating the gas side as an ideal gas. Table 2. The exergy changes (values as printed, decimal comma). Unit 1: Gas side [MW]=71,8; Water / Steam Side [MW]=11,2. Unit 2: Gas side [MW]=1,3; Water / Steam Side [MW]=1,0. Unit 3: Gas side [MW]=16,0; Water / Steam Side [MW]=1,2. Unit 4: Gas side [MW]=14,7; Water / Steam Side [MW]=1,1. Unit 5: Gas side [MW]=1,7; Water / Steam Side [MW]=0,7. Unit 6: Gas side [MW]=11,1; Water / Steam Side [MW]=1,0. Unit 7: Gas side [MW]=35,9; Water / Steam Side [MW]=13,5. Unit 8: Gas side [MW]=36,6; Water / Steam Side [MW]=18,0. Unit 9: Gas side [MW]=44,2; Water / Steam Side [MW]=8,9. Unit 10: Gas side [MW]=26,9; Water / Steam Side [MW]=7,3. Unit 11: Gas side [MW]=2,0; Water / Steam Side [MW]=1,1. Unit 12: Gas side [MW]=29,2; Water / Steam Side [MW]=15,3. Unit 13: Gas side [MW]=36,6; Water / Steam Side [MW]=10,9. Unit 14: Gas side [MW]=21,8; Water / Steam Side [MW]=9,6. Unit 15: Gas side [MW]=25,0; Water / Steam Side [MW]=10,6.",
+      "terms": [
+        "Table 2",
+        "exergy changes",
+        "Gas side [MW]",
+        "Water / Steam Side [MW]",
+        "ideal gas",
+        "heat transfer"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-026",
+      "doc_id": "R027",
+      "section": "4.1. Exergy Analysis Results",
+      "page_start": 111,
+      "page_end": 111,
+      "text": "As the figure shows, the combustion products lose exergy and cool as they move through the HRSG (the text cites Figure 3, while the plot on this page is captioned Figure 2). The last value indicates how much exergy leaves with the combustion products from the 123 MW chimney. A lower value means higher efficiency, but the chimney outlet temperature cannot be lowered very far because the water vapor in the combustion product mixture could condense. Figure 2. Change of exergy and temperature along the HRSG (caption printed as \"The Exergy and Temperate Change Through the HRSG\").",
+      "terms": [
+        "combustion products",
+        "HRSG",
+        "123 MW",
+        "chimney outlet temperature",
+        "condense",
+        "water vapor"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-027",
+      "doc_id": "R027",
+      "section": "4.1. Exergy Analysis Results",
+      "page_start": 111,
+      "page_end": 111,
+      "text": "Following the exergy calculations, exergy efficiencies and exergy losses relative to fuel exergy were obtained and listed in Table 3. The combustion chamber shows the largest exergy loss, in line with literature values; this remains a general issue for power plants, and improvements there would strongly raise overall efficiency and support more efficient energy use. The HRSG also shows a high loss, but the authors attribute its size to the calculation method and expect the real figure to lie around 3-5%.",
+      "terms": [
+        "exergy efficiencies",
+        "fuel exergy",
+        "Table 3",
+        "combustion chamber",
+        "exergy loss",
+        "HRSG",
+        "3-5%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-028",
+      "doc_id": "R027",
+      "section": "4.1. Exergy Analysis Results",
+      "page_start": 111,
+      "page_end": 111,
+      "text": "Table 3. The efficiency and loss values. Compressor: Efficiency=73.6; Loss=26.4; Loss (E_F)%=2.0; Loss for a Block (E_F)%=2.0. Turbine: Efficiency=93.2; Loss=6.8; Loss (E_F)%=3.0; Loss for a Block (E_F)%=3.0. CC: Efficiency=71.9; Loss=28.1; Loss (E_F)%=30.5; Loss for a Block (E_F)%=30.5. HRSG: Efficiency=38.3; Loss=61.7; Loss (E_F)%=22.4; Loss for a Block (E_F)%=22.4. HP St. Turbine: Efficiency=96.4; Loss=3.6; Loss (E_F)%=0.2; Loss for a Block (E_F)%=0.1. IP St. Turbine: Efficiency=93.7; Loss=6.3; Loss (E_F)%=0.7; Loss for a Block (E_F)%=0.4. LP St. Turbine: Efficiency=72.6; Loss=27.4; Loss (E_F)%=3.4; Loss for a Block (E_F)%=1.7. Chimney: Efficiency=(blank); Loss=(blank); Loss (E_F)%=12.3; Loss for a Block (E_F)%=12.3. Overall: Efficiency=28.52; Loss=71.5; Loss (E_F)%=74.5; Loss for a Block (E_F)%=72.3.",
+      "terms": [
+        "Table 3",
+        "Compressor",
+        "HRSG",
+        "HP St. Turbine",
+        "LP St. Turbine",
+        "Chimney",
+        "Loss for a Block",
+        "Efficiency"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-029",
+      "doc_id": "R027",
+      "section": "4.2. Sensitivity Analysis Results",
+      "page_start": 111,
+      "page_end": 111,
+      "text": "Figure 4 is described as giving the power produced from steam at the three pressure levels against inlet water flowrate; over the same range, intermediate pressure steam yields more than the others. A secondary axis plots the chimney outlet temperature against water flow rate: raising the water flowrate lowers the outlet gas temperature while steam production rises at the same time. Figure 4 caption: influence of water inlet flowrate on produced power and outlet gas temperature.",
+      "terms": [
+        "Figure 4",
+        "inlet water flowrate",
+        "intermediate pressure steam",
+        "chimney outlet temperature",
+        "outlet gas temperature",
+        "produced power"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-030",
+      "doc_id": "R027",
+      "section": "4.2. Sensitivity Analysis Results",
+      "page_start": 112,
+      "page_end": 112,
+      "text": "The principal outcome of the study is the power produced as the pressure of each steam type is changed. Figure 5 is described as showing how intermediate pressure affects generated power: output rises up to 29 bar and then stays constant, and the paper states that the upper intermediate pressure range for electricity generation can be set as 29 or 300 bar. Figure 5 caption: change of produced power with IP steam pressure.",
+      "terms": [
+        "Figure 5",
+        "intermediate pressure",
+        "29 bar",
+        "300 bar",
+        "IP steam pressure",
+        "produced power"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-031",
+      "doc_id": "R027",
+      "section": "4.2. Sensitivity Analysis Results",
+      "page_start": 112,
+      "page_end": 112,
+      "text": "Figure 6 gives the effect of HP steam pressure on produced power: the power output grows as the pressure is raised, and the upper limit can be chosen by users with the efficiency of other units in mind. Figure 6 caption: change of produced power with HP steam pressure. Figure 7 shows the LP steam pressure effect, which behaves differently: power increases up to 5.5 bar, dips slightly between 5.5 and 6 bar, and then remains constant; these sensitivity results are used to fix definite ranges for the system. Figure 7 caption: change of produced power with LP steam pressure. Figure 8 presents how the LP drum vapor fraction influences produced power and outlet gas temperature, with the meaning of the lines given by reference to Figure 1. Figure 8 caption: influence of LP drum vapor fraction on produced power and outlet gas temperature.",
+      "terms": [
+        "HP steam pressure",
+        "LP steam pressure",
+        "5.5 bar",
+        "LP drum vapor fraction",
+        "outlet gas temperature",
+        "produced power",
+        "Figure 6",
+        "Figure 8"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-032",
+      "doc_id": "R027",
+      "section": "5. Conclusion",
+      "page_start": 112,
+      "page_end": 112,
+      "text": "The work applied modelling, sensitivity analysis and exergy analysis to an HRSG in a CCPP: the Three-pressure HRSG was simulated in Aspen Plus with sensitivity analysis, and energy and exergy analyses were done for each CCPP component. Assessing processes through exergy pinpoints where inefficiencies arise, so the most wasteful steps can be redesigned for maximum savings, which are often substantial.",
+      "terms": [
+        "HRSG",
+        "CCPP",
+        "Three-pressure",
+        "Aspen Plus",
+        "exergy",
+        "inefficiencies"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-033",
+      "doc_id": "R027",
+      "section": "5. Conclusion",
+      "page_start": 112,
+      "page_end": 113,
+      "text": "The results show the hot gas exergy and temperature falling along the HRSG while a large share of exergy passes to the water/steam system; exergy change is also shown for different HRSG aspects. The authors conclude that the exergy lost by the gas side is not entirely transferred to the water/steam side, with part of it destroyed. Combustion chamber losses are attributed to a relatively low firing temperature, and materials tolerating much higher temperatures would raise system efficiency. HRSG losses arise from heat transfer from combustion gases to the water/Steam system, and chimney losses from an exhaust temperature near 100°C, which cannot be lowered because the gases hold much water vapor that would condense below 100°C and cause failure, making this loss unavoidable.",
+      "terms": [
+        "HRSG",
+        "water/steam",
+        "Combustion chamber",
+        "firing temperature",
+        "chimney",
+        "100°C",
+        "condense"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R027-034",
+      "doc_id": "R027",
+      "section": "5. Conclusion",
+      "page_start": 113,
+      "page_end": 113,
+      "text": "The exergy analysis places exergy destruction (energy loss) at 30% in the combustion chambers, 22 % in the HRSG and 12,4 % at the chimney, so plant efficiency depends mostly on these items and improving them would markedly raise overall plant efficiency. The sensitivity analysis indicates that HP and IP pressure matter most for produced power, while overall exergy efficiency reaches 28.2%. Achieving higher efficiencies remains a target for researchers and engineers.",
+      "terms": [
+        "exergy destruction",
+        "combustion chambers",
+        "HRSG",
+        "12,4 %",
+        "HP and IP pressure",
+        "28.2%",
+        "exergy efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 34,
+    "pages_processed": "106-114 (PDF 1-9쪽 전체)",
+    "last_paragraph_id": "R027-034",
+    "skipped": [
+      "106쪽 저자 소속·이메일·ORCID: 저자 연락처",
+      "각 쪽 머리글(S.O. Mert, Z.Özçelik, C. Kök / MANAS Journal of Engineering ...)·바닥글(MJEN 로고, MANAS Journal of Engineering © 2020, www.journals.manas.edu.kg): 머리글·바닥글·저널 로고·저작권 문구",
+      "113-114쪽 References [1]-[22]: 참고문헌 목록",
+      "그림 1~8 내부 내용(계통도·그래프 축/데이터): 캡션과 본문 설명만 수록"
+    ],
+    "uncertain": [
+      "106쪽은 인쇄 쪽번호가 보이지 않아 수록 범위(Pages 106-114)와 107쪽 번호로부터 106쪽으로 기재함",
+      "108쪽 2단 편집: 추출 텍스트에서 '3.1 Exergy Calculations'가 '3. Case study'보다 앞에 나오나, 실제 읽기 순서(좌단 3. Case study → 우단 모델링 문단 → 3.1)로 바로잡음",
+      "111쪽 Table 2와 Table 3가 인쇄본에서 겹쳐 인쇄됨: pdfplumber 글자 크기(Table 2=10pt, Table 3=9pt)와 좌표로 분리해 판독함. Table 2 Unit 9~15 값은 이 분리 결과에 의존",
+      "Table 2 수치는 원문 소수점 쉼표(71,8 등)를 그대로 유지. Table 3 'CC'는 원문 약어 그대로 둠(연소실로 보이나 단정하지 않음)",
+      "111쪽 그래프 캡션이 'Figure 2'로 중복 표기되어 있고 본문은 'Figure 3'으로 인용함 — 캡션 번호 그대로 기재",
+      "Figure 4 캡션(water inlet flowrate)과 Figure 5 캡션(IP steam pressures)이 그래프 축(IP Pressure / Water Flow Rate)과 서로 뒤바뀐 것으로 보이나 원문 캡션·본문 설명대로 기재",
+      "Eq. (8) η=E4/(E3+E4), Eq. (11)의 소문자 e6, 3.1.3절 출구조건 '314 K and 0.0077 bar for 5 bar IP'(LP로 추정되나 단정 안 함), '29 or 300 bar'는 원문 표기 그대로 둠"
+    ]
+  }
+}

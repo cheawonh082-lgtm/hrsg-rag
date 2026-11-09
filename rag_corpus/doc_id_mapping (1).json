@@ -1,0 +1,754 @@
+[
+  {
+    "doc_id": "R001",
+    "source_file": "rlfd_202407179.pdf",
+    "title": "가스 터빈 복합 사이클 발전소의 3압력 재열 폐열 보일러의 동적 운전 특성 분석",
+    "authors": [],
+    "year": null,
+    "venue": "",
+    "doi": "",
+    "url": "",
+    "license": "PDF에 저작권·라이선스 표기 없음 (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "ko",
+    "paragraph_count": 1
+  },
+  {
+    "doc_id": "R002",
+    "source_file": "CFKO200834939674101.pdf",
+    "title": "온수, 증기 동시 발생형 가스엔진 열병합발전의 배열회수 특성: 100 kW급 모형 실험",
+    "authors": [
+      "안준",
+      "김혁주",
+      "최규성",
+      "송대석"
+    ],
+    "year": null,
+    "venue": "대한설비공학회 [판독 불가]계학술발표대회 논문집",
+    "doi": "",
+    "url": "",
+    "license": "원문에 저작권·라이선스 표기 없음 (DBpia/NuriMedia 제공 PDF, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "ko",
+    "paragraph_count": 19
+  },
+  {
+    "doc_id": "R003",
+    "source_file": "encit2008.pdf",
+    "title": "Off design modeling and simulation of the HRSG components in combined cycle power plants",
+    "authors": [
+      "Marcelo Assato",
+      "Rafael S. Barbosa",
+      "Luís Fernando Figueira da Silva",
+      "Sandro Barros Ferreira"
+    ],
+    "year": 2008,
+    "venue": "Proceedings of ENCIT 2008, 12th Brazilian Congress of Thermal Engineering and Sciences, November 10-14, 2008, Belo Horizonte, MG",
+    "doi": "",
+    "url": "",
+    "license": "Copyright © 2008 by ABCM (공개 라이선스 표기 없음 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 35
+  },
+  {
+    "doc_id": "R004",
+    "source_file": "EBTF_D1.4.3_2011.pdf",
+    "title": "European best practice guidelines for assessment of CO2 capture technologies",
+    "authors": [
+      "Rahul Anantharaman",
+      "Olav Bolland",
+      "Nick Booth",
+      "Eva van Dorst",
+      "Clas Ekstrom",
+      "Eva Sanchez Fernandes",
+      "Flavio Franco",
+      "Ennio Macchi",
+      "Giampaolo Manzolini",
+      "Djordje Nikolic",
+      "Allen Pfeffer",
+      "Mark Prins",
+      "Sina Rezvani",
+      "Laurence Robinson"
+    ],
+    "year": 2011,
+    "venue": "DECARBit FP7 project (Project no. 211971, FP7 - ENERGY.2007.5.1.1), Deliverable D 1.4.3, WP 1.4 - European Benchmarking Task Force (lead participant: Alstom UK)",
+    "doi": "",
+    "url": "",
+    "license": "Copyright © DECARBit Consortium 2008-2011; Dissemination Level PU (Public); 공개 라이선스(CC 등) 표기 없음 (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 178
+  },
+  {
+    "doc_id": "R005",
+    "source_file": "CET2013_034_007.pdf",
+    "title": "Afterburning Installation of 2xST 18 Cogeneration Power Plant – Investigations on Combustion and NOx Emissions",
+    "authors": [
+      "Ene Barbu",
+      "Gheorghe Fetea",
+      "Romulus Petcu",
+      "Valeriu Vilag",
+      "Luminita Dragasanu"
+    ],
+    "year": 2013,
+    "venue": "Chemical Engineering Transactions, Vol. 34, 2013, pp. 37-42 (Guest Editors: Neven Duić, Petar Sabev Varbanov)",
+    "doi": "10.3303/CET1334007",
+    "url": "",
+    "license": "Copyright © 2013, AIDIC Servizi S.r.l. (공개 라이선스 표기 없음 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 22
+  },
+  {
+    "doc_id": "R006",
+    "source_file": "GE-GER-3574G.pdf",
+    "title": "GE Combined-Cycle Product Line and Performance",
+    "authors": [
+      "D.L. Chase",
+      "P.T. Kehoe"
+    ],
+    "year": 2000,
+    "venue": "GE Power Systems, GER-3574G (10/00)",
+    "doi": "",
+    "url": "",
+    "license": "GE Power Systems technical paper GER-3574G; no copyright or license statement printed in the document (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 85
+  },
+  {
+    "doc_id": "R007",
+    "source_file": "CFKO201133254120910.pdf",
+    "title": "대용량 복합화력발전소 배열회수보일러 제어에 관한 고찰",
+    "authors": [
+      "최인규",
+      "정인영",
+      "신만수"
+    ],
+    "year": 2011,
+    "venue": "2011년도 대한전기학회 하계학술대회 논문집 (2011. 7. 20-22), pp.1812-1813",
+    "doi": "",
+    "url": "",
+    "license": "원문에 저작권·라이선스 표기 없음 (DBpia/NuriMedia 제공 PDF, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "ko",
+    "paragraph_count": 15
+  },
+  {
+    "doc_id": "R008",
+    "source_file": "JAKO200819463917983.pdf",
+    "title": "배열회수보일러의 부하변동 운전에 따른 과열기 튜브들의 응력거동",
+    "authors": [
+      "정재헌",
+      "송정일"
+    ],
+    "year": 2008,
+    "venue": "한국태양에너지학회 논문집 (Journal of the Korean Solar Energy Society), Vol. 28, No. 6, pp.33-39, ISSN 1598-6411",
+    "doi": "",
+    "url": "",
+    "license": "원문에 저작권·라이선스 표기 없음 (스캔 PDF, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "ko",
+    "paragraph_count": 23
+  },
+  {
+    "doc_id": "R009",
+    "source_file": "Dooley-Lister-FAC-2018.pdf",
+    "title": "Flow-Accelerated Corrosion in Steam Generating Plants",
+    "authors": [
+      "Barry Dooley",
+      "Derek Lister"
+    ],
+    "year": 2018,
+    "venue": "PowerPlant Chemistry (PPCHEM) 2018, 20(4), 194-244",
+    "doi": "",
+    "url": "",
+    "license": "© 2018 by Waesseri GmbH. All rights reserved; Author's Copy (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 173
+  },
+  {
+    "doc_id": "R010",
+    "source_file": "Gartia-2007-IJTS-natural-circulation-parallel-channels.pdf",
+    "title": "Analysis of metastable regimes in a parallel channel single phase natural circulation system with RELAP5/MOD3.2",
+    "authors": [
+      "M.R. Gartia",
+      "D.S. Pilkhwal",
+      "P.K. Vijayan",
+      "D. Saha"
+    ],
+    "year": 2007,
+    "venue": "International Journal of Thermal Sciences 46 (2007) 1064–1074",
+    "doi": "10.1016/j.ijthermalsci.2006.11.016",
+    "url": "",
+    "license": "© 2006 Elsevier Masson SAS. All rights reserved (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 39
+  },
+  {
+    "doc_id": "R011",
+    "source_file": "JES2025_ShatAlBasra.pdf",
+    "title": "Mathematical modeling and performance analysis of heat recovery steam generator at Shat-Al Basra power plant",
+    "authors": [
+      "Mujtaba Hanoon",
+      "Mohammad N. Fares",
+      "Mohammad A. Taher"
+    ],
+    "year": 2025,
+    "venue": "Journal of Energy Systems 2025; 9(2): 194-206",
+    "doi": "10.30521/jes.1652961",
+    "url": "https://dergipark.org.tr/jes",
+    "license": "2025 Published by peer-reviewed open access scientific journal, JES at DergiPark (Open Access; 별도 CC 라이선스 표기 없음 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en",
+    "paragraph_count": 41
+  },
+  {
+    "doc_id": "R012",
+    "source_file": "adminARO_11098_20230221_V2.pdf",
+    "title": "Simulating Combined Cycle and Gas Turbine Power Plant under Design Condition using Open-Source Software DWSIM: A Comparative Study",
+    "authors": [
+      "Twana N. Hassan",
+      "Saif T. Manji"
+    ],
+    "year": 2023,
+    "venue": "ARO-The Scientific Journal of Koya University, Vol. XI, No. 1 (2023), Article ID: ARO.11098, pp. 60-71",
+    "doi": "10.14500/aro.11098",
+    "url": "http://dx.doi.org/10.14500/aro.11098",
+    "license": "Copyright © 2023 Twana N. Hassan, Saif T. Manji. This is an open access article distributed under the Creative Commons Attribution License (CC BY → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en",
+    "paragraph_count": 49,
+    "duplicate_uploads": [
+      "ARO2023_Koya.pdf (4차 업로드, 동일 파일)"
+    ]
+  },
+  {
+    "doc_id": "R013",
+    "source_file": "Ibrahim2013_TSCI.pdf",
+    "title": "Study on effective parameter of the triple-pressure reheat combined cycle performance",
+    "authors": [
+      "Thamir K. Ibrahim",
+      "Mustafizur M. Rahman"
+    ],
+    "year": 2013,
+    "venue": "Thermal Science, Year 2013, Vol. 17, No. 2, pp. 497-508",
+    "doi": "10.2298/TSCI111016143I",
+    "url": "",
+    "license": "© 2013. This work is licensed under https://creativecommons.org/licenses/by-nc-nd/4.0/ (CC BY-NC-ND 4.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en",
+    "paragraph_count": 32
+  },
+  {
+    "doc_id": "R014",
+    "source_file": "IEAGHG_2012-08.pdf",
+    "title": "CO2 Capture at Gas Fired Power Plants",
+    "authors": [
+      "Parsons Brinckerhoff",
+      "Neil Smith",
+      "Geoff Miller",
+      "Indran Aandi",
+      "Richard Gadsen"
+    ],
+    "year": 2012,
+    "venue": "IEAGHG (IEA Greenhouse Gas R&D Programme) Technical Report 2012/8, July 2012; main study report: Parsons Brinckerhoff Final Report, Project Number 64225A, Document No. 64225A-DVL-RPT-003",
+    "doi": "",
+    "url": "",
+    "license": "Copyright © IEA Environmental Projects Ltd. (IEAGHG) 2012. All rights reserved. (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 375
+  },
+  {
+    "doc_id": "R015",
+    "source_file": "IAPWS-IF97-Rev2007.pdf",
+    "title": "Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam",
+    "authors": [
+      "The International Association for the Properties of Water and Steam (IAPWS)"
+    ],
+    "year": 2007,
+    "venue": "IAPWS R7-97(2012), Lucerne, Switzerland, August 2007",
+    "doi": "",
+    "url": "http://www.iapws.org",
+    "license": "© 2007 International Association for the Properties of Water and Steam. Publication in whole or in part is allowed in all countries provided that attribution is given to IAPWS (출처 표기 시 전재 허용 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en",
+    "paragraph_count": 133
+  },
+  {
+    "doc_id": "R016",
+    "source_file": "IAPWS-TGD3-10.pdf",
+    "title": "Technical Guidance Document – 2015 Revision: Volatile treatments for the steam-water circuits of fossil and combined cycle/HRSG power plants",
+    "authors": [
+      "IAPWS"
+    ],
+    "year": 2015,
+    "venue": "International Association for the Properties of Water and Steam, IAPWS TGD3-10(2015), Stockholm, Sweden, July 2015",
+    "doi": "",
+    "url": "http://www.iapws.org",
+    "license": "© 2015 International Association for the Properties of Water and Steam. Publication in whole or in part is allowed in all countries provided that attribution is given to IAPWS (출처 표기 시 전재 허용 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en",
+    "paragraph_count": 72
+  },
+  {
+    "doc_id": "R017",
+    "source_file": "IAPWS-TGD7-16.pdf",
+    "title": "Technical Guidance Document: HRSG High Pressure Evaporator Sampling for Internal Deposit Identification and Determining the Need to Chemical Clean",
+    "authors": [
+      "IAPWS"
+    ],
+    "year": 2016,
+    "venue": "International Association for the Properties of Water and Steam, IAPWS TGD7-16, Dresden, Germany, September 2016",
+    "doi": "",
+    "url": "http://www.iapws.org",
+    "license": "© 2016 International Association for the Properties of Water and Steam. Publication in whole or in part is allowed in all countries provided that attribution is given to IAPWS (출처 표기 시 전재 허용 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en",
+    "paragraph_count": 65
+  },
+  {
+    "doc_id": "R018",
+    "source_file": "JAKO200910348030935.pdf",
+    "title": "발전소 복수기 배열회수의 지역난방 및 연료라인 예열용 활용타당성 검토",
+    "authors": [
+      "정훈",
+      "황광원"
+    ],
+    "year": 2009,
+    "venue": "신재생에너지, Vol.5, No.3, pp.40-48 (2009. 9), 논문코드 [2009-09-GT-006]",
+    "doi": "",
+    "url": "",
+    "license": "원문에 저작권·라이선스 표기 없음 (DBpia/NuriMedia 제공 PDF, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "ko",
+    "paragraph_count": 42
+  },
+  {
+    "doc_id": "R019",
+    "source_file": "Karimkashi2012_AFMC.pdf",
+    "title": "Numerical Computation of Pressure Drop across an Off Supplementary Firing Burner in Heat Recovery Steam Generator",
+    "authors": [
+      "Shervin Karimkashi",
+      "Mohammad J. Kermani",
+      "Ahmad Sharifian",
+      "Javad Hashempour"
+    ],
+    "year": 2012,
+    "venue": "18th Australasian Fluid Mechanics Conference, Launceston, Australia, 3-7 December 2012",
+    "doi": "",
+    "url": "",
+    "license": "원문에 저작권·라이선스 표기 없음 (학술대회 논문, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 21
+  },
+  {
+    "doc_id": "R020",
+    "source_file": "Kim2002_KSMEB.pdf",
+    "title": "삼중압 열회수 증기발생기와 증기터빈 시스템의 열설계 해석",
+    "authors": [
+      "이봉렬",
+      "김동섭",
+      "노승탁",
+      "신흥태",
+      "전용준"
+    ],
+    "year": 2002,
+    "venue": "대한기계학회논문집 B권, 제26권 제3호, pp.507-514, 2002",
+    "doi": "",
+    "url": "",
+    "license": "원문(스캔본)에 저작권·라이선스 표기 없음 (대한기계학회 학술지, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "ko",
+    "paragraph_count": 39
+  },
+  {
+    "doc_id": "R021",
+    "source_file": "CFKO200433239311738.pdf",
+    "title": "관류형 아임계압 배열회수보일러의 열성능 모델링과 검증",
+    "authors": [
+      "이채수",
+      "최영준",
+      "김현기",
+      "양옥철",
+      "정재헌"
+    ],
+    "year": 2004,
+    "venue": "대한기계학회 2004년도 추계학술대회 논문집, pp.1692-1697",
+    "doi": "",
+    "url": "",
+    "license": "원문에 라이선스 표기 없음; PDF 각 쪽에 'Copyright (C) 2005 NuriMedia Co., Ltd.' 워터마크 (DBpia/NuriMedia 제공, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "ko",
+    "paragraph_count": 32
+  },
+  {
+    "doc_id": "R022",
+    "source_file": "CFKO201133254120932.pdf",
+    "title": "500MW 화력발전소 관류보일러 재열기 온도제어에 관한 연구",
+    "authors": [
+      "이주현",
+      "임익헌",
+      "박두용",
+      "유광명",
+      "변승현"
+    ],
+    "year": 2011,
+    "venue": "2011년도 대한전기학회 하계학술대회 논문집 (2011. 7. 20-22), pp.1838-1839",
+    "doi": "",
+    "url": "",
+    "license": "원문에 저작권·라이선스 표기 없음 (DBpia/NuriMedia 제공 PDF, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "ko",
+    "paragraph_count": 12
+  },
+  {
+    "doc_id": "R023",
+    "source_file": "AUT2016_thesis.pdf",
+    "title": "An Investigation into the Level of Fidelity Required to Model Heat Exchangers of a Heat Recovery Steam Generator",
+    "authors": [
+      "Hanon Lim"
+    ],
+    "year": 2016,
+    "venue": "Master of Engineering thesis, School of Engineering, Computer & Mathematical Sciences, Auckland University of Technology (supervisors: David I. Wilson, Jonathan Currie)",
+    "doi": "",
+    "url": "",
+    "license": "저작권/라이선스 표기 없음 (AUT 석사학위논문; 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 196
+  },
+  {
+    "doc_id": "R024",
+    "source_file": "Maghsoudi2017_TSCI.pdf",
+    "title": "Study of the effect of using duct burner on the functional parameters of the two repowered cycles through exergy analysis",
+    "authors": [
+      "Karim Maghsoudi Mehrabani",
+      "Abdollah Mehrpanahi",
+      "Vahid Rouhani",
+      "Sadegh Nikbakht Naser Abad"
+    ],
+    "year": 2017,
+    "venue": "Thermal Science, Year 2017, Vol. 21, No. 6B, pp. 3011-3023",
+    "doi": "10.2298/TSCI151207310M",
+    "url": "https://doi.org/10.2298/TSCI151207310M",
+    "license": "© 2017 Society of Thermal Engineers of Serbia. Published by the Vinča Institute of Nuclear Sciences, Belgrade, Serbia. Open access article distributed under the CC BY-NC-ND 4.0 terms and conditions (CC BY-NC-ND 4.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en",
+    "paragraph_count": 41
+  },
+  {
+    "doc_id": "R025",
+    "source_file": "marner1983_nasa.pdf",
+    "title": "A Survey of Gas-Side Fouling in Industrial Heat-Transfer Equipment",
+    "authors": [
+      "W. J. Marner",
+      "J. W. Suitor"
+    ],
+    "year": 1983,
+    "venue": "JPL Publication 83-74, Jet Propulsion Laboratory, California Institute of Technology; prepared for U.S. Department of Energy / Battelle Pacific Northwest Laboratory through an agreement with NASA (November 1983)",
+    "doi": "",
+    "url": "",
+    "license": "U.S. 정부(DOE) 지원 보고서(JPL/NASA 경유), 정부 면책문구(disclaimer)만 있고 공개 라이선스(CC 등) 표기 없음 (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 197
+  },
+  {
+    "doc_id": "R026",
+    "source_file": "JPCS2025_3028.pdf",
+    "title": "Energy and exergy analysis for state-of-art intercooled gas turbine injected steam CCPP",
+    "authors": [
+      "E Z Massoud",
+      "W M El-Maghlany",
+      "A I Shehata",
+      "M K A Kandil"
+    ],
+    "year": 2025,
+    "venue": "Journal of Physics: Conference Series 3028 (2025) 012005 (Technologies and Materials for Renewable Energy, Environment and Sustainability), IOP Publishing",
+    "doi": "10.1088/1742-6596/3028/1/012005",
+    "url": "https://doi.org/10.1088/1742-6596/3028/1/012005",
+    "license": "Content from this work may be used under the terms of the Creative Commons Attribution 4.0 licence. Published under licence by IOP Publishing Ltd (CC BY 4.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en",
+    "paragraph_count": 76
+  },
+  {
+    "doc_id": "R027",
+    "source_file": "Ozcelik2020_MANAS.pdf",
+    "title": "Modelling, sensitivity and exergy analysis of triple-pressure heat recovery steam generator",
+    "authors": [
+      "Suha Orçun Mert",
+      "Zehra Özçelik",
+      "Ceyda Kök"
+    ],
+    "year": 2020,
+    "venue": "MANAS Journal of Engineering, Volume 8 (Issue 2) (2020) Pages 106-114",
+    "doi": "",
+    "url": "",
+    "license": "© 2020 MANAS Journal of Engineering (공개 라이선스 명시 없음 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 34
+  },
+  {
+    "doc_id": "R028",
+    "source_file": "Mohammd2015_TSCI.pdf",
+    "title": "Thermoeconomic optimization of triple pressure heat recovery steam generator operating parameters for combined cycle plants",
+    "authors": [
+      "Mohammed S. Mohammed",
+      "Milan V. Petrović"
+    ],
+    "year": 2015,
+    "venue": "Thermal Science, Year 2015, Vol. 19, No. 2, pp. 447-460",
+    "doi": "10.2298/TSCI131124040M",
+    "url": "",
+    "license": "Copyright of Thermal Science is the property of Society of Thermal Engineers of Serbia (EBSCO 사본, CC 표기 없음 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 31
+  },
+  {
+    "doc_id": "R029",
+    "source_file": "najjar2020_seta.pdf",
+    "title": "Degradation analysis of a combined cycle heat recovery steam generator under full and part load conditions",
+    "authors": [
+      "Yousef S.H. Najjar",
+      "Osama F.A. Alalul",
+      "A. Abu-Shamleh"
+    ],
+    "year": 2020,
+    "venue": "Sustainable Energy Technologies and Assessments 37 (2020) 100587, Elsevier",
+    "doi": "10.1016/j.seta.2019.100587",
+    "url": "https://doi.org/10.1016/j.seta.2019.100587",
+    "license": "© 2019 Elsevier Ltd. All rights reserved. (공개 라이선스 아님 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 37
+  },
+  {
+    "doc_id": "R030",
+    "source_file": "dnb_1156187052.pdf",
+    "title": "Thermal Design and Optimization of Heat Recovery Steam Generators and Waste Heat Boilers",
+    "authors": [
+      "Ali Rezaie Navaie"
+    ],
+    "year": 2017,
+    "venue": "Dissertation (Dr.-Ing.), Technische Universität Berlin, Fakultät III – Prozesswissenschaften, Institut für Energietechnik, Berlin 2017",
+    "doi": "",
+    "url": "",
+    "license": "PDF에 저작권·라이선스 표기 없음 (DOI/URN 표기도 없음) (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 171
+  },
+  {
+    "doc_id": "R031",
+    "source_file": "JPCS2019_pinch.pdf",
+    "title": "Thermodynamics Performance Evaluation in Combined Cycle Power Plant by Using Combined Pinch and Exergy Analysis",
+    "authors": [
+      "M I Riady",
+      "D Santoso",
+      "M D Bustan"
+    ],
+    "year": 2019,
+    "venue": "Journal of Physics: Conference Series 1198 (2019) 042006 (SENTEN 2018 - Symposium of Emerging Nuclear Technology and Engineering Novelty), IOP Publishing",
+    "doi": "10.1088/1742-6596/1198/4/042006",
+    "url": "https://doi.org/10.1088/1742-6596/1198/4/042006",
+    "license": "Content from this work may be used under the terms of the Creative Commons Attribution 3.0 licence. Published under licence by IOP Publishing Ltd (CC BY 3.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en",
+    "paragraph_count": 26
+  },
+  {
+    "doc_id": "R032",
+    "source_file": "Shin2003_KSME.pdf",
+    "title": "Performance Analysis of a Triple Pressure HRSG",
+    "authors": [
+      "Jee-Young Shin",
+      "Young-Seok Son",
+      "Moo-Geun Kim",
+      "Jae-Soo Kim",
+      "Yong-Joon Jeon"
+    ],
+    "year": 2003,
+    "venue": "KSME International Journal, Vol. 17, No. 11, pp. 1746-1755, 2003",
+    "doi": "",
+    "url": "",
+    "license": "KSME International Journal (Korean Society of Mechanical Engineers) 게재 논문, PDF에 저작권·공개 라이선스 표기 없음 (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 36
+  },
+  {
+    "doc_id": "R033",
+    "source_file": "PG_nCO2PP_2023.pdf",
+    "title": "Analysis of CO2 capture process from flue-gases in combined cycle gas turbine power plant using post-combustion capture technology",
+    "authors": [
+      "Navaneethan Subramanian",
+      "Paweł Madejski"
+    ],
+    "year": 2023,
+    "venue": "Energy, Vol. 282 (2023) 128311",
+    "doi": "10.1016/j.energy.2023.128311",
+    "url": "https://doi.org/10.1016/j.energy.2023.128311",
+    "license": "0360-5442/© 2023 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY-NC license (http://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en",
+    "paragraph_count": 77
+  },
+  {
+    "doc_id": "R034",
+    "source_file": "JPCS2017_891.pdf",
+    "title": "The extension of the operational range of combined-cycle power plant with a triple-pressure heat recovery steam generator",
+    "authors": [
+      "B D Teplov",
+      "V D Burov"
+    ],
+    "year": 2017,
+    "venue": "Journal of Physics: Conference Series 891 (2017) 012208 (PTPPE-2017), IOP Publishing",
+    "doi": "10.1088/1742-6596/891/1/012208",
+    "url": "https://doi.org/10.1088/1742-6596/891/1/012208",
+    "license": "Content from this work may be used under the terms of the Creative Commons Attribution 3.0 licence. Published under licence by IOP Publishing Ltd (CC BY 3.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en",
+    "paragraph_count": 21
+  },
+  {
+    "doc_id": "R035",
+    "source_file": "IJES2023_Hamitabat.pdf",
+    "title": "Energy and exergy analysis of the 1220 MW natural gas-fired Hamitabat combined cycle power plant",
+    "authors": [
+      "Göksel Topal",
+      "Tayfun Tanbay"
+    ],
+    "year": 2023,
+    "venue": "International Journal of Energy Studies (Int J Energy Studies) 2023; 8(4): 781-808, DergiPark (e-ISSN 2717-7513)",
+    "doi": "10.58559/ijes.1327547",
+    "url": "https://dergipark.org.tr/en/pub/ijes",
+    "license": "International Journal of Energy Studies (DergiPark) Research Article, PDF에 CC 등 공개 라이선스 문구·저작권 표기 없음 (PDF 텍스트·메타데이터·1쪽 이미지 확인) → 라이선스 불명확 → paraphrase",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 48
+  },
+  {
+    "doc_id": "R036",
+    "source_file": "Ansaldo_HRSG.pdf",
+    "title": "Ansaldo Caldaie Experience in HRSG Design Developments",
+    "authors": [
+      "G. Volpi",
+      "G. Silva",
+      "R. Piasente"
+    ],
+    "year": null,
+    "venue": "",
+    "doi": "",
+    "url": "",
+    "license": "저작권·라이선스 표기 없음 (Ansaldo Caldaie, Italy 기술 논문; 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 38
+  },
+  {
+    "doc_id": "R037",
+    "source_file": "NETL-Baseline-Vol1-2025.pdf",
+    "title": "Cost and Performance Baseline for Fossil Energy Plants Volume 1a: Bituminous Coal (PC) and Natural Gas to Electricity, Revision 3",
+    "authors": [
+      "Tim Fout",
+      "Alexander Zoelle",
+      "Dale Keairns",
+      "Marc Turner",
+      "Mark Woods",
+      "Norma Kuehn",
+      "Vasant Shah",
+      "Vincent Chou",
+      "Lora Pinkerton"
+    ],
+    "year": 2015,
+    "venue": "U.S. DOE National Energy Technology Laboratory report DOE/NETL-2015/1723, July 6, 2015 (prepared by Energy Sector Planning and Analysis (ESPA) – Booz Allen Hamilton and WorleyParsons Group, Inc. – under DOE NETL Contract DE-FE0004001, ESPA Task 341.03, Activity 17)",
+    "doi": "",
+    "url": "",
+    "license": "U.S. Government (DOE/NETL) report; only a standard U.S. Government disclaimer is printed, no explicit open license or public-domain statement (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 415
+  },
+  {
+    "doc_id": "R038",
+    "source_file": "energies-08-01101.pdf",
+    "title": "Slagging and Fouling Characteristics of HRSG for Ferrosilicon Electric Furnaces",
+    "authors": [
+      "Yungang Wang",
+      "Heng Chen",
+      "Zhongya Chen",
+      "Haidong Ma",
+      "Qinxin Zhao"
+    ],
+    "year": 2015,
+    "venue": "Energies 2015, 8, 1101-1113, MDPI",
+    "doi": "10.3390/en8021101",
+    "url": "https://doi.org/10.3390/en8021101",
+    "license": "© 2015 by the authors; licensee MDPI, Basel, Switzerland. Open access article distributed under the terms and conditions of the Creative Commons Attribution license (http://creativecommons.org/licenses/by/4.0/) (CC BY 4.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en",
+    "paragraph_count": 33
+  },
+  {
+    "doc_id": "R039",
+    "source_file": "AoT2019_Almutairi.pdf",
+    "title": "Energetic and exergetic analysis of a triple-pressure reheat combined cycle power using different primary movers",
+    "authors": [
+      "Abdulrahman Almutairi",
+      "Hamad Alhajeri",
+      "Abdulrahman Alenezi"
+    ],
+    "year": 2019,
+    "venue": "Archives of Thermodynamics, Vol. 40 (2019), No. 2, pp. 87–105",
+    "doi": "10.24425/ather.2019.129543",
+    "url": "",
+    "license": "PDF에 저작권·Creative Commons 라이선스 문구 없음 (머리글 www.czasopisma.pan.pl / www.journals.pan.pl 표기만 있음; 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 30
+  },
+  {
+    "doc_id": "R040",
+    "source_file": "Alus2012_TSCI.pdf",
+    "title": "Optimization of the triple-pressure combined cycle power plant",
+    "authors": [
+      "Muammer Alus",
+      "Milan V. Petrović"
+    ],
+    "year": 2012,
+    "venue": "Thermal Science, Year 2012, Vol. 16, No. 3, pp. 901-914",
+    "doi": "10.2298/TSCI120517137A",
+    "url": "",
+    "license": "Copyright of Thermal Science is the property of Society of Thermal Engineers of Serbia (EBSCO 사본, CC 표기 없음 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en",
+    "paragraph_count": 28
+  },
+  {
+    "doc_id": "R041",
+    "source_file": "Almutairi-2015-Energies.pdf",
+    "title": "Energetic and Exergetic Analysis of Combined Cycle Power Plant: Part-1 Operation and Performance",
+    "authors": [
+      "Abdulrahman Almutairi",
+      "Pericles Pilidis",
+      "Nawaf Al-Mutawa"
+    ],
+    "year": 2015,
+    "venue": "Energies 2015, 8, 14118–14135 (MDPI)",
+    "doi": "10.3390/en81212418",
+    "url": "https://doi.org/10.3390/en81212418",
+    "license": "© 2015 by the authors; licensee MDPI, Basel, Switzerland. Open access article distributed under the Creative Commons by Attribution (CC-BY) license (http://creativecommons.org/licenses/by/4.0/) (CC BY 4.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en",
+    "paragraph_count": 57
+  }
+]

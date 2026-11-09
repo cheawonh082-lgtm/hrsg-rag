@@ -1,0 +1,683 @@
+{
+  "document": {
+    "doc_id": "R003",
+    "title": "Off design modeling and simulation of the HRSG components in combined cycle power plants",
+    "authors": [
+      "Marcelo Assato",
+      "Rafael S. Barbosa",
+      "Luís Fernando Figueira da Silva",
+      "Sandro Barros Ferreira"
+    ],
+    "year": 2008,
+    "venue": "Proceedings of ENCIT 2008, 12th Brazilian Congress of Thermal Engineering and Sciences, November 10-14, 2008, Belo Horizonte, MG",
+    "doi": "",
+    "url": "",
+    "license": "Copyright © 2008 by ABCM (공개 라이선스 표기 없음 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R003-001",
+      "doc_id": "R003",
+      "section": "Abstract",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "The paper models a two-pressure heat recovery steam generator (HRSG), with high pressure (HP) and low pressure (LP) levels, and reports simulated performance both at the design point and at off-design (part-load) operation. For part-load prediction the heat exchangers of the HRSG are identified as the components that need the most careful modeling; pumps, valves, the deaerator and the desuperheater are modeled as well and their behavior is shown. In the off-design calculation, the pressure drops and heat transfer of the superheaters, evaporators and economizers are obtained by referencing design-point pressures on the gas and water/steam sides and the overall heat transfer coefficients. Several exponents in the equations are tuned to part-load operating data of the plant, and the predicted dual-pressure HRSG behavior is checked against data from the boiler manufacturer. Keywords: off-design, HRSG, power plants, heat exchangers, performance simulation.",
+      "terms": [
+        "HRSG",
+        "off-design",
+        "part-load",
+        "superheaters",
+        "evaporators",
+        "economizers",
+        "overall heat transfer coefficients",
+        "desuperheater"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-002",
+      "doc_id": "R003",
+      "section": "1. Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Combined cycle (CC) power plants are presented as an attractive generation option thanks to favorable economics: efficient use of various energy sources, low capital and O&M cost, a short time from start of construction to operation, good availability, fuel flexibility and low pollutant emissions. A conventional CC plant links a Brayton cycle (gas turbine engines) to a Rankine steam cycle; the hot gas leaving the gas turbine raises high-pressure steam for the steam cycle in the heat recovery steam generator (HRSG). CC efficiencies of up to 58% have been achieved, chiefly because of (i) advances in gas turbine technology such as higher turbine inlet temperature and (ii) HRSG designs with multiple pressure levels.",
+      "terms": [
+        "Combined cycle",
+        "Brayton",
+        "Rankine",
+        "gas turbine",
+        "HRSG",
+        "58%",
+        "turbine inlet temperature",
+        "multiple pressure levels"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-003",
+      "doc_id": "R003",
+      "section": "1. Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "The authors note that power plants rarely run exactly at design conditions: for much or all of their life they operate off-design because ambient conditions and dispatch vary, and also because of abnormal events such as component degradation or operational failures, so load changes are frequent. Performance therefore has to be assessed at part load as well as at design. One way of improving part-load operation is to raise heat recovery performance and thereby the whole combined cycle. Multi-pressure HRSGs improve plant performance but make operation more complex, requiring close monitoring of the thermodynamic parameters of each HRSG component. A performance prediction tool helps anticipate the off-design behavior of existing plants, avoid inefficient operating modes and assess retrofit options.",
+      "terms": [
+        "off-design",
+        "part load",
+        "dispatch",
+        "degradation",
+        "heat recovery",
+        "Multi-pressure HRSGs",
+        "retrofit"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-004",
+      "doc_id": "R003",
+      "section": "1. Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Earlier work on mathematical models for HRSG off-design operation is reviewed. Erbes and Eustis (1986) and Erbes and Phillips (1987) built design and off-design models of power plants covering equipment such as the gas turbine, HRSG and steam turbine, and compared the simulations with measurements from thermal plants. Dechamps et al. (1994) proposed a method for part-load performance of combined cycle plants that handles single or multiple pressure arrangements, with supplementary firing and possibly reheat. Sanaye et al. (2006) presented a model based on mass/energy balances and heat transfer coefficients that predicts off-design and transient HRSG operation for any number of pressure levels (normally up to three) and components (superheater, evaporator, economizer, desuperheater and duct burner). In this study, a model of the off-design behavior of a dual-pressure HRSG is formulated and coded; the main components of a typical HRSG are simulated and the part-load, steady-state results are compared with original equipment manufacturer (OEM) data.",
+      "terms": [
+        "off-design",
+        "supplementary firing",
+        "reheat",
+        "transient",
+        "duct burner",
+        "dual-pressure HRSG",
+        "OEM",
+        "desuperheater"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-005",
+      "doc_id": "R003",
+      "section": "2. HRSG Description",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "The studied HRSG feeds a steam turbine at two pressure levels, HP and LP; its layout is given in Fig. 1. Exhaust gas from the gas turbine (ENTG 1) passes through the HRSG and supplies the heat for steam generation. The unit includes four superheaters (three HP SUPQ and one LP SUPQ), five economizers (three HP ECON, one LP ECON and one feedwater preheater), two evaporators connected to drums, one desuperheater (DSPQ) and one evaporator-deaerator (EVDE), plus auxiliary items such as pumps, valves and splitters. The pegging steam line is switched off in the model, as in the original design of this HRSG. Feedwater delivered from the condenser by the boiler feed pump (not drawn in the scheme) is warmed in the preheater (ECON 21) ahead of the deaerator, and the deaerated water is then divided between the high and low pressure circuits.",
+      "terms": [
+        "SUPQ",
+        "ECON",
+        "DSPQ",
+        "EVDE",
+        "pegging steam",
+        "ECON 21",
+        "deaerator",
+        "ENTG 1"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-006",
+      "doc_id": "R003",
+      "section": "2. HRSG Description",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Figure 1. Schematic of the HRSG in its dual-pressure arrangement.",
+      "terms": [
+        "Figure 1",
+        "HRSG",
+        "dual-pressure"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-007",
+      "doc_id": "R003",
+      "section": "3. Off Design Modeling of HRSG Components",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Analyzing plant equipment across its normal operating range requires models that predict performance both at the design point and at off-design or part-load conditions. Detailed models of individual HRSG heat exchangers exist in the literature, but the authors consider them too complicated for whole-plant modeling. They instead favor sets of fairly simple correlations that capture how heat exchanger pressure drops and heat transfer coefficients change with plant operating conditions, written as ratios of off-design to design-point values. The procedure is therefore to establish the design point first and then compute off-design performance.",
+      "terms": [
+        "design point",
+        "off-design",
+        "part-load",
+        "pressure drops",
+        "heat transfer coefficients",
+        "correlations"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-008",
+      "doc_id": "R003",
+      "section": "3. Off Design Modeling of HRSG Components",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Properties of liquid water and steam are evaluated with the IAPWS – IF97 formulation of the International Association for the Properties of Water and Steam (Wagner et al. 2000), while properties along the hot gas path follow the formulations of McBride et al. (1993).",
+      "terms": [
+        "IAPWS – IF97",
+        "International Association for the Properties of Water and Steam",
+        "McBride",
+        "hot gas path"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-009",
+      "doc_id": "R003",
+      "section": "3.1 Heat Exchanger Pressure Drops",
+      "page_start": 2,
+      "page_end": 3,
+      "text": "Every heat exchanger is treated as a tube bundle in which pressurized water/steam flows inside the tubes while hot combustion products flow around them, and the off-design model computes pressure drops on both the gas side and the water/steam side. (a) Water/steam side, assuming fully turbulent flow, the friction factor is defined as (Minoner, 1979): f = −(∆P_v / ρg) / [(l/D)(V^2/2g)]   (1) (friction factor = pressure-drop head divided by the product of length-to-diameter ratio and velocity head). Here ∆P_v is the pressure drop, l and D are tube length and diameter, ρ is the specific mass of the fluid, g is gravitational acceleration and V is the average velocity.",
+      "terms": [
+        "friction factor",
+        "∆P_v",
+        "ρ",
+        "fully turbulent",
+        "tube bundle",
+        "water/steam side",
+        "(l/D)"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-010",
+      "doc_id": "R003",
+      "section": "3.1 Heat Exchanger Pressure Drops",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Combining Eq. (1) with V = ṁ/ρA and rearranging gives the off-design to design-point pressure-drop ratio: ∆P_v / ∆P_DP = (f / f_DP)·[(ṁ^2/ρ) / (ṁ^2/ρ)_DP]   (2) (pressure-drop ratio = friction-factor ratio × ratio of ṁ^2/ρ relative to design). ṁ denotes the mass flow in the heat exchanger tube.",
+      "terms": [
+        "∆P_v / ∆P_DP",
+        "f_DP",
+        "ṁ",
+        "V = ṁ/ρA",
+        "design-point"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-011",
+      "doc_id": "R003",
+      "section": "3.1 Heat Exchanger Pressure Drops",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "To keep the friction factor explicit, an empirical version of the Karman-Nikuradse equation is adopted (Kays and Crawford, 1980): f = 0.046 Re^−0.2   (3) (friction factor as a power function of Reynolds number with coefficient 0.046 and exponent −0.2).",
+      "terms": [
+        "Karman-Nikuradse",
+        "f = 0.046 Re^−0.2",
+        "Reynolds number",
+        "friction factor"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-012",
+      "doc_id": "R003",
+      "section": "3.1 Heat Exchanger Pressure Drops",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Inserting Eq. (3) into Eq. (2) and removing common terms yields: ∆P_v = ∆P_DP·(ṁ/ṁ_DP)^x·(T/T_DP)^y·(P/P_DP)^z·(ν/ν_DP)^a   (4) (water/steam-side pressure drop = design-point pressure drop scaled by power-law ratios of mass flow, temperature, pressure and specific volume). T, P and ν are fluid temperature, pressure and specific volume; quantities with subscript DP are known from the design-point model. The exponents x, y, z and a are tuned against manufacturer data, which give inlet and outlet temperature, pressure and mass flow of the heat exchangers at three part-load conditions: 75%, 50% and 40%.",
+      "terms": [
+        "∆P_DP",
+        "ṁ_DP",
+        "T_DP",
+        "P_DP",
+        "ν_DP",
+        "specific volume",
+        "75%, 50% and 40%",
+        "exponents x, y, z and a"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-013",
+      "doc_id": "R003",
+      "section": "3.1 Heat Exchanger Pressure Drops",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "(b) Hot gas side: the gas-side pressure drop is predicted with the relation of Holman (1976): ∆P_g = (2 f V_max^2 N / ρ)·(µ_w/µ_b)^0.14   (5) (gas-side pressure drop from friction factor, velocity at minimum flow area, number of tube rows and a wall-to-bulk viscosity correction). V_max is the velocity at the minimum flow area, N the number of rows, and µ_w and µ_b the viscosities at the wall and in the bulk flow.",
+      "terms": [
+        "∆P_g",
+        "V_max",
+        "µ_w",
+        "µ_b",
+        "Holman",
+        "number of rows",
+        "minimum flow area"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-014",
+      "doc_id": "R003",
+      "section": "3.1 Heat Exchanger Pressure Drops",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "As on the water side, the design to off-design gas-side pressure drop ratio is written as: ∆P_g / ∆P_DP = (f / f_DP)·[(ṁ^2/ρ) / (ṁ^2/ρ)_DP]   (6) (gas pressure-drop ratio = friction-factor ratio × ratio of ṁ^2/ρ). The change in the viscosity ratio is taken as negligible compared with the changes in mass flow and friction factor.",
+      "terms": [
+        "∆P_g / ∆P_DP",
+        "f_DP",
+        "ṁ^2/ρ",
+        "viscosity ratio",
+        "friction factor"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-015",
+      "doc_id": "R003",
+      "section": "3.1 Heat Exchanger Pressure Drops",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "For flow across tube banks the friction factor is given by (Holman, 1976): f = λ Re_max^−0.16   (7) (friction factor as a geometry coefficient times the maximum-velocity Reynolds number raised to −0.16), in which λ depends on the geometry.",
+      "terms": [
+        "f = λ Re_max^−0.16",
+        "λ",
+        "tube banks",
+        "geometry",
+        "friction factor"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-016",
+      "doc_id": "R003",
+      "section": "3.1 Heat Exchanger Pressure Drops",
+      "page_start": 3,
+      "page_end": 4,
+      "text": "Using Eqs. (6) and (7), the Reynolds number definition and the perfect gas equation of state, and dropping constant terms, the gas-side expression becomes: ∆P_g = ∆P_DP·(ṁ/ṁ_DP)^α·(T/T_DP)^β·(P/P_DP)^γ   (8) (gas-side pressure drop = design-point value scaled by power-law ratios of mass flow, temperature and pressure). The exponents α, β and γ are fitted to the manufacturer part-load data (75%, 50% and 40%).",
+      "terms": [
+        "∆P_g",
+        "∆P_DP",
+        "α, β and γ",
+        "perfect gas equation of state",
+        "Reynolds number",
+        "75%, 50% and 40%"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-017",
+      "doc_id": "R003",
+      "section": "3.2 Overall Heat Transfer Coefficient",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Heat transfer in each exchanger is modeled as Q = U A ∆T_log   (9) (heat duty = overall heat transfer coefficient × surface area × log mean temperature difference), where U is the overall heat transfer coefficient, A the heat exchange area and ∆T_log the Logarithmic Mean Temperature Difference (LMTD): ∆T_log = (∆T_in − ∆T_out) / ln(∆T_in / ∆T_out)   (10) (LMTD from the terminal temperature differences). The terminal differences are ∆T_in = (T_1 − T_3) and ∆T_out = (T_2 − T_4), with T_1 and T_2 the hot gas inlet and outlet temperatures and T_3 and T_4 the water/steam inlet and outlet temperatures.",
+      "terms": [
+        "Q = U A ∆T_log",
+        "LMTD",
+        "∆T_log",
+        "∆T_in",
+        "∆T_out",
+        "overall heat transfer coefficient",
+        "T_1",
+        "T_4"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-018",
+      "doc_id": "R003",
+      "section": "3.2 Overall Heat Transfer Coefficient",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Assuming turbulent flow over the tubes, the heat transfer coefficient is expressed as Nu = C Re^n Pr^m   (11) (Nusselt number as a power law of Reynolds and Prandtl numbers), where Re and Pr are the Reynolds and Prandtl numbers and C, n and m are constants. The ratio of off-design to design values then follows: U / U_DP = Nu / Nu_DP = (Re/Re_DP)^n·(Pr/Pr_DP)^m   (12) (ratio of overall coefficients equals ratio of Nusselt numbers, i.e. power-law ratios of Re and Pr).",
+      "terms": [
+        "Nu = C Re^n Pr^m",
+        "U / U_DP",
+        "Nu_DP",
+        "Re_DP",
+        "Pr_DP",
+        "Reynolds",
+        "Prandtl",
+        "turbulent"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-019",
+      "doc_id": "R003",
+      "section": "3.2 Overall Heat Transfer Coefficient",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Substituting the Reynolds and Prandtl number definitions and removing constants, the correlation applied to the HRSG heat exchangers is: U = U_DP·(ṁ/ṁ_DP)^n·(T/T_DP)^k·(P/P_DP)^p   (13) (overall heat transfer coefficient = design value scaled by power-law ratios of mass flow, temperature and pressure). The customary n = 0.8 is used, valid for Reynolds numbers between 4x10^4 and 4x10^5 (Holman, 1976), while k and p are fitted to the manufacturer part-load data (75%, 50% and 40%).",
+      "terms": [
+        "U_DP",
+        "ṁ_DP",
+        "T_DP",
+        "P_DP",
+        "n = 0.8",
+        "4x10^4",
+        "4x10^5",
+        "k and p"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-020",
+      "doc_id": "R003",
+      "section": "3.3 Computational methodology",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "The simulation program is written in FORTRAN and organized into calculation modules, each standing for an HRSG component; the modules are solved in sequence starting from a few initial guesses. After the pressure-drop and overall heat transfer coefficient exponents are fitted to manufacturer data, the component parameters are iterated until a convergence criterion is met. The paper then presents HRSG results at design and part load for a typical combined cycle plant, validating the program against manufacturer data at the stations marked in Figure 1.",
+      "terms": [
+        "FORTRAN",
+        "modules",
+        "initial guesses",
+        "convergence criterion",
+        "overall heat transfer coefficient",
+        "Figure 1"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-021",
+      "doc_id": "R003",
+      "section": "4. Results of HRSG Off-Design Operations",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Figure 2 plots the GT exhaust mass flow, i.e. the HRSG inlet flow, versus gas turbine load over the full operating range at base load condition (T=32 oC). Two operating modes of the gas turbine (GT) exit are visible: at high power the GT is governed by the IGV (Inlet Guide Vane) angle, whereas at lower load the fuel mass flow to the combustion chamber is used for control. The authors point out that IGV control is attractive because it holds the exhaust temperature constant as load changes near base load.",
+      "terms": [
+        "GT exhaust mass flow",
+        "IGV (Inlet Guide Vane)",
+        "base load",
+        "T=32 oC",
+        "fuel mass flow",
+        "combustion chamber",
+        "exhaust temperature"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-022",
+      "doc_id": "R003",
+      "section": "4. Results of HRSG Off-Design Operations",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Figure 2. Change of GT exhaust mass flow with GT load at base load condition.",
+      "terms": [
+        "Figure 2",
+        "GT exhaust mass flow",
+        "GT load",
+        "base load"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-023",
+      "doc_id": "R003",
+      "section": "4.1 Overall HRSG Off Design Performance",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "The HRSG simulations are evaluated by comparing temperature, pressure and mass flow with OEM values at 100%, 75%, 50% and 40% load, which correspond to the known gas turbine performance at those loads. Tables 1 and 2 list, for the four load cases, the deviations between the manufacturer design data (labelled \"plant\") and the program predictions, defined as: deviation [%] = (φ_plant − φ_prog) / φ_plant · 100   (14) (percentage deviation of the predicted value relative to the plant/manufacturer value).",
+      "terms": [
+        "OEM",
+        "deviation [%]",
+        "φ_plant",
+        "φ_prog",
+        "100%, 75%, 50% and 40%",
+        "Tables 1 and 2"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-024",
+      "doc_id": "R003",
+      "section": "4.1 Overall HRSG Off Design Performance",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Predicted heat exchanger pressure drops deviate by less than 0.5%, and the authors regard the small deviations on both the gas and the water/steam sides as practically insignificant. Predicted mass flows of the HP and LP evaporators stay within ± 2.44% of the OEM data; possible sources listed are the calculation of the overall heat transfer coefficient, the use of a logarithmic mean temperature difference model and heat losses to the surroundings, among others. Temperature deviations are also small, since temperatures come from the energy balance, which depends on the water/steam mass flow and steam pressure.",
+      "terms": [
+        "pressure drops",
+        "0.5%",
+        "± 2.44%",
+        "HP and LP evaporators",
+        "OEM",
+        "logarithmic mean temperature difference",
+        "energy balance",
+        "heat losses"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-025",
+      "doc_id": "R003",
+      "section": "4.1 Overall HRSG Off Design Performance",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Table 1. Results and comparison for the stations shown in Figure 1: operation conditions of 100% load and 75% load — 100 % LOAD, points 1–13 (plant/manufacturer values and Deviation (%) from Eq. (14) for P [kPa], T [°C], Flow [kg/s]). Point 1: Plant P [kPa]=3.09; Plant T [°C]=548.30; Plant Flow [kg/s]=278.10; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 2: Plant P [kPa]=2.97; Plant T [°C]=534.90; Plant Flow [kg/s]=278.10; Deviation P=0.00; Deviation T=0.05; Deviation Flow=0.00. Point 3: Plant P [kPa]=2.84; Plant T [°C]=511.40; Plant Flow [kg/s]=278.10; Deviation P=0.00; Deviation T=0.03; Deviation Flow=0.00. Point 4: Plant P [kPa]=2.73; Plant T [°C]=475.70; Plant Flow [kg/s]=278.10; Deviation P=0.00; Deviation T=0.02; Deviation Flow=0.00. Point 5: Plant P [kPa]=2.08; Plant T [°C]=321.60; Plant Flow [kg/s]=278.10; Deviation P=0.00; Deviation T=-0.58; Deviation Flow=0.00. Point 6: Plant P [kPa]=2.05; Plant T [°C]=317.50; Plant Flow [kg/s]=278.10; Deviation P=0.00; Deviation T=-0.60; Deviation Flow=0.00. Point 7: Plant P [kPa]=1.71; Plant T [°C]=278.50; Plant Flow [kg/s]=278.10; Deviation P=0.00; Deviation T=-0.68; Deviation Flow=0.00. Point 8: Plant P [kPa]=1.39; Plant T [°C]=238.10; Plant Flow [kg/s]=278.10; Deviation P=0.00; Deviation T=-0.76; Deviation Flow=0.00. Point 9: Plant P [kPa]=1.09; Plant T [°C]=220.60; Plant Flow [kg/s]=278.10; Deviation P=0.00; Deviation T=-0.84; Deviation Flow=0.00. Point 10: Plant P [kPa]=1.02; Plant T [°C]=211.80; Plant Flow [kg/s]=278.10; Deviation P=0.00; Deviation T=-0.88; Deviation Flow=0.00. Point 11: Plant P [kPa]=0.75; Plant T [°C]=175.00; Plant Flow [kg/s]=278.10; Deviation P=0.00; Deviation T=-1.74; Deviation Flow=0.00. Point 12: Plant P [kPa]=0.61; Plant T [°C]=148.50; Plant Flow [kg/s]=278.10; Deviation P=0.00; Deviation T=-2.10; Deviation Flow=0.00. Point 13: Plant P [kPa]=0.55; Plant T [°C]=129.70; Plant Flow [kg/s]=278.10; Deviation P=0.00; Deviation T=-2.42; Deviation Flow=0.00.",
+      "terms": [
+        "Table 1",
+        "100 % LOAD",
+        "P [kPa]",
+        "T [°C]",
+        "Flow [kg/s]",
+        "Deviation"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-026",
+      "doc_id": "R003",
+      "section": "4.1 Overall HRSG Off Design Performance",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Table 1. Results and comparison for the stations shown in Figure 1: operation conditions of 100% load and 75% load — 100 % LOAD, points 14–37 (plant/manufacturer values and Deviation (%) from Eq. (14) for P [kPa], T [°C], Flow [kg/s]). Point 14: Plant P [kPa]=230.00; Plant T [°C]=47.10; Plant Flow [kg/s]=41.79; Deviation P=0.00; Deviation T=0.02; Deviation Flow=-0.41. Point 15: Plant P [kPa]=220.00; Plant T [°C]=79.10; Plant Flow [kg/s]=41.79; Deviation P=0.00; Deviation T=0.00; Deviation Flow=-0.41. Point 16: Plant P [kPa]=220.00; Plant T [°C]=123.90; Plant Flow [kg/s]=41.79; Deviation P=0.00; Deviation T=0.00; Deviation Flow=-0.41. Point 21: Plant P [kPa]=3510.00; Plant T [°C]=125.20; Plant Flow [kg/s]=6.63; Deviation P=0.00; Deviation T=-0.14; Deviation Flow=0.00. Point 24: Plant P [kPa]=3510.00; Plant T [°C]=217.40; Plant Flow [kg/s]=6.63; Deviation P=0.26; Deviation T=0.00; Deviation Flow=0.00. Point 25: Plant P [kPa]=2660.00; Plant T [°C]=217.50; Plant Flow [kg/s]=6.63; Deviation P=0.26; Deviation T=0.02; Deviation Flow=0.00. Point 26: Plant P [kPa]=2660.00; Plant T [°C]=227.20; Plant Flow [kg/s]=6.63; Deviation P=0.26; Deviation T=0.03; Deviation Flow=0.00. Point 27: Plant P [kPa]=2570.00; Plant T [°C]=294.50; Plant Flow [kg/s]=6.63; Deviation P=0.26; Deviation T=0.00; Deviation Flow=0.00. Point 28: Plant P [kPa]=11540.00; Plant T [°C]=123.90; Plant Flow [kg/s]=35.16; Deviation P=0.00; Deviation T=-2.03; Deviation Flow=0.00. Point 29: Plant P [kPa]=11450.00; Plant T [°C]=197.40; Plant Flow [kg/s]=35.16; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 30: Plant P [kPa]=11360.00; Plant T [°C]=230.90; Plant Flow [kg/s]=35.16; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 31: Plant P [kPa]=11280.00; Plant T [°C]=299.60; Plant Flow [kg/s]=35.16; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 32: Plant P [kPa]=9880.00; Plant T [°C]=310.10; Plant Flow [kg/s]=35.16; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 33: Plant P [kPa]=9850.00; Plant T [°C]=309.80; Plant Flow [kg/s]=35.16; Deviation P=0.00; Deviation T=-0.03; Deviation Flow=0.00. Point 34: Plant P [kPa]=9790.00; Plant T [°C]=385.50; Plant Flow [kg/s]=35.16; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 35: Plant P [kPa]=9730.00; Plant T [°C]=460.10; Plant Flow [kg/s]=35.16; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 36: Plant P [kPa]=9630.00; Plant T [°C]=454.60; Plant Flow [kg/s]=35.16; Deviation P=0.00; Deviation T=-0.01; Deviation Flow=0.00. Point 37: Plant P [kPa]=9390.00; Plant T [°C]=502.00; Plant Flow [kg/s]=35.16; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00.",
+      "terms": [
+        "Table 1",
+        "100 % LOAD",
+        "P [kPa]",
+        "T [°C]",
+        "Flow [kg/s]",
+        "Deviation"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-027",
+      "doc_id": "R003",
+      "section": "4.1 Overall HRSG Off Design Performance",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Table 1. Results and comparison for the stations shown in Figure 1: operation conditions of 100% load and 75% load — 75 % LOAD, points 1–13 (plant/manufacturer values and Deviation (%) from Eq. (14) for P [kPa], T [°C], Flow [kg/s]). Point 1: Plant P [kPa]=2.10; Plant T [°C]=547.20; Plant Flow [kg/s]=230.10; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 2: Plant P [kPa]=2.01; Plant T [°C]=532.80; Plant Flow [kg/s]=230.10; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 3: Plant P [kPa]=1.93; Plant T [°C]=509.70; Plant Flow [kg/s]=230.10; Deviation P=0.00; Deviation T=-0.02; Deviation Flow=0.00. Point 4: Plant P [kPa]=1.85; Plant T [°C]=471.50; Plant Flow [kg/s]=230.10; Deviation P=0.00; Deviation T=-0.10; Deviation Flow=0.00. Point 5: Plant P [kPa]=1.42; Plant T [°C]=307.40; Plant Flow [kg/s]=230.10; Deviation P=0.00; Deviation T=-0.01; Deviation Flow=0.00. Point 6: Plant P [kPa]=1.39; Plant T [°C]=304.10; Plant Flow [kg/s]=230.10; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 7: Plant P [kPa]=1.17; Plant T [°C]=269.30; Plant Flow [kg/s]=230.10; Deviation P=0.00; Deviation T=-0.18; Deviation Flow=0.00. Point 8: Plant P [kPa]=0.95; Plant T [°C]=234.70; Plant Flow [kg/s]=230.10; Deviation P=0.11; Deviation T=-0.03; Deviation Flow=0.00. Point 9: Plant P [kPa]=0.74; Plant T [°C]=218.90; Plant Flow [kg/s]=230.10; Deviation P=0.00; Deviation T=-0.19; Deviation Flow=0.00. Point 10: Plant P [kPa]=0.70; Plant T [°C]=211.40; Plant Flow [kg/s]=230.10; Deviation P=0.00; Deviation T=-0.22; Deviation Flow=0.00. Point 11: Plant P [kPa]=0.51; Plant T [°C]=174.00; Plant Flow [kg/s]=230.10; Deviation P=0.20; Deviation T=-0.68; Deviation Flow=0.00. Point 12: Plant P [kPa]=0.42; Plant T [°C]=147.30; Plant Flow [kg/s]=230.10; Deviation P=0.24; Deviation T=-0.78; Deviation Flow=0.00. Point 13: Plant P [kPa]=0.38; Plant T [°C]=126.70; Plant Flow [kg/s]=230.10; Deviation P=0.26; Deviation T=-1.20; Deviation Flow=0.00.",
+      "terms": [
+        "Table 1",
+        "75 % LOAD",
+        "P [kPa]",
+        "T [°C]",
+        "Flow [kg/s]",
+        "Deviation"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-028",
+      "doc_id": "R003",
+      "section": "4.1 Overall HRSG Off Design Performance",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Table 1. Results and comparison for the stations shown in Figure 1: operation conditions of 100% load and 75% load — 75 % LOAD, points 14–37 (plant/manufacturer values and Deviation (%) from Eq. (14) for P [kPa], T [°C], Flow [kg/s]). Point 14: Plant P [kPa]=240.00; Plant T [°C]=44.80; Plant Flow [kg/s]=33.93; Deviation P=0.00; Deviation T=-0.87; Deviation Flow=-0.57. Point 15: Plant P [kPa]=240.00; Plant T [°C]=79.90; Plant Flow [kg/s]=33.93; Deviation P=0.00; Deviation T=-0.43; Deviation Flow=-0.57. Point 16: Plant P [kPa]=240.00; Plant T [°C]=125.40; Plant Flow [kg/s]=33.93; Deviation P=0.00; Deviation T=-0.44; Deviation Flow=-0.57. Point 21: Plant P [kPa]=3860.00; Plant T [°C]=128.80; Plant Flow [kg/s]=4.68; Deviation P=0.00; Deviation T=1.11; Deviation Flow=-2.44. Point 24: Plant P [kPa]=3860.00; Plant T [°C]=217.80; Plant Flow [kg/s]=4.68; Deviation P=0.47; Deviation T=0.57; Deviation Flow=-2.44. Point 25: Plant P [kPa]=2630.00; Plant T [°C]=217.90; Plant Flow [kg/s]=4.68; Deviation P=0.00; Deviation T=0.58; Deviation Flow=-2.44. Point 26: Plant P [kPa]=2630.00; Plant T [°C]=226.60; Plant Flow [kg/s]=4.68; Deviation P=0.00; Deviation T=-0.03; Deviation Flow=-2.44. Point 27: Plant P [kPa]=2550.00; Plant T [°C]=289.10; Plant Flow [kg/s]=4.68; Deviation P=-0.02; Deviation T=0.11; Deviation Flow=-2.44. Point 28: Plant P [kPa]=12350.00; Plant T [°C]=125.40; Plant Flow [kg/s]=29.25; Deviation P=0.00; Deviation T=-2.35; Deviation Flow=-0.27. Point 29: Plant P [kPa]=12280.00; Plant T [°C]=199.20; Plant Flow [kg/s]=29.25; Deviation P=0.00; Deviation T=-0.80; Deviation Flow=-0.27. Point 30: Plant P [kPa]=12210.00; Plant T [°C]=229.20; Plant Flow [kg/s]=29.25; Deviation P=0.01; Deviation T=-0.42; Deviation Flow=-0.27. Point 31: Plant P [kPa]=12150.00; Plant T [°C]=290.90; Plant Flow [kg/s]=29.25; Deviation P=0.01; Deviation T=-0.04; Deviation Flow=-0.27. Point 32: Plant P [kPa]=8400.00; Plant T [°C]=298.40; Plant Flow [kg/s]=29.25; Deviation P=0.00; Deviation T=-0.01; Deviation Flow=-0.27. Point 33: Plant P [kPa]=8360.00; Plant T [°C]=298.10; Plant Flow [kg/s]=29.25; Deviation P=0.00; Deviation T=0.00; Deviation Flow=-0.27. Point 34: Plant P [kPa]=8310.00; Plant T [°C]=388.40; Plant Flow [kg/s]=29.25; Deviation P=0.00; Deviation T=0.09; Deviation Flow=-0.27. Point 35: Plant P [kPa]=8260.00; Plant T [°C]=466.50; Plant Flow [kg/s]=29.25; Deviation P=0.00; Deviation T=0.12; Deviation Flow=-0.27. Point 36: Plant P [kPa]=8160.00; Plant T [°C]=450.20; Plant Flow [kg/s]=29.25; Deviation P=0.00; Deviation T=0.07; Deviation Flow=-0.27. Point 37: Plant P [kPa]=7930.00; Plant T [°C]=502.00; Plant Flow [kg/s]=29.25; Deviation P=0.00; Deviation T=0.10; Deviation Flow=-0.27.",
+      "terms": [
+        "Table 1",
+        "75 % LOAD",
+        "P [kPa]",
+        "T [°C]",
+        "Flow [kg/s]",
+        "Deviation"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-029",
+      "doc_id": "R003",
+      "section": "4.1 Overall HRSG Off Design Performance",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Table 2. Results and comparison for the stations shown in Figure 1: operation conditions of 50% load and 40% load — 50 % LOAD, points 1–13 (plant/manufacturer values and Deviation (%) from Eq. (14) for P [kPa], T [°C], Flow [kg/s]). Point 1: Plant P [kPa]=1.97; Plant T [°C]=447.20; Plant Flow [kg/s]=227.70; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 2: Plant P [kPa]=1.90; Plant T [°C]=443.10; Plant Flow [kg/s]=227.70; Deviation P=0.00; Deviation T=0.04; Deviation Flow=0.00. Point 3: Plant P [kPa]=1.82; Plant T [°C]=432.30; Plant Flow [kg/s]=227.70; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 4: Plant P [kPa]=1.75; Plant T [°C]=408.20; Plant Flow [kg/s]=227.70; Deviation P=0.00; Deviation T=-0.12; Deviation Flow=0.00. Point 5: Plant P [kPa]=1.36; Plant T [°C]=279.90; Plant Flow [kg/s]=227.70; Deviation P=0.00; Deviation T=0.01; Deviation Flow=0.00. Point 6: Plant P [kPa]=1.33; Plant T [°C]=278.20; Plant Flow [kg/s]=227.70; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 7: Plant P [kPa]=1.12; Plant T [°C]=263.10; Plant Flow [kg/s]=227.70; Deviation P=0.00; Deviation T=0.02; Deviation Flow=0.00. Point 8: Plant P [kPa]=0.91; Plant T [°C]=237.40; Plant Flow [kg/s]=227.70; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 9: Plant P [kPa]=0.71; Plant T [°C]=233.00; Plant Flow [kg/s]=227.70; Deviation P=0.00; Deviation T=-0.03; Deviation Flow=0.00. Point 10: Plant P [kPa]=0.66; Plant T [°C]=228.60; Plant Flow [kg/s]=227.70; Deviation P=0.00; Deviation T=-0.07; Deviation Flow=0.00. Point 11: Plant P [kPa]=0.46; Plant T [°C]=206.00; Plant Flow [kg/s]=227.70; Deviation P=0.00; Deviation T=-0.32; Deviation Flow=0.00. Point 12: Plant P [kPa]=0.36; Plant T [°C]=182.20; Plant Flow [kg/s]=227.70; Deviation P=0.00; Deviation T=-0.40; Deviation Flow=0.00. Point 13: Plant P [kPa]=0.33; Plant T [°C]=156.20; Plant Flow [kg/s]=227.70; Deviation P=0.00; Deviation T=-0.57; Deviation Flow=0.00.",
+      "terms": [
+        "Table 2",
+        "50 % LOAD",
+        "P [kPa]",
+        "T [°C]",
+        "Flow [kg/s]",
+        "Deviation"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-030",
+      "doc_id": "R003",
+      "section": "4.1 Overall HRSG Off Design Performance",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Table 2. Results and comparison for the stations shown in Figure 1: operation conditions of 50% load and 40% load — 50 % LOAD, points 14–37 (plant/manufacturer values and Deviation (%) from Eq. (14) for P [kPa], T [°C], Flow [kg/s]). Point 14: Plant P [kPa]=690.00; Plant T [°C]=44.80; Plant Flow [kg/s]=23.95; Deviation P=0.00; Deviation T=1.79; Deviation Flow=-0.21. Point 15: Plant P [kPa]=680.00; Plant T [°C]=107.40; Plant Flow [kg/s]=23.95; Deviation P=-0.12; Deviation T=2.23; Deviation Flow=-0.21. Point 16: Plant P [kPa]=680.00; Plant T [°C]=163.90; Plant Flow [kg/s]=23.95; Deviation P=-0.12; Deviation T=2.21; Deviation Flow=-0.21. Point 21: Plant P [kPa]=4460.00; Plant T [°C]=165.10; Plant Flow [kg/s]=3.52; Deviation P=0.00; Deviation T=2.07; Deviation Flow=-0.40. Point 24: Plant P [kPa]=4450.00; Plant T [°C]=232.80; Plant Flow [kg/s]=3.52; Deviation P=0.00; Deviation T=1.46; Deviation Flow=-0.40. Point 25: Plant P [kPa]=2870.00; Plant T [°C]=231.40; Plant Flow [kg/s]=3.52; Deviation P=0.00; Deviation T=0.85; Deviation Flow=-0.40. Point 26: Plant P [kPa]=2870.00; Plant T [°C]=231.40; Plant Flow [kg/s]=3.52; Deviation P=0.00; Deviation T=0.00; Deviation Flow=-0.40. Point 27: Plant P [kPa]=2790.00; Plant T [°C]=270.80; Plant Flow [kg/s]=3.52; Deviation P=-0.01; Deviation T=0.44; Deviation Flow=-0.40. Point 28: Plant P [kPa]=13120.00; Plant T [°C]=163.90; Plant Flow [kg/s]=20.44; Deviation P=0.00; Deviation T=0.60; Deviation Flow=-0.12. Point 29: Plant P [kPa]=13070.00; Plant T [°C]=225.10; Plant Flow [kg/s]=20.44; Deviation P=0.00; Deviation T=0.57; Deviation Flow=-0.12. Point 30: Plant P [kPa]=13020.00; Plant T [°C]=236.70; Plant Flow [kg/s]=20.44; Deviation P=0.00; Deviation T=0.56; Deviation Flow=-0.12. Point 31: Plant P [kPa]=12970.00; Plant T [°C]=275.50; Plant Flow [kg/s]=20.44; Deviation P=0.00; Deviation T=0.53; Deviation Flow=-0.12. Point 32: Plant P [kPa]=5700.00; Plant T [°C]=272.30; Plant Flow [kg/s]=20.44; Deviation P=0.00; Deviation T=0.01; Deviation Flow=-0.12. Point 33: Plant P [kPa]=5670.00; Plant T [°C]=271.90; Plant Flow [kg/s]=20.44; Deviation P=0.00; Deviation T=-0.01; Deviation Flow=-0.12. Point 34: Plant P [kPa]=5630.00; Plant T [°C]=362.80; Plant Flow [kg/s]=20.44; Deviation P=0.00; Deviation T=-0.02; Deviation Flow=-0.12. Point 35: Plant P [kPa]=5590.00; Plant T [°C]=415.40; Plant Flow [kg/s]=20.44; Deviation P=0.00; Deviation T=-0.06; Deviation Flow=-0.12. Point 36: Plant P [kPa]=5490.00; Plant T [°C]=414.70; Plant Flow [kg/s]=20.44; Deviation P=0.00; Deviation T=-0.05; Deviation Flow=-0.12. Point 37: Plant P [kPa]=5280.00; Plant T [°C]=435.70; Plant Flow [kg/s]=20.44; Deviation P=0.00; Deviation T=-0.08; Deviation Flow=-0.12.",
+      "terms": [
+        "Table 2",
+        "50 % LOAD",
+        "P [kPa]",
+        "T [°C]",
+        "Flow [kg/s]",
+        "Deviation"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-031",
+      "doc_id": "R003",
+      "section": "4.1 Overall HRSG Off Design Performance",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Table 2. Results and comparison for the stations shown in Figure 1: operation conditions of 50% load and 40% load — 40 % LOAD, points 1–13 (plant/manufacturer values and Deviation (%) from Eq. (14) for P [kPa], T [°C], Flow [kg/s]). Point 1: Plant P [kPa]=1.93; Plant T [°C]=410.00; Plant Flow [kg/s]=227.10; Deviation P=0.00; Deviation T=0.00; Deviation Flow=0.00. Point 2: Plant P [kPa]=1.86; Plant T [°C]=407.70; Plant Flow [kg/s]=227.10; Deviation P=0.00; Deviation T=-0.01; Deviation Flow=0.00. Point 3: Plant P [kPa]=1.79; Plant T [°C]=400.80; Plant Flow [kg/s]=227.10; Deviation P=0.00; Deviation T=-0.14; Deviation Flow=0.00. Point 4: Plant P [kPa]=1.72; Plant T [°C]=382.80; Plant Flow [kg/s]=227.10; Deviation P=0.00; Deviation T=-0.46; Deviation Flow=0.00. Point 5: Plant P [kPa]=1.34; Plant T [°C]=276.40; Plant Flow [kg/s]=227.10; Deviation P=0.15; Deviation T=-0.02; Deviation Flow=0.00. Point 6: Plant P [kPa]=1.32; Plant T [°C]=274.90; Plant Flow [kg/s]=227.10; Deviation P=0.15; Deviation T=-0.07; Deviation Flow=0.00. Point 7: Plant P [kPa]=1.11; Plant T [°C]=264.10; Plant Flow [kg/s]=227.10; Deviation P=0.09; Deviation T=-0.16; Deviation Flow=0.00. Point 8: Plant P [kPa]=0.89; Plant T [°C]=239.80; Plant Flow [kg/s]=227.10; Deviation P=0.11; Deviation T=-0.01; Deviation Flow=0.00. Point 9: Plant P [kPa]=0.69; Plant T [°C]=237.70; Plant Flow [kg/s]=227.10; Deviation P=0.14; Deviation T=-0.11; Deviation Flow=0.00. Point 10: Plant P [kPa]=0.64; Plant T [°C]=234.30; Plant Flow [kg/s]=227.10; Deviation P=0.16; Deviation T=-0.26; Deviation Flow=0.00. Point 11: Plant P [kPa]=0.45; Plant T [°C]=218.40; Plant Flow [kg/s]=227.10; Deviation P=0.22; Deviation T=-0.76; Deviation Flow=0.00. Point 12: Plant P [kPa]=0.35; Plant T [°C]=197.20; Plant Flow [kg/s]=227.10; Deviation P=0.29; Deviation T=-1.36; Deviation Flow=0.00. Point 13: Plant P [kPa]=0.31; Plant T [°C]=168.80; Plant Flow [kg/s]=227.10; Deviation P=0.33; Deviation T=-2.01; Deviation Flow=0.00.",
+      "terms": [
+        "Table 2",
+        "40 % LOAD",
+        "P [kPa]",
+        "T [°C]",
+        "Flow [kg/s]",
+        "Deviation"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-032",
+      "doc_id": "R003",
+      "section": "4.1 Overall HRSG Off Design Performance",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Table 2. Results and comparison for the stations shown in Figure 1: operation conditions of 50% load and 40% load — 40 % LOAD, points 14–37 (plant/manufacturer values and Deviation (%) from Eq. (14) for P [kPa], T [°C], Flow [kg/s]). Point 14: Plant P [kPa]=1040.00; Plant T [°C]=40.10; Plant Flow [kg/s]=20.01; Deviation P=0.00; Deviation T=-0.37; Deviation Flow=1.84. Point 15: Plant P [kPa]=1030.00; Plant T [°C]=121.70; Plant Flow [kg/s]=20.01; Deviation P=-0.04; Deviation T=-1.04; Deviation Flow=1.84. Point 16: Plant P [kPa]=1030.00; Plant T [°C]=181.20; Plant Flow [kg/s]=20.01; Deviation P=-0.04; Deviation T=-0.75; Deviation Flow=1.84. Point 21: Plant P [kPa]=4870.00; Plant T [°C]=182.10; Plant Flow [kg/s]=3.35; Deviation P=0.00; Deviation T=-1.00; Deviation Flow=1.81. Point 24: Plant P [kPa]=4870.00; Plant T [°C]=237.60; Plant Flow [kg/s]=3.35; Deviation P=0.01; Deviation T=1.16; Deviation Flow=1.81. Point 25: Plant P [kPa]=3020.00; Plant T [°C]=234.20; Plant Flow [kg/s]=3.35; Deviation P=0.00; Deviation T=-0.29; Deviation Flow=1.81. Point 26: Plant P [kPa]=3020.00; Plant T [°C]=234.20; Plant Flow [kg/s]=3.35; Deviation P=0.00; Deviation T=-0.01; Deviation Flow=1.81. Point 27: Plant P [kPa]=2950.00; Plant T [°C]=268.60; Plant Flow [kg/s]=3.35; Deviation P=-0.02; Deviation T=0.77; Deviation Flow=1.81. Point 28: Plant P [kPa]=13360.00; Plant T [°C]=181.20; Plant Flow [kg/s]=16.66; Deviation P=0.00; Deviation T=-2.31; Deviation Flow=1.85. Point 29: Plant P [kPa]=13320.00; Plant T [°C]=232.90; Plant Flow [kg/s]=16.66; Deviation P=-0.01; Deviation T=-1.16; Deviation Flow=1.85. Point 30: Plant P [kPa]=13280.00; Plant T [°C]=239.60; Plant Flow [kg/s]=16.66; Deviation P=-0.01; Deviation T=-0.90; Deviation Flow=1.85. Point 31: Plant P [kPa]=13240.00; Plant T [°C]=273.90; Plant Flow [kg/s]=16.66; Deviation P=-0.02; Deviation T=-0.46; Deviation Flow=1.85. Point 32: Plant P [kPa]=5490.00; Plant T [°C]=269.80; Plant Flow [kg/s]=16.66; Deviation P=0.00; Deviation T=-0.02; Deviation Flow=1.85. Point 33: Plant P [kPa]=5460.00; Plant T [°C]=269.40; Plant Flow [kg/s]=16.66; Deviation P=0.00; Deviation T=-0.04; Deviation Flow=1.85. Point 34: Plant P [kPa]=5430.00; Plant T [°C]=351.10; Plant Flow [kg/s]=16.66; Deviation P=-0.01; Deviation T=0.60; Deviation Flow=1.85. Point 35: Plant P [kPa]=5390.00; Plant T [°C]=390.90; Plant Flow [kg/s]=16.66; Deviation P=-0.03; Deviation T=0.99; Deviation Flow=1.85. Point 36: Plant P [kPa]=5290.00; Plant T [°C]=390.10; Plant Flow [kg/s]=16.66; Deviation P=-0.04; Deviation T=0.99; Deviation Flow=1.85. Point 37: Plant P [kPa]=5100.00; Plant T [°C]=403.90; Plant Flow [kg/s]=16.66; Deviation P=-0.09; Deviation T=1.20; Deviation Flow=1.85.",
+      "terms": [
+        "Table 2",
+        "40 % LOAD",
+        "P [kPa]",
+        "T [°C]",
+        "Flow [kg/s]",
+        "Deviation"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-033",
+      "doc_id": "R003",
+      "section": "4.2 LP and HP Evaporator Off-Design Performance",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "Figures 3 and 4 show (a) saturation pressure and (b) pinch point for EVAP 7 (HP) and EVAP 11 (LP) under various off-design regimes set by the gas turbine exhaust conditions. These quantities also depend on the operating strategy chosen for the steam turbine. Between 100 and 75% partial load the sliding pressure control technique is applied: the HRSG pump governs steam mass flow and pressure, which is advantageous because the steam temperature stays roughly constant off-design. At low partial loads \"arc throttling\" control is used, in which the steam turbine valves regulate steam mass flow and pressure. As a result, saturation pressure and pinch point change abruptly below 75% load.",
+      "terms": [
+        "saturation pressure",
+        "pinch point",
+        "EVAP 7 (HP)",
+        "EVAP 11 (LP)",
+        "sliding pressure control",
+        "arc throttling",
+        "steam turbine valves"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-034",
+      "doc_id": "R003",
+      "section": "4.2 LP and HP Evaporator Off-Design Performance",
+      "page_start": 7,
+      "page_end": 8,
+      "text": "Figure 3. Saturation pressure (a) and pinch point (b) of the HP evaporator at several part-load conditions. Figure 4. Saturation pressure (a) and pinch point (b) of the LP evaporator at several part-load conditions.",
+      "terms": [
+        "Figure 3",
+        "Figure 4",
+        "Saturation pressure",
+        "pinch point",
+        "HP evaporator",
+        "LP evaporator",
+        "part-load"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R003-035",
+      "doc_id": "R003",
+      "section": "5. Conclusions",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "An off-design mathematical modeling approach was used to simulate the full operating range of a dual pressure HRSG, with the heat exchanger pressure-drop and heat transfer equations tuned to OEM data. Temperature, mass flow and pressure on both the gas and water/steam sides agreed well for every component examined; pressure-drop and mass flow deviations were below 0.5% and ± 2.44%, respectively, relative to manufacturer data. The authors conclude that the part-load model, though simple, is effective, and that with suitable tuning to operating data it can simulate real thermal plants across the whole HRSG operating range.",
+      "terms": [
+        "off-design",
+        "dual pressure HRSG",
+        "OEM",
+        "0.5%",
+        "± 2.44%",
+        "part-load",
+        "pressure-drop"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 35,
+    "pages_processed": "1-8 (PDF 전체 8쪽)",
+    "last_paragraph_id": "R003-035",
+    "skipped": [
+      "1쪽 저자 이메일·소속 주소: 저자 연락처",
+      "각 쪽 머리글(Proceedings of ENCIT 2008 / Copyright © 2008 by ABCM / 학회 일시·장소): 머리글·저작권 문구",
+      "8쪽 6. Acknowledgements: 감사의 글",
+      "8쪽 7. References: 참고문헌 목록",
+      "8쪽 8. Responsibility Notice: 저자 책임 고지문(본문 기술 내용 아님)",
+      "그림 1~4 내부 내용(계통도·그래프 데이터): 캡션만 수록"
+    ],
+    "uncertain": [
+      "논문에 인쇄된 페이지 번호가 없어 page_start/page_end는 PDF 쪽 번호(1~8)를 사용함",
+      "Table 1·2는 이미지 표로 PDF 6쪽을 고해상도 렌더링하여 판독·전사함. 원문 소수점 쉼표(예: 278,10)를 점(278.10)으로 바꿔 표기함",
+      "Table 1·2 'Deviation*' 머리의 별표(*)에 대응하는 각주가 PDF에 보이지 않음(Eq. 14 정의로 추정되나 단정하지 않음)",
+      "Eq. (1) 출처 표기는 원문 본문에 'Minoner, 1979'로, 참고문헌에는 'Mironer'로 되어 있음 — 본문 철자 유지"
+    ]
+  }
+}

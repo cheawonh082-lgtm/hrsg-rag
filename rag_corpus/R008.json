@@ -1,0 +1,481 @@
+{
+  "document": {
+    "doc_id": "R008",
+    "title": "배열회수보일러의 부하변동 운전에 따른 과열기 튜브들의 응력거동",
+    "authors": [
+      "정재헌",
+      "송정일"
+    ],
+    "year": 2008,
+    "venue": "한국태양에너지학회 논문집 (Journal of the Korean Solar Energy Society), Vol. 28, No. 6, pp.33-39, ISSN 1598-6411",
+    "doi": "",
+    "url": "",
+    "license": "원문에 저작권·라이선스 표기 없음 (스캔 PDF, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "ko"
+  },
+  "paragraphs": [
+    {
+      "id": "R008-001",
+      "doc_id": "R008",
+      "section": "Abstract",
+      "page_start": 33,
+      "page_end": 33,
+      "text": "The work has two aims: to assess how superheater tubes in an HRSG respond in terms of stress while the unit runs through load changes, and to trace the root causes of tube failure from that stress response. Operating temperatures were first recorded on an actual HRSG to provide input for the stress analysis. Stress analyses for part load and full load, which together can stand for the whole load change operation, were then carried out with commercial finite element software. The analysis pointed to conditions that could lead to tube failure, and these results were compared with the metallurgical microstructure of a failed tube removed from the actual HRSG. Keywords: 배열회수보일러(Heat recovery steam generator), 유동조절장치(Flow correction device), 1차응력(Primary stress), 2차응력(Secondary stress), 막응력(Membrane stress), 굽힘응력(Bending stress).",
+      "terms": [
+        "superheater",
+        "HRSG",
+        "load change operation",
+        "stress analysis",
+        "finite element",
+        "part load",
+        "full load",
+        "microstructure"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-002",
+      "doc_id": "R008",
+      "section": "1. 서론",
+      "page_start": 33,
+      "page_end": 34,
+      "text": "배열회수보일러는 가스터빈·증기터빈 복합화력발전의 핵심 설비로, 발전 효율이 높고 공해가 적어 주목받고 있다. 요즘에는 신재생에너지로 기대되는 석탄가스화 복합발전(integrated gasification combined cycle)이나 연료전지 복합발전 등으로 활용 범위가 넓어지는 중이다. 배열회수보일러는 전력 수요 변동에 맞추려고 기동정지와 부하변동 운전을 자주 하므로, 설계 단계에서 운전횟수와 운전시간을 예측한 시나리오를 세우고 그에 맞게 설계한다. 그러나 실제 강도 설계는 전부하(full load)를 기준으로 하기 때문에, 운전 시간 상당 부분이 부분부하(part load)로 소비된다는 특성은 반영되지 못하고 있다.",
+      "terms": [
+        "배열회수보일러",
+        "복합화력발전",
+        "석탄가스화 복합발전",
+        "integrated gasification combined cycle",
+        "연료전지",
+        "부하변동",
+        "full load",
+        "part load"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-003",
+      "doc_id": "R008",
+      "section": "1. 서론",
+      "page_start": 34,
+      "page_end": 34,
+      "text": "설계 단계의 구조 건전성 검토를 위한 응력 및 수명평가는 대개 고온·고압 환경의 기기를 대상으로 하며, 그중에서도 높은 온도와 압력을 함께 받는 과열기 헤더와 가장 두꺼운 고압 드럼을 주로 고려한다. 하지만 상업 운전이 시작된 뒤에는 과열기 헤더나 고압드럼 자체보다 과열기 헤더에 이어진 튜브의 파손이 대부분을 차지한다. 특히 이 논문이 다루는 수직형 배열회수보일러는 국내외 복합 화력발전소에서 손상 사례가 많이 보고되었다. 운전 초기 튜브 파손은 주로 용접불량 같은 제작 과정의 실수 때문이라고 알려져 있으나, 일부는 제작 과정의 잘못이 아니라 시스템적인 문제에서 비롯되었을 가능성도 있다. 본 연구는 수직형 배열회수보일러를 대상으로, 운전 초기 과열기 튜브 파손의 원인이 될 수 있는 시스템적 문제인 부하변동에 따른 튜브 관군의 응력거동을 조사하였다.",
+      "terms": [
+        "구조 건전성",
+        "수명평가",
+        "과열기 헤더",
+        "고압드럼",
+        "파손",
+        "수직형 배열회수보일러",
+        "용접불량",
+        "응력거동"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-004",
+      "doc_id": "R008",
+      "section": "2.1 수직형 배열회수보일러 및 과열기",
+      "page_start": 34,
+      "page_end": 34,
+      "text": "그림 1은 일반적인 수직형 배열회수보일러의 모양을 보여 준다. 배가스가 전열관군을 수직으로 지나가기 때문에 수직형이라 부르며, 여러 전열관군을 두고 배가스와 열을 주고받는다. 또 전열면에 배가스가 고르게 흐르도록 그림 1처럼 유동조절장치(flow correction device)를 두는데, 이 장치는 전부하 운전을 전제로 정해진 기준을 충족하도록 설계된다. 과열기는 배가스를 가장 먼저 맞는 위치에 있어 고온 환경에 놓이고, 동시에 높은 압력도 받는다. 그림 2에 과열기 구성이 나와 있는데, Inlet헤더와 Outlet헤더의 원주방향으로 Row1, Row2, Row3의 3개 튜브 열이 있다. 각 Row에는 헤더 길이 방향으로 105개의 튜브가 붙어 있어, 과열기 전열관군은 모두 315개의 튜브로 이루어진다.",
+      "terms": [
+        "수직형 배열회수보일러",
+        "배가스",
+        "전열관군",
+        "전열면",
+        "유동조절장치",
+        "flow correction device",
+        "전부하",
+        "과열기"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-005",
+      "doc_id": "R008",
+      "section": "2.1 수직형 배열회수보일러 및 과열기",
+      "page_start": 34,
+      "page_end": 34,
+      "text": "그림 1: outline shape of a vertical-type HRSG. 그림 2: geometric layout of the superheater part.",
+      "terms": [
+        "그림 1",
+        "그림 2",
+        "HRSG",
+        "superheater"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-006",
+      "doc_id": "R008",
+      "section": "2.2 온도측정 및 결과",
+      "page_start": 34,
+      "page_end": 35,
+      "text": "부하변동 운전 중 과열기 튜브 온도가 어떻게 움직이는지 보려고, 수직형 배열회수보일러를 갖춘 400MW급 복합화력발전소의 과열기 튜브 온도를 측정하였다. 그림 2의 과열기를 이루는 3개 Row마다 1개 Row당 8개씩 같은 간격으로 열전대를 Inlet 측과 Outlet 측 튜브에 각각 붙여, 모두 48곳의 온도를 얻었다. 데이터 수집에는 Yokogawa MW100 장비를 썼고 측정은 총 15일간 진행되었다. 측정 기간에 반복된 부분부하(Load case 1, 210MW)와 전부하(Load case 2, 360MW) 운전에서 튜브 온도 데이터를 확보하였다.",
+      "terms": [
+        "400MW급",
+        "열전대",
+        "48곳",
+        "Yokogawa MW100",
+        "15일",
+        "Load case 1",
+        "210MW",
+        "360MW"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-007",
+      "doc_id": "R008",
+      "section": "2.2 온도측정 및 결과",
+      "page_start": 35,
+      "page_end": 35,
+      "text": "그림 3은 수집 데이터 일부로, 세 Row 가운데 배가스와 가장 먼저 닿는 Row1 튜브들의 온도분포이다. 전부하 구간과 부분부하 구간 각각 안에서는 튜브 온도가 비슷한 움직임을 보였다. 또 전부하일 때는 같은 Row 안에서 튜브마다 온도 차이가 크지 않았지만, 부분부하일 때는 튜브 간 온도 차이가 전부하보다 크게 벌어졌다. 그림 4는 그림 3에서 전부하와 부분부하마다 임의의 두 시점을 골라 온도 거동을 비교한 것으로, 같은 부하에서는 튜브 온도 거동이 같았다. 따라서 부하별로 한 시점만 골라도 그 부하를 대표할 수 있다. Row별 온도 분포는 그림 5와 6에 있다. 부분부하와 전부하 모두 Row1–Row2, Row2–Row3 사이 온도 차이의 비율은 비슷하지만, 그 크기는 부분부하에서 매우 크게 나타났다.",
+      "terms": [
+        "Row1",
+        "온도분포",
+        "전부하",
+        "부분부하",
+        "온도 차이",
+        "그림 4",
+        "그림 5",
+        "Row2"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-008",
+      "doc_id": "R008",
+      "section": "2.2 온도측정 및 결과",
+      "page_start": 35,
+      "page_end": 36,
+      "text": "그림 3: how row1 tube temperatures change while the load is varied. 그림 4: temperatures compared across the load cases. 그림 5 and 그림 6: temperature behavior of superheater tubes for Load case 1 and Load case 2, respectively.",
+      "terms": [
+        "그림 3",
+        "그림 4",
+        "그림 5",
+        "그림 6",
+        "row1",
+        "Load case 1",
+        "Load case 2",
+        "superheater tubes"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-009",
+      "doc_id": "R008",
+      "section": "3. 응력해석",
+      "page_start": 36,
+      "page_end": 36,
+      "text": "부하변동 운전에서 과열기 튜브의 응력거동을 알아보기 위해, 열전대로 얻은 튜브 온도 측정값과 발전소 운전 시스템에서 받은 압력 데이터를 입력으로 하여 Load case 1과 Load case 2에 대한 응력해석을 수행하였다. 해석에는 상용 소프트웨어 ANSYS 11을 사용하였다.",
+      "terms": [
+        "응력거동",
+        "열전대",
+        "응력해석",
+        "Load case 1",
+        "Load case 2",
+        "ANSYS 11"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-010",
+      "doc_id": "R008",
+      "section": "3.1 모델링 및 경계조건",
+      "page_start": 36,
+      "page_end": 36,
+      "text": "과열기 재질은 9Cr-1Mo강이다. 유한요소해석 모델은 그림 7처럼 Inlet/Outlet 헤더와 튜브, 배관을 모두 포함한 모듈 전체를 대상으로 만들었으며, Shell, beam, solid 요소를 섞어 썼다. Outlet 쪽은 solid 요소, Inlet 부근은 shell 요소로 만들고, Outlet과 Inlet 부근에 속하지 않는 튜브는 beam 요소로 나타냈다. 경계조건으로는 Inlet헤더와 Outlet헤더에 이어진 배관 끝의 변위를 모든 방향으로 고정하고, beam 요소 튜브와 맞닿는 solid·shell 튜브 끝에는 blowoff 응력을 주었다. 튜브 처짐을 막으려고 튜브에 설치된 8개의 tube sheet도 반영하였다. 다만 배관을 지지하는 hanger 등의 정보가 없어 해석에서 자중은 넣지 않았다.",
+      "terms": [
+        "9Cr-1Mo강",
+        "유한요소해석",
+        "Inlet/Outlet 헤더",
+        "Shell",
+        "beam",
+        "solid",
+        "요소",
+        "경계조건"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-011",
+      "doc_id": "R008",
+      "section": "3.1 모델링 및 경계조건",
+      "page_start": 36,
+      "page_end": 36,
+      "text": "표 1. Number of nodes and elements (요소형태별 절점수와 요소수). Solid: 절점수=322,716; 요소수=219,042. Shell: 절점수=96,311; 요소수=94,737. Beam: 절점수=11,340; 요소수=11,204.",
+      "terms": [
+        "표 1",
+        "Solid",
+        "Shell",
+        "Beam",
+        "절점수",
+        "요소수"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-012",
+      "doc_id": "R008",
+      "section": "3.1 모델링 및 경계조건",
+      "page_start": 36,
+      "page_end": 36,
+      "text": "그림 7: the FE model built for the superheater module.",
+      "terms": [
+        "그림 7",
+        "FE model",
+        "superheater module"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-013",
+      "doc_id": "R008",
+      "section": "3.2 하중조건",
+      "page_start": 36,
+      "page_end": 36,
+      "text": "측정한 운전 온도와 압력을 가공해 Load case 1과 Load case 2의 하중조건으로 삼았다. 온도는 그림 5, 6의 값을 하중으로 넣었고, 두 경우의 운전압력은 표 2에 정리되어 있다.",
+      "terms": [
+        "하중조건",
+        "Load case 1",
+        "Load case 2",
+        "운전압력",
+        "표 2"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-014",
+      "doc_id": "R008",
+      "section": "3.2 하중조건",
+      "page_start": 36,
+      "page_end": 36,
+      "text": "표 2. Operating pressure (운전압력). Outlet: Load case 1=72.9 MPa; Load case 2=97.2 MPa. Inlet: Load case 1=74.4 MPa; Load case 2=99.6 MPa.",
+      "terms": [
+        "표 2",
+        "Operating pressure",
+        "Outlet",
+        "Inlet",
+        "Load case 1",
+        "Load case 2",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-015",
+      "doc_id": "R008",
+      "section": "3.3 해석결과",
+      "page_start": 36,
+      "page_end": 37,
+      "text": "ASME나 EN코드 등에서 압력용기 응력 평가에 쓰는 'Design By Analysis' 방법을 적용하려고, 계산된 응력을 선형화하였다.(1)(2)(5) 이를 위해 그림 8처럼 관심 부위에 선형화용 Path를 정하였다. 이 논문이 다루는 헤더-튜브 연결부 형상에서는 압력이 만드는 1차 응력(primary stress)과, 튜브 온도차에 따른 열팽창 차이가 만드는 2차 응력(secondary stress)이 함께 생기므로, 계산된 응력을 항복응력의 2배와 비교할 수 있다.(3)(4)",
+      "terms": [
+        "ASME",
+        "EN코드",
+        "Design By Analysis",
+        "선형화",
+        "Path",
+        "primary stress",
+        "secondary stress",
+        "항복응력"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-016",
+      "doc_id": "R008",
+      "section": "3.3 해석결과",
+      "page_start": 37,
+      "page_end": 37,
+      "text": "해석 결과는 파손 가능성이 큰 Outlet 쪽을 기준으로 정리하였다. 우선 Path A와 B는 튜브별로 거의 같은 거동을 나타냈다. 그림 9와 10은 Row1의 A, B Path 응력분포이다. Row2와 Row3의 Path A, B 결과는 싣지 않았지만 Row1과 마찬가지로 두 Path의 응력 값이 비슷하였다. 그림 11과 12는 각각 Row2와 Row3의 Path A 응력을 보여 준다.",
+      "terms": [
+        "Outlet",
+        "Path A",
+        "응력분포",
+        "Row1",
+        "Row2",
+        "Row3",
+        "그림 9",
+        "그림 11"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-017",
+      "doc_id": "R008",
+      "section": "3.3 해석결과",
+      "page_start": 37,
+      "page_end": 38,
+      "text": "튜브 응력을 주로 좌우하는 원인을 가리기 위해, 부분부하인 Load case 1을 기준으로 세 경우를 비교하였다. 압력만 하중으로 준 경우, 측정 튜브 온도를 Row별로 평균해 같은 Row 안의 튜브 온도는 같고 Row끼리만 온도가 다른 경우를 각각 해석하고, 이를 측정된 실제 튜브 온도를 넣은 해석 결과와 견주었다. 그림 13은 Row1, 그림 14는 Row2, 그림 15는 Row3에 속한 튜브들의 응력 값이다.",
+      "terms": [
+        "Load case 1",
+        "압력",
+        "튜브 온도",
+        "Row별",
+        "실제 튜브 온도",
+        "그림 13",
+        "그림 14",
+        "그림 15"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-018",
+      "doc_id": "R008",
+      "section": "3.3 해석결과",
+      "page_start": 37,
+      "page_end": 38,
+      "text": "그림 8: Paths assigned at the locations examined. 그림 9 and 그림 10: tube stress on the Outlet side along Path A and Path B of Row 1. 그림 11 and 그림 12: tube stress on the Outlet side along Path A of Row2 and of Row3. 그림 13, 14 and 15: stresses of the Row1, Row2 and Row3 tubes on the Outlet side under Load case 1, for each loading condition.",
+      "terms": [
+        "그림 8",
+        "그림 9",
+        "그림 12",
+        "그림 13",
+        "Path A",
+        "Outlet",
+        "Load case 1",
+        "loading condition"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-019",
+      "doc_id": "R008",
+      "section": "4. 해석결과 분석",
+      "page_start": 38,
+      "page_end": 38,
+      "text": "응력이 가장 크게 나타난 곳은 하중 종류와 관계없이 헤더에 연결된 배관에 가장 가까운 105번 튜브 근처였고, 그다음으로 응력이 큰 곳은 Row마다 양상이 달랐다. 전부하와 부분부하 모두 과열기 튜브 응력은 허용응력보다 낮았지만, 그림 9의 Row1 105번 튜브와 그림 12의 Row3 1번·75번 튜브에서는 Load case에 따라 응력이 변하는 변동하중, 곧 피로하중이 생겼다. 피로응력은 Membrane + Bending 응력에 Peak 응력을 더해 구하며, 응력집중을 감안해 지금 얻은 응력에 응력집중계수를 곱해야 한다.2) 그러므로 실제로는 계산값보다 큰 응력이 걸릴 것으로 보이고, 계산 위치가 용접부 근처이므로 열피로로 파손될 가능성은 훨씬 크다.",
+      "terms": [
+        "105번 튜브",
+        "허용응력",
+        "피로하중",
+        "피로응력",
+        "Membrane + Bending",
+        "Peak 응력",
+        "응력집중계수",
+        "열피로"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-020",
+      "doc_id": "R008",
+      "section": "4. 해석결과 분석",
+      "page_start": 38,
+      "page_end": 38,
+      "text": "그림 13~15를 보면 부분부하 운전에서 튜브 응력을 좌우하는 주된 요인은 튜브 열별 온도차, 즉 Row1~Row3 사이 온도 차이에서 생기는 응력이었다. Row별 온도차로 헤더가 회전하고 열팽창으로 튜브가 길이 방향으로 변위하는데, 헤더에 이어진 배관이 이를 붙잡고 있기 때문이다. 두 번째 요인은 그림 14와 15의 75번 튜브에서처럼 같은 Row 안 튜브끼리의 온도차에서 생기는 응력이다. 같은 Row 내 튜브 온도차는 대체로 가스터빈에서 나오는 배가스의 유동 불균일 때문에 생긴다.",
+      "terms": [
+        "부분부하",
+        "튜브 응력",
+        "온도차",
+        "헤더",
+        "열팽창",
+        "75번 튜브",
+        "가스터빈",
+        "유동 불균일"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-021",
+      "doc_id": "R008",
+      "section": "4. 해석결과 분석",
+      "page_start": 38,
+      "page_end": 39,
+      "text": "그림 16은 응력해석에서 피로하중이 생긴 Row3 75번 튜브 근처에서 실제로 파손된 튜브 시편이다. 튜브 바깥 표면에 접힘이 많고 튜브 전체에 균열이 다수 있는데, 이는 큰 열응력을 받은 튜브에서 흔히 보이는 손상 형태이다. 그림 17의 금속학적 조직 분석에서는 고온 노출의 증거가 되는 탄화물 조대화(carbide coalescence) 같은 현상이 전혀 보이지 않았고, 크리프 손상으로 생기는 기공(void)도 찾을 수 없었다. 이로부터 파손 튜브는 열하중에 의한 피로파괴로 판단되며, 부분부하 운전에서 헤더 길이 방향의 튜브 온도 차이가 파손의 주원인임을 알 수 있다.",
+      "terms": [
+        "Row3",
+        "피로하중",
+        "열응력",
+        "금속학적 조직",
+        "carbide coalescence",
+        "크리프",
+        "void",
+        "피로파괴"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-022",
+      "doc_id": "R008",
+      "section": "4. 해석결과 분석",
+      "page_start": 39,
+      "page_end": 39,
+      "text": "그림 16: the #72 tube that failed in Row 3 on the Outlet side. 그림 17: microstructure observed in the failed #72 tube.",
+      "terms": [
+        "그림 16",
+        "그림 17",
+        "#72",
+        "Row 3",
+        "Outlet",
+        "microstructure"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R008-023",
+      "doc_id": "R008",
+      "section": "5. 결론",
+      "page_start": 39,
+      "page_end": 39,
+      "text": "배열회수보일러 부분부하 운전 중 튜브 응력거동을 파악하려고 실제 발전소 운전 데이터를 측정하고 이를 넣어 응력해석을 한 결과, 다음 결론을 얻었다. (1) 부분부하에서는 전부하와 달리 튜브 사이 온도차가 크게 생겨, 전부하 때보다 튜브 전반에 높은 열응력이 걸린다. (2) 부분부하 운전에서 튜브 응력을 가장 크게 좌우하는 것은 튜브 Row별 온도차이므로, 헤더에 연결된 배관의 영향을 최소화하는 설계가 필요하다. (3) 부분부하에서 같은 Row 안의 튜브 온도 차이는 특정 튜브에 피로응력을 일으키므로, 유동조절장치 개선 등으로 튜브 간 온도 불균일을 없애야 한다.",
+      "terms": [
+        "배열회수보일러",
+        "부분부하",
+        "응력해석",
+        "열응력",
+        "Row별 온도차",
+        "피로응력",
+        "유동조절장치",
+        "온도 불균일"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 23,
+    "pages_processed": "33-39 (PDF 1-7쪽 전체)",
+    "last_paragraph_id": "R008-023",
+    "skipped": [
+      "참고문헌 목록(39쪽): 규칙상 제외",
+      "머리글(논문 제목/저자, 학회지명)·바닥글(학회지명·권호·쪽번호), Vol./ISSN 표기: 제외(서지정보로만 반영)",
+      "저자 소속·이메일, 교신저자 표기, 투고·심사·게재확정일자(33쪽): 저자 연락처 등으로 제외",
+      "영문 제목·영문 저자/소속: 제외(서지정보로만 반영)",
+      "그림 1~17의 내부 내용(그래프 수치, 범례, 모델 도식, 사진): 캡션만 문단화하고 내용은 추측하지 않음"
+    ],
+    "uncertain": [
+      "텍스트 레이어가 없는 스캔 PDF라 300dpi 렌더링 후 tesseract(kor+eng) OCR을 했으나 한글 인식 품질이 낮아, 본문·표는 7쪽 페이지 이미지(부분 확대 포함)를 직접 보고 확인·작성함.",
+      "DOI/URL은 PDF에 표기가 없어 빈칸으로 둠.",
+      "표 2의 운전압력 단위는 원문 인쇄대로 'MPa'(72.9/97.2/74.4/99.6)로 옮김. 과열기 운전압력으로는 커 보이지만 원문 값을 그대로 유지함.",
+      "4절 본문은 파손 시편 위치를 'Row3 75번 튜브 부근'으로, 그림 16·17 캡션은 '#72 tube at Row 3'로 적고 있어 서로 다르나 각각 원문대로 둠.",
+      "4절의 인용 표기 '2)'는 원문 인쇄 형태 그대로 둠.",
+      "Abstract는 원문 언어(영어)로 paraphrase함. 그림 캡션도 원문이 영어라 그림 번호(그림 N)를 유지한 채 영어로 paraphrase함. 표 제목은 표 번호와 함께 원문 영어 제목을 유지함.",
+      "3. 응력해석(절 도입부)과 3.2 하중조건 본문은 같은 절 안에 합칠 본문 문단이 없어 50단어 미만으로 남김."
+    ]
+  }
+}

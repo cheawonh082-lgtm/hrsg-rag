@@ -1,0 +1,1508 @@
+{
+  "document": {
+    "doc_id": "R033",
+    "title": "Analysis of CO2 capture process from flue-gases in combined cycle gas turbine power plant using post-combustion capture technology",
+    "authors": [
+      "Navaneethan Subramanian",
+      "Paweł Madejski"
+    ],
+    "year": 2023,
+    "venue": "Energy, Vol. 282 (2023) 128311",
+    "doi": "10.1016/j.energy.2023.128311",
+    "url": "https://doi.org/10.1016/j.energy.2023.128311",
+    "license": "0360-5442/© 2023 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY-NC license (http://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R033-001",
+      "doc_id": "R033",
+      "section": "Abstract",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Combined cycle gas turbine power plants (CCGTs) are a combined cycle consisting of a gas turbine and a steam turbine to generate electricity. Sometimes CCGTs incorporate cogeneration to produce both heat and power. After the gas fuel combustion in the gas turbine combustion chamber, the flue gases are passed through the Heat Recovery Steam Generator (HRSG) to extract heat and generate additional electrical power using the steam turbine. The CCGT technology is recognized for its highest efficiency of 58% in electricity production among the power production technology. A highly efficient CCGT power plant with 60% efficiency produces even 2.5 times less CO2 than a modern coal power plant with an efficiency of 45% because of the use of gas fuel and electrical efficiency. The CO2 emission can be reduced further when the post-combustion CO2 capture methods are applied. To perform CO2 capture and to reduce the CO2 emission from power plants, the CO2 mass fraction in flue gas is the crucial parameter for the operation of the Post-combustion Carbon Capture and Storage (PCCS) technology. The PCCS technology uses solvents, which is the aqueous solution of amine that reacts with flue gas and absorbs the CO2, which is treated and separated later. The paper presents the results of the energy analysis of a post-combustion carbon capture process when integrated with a combined cycle gas power plant. The study considered two different gas fuels such as methane and syngas. Syngas composition was determined from the sewage sludge gasification process and can be treated as zero-emission CO2 gas fuel. When the flue gas produced from the syngas is used in PCCS at more than 50% of load conditions, the negative CO2 emission level in large-scale CCGT power plants can be reached.",
+      "terms": [
+        "CCGT",
+        "Heat Recovery Steam Generator (HRSG)",
+        "Post-combustion Carbon Capture and Storage (PCCS)",
+        "syngas",
+        "negative CO2 emission"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-002",
+      "doc_id": "R033",
+      "section": "Abstract",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "The paper presents the results of mass and energy balance analysis of HRSG of a CCGT integrated with PCCS to perform CO2 capture. The analysis of HRSG using flue gases from methane and syngas is performed by calculating the enthalpy of flue gas, rate of heat exchange, and temperature distribution of each component of HRSG. The comparison of the result shows slight differences due to the different composition and flow rates of flue gases. The flue gas at the outlet of two HRSG is used in the PCCS at different load conditions. An aqueous solution of 30 wt% Monoethanolamine (MEA) with rich loading of 0.5 mol-CO2/mol-MEA and a mixture of 16 wt% 2-amino-2-methyl-1-propanol (AMP) – 14 wt% Piperazine (PZ) with rich loading of 0.62 and 0.86 mol-CO2/mol-amine respectively are used in the PCCS. Due to the reboiler duty of amines, the steam consumed by the PCCS for AMP-PZ regeneration is less compared to MEA. Depending upon the flue gas and solvent used in the PCCS, the power consumed by the PCCS from CCGT power plant is measured from 9.6% to 11.6%. For the given operating condition of the CCGT and PCCS at more than 50% load condition, the negative CO2 emission level can be achieved. Keywords: Combined cycle gas turbine; Heat recovery steam generator; Carbon capture and storage; Post-combustion CO2 capture; Negative CO2 emission; Syngas",
+      "terms": [
+        "CCGT",
+        "Monoethanolamine (MEA)",
+        "Piperazine (PZ)",
+        "syngas",
+        "reboiler duty",
+        "negative CO2 emission"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-003",
+      "doc_id": "R033",
+      "section": "1. Introduction",
+      "page_start": 1,
+      "page_end": 2,
+      "text": "The rapid increase in energy demand and the use of fossil fuels to satisfy the demand made the energy sector a large contributor to carbon dioxide (CO2) emission, the primary gas of greenhouse gases (GHG). Of the total amount of greenhouse gas emissions, about 65% of CO2 emissions are caused by the power industries. The emission of CO2 into the atmosphere is the major cause of global warming [1]. In the United Nations Framework Convention on Climate Change (UNFCCC) Paris agreement, 196 countries assert to maintain the rise of global average temperature below 2 °C [2]. Carbon capture utilization and storage (CCUS) is one method of mitigating CO2 emission into the atmosphere. The first-generation carbon capture technology had lower CO2 capture efficiency and difficulties in integrating with existing facilities. With more development, the second and third generations overcame such problems. The current generation of carbon capture technology has improved efficiency and cost-effectiveness compared to the previous generation [3]. The captured CO2 can be utilized in various ways such as in Enhanced Oil Recovery (EOR) for oil and gas recovery during extraction, as a carbonating agent in food products, CO2 curing in the cement industry, and in the thermochemical conversion process with hydrogen to produce methane [4].",
+      "terms": [
+        "CO2 emission",
+        "CCUS",
+        "Enhanced Oil Recovery"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-004",
+      "doc_id": "R033",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "A review by Ref. [5] on various factors of CCUS in hydrocarbon industry, the Technical Readiness Level (TRL) of CCUS, and types of CCS, which indicates the maturity level of the technology. The CCUS has a TRL6, which indicates more investments are needed in CO2 storage facilities and CO2 transportation to make CCUS commercially viable by 2030. According to the report by International Energy Agency (IEA) in 2022, 35 commercial CCUS units are currently used for various industrial purposes, which capture up to 45 MtCO2/year. The further investment in CCUS forecasts that by the year 2030 about 200 CCUS facilities can be established, which will capture 220 MtCO2/year. The report suggests that retrofitting CCUS to an existing power plant may reduce emission and recovers the investment [6]. The IEA Greenhouse Gas R&D Programme (IEAGHG) report states that it is possible to improve the efficiency of the CO2 capture rate of the currently used PCCS amine-based technology to 99%, but it increases the cost of equipment and the requirement of energy for amine regeneration. The recent results by Front End Engineering & Design (FEED) show the possibility of deploying a 99% capture rate facility at a cost comparatively 90% capture rate by the year 2030 [7].",
+      "terms": [
+        "CCUS",
+        "Technical Readiness Level",
+        "IEAGHG",
+        "PCCS",
+        "capture rate",
+        "amine regeneration"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-005",
+      "doc_id": "R033",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "The Petra Nova power plant (Thompsons, Texas) and the Boundary Dam (Estevan, Saskatchewan, Canada) are the only commercially established large-scale solvent-based PCCS technology integrated with coal-fired power plants that exist in the power industry [8]. With the Petra Nova power plant suspended operations recently, the Boundary Dam power plant integrated with amine-based carbon capture and storage (CCS) technology is still operational [9]. Both facilities are initially constructed as power plants, and the CCS technology was retrofitted later. While the Boundary dam uses steam from the available steam cycle for amine regeneration, the Petra Nova uses an auxiliary co-generation plant fired with natural gas using a 70 MW GE 7 E A gas turbine, which produced both power and steam for the PCCS plant [10]. The Cansolv amine used in the Boundary Dam power plant is used to capture both carbon dioxide and sulphur dioxide [11]. This amine will also be used in integrating the world’s largest carbon capture project with a natural gas-fired combined cycle power plant [12]. The difference between the Petra Nova and the Boundary Dam power plant with CCS is shown in Table 1.",
+      "terms": [
+        "Petra Nova",
+        "Boundary Dam",
+        "PCCS",
+        "Cansolv",
+        "amine regeneration",
+        "co-generation plant",
+        "GE 7 E A gas turbine",
+        "carbon capture and storage (CCS)"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-006",
+      "doc_id": "R033",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "The combined cycle gas turbine power plant (CCGT) has the highest power generation efficiency of more than 60%. At 60% efficiency, the CCGT can produce CO2 emissions of up to 330 kgCO2/MWh [13]. Because of their low operational cost, high-power generation efficiency and lower environmental impact, the CCGTs are distinct from other power generation techniques such as individual power plants with only gas or steam. The utilization of heat from the gas turbine and optimization of HRSG leads the CCPPs to improve the power production efficiency up to 65% with a considerable reduction of CO2 emission [14]. The installation of HRSG at the outlet of the gas turbines not only increases energy efficiency by utilizing the thermal energy in the exhaust gas but also reduces the waste of energy [15]. The gas turbine can change the load rapidly by modifying the fuel mass flow rate according to the demand [16,17].",
+      "terms": [
+        "CCGT",
+        "HRSG",
+        "power generation efficiency",
+        "kgCO2/MWh",
+        "exhaust gas",
+        "gas turbine",
+        "fuel mass flow rate"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-007",
+      "doc_id": "R033",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "The IEA report on Bioenergy with carbon capture and storage (BECCS) states that the combining of bioenergy with CCS is a potential solution for achieving a negative emission. Bioenergy involves the production of power and heat from biomass, which originates from agricultural residues and wastes [18]. When biomass is combined with carbon capture, it provides the possibility of achieving negative CO2 emissions [19]. In 2019, more than 7.5 million tons of sewage sludge were produced by the European Union countries [20]. Vishwajeet et al. experimentally demonstrated the process of converting sewage sludge into syngas using a plasma gasification experimental rig. The gasification took place in two-step plasma gasification, in which the ash produced during the gasification process is involved in the vitrification process, which turned the residue into construction material. The experimental result shows that the use of plasma for gasification influences the heating value of the producer gas. The 2-step process led the experiment to achieve the end-to-waste status and made the waste useful for energy production [21]. Ziółkowski et al. demonstrate the potential of achieving ‘negative CO2 emission gas power plant’ with the use of gas fuel produced from the gasification of biomass in a gas power plant integrated with CCS using different modelling software such as Aspen Plus, Aspen Hysys and Ebsilon. The comparison of calculation of various parameters such as pressure, temperature, mass flow rate and composition of streams of the cycle from the software show slight differences and possibility of achieving a negative CO2 emission of −720 kgCO2/MWh. The Ebsilon Professional® software uses the Gauss-Seidel method to perform calculations and uses components to produce mass and energy balance results of the designed thermodynamic cycles [22].",
+      "terms": [
+        "BECCS",
+        "negative CO2 emissions",
+        "sewage sludge",
+        "syngas",
+        "plasma gasification",
+        "Ebsilon Professional",
+        "Gauss-Seidel",
+        "Aspen Plus"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-008",
+      "doc_id": "R033",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 3,
+      "text": "The CCS is performed in three different methods: precombustion carbon capture, post-combustion carbon capture, and oxy-combustion carbon capture. Depending upon the type of CCS, the energy penalty of the power plant varies from 4% to 12%. The post-combustion carbon capture and storage (PCCS) technology using solvent achieves a high CO2 capture efficiency of 90% and has the advantage of integrating with the complex structure of an existing or new power plant with multiple systems and interconnections of streams [23]. In PCCS using the solvent method, the solvent uses the chemical absorption, in which the liquid solvent reacts with the CO2 in the gas stream [24]. Diethanolamine (DEA), methyl diethanolamine (MDEA) and Monoethanolamine (MEA) are some of the solvents used in the PCCS process. MEA is the most known solvent for its high rate of reaction, low cost, and CO2 absorption capacity [25]. The use of solvent method for CO2 capture requires high energy for solvent regeneration, which depends upon the type of solvent used [26]. Recent research focuses on high CO2 capture rate with low requirement of energy for regeneration. This condition works especially with blending of amines [27]. Sakwattanapong et al. conducted a bench-scale experimental analysis that shows that the reboiler duty required for single alkanolamine is higher and for blended amines is the combination of the two single amines used or lower than one of the amines used in the blended solutions.",
+      "terms": [
+        "post-combustion carbon capture",
+        "energy penalty",
+        "Monoethanolamine (MEA)",
+        "reboiler duty",
+        "blended amines"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-009",
+      "doc_id": "R033",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 3,
+      "text": "The reboiler duty required for MEA and MDEA at rich loading of 0.5 mol/mol and lean loading of 0.30 mol/mol and 0.5 mol/mol is around 3500 kJ/kg-CO2 and 1500 kJ/kg-CO2 respectively. In case of the 1:1 M ratio of MEA-MDEA blended amines at rich loading of 0.5 mol/mol and lean loading of 0.15 mol/mol, the required reboiler duty is around 2000 kJ/kg-CO2, which is the combination of both amines used or lower than MEA. The reboiler duty also depends upon various factors such as amine concentration, and rich and lean loading [28]. Śpiewak et al. used a process development unit and compared the performance of the solvents MEA and 2-amino-2-methyl-1-propanol (AMP) mixed with piperazine (PZ). It shows that the process efficiency of using AMP-PZ solvent is similar to MEA. However, the heat required for the regeneration process is lower for AMP/PZ than for MEA with similar carbon capture efficiency [29]. A model developed for the study of PCCS using AMP-PZ and MEA solvents integrated with a supercritical coal power plant shows that the reboiler duty required for the regeneration of AMP-PZ is lower than MEA, which is 2.9 GJ/t-CO2 and 3.6 GJ/t-CO2 respectively. The power and cooling water consumed by PCCS using AMP-PZ is lesser than MEA. However, due to the volatility of AMP-PZ, the emission of the amine into the atmosphere is high at 18 g/t-CO2 [30].",
+      "terms": [
+        "reboiler duty",
+        "blended amines",
+        "MEA-MDEA",
+        "AMP-PZ",
+        "kJ/kg-CO2"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-010",
+      "doc_id": "R033",
+      "section": "1. Introduction",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "While using solvents in PCCS, emission of amine and ammonia with treated flue gas and captured CO2 can be observed. The amine emission depends on many factors such as operating conditions of PCCS, flue gas composition and temperature of the solvent, which leads to various environmental issues. The emission of amine can be partly reduced by adding a water wash column to the top of the absorber, which reduces the temperature of the flue gas. This does not have much effect on ammonia emission [31]. A pilot plant experimental investigation on amine degradation management using blended AMP-PZ states that the recirculating solvents used in the PCCS consist of anionic compounds, metals, and reactive components. The experiment states that the corrosivity in MEA is higher than in the mixture of AMP-PZ. After the same number of days of operation, the iron accumulation in MEA and AMP-PZ are measured to be 63 mg/kg and 3 mg/kg respectively [32].",
+      "terms": [
+        "amine emission",
+        "ammonia",
+        "water wash column",
+        "absorber",
+        "AMP-PZ",
+        "MEA",
+        "iron accumulation",
+        "amine degradation"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-011",
+      "doc_id": "R033",
+      "section": "1. Introduction",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "In this study, thermodynamic analysis of flue gases obtained from two different fuels, the water/steam circuit of the components in HRSG, the performance of HRSG in CCGT, and the theoretical analysis of PCCS using two different solvents integrated with the CCGT are presented. The results of the analysis of flue gas properties, emission from flue gases, energy balance, and heat distribution of the components of HRSG are presented. This study’s novelty is to analyze the post-combustion carbon capture and storage using two different solvents such as MEA and a mixture of AMP-PZ. Two different fuels such as methane and syngas obtained from the gasification of sewage sludge are used in the gas turbine. The exhaust of the gas turbine is used in HRSG of the CCGT and further passed to PCCS. The analysis of flue gases from the CCGT is treated with PCCS under different load conditions (100%, 75%, 50% and 25%) are performed. An aqueous solution of 30% MEA with rich CO2 loading of 0.5 mol-CO2/mol-MEA and 16% AMP +14% PZ with rich CO2 loading of 0.62 and 0.86 mol-CO2/mol-amine respectively are used in the PCCS. The various parameters of each stream, steam and power consumption of the PCCS are analyzed using different solvents for treating flue gases from different fuels.",
+      "terms": [
+        "HRSG",
+        "CCGT",
+        "PCCS",
+        "MEA",
+        "AMP-PZ",
+        "syngas",
+        "sewage sludge",
+        "rich CO2 loading"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-012",
+      "doc_id": "R033",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Table 1. Comparison between the Petra Nova and Boundary Dam power plant with CCS [10]. Location: Unit=–; Petra Nova Power Plant=Thompsons, Texas; Boundary Dam power plant=Saskatchewan, Canada. Gross power generation: Unit=MW; Petra Nova Power Plant=240; Boundary Dam power plant=160. CO2 captured: Unit=MT/year; Petra Nova Power Plant=1.6; Boundary Dam power plant=1. Capture efficiency: Unit=%; Petra Nova Power Plant=90; Boundary Dam power plant=90. Regeneration steam: Unit=–; Petra Nova Power Plant=Auxiliary co-generation plant; Boundary Dam power plant=Steam cycle. Solvent: Unit=–; Petra Nova Power Plant=KS-1; Boundary Dam power plant=Cansolv. Use of captured CO2: Unit=–; Petra Nova Power Plant=Enhanced Oil Recovery; Boundary Dam power plant=EOR, also to geological storage. Capital cost: Unit=$; Petra Nova Power Plant=1000; Boundary Dam power plant=1300–1500.",
+      "terms": [
+        "Petra Nova",
+        "Boundary Dam",
+        "Capture efficiency",
+        "Regeneration steam",
+        "KS-1",
+        "Cansolv",
+        "Enhanced Oil Recovery",
+        "Gross power generation"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-013",
+      "doc_id": "R033",
+      "section": "2. General scheme and description of analyzed CCGT",
+      "page_start": 3,
+      "page_end": 4,
+      "text": "To perform an analysis of the HRSG of the CCGT, the Gorzów CCGT power plant in Poland is taken as a reference case [33]. Fig. 1 shows the overall layout of the CCGT integrated with PCCS power plant taken into consideration for the analysis with reference to the Gorzów power plant. The CCGT used for the thermodynamic analysis of HRSG consists of two gas turbines, two HRSG, and a steam turbine. The fuel and air mixture gets combusted in the combustion chamber, and the flue gas at 30 bar pressure and 1410 °C temperature flows through the gas turbine, which produces power at an efficiency of 38.3%. The exhaust of the gas turbine passes through the HRSG and converts the water inside the tubes of HRSG into steam. The steam produced from the HRSG is further sent to the steam turbine. Part of the steam is extracted from the steam turbine for the District Heating Network (DHN) and PCCS for solvent regeneration. Before passing the flue gas to PCCS, the sensible heat in flue gas is utilized by the DHN economizer at the last stage of the HRSG. The considered CCGT power plant consists of 2 S SGT-800 gas turbines (properties in Table 2), which can produce power up to 50.5 MW separately, and the Siemens SGT-400 steam turbine (properties in Table 3) produces power up to 65 MW. The mass flow rate and the composition of flue gases passing through the HRSG vary depending on the fuels used. The detailed information about the HRSG used for the analysis is described in section 3.",
+      "terms": [
+        "Gorzów CCGT power plant",
+        "HRSG",
+        "SGT-800",
+        "SGT-400",
+        "District Heating Network (DHN)",
+        "DHN economizer",
+        "PCCS",
+        "steam turbine"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-014",
+      "doc_id": "R033",
+      "section": "2. General scheme and description of analyzed CCGT",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Table 2. Properties of siemens SGT-800 [34]. Power generation: Unit=MW; Value=ISO 50.5. Electrical efficiency: Unit=%; Value=38.3. Frequency: Unit=Hz; Value=50. Heat rate: Unit=kJ/kWh; Value=9407. Speed: Unit=rpm; Value=6608. NOx emission: Unit=ppmV; Value=<15. Gas-supply pressure requirement: Unit=bar; Value=27–30. Compressor pressure ratio: Unit=–; Value=21.1:1. Exhaust gas temperature: Unit=°C; Value=553.",
+      "terms": [
+        "SGT-800",
+        "Electrical efficiency",
+        "Heat rate",
+        "kJ/kWh",
+        "NOx emission",
+        "Compressor pressure ratio",
+        "Exhaust gas temperature"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-015",
+      "doc_id": "R033",
+      "section": "2. General scheme and description of analyzed CCGT",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Table 3. Properties of SST 400 steam turbine [35]. Power Output: Unit=MW; Value=Up to 65. Frequency: Unit=Hz; Value=50. Speed: Unit=rpm; Value=3000–8000. Live Steam Temperature: Unit=°C; Value=540. Live Steam Pressure: Unit=bar; Value=Up to 140. Reheat Steam Temperature: Unit=°C; Value=Up to 450. Reheat Steam Pressure: Unit=bar; Value=Up to 30. Turbine extraction steam pressure: Unit=bar; Value=Up to 60. Exhaust steam conditions: Back pressure=Up to 25 bar; District heating=Up to 3 bar; Condensing=Up to 0.6 bar. Mechanical efficiency: Unit=%; Value=99.6. Generator efficiency: Unit=%; Value=98.5. HP & LP Isentropic efficiency: Unit=%; Value=92 & 88.",
+      "terms": [
+        "SST 400",
+        "Live Steam Temperature",
+        "Live Steam Pressure",
+        "Reheat Steam Temperature",
+        "Turbine extraction steam pressure",
+        "Back pressure",
+        "Isentropic efficiency",
+        "Condensing"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-016",
+      "doc_id": "R033",
+      "section": "2. General scheme and description of analyzed CCGT",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Fig. 1. Schematic diagram of combined cycle gas turbine power plant integrated with post-combustion carbon capture technology using solvent method.",
+      "terms": [
+        "combined cycle gas turbine power plant",
+        "post-combustion carbon capture technology",
+        "solvent method"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-017",
+      "doc_id": "R033",
+      "section": "3.1 Heat recovery steam generator – arrangement and operation principle",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Fig. 2 shows the detailed arrangements of the components of HRSG used for the analysis. The HRSG consists of two pressure levels such as high pressure (HP) and low pressure (LP) as the values of the pressure levels are indicated in Table 6. Each pressure level has its economizer, evaporator, steam drum and superheater. The increasing number of pressure levels in HRSG improves the efficiency of the power plant. The increasing pressure levels extract more heat from flue gas, which produces more steam for steam turbines for power generation. The utilization of heat until the reduction of the temperature difference between flue gas and steam enhances the efficiency of HRSG [36]. Since the flue gas stream at the final stage of the HRSG attains a temperature of 178 °C, adding one more pressure level is not viable, as the temperature difference between the flue gas and steam attains is near 15 °C. Furthermore, the available heat in flue gas is used by the economizer of the DHN, which is included at the last stage of the HRSG.",
+      "terms": [
+        "HRSG",
+        "high pressure (HP)",
+        "low pressure (LP)",
+        "economizer",
+        "evaporator",
+        "steam drum",
+        "superheater",
+        "pressure levels"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-018",
+      "doc_id": "R033",
+      "section": "3.1 Heat recovery steam generator – arrangement and operation principle",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Water from the deaerator pumped by the HP and LP Feed Water Pumps (FWP) to the economizer gets preheated by the flue gas. The heat to the components of the HRSG is provided by the exhaust gas from gas turbine at 553 °C passing through the duct. The pre-heated stream from economizer flows to the drum, where the separation of water and steam takes place at the separator. The separated steam becomes superheated steam in the superheater and flows to the steam turbine [37]. The water flows the downstream of evaporator and the steam flows through the superheater tubes as described in Fig. 3. Table 4 shows the specifications of the pump, deaerator, and the components of the HRSG used for the analysis.",
+      "terms": [
+        "deaerator",
+        "Feed Water Pumps (FWP)",
+        "economizer",
+        "drum",
+        "separator",
+        "superheater",
+        "evaporator",
+        "superheated steam"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-019",
+      "doc_id": "R033",
+      "section": "3.1 Heat recovery steam generator – arrangement and operation principle",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Table 4. Specifications of components and equipment of HRSG. HRSG components flue gas pressure drop: Unit=bar; Value=0.2. HRSG HP & LP components cold side heat transfer coefficient: Unit=W/m^2K; Value=500. HRSG HP & LP components hot side heat transfer coefficient: Unit=W/m^2K; Value=50. Operating pressure of deaerator: Unit=bar; Value=7. HP & LP Feedwater pump mechanical efficiency: Unit=%; Value=99.8. HP & LP Feedwater pump isentropic efficiency: Unit=%; Value=80. HP & LP Feedwater pump speed: Unit=rpm; Value=3000. HP & LP Feedwater pump motor mechanical efficiency: Unit=%; Value=99.8. HP & LP Feedwater pump motor electrical efficiency: Unit=%; Value=85.",
+      "terms": [
+        "HRSG",
+        "flue gas pressure drop",
+        "cold side heat transfer coefficient",
+        "hot side heat transfer coefficient",
+        "W/m^2K",
+        "deaerator",
+        "Feedwater pump",
+        "isentropic efficiency"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-020",
+      "doc_id": "R033",
+      "section": "3.1 Heat recovery steam generator – arrangement and operation principle",
+      "page_start": 4,
+      "page_end": 5,
+      "text": "Fig. 2. Detailed arrangement of Heat Recovery Steam Generator with two pressure levels. Fig. 3. Water and steam separation process inside steam drum.",
+      "terms": [
+        "Heat Recovery Steam Generator",
+        "two pressure levels",
+        "steam drum",
+        "Water and steam separation"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-021",
+      "doc_id": "R033",
+      "section": "3.2 Post-combustion carbon capture and storage process",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "As in Fig. 4, the PCCS includes an absorber and a stripper, where absorption and desorption processes take place. The amine passes through the middle of the absorber and reacts with the flue gas stream passing from the bottom. An exothermic reaction occurs between the flue gas and amine, increasing the temperature of the rich amine from 40 °C to 60 °C streaming out of the absorber bottom. The amine passing through one section of the stripper gets heated to 120 °C, which is the operating temperature of the stripper and flows to the reboiler. When the amine flows back to another section of the stripper, it separates the CO2 and vapour. Initially, the flue gas and lean amine are cooled down to the operating temperature of 40–60 °C before passing to the absorber.",
+      "terms": [
+        "PCCS",
+        "absorber",
+        "stripper",
+        "rich amine",
+        "reboiler",
+        "lean amine",
+        "exothermic reaction",
+        "desorption"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-022",
+      "doc_id": "R033",
+      "section": "3.2 Post-combustion carbon capture and storage process",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Water wash is performed on the treated flue gas to reduce the amine and amine emission loss into the atmosphere. Steam at a temperature of 100–140 °C and pressure of 1 bar–3.5 bar is used in the reboiler for heating purposes. While the regenerated lean amine is further used for repeating the process, the separated CO2 is sent to storage [38–41]. For the analysis of PCCS at different load conditions, the PCCS is intended in a way that the CCGT performs in full operating condition, only flue gas at the exhaust of the CCGT is diverted to PCCS for CO2 removal. During different load conditions, the remaining flue gas diverted from PCCS is passed directly into the atmosphere.",
+      "terms": [
+        "Water wash",
+        "amine emission",
+        "reboiler",
+        "lean amine",
+        "PCCS",
+        "CCGT",
+        "flue gas",
+        "load conditions"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-023",
+      "doc_id": "R033",
+      "section": "3.2 Post-combustion carbon capture and storage process",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "In this study, two different solvents as MEA and AMP–PZ mixture, are used in the PCCS process. The amine in reaction Eq. (1) is denoted as R, where the amine reacts with CO2 to form carbamate [42]. 2R − NH_2 + CO_2 → R − NH_3^+ + R − NHCOO^− + heat (1) (absorption: 2 mol of amine react with 1 mol of CO_2 to form carbamate, releasing heat) The carbamate nitrogen-carbon bond can be broken by the application of heat, which produces a reverse reaction Eq. (2) to form amine regeneration. R − NH_3^+ + R − NHCOO^− + heat → 2R − NH_2 + CO_2 (2) (regeneration: heat reverses reaction (1), releasing CO_2 and regenerating the amine)",
+      "terms": [
+        "MEA",
+        "AMP–PZ",
+        "carbamate",
+        "amine regeneration",
+        "R − NHCOO^−",
+        "heat"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-024",
+      "doc_id": "R033",
+      "section": "3.2 Post-combustion carbon capture and storage process",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "As per reaction Eq. (1), the amine reacts with CO2 and produces carbamate in the absorber. Reaction Eq. (1) is reversed in reaction Eq. (2) in stripper, where heat is used to separate CO2 from amine. 2 mol of amine react with 1 mol of CO2 in reaction Eq. (1), in which the CO2 is separated in reaction Eq. (2) and limit the absorbing capacity of the amine to 0.5 mol (22 g) of CO2 per mole of amine. The lean solvent used for the carbon capture process in the absorber has a composition of 30 wt% MEA and 70 wt% H2O, which gives 90% of CO2 capture efficiency [43]. The Reboiler duty required for the regeneration of MEA is 3.8 MJ/kg-CO2 [44]. After the regeneration process, the lean solvent at the outlet of the stripper has some content of CO2, which is represented as lean loading. The lean CO2 loading for MEA aqueous solution used for the analysis is 0.17 mol CO2/mol MEA [45]. Converting the mole CO2 loading of MEA into mass, it is assessed that the CO2-rich loading of MEA solvent is 0.36 kg-CO2/kg-MEA.",
+      "terms": [
+        "carbamate",
+        "absorber",
+        "stripper",
+        "lean solvent",
+        "Reboiler duty",
+        "MJ/kg-CO2",
+        "lean loading",
+        "CO2-rich loading"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-025",
+      "doc_id": "R033",
+      "section": "3.2 Post-combustion carbon capture and storage process",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "In case of AMP-PZ, the rich CO2 loading for AMP and PZ are 0.62 and 0.86 mol-CO2/mol-amine, respectively [46]. The CO2-rich loading of AMP-PZ is calculated to be 306 g CO2/kg AMP and 439 g CO2/kg PZ. The AMP & PZ has an optimal lean loading of 0.37 mol-CO2/mol-AMP [47] and 0.20 mol-CO2/mol-PZ [48]. To compare with MEA and get 90% of CO2 capture efficiency, 16 wt% AMP and 14 wt% PZ amine mixture are considered for the analysis. The regeneration energy required for 30 wt % AMP-PZ mixture is given by 3.7 MJ/kg-CO2 [49].",
+      "terms": [
+        "AMP-PZ",
+        "rich CO2 loading",
+        "lean loading",
+        "mol-CO2/mol-AMP",
+        "mol-CO2/mol-PZ",
+        "CO2 capture efficiency",
+        "regeneration energy",
+        "MJ/kg-CO2"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-026",
+      "doc_id": "R033",
+      "section": "3.2 Post-combustion carbon capture and storage process",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Fig. 4. Post-combustion carbon capture and storage technology using solvent method with reference points.",
+      "terms": [
+        "Post-combustion carbon capture and storage technology",
+        "solvent method",
+        "reference points"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-027",
+      "doc_id": "R033",
+      "section": "4.1 Main assumptions and properties of fuels",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Two different fuels, such as methane and syngas produced from the gasification of sewage sludge with properties as in Table 5 are considered for the analysis. The main assumptions of input data of the HRSG are based on the gas turbine and steam turbine properties in Table 2, Table 3, and Gorzów CCGT power plant [33] to analyze the heat distribution and the properties of flue gas at various stages of HRSG as in Table 6.",
+      "terms": [
+        "methane",
+        "syngas",
+        "sewage sludge",
+        "HRSG",
+        "gas turbine",
+        "steam turbine",
+        "Gorzów CCGT power plant",
+        "heat distribution"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-028",
+      "doc_id": "R033",
+      "section": "4.1 Main assumptions and properties of fuels",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Table 5. Properties of methane and syngas fuels. Carbon Monoxide: Molecular formula=CO; Unit=%; Methane mass fraction=–; Methane volumetric fraction=–; Syngas mass fraction=13.31; Syngas volumetric fraction=9.09. Carbon Dioxide: Molecular formula=CO2; Unit=%; Methane mass fraction=–; Methane volumetric fraction=–; Syngas mass fraction=59.31; Syngas volumetric fraction=25.61. Methane: Molecular formula=CH4; Unit=%; Methane mass fraction=100; Methane volumetric fraction=100; Syngas mass fraction=11.46; Syngas volumetric fraction=13.64. Propane: Molecular formula=C3H8; Unit=%; Methane mass fraction=–; Methane volumetric fraction=–; Syngas mass fraction=8.03; Syngas volumetric fraction=3.39. Hydrogen: Molecular formula=H2; Unit=%; Methane mass fraction=–; Methane volumetric fraction=–; Syngas mass fraction=5.10; Syngas volumetric fraction=45.16. Ammonia: Molecular formula=NH3; Unit=%; Methane mass fraction=–; Methane volumetric fraction=–; Syngas mass fraction=2.79; Syngas volumetric fraction=3.10. Total: Molecular formula=–; Unit=%; Methane mass fraction=100; Methane volumetric fraction=100; Syngas mass fraction=100; Syngas volumetric fraction=100. Fuel mass flow rate in GT: Molecular formula=–; Unit=kg/s; Methane=2.64; Syngas=7.572. LHV^a: Molecular formula=–; Unit=MJ/kg; Methane=50.70; Syngas=17.079. Note a: LHV based on ISO 6976:1995(E) at 15 °C and 1 atm for gas mixtures.",
+      "terms": [
+        "methane",
+        "syngas",
+        "Carbon Monoxide",
+        "Hydrogen",
+        "Fuel mass flow rate in GT",
+        "LHV",
+        "ISO 6976:1995(E)",
+        "volumetric fraction"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-029",
+      "doc_id": "R033",
+      "section": "4.1 Main assumptions and properties of fuels",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Table 6. Input data of one HRSG of combined cycle power plant. HRSG to HP/LP ST steam pressure: Unit=bar; Value=80/8. HRSG to HP/LP ST steam temperature: Unit=°C; Value=510/277. Mass flow of steam to HP steam turbine: Unit=t/h; Value=62.4. Mass flow of steam to LP steam turbine: Unit=t/h; Value=15.0. Thermal capacity in steam (thermal output): Unit=MWt; Value=67. Thermal capacity ECO_DHN (DHN - thermal output of hot water): Unit=MWt; Value=10. DHN supply temperature: Unit=°C; Value=90.",
+      "terms": [
+        "HRSG",
+        "HP/LP ST steam pressure",
+        "Mass flow of steam to HP steam turbine",
+        "Thermal capacity",
+        "ECO_DHN",
+        "DHN supply temperature",
+        "MWt",
+        "t/h"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-030",
+      "doc_id": "R033",
+      "section": "4.2 Thermodynamic analysis of HRSG",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The enthalpy of flue gas at different temperatures using different fuels in HRSG is calculated by Eq. (3). h_fg@t = ∑_i^N X_i • h_i (3) (enthalpy of flue gas at target temperature t = sum over the N gas components of mass fraction × component enthalpy) Where X_i is the mass fraction of the selected gas component in flue gas and h_i is the enthalpy of the selected gas component at the target temperature of flue gas.",
+      "terms": [
+        "enthalpy of flue gas",
+        "h_fg@t",
+        "X_i",
+        "h_i",
+        "mass fraction",
+        "HRSG"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-031",
+      "doc_id": "R033",
+      "section": "4.2 Thermodynamic analysis of HRSG",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The Logarithmic Mean Temperature Difference (LMTD) to determine the temperature driving force of the components in HRSG is calculated as presented in Eq. (4). LMTD = (ΔT_A − ΔT_B) / ln(ΔT_A/ΔT_B) (4) (logarithmic mean of the two terminal temperature differences) ΔT_A = T_hi − T_co (5) (hot stream inlet minus cold stream outlet temperature) ΔT_B = T_ho − T_ci (6) (hot stream outlet minus cold stream inlet temperature) Where T_hi & T_ho are the temperature of the hot stream inlet and outlet and T_ci & T_co are the temperature of the cold stream inlet and outlet of the heat exchanger.",
+      "terms": [
+        "Logarithmic Mean Temperature Difference (LMTD)",
+        "temperature driving force",
+        "ΔT_A",
+        "ΔT_B",
+        "T_hi",
+        "T_co",
+        "heat exchanger",
+        "HRSG"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-032",
+      "doc_id": "R033",
+      "section": "4.2 Thermodynamic analysis of HRSG",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The heat exchange equation for calculating the rate of heat exchange in HRSG is presented in Eq. (7). Q̇ = ṁ_fg • (h_fi − h_fo) = ṁ_steam • (h_so − h_si) (7) (heat released by the flue gas across the component = heat absorbed by the steam/water) Where ṁ_fg & ṁ_steam are the mass flow of flue gas and steam, h_fi & h_fo are the enthalpy of the flue gas at the inlet and outlet of the heat exchanger and h_so & h_si are the enthalpy of steam at the inlet and outlet of the heat exchanger.",
+      "terms": [
+        "rate of heat exchange",
+        "Q̇",
+        "ṁ_fg",
+        "ṁ_steam",
+        "h_fi",
+        "h_so",
+        "enthalpy",
+        "heat exchanger"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-033",
+      "doc_id": "R033",
+      "section": "4.3 Analysis of post-combustion carbon capture and storage unit",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The reference points are provided at each stream of the post-combustion carbon capture process, as depicted in Fig. 4, to calculate the mass balance of the streams in PCCS. The utilities of the PCCS process, such as pumps, heat exchangers, coolers, and compressors/blowers, are simulated in Ebsilon Professional® 16.00 to calculate the power consumed, heat exchange rate, and outlet stream temperature. The amount of solvent required for the CO2 capture process is calculated by the formula presented in Eq. (8). ṁ_14 = ṁ_fg.CO2 • mg_amine (8) (mass flow of lean amine at the absorber inlet = mass flow of CO2 in flue gas • rich CO2 loading of amine) Where ṁ_fg.CO2 is the mass flow rate of CO2 in the flue gas and mg_amine is the rich CO2 loading of amine in kg/kg. Since the solvents have a carbon capture efficiency of 90%, Eq. (9) shows the mass flow of CO2 captured at the absorber. ṁ_cap.CO2 = 0.9 ∗ ṁ_fg.CO2 (9) (CO2 captured = 90% capture efficiency × CO2 in flue gas)",
+      "terms": [
+        "reference points",
+        "PCCS",
+        "Ebsilon Professional® 16.00",
+        "ṁ_14",
+        "ṁ_fg.CO2",
+        "mg_amine",
+        "ṁ_cap.CO2",
+        "carbon capture efficiency"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-034",
+      "doc_id": "R033",
+      "section": "4.3 Analysis of post-combustion carbon capture and storage unit",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The ṁ_3 is represented as the total mass flow rate of flue gas used at the inlet of the PCCS absorber. The treated flue gas from PCCS, which is the flue gas after the removal of CO2 content, is calculated by Eq. (10). ṁ_4 = ṁ_3 − ṁ_cap.CO2 (10) (treated flue gas = flue gas at absorber inlet − captured CO2) The mass flow of rich amine, ṁ_9 at the outlet of the absorber and the inlet of the stripper is given in Eq. (11) ṁ_9 = ṁ_14 + ṁ_cap.CO2 (11) (rich amine = lean amine + captured CO2) Here ṁ_14 is the mass flow of lean amine at the absorber inlet. The inlet and outlet mass balance of the absorber is given in Eq. (13) ṁ_3 + ṁ_14 = ṁ_4 + ṁ_9 (13) (absorber mass balance: flue gas in + lean amine in = treated flue gas out + rich amine out)",
+      "terms": [
+        "ṁ_3",
+        "ṁ_4",
+        "ṁ_9",
+        "ṁ_14",
+        "rich amine",
+        "lean amine",
+        "absorber",
+        "mass balance"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-035",
+      "doc_id": "R033",
+      "section": "4.3 Analysis of post-combustion carbon capture and storage unit",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The mass flow of rich amine at the outlet of the absorber and the inlet of the stripper is denoted as ṁ_9 and ṁ_15 respectively. Since the LP steam for PCCS reboiler and DHN are extracted from the same line of steam turbine of CCGT, the steam for both MEA and AMP-PZ regeneration is at 135 °C and 3 bar for all operational conditions. Hence, to calculate the required steam flow, h_21 is taken as 2728.22 kJ/kg. The reboiler has a steam pressure drop of 0.1 bar, which gives the outlet pressure of 2.9 bar and temperature of 132.37 °C (calculated from saturated steam properties). The enthalpy of water at the outlet of the reboiler h_22 is taken as 556.6 kJ/kg. The Reboiler duty required for capturing CO2 is calculated from Eq. (14) Q̇_21 = Q̇_amine ∗ ṁ_cap.CO2 (14) (reboiler duty for capture = specific reboiler duty of the amine × captured CO2) Where Q̇_amine is the reboiler duty of the amine. The energy rate of the LP steam supplied for the process in the reboiler is given in Eq. (15) Q̇_21 = ṁ_lpsteam • (h_21 − h_22) (15) (reboiler heat = LP steam flow × enthalpy drop of steam across the reboiler) Where h_21 & h_22 are the enthalpy of steam at the reboiler inlet and outlet. To calculate the mass flow of steam to reboiler required for the regeneration of amine Eq. (15) is written as Eq. (16) ṁ_lpsteam = Q̇_21 / (h_21 − h_22) (16) (required LP steam mass flow to the reboiler)",
+      "terms": [
+        "Reboiler duty",
+        "LP steam",
+        "Q̇_21",
+        "Q̇_amine",
+        "ṁ_lpsteam",
+        "h_21",
+        "h_22",
+        "AMP-PZ"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-036",
+      "doc_id": "R033",
+      "section": "4.3 Analysis of post-combustion carbon capture and storage unit",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "The separated CO2 from amine after regeneration process passing through the top of the stripper at point 23 consists of 10% of H2O from the rich amine. The mass flow of vapour is given in Eq. (17) ṁ_vapour = 10% • ṁ_15 (17) (vapour leaving the stripper top = 10% of rich solvent flow) When using 30% aqueous amine solution, water impurities are present at the final stage of the capture process. The CO2 at a purity of 99.8 (vol%) can be captured using the PCCS process [50]. Based on the CO2 purity, a 0.2% loss of H2O content in amine during the regeneration and CO2 storage process is assumed. The mass flow rate of lean solvent at the outlet of the stripper is given in Eq. (18) ṁ_17 = ṁ_15 − ṁ_cap.CO2 − 0.2% • ṁ_vapour (18) (lean solvent at stripper outlet = rich solvent − captured CO2 − 0.2% of vapour)",
+      "terms": [
+        "stripper",
+        "ṁ_vapour",
+        "ṁ_15",
+        "ṁ_17",
+        "lean solvent",
+        "CO2 purity",
+        "vapour",
+        "regeneration"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-037",
+      "doc_id": "R033",
+      "section": "4.3 Analysis of post-combustion carbon capture and storage unit",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "After the regeneration process, the mass flow of vapour escaped with the captured CO2 at the outlet of the stripper is assumed to be 10%. The mass flow rate of captured CO2 with vapour is given in Eq. (19) ṁ_23 = ṁ_cap.CO2 + ṁ_vapour (19) (captured CO2 stream with vapour at stripper outlet) After the PCCS process, the CO2 is compressed and cooled at multistage until it achieves 110 bar pressure for storage. The temperature and pressure at each balance point are given with reference to the literature [51-56]. The mass flow rate of CO2 sent to storage is given by Eq. (20) ṁ_31 = ṁ_23 − 99.98% • ṁ_vapour (20) (CO2 sent to storage after removal of 99.98% of the vapour) The flue gas outlet from HRSG is given as input to the PCCS process. Based on the operational conditions of PCCS in section 3.2 and the design of PCCS, the initial input of the PCCS analysis is shown in Table 7.",
+      "terms": [
+        "ṁ_23",
+        "ṁ_31",
+        "ṁ_cap.CO2",
+        "ṁ_vapour",
+        "110 bar",
+        "storage",
+        "PCCS",
+        "HRSG"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-038",
+      "doc_id": "R033",
+      "section": "4.3 Analysis of post-combustion carbon capture and storage unit",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "Table 7. Input data for PCCS analysis. Absorber operating temperature: Unit=°C; Value=40. Absorber operating pressure: Unit=bar; Value=1. Absorber pressure drop: Unit=bar; Value=0.1. Stripper operating temperature: Unit=°C; Value=120. Stripper operating pressure: Unit=bar; Value=2. Stripper pressure drop: Unit=bar; Value=0.5. Steam temperature to reboiler: Unit=°C; Value=135. Steam pressure to reboiler: Unit=bar; Value=3. Coolers pressure drop: Unit=bar; Value=0.05. Cooling water temperature: Unit=°C; Value=15. CO2 capture efficiency: Unit=%; Value=90. CO2 to storage temperature: Unit=°C; Value=<30 °C. CO2 to storage pressure: Unit=bar; Value=110.",
+      "terms": [
+        "PCCS",
+        "Absorber operating temperature",
+        "Stripper operating pressure",
+        "Steam temperature to reboiler",
+        "Coolers pressure drop",
+        "CO2 capture efficiency",
+        "CO2 to storage pressure"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-039",
+      "doc_id": "R033",
+      "section": "5.1 Performance of HRSG using flue gases from different fuels",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "The thermodynamic analysis of flue gas and steam passing through each stage of the HRSG components is performed using the reference points provided at each stream of the HRSG as in Fig. 5. The properties are calculated using flue gas obtained from methane and syngas. Based on the thermodynamic analysis of gas turbine, depending upon the mass flow of fuel required for power generation and the LHV of the fuels, the mass flow of flue gases obtained from the combustion of gas fuels in one gas turbine using methane and syngas fuels are 133.89 kg/s and 133.52 kg/s respectively.",
+      "terms": [
+        "HRSG",
+        "reference points",
+        "methane",
+        "syngas",
+        "gas turbine",
+        "LHV",
+        "mass flow of flue gases",
+        "kg/s"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-040",
+      "doc_id": "R033",
+      "section": "5.1 Performance of HRSG using flue gases from different fuels",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "Fig. 5. Flue gas path and water/steam line of HRSG components with reference points.",
+      "terms": [
+        "Flue gas path",
+        "water/steam line",
+        "HRSG components",
+        "reference points"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-041",
+      "doc_id": "R033",
+      "section": "5.1.1 Flue gas analysis",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "When using different gas fuels in the SGT-800 gas turbine, the turbine increases the mass flow of fuel according to the power generation requirement and the exhaust gas is kept at a constant temperature. In this analysis, the gas turbine produces 50.5 MW of power with the mass flow of methane and syngas at 2.64 kg/s and 7.572 kg/s respectively. The exhaust gas at 553 °C and pressure of 1.02 bar was produced using the fuels. The methane and syngas composition as in Table 5 is used in the gas turbine model at 30 °C and 25 bar to calculate the composition of exhaust gas produced as in Table 8.",
+      "terms": [
+        "SGT-800",
+        "gas turbine",
+        "exhaust gas",
+        "methane",
+        "syngas",
+        "mass flow of fuel",
+        "553 °C"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-042",
+      "doc_id": "R033",
+      "section": "5.1.1 Flue gas analysis",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "Table 8. Detailed composition of the exhaust gas from the SGT-800 turbine determined with Ebsilon Professional® 16.00 (10 ppmv dry level, 15% O2). Composition of the exhaust gas [%]. N2: Methane Mass=74.3274; Methane Molar=75.1939; Syngas Mass=71.6727; Syngas Molar=72.8608. O2: Methane Mass=14.7585; Methane Molar=13.0711; Syngas Mass=14.6017; Syngas Molar=12.9949. Ar: Methane Mass=0.4314; Methane Molar=0.3059; Syngas Mass=0.4152; Syngas Molar=0.296. H2O: Methane Mass=5.0355; Methane Molar=7.9213; Syngas Mass=5.6072; Syngas Molar=8.8637. CO2: Methane Mass=5.4456; Methane Molar=3.5067; Syngas Mass=7.7016; Syngas Molar=4.9836. NOx: Methane Mass=0.0016; Methane Molar=0.0011; Syngas Mass=0.0016; Syngas Molar=0.001.",
+      "terms": [
+        "exhaust gas",
+        "SGT-800",
+        "Ebsilon Professional® 16.00",
+        "N2",
+        "H2O",
+        "CO2",
+        "NOx",
+        "Molar"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-043",
+      "doc_id": "R033",
+      "section": "5.1.2 Calculation results of enthalpy of flue gas",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "Using the flue gas from methane and syngas use, the flue gas temperature at the inlet and outlet of the components of the HRSG is computed, and with the use of Eq. (3) the enthalpy of flue gas is calculated too. The flue gas content in Table 8, enthalpy of gas content [57,58] and the calculated temperature difference in HRSG are taken into consideration for the calculation. For a better understanding of heat distribution in HRSG, the calculated enthalpy and temperature of flue gas from methane and syngas are plotted in Figs. 6 and 7 respectively with reference to the components and the reference points of HRSG as shown in Fig. 5.",
+      "terms": [
+        "enthalpy of flue gas",
+        "flue gas temperature",
+        "HRSG",
+        "methane",
+        "syngas",
+        "heat distribution",
+        "reference points"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-044",
+      "doc_id": "R033",
+      "section": "5.1.2 Calculation results of enthalpy of flue gas",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "The enthalpy of flue gases at various stages of HRSG from methane and syngas fuels appears nearly the same. When comparing the composition of flue gases from methane and syngas from Table 8, the major differences in proportions are observed only in N2 and CO2 content, and the other gas proportions are quite similar to each other. The methane flue gas has high N2 and low CO2 content than syngas flue gas. When calculating the total enthalpy, the low N2 and high CO2 content in flue gas from syngas gets compromised, which makes the enthalpy value of flue gases from both fuels at various points of HRSG similar.",
+      "terms": [
+        "enthalpy of flue gases",
+        "HRSG",
+        "N2",
+        "CO2",
+        "methane flue gas",
+        "syngas flue gas",
+        "total enthalpy"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-045",
+      "doc_id": "R033",
+      "section": "5.1.2 Calculation results of enthalpy of flue gas",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "Fig. 6. Enthalpy of flue gas from methane at the inlet and outlet of the components of HRSG. Fig. 7. Enthalpy of flue gas from syngas at the inlet and outlet of the components of HRSG.",
+      "terms": [
+        "Enthalpy of flue gas",
+        "methane",
+        "syngas",
+        "HRSG"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-046",
+      "doc_id": "R033",
+      "section": "5.1.3 Heat distribution in HRSG",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "The calculated flue gas enthalpy at various stages of HRSG and the input of HRSG is used in Eq. (7) to calculate the steam/water enthalpy at the inlet of the component. With reference to the enthalpy of steam/water, the temperature of the HP steam, LP steam and DHN are calculated. The calculated temperature is plotted in Figs. 8 and 9 for flue gas passing through HRSG from methane and syngas fuels respectively with reference to the components and reference points of HRSG as in Fig. 5. Even though the temperature of the flue gas at HRSG for both flue gases are same, due to the different mass flow rate flue gas, the steam/water temperature varies. In both cases, the final temperature of HP and LP steam is kept constant at 510 °C and 277 °C respectively. In order to achieve the final steam temperature, the pressure drop of the components of HRSG in both the hot and cold sides is kept the same for both flue gases. Due to the constant steam temperature and pressure drop of the components, a slight difference in water/steam temperature is observed under varying flue gas mass flow rates from different fuels.",
+      "terms": [
+        "flue gas enthalpy",
+        "steam/water enthalpy",
+        "HP steam",
+        "LP steam",
+        "DHN",
+        "pressure drop",
+        "510 °C",
+        "mass flow rate"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-047",
+      "doc_id": "R033",
+      "section": "5.1.3 Heat distribution in HRSG",
+      "page_start": 8,
+      "page_end": 9,
+      "text": "Fig. 8. Heat distribution in HRSG using flue gas from methane fuel. Fig. 9. Heat distribution in HRSG using flue gas from syngas fuel.",
+      "terms": [
+        "Heat distribution in HRSG",
+        "methane fuel",
+        "syngas fuel"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-048",
+      "doc_id": "R033",
+      "section": "5.1.4 Calculation of LMTD and rate of heat exchange",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "With the calculated enthalpy of flue gas and steam temperature, using equations (4)–(7) the LMTD and the rate of heat exchange of the components in HRSG are calculated as shown in Table 9 and Fig. 10 respectively with reference to Fig. 5. As observed from the calculated enthalpy and heat distribution of flue gases in HRSG, the content, mass flow rate and enthalpy of flue gas vary according to the type of fuel used, which has an impact on the change in performance of the component of HRSG.",
+      "terms": [
+        "LMTD",
+        "rate of heat exchange",
+        "enthalpy of flue gas",
+        "steam temperature",
+        "HRSG",
+        "mass flow rate"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-049",
+      "doc_id": "R033",
+      "section": "5.1.4 Calculation of LMTD and rate of heat exchange",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "When referring to the calculated LMTD in Fig. 5, it can be seen that the LMTD is high in the HP superheater, HP evaporator, LP superheater and DHN at the range of 11.5 MW, 26.1 MW, 9.3 Mw and 9.31 MW respectively for flue gases from both fuels. This is due to the high-temperature difference between the steam and flue gas passing through the components. Since the economizers are used majorly for preheating, it has a low LMTD of 0.99 MW and 0.03 MW for HP and LP pressure levels respectively. It can be noted from Fig. 10, the heat exchange rate using flue gases from both fuels is nearly the same. In both HP and LP, a high rate of heat exchange takes place at the evaporators.",
+      "terms": [
+        "LMTD",
+        "HP superheater",
+        "HP evaporator",
+        "LP superheater",
+        "DHN",
+        "economizers",
+        "heat exchange rate",
+        "evaporators"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-050",
+      "doc_id": "R033",
+      "section": "5.1.4 Calculation of LMTD and rate of heat exchange",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "Table 9. LMTD values of the components of HRSG. LMTD (°C) by HRSG components. HP SH: Methane fuel=96.8; Syngas fuel=97. HP EVP: Methane fuel=76.9; Syngas fuel=78.7. LP SH: Methane fuel=67.3; Syngas fuel=67.3. HP ECO: Methane fuel=36.5; Syngas fuel=37.8. LP EVA: Methane fuel=33.02; Syngas fuel=33.7. LP ECO: Methane fuel=14.45; Syngas fuel=14.65. DHN: Methane fuel=73.89; Syngas fuel=73.9.",
+      "terms": [
+        "LMTD",
+        "HRSG components",
+        "HP SH",
+        "HP EVP",
+        "LP SH",
+        "HP ECO",
+        "LP ECO",
+        "DHN"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-051",
+      "doc_id": "R033",
+      "section": "5.1.4 Calculation of LMTD and rate of heat exchange",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "Fig. 10. Rate of heat exchange of each component of HRSG.",
+      "terms": [
+        "Rate of heat exchange",
+        "HRSG"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-052",
+      "doc_id": "R033",
+      "section": "5.2 Results and analysis of post-combustion carbon capture process",
+      "page_start": 7,
+      "page_end": 9,
+      "text": "The calculations performed for HRSG are for one HRSG in the CCGT. Since the CCGT power plant considered for analysis has two HRSGs, the total exhaust gas mass flow rate from the HRSG to PCCS with flue gases from methane and syngas fuels are 267.78 kg/s and 267.04 kg/s respectively. The mass flow rate of flue gases from two HRSG is considered for the analysis in PCCS using two different solvents MEA and a mixture of AMP-PZ. From the total mass flow rate of flue gas and emission analysis of flue gas from gas turbines in Table 8, the mass flow rate of CO2 produced from methane and syngas is calculated to be 14.73 kg/s and 20.56 kg/s, respectively.",
+      "terms": [
+        "HRSG",
+        "CCGT",
+        "exhaust gas mass flow rate",
+        "PCCS",
+        "MEA",
+        "AMP-PZ",
+        "methane",
+        "syngas"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-053",
+      "doc_id": "R033",
+      "section": "5.2 Results and analysis of post-combustion carbon capture process",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "The flue gas from CCGT at the inlet of PCCS is reduced under different load conditions such as 75%, 50%, and 25% to analyze the behavior of the PCCS process. In these load conditions, the flue gas diverted from PCCS is passed into the atmosphere. When analyzing the utilities of PCCS such as blowers, pumps and compressors using simulation, the outlet temperature and pressure of the stream remain the same, but the mass flow rate of the streams varies at different flue gas load conditions. At different load conditions, the increase in CO2 in flue gas increases the required mass flow rate of solvent, mass flow rate of steam required for reboiler and capture rate of CO2 according to the requirement. This varies the stream flow rate in PCCS depending upon the CO2 content in the flue gas.",
+      "terms": [
+        "load conditions",
+        "PCCS",
+        "blowers",
+        "pumps",
+        "compressors",
+        "mass flow rate of solvent",
+        "reboiler",
+        "capture rate of CO2"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-054",
+      "doc_id": "R033",
+      "section": "5.2.1 Results of PCCS process using MEA solvent",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "The mass flow rate of each stream of the PCCS technology is calculated using Eq. (8) to Eq. (16). As per the rich CO2 loading of MEA taken into consideration for the analysis, 1 kg-MEA is required to absorb 0.36 kg-CO2. With reference to the rich CO2 loading and using Eq. (8), the required mass flow rate of lean MEA solvent to treat 14.73 kg/s and 20.56 kg/s of CO2 in flue gases from methane and syngas fuel in PCCS process is calculated to be 136.27 kg/s and 190.25 kg/s respectively. At the outlet of the stripper, the solvent consists of a small proportion of CO2 which cannot be completely removed, which is the lean loading of MEA. As per the lean loading calculation, 5.01 kg-CO2 and 6.99 kg-CO2 are presenting in the total flow rate of 136.27 kg/s and 190.25 kg/s solvent for treating flue gases from methane and syngas respectively. Due to the lean loading, the MEA lean solvent used for the recirculation in the PCCS process consists of 28.4% MEA +3.68% CO2 + 67.92% H2O.",
+      "terms": [
+        "MEA",
+        "rich CO2 loading",
+        "lean MEA solvent",
+        "lean loading",
+        "stripper",
+        "PCCS",
+        "kg/s",
+        "recirculation"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-055",
+      "doc_id": "R033",
+      "section": "5.2.1 Results of PCCS process using MEA solvent",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "Since the mass flow of flue gas is reduced due to different load conditions, it reduces the CO2 content in the flue gas as in Table 10 and Table 11. At this condition, the requirement of MEA and steam required for reboiler in PCCS reduces as in Figs. 11–13. The detailed parameters of the reference points of the streams in Fig. 4 of PCCS using MEA are given in Appendix A.",
+      "terms": [
+        "load conditions",
+        "CO2 content",
+        "MEA",
+        "reboiler",
+        "PCCS",
+        "reference points"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-056",
+      "doc_id": "R033",
+      "section": "5.2.1 Results of PCCS process using MEA solvent",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "Fig. 11. Lean MEA mass flow at absorber inlet. Fig. 12. Rich MEA at stripper inlet. Fig. 13. Mass flow of steam consumed for MEA regeneration.",
+      "terms": [
+        "Lean MEA mass flow",
+        "absorber inlet",
+        "Rich MEA",
+        "stripper inlet",
+        "MEA regeneration",
+        "Mass flow of steam"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-057",
+      "doc_id": "R033",
+      "section": "5.2.2 Results of PCCS process using AMP-PZ solvent",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "Similar to PCCS using MEA, the mass balance of PCCS using AMP-PZ solvent mixture is calculated and the notable parameters are plotted in Figs. 14–16. As per the AMP-PZ rich loading, 0.306 kg-CO2 and 0.439 kg-CO2 were absorbed by 1 kg of AMP and 1 kg of PZ respectively. Hence, to treat 14.73 kg/s of CO2 in flue gases from methane fuel, the mass flow of 48.11 kg/s of AMP and 33.52 kg/s of PZ is required. A similar calculation for treating flue gas from syngas with 20.56 kg/s of CO2 content shows that 67.17 kg/s of AMP and 46.8 kg/s of PZ are required. Under the proportion of 16% AMP and 14% PZ in aqueous solution, the required mass flow rate of lean AMP-PZ mixture solvent for treating 14.73 kg/s and 20.56 kg/s of CO2 content in flue gases from methane and syngas fuel is calculated to be 137.68 kg/s and 192.22 kg/s respectively. As per the lean loading calculation, 8.79 kg-CO2 and 3.43 kg-CO2 are present in the total flow rate of 137.68 kg/s of solvent for treating flue gases from methane, which gives the lean amine used for the recirculation in PCCS process after regeneration of 14.88% AMP +12.88% PZ + 4.5% CO2 + 67.74% H2O. The detailed parameters of the reference points of the streams in Fig. 4 of PCCS using AMP-PZ are given in Appendix B.",
+      "terms": [
+        "AMP-PZ",
+        "mass balance",
+        "rich loading",
+        "lean AMP-PZ mixture solvent",
+        "lean loading",
+        "PCCS",
+        "recirculation",
+        "methane"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-058",
+      "doc_id": "R033",
+      "section": "5.2.2 Results of PCCS process using AMP-PZ solvent",
+      "page_start": 10,
+      "page_end": 11,
+      "text": "Fig. 14. Mass flow of lean AMP-PZ solvent at absorber inlet. Fig. 15. Rich AMP-PZ mass flow at stripper inlet. Fig. 16. Mass flow of steam consumed for AMP-PZ.",
+      "terms": [
+        "lean AMP-PZ solvent",
+        "absorber inlet",
+        "Rich AMP-PZ",
+        "stripper inlet",
+        "Mass flow of steam"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-059",
+      "doc_id": "R033",
+      "section": "5.2.3 Results of carbon capture and PCCS power consumption",
+      "page_start": 9,
+      "page_end": 11,
+      "text": "The MEA and AMP-PZ solvents with a similar CO2 capture efficiency of 90% are used to treat the same amount of flue gas from methane and syngas at different load conditions with the same content are used for the analysis. Hence, the mass flow parameters of flue gases at different loads, captured and emitted CO2 remain the same when using MEA and AMP-PZ for PCCS process as in Tables 10 and 11. When the flue gas load condition from CCGT exhaust to PCCS is reduced, the flue gas is diverted from the PCCS and passed directly into the atmosphere. The flue gases from methane and syngas passing through the PCCS at different load conditions are treated, 90% of CO2 is captured, and the remaining CO2 is emitted, as in Fig. 17.",
+      "terms": [
+        "MEA",
+        "AMP-PZ",
+        "CO2 capture efficiency",
+        "load conditions",
+        "PCCS",
+        "flue gas",
+        "atmosphere"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-060",
+      "doc_id": "R033",
+      "section": "5.2.3 Results of carbon capture and PCCS power consumption",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "In Fig. 17(a) and (b), due to the capture efficiency of solvent, 90% of CO2 is removed from the flue gas. The treated flue gas passed into the atmosphere consists of 10% of CO2 content that cannot be completely removed, which is indicated as CO2 emitted. In Fig. 17(b), apart from the CO2 in fuel after syngas combustion, 90% of CO2 is captured by PCCS. When the syngas is burned, the CO2 emission can be estimated as the CO2 content in the syngas fuel (59.31% mass fraction or 8.92 kg/s mass flow rate). The CO2 generated level from the combustion of hydrocarbons in a gas turbine is treated as zero-emission because of biogas produced from biomass origin fuel. In Fig. 17(b) the CO2 captured mass flow rate by PCCS is presented. When the exhaust gas flow rate directed to the PCCS exceeds 50%, it is possible to obtain the negative CO2 emission for the proposed and assumed operating conditions, which is 100% and 75% of the flue gas produced from syngas directed to the PCCS to perform CO2 capture process. The CO2 in flue gas diverted from PCCS and the 10% flue gas from PCCS are considered to be negative emissions. At low 50% and 25% load conditions, a large amount of untreated flue gas at a mass flow rate of 133.52 kg/s and 200.28 kg/s is diverted from PCCS directly into the atmosphere.",
+      "terms": [
+        "capture efficiency",
+        "CO2 emitted",
+        "syngas",
+        "zero-emission",
+        "negative CO2 emission",
+        "PCCS",
+        "biomass",
+        "load conditions"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-061",
+      "doc_id": "R033",
+      "section": "5.2.3 Results of carbon capture and PCCS power consumption",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "The mass flow reduction of the streams in PCCS during different load conditions reduces the power consumed by PCCS, which reduces the total power consumption of PCCS as shown in Fig. 18. Comparing the cases in Fig. 18, the CO2 captured from syngas flue gas is high compared to methane, hence the power consumption for CO2 compression is higher. The increase in CO2 content in flue gas increases the flow rate of the solvent required for the PCCS process and flow rate of captured CO2 at the final stage of the process, which needs more operation in the solvent pumps and CO2 compressors. Hence, the power consumed by PCCS increases with an increase in CO2 content in flue gas. It is necessary to increase the pressure of the flue gas from CCGT to the absorber operating condition of 1 bar. The blower and compressors of PCCS consume high power as shown in Fig. 19 for flue gas from methane and syngas. This is due to the high mass flow rate and pressure requirement of flue gas. As mentioned in Tables 10 and 11 for the various flue gas flow rate and captured CO2, the blower increases the pressure of the flue gas to 1.15 bar and the CO2 is compressed in various stages until it reaches the pressure of 110 bar for storage. The amine pumps and cooling water pumps consume 0.21 MW–0.05 MW of power from load conditions of 100%–25% respectively.",
+      "terms": [
+        "power consumption",
+        "CO2 compression",
+        "solvent pumps",
+        "CO2 compressors",
+        "blower",
+        "absorber",
+        "110 bar",
+        "cooling water pumps"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-062",
+      "doc_id": "R033",
+      "section": "5.2.3 Results of carbon capture and PCCS power consumption",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "Table 10. Parameters of flue gas from methane with and without PCCS. Mass flow of flue gas at PCSS inlet: Unit=kg/s; Without PCCS=267.78; With PCCS load conditions 100%=267.78; 75%=200.84; 50%=133.89; 25%=66.95. Mass flow of treated flue gas: Unit=kg/s; Without PCCS=–; With PCCS load conditions 100%=254.52; 75%=190.89; 50%=127.26; 25%=63.63. CO2 captured: Unit=kg/s; Without PCCS=–; With PCCS load conditions 100%=13.26; 75%=9.94; 50%=6.63; 25%=3.31. CO2 in fuel: Unit=kg/s; Without PCCS=–.",
+      "terms": [
+        "PCCS",
+        "methane",
+        "Mass flow of flue gas",
+        "treated flue gas",
+        "CO2 captured",
+        "CO2 in fuel",
+        "load conditions"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-063",
+      "doc_id": "R033",
+      "section": "5.2.3 Results of carbon capture and PCCS power consumption",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "Table 11. Parameters of flue gas from syngas with and without PCCS. Mass flow of flue gas at PCSS inlet: Unit=kg/s; Without PCCS=267.04; With PCCS load conditions 100%=267.04; 75%=200.28; 50%=133.52; 25%=66.76. Mass flow of treated flue gas: Unit=kg/s; Without PCCS=–; With PCCS load conditions 100%=248.53; 75%=186.4; 50%=124.27; 25%=62.13. CO2 captured: Unit=kg/s; Without PCCS=–; With PCCS load conditions 100%=18.51; 75%=13.88; 50%=9.26; 25%=4.63. CO2 in fuel: Unit=kg/s; With PCCS=8.92 (single value printed across the load-condition columns).",
+      "terms": [
+        "PCCS",
+        "syngas",
+        "Mass flow of flue gas",
+        "treated flue gas",
+        "CO2 captured",
+        "CO2 in fuel",
+        "load conditions"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-064",
+      "doc_id": "R033",
+      "section": "5.2.3 Results of carbon capture and PCCS power consumption",
+      "page_start": 11,
+      "page_end": 12,
+      "text": "Fig. 17. Flue gases produced from a) methane and b) syngas treated with PCCS at different load conditions. Fig. 18. Total power consumed by equipment in PCCS with flue gas from methane and syngas. Fig. 19. Power consumed by blower and compressors in PCCS with flue gas from a) methane and b) syngas.",
+      "terms": [
+        "methane",
+        "syngas",
+        "PCCS",
+        "load conditions",
+        "Total power consumed",
+        "blower",
+        "compressors"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-065",
+      "doc_id": "R033",
+      "section": "6. Conclusions",
+      "page_start": 12,
+      "page_end": 12,
+      "text": "The analysis of heat recovery steam generator of a combined cycle power plant integrated with post-combustion carbon capture technology using solvent method is performed. Flue gases obtained from the combustion of methane and syngas of a gas turbine with CO2 mass proportion of 5.44% and 7.7% respectively are used to calculate the enthalpy of flue gas, logarithmic mean temperature difference and heat exchange rate of components of one HRSG. From the obtained data, the temperature distribution and heat flow of one HRSG using flue gases from different fuels are plotted. The properties of the streams calculated in HRSG and the heat distribution in HRSG give a better understanding of the performance of HRSG. Even with the fixed stream temperature difference and pressure drop of the components, due to the mass flow and content of the flue gas, a slight difference in the enthalpy of flue gas, LMTD and heat rate of components of HRSG is observed.",
+      "terms": [
+        "heat recovery steam generator",
+        "post-combustion carbon capture",
+        "logarithmic mean temperature difference",
+        "heat exchange rate",
+        "HRSG",
+        "enthalpy of flue gas",
+        "LMTD",
+        "pressure drop"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-066",
+      "doc_id": "R033",
+      "section": "6. Conclusions",
+      "page_start": 12,
+      "page_end": 12,
+      "text": "The mass flow rate of flue gases from two HRSG at different load conditions is considered for the analysis of PCCS technology using MEA and AMP-PZ. The operating temperature and pressure of the absorber at 1 bar and 40 °C, and the stripper at 2 bar and 120 °C in PCCS are maintained the same using MEA and AMP-PZ solvents. However, the mass flow rate of solvents changes for MEA 136.27 kg/s and AMP-PZ 190.25 kg/s for treating flue gas from methane and MEA 137.68 kg/s and AMP-PZ 192.22 kg/s for treating flue gas from syngas. This is due to the rich CO2 loading of the solvents. If the CO2 loading of the solvents differs, the mass flow of amine will increase or decrease. The lower rich CO2 loading of amine increases the requirement of the mass flow rate of solvent for PCCS process and vice versa. The lean MEA and lean AMP-PZ, mass flow rate is higher when the syngas is used as the gas fuel compared to methane. However, the amount of lean and rich solvents is slightly higher when AMP-PZ is used for both fuels. This is due to the lean loading of AMP-PZ bit lower than MEA taken for consideration.",
+      "terms": [
+        "PCCS",
+        "MEA",
+        "AMP-PZ",
+        "absorber",
+        "stripper",
+        "rich CO2 loading",
+        "lean loading",
+        "mass flow rate of solvents"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-067",
+      "doc_id": "R033",
+      "section": "6. Conclusions",
+      "page_start": 12,
+      "page_end": 12,
+      "text": "With the consideration of reboiler duty taken for MEA and AMP-PZ as 3.8 MJ/kg-CO2 and 3.7 MJ/kg-CO2. The mass flow rate of steam required by the reboiler for regenerating AMP-PZ is 22.58 kg/s and 31.53 kg/s and for regenerating MEA is 23.19 kg/s and 32.38 kg/s for treating flue gases from methane and syngas respectively. The amine after the regeneration process consists of some content of CO2, which is 3.68% CO2 in lean MEA and 4.5% CO2 in lean AMP-PZ cannot be completely removed by the regeneration process or requires a high amount of heat to remove the CO2 completely. The requirement of a high amount of heat for the regeneration process may increase the operational cost of the process. With reference to the CCGT data, at full load flue gas flow conditions the PCCS consumes 9.6%–11.6% of power from the CCGT power plant depending upon the flue gas and solvent used.",
+      "terms": [
+        "reboiler duty",
+        "MJ/kg-CO2",
+        "AMP-PZ",
+        "MEA",
+        "regeneration process",
+        "lean MEA",
+        "PCCS",
+        "CCGT"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-068",
+      "doc_id": "R033",
+      "section": "6. Conclusions",
+      "page_start": 12,
+      "page_end": 12,
+      "text": "AMP-PZ maintains similar process parameters compared to that of MEA except with a lower regeneration rate and lower requirement of steam from CCGT. As referred in Refs. [40,46], from the steam consumed by AMP-PZ and MEA for reboiler duty, the flow rate of steam requirement for regeneration is lower in PCCS using AMP-PZ than MEA. The extraction of steam from the bleed of steam turbine for the amine regeneration has some possible impacts on the steam cycle. Since amine regeneration is inevitable in the PCCS process, the required steam taken from the power plant will reduce the power generation in the steam cycle, which affects the overall power output and the net efficiency of the power plant. The theoretical study of PCCS technology allows for performance evaluation and provides insight into the potential improvements of PCCS under different operating conditions. This analysis is a very crucial step for developing a PCCS model and measuring the performance of power plant when integrated with PCCS technology.",
+      "terms": [
+        "AMP-PZ",
+        "MEA",
+        "regeneration rate",
+        "steam turbine",
+        "amine regeneration",
+        "steam cycle",
+        "net efficiency",
+        "PCCS"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-069",
+      "doc_id": "R033",
+      "section": "6. Conclusions",
+      "page_start": 12,
+      "page_end": 12,
+      "text": "The analysis results confirm the possibility of obtaining the negative CO2 emission level when the syngas fuel is used in CCGT. When the fuel, consisting of 100% of syngas is burned in gas turbines, slightly more than 50% of produced exhaust gases are directed to the PCCS installation, allowing it to reach a zero CO2 emission level. All these important issues, a zero-emission level target, high power consumption by PCCS equipment, steam flow required by the reboiler, reduced power generation, and lower cycle efficiency, have to be taken into account in the design process of PCCS installation capacity and integration with the existed thermal power units.",
+      "terms": [
+        "negative CO2 emission",
+        "syngas",
+        "CCGT",
+        "PCCS",
+        "zero CO2 emission level",
+        "reboiler",
+        "cycle efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-070",
+      "doc_id": "R033",
+      "section": "Nomenclature",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "Nomenclature: h_fg@t = enthalpy of the flue gas at the target temperature, kJ/kg; h_fi = enthalpy of flue gas at the inlet of the heat exchanger, kJ/kg; h_fo = enthalpy of flue gas at the outlet of the heat exchanger, kJ/kg; h_i = enthalpy of the selected gas component, kJ/kg; h_si = enthalpy of steam at the inlet of the heat exchanger, kJ/kg; h_so = enthalpy of steam at the outlet of the heat exchanger, kJ/kg; h_21 = enthalpy of steam at reboiler inlet, kJ/kg; h_22 = enthalpy of steam at reboiler outlet, kJ/kg; i = gas component; LMTD = logarithmic mean temperature difference, °C; ṁ_cap.CO2 = mass flow of CO2 captured, kg/s; ṁ_fg = mass flow rate of flue gas, kg/s; ṁ_fg.CO2 = mass flow rate of CO2 in flue gas, kg/s; mg_amine = CO2-rich loading, kg/kg; ṁ_lpsteam = mass flow rate of LP steam, kg/s; ṁ_steam = mass flow rate of steam, kg/s; ṁ_vapour = mass flow rate of vapour present at the outlet stream of stripper, kg/s.",
+      "terms": [
+        "h_fg@t",
+        "h_fi",
+        "h_21",
+        "LMTD",
+        "ṁ_cap.CO2",
+        "mg_amine",
+        "ṁ_lpsteam",
+        "ṁ_vapour"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-071",
+      "doc_id": "R033",
+      "section": "Nomenclature",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "Nomenclature: ṁ_2 = mass flow of flue gas at the inlet of the absorber, kg/s; ṁ_3 = mass flow of flue gas at absorber inlet, kg/s; ṁ_4 = mass flow of treated flue gas at absorber outlet, kg/s; ṁ_9 = mass flow of rich amine at absorber outlet, kg/s; ṁ_14 = mass flow of lean solvent at absorber inlet, kg/s; ṁ_15 = mass flow of rich solvent at stripper inlet, kg/s; ṁ_17 = total mass flow of lean solvent at stripper outlet, kg/s; ṁ_19 = amount of lean solvent required for CO2 capture, kg/s; ṁ_22 = mass flow of captured CO2 with vapour at the outlet of the stripper, kg/s; ṁ_23 = mass flow of CO2 vapour at the outlet of stripper kg/s; ṁ_31 = mass flow of captured CO2 to storage, kg/s; Q̇_amine = reboiler duty of the amine, kJ/kg CO2; Q̇_21 = reboiler duty required for the carbon capture process, MW; T_ci = temperature of cold stream inlet, °C; T_co = temperature of cold stream outlet, °C; T_hi = temperature of hot stream inlet, °C; T_ho = temperature of hot stream outlet, °C; X_i = mass fraction of the gas component, %.",
+      "terms": [
+        "ṁ_3",
+        "ṁ_14",
+        "ṁ_31",
+        "Q̇_amine",
+        "Q̇_21",
+        "T_ci",
+        "T_hi",
+        "X_i"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-072",
+      "doc_id": "R033",
+      "section": "Appendix A",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "Table 12. Parameters of PCCS using MEA at each reference point in Fig. 4 (reference points 0–9). Reference point 0: P (bar)=0.978; T (°C)=112.20; M (kg/s) with flue gas from methane=267.78; M (kg/s) with flue gas from syngas=267.04. Reference point 1: P (bar)=1.15; T (°C)=132.91; M (kg/s) with flue gas from methane=267.78; M (kg/s) with flue gas from syngas=267.04. Reference point 2: P (bar)=1.1; T (°C)=65.00; M (kg/s) with flue gas from methane=267.78; M (kg/s) with flue gas from syngas=267.04. Reference point 3: P (bar)=1.05; T (°C)=40; M (kg/s) with flue gas from methane=267.78; M (kg/s) with flue gas from syngas=267.04. Reference point 4: P (bar)=0.9; T (°C)=40.40; M (kg/s) with flue gas from methane=254.52; M (kg/s) with flue gas from syngas=248.53. Reference point 5: P (bar)=0.89; T (°C)=111.60; M (kg/s) with flue gas from methane=254.52; M (kg/s) with flue gas from syngas=248.53. Reference point 5a: P (bar)=0; T (°C)=0.00; M (kg/s) with flue gas from methane=0.00; M (kg/s) with flue gas from syngas=0.00. Reference point 5 b: P (bar)=0.89; T (°C)=111.60; M (kg/s) with flue gas from methane=254.52; M (kg/s) with flue gas from syngas=248.53. Reference point 5c: P (bar)=1.15; T (°C)=151; M (kg/s) with flue gas from methane=254.52; M (kg/s) with flue gas from syngas=248.53. Reference point 6: P (bar)=1; T (°C)=35; M (kg/s) with flue gas from methane=197.40; M (kg/s) with flue gas from syngas=197.40. Reference point 6a: P (bar)=1; T (°C)=15; M (kg/s) with flue gas from methane=Required; M (kg/s) with flue gas from syngas=Required. Reference point 6 b: P (bar)=1; T (°C)=35; M (kg/s) with flue gas from methane=197.40; M (kg/s) with flue gas from syngas=197.40. Reference point 7: P (bar)=1.1; T (°C)=35; M (kg/s) with flue gas from methane=197.40; M (kg/s) with flue gas from syngas=197.40. Reference point 8: P (bar)=1.05; T (°C)=30; M (kg/s) with flue gas from methane=197.40; M (kg/s) with flue gas from syngas=197.40. Reference point 9: P (bar)=0.9; T (°C)=60; M (kg/s) with flue gas from methane=149.52; M (kg/s) with flue gas from syngas=208.76.",
+      "terms": [
+        "PCCS",
+        "Reference point",
+        "P (bar)",
+        "T (°C)",
+        "M (kg/s)",
+        "flue gas from methane",
+        "flue gas from syngas",
+        "MEA"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-073",
+      "doc_id": "R033",
+      "section": "Appendix A",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Table 12. Parameters of PCCS using MEA at each reference point in Fig. 4 (reference points 10–20). Reference point 10: P (bar)=2.1; T (°C)=60; M (kg/s) with flue gas from methane=149.52; M (kg/s) with flue gas from syngas=208.76. Reference point 11: P (bar)=1.5; T (°C)=70; M (kg/s) with flue gas from methane=136.27; M (kg/s) with flue gas from syngas=190.25. Reference point 12: P (bar)=1; T (°C)=70; M (kg/s) with flue gas from methane=136.27; M (kg/s) with flue gas from syngas=190.25. Reference point 12a: P (bar)=1; T (°C)=30; M (kg/s) with flue gas from methane=Required; M (kg/s) with flue gas from syngas=Required. Reference point 12 b: P (bar)=1; T (°C)=30; M (kg/s) with flue gas from methane=Required; M (kg/s) with flue gas from syngas=Required. Reference point 13: P (bar)=1.05; T (°C)=70; M (kg/s) with flue gas from methane=136.27; M (kg/s) with flue gas from syngas=190.25. Reference point 14: P (bar)=1; T (°C)=40; M (kg/s) with flue gas from methane=136.27; M (kg/s) with flue gas from syngas=190.25. Reference point 15: P (bar)=2.05; T (°C)=100; M (kg/s) with flue gas from methane=149.52; M (kg/s) with flue gas from syngas=208.76. Reference point 16: P (bar)=1; T (°C)=120; M (kg/s) with flue gas from methane=121.32; M (kg/s) with flue gas from syngas=169.37. Reference point 17: P (bar)=1; T (°C)=115; M (kg/s) with flue gas from methane=136.27; M (kg/s) with flue gas from syngas=190.25. Reference point 18: P (bar)=1.55; T (°C)=115; M (kg/s) with flue gas from methane=136.27; M (kg/s) with flue gas from syngas=190.25. Reference point 19: P (bar)=2.03; T (°C)=120; M (kg/s) with flue gas from methane=149.52; M (kg/s) with flue gas from syngas=208.76. Reference point 20: P (bar)=2.01; T (°C)=125; M (kg/s) with flue gas from methane=149.52; M (kg/s) with flue gas from syngas=208.76.",
+      "terms": [
+        "PCCS",
+        "Reference point",
+        "P (bar)",
+        "T (°C)",
+        "M (kg/s)",
+        "flue gas from methane",
+        "flue gas from syngas",
+        "MEA"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-074",
+      "doc_id": "R033",
+      "section": "Appendix A",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Table 12. Parameters of PCCS using MEA at each reference point in Fig. 4 (reference points 21–31). Reference point 21: P (bar)=3; T (°C)=135; M (kg/s) with flue gas from methane=23.19; M (kg/s) with flue gas from syngas=32.38. Reference point 22: P (bar)=2.9; T (°C)=132.37; M (kg/s) with flue gas from methane=23.19; M (kg/s) with flue gas from syngas=32.38. Reference point 23: P (bar)=1; T (°C)=120; M (kg/s) with flue gas from methane=28.21; M (kg/s) with flue gas from syngas=39.38. Reference point 24: P (bar)=0.95; T (°C)=30; M (kg/s) with flue gas from methane=24.47; M (kg/s) with flue gas from syngas=34.16. Reference point 25: P (bar)=0.95; T (°C)=30; M (kg/s) with flue gas from methane=3.74; M (kg/s) with flue gas from syngas=5.22. Reference point 26: P (bar)=3.8; T (°C)=150.00; M (kg/s) with flue gas from methane=24.47; M (kg/s) with flue gas from syngas=34.16. Reference point 27: P (bar)=3.75; T (°C)=30; M (kg/s) with flue gas from methane=20.73; M (kg/s) with flue gas from syngas=28.94. Reference point 28: P (bar)=15; T (°C)=150.00; M (kg/s) with flue gas from methane=20.73; M (kg/s) with flue gas from syngas=28.94. Reference point 29: P (bar)=14.95; T (°C)=30; M (kg/s) with flue gas from methane=16.99; M (kg/s) with flue gas from syngas=23.72. Reference point 30: P (bar)=110.5; T (°C)=209.00; M (kg/s) with flue gas from methane=16.99; M (kg/s) with flue gas from syngas=23.72. Reference point 31: P (bar)=110; T (°C)=22; M (kg/s) with flue gas from methane=13.26; M (kg/s) with flue gas from syngas=18.51.",
+      "terms": [
+        "PCCS",
+        "Reference point",
+        "P (bar)",
+        "T (°C)",
+        "M (kg/s)",
+        "flue gas from methane",
+        "flue gas from syngas",
+        "MEA"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-075",
+      "doc_id": "R033",
+      "section": "Appendix B",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Table 13. Parameters of PCCS using AMP-PZ at each reference point in Fig. 4 (reference points 0–9). Reference point 0: P (bar)=0.978; T (°C)=112.20; M (kg/s) with flue gas from methane=267.78; M (kg/s) with flue gas from syngas=267.04. Reference point 1: P (bar)=1.15; T (°C)=132.91; M (kg/s) with flue gas from methane=267.78; M (kg/s) with flue gas from syngas=267.04. Reference point 2: P (bar)=1.1; T (°C)=65.00; M (kg/s) with flue gas from methane=267.78; M (kg/s) with flue gas from syngas=267.04. Reference point 3: P (bar)=1.05; T (°C)=40; M (kg/s) with flue gas from methane=267.78; M (kg/s) with flue gas from syngas=267.04. Reference point 4: P (bar)=0.9; T (°C)=40.40; M (kg/s) with flue gas from methane=254.52; M (kg/s) with flue gas from syngas=248.53. Reference point 5: P (bar)=0.89; T (°C)=111.60; M (kg/s) with flue gas from methane=254.52; M (kg/s) with flue gas from syngas=248.53. Reference point 5a: P (bar)=0; T (°C)=0.00; M (kg/s) with flue gas from methane=0.00; M (kg/s) with flue gas from syngas=0.00. Reference point 5 b: P (bar)=0.89; T (°C)=111.60; M (kg/s) with flue gas from methane=254.52; M (kg/s) with flue gas from syngas=248.53. Reference point 5c: P (bar)=1.15; T (°C)=151; M (kg/s) with flue gas from methane=254.52; M (kg/s) with flue gas from syngas=248.53. Reference point 6: P (bar)=1; T (°C)=35; M (kg/s) with flue gas from methane=197.40; M (kg/s) with flue gas from syngas=197.40. Reference point 6a: P (bar)=1; T (°C)=15; M (kg/s) with flue gas from methane=Required; M (kg/s) with flue gas from syngas=Required. Reference point 6 b: P (bar)=1; T (°C)=35; M (kg/s) with flue gas from methane=197.40; M (kg/s) with flue gas from syngas=197.40. Reference point 7: P (bar)=1.1; T (°C)=35; M (kg/s) with flue gas from methane=197.40; M (kg/s) with flue gas from syngas=197.40. Reference point 8: P (bar)=1.05; T (°C)=30; M (kg/s) with flue gas from methane=197.40; M (kg/s) with flue gas from syngas=197.40. Reference point 9: P (bar)=0.9; T (°C)=60; M (kg/s) with flue gas from methane=150.93; M (kg/s) with flue gas from syngas=210.72.",
+      "terms": [
+        "PCCS",
+        "Reference point",
+        "P (bar)",
+        "T (°C)",
+        "M (kg/s)",
+        "flue gas from methane",
+        "flue gas from syngas",
+        "AMP-PZ"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-076",
+      "doc_id": "R033",
+      "section": "Appendix B",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Table 13. Parameters of PCCS using AMP-PZ at each reference point in Fig. 4 (reference points 10–20). Reference point 10: P (bar)=2.1; T (°C)=60; M (kg/s) with flue gas from methane=150.93; M (kg/s) with flue gas from syngas=210.72. Reference point 11: P (bar)=1.5; T (°C)=70; M (kg/s) with flue gas from methane=137.67; M (kg/s) with flue gas from syngas=192.21. Reference point 12: P (bar)=1; T (°C)=70; M (kg/s) with flue gas from methane=137.68; M (kg/s) with flue gas from syngas=192.22. Reference point 12a: P (bar)=1; T (°C)=30; M (kg/s) with flue gas from methane=Required; M (kg/s) with flue gas from syngas=Required. Reference point 12 b: P (bar)=1; T (°C)=30; M (kg/s) with flue gas from methane=Required; M (kg/s) with flue gas from syngas=Required. Reference point 13: P (bar)=1.05; T (°C)=70; M (kg/s) with flue gas from methane=137.68; M (kg/s) with flue gas from syngas=192.22. Reference point 14: P (bar)=1; T (°C)=40; M (kg/s) with flue gas from methane=137.68; M (kg/s) with flue gas from syngas=192.22. Reference point 15: P (bar)=2.05; T (°C)=100; M (kg/s) with flue gas from methane=150.93; M (kg/s) with flue gas from syngas=210.72. Reference point 16: P (bar)=1; T (°C)=120; M (kg/s) with flue gas from methane=122.58; M (kg/s) with flue gas from syngas=171.14. Reference point 17: P (bar)=1; T (°C)=115; M (kg/s) with flue gas from methane=137.67; M (kg/s) with flue gas from syngas=192.21. Reference point 18: P (bar)=1.55; T (°C)=115; M (kg/s) with flue gas from methane=137.67; M (kg/s) with flue gas from syngas=192.21. Reference point 19: P (bar)=2.03; T (°C)=120; M (kg/s) with flue gas from methane=150.93; M (kg/s) with flue gas from syngas=210.72. Reference point 20: P (bar)=2.01; T (°C)=125; M (kg/s) with flue gas from methane=150.93; M (kg/s) with flue gas from syngas=210.72.",
+      "terms": [
+        "PCCS",
+        "Reference point",
+        "P (bar)",
+        "T (°C)",
+        "M (kg/s)",
+        "flue gas from methane",
+        "flue gas from syngas",
+        "AMP-PZ"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R033-077",
+      "doc_id": "R033",
+      "section": "Appendix B",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Table 13. Parameters of PCCS using AMP-PZ at each reference point in Fig. 4 (reference points 21–31). Reference point 21: P (bar)=3; T (°C)=135; M (kg/s) with flue gas from methane=22.58; M (kg/s) with flue gas from syngas=31.53. Reference point 22: P (bar)=2.9; T (°C)=132.37; M (kg/s) with flue gas from methane=22.58; M (kg/s) with flue gas from syngas=31.53. Reference point 23: P (bar)=1; T (°C)=120; M (kg/s) with flue gas from methane=28.35; M (kg/s) with flue gas from syngas=39.58. Reference point 24: P (bar)=0.95; T (°C)=30; M (kg/s) with flue gas from methane=24.58; M (kg/s) with flue gas from syngas=34.31. Reference point 25: P (bar)=0.95; T (°C)=30; M (kg/s) with flue gas from methane=3.77; M (kg/s) with flue gas from syngas=5.27. Reference point 26: P (bar)=3.8; T (°C)=150.00; M (kg/s) with flue gas from methane=24.58; M (kg/s) with flue gas from syngas=34.31. Reference point 27: P (bar)=3.75; T (°C)=30; M (kg/s) with flue gas from methane=20.80; M (kg/s) with flue gas from syngas=39.04. Reference point 28: P (bar)=15; T (°C)=150.00; M (kg/s) with flue gas from methane=20.80; M (kg/s) with flue gas from syngas=39.04. Reference point 29: P (bar)=14.95; T (°C)=30; M (kg/s) with flue gas from methane=17.03; M (kg/s) with flue gas from syngas=23.77. Reference point 30: P (bar)=110.5; T (°C)=209.00; M (kg/s) with flue gas from methane=17.03; M (kg/s) with flue gas from syngas=23.77. Reference point 31: P (bar)=110; T (°C)=22; M (kg/s) with flue gas from methane=13.26; M (kg/s) with flue gas from syngas=18.51.",
+      "terms": [
+        "PCCS",
+        "Reference point",
+        "P (bar)",
+        "T (°C)",
+        "M (kg/s)",
+        "flue gas from methane",
+        "flue gas from syngas",
+        "AMP-PZ"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    }
+  ],
+  "report": {
+    "paragraph_count": 77,
+    "pages_processed": "1-16 (전체; 본문 1-12, Nomenclature·Appendix A/B 13-14, 15-16은 참고문헌만 있어 제외)",
+    "last_paragraph_id": "R033-077",
+    "skipped": [
+      "1쪽 저널 머리(Contents lists available at ScienceDirect, Energy, journal homepage, 로고), Handling Editor, 저자 소속, 교신저자 각주(e-mail), 투고/게재 날짜, 저작권·라이선스 문구: 머리 정보/저자 연락처/저작권 문구(license 필드에 반영)",
+      "각 쪽 머리글(N. Subramanian and P. Madejski / Energy 282 (2023) 128311)과 쪽번호: 머리글/바닥글",
+      "12쪽 CRediT authorship contribution statement, Declaration of competing interest, Data availability: 지시에 따라 제외",
+      "13쪽 Acknowledgements: 감사의 글",
+      "14-16쪽 References [1]-[58]: 참고문헌 목록",
+      "Fig. 1-19의 도식·그래프 내용(Fig. 2/5 그림 내부 범례 포함): 캡션만 수록",
+      "Highlights·Graphical abstract: PDF에 없음"
+    ],
+    "uncertain": [
+      "2단 편집·쪽 경계로 끊긴 문단(1-2쪽 서론, 2-3쪽 CCS 문단, 3-4쪽 2절, 7-9쪽 5.2절, 9-11쪽 5.2.3절, 12쪽 결론)은 페이지 이미지 기준으로 이어 붙임. 원문 5절 소제목(5.1.1 등)이 문단 첫머리에 붙어 추출되어 section으로 분리",
+      "식 (1)-(20)은 PDF 이미지로 기호 확인 후 선형 표기(ṁ_, Q̇_, h_, T_, X_i, ∑_i^N, ^+/^−)로 옮김. 원문에 식 (12)는 없음(11 다음 13) — 원문 그대로",
+      "본문 산문 속 화학식(CO2, H2O, N2, NH3 등)은 기존 코퍼스(R014 등)와 검색 일관성을 위해 추출 표기(CO2) 유지, 변수 기호만 아래첨자 표기(ṁ_14, h_21 등)로 변환",
+      "Nomenclature의 m22(추출본)는 이미지상 ṁ22로 확인. Nomenclature의 ṁ_22/ṁ_23 정의는 본문 식 (19)의 ṁ_23 정의와 어긋나지만 원문 그대로",
+      "Table 11의 \"CO2 in fuel\" 값 8.92는 With PCCS 열 중앙에 한 번만 인쇄되어 있어 그 사실을 표 문장에 명시. Table 10/11의 \"PCSS inlet\" 오기, Table 13 syngas 27·28행 39.04 값, 5.1.4절 \"LMTD ... 11.5 MW\" 단위 표기 등은 원문 그대로",
+      "Table 12, 13(각 39행)은 350단어 규칙에 따라 행 그룹(0–9, 10–20, 21–31)으로 나눔; Table 12는 0–9행 13쪽, 10–31행 14쪽",
+      "긴 원문 문단(초록, 서론 첫 문단, CCS 방법 문단)은 350단어 규칙에 따라 문장 경계에서 분할",
+      "원문 오탈자·비문(예: \"is near 15 °C\", \"9.3 Mw\", \"bit lower\")은 verbatim 원칙에 따라 유지"
+    ]
+  }
+}

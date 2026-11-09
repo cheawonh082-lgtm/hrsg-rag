@@ -1,0 +1,794 @@
+{
+  "document": {
+    "doc_id": "R010",
+    "title": "Analysis of metastable regimes in a parallel channel single phase natural circulation system with RELAP5/MOD3.2",
+    "authors": [
+      "M.R. Gartia",
+      "D.S. Pilkhwal",
+      "P.K. Vijayan",
+      "D. Saha"
+    ],
+    "year": 2007,
+    "venue": "International Journal of Thermal Sciences 46 (2007) 1064–1074",
+    "doi": "10.1016/j.ijthermalsci.2006.11.016",
+    "url": "",
+    "license": "© 2006 Elsevier Masson SAS. All rights reserved (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R010-001",
+      "doc_id": "R010",
+      "section": "Abstract",
+      "page_start": 1064,
+      "page_end": 1064,
+      "text": "The study checks whether the RELAP5/MOD3.2 code can reproduce a metastable regime, meaning multiple steady states, in a parallel channel system operating under natural circulation. Natural circulation in vertical multi-channel systems with non-uniform heat inputs was simulated for a configuration of three parallel channels joined to common inlet and outlet headers and a down-comer. A metastable regime was found: one heat flux ratio can give two steady states with opposite flow directions. The power at which flow reversal happens was examined. A down-flowing channel whose power is raised, with the other two channels held constant, turns upward only once a critical power is reached; an up-flowing channel whose power is lowered turns downward only at a different critical power, so the two thresholds differ. The reversal power also depends on the operating procedure, i.e. the rate of power rise or power set back. A non-dimensional heat flux ratio (NH) is defined to predict flow reversal, and the flow directions are found to follow the largest averaged density difference among the channels. Keywords: Metastable regime; Parallel channel systems; Flow reversal.",
+      "terms": [
+        "RELAP5/MOD3.2",
+        "metastable regime",
+        "natural circulation",
+        "down-comer",
+        "flow reversal",
+        "heat flux ratio",
+        "NH",
+        "power set back"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-002",
+      "doc_id": "R010",
+      "section": "1. Introduction",
+      "page_start": 1064,
+      "page_end": 1065,
+      "text": "Natural circulation in multiple-channel systems with differing heat inputs arises in many applications, for example nuclear reactors, where it cools the core in some normal or upset conditions. Parallel channels heated unequally can behave in unusual ways under natural circulation, and a metastable regime may exist when the heat flux is non-uniform. A metastable equilibrium is one that withstands small disturbances but not large ones. In two-phase processes flow instabilities are unwanted because oscillations can alter local heat transfer, causing oscillating wall temperature, or trigger boiling crisis (critical heat flux, departure from nucleate boiling, burnout, dryout). Predicting the metastable regime and the instability threshold is therefore important for design.",
+      "terms": [
+        "Natural circulation",
+        "metastable regime",
+        "non-uniform",
+        "flow instabilities",
+        "boiling crisis",
+        "critical heat flux",
+        "dryout",
+        "metastable equilibrium"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-003",
+      "doc_id": "R010",
+      "section": "1. Introduction",
+      "page_start": 1065,
+      "page_end": 1065,
+      "text": "Prior studies are summarized. Chato [1] examined analytically and experimentally a three channel system (one heated, one unheated, the third heated or cooled) and found two possible stable flow rates for one set of heating rates; he predicted a heated channel switching from down-flow to up-flow when its power is increased while the upward heated channel is kept constant, but did not clearly identify the power range of the metastable regime. Zvirin [2] analyzed theoretically the stability of steady flows in a thermosyphon with multiple vertical channels and used a modified Rayleigh number for flow onset and instabilities. Takeda et al. [3] studied four vertical channels with different heat generation rates numerically and experimentally, finding that one-dimensional modeling predicted reversal from down-flow to up-flow but not the reverse. Yahalom and Bein [4] proposed a down-flow preference number (the heated channel with the largest value flows downward), and Todreas and Kazimi [5] an up-flow preference number (among down-flowing heated channels, the one with the largest value reverses to up-flow first).",
+      "terms": [
+        "Chato",
+        "metastable regime",
+        "thermosyphon",
+        "modified Rayleigh number",
+        "one-dimensional",
+        "down-flow preference number",
+        "up-flow preference number",
+        "Zvirin"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-004",
+      "doc_id": "R010",
+      "section": "1. Introduction",
+      "page_start": 1065,
+      "page_end": 1065,
+      "text": "The authors point out that preference numbers only rank which channels tend to reverse; they do not give the power or heat flux ratio at which reversal from up-flow to down-flow, or down-flow to up-flow, occurs, nor whether the rate of power increase or decrease shifts that level. This motivates the analysis of a natural circulation system with three parallel vertical channels linked by shared inlet and outlet headers plus a down-comer, showing that flow reversal may occur even before power is switched off. In such a system the density difference between down-comer and any channel creates buoyancy favoring upward flow in the heated channel, whereas a density contrast between two unequally heated channels favors downward flow in the lower-power channel. Linzer and Walter [6] showed that an upward flowing channel reverses when its power falls below a critical value, that the critical heat flux ratio falls as the heat flux of the upward flowing channel decreases, and that this matters during hot start-up of natural circulation boilers.",
+      "terms": [
+        "preference numbers",
+        "heat flux ratio",
+        "down-comer",
+        "buoyancy",
+        "flow reversal",
+        "Linzer and Walter",
+        "hot start-up",
+        "natural circulation boilers"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-005",
+      "doc_id": "R010",
+      "section": "1. Introduction",
+      "page_start": 1065,
+      "page_end": 1065,
+      "text": "Flow reversal can occur during refueling and defueling of a nuclear reactor, so a thorough study is needed; reverse flowing channels may produce voids in the inlet header and down-comer and lead to instability. This work examines the cause of reversal and finds that, where driving forces compete, the actual flow direction is set by the larger of the two buoyancy forces, and that in the single-phase three-channel system a much larger power is needed to restore upward flow in a reverse flowing channel when power is raised. Possible hysteresis in the loop is studied: multiple steady states with different flow directions can occur for some heat flux, and the region enclosed by this hysteresis is the metastable regime in Chato's [1] sense. The hysteresis regime depends on the rate of power reduction or increase, underlining the role of operating procedure in avoiding reversal. The analysis uses RELAP5/MOD3.2 [7] with non-uniform heat inputs.",
+      "terms": [
+        "refueling",
+        "defueling",
+        "voids",
+        "buoyancy forces",
+        "single-phase",
+        "hysteresis",
+        "metastable regime",
+        "RELAP5/MOD3.2"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-006",
+      "doc_id": "R010",
+      "section": "2. Description of the loop",
+      "page_start": 1065,
+      "page_end": 1065,
+      "text": "The analyzed loop has three vertical channels of equal diameter (Inside diameter = 25.5 mm, Thickness = 2.7 mm) and equal length (5 m), plus a common down-comer of the same size. The channels connect at the bottom to an inlet header (plenum) (Inside diameter = 250 mm, Thickness = 2.7 mm, Length = 964 mm) and at the top to an outlet header of the same size. The channels receive equal external power while the down-comer is unheated, and the same amount of heat is taken out by a tube-in-tube cooler (Inside diameter = 150 mm, Thickness = 2.7 mm) on the top header. The loop wall is SS-316 with a volumetric heat capacity of 3.83 × 10^6 J m^−3 K^−1, the wall roughness is 45 × 10^−6 m, and the working fluid is water. Fig. 1 gives the loop schematic.",
+      "terms": [
+        "25.5 mm",
+        "down-comer",
+        "inlet header",
+        "tube-in-tube cooler",
+        "SS-316",
+        "3.83 × 10^6 J m^−3 K^−1",
+        "45 × 10^−6 m",
+        "964 mm"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-007",
+      "doc_id": "R010",
+      "section": "Nomenclature",
+      "page_start": 1065,
+      "page_end": 1065,
+      "text": "Nomenclature (symbol: meaning [unit]). A: flow area [m^2]; Ch: Channel; D: hydraulic diameter [m]; f: Darcy–Weisbach friction factor; g: gravitational acceleration [m s^−2]; h: enthalpy [J kg^−1]; K: local pressure loss coefficient; L: length [m]; N_m: non-dimensional mass flow rate, W_un/W_h; N_H: non-dimensional heat flux ratio, q_un/q_h; P: pressure [N m^−2]; q: heat flux [W m^−2]; W: mass flow rate [kg s^−1]; z: elevation [m]. Greek symbols: ρ: density [kg m^−3]; Δρ: density difference [kg m^−3]; ρ̄: average density [kg m^−3]. Subscripts: DC: down-comer; h: heated channel; t: total; un: unheated channel; 1, 2, 3: channel number.",
+      "terms": [
+        "Darcy–Weisbach friction factor",
+        "local pressure loss coefficient",
+        "N_m",
+        "N_H",
+        "q_un/q_h",
+        "W_un/W_h",
+        "ρ̄",
+        "down-comer"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-008",
+      "doc_id": "R010",
+      "section": "2. Description of the loop",
+      "page_start": 1066,
+      "page_end": 1066,
+      "text": "Fig. 1. Schematic diagram of the natural circulation loop.",
+      "terms": [
+        "Fig. 1",
+        "natural circulation loop"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-009",
+      "doc_id": "R010",
+      "section": "3. Modeling and nodalization scheme",
+      "page_start": 1066,
+      "page_end": 1066,
+      "text": "Each component of the three parallel channel system is represented as a pipe (control volume) linked by junctions, with the pipe volumes given the actual flow areas and lengths; the down-comer and the top and bottom headers are also pipe volumes. Because the loop is driven by density differences, the plenum is modeled as a pipe so that the density distribution across its volumes is captured; plena are normally single-volume branch components in RELAP5/MOD3.2 nodalization, which would not resolve the pressure variation in them. The channels are given suitable heat structures, thermal stratification is ignored, and the nodalization appears in Fig. 2.",
+      "terms": [
+        "control volume",
+        "junctions",
+        "plenum",
+        "branch components",
+        "RELAP5/MOD3.2",
+        "nodalization",
+        "heat structures",
+        "thermal stratification"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-010",
+      "doc_id": "R010",
+      "section": "3. Modeling and nodalization scheme",
+      "page_start": 1066,
+      "page_end": 1066,
+      "text": "A grid independence check varied the heated-section grid count from 5 to 100; results changed little above 40 (Fig. 3), so 40 nodes were adopted for the heater section, with a time step of 0.001 sec. Heat transfer from the cooler primary (shell side) to the secondary (tube side) uses a heat structure, and the cooler inlet and outlet are two time dependent volume (TDV) components that keep the boundary conditions constant.",
+      "terms": [
+        "grid independence",
+        "40 nodes",
+        "0.001 sec",
+        "shell side",
+        "tube side",
+        "time dependent volume (TDV)",
+        "heat structure"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-011",
+      "doc_id": "R010",
+      "section": "3. Modeling and nodalization scheme",
+      "page_start": 1066,
+      "page_end": 1066,
+      "text": "Fig. 2. Nodalization scheme of the natural circulation loop. Fig. 3. Results of the grid independence test.",
+      "terms": [
+        "Fig. 2",
+        "Fig. 3",
+        "Nodalization scheme",
+        "grid independence test"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-012",
+      "doc_id": "R010",
+      "section": "4. Initial conditions & cases studied",
+      "page_start": 1066,
+      "page_end": 1066,
+      "text": "Simulations start from ambient pressure (1 bar), temperature (300 K) and zero mass flow rates. RELAP5/MOD3.2 is well established for natural circulation at high temperature and pressure [8–10], and Kamble et al. [11] confirmed for single-phase natural circulation in a rectangular loop at atmospheric conditions that its steady state flow rate predictions agree well with experiment. Four cases were analyzed: two with all three channels at equal initial heat fluxes of 10 kW m^−2 or 5 kW m^−2, one with two channels at 10 kW m^−2 each and the third unheated, and one with two channels at 5 kW m^−2 each and the third unheated; steady state was reached in every case.",
+      "terms": [
+        "1 bar",
+        "300 K",
+        "RELAP5/MOD3.2",
+        "Kamble et al.",
+        "rectangular loop",
+        "10 kW m^−2",
+        "5 kW m^−2",
+        "steady state"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-013",
+      "doc_id": "R010",
+      "section": "4. Initial conditions & cases studied",
+      "page_start": 1067,
+      "page_end": 1067,
+      "text": "Transients were run by both lowering and raising the heat flux, as listed in Table 1. Table 1. Cases studied with initial heat fluxes (kW m^−2). Initial heat flux — Case 1: Ch-1=10; Ch-2=10; Ch-3=10. Case 2: Ch-1=5; Ch-2=5; Ch-3=5. Case 3: Ch-1=10; Ch-2=0; Ch-3=10. Case 4: Ch-1=5; Ch-2=0; Ch-3=5. Heat flux during transient conditions — Case 1: Ch-1=10; Ch-2=Decrease power till it reverses the flow; Ch-3=10. Case 2: Ch-1=5; Ch-2=Decrease power till it reverses the flow; Ch-3=5. Case 3: Ch-1=10; Ch-2=Increase power till it reverses the flow; Ch-3=10. Case 4: Ch-1=5; Ch-2=Increase power till it reverses the flow; Ch-3=5.",
+      "terms": [
+        "Table 1",
+        "initial heat fluxes",
+        "Ch-1",
+        "Ch-2",
+        "Ch-3",
+        "Decrease power till it reverses the flow",
+        "Increase power till it reverses the flow"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-014",
+      "doc_id": "R010",
+      "section": "5.1 Transient for Case-1",
+      "page_start": 1067,
+      "page_end": 1067,
+      "text": "For Case-1 all three channels first reach steady state at an equal heat flux of 10 kW m^−2, so the heated channels carry the same power. Well after steady state, the heat flux of Ch-2 is lowered from 10 kW m^−2 at 10 W m^−2 s^−1. Fig. 4 gives the bottom and top temperatures of the channels: the channel with reduced heat flux cools, so its density increases, while the other two heated channels also cool slightly because their mass flow rate rises, and their densities therefore increase a little.",
+      "terms": [
+        "Case-1",
+        "10 kW m^−2",
+        "Ch-2",
+        "10 W m^−2 s^−1",
+        "Fig. 4",
+        "density",
+        "mass flow rate"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-015",
+      "doc_id": "R010",
+      "section": "5.1.1 Explanation for flow reversal for Case-1",
+      "page_start": 1067,
+      "page_end": 1068,
+      "text": "Fig. 5 shows the end-to-end density difference of each channel and Fig. 6 the mass flow rates. Reversal occurs when the density difference in Ch-2 reaches its minimum, and the channel with the greatest density difference dictates the flow direction in Ch-2, so a local loop forms between Ch-1 and Ch-2. After reversal (Fig. 7) the flow at the junction between Ch-2 and Ch-3 falls sharply to almost zero, confirming the Ch-1/Ch-2 local loop; with Ch-1 flowing upward, Ch-2 must flow downward. The mass flow of the channel whose heat flux was cut decreases gradually until reversal, after which the flow in the other two channels increases. Appendix A gives an analytical explanation.",
+      "terms": [
+        "Fig. 5",
+        "density difference",
+        "local loop",
+        "Ch-1",
+        "Ch-2",
+        "Ch-3",
+        "junction",
+        "Appendix A"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-016",
+      "doc_id": "R010",
+      "section": "5.1.1 Explanation for flow reversal for Case-1",
+      "page_start": 1067,
+      "page_end": 1067,
+      "text": "Fig. 4. Channel temperature histories (Case-1). Fig. 5. Change of density difference in the channels (Case-1). Fig. 6. Junction flow rate at the top header (Case-1). Fig. 7. Channel mass flow rate histories (Case-1).",
+      "terms": [
+        "Fig. 4",
+        "Fig. 5",
+        "Fig. 6",
+        "Fig. 7",
+        "Junction flow rate",
+        "top header",
+        "Case-1"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-017",
+      "doc_id": "R010",
+      "section": "5.2 Transient for Case-2",
+      "page_start": 1068,
+      "page_end": 1068,
+      "text": "In Case-2 each channel (Ch-1, Ch-2 & Ch-3) starts at 5 kW m^−2 and reaches steady state, after which the power of Ch-2 is lowered from 5 kW m^−2 at 10 W m^−2 s^−1. Figs. 8, 9, 10, 11 and 12 present, in order, the resulting temperatures, end-to-end temperature differences, end-to-end density differences, junction flow rates and mass flow rates. The trends resemble Case-1, and Ch-2 again reverses when its top-to-bottom density difference is at a minimum.",
+      "terms": [
+        "Case-2",
+        "5 kW m^−2",
+        "10 W m^−2 s^−1",
+        "Ch-2",
+        "junction flow rates",
+        "density differences",
+        "Figs. 8, 9, 10, 11 and 12"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-018",
+      "doc_id": "R010",
+      "section": "5.2 Transient for Case-2",
+      "page_start": 1068,
+      "page_end": 1068,
+      "text": "Fig. 8. Channel temperature histories (Case-2). Fig. 9. Top-to-bottom temperature difference of the channels (Case-2). Fig. 10. Bottom-to-top density difference of the channels (Case-2). Fig. 11. Junction flow rate at the top header (Case-2). Fig. 12. Channel mass flow rate histories (Case-2).",
+      "terms": [
+        "Fig. 8",
+        "Fig. 9",
+        "Fig. 10",
+        "Fig. 11",
+        "Fig. 12",
+        "Junction flow rate",
+        "Case-2"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-019",
+      "doc_id": "R010",
+      "section": "5.2.1 Explanation for flow reversal for Case-2",
+      "page_start": 1068,
+      "page_end": 1069,
+      "text": "To explain reversal, the average density difference among channels is evaluated for Case-2 (Fig. 13). Reversal stems from the local loop formed between Ch-1 and Ch-2, as the average density difference between these two channels is the largest; Fig. 11 supports this because the Ch-2/Ch-3 junction carries no flow. With upward flow in Ch-1, Ch-2 must flow downward. The authors conclude that density difference is the main driver of reversal and the channels with the largest density difference set the flow direction. Fig. 13. Change of average density difference among the channels (Case-2).",
+      "terms": [
+        "average density difference",
+        "Fig. 13",
+        "local loop",
+        "Ch-1",
+        "Ch-2",
+        "Fig. 11",
+        "density difference",
+        "Case-2"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-020",
+      "doc_id": "R010",
+      "section": "5.3 Transient for Case-3",
+      "page_start": 1069,
+      "page_end": 1069,
+      "text": "In Case-3, Ch-1 and Ch-3 are heated at 10 kW m^−2 while Ch-2 is unheated until steady state; flow is upward in the heated channels and downward in the unheated channel and the down-comer. The transient heats Ch-2, raising its heat flux from 0 kW m^−2 at 10 W m^−2 s^−1 until flow reversal, and the coolant temperature climbs as in Fig. 14.",
+      "terms": [
+        "Case-3",
+        "10 kW m^−2",
+        "Ch-2",
+        "down-comer",
+        "0 kW m^−2",
+        "10 W m^−2 s^−1",
+        "Fig. 14",
+        "flow reversal"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-021",
+      "doc_id": "R010",
+      "section": "5.3.1 Explanation for flow reversal for Case-3",
+      "page_start": 1069,
+      "page_end": 1069,
+      "text": "Heating lowers the density in Ch-2, which weakens its downward flow and gradually turns it around; the change of density difference between hot leg and cold leg reverses the flow in this channel. The mass flow rate of the two already heated channels then drops slightly, their temperatures increase, and their densities fall. Figs. 15 and 16 show the density difference and mass flow rate histories. Fig. 14. Channel temperature histories (Case-3). Fig. 15. Channel density histories (Case-3). Fig. 16. Channel mass flow rate (Case-3).",
+      "terms": [
+        "Ch-2",
+        "hot leg",
+        "cold leg",
+        "density difference",
+        "mass flow rate",
+        "Fig. 15",
+        "Fig. 16",
+        "Case-3"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-022",
+      "doc_id": "R010",
+      "section": "5.4 Transient for Case-4",
+      "page_start": 1069,
+      "page_end": 1070,
+      "text": "In Case-4, Ch-1 and Ch-3 both have 5 kW m^−2 and Ch-2 is unheated; before the transient the heated channels flow upward and the unheated channel and down-comer flow downward. The heat flux of the unheated channel is then raised from 0 kW m^−2 at various rates until reversal. The temperature, density and mass flow responses resemble Case-3 and are plotted in Figs. 17, 18 and 19 for a heat flux increase rate of 10 W m^−2 s^−1. Fig. 17. Channel temperature histories (Case-4). Fig. 18. Channel density histories (Case-4). Fig. 19. Channel mass flow rate (Case-4).",
+      "terms": [
+        "Case-4",
+        "5 kW m^−2",
+        "down-comer",
+        "0 kW m^−2",
+        "10 W m^−2 s^−1",
+        "Figs. 17, 18 and 19",
+        "Case-3"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-023",
+      "doc_id": "R010",
+      "section": "5.5 Effect of increment/decrement rate on flow reversal power level",
+      "page_start": 1070,
+      "page_end": 1071,
+      "text": "The simulations were repeated at several power increase and decrease rates. Figs. 20 and 21 plot the flow reversal heat flux ratio, NH (= q_un/q_h), against heat flux increment and decrement rate. NH grows with the increment rate, and at a given increment rate the reversal ratio NH is larger for the lower initial heat flux (Case-4). In Fig. 21, above a decrement rate of 100 W m^−2 s^−1, NH at a given decrement rate is larger for the higher initial heat flux (Case-1). Fig. 22 shows the heat fluxes at which reversal occurs versus increment/decrement rate for Case-1 to Case-4. Fig. 20. NH versus heat flux increment rate. Fig. 21. NH versus heat flux decrement rate. Fig. 22. Influence of initial heat flux and operating procedure on the flow reversal heat flux level.",
+      "terms": [
+        "NH (= q_un/q_h)",
+        "heat flux increment",
+        "decrement rate",
+        "100 W m^−2 s^−1",
+        "initial heat flux",
+        "Case-4",
+        "Case-1",
+        "Fig. 22"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-024",
+      "doc_id": "R010",
+      "section": "5.6 Effect of initial heat flux on NH",
+      "page_start": 1070,
+      "page_end": 1071,
+      "text": "Fig. 23 plots the non-dimensional mass flow rate, Nm (= W_un/W_h), against NH for Case-3 & Case-4. At the start the unheated channel has q_un = 0 and flows downward while the heated channel flows upward, so at NH = 0 Nm is negative (point A). Once Ch-2 is heated its downward flow diminishes with NH until a critical NH (point B) where the flow reverses; the curve jumps from B to D via point C, where Nm is zero, and Nm then increases with NH. This curve applies to the given initial heat fluxes and a power increase of 10 W m^−2 s^−1; other initial heat fluxes or procedures (power rise vs. power set back) give different curves.",
+      "terms": [
+        "Nm (= W_un/W_h)",
+        "NH",
+        "q_un = 0",
+        "point A",
+        "point B",
+        "power set back",
+        "10 W m^−2 s^−1",
+        "Case-3 & Case-4"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-025",
+      "doc_id": "R010",
+      "section": "5.6 Effect of initial heat flux on NH",
+      "page_start": 1071,
+      "page_end": 1071,
+      "text": "Fig. 24 shows (1/NH) for three initial heat flux values: (1/NH) falls as the initial heat flux rises. This is opposite to Linzer and Walter [6], whose value grew with initial heat flux; the authors attribute the difference possibly to flow conditions, single-phase here versus two-phase in their work. Fig. 23. Non-dimensional heat flux ratio (NH) at different initial heat fluxes (Case-3 & Case-4). Fig. 24. Influence of initial heat flux values on 1/NH.",
+      "terms": [
+        "(1/NH)",
+        "initial heat flux",
+        "Linzer and Walter",
+        "single-phase",
+        "two-phase",
+        "Fig. 24",
+        "Fig. 23"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-026",
+      "doc_id": "R010",
+      "section": "5.7 Metastable regime (hysteresis effect of loop at steady state)",
+      "page_start": 1071,
+      "page_end": 1071,
+      "text": "Fig. 25 gives the power levels for flow reversal under both power rise and power set-back: reversal during power rise occurs at a higher level than during set-back. Within a band of heat flux ratios, one heat flux ratio corresponds to two steady states with opposite flow directions; this form of static instability, marked by multiple steady states in different directions, bounds the metastable regime. Welander [12] and Creveling et al. [13] saw oscillatory flow before reversal in single channel systems, as did the experiments of Bau et al. [14], whereas Yahalom and Bein [4] and Linzer and Walter [6] reported no such oscillation before reversal in parallel channel systems, consistent with this study. Fig. 25. Hysteresis effect of the natural circulation loop at steady state.",
+      "terms": [
+        "Fig. 25",
+        "power set-back",
+        "static instability",
+        "multiple steady states",
+        "metastable regime",
+        "oscillatory",
+        "Hysteresis",
+        "parallel channel systems"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-027",
+      "doc_id": "R010",
+      "section": "5.7 Metastable regime (hysteresis effect of loop at steady state)",
+      "page_start": 1072,
+      "page_end": 1072,
+      "text": "Table 2. Non-dimensional heat flux ratio for different operating procedures and different initial heat fluxes (columns: Initial heat flux in Ch-2; Final heat flux in Ch-2; Rate [W s^−1]; NH at flow reversal; Ratio (q_h/q_un); the Operating procedure column is given as plots). Case 1: Initial=10 000; Final=62.5; Rate=765; NH=0.00625; Ratio=160. Case 1: Initial=10 000; Final=38.5; Rate=50; NH=0.00385; Ratio=259.64. Case 1: Initial=10 000; Final=6.0; Rate=6.66; NH=0.0006; Ratio=1666.67. Case 2: Initial=5000; Final=28.5; Rate=163; NH=0.0057; Ratio=735.4. Case 2: Initial=5000; Final=19.5; Rate=25; NH=0.0039; Ratio=256.4. Case 2: Initial=5000; Final=2.5; Rate=2.5; NH=0.0005; Ratio=2000.0. Case 3: Initial=0.0; Final=8614.5; Rate=50; NH=0.8615; Ratio=1.16. Case 3: Initial=0.0; Final=5900.0; Rate=10; NH=0.59; Ratio=1.7. Case 3: Initial=0.0; Final=2815.0; Rate=0.1; NH=0.28; Ratio=3.6. Case 4: Initial=0.0; Final=4872.5; Rate=25; NH=0.97; Ratio=1.026. Case 4: Initial=0.0; Final=3240; Rate=5; NH=0.65; Ratio=1.54. Case 4: Initial=0.0; Final=1353.4; Rate=0.1; NH=0.27; Ratio=3.7. Case 3: Initial=0.0; Final=2720.0; Rate=2.72; NH=0.272; Ratio=3.67. Case 4: Initial=0.0; Final=1287.5; Rate=1.29; NH=0.26; Ratio=3.88. Table 2 lists typical NH values for the different initial heat fluxes and operating procedures.",
+      "terms": [
+        "Table 2",
+        "Initial heat flux in Ch-2",
+        "Final heat flux in Ch-2",
+        "Rate [W s^−1]",
+        "NH at flow reversal",
+        "Ratio (q_h/q_un)",
+        "Operating procedure"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-028",
+      "doc_id": "R010",
+      "section": "6. Conclusions",
+      "page_start": 1072,
+      "page_end": 1072,
+      "text": "The possibility of a metastable regime in multi-channel systems with non-uniform heat inputs was investigated with RELAP5/MOD3.2 for three parallel channels with a down-comer. Flow reversal may happen before power is switched off, and over a certain range of heat flux ratio two steady states with opposite flow directions exist. Raising the power of a down-flowing channel (others fixed) turns it upward only at a critical power, while lowering the power of an up-flowing channel turns it downward only at another, different critical power; the hysteresis region enclosed by these two values is called the metastable regime. With mutually competing driving forces, the larger of the two buoyancy forces sets the actual flow direction.",
+      "terms": [
+        "metastable regime",
+        "non-uniform heat inputs",
+        "RELAP5/MOD3.2",
+        "down-comer",
+        "Flow reversal",
+        "critical power",
+        "hysteresis region",
+        "buoyancy forces"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-029",
+      "doc_id": "R010",
+      "section": "6. Conclusions",
+      "page_start": 1072,
+      "page_end": 1072,
+      "text": "In the single-phase three-channel system, a reverse flowing channel needs a considerably larger power to return to upward flow when power is raised. The non-dimensional heat flux ratio (NH) is proposed as a predictor of reversal. The reversal power depends on the initial starting power, which the authors note can help define a safe power level for a rational start-up procedure of nuclear reactors, and the hysteresis regime depends on the rate of power reduction or increase, so operating procedure is important for avoiding flow reversal.",
+      "terms": [
+        "single-phase",
+        "reverse flowing channel",
+        "non-dimensional heat flux ratio (NH)",
+        "initial starting power",
+        "start-up procedure",
+        "hysteresis regime",
+        "operating procedure"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-030",
+      "doc_id": "R010",
+      "section": "Appendix A. A.1 Governing equations",
+      "page_start": 1072,
+      "page_end": 1073,
+      "text": "The one-dimensional steady state Navier–Stokes equations are written for a single-phase natural circulation system. Continuity equation: d/ds (W/A) = 0   (A.1) (mass flux W/A is constant along the loop coordinate s). Energy equation: (W/A)(dh/ds) = 4q_h/D_h for the heater; 0 for adiabatic pipes; −4q_c/D_c for the cooler   (A.2) (enthalpy rise along the flow equals wall heat input per unit volume: positive in the heater, zero in adiabatic pipes, negative in the cooler).",
+      "terms": [
+        "Navier–Stokes",
+        "Continuity equation",
+        "d/ds (W/A) = 0",
+        "Energy equation",
+        "4q_h/D_h",
+        "−4q_c/D_c",
+        "adiabatic pipes"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-031",
+      "doc_id": "R010",
+      "section": "Appendix A. A.1 Governing equations",
+      "page_start": 1073,
+      "page_end": 1073,
+      "text": "Momentum equation: (W^2/A^2) d/ds (1/ρ) = −dP/ds − ρg sin θ − f W^2/(2DρA^2) − K W^2/(2ρA^2 L_t)   (A.3) (momentum change along s balanced by pressure gradient, body force, distributed friction and local friction, all per unit volume). θ is the angle to the horizontal in the flow direction; on the right side the second term is the body force per unit volume and the third and fourth terms are the distributed and local friction forces per unit volume.",
+      "terms": [
+        "Momentum equation",
+        "ρg sin θ",
+        "f W^2/(2DρA^2)",
+        "K W^2/(2ρA^2 L_t)",
+        "body force",
+        "distributed",
+        "local friction"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-032",
+      "doc_id": "R010",
+      "section": "Appendix A. A.1 Governing equations",
+      "page_start": 1073,
+      "page_end": 1073,
+      "text": "With v = 1/ρ, the momentum equation is integrated around the circulation loop: (W^2/A^2)∮dv = −∮dP − g∮ρ dz − f W^2 L_t/(2DρA^2) − K W^2/(2ρA^2)   (A.4) (loop integral of the momentum balance), where dz = ds sin θ. For a closed loop ∮dv = 0 and ∮dP = 0, so 0 = −g∮ρ dz − f W^2 L_t/(2DρA^2) − K W^2/(2ρA^2)   (A.5) (net buoyancy around the loop balances total friction), which gives −g∮ρ dz = Σ(fL/D + K) W^2/(2ρA^2)   (A.6) (loop buoyancy head = sum of distributed and local pressure losses).",
+      "terms": [
+        "v = 1/ρ",
+        "∮dv = 0",
+        "∮dP = 0",
+        "dz = ds sin θ",
+        "−g∮ρ dz",
+        "Σ(fL/D + K) W^2/(2ρA^2)",
+        "closed loop"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-033",
+      "doc_id": "R010",
+      "section": "Appendix A. A.1 Governing equations",
+      "page_start": 1073,
+      "page_end": 1073,
+      "text": "Without loss of generality, the metastable condition is derived for two parallel heated channels with a common down-comer (points A, B on Ch-1; C, D on Ch-2; E, F on Ch-3; height L). For the closed loop of Ch-1 and Ch-3 (Fig. I), Eq. (A.6) becomes −g[∫_A^B ρ dz + ∫_F^E ρ dz] = Σ_A^B (fL/D + K) W_1^2/(2ρA^2) + Σ_F^E (fL/D + K) (W_1 + W_2)^2/(2ρA^2)   (A.7) (buoyancy of the Ch-1/Ch-3 loop = losses in Ch-1 with W_1 plus losses in Ch-3 carrying W_1 + W_2). For the closed loop of Ch-2 and Ch-3 (Fig. II): −g[∫_C^D ρ dz + ∫_F^E ρ dz] = Σ_C^D (fL/D + K) W_2^2/(2ρA^2) + Σ_F^E (fL/D + K) (W_1 + W_2)^2/(2ρA^2)   (A.8) (same balance for the Ch-2/Ch-3 loop).",
+      "terms": [
+        "metastable",
+        "down-comer",
+        "Fig. I",
+        "Fig. II",
+        "W_1^2/(2ρA^2)",
+        "(W_1 + W_2)^2/(2ρA^2)",
+        "Ch-3",
+        "Eq. (A.6)"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-034",
+      "doc_id": "R010",
+      "section": "Appendix A. A.1 Governing equations",
+      "page_start": 1073,
+      "page_end": 1073,
+      "text": "Since z_B − z_A = z_D − z_C = z_F − z_E = L, Eqs. (A.7) and (A.8) reduce to (ρ̄_3 − ρ̄_1)gL = Σ_Ch-1 (fL/D + K) W_1^2/(2ρ̄_1 A^2) + Σ_Ch-3 (fL/D + K) (W_1 + W_2)^2/(2ρ̄_3 A^2)   (A.9) (average density difference between Ch-3 and Ch-1 times gL equals friction losses in Ch-1 and Ch-3) and, similarly, (ρ̄_3 − ρ̄_2)gL = Σ_Ch-2 (fL/D + K) W_2^2/(2ρ̄_2 A^2) + Σ_Ch-3 (fL/D + K) (W_1 + W_2)^2/(2ρ̄_3 A^2)   (A.10) (same relation for the Ch-2/Ch-3 pair).",
+      "terms": [
+        "z_B − z_A = z_D − z_C = z_F − z_E = L",
+        "(ρ̄_3 − ρ̄_1)gL",
+        "(ρ̄_3 − ρ̄_2)gL",
+        "ρ̄_1",
+        "ρ̄_2",
+        "ρ̄_3",
+        "Ch-3"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-035",
+      "doc_id": "R010",
+      "section": "Appendix A. A.1 Governing equations",
+      "page_start": 1073,
+      "page_end": 1073,
+      "text": "For Ch-2 to reverse, a local loop must form between Ch-1 and Ch-2, which requires the buoyancy force between Ch-1 and Ch-2 to exceed that between Ch-2 and Ch-3. The up-flow to down-flow reversal condition is (ρ̄_2 − ρ̄_1)gL ⩾ (ρ̄_3 − ρ̄_2)gL or (ρ̄_2 − ρ̄_1)gL ⩾ (ρ̄_DC − ρ̄_2)gL   (A.11) (buoyancy of the Ch-1/Ch-2 pair must at least equal that of the Ch-2/Ch-3 or Ch-2/down-comer pair). Conversely, down-flow to up-flow reversal requires (ρ̄_3 − ρ̄_2)gL ⩾ (ρ̄_2 − ρ̄_1)gL or (ρ̄_DC − ρ̄_2)gL ⩾ (ρ̄_2 − ρ̄_1)gL   (A.12) (buoyancy of the Ch-2/Ch-3 or Ch-2/down-comer pair must at least equal that of the Ch-1/Ch-2 pair).",
+      "terms": [
+        "local loop",
+        "buoyancy force",
+        "(ρ̄_2 − ρ̄_1)gL ⩾ (ρ̄_3 − ρ̄_2)gL",
+        "(ρ̄_DC − ρ̄_2)gL",
+        "up-flow",
+        "down-flow",
+        "down-comer"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-036",
+      "doc_id": "R010",
+      "section": "Appendix A. A.1 Governing equations",
+      "page_start": 1073,
+      "page_end": 1074,
+      "text": "In the limiting case just before reversal, (ρ̄_2 − ρ̄_1)gL = (ρ̄_3 − ρ̄_2)gL, giving Σ_Ch-1 (fL/D + K) W_1^2/(2ρ̄_1 A^2) + Σ_Ch-2 (fL/D + K) W_2^2/(2ρ̄_2 A^2) = Σ_Ch-2 (fL/D + K) W_2^2/(2ρ̄_2 A^2) + Σ_Ch-3 (fL/D + K) (W_1 + W_2)^2/(2ρ̄_3 A^2), i.e. Σ_Ch-1 (fL/D + K) W_1^2/(2ρ̄_1 A^2) = Σ_Ch-3 (fL/D + K) (W_1 + W_2)^2/(2ρ̄_3 A^2)   (A.13) (at the reversal threshold the friction loss in Ch-1 equals that in Ch-3). For the four parallel channel system simulated with RELAP5/MOD3.2, the down-comer plays the role of Ch-3 in this derivation. To check Eqs. (A.11) and (A.12), the average density differences among channels before and after reversal were computed with RELAP5 (Table A.1).",
+      "terms": [
+        "limiting case",
+        "(ρ̄_2 − ρ̄_1)gL = (ρ̄_3 − ρ̄_2)gL",
+        "W_1^2/(2ρ̄_1 A^2)",
+        "(W_1 + W_2)^2/(2ρ̄_3 A^2)",
+        "RELAP5/MOD3.2",
+        "down-comer",
+        "Table A.1"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-037",
+      "doc_id": "R010",
+      "section": "Appendix A. A.1 Governing equations",
+      "page_start": 1074,
+      "page_end": 1074,
+      "text": "Table A.1. Density difference among the channels before and after flow reversal using RELAP5 (all in kg m^−3). Case-1 Before flow reversal: (ρ̄_DC − ρ̄_1)=6.13; (ρ̄_DC − ρ̄_2)=6.13; (ρ̄_2 − ρ̄_1)=2.99−6; (ρ̄_2 − ρ̄_3)=2.44e−6. Case-1 After flow reversal: (ρ̄_DC − ρ̄_1)=3.70; (ρ̄_DC − ρ̄_2)=0.26; (ρ̄_2 − ρ̄_1)=3.43; (ρ̄_2 − ρ̄_3)=3.29. Case-2 Before flow reversal: (ρ̄_DC − ρ̄_1)=3.74; (ρ̄_DC − ρ̄_2)=3.74; (ρ̄_2 − ρ̄_1)=5.19e−4; (ρ̄_2 − ρ̄_3)=5.19e−4. Case-2 After flow reversal: (ρ̄_DC − ρ̄_1)=2.31; (ρ̄_DC − ρ̄_2)=0.15; (ρ̄_2 − ρ̄_1)=2.15; (ρ̄_2 − ρ̄_3)=2.07. Case-3 Before flow reversal: (ρ̄_DC − ρ̄_1)=3.73; (ρ̄_DC − ρ̄_2)=0.27; (ρ̄_2 − ρ̄_1)=3.44; (ρ̄_2 − ρ̄_3)=3.29. Case-3 After flow reversal: (ρ̄_DC − ρ̄_1)=6.16; (ρ̄_DC − ρ̄_2)=6.16; (ρ̄_2 − ρ̄_1)=2.23e−6; (ρ̄_2 − ρ̄_3)=2.23e−6. Case-4 Before flow reversal: (ρ̄_DC − ρ̄_1)=2.21; (ρ̄_DC − ρ̄_2)=0.053; (ρ̄_2 − ρ̄_1)=2.19; (ρ̄_2 − ρ̄_3)=2.17. Case-4 After flow reversal: (ρ̄_DC − ρ̄_1)=3.19; (ρ̄_DC − ρ̄_2)=2.81; (ρ̄_2 − ρ̄_1)=0.35; (ρ̄_2 − ρ̄_3)=0.35.",
+      "terms": [
+        "Table A.1",
+        "RELAP5",
+        "Before flow reversal",
+        "After flow reversal",
+        "(ρ̄_DC − ρ̄_1)",
+        "(ρ̄_DC − ρ̄_2)",
+        "(ρ̄_2 − ρ̄_1)",
+        "(ρ̄_2 − ρ̄_3)"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-038",
+      "doc_id": "R010",
+      "section": "Appendix A. A.2 Explanation of flow reversal from RELAP5 results",
+      "page_start": 1074,
+      "page_end": 1074,
+      "text": "Case-1 has all three channels heated equally at 10 kW m^−2, and after steady state the Ch-2 heat flux is lowered to make it reverse. Before reversal the down-comer-to-Ch-2 average density difference (6.13 kg m^−3) exceeds that between Ch-2 and Ch-1 (2.99e−6 kg m^−3) (Table A.1), showing that the loop is then formed by Ch-2 and the down-comer. After reversal the Ch-2/Ch-1 difference (3.43 kg m^−3) surpasses the down-comer/Ch-2 value (0.26 kg m^−3), and the Ch-2/Ch-3 difference also grows markedly, which favors up-flow to down-flow reversal in Ch-2 because Ch-3 flows upward, in agreement with Eq. (A.11). Case-2, with initial heat fluxes of 5 kW m^−2 in all three channels, is explained the same way.",
+      "terms": [
+        "Case-1",
+        "10 kW m^−2",
+        "6.13 kg m^−3",
+        "2.99e−6 kg m^−3",
+        "3.43 kg m^−3",
+        "0.26 kg m^−3",
+        "Eq. (A.11)",
+        "down-comer"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R010-039",
+      "doc_id": "R010",
+      "section": "Appendix A. A.2 Explanation of flow reversal from RELAP5 results",
+      "page_start": 1074,
+      "page_end": 1074,
+      "text": "In Case-3, Ch-1 & Ch-3 receive an equal 10 kW m^−2 and Ch-2 stays unheated until steady state, after which the Ch-2 heat flux is increased to provoke reversal. Table A.1 shows reversal occurring once the down-comer-to-Ch-2 average density difference overtakes that between Ch-2 and Ch-1, which enables a local loop between the down-comer and Ch-2 as stated by Eq. (A.12) and consistent with the theory. Case-4, starting from 5 kW m^−2, is explained likewise.",
+      "terms": [
+        "Case-3",
+        "Ch-1 & Ch-3",
+        "10 kW m^−2",
+        "average density difference",
+        "local loop",
+        "Eq. (A.12)",
+        "Case-4",
+        "5 kW m^−2"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 39,
+    "pages_processed": "1064-1074 (PDF 1-11쪽 전체)",
+    "last_paragraph_id": "R010-039",
+    "skipped": [
+      "1064쪽 저자 소속, 교신저자 표시·전화·팩스·이메일: 저자 연락처",
+      "1064쪽 '© 2006 Elsevier Masson SAS. All rights reserved', ISSN/front matter 문구: 저작권 문구 (doi는 메타데이터에 반영)",
+      "각 쪽 머리글(저널명·권호·쪽번호): 머리글",
+      "1074쪽 References [1]-[14]: 참고문헌 목록",
+      "그림 1~25, Fig. I·II, Table 2 'Operating procedure' 열의 그래프 내용: 캡션/열 이름만 수록하고 그래프 수치는 추측하지 않음"
+    ],
+    "uncertain": [
+      "Table A.1 Case-1 Before flow reversal의 (ρ̄_2 − ρ̄_1) 값이 원문 표에 '2.99−6'으로 인쇄됨(본문 A.2에는 2.99e−6) — 표 값은 인쇄 그대로 수록",
+      "본문(5.1.1)은 Fig. 6을 채널 질량유량, Fig. 7을 접합부 유량으로 언급하나 캡션은 Fig. 6 'Junction flow rate at the top header', Fig. 7 'Mass flow rate variations'로 되어 있어 서로 어긋나 보임 — 본문·캡션 모두 원문대로 둠",
+      "Table 2의 Initial/Final heat flux 열에 단위가 표기되어 있지 않음, Rate 열 단위는 원문 그대로 [W s^−1]",
+      "식 (A.13) 부근(1073-1074쪽)은 2단 편집에서 식 조각이 열을 넘나들어 PDF 이미지를 보고 순서를 재구성함",
+      "부록 본문은 'four parallel channel system'이라 쓰지만 본문 해석 대상은 3채널+down-comer 계통임 — 원문 표현 그대로 유지"
+    ]
+  }
+}

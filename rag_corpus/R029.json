@@ -1,0 +1,761 @@
+{
+  "document": {
+    "doc_id": "R029",
+    "title": "Degradation analysis of a combined cycle heat recovery steam generator under full and part load conditions",
+    "authors": [
+      "Yousef S.H. Najjar",
+      "Osama F.A. Alalul",
+      "A. Abu-Shamleh"
+    ],
+    "year": 2020,
+    "venue": "Sustainable Energy Technologies and Assessments 37 (2020) 100587, Elsevier",
+    "doi": "10.1016/j.seta.2019.100587",
+    "url": "https://doi.org/10.1016/j.seta.2019.100587",
+    "license": "© 2019 Elsevier Ltd. All rights reserved. (공개 라이선스 아님 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R029-001",
+      "doc_id": "R029",
+      "section": "Abstract",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "The authors build a theoretical model that simulates Heat Recovery Steam Generator (HRSG) performance and quantifies the percentage degradation of its components across operating loads and conditions. They also introduce a criterion that fixes the actual operating load of the HRSG from the measured variables of the actual test performance (ATP). Model and load criterion are applied to data logged over two years, giving 10 readings per operating month (January and August) per year at each of the 100%, 75% and 50% loads. Unlike other studies in the field, the degradation analysis rests on real logged plant data. Degradation rate grows with time and with load, while ambient conditions show no notable effect. The largest component degradation, −6.73%, occurs in the low-pressure stage at full load, and the largest overall HRSG degradation is −6.02% at full load. Keywords: Degradation analysis; Modeling analysis; Combined cycle; Heat recovery steam generator.",
+      "terms": [
+        "Heat Recovery Steam Generator",
+        "HRSG",
+        "actual test performance",
+        "ATP",
+        "degradation",
+        "low-pressure stage",
+        "−6.73%",
+        "−6.02%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-002",
+      "doc_id": "R029",
+      "section": "Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Energy demand keeps rising [1], increasing the need for efficient and cleaner energy resources [2]. Combined cycle gas turbine (CCGT) plants have shown high energy efficiency thanks to low capital investment, quick load following, flexible operation and lower emissions, though their reliability depends on how available and durable the gas turbine (GT) engine is [3,4], whose heat turns condensate into steam in the heat recovery steam generators (HRSGs). To raise overall plant efficiency a CCGT joins the Brayton and Rankine cycles [5]: one or more GTs are paired with one or more HRSGs, and each HRSG passes GT exhaust heat to condensate from the condenser to raise steam [6] that drives the steam turbine (ST).",
+      "terms": [
+        "CCGT",
+        "gas turbine",
+        "HRSGs",
+        "Brayton",
+        "Rankine",
+        "condensate",
+        "steam turbine"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-003",
+      "doc_id": "R029",
+      "section": "Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Much research targets better CCGT performance and lower fuel use, pollutant emissions and operating cost. Najjar et al. [3,7–10] reviewed combined cycle types, repowering and conversion of steam plants to CCGT, and integrated gasification. Ong'iro et al. [11] built a numerical HRSG model for advanced power cycles, validated it with real HRSG data, predicted pressure drop and temperature profile, and showed that HRSG performance strongly influences overall CCGT performance. Sharma and Singh [12] performed exergy analysis of a dual pressure HRSG while varying dead state temperature, concluding that at higher dead state temperatures the choice of dual pressure condition is critical, that dead state temperature markedly affects exergy losses and efficiencies of the Low-pressure (LP) and High-pressure (HP) steam sections, and that the HRSG carries the largest exergy losses. In other work [13] they found that fin height and density can affect LP evaporator exergy losses and improve LP economizer exergy efficiency.",
+      "terms": [
+        "CCGT",
+        "integrated gasification",
+        "pressure drop",
+        "dual pressure HRSG",
+        "dead state temperature",
+        "exergy losses",
+        "fin height",
+        "LP economizer"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-004",
+      "doc_id": "R029",
+      "section": "Introduction",
+      "page_start": 1,
+      "page_end": 2,
+      "text": "CCGT components suffer many failure types [14]; HRSGs can deteriorate through corrosion, erosion, metal loss and low cycle fatigue. Failure types, causes, mechanisms and monitoring are treated in many papers [15,16], and close performance monitoring is important for correcting HRSG degradation. Zwebek and Pilidis [17] examined how ST and HRSG component degradation affects CCGT performance, covering reduced overall heat transfer coefficients of the condenser, evaporator, economizer and superheater, ST fouling, ST erosion, lower ST isentropic efficiency and higher GT backpressure; using a FORTRAN simulation with component degradation varied over a percentage range, they found HRSG evaporator degradation to be the most influential fault on the steam cycle, while ST component degradation affects CCGT performance more than the HRSG and condenser.",
+      "terms": [
+        "corrosion",
+        "erosion",
+        "low cycle fatigue",
+        "overall heat transfer coefficients",
+        "ST fouling",
+        "isentropic efficiency",
+        "GT backpressure",
+        "FORTRAN"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-005",
+      "doc_id": "R029",
+      "section": "Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Cafaro et al. [18] studied degradation of a three pressure level HRSG with a dedicated Matlab code computing actual and expected component effectiveness to form non-dimensional indexes, using three years of logged data; the evaporator proved more prone to degradation than the economizer and superheater. Prior work has thus estimated HRSG degradation rates, but mostly via simulation or theory rather than modeling actual data from an operating plant. The novelty here is to study HRSG and component degradation for a real plant using two years of field data, and to assess the degradation effect on each component and on overall HRSG performance.",
+      "terms": [
+        "three pressure level HRSG",
+        "Matlab",
+        "effectiveness",
+        "non-dimensional indexes",
+        "evaporator",
+        "degradation rates"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-006",
+      "doc_id": "R029",
+      "section": "Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "The paper therefore examines degradation of the components of a Jordanian combined cycle HRSG, namely the boiler feed pump (BFP), the low-pressure heat recovery steam generator (LP-HRSG) and the high-pressure heat recovery steam generator (HP-HRSG), plus the overall HRSG, at full and part load while the plant ran on back-up diesel fuel. The methodology is applied to historical logged data gathered in January and August over two operating years (2012–2013), during which no washing or maintenance was done on any component. The aim is to support a suitable maintenance schedule, sustained high-efficiency running, minimal downtime, identification of the components most affected by degradation, and lower labor and parts replacement cost, improving overall plant economics.",
+      "terms": [
+        "BFP",
+        "LP-HRSG",
+        "HP-HRSG",
+        "back-up diesel fuel",
+        "2012–2013",
+        "maintenance schedule",
+        "downtime"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-007",
+      "doc_id": "R029",
+      "section": "Nomenclature",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Abbreviations and symbols (listed in reverse order): Ẇ power consumed or produced, kW; VIGV variable inlet guide vanes; v specific volume, m^3/kg; T temperature, K; ST steam turbine; r pressure ratio; P pressure, kPa; n polytropic exponent; MTP modeling test performance; ṁ mass flow rate, kg/s; LPST listed as low-pressure steam generator; LPSH low-pressure superheater; LP low-pressure; LP-HRSG low-pressure HRSG; LHV fuel lower heating value, kJ/kg; HRSG heat recovery steam generator (HRSGⓐ, HRSGⓑ linked to steam turbine engines 1 and 2); HPST high-pressure steam turbine; HPSH high-pressure superheater; HP-HRSG high-pressure HRSG; HP high-pressure; h enthalpy, kJ/kg; GT gas turbine; f fuel-air ratio; C_p specific heat at constant pressure, kJ/kg.K; CEP condensate extraction pump; CCGT combined cycle gas turbine; BFP boiler feed pump (BFPⓐ, BFPⓑ: feed pumps for steam heat generators 1 and 2); ATP actual test performance; AP actual performance; ACC air-cooled condenser. Greek: γ specific heat ratio; η efficiency; ∞ polytropic process.",
+      "terms": [
+        "ACC",
+        "ATP",
+        "BFP",
+        "CEP",
+        "MTP",
+        "VIGV",
+        "polytropic exponent",
+        "LHV"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-008",
+      "doc_id": "R029",
+      "section": "Nomenclature",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Subscripts: a air; ac actual; b burning; exh exhaust gases; f fuel; g gas; pre preheater; s steam; t turbine; w water. State points: 1 and 2 compressor inlet and combustor outlet; 3 and 4 inlet and outlet of the gas turbine; 5 and 6 inlet and outlet of the high-pressure HRSG; 7 and 8 inlet and outlet of the low-pressure HRSG; 9 and 10 inlet and outlet of the HRSG preheater.",
+      "terms": [
+        "exh",
+        "pre",
+        "combustor outlet",
+        "compressor inlet",
+        "high-pressure HRSG",
+        "preheater"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-009",
+      "doc_id": "R029",
+      "section": "Power plant and analysis description",
+      "page_start": 2,
+      "page_end": 3,
+      "text": "The plant lies in the southern desert, with hot summers and fairly cold winters; plant data were recorded at night through the year. The area has little industry, so peak demand comes from evening lighting, summer air conditioning and winter heating. HRSG process description: the plant is a conventional CCGT made up mainly of two GT engines rated 168 MW, two-pressure (HP and low-pressure LP) horizontal flow HRSGs, a single-casing two-stage ST rated 130 MW, an air-cooled condenser (ACC) and associated equipment (Fig. 1). It normally runs in combined cycle mode at full and part loads, and bypass stacks and dumpers on the GTs allow simple cycle operation with one or both GTs.",
+      "terms": [
+        "CCGT",
+        "168 MW",
+        "horizontal flow HRSGs",
+        "single-casing two-stage ST",
+        "130 MW",
+        "air-cooled condenser",
+        "bypass stacks",
+        "simple cycle"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-010",
+      "doc_id": "R029",
+      "section": "Power plant and analysis description",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Fig. 1. Plant layout with the HRSG components (legend: BFPⓐ/BFPⓑ boiler feed pumps of steam heat generators 1 and 2; HRSGⓐ/HRSGⓑ HRSGs serving steam turbine engines 1 and 2; HPSH/LPSH high- and low-pressure superheaters; HPST/LPST high- and low-pressure steam turbines; CEP pump for condensate extraction; points 1–4: compressor inlet, combustor outlet, gas turbine inlet and outlet; 5/6: high-pressure HRSG inlet/outlet; 7/8: low-pressure HRSG inlet/outlet; 9/10: preheater inlet/outlet).",
+      "terms": [
+        "Fig. 1",
+        "BFPⓐ",
+        "CEP",
+        "HPSH",
+        "HPST",
+        "LPSH",
+        "LPST",
+        "preheater"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-011",
+      "doc_id": "R029",
+      "section": "Power plant and analysis description",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "The HRSG under study lies inside the dashed box of Fig. 1; GT exhaust passes through the HRSGs, where it heats, boils and superheats the steam-cycle condensate. Measurement errors stem from fuel property variation, occasional erratic instruments and changing ambient conditions, so readings are averaged over reasonable periods. Each HRSG has low and high pressure heat exchanger levels and a preheater: the LP level has a steam drum, evaporator and superheater, and the HP level a steam drum, economizer, evaporator and two superheaters. Because monitoring provides only inlet and outlet variables of the two pressure stages, not of each component, degradation is evaluated per pressure stage, as set out in the modeling section, without individual component degradation.",
+      "terms": [
+        "dashed box",
+        "preheat",
+        "steam drum",
+        "evaporator",
+        "superheater",
+        "economizer",
+        "pressure stage",
+        "preheater"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-012",
+      "doc_id": "R029",
+      "section": "Measured data",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Degradation results come from actual data in the plant monitoring system, recorded hourly in two months (January and August) of the 2012–2013 period and then filtered using the proposed load determination criteria. The measured state variables used for modeling and degradation analysis, referenced to Fig. 1, are given in Table 1.",
+      "terms": [
+        "monitoring system",
+        "hourly",
+        "2012–2013",
+        "Table 1",
+        "state variables"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-013",
+      "doc_id": "R029",
+      "section": "Measured data",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Table 1. HRSG measured variables. HP-HRSG: Inlet water temperature (K)=T_w,6; Inlet steam temperature (K)=T_s,5; Steam flow rate (kg/s)=ṁ_s,HP; Steam outlet pressure (bar)=P_s,5; Inlet exhaust gas temperature (K)=T_exh,5; Inlet exhaust gas pressure (K, unit as printed)=P_exh,5; Outlet exhaust gas temperature (K)=T_exh,6. LP-HRSG: Inlet water temperature (K)=T_w,8; Outlet steam temperature (K)=T_s,7; Steam flow rate (kg/s)=ṁ_s,LP; Steam outlet pressure (bar)=P_s,7; Inlet exhaust gas temperature (K)=T_exh,7; Outlet exhaust gas temperature (K)=T_exh,8. Preheater: Inlet water temperature (K)=T_w,10; Outlet water temperature (K)=T_w,9; Inlet water pressure (bar)=P_w,10; Water flow rate (kg/s)=ṁ_w,pre; Inlet exhaust gas temperature (K)=T_exh,9; Outlet exhaust gas temperature (K)=T_exh,10. BFP: Inlet pressure (bar)=P_w,11; Discharge pressure (bar)=P_w,6.",
+      "terms": [
+        "Table 1",
+        "HP-HRSG",
+        "LP-HRSG",
+        "Preheater",
+        "BFP",
+        "T_exh,5",
+        "ṁ_s,HP",
+        "P_w,11"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-014",
+      "doc_id": "R029",
+      "section": "HRSG modeling and performance diagnostics",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Seasonal ambient effects on HRSG performance are captured by collecting data in January and August, representing cold and hot ambient conditions. Setting a reference performance baseline is the first step of the degradation analysis and is essential to quantify component degradation.",
+      "terms": [
+        "Seasonal",
+        "ambient",
+        "January",
+        "August",
+        "reference performance baseline",
+        "degradation"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-015",
+      "doc_id": "R029",
+      "section": "Reference performance determination",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Table 2 holds two groups: the actual test performance (ATP) recorded right after the plant was installed, and the modeling test performance (MTP), which is the model's reproduction of that test. In the ATP group, component performance comes from measurements at actual loads of 100%, 75% and 50%, and ATP is treated as the actual and most useful baseline over the plant's life. Since the plant does not measure inlet and outlet states of individual components within the HP and LP sections, degradation is applied to the complete low- and high-pressure stages as two units, together with the boiler feed pump.",
+      "terms": [
+        "Table 2",
+        "actual test performance",
+        "ATP",
+        "modeling test performance",
+        "MTP",
+        "baseline",
+        "boiler feed pump"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-016",
+      "doc_id": "R029",
+      "section": "Reference performance determination",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "The MTP group models the ATP data from the measured ATP variables plus assumptions from the literature. Because exhaust conditions leaving the HP-HRSG stage are not measured, they are set equal to those entering the LP-HRSG stage. As exhaust gas temperature changes little across the preheater and its inlet and outlet water enthalpies are similar, preheater degradation is not treated. Fig. 2 shows how HRSG efficiency varies with load, efficiency being heat output divided by heat input [19]. The exhaust gas and steam/water states of the ATP measurements serve as reference points for later data: when ATP state conditions are matched, the operating load is identified and degradation analysis follows, which keeps the degradation magnitude and trend free of fluctuation. Reference component performance is given in Table 3, and the 2012–2013 data are run through the model repeatedly to study component performance and degradation.",
+      "terms": [
+        "MTP",
+        "HP-HRSG",
+        "LP-HRSG",
+        "preheater",
+        "HRSG efficiency",
+        "heat output",
+        "Table 3",
+        "reference points"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-017",
+      "doc_id": "R029",
+      "section": "Reference performance determination",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Table 2. HRSG actual and modeling performance of the full and part loads (part 1: Gas turbine). Gas turbine ṁ_a,1 (kg/s): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=501.48; MTP 75%=436.61; MTP 50%=308.54; Modeling parameter type=Calculated. Gas turbine T_1 (K): ATP 100%=282.6; ATP 75%=282.2; ATP 50%=284; MTP 100%=282.6; MTP 75%=282.2; MTP 50%=284; Modeling parameter type=Given. Gas turbine T_2 (K): ATP 100%=592; ATP 75%=563; ATP 50%=548; MTP 100%=592; MTP 75%=563; MTP 50%=548; Modeling parameter type=Given. Gas turbine ṁ_f (kg/s): ATP 100%=10.8; ATP 75%=8.59; ATP 50%=6.04; MTP 100%=10.8; MTP 75%=8.59; MTP 50%=6.04; Modeling parameter type=Given. Gas turbine T_3 (K): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=1345.47; MTP 75%=1294.89; MTP 50%=1221.17; Modeling parameter type=Calculated. Gas turbine T_4 (K): ATP 100%=813; ATP 75%=808; ATP 50%=802; MTP 100%=813; MTP 75%=808; MTP 50%=802; Modeling parameter type=Given. Gas turbine LHV (kJ/kg): ATP 100%=42,829; ATP 75%=42,829; ATP 50%=42,829; MTP 100%=42,829; MTP 75%=42,829; MTP 50%=42,829; Modeling parameter type=Given. Gas turbine ṁ_exh (kg/s): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=508.33; MTP 75%=417.14; MTP 50%=348.89; Modeling parameter type=Calculated.",
+      "terms": [
+        "Table 2",
+        "ATP",
+        "MTP",
+        "Gas turbine",
+        "ṁ_a,1",
+        "LHV",
+        "ṁ_exh",
+        "Calculated"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-018",
+      "doc_id": "R029",
+      "section": "Reference performance determination",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Table 2. HRSG actual and modeling performance of the full and part loads (part 2: HP-HRSG). HP-HRSG T_exh,5 (K): ATP 100%=808; ATP 75%=803; ATP 50%=795; MTP 100%=808; MTP 75%=803; MTP 50%=795; Modeling parameter type=Given. HP-HRSG T_exh,6 (K): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=505.3; MTP 75%=493.4; MTP 50%=492.5; Modeling parameter type=Assumed. HP-HRSG P_exh,5 (bar): ATP 100%=0.96; ATP 75%=0.95; ATP 50%=0.943; MTP 100%=0.96; MTP 75%=0.95; MTP 50%=0.943; Modeling parameter type=Given. HP-HRSG T_s,5 (K): ATP 100%=766.8; ATP 75%=770.5; ATP 50%=757.9; MTP 100%=766.8; MTP 75%=770.5; MTP 50%=757.9; Modeling parameter type=Given. HP-HRSG T_w,6 (K): ATP 100%=422.8; ATP 75%=416.5; ATP 50%=416.5; MTP 100%=422.8; MTP 75%=416.5; MTP 50%=416.5; Modeling parameter type=Given. HP-HRSG h_s,5 (kJ/kg): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=3390; MTP 75%=3412; MTP 50%=3386; Modeling parameter type=Calculated. HP-HRSG h_w,6 (kJ/kg): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=636; MTP 75%=609; MTP 50%=608; Modeling parameter type=Calculated. HP-HRSG ṁ_w,6 (kg/s): ATP 100%=55.50; ATP 75%=46.80; ATP 50%=37.14; MTP 100%=55.50; MTP 75%=46.80; MTP 50%=37.14; Modeling parameter type=Given. HP-HRSG P_w,6 (bar): ATP 100%=74.4; ATP 75%=63.3; ATP 50%=60.7; MTP 100%=74.4; MTP 75%=63.3; MTP 50%=60.7; Modeling parameter type=Given.",
+      "terms": [
+        "Table 2",
+        "HP-HRSG",
+        "T_exh,5",
+        "P_exh,5",
+        "T_s,5",
+        "h_s,5",
+        "ṁ_w,6",
+        "Assumed"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-019",
+      "doc_id": "R029",
+      "section": "Reference performance determination",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Table 2. HRSG actual and modeling performance of the full and part loads (part 3: LP-HRSG and Preheater). LP-HRSG T_exh,7 (K): ATP 100%=505.3; ATP 75%=493.4; ATP 50%=492.5; MTP 100%=505.3; MTP 75%=493.4; MTP 50%=492.5; Modeling parameter type=Given. LP-HRSG T_exh,8 (K): ATP 100%=443.6; ATP 75%=433.5; ATP 50%=430.9; MTP 100%=443.6; MTP 75%=433.5; MTP 50%=430.9; Modeling parameter type=Given. LP-HRSG T_s,7 (K): ATP 100%=497.5; ATP 75%=486.8; ATP 50%=482.6; MTP 100%=497.5; MTP 75%=486.8; MTP 50%=482.6; Modeling parameter type=Given. LP-HRSG T_w,8 (K): ATP 100%=309.8; ATP 75%=312.9; ATP 50%=319.3; MTP 100%=309.8; MTP 75%=311.9; MTP 50%=319; Modeling parameter type=Given. LP-HRSG h_s,7 (kJ/kg): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=2910; MTP 75%=2890; MTP 50%=2881; Modeling parameter type=Calculated. LP-HRSG h_w,8 (kJ/kg): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=155; MTP 75%=164; MTP 50%=194; Modeling parameter type=Calculated. LP-HRSG ṁ_s,8 (kg/s): ATP 100%=2.38; ATP 75%=2.04; ATP 50%=2.67; MTP 100%=2.38; MTP 75%=2.04; MTP 50%=2.67; Modeling parameter type=Given. LP-HRSG P_w,8 (bar): ATP 100%=4.5; ATP 75%=3.8; ATP 50%=3.8; MTP 100%=4.5; MTP 75%=3.8; MTP 50%=3.8; Modeling parameter type=Given. Preheater T_exh,9 (K): ATP 100%=443.6; ATP 75%=433.5; ATP 50%=430.9; MTP 100%=443.6; MTP 75%=433.5; MTP 50%=430.9; Modeling parameter type=Assumed. Preheater T_exh,10 (K): ATP 100%=443.1; ATP 75%=433.1; ATP 50%=430.5; MTP 100%=443.1; MTP 75%=433.1; MTP 50%=430.5; Modeling parameter type=Given. Preheater T_w,9 (K): ATP 100%=309.2; ATP 75%=312.1; ATP 50%=319.2; MTP 100%=309.2; MTP 75%=312.1; MTP 50%=319.2; Modeling parameter type=Given. Preheater T_w,10 (K): ATP 100%=309; ATP 75%=312; ATP 50%=319; MTP 100%=308.3; MTP 75%=312; MTP 50%=319; Modeling parameter type=Given. Preheater h_w,9 (kJ/kg): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=155.1; MTP 75%=165; MTP 50%=195; Modeling parameter type=Calculated. Preheater h_w,10 (kJ/kg): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=155; MTP 75%=164; MTP 50%=194; Modeling parameter type=Calculated. Preheater ṁ_w,10 (kg/s): ATP 100%=57.88; ATP 75%=48.84; ATP 50%=39.81; MTP 100%=57.88; MTP 75%=48.84; MTP 50%=39.81; Modeling parameter type=Given. Preheater P_w,10 (bar): ATP 100%=26.5; ATP 75%=26.9; ATP 50%=29.1; MTP 100%=26.5; MTP 75%=26.9; MTP 50%=29.1; Modeling parameter type=Given.",
+      "terms": [
+        "Table 2",
+        "LP-HRSG",
+        "Preheater",
+        "T_exh,7",
+        "h_s,7",
+        "ṁ_s,8",
+        "T_w,10",
+        "P_w,10"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-020",
+      "doc_id": "R029",
+      "section": "Reference performance determination",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Table 2. HRSG actual and modeling performance of the full and part loads (part 4: BFP and HRSG efficiencies). BFP Ẇ_BFP,ac (MW): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=0.267; MTP 75%=0.178; MTP 50%=0.118; Modeling parameter type=Calculated. BFP v_w,9 (m^3/kg × 10^-3): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=1.004; MTP 75%=1.0044; MTP 50%=1.0041; Modeling parameter type=Calculated. HRSG η_HP,HRSG (%): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=88.44; MTP 75%=91.29; MTP 50%=88.60; Modeling parameter type=Calculated. HRSG η_LP,HRSG (%): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=19.36; MTP 75%=21.82; MTP 50%=33.08; Modeling parameter type=Calculated. HRSG η_Pre,HRSG (%): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=2.10; MTP 75%=14.36; MTP 50%=16.98; Modeling parameter type=Calculated. HRSG η_HRSG (%): ATP 100%=N/A; ATP 75%=N/A; ATP 50%=N/A; MTP 100%=70.62; MTP 75%=74.73; MTP 50%=73.51; Modeling parameter type=Calculated.",
+      "terms": [
+        "Table 2",
+        "BFP",
+        "Ẇ_BFP,ac",
+        "η_HP,HRSG",
+        "η_LP,HRSG",
+        "η_Pre,HRSG",
+        "η_HRSG",
+        "MTP"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-021",
+      "doc_id": "R029",
+      "section": "Reference performance determination",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Table 3. ST and ACC degradation baseline performance (title as printed; Parameter = Modeling Test Performance by Load (%)). η_HP,HRSG (%): 100%=88.44; 75%=91.29; 50%=88.60. η_LP,HRSG (%): 100%=19.36; 75%=21.82; 50%=33.08. η_HRSG (%): 100%=70.62; 75%=74.73; 50%=73.51. P_exh,5 (bar): 100%=0.96; 75%=0.95; 50%=0.943. Ẇ_BFP,ac (MW): 100%=0.267; 75%=0.178; 50%=0.118. Fig. 2 caption (as printed): percentage modeling error of the actual ST power output.",
+      "terms": [
+        "Table 3",
+        "Modeling Test Performance",
+        "η_HP,HRSG",
+        "η_LP,HRSG",
+        "η_HRSG",
+        "P_exh,5",
+        "Ẇ_BFP,ac",
+        "Fig. 2"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-022",
+      "doc_id": "R029",
+      "section": "HRSG performance modeling / High-pressure level (HRSG-HP)",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Efficiency of the high-pressure heat exchanger of the HRSG: η_HP,HRSG = (ṁ_s,HP (h_s,(5) − h_w,(6)) / (ṁ_exh,(5) C_p,exh,(5,6) (T_exh,(5) − T_exh,(6)))) 100   (1) (HP stage efficiency in % = heat taken up by HP steam divided by heat given up by exhaust gas between states 5 and 6). The exhaust specific heat is C_p,exh,(5,6) = C_p,a(5,6) + (f/(1 + f)) θ_exh,(5,6)   (2) (exhaust gas specific heat = air specific heat plus a fuel-air-ratio-weighted correction term θ).",
+      "terms": [
+        "η_HP,HRSG",
+        "ṁ_s,HP",
+        "h_s,(5)",
+        "ṁ_exh,(5)",
+        "C_p,exh,(5,6)",
+        "C_p,a(5,6)",
+        "θ_exh,(5,6)",
+        "f"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-023",
+      "doc_id": "R029",
+      "section": "HRSG performance modeling / High-pressure level (HRSG-HP)",
+      "page_start": 4,
+      "page_end": 5,
+      "text": "C_p,a,(5,6), the air specific heat, is evaluated at the mean temperature of states 5 and 6: C_p,a,(5,6) = c_0 + c_1(T_(5,6)) + c_2(T_(5,6))^2 + c_3(T_(5,6))^3   (3) (air specific heat as a cubic polynomial in temperature), with T_(5,6) = (T_(5) + T_(6))/2 (mean of the two state temperatures), c_0 = 1.0189134 × 10^3, c_1 = −1.3783636 × 10^−1, c_2 = 1.9843397 × 10^−4 and c_3 = 4.2399242 × 10^−7.",
+      "terms": [
+        "C_p,a,(5,6)",
+        "c_0",
+        "T_(5,6)",
+        "1.0189134 × 10^3",
+        "−1.3783636 × 10^−1",
+        "1.9843397 × 10^−4",
+        "4.2399242 × 10^−7"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-024",
+      "doc_id": "R029",
+      "section": "HRSG performance modeling / High-pressure level (HRSG-HP)",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The correction term is θ_exh,56 = CG_0 + CG_1(T_54) + CG_2(T_54)^2 + CG_3(T_54)^3 + CG_4(T_54)^4 + CG_5(T_54)^5   (4) (exhaust specific heat correction as a fifth-order polynomial in temperature), with CG_0 = 1.0887572 × 10^3, CG_1 = −1.4158834 × 10^−1, CG_2 = 1.9160159 × 10^−3, CG_3 = −1.2400934 × 10^−6, CG_4 = 3.0669459 × 10^−10 and CG_5 = −2.6117109 × 10^−14.",
+      "terms": [
+        "θ_exh,56",
+        "CG_0",
+        "T_54",
+        "1.0887572 × 10^3",
+        "CG_5",
+        "−2.6117109 × 10^−14"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-025",
+      "doc_id": "R029",
+      "section": "HRSG performance modeling / High-pressure level (HRSG-HP)",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "To get the fuel–air ratio f, the turbine polytropic efficiency is first expressed through the turbine pressure ratio: η_∞,t = (0.9 − (r_t − 1)/250) 100   (5) (polytropic efficiency in % falls linearly with pressure ratio). The turbine rotor inlet temperature then follows from T_(3) = T_(4) (r_t)^((n_g − 1)/n_g)   (6) (inlet temperature from outlet temperature and pressure ratio raised to the polytropic index), where the GT polytropic exponent n_g relates to the specific heat ratio γ_g via ((n − 1)/n)_g = η_∞,t ((γ − 1)/γ)_g   (7) (polytropic index relation for the gas), with γ_g taken as 1.33 [20].",
+      "terms": [
+        "fuel–air ratio",
+        "η_∞,t",
+        "r_t",
+        "T_(3)",
+        "n_g",
+        "γ_g",
+        "1.33",
+        "polytropic efficiency"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-026",
+      "doc_id": "R029",
+      "section": "HRSG performance modeling / High-pressure level (HRSG-HP)",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The fuel–air ratio is f = (C_p,a,(1,2)(T_(2) − 298) − C_p,a,(1,3)(T_(3) − 298)) / (η_b (C_p,a,(1,3)(T_(3) − 298) + θ_exh,(1,3)(T_(3) − 298) − LHV))   (8) (combustor energy balance relative to 298 K solved for f), where LHV is the fuel lower heating value (kJ/kg), C_p,a(1,3) and θ_exh,(1,3) are taken at the mean temperature of states 1 and 3, and the burning efficiency η_b is assumed 0.98. Air and exhaust flows are then ṁ_a = (ṁ_f / f)   (9) (air flow = fuel flow divided by fuel–air ratio) and ṁ_exh = ṁ_a + ṁ_f   (10) (exhaust flow = air flow + fuel flow).",
+      "terms": [
+        "f",
+        "C_p,a,(1,2)",
+        "298",
+        "η_b",
+        "0.98",
+        "LHV",
+        "ṁ_a",
+        "ṁ_exh"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-027",
+      "doc_id": "R029",
+      "section": "HRSG performance modeling / Low-pressure level (HRSG-LP)",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The low-pressure heat exchanger efficiency uses exhaust specific heats obtained in the same way: η_LP,HRSG = (ṁ_w,8 (h_s,7 − h_w,8) / (ṁ_exh C_p,exh78 (T_exh,7 − T_exh,8))) 100   (11) (LP stage efficiency in % = heat absorbed by LP water/steam over heat released by exhaust between states 7 and 8). Preheater: η_Preheater,HRSG = (ṁ_w,10 (h_w,9 − h_w,10) / (ṁ_exh C_p,exh910 (T_exh,9 − T_exh,10))) 100   (12) (preheater efficiency in % = water heat gain over exhaust heat loss between states 9 and 10).",
+      "terms": [
+        "η_LP,HRSG",
+        "ṁ_w,8",
+        "C_p,exh78",
+        "T_exh,7",
+        "η_Preheater,HRSG",
+        "ṁ_w,10",
+        "C_p,exh910",
+        "T_exh,10"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-028",
+      "doc_id": "R029",
+      "section": "HRSG performance modeling / Overall HRSG",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Overall HRSG: η_HRSG = ((ṁ_s,HP (h_s,5 − h_w,6) + ṁ_w,8 (h_s,7 − h_w,8) + ṁ_w,10 (h_w,9 − h_w,10)) / (ṁ_exh C_p,exh(5,10) (T_exh,5 − T_exh,10))) 100 (equation number not printed; overall efficiency in % = sum of heat absorbed in HP, LP and preheater sections over exhaust heat released from state 5 to state 10).",
+      "terms": [
+        "η_HRSG",
+        "ṁ_s,HP",
+        "ṁ_w,8",
+        "ṁ_w,10",
+        "C_p,exh(5,10)",
+        "T_exh,5",
+        "T_exh,10"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-029",
+      "doc_id": "R029",
+      "section": "HRSG performance modeling / Boiler feed pump (FWP)",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Boiler feed pump (FWP): the actual hydraulic power consumed (the text refers to the CEP here) is Ẇ_BFP,ac = ṁ_m,9 v_9 (P_10 − P_6) / 100   (14) (pump power = mass flow × specific volume × pressure rise, divided by 100 for units). Degradation of each HRSG component is evaluated as HRSG degradation = ((η_HRSG(MTP) − η_HRSG(AP)) / η_HRSG(MTP)) 100   (15) (percentage degradation = drop of actual performance efficiency relative to the modeled baseline efficiency).",
+      "terms": [
+        "Ẇ_BFP,ac",
+        "ṁ_m,9",
+        "v_9",
+        "P_10",
+        "η_HRSG(MTP)",
+        "η_HRSG(AP)",
+        "HRSG degradation",
+        "CEP"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-030",
+      "doc_id": "R029",
+      "section": "Discussion of results",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The modeling and degradation procedure was run on data from January and August over 2012–2013 for full and part loads, using the load determination criteria, and the main component results appear in Figs. 3 through 7. Each figure shows best fit lines versus time for the full and part load cases, and the R-squared value, a statistical measure of how well data follow the second-order fitted regression line, is boxed beside each line.",
+      "terms": [
+        "2012–2013",
+        "Figs. 3 through 7",
+        "best fit lines",
+        "R-squared",
+        "second-order fitted regression line",
+        "part load"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-031",
+      "doc_id": "R029",
+      "section": "Discussion of results",
+      "page_start": 6,
+      "page_end": 7,
+      "text": "The boiler feed pump suffers fouling and problems such as impeller damage, bearing and seal wear, shaft misalignment and casing wear, which govern the rate and size of its performance loss. To limit stoppage and inspection difficulty, BFP degradation was assessed indirectly through its power consumption (Fig. 3). Consumption grew with operating time, by at most 1.34% at full load and 1.16% and 1.07% at 75% and 50% load. Degradation is clearly larger at full load and falls notably at 75%, while the 75%–50% gap is small compared with the 100%–75% gap; the rate starts fast and slows over time, and ambient conditions have no effect on BFP degradation. Fig. 3. BFP power degradation over two years at various loads.",
+      "terms": [
+        "boiler feed pump",
+        "impeller damage",
+        "shaft misalignment",
+        "power consumption",
+        "1.34%",
+        "1.16%",
+        "1.07%",
+        "Fig. 3"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-032",
+      "doc_id": "R029",
+      "section": "Discussion of results",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "HRSG back-pressure hinders exhaust flow through the unit and lowers output power by reducing exit steam enthalpy; it is lower in simple cycle mode and rises markedly in combined cycle mode. Fig. 4 shows back-pressure, measured as exhaust gas pressure at the HRSG inlet downstream of the expansion joint, across ambient conditions and loads. Due to HRSG degradation it rises with time by an amount depending on load, reaching 2.15% at 100%, 1.74% at 75% and 1.57% at 50% load, and its rate of increase slows over time. Fig. 4. HRSG back pressure degradation over two years at various loads.",
+      "terms": [
+        "back-pressure",
+        "exit steam enthalpy",
+        "simple cycle mode",
+        "expansion joint",
+        "2.15%",
+        "1.74%",
+        "1.57%",
+        "Fig. 4"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-033",
+      "doc_id": "R029",
+      "section": "Discussion of results",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "Faults arise on the exhaust gas side (outer tube surface) and on the steam/water side (inner tube surface). Figs. 5–7 show HP and LP-HRSG efficiencies falling with time by load-dependent amounts, with no influence of ambient conditions on the trend. Outer-tube fouling, corrosion and fuel combustion deposits plugging the finned tubes, together with inner-tube scaling, corrosion from tube leakage and other problems, lower the efficiency of both pressure stages over time. The LP stage reduction peaks at −6.58% at the end of August-2013 at full load, against −5.13% and −4.35% at 75% and 50% load (Fig. 5).",
+      "terms": [
+        "exhaust gas side",
+        "steam/water side",
+        "fouling",
+        "finned tubes",
+        "scaling",
+        "tube leakage",
+        "−6.58%",
+        "LP-HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-034",
+      "doc_id": "R029",
+      "section": "Discussion of results",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "Figs. 5 and 6 together show that HP-HRSG degradation also depends on load and that its rate declines with time. The HP trend follows the LP-HRSG trend, but LP degradation is larger since the low-pressure stage works with only a small temperature difference. HP stage degradation peaks at −5.6%, with −4.62% and −4.16% at 75% and 50% load. Fig. 5 and Fig. 6. Efficiency degradation of the low-pressure and high-pressure HRSG, respectively, over two years at various loads.",
+      "terms": [
+        "HP-HRSG",
+        "LP-HRSG",
+        "temperature difference",
+        "−5.6%",
+        "−4.62%",
+        "−4.16%",
+        "Fig. 6"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-035",
+      "doc_id": "R029",
+      "section": "Discussion of results",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "Fig. 7 gives the efficiency drop representing overall HRSG degradation over time, combining the effects of the LP and HP stages. Load again matters: the largest reduction is −6.02% at full load, against −4.42% at 75% and −3.9% at 50% load. As for the individual stages, the difference between full and 75% load is large relative to that between 75% and 50% over the same period, so degradation is highest at full load and the difference between loads diminishes as power decreases. Fig. 7. HRSG efficiency degradation over two years at various loads.",
+      "terms": [
+        "efficiency drop",
+        "overall HRSG degradation",
+        "−6.02%",
+        "−4.42%",
+        "−3.9%",
+        "full load",
+        "Fig. 7"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-036",
+      "doc_id": "R029",
+      "section": "Conclusions",
+      "page_start": 7,
+      "page_end": 8,
+      "text": "The study proposes full HRSG modeling and performance calculation, applied to HRSG measurements from 2012 to 2013, with degradation evaluated on January and August data to reveal the influence of operating and ambient conditions. HRSG faults were measured and computed, and the simulated degradation agrees with the open literature. Main findings: (1) BFP power needed for the required head and flow grew with time, most clearly at full load where the rise reached 1.34%, while the degradation rate fell with time. (2) Rising back-pressure reflects HRSG condition; it increased with time at full and part loads, most at full load with a maximum degradation of 2.18%, and less as load drops.",
+      "terms": [
+        "BFP",
+        "head",
+        "1.34%",
+        "back-pressure",
+        "2.18%",
+        "open literature",
+        "part loads"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R029-037",
+      "doc_id": "R029",
+      "section": "Conclusions",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "(3) Degradation of the two HRSG pressure levels, derived from their efficiencies using actual data, was greater for the LP-HRSG than for the HP-HRSG at every load, peaking at −6.78% for the LP stage and −5.61% for the HP stage at full load, and grew with time and load. (4) Considering the effect of component degradation on the overall HRSG criterion, both pressure stages behaved alike, degradation rising with time and load, with a maximum of −6.01% at full load and an amount governed by the operating load conditions.",
+      "terms": [
+        "LP-HRSG",
+        "HP-HRSG",
+        "−6.78%",
+        "−5.61%",
+        "−6.01%",
+        "pressure levels",
+        "operating load"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 37,
+    "pages_processed": "1-8 (논문 인쇄 쪽번호 1-8, 논문번호 100587)",
+    "last_paragraph_id": "R029-037",
+    "skipped": [
+      "1쪽 저널 로고·ScienceDirect/저널 홈페이지 표기, Check for updates 아이콘: 저널 로고·머리글",
+      "1쪽 교신저자 이메일·ORCID, 접수/수정/게재 일자, '2213-1388/ © 2019 Elsevier Ltd. All rights reserved.': 저자 연락처·저작권 문구",
+      "각 쪽 머리글(Y.S.H. Najjar, et al. / Sustainable Energy Technologies and Assessments 37 (2020) 100587)·쪽번호: 머리글·바닥글",
+      "8쪽 Funding, CRediT authorship contribution statement, Declaration of Competing Interest: 감사의 글/저자 기여·이해상충 고지(본문 기술 내용 아님)",
+      "8쪽 Appendix A. Supplementary data(온라인 링크 안내만 있음): 본문 내용 없음",
+      "8쪽 References [1]-[20]: 참고문헌 목록",
+      "그림 1~7 내부 내용(계통도·그래프 데이터, R^2 값 등): 캡션과 본문 설명만 수록",
+      "Highlights 박스는 이 PDF에 없음"
+    ],
+    "uncertain": [
+      "2단 편집과 그림·표 삽입으로 추출 순서가 크게 뒤섞여(4~7쪽) PDF 쪽 이미지로 읽기 순서를 바로잡음. 4쪽 우단 'HRSG performance modeling'(식 1~3)은 좌단 'Reference performance determination' 뒤에 오지만 절 구분상 별도 절로 두고, 그 절은 4~6쪽에 걸침",
+      "Overall HRSG 효율식(6쪽)에는 식 번호가 인쇄되어 있지 않음(앞뒤로 보아 (13)으로 추정되나 기재하지 않음)",
+      "Table 1의 'Inlet exhaust gas pressure(K)' 단위 K, Table 3 제목 'ST and ACC degradation baseline performance', Fig. 2 캡션 'Percentage modeling error of the actual ST power output'(그래프 축은 HRSG Modeling Efficiency)은 내용과 맞지 않아 보이나 원문대로 둠",
+      "Table 2·3은 PDF 5쪽 이미지로 판독. Table 2 LP-HRSG T_w,8은 ATP(309.8/312.9/319.3)와 MTP(309.8/311.9/319) 값이 다르게 인쇄되어 그대로 기재",
+      "수치 불일치(원문 그대로 둠): 초록 LP 최대 열화 −6.73%, 본문 −6.58%, 결론 −6.78%; 전체 HRSG 초록·본문 −6.02%, 결론 −6.01%; HP 본문 −5.6%, 결론 −5.61%; 배압 본문 2.15%, 결론 2.18%",
+      "식 (14) 앞 소제목 'Boiler feed pump (FWP)'와 본문의 'CEP' 표기, 식 (4)의 T_54·θ_exh,56 아래첨자, LPST 약어 정의('Low-pressure steam generator')는 원문 표기 그대로 둠"
+    ]
+  }
+}

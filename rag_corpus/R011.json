@@ -1,0 +1,773 @@
+{
+  "document": {
+    "doc_id": "R011",
+    "title": "Mathematical modeling and performance analysis of heat recovery steam generator at Shat-Al Basra power plant",
+    "authors": [
+      "Mujtaba Hanoon",
+      "Mohammad N. Fares",
+      "Mohammad A. Taher"
+    ],
+    "year": 2025,
+    "venue": "Journal of Energy Systems 2025; 9(2): 194-206",
+    "doi": "10.30521/jes.1652961",
+    "url": "https://dergipark.org.tr/jes",
+    "license": "2025 Published by peer-reviewed open access scientific journal, JES at DergiPark (Open Access; 별도 CC 라이선스 표기 없음 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R011-001",
+      "doc_id": "R011",
+      "section": "Abstract",
+      "page_start": 194,
+      "page_end": 194,
+      "text": "Energy is crucial to economic and social development. The increasing demand for electricity in the world is met by using various primary energy sources. Combined cycle gas turbines (CCGTs) are highly efficient power-generation plants due to their high temperatures and utilization of exhaust gases to generate additional power. Heat recovery steam generator (HRSG) is a very important component in CCGT, this component recovers the energy from flue gases exiting the gas turbine and generates the motive steam. In the present work, HRSG in Shatt-Al Basrah power plant has been simulated using a mathematical model to predict the temperature of the steam out of HRSG in different cases. Different parameters have been studied including the fuel of the power plant and the ambient temperature to calculate heat transfer area of each section and compare the results with actual data which shows a great agreement. The results show that maximum heat transfer occurs in the high-pressure evaporator section due to its large heat transfer area. It is also noticed that the highest LP steam temperature observed is 251.1°C at 15°C light diesel oil case and the highest HP steam temperature is 473.62°C also at 15°C light diesel oil case. Keywords: Combined cycle power plants, Heat exchanger, HRSG design, Waste heat recovery",
+      "terms": [
+        "Combined cycle gas turbines (CCGTs)",
+        "Heat recovery steam generator (HRSG)",
+        "flue gases",
+        "heat transfer area",
+        "high-pressure evaporator",
+        "LP steam temperature",
+        "HP steam temperature",
+        "light diesel oil"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-002",
+      "doc_id": "R011",
+      "section": "Nomenclature",
+      "page_start": 194,
+      "page_end": 194,
+      "text": "Nomenclature (symbol: meaning [unit]). A: Heat transfer area [m^2]; A_i: Inside surface area [m^2/m]; A_o: Obstruction surface area [m^2/m]; A_t: Total surface area [m^2/m]; A_w: Area of tube wall [m^2/m]; b: Fin thickness [m]; C_P: Heat capacity [J/kg °C]; d: Tube outer diameter [m]; d_i: Tube inner diameter [m]; E: Fin efficiency [---]; ff_i: Inside fouling factors [m^2s °C /kJ]; ff_o: Outside fouling factors [m^2s °C /kJ]; G: Gas mass velocity [kg/m^2 s]; h_o: Outside heat transfer coefficient [w m^2 /°C]; h_i: Inside heat transfer coefficient [w m^2 /°C]; h_f: Fin Hight [m]; K: Fluid thermal conductivity [w m /°C]; K_m: Metal thermal conductivity [w m /°C]; L: Length of tube [m]; LMTD: Log mean temperature difference [C]; m: Mass flow rate [kg/s]; n: Number of fins per meter [---]; N_r: Number of tubes per row [---]; N_w: Number of rows [---]; Q: Heat transfer rate [w]; S: Fin spacing [m]; S_L: Longitudinal pitch [m]; S_T: Transferred pitch [m]; T_b: Outside fluid temperature [C]; T_g: Exhaust gas temperature [C]; T_s: Fin temperature [C]; T_w: Water/steam temperature [C]; U: Overall heat transfer coefficient [w/m^2 °C]; u: Exhaust gas velocity [m/s]. Greek symbols: η: Effectiveness; λ: Latent heat of vaporization [kJ/kg]; μ: Viscosity [Pa s]; ρ: Density [Kg/m^3]. Subscripts: g: Exhaust gas; w: Water/steam; HRSG: Heat recovery steam generator; PREH: Preheater; VLP: Low pressure evaporator; EHP: High pressure Economizer; SLP: Low pressure superheater; VHP: high pressure evaporator; SHP: high pressure superheater; LDO: Light Diesel Oil; HFO: Heavy Fuel Oil; PP: Pinch point; AP: Approach point.",
+      "terms": [
+        "LMTD",
+        "Fin efficiency",
+        "fouling factors",
+        "Overall heat transfer coefficient",
+        "Pinch point",
+        "Approach point",
+        "VHP",
+        "PREH"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-003",
+      "doc_id": "R011",
+      "section": "1.1. Waste Heat Recovery Systems",
+      "page_start": 195,
+      "page_end": 195,
+      "text": "Waste heat recovery (WHR) is an important process for utilizing waste heat and providing additional heat and electricity. As energy demand increases, conventional energy generators based on fossil fuels and gas turbine power plants are commonly used because of their advantages; however, their thermal efficiency is low, resulting in wasted heat. WHR can solve these issues using waste energy to generate electricity or process heat. Different technologies can be applied to gas-turbine-based power plants to recover waste heat. Implementing WHR systems can increase plant efficiency, while reducing CO_2 emissions and costs [1]. In conclusion, waste heat recovery is a game-changing process having immense potential for the efficient utilization of energy resources. By effectively recovering waste heat from gas turbine power plants, we can significantly increase efficiency, reduce CO_2 emissions, and reduce costs. It is imperative to embrace and implement WHR on a large scale to pave the way for a sustainable and eco-friendly future [2,3].",
+      "terms": [
+        "Waste heat recovery (WHR)",
+        "gas turbine power plants",
+        "thermal efficiency",
+        "CO_2 emissions"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-004",
+      "doc_id": "R011",
+      "section": "1.2. Shatt Al-Basra Power Plant",
+      "page_start": 195,
+      "page_end": 195,
+      "text": "Shatt Al-Basra Gas Power Plant is one of the key power stations located in Basra, in the southern Iraq. The plant consists of ten gas turbines, each of which generates 125 MW of electrical power. It operates on two types of fuel: Heavy Fuel Oil (HFO) and Light Diesel Oil (LDO). This power plant was later upgraded to a combined-cycle system by adding ten Heat Recovery Steam Generators (HRSGs) and five steam turbines. The HRSGs recover the waste heat from the gas turbines and convert it into steam, which is supplied to the steam turbines [4].",
+      "terms": [
+        "Shatt Al-Basra Gas Power Plant",
+        "gas turbines",
+        "Heavy Fuel Oil (HFO)",
+        "Light Diesel Oil (LDO)",
+        "combined-cycle",
+        "Heat Recovery Steam Generators (HRSGs)",
+        "steam turbines"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-005",
+      "doc_id": "R011",
+      "section": "1.3. Design of Waste HRSG",
+      "page_start": 195,
+      "page_end": 195,
+      "text": "With the growth of the global population and rapid expansion of industrial activities, the demand for electricity is rising significantly in both developed and developing countries. This increasing demand has driven researchers and engineers to seek more efficient and environmentally friendly power generation technologies that can reduce both electricity and pollutant emissions [5,6]. One of these technologies is waste heat recovery power plants, which combine a gas cycle (Brayton cycle) and a steam cycle (Rankine cycle) through an HRSG. In these systems, heat from the exhaust gases of the gas turbine is captured by the HRSG to generate steam at an optimal pressure and temperature. This steam is then used to drive the steam turbine, producing additional electricity with improved efficiency [7].",
+      "terms": [
+        "waste heat recovery power plants",
+        "Brayton cycle",
+        "Rankine cycle",
+        "HRSG",
+        "exhaust gases",
+        "steam turbine"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-006",
+      "doc_id": "R011",
+      "section": "1.3. Design of Waste HRSG",
+      "page_start": 195,
+      "page_end": 195,
+      "text": "HRSGs are categorized into single-, dual-, and triple-pressure types depending on the number of drums in the boiler. Among these, dual-pressure HRSGs are the most used because they provide higher efficiency than single-pressure systems and are more cost-effective than triple-pressure designs [8,9]. The efficiency and power output of combined-cycle power plants depend largely on the design of the HRSG. Therefore, optimizing its design is crucial for maximizing heat recovery and improving the overall performance of the plant [10].",
+      "terms": [
+        "single-, dual-, and triple-pressure",
+        "drums",
+        "dual-pressure HRSGs",
+        "combined-cycle power plants"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-007",
+      "doc_id": "R011",
+      "section": "1.3. Design of Waste HRSG",
+      "page_start": 195,
+      "page_end": 196,
+      "text": "An HRSG is not a single heat-exchanger unit, instead, this equipment consists of a preheater, low- and high-pressure evaporators, two economizers, and a low- and high-pressure superheater in the Shatt-Al Basra power plant. The economizer heats up the condensed water using the extracts thermal energy from the exhaust gas. Then, the heated water enters the evaporator section resulting in its vaporization into steam by the flue gas. The saturated steam subsequently undergoes further heating in the superheater, where it interacts with the flue gas to become superheated. Fig. 1 illustrates a schematic diagram of the HRSG system, depicting its 7 components. The high-temperature exhaust gas exiting the gas cycle flows past the superheaters, evaporators, economizers and preheater before being exhausted to the surroundings. The temperature of the flue gas successively decreases from T_g1 to T_g2, T_g3, T_g4, T_g5, T_g6, T_g7, and T_go. Feed water enters the preheater at temperature T_w1 and increased to T_wo.",
+      "terms": [
+        "preheater",
+        "evaporators",
+        "economizers",
+        "superheater",
+        "saturated steam",
+        "flue gas",
+        "T_g1",
+        "T_w1"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-008",
+      "doc_id": "R011",
+      "section": "1.3. Design of Waste HRSG",
+      "page_start": 196,
+      "page_end": 196,
+      "text": "Figure 1. HRSG in Shatt-Al Basra power plant.",
+      "terms": [
+        "HRSG"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-009",
+      "doc_id": "R011",
+      "section": "1.3. Design of Waste HRSG",
+      "page_start": 196,
+      "page_end": 196,
+      "text": "In the current market, several standardized gas turbine systems are available. However, Heat Recovery Steam Generators (HRSG) are typically designed individually for each Combined Cycle Power Plant (CCPP). The reasons for this include the following [11]: - The fuels utilized are diverse. Consequently, the requirements of the relevant flue gas should be considered in the Heat Recovery Steam Generator (HRSG) design. - Cycle optimization differs in the Combined Cycle Power Plant (CCPP). - Ambient conditions fluctuate and influence the Gas Turbine (GT) output.",
+      "terms": [
+        "Heat Recovery Steam Generators (HRSG)",
+        "Combined Cycle Power Plant (CCPP)",
+        "flue gas",
+        "Cycle optimization",
+        "Ambient conditions",
+        "Gas Turbine (GT)"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-010",
+      "doc_id": "R011",
+      "section": "1.3. Design of Waste HRSG",
+      "page_start": 196,
+      "page_end": 197,
+      "text": "A significant body of research has focused on enhancing the performance of combined cycle power plants through optimal HRSG design. Ahmed et al., [12] developed a mathematical model for designing an HRSG in a gas turbine power plant. The study analyzed heat flow and energy consumption using a dual-pressure system to optimize heat recovery and minimize thermal losses. The results showed that the proposed system could increase the plant’s efficiency from 33% to 52% while reducing exergy losses by 35%. Nag et al., [13] designed an HRSG to generate saturated steam in a combined gas and steam cycle, aiming to minimize irreversibility in the system. Through their analysis, they clarified that operating the HRSG at full load reduces entropy generation, leading to improved thermodynamic efficiency. This suggests that maximizing the utilization of available waste heat enhances overall system performance by minimizing energy losses. In a different work, Kaviri et al., [14] investigated an optimized design of HRSG in CCPPs to minimize environmental impact. They found that increasing the HRSG inlet gas temperature up to 650°C improved both thermal and exergy efficiency.",
+      "terms": [
+        "optimal HRSG design",
+        "dual-pressure system",
+        "exergy losses",
+        "irreversibility",
+        "entropy generation",
+        "HRSG inlet gas temperature",
+        "exergy efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-011",
+      "doc_id": "R011",
+      "section": "1.3. Design of Waste HRSG",
+      "page_start": 197,
+      "page_end": 197,
+      "text": "On the one hand, Naemi et al., [15] focused on the design parameters of a dual-pressure HRSG to improve its heat recovery efficiency and ensure economic performance. They developed a mathematical model for dual pressure HRSG and the results noted that; the optimum pinch point with regard to thermodynamic aspects was 2.5 °C and 2.1 °C for HRSGs employing steam at 75 bar and 90 bar correspondingly. Feng et al., [16] worked on the role of heat exchanger design in enhancing the thermal efficiency of numerous multi-pressure HRSGs. The authors tested three configurations and emphasized the significance of optimal design of heat exchangers early in the development stage in order to improve heat recovery efficiency of the HRSG and overall efficiency of the combined cycle plant.",
+      "terms": [
+        "dual-pressure HRSG",
+        "optimum pinch point",
+        "75 bar",
+        "90 bar",
+        "multi-pressure HRSGs",
+        "heat exchangers"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-012",
+      "doc_id": "R011",
+      "section": "1.3. Design of Waste HRSG",
+      "page_start": 197,
+      "page_end": 197,
+      "text": "Durán et al., [17] proposed a method for developing the design of an HRSG, which has three sections (economizer, evaporator and one superheater) by obtaining a small heat transfer area and low-pressure losses. In a different work, Hajabdollahi et al., [18] developed a thermodynamic and thermoeconomic model for HRSG. They performed exergoeconomic analysis and multi-optimization to minimize the cost per unit of steam produced while maximizing HRSG exergy efficiency. They found that increasing the high and low-pressure drums enhances efficiency, while a higher pinch point reduced it. Additionally, increasing the HRSG inlet gas enthalpy improved exergy efficiency according to the literature. Cehil et al., [19] proposed a novel mathematical model to optimize the heat exchanger layout within HRSGs using a genetic algorithm. Their work highlighted the impact of pressure levels, reheating, and serial/parallel configurations on thermodynamic efficiency. The study emphasized the need for simultaneous optimization of layout and operating parameters to improve HRSG performance. Chantasiriwan [20] focused on determination of the optimal total heat transfer area of single-pressure HRSGs by combining thermodynamic modeling with economic evaluation. This study showed that while increasing HRSG area improved power output, the benefit diminished with higher cost, leading to an optimal economic size. These studies provided valuable insights supporting the present work, which integrates thermodynamic modeling and real plant data to evaluate HRSG performance under actual operating conditions.",
+      "terms": [
+        "economizer",
+        "evaporator",
+        "superheater",
+        "thermoeconomic",
+        "exergoeconomic analysis",
+        "pinch point",
+        "genetic algorithm",
+        "single-pressure HRSGs"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-013",
+      "doc_id": "R011",
+      "section": "1.3. Design of Waste HRSG",
+      "page_start": 197,
+      "page_end": 197,
+      "text": "The design process of an HRSG begins with estimating its steam generation capacity and determining the temperature profiles of both the gas and steam. The steam flow rate and exit temperature are typically assumed based on conventional fired steam generator specifications. These two factors play a key role in defining the required sizes of the superheater, evaporator, and economizer [21]. This study offers a validated thermodynamic model of a real HRSG system at Shatt Al-Basrah power plant using actual operational data. Unlike prior works which relied on assumed or standard data, our work confirms the model’s applicability to real-world conditions. The model was also extended to investigate the potential performance variations under alternative fuel inputs, indicating flexibility and applicability in future optimization studies. The originality lies in applying the model to a real-world, single-site facility in a developing region, reflecting actual combustion gas profiles, steam generation behavior, and system losses. Additionally, the study builds a practical framework that can later be expanded to evaluate the integration of HRSGs with downstream thermal processes, such as desalination units, offering a realistic pathway for enhancing overall energy utilization in gas-fired power stations.",
+      "terms": [
+        "steam generation capacity",
+        "temperature profiles",
+        "superheater",
+        "evaporator",
+        "economizer",
+        "thermodynamic model",
+        "desalination units"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-014",
+      "doc_id": "R011",
+      "section": "2. METHODOLOGY",
+      "page_start": 197,
+      "page_end": 198,
+      "text": "Mathematical models are used to simulate actual processes. The HRSG model depends on the mass flow rates, fluid dynamics, and heat transfer and energy balance [12]. The design process of HRSG uses two main parameters that are related to the temperature profiles of gas and steam side, these are pinch point temperature and approach point temperature. Pinch point is the difference between the gas temperature leaving the evaporator and saturation temperature. Approach point is the difference between the saturation temperature and the water temperature entering the evaporator Fig. 2 show a pinch point and approach point for low pressure side [22].",
+      "terms": [
+        "Mathematical models",
+        "pinch point temperature",
+        "approach point temperature",
+        "Pinch point",
+        "Approach point",
+        "saturation temperature",
+        "evaporator",
+        "low pressure side"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-015",
+      "doc_id": "R011",
+      "section": "2. METHODOLOGY",
+      "page_start": 198,
+      "page_end": 198,
+      "text": "Figure 2. Pinch point and approach point.",
+      "terms": [
+        "Pinch point",
+        "approach point"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-016",
+      "doc_id": "R011",
+      "section": "2. METHODOLOGY",
+      "page_start": 198,
+      "page_end": 198,
+      "text": "Mathematically on ecan formulate the equations as follows for the dual pressure system, PP_LP = T_g7 - T_w3   (1) (low-pressure pinch point: difference between the gas temperature leaving the LP evaporator and the saturation temperature); AP_LP = T_w3 - T_w2   (2) (low-pressure approach point: difference between the saturation temperature and the water temperature entering the LP evaporator); PP_HP = T_g3 - T_w7   (3) (high-pressure pinch point); AP_HP = T_w7 - T_w6   (4) (high-pressure approach point).",
+      "terms": [
+        "dual pressure system",
+        "PP_LP",
+        "AP_LP",
+        "PP_HP",
+        "AP_HP",
+        "pinch point",
+        "approach point"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-017",
+      "doc_id": "R011",
+      "section": "2.1. Assumptions",
+      "page_start": 198,
+      "page_end": 198,
+      "text": "In order to derive the mathematical model, some assumptions are taken, these are listed below: 1. A steady state system. 2. The flow rate, temperature and chemical composition of exhaust gas are known. 3. The tube type is staggered pitch with solid fins. 4. The natural circulation is assumed in the evaporator. 5. No heat loss in the system other than the outflow of the exhaust gas. 6. Radiation heat transfer is negligible.",
+      "terms": [
+        "steady state",
+        "exhaust gas",
+        "staggered pitch",
+        "solid fins",
+        "natural circulation",
+        "evaporator",
+        "Radiation heat transfer"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-018",
+      "doc_id": "R011",
+      "section": "2.2. Temperature Profile",
+      "page_start": 198,
+      "page_end": 198,
+      "text": "In the first step of the design process, establishing the temperature profile is crucial. Through the application of energy balance principles and the utilization of an appropriate pinch point, it is possible to determine the inlet and outlet temperatures of both the working fluid and exhaust gases for each section. This calculation serves as the foundation for subsequent design steps. The equation used to develop the temperature profile is the heat balance equation according to Ref. [23]: Total Heat Exchange = Q_cold = Q_hot   (5) (heat given up by the hot stream equals heat absorbed by the cold stream).",
+      "terms": [
+        "temperature profile",
+        "energy balance",
+        "pinch point",
+        "heat balance equation",
+        "Q_cold",
+        "Q_hot"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-019",
+      "doc_id": "R011",
+      "section": "2.2. Temperature Profile",
+      "page_start": 199,
+      "page_end": 199,
+      "text": "Energy balance in all heat transfer surfaces between the hot and cold streams (gas side and water/steam side) can be expressed as, For high-pressure superheater, m_g C_Pg (T_g1 - T_g2) = m_HPw C_Pw (T_wO - T_w7)   (6) (heat released by the exhaust gas across the HP superheater equals heat absorbed by the HP steam). For high-pressure evaporator, m_g C_Pg (T_g2 - T_g3) = m_HPw λ_HP   (7) (gas-side heat release in the HP evaporator equals HP steam flow times latent heat of vaporization). For high-pressure economizer 2, m_g C_Pg (T_g3 - T_g4) = m_HPw C_Pw (T_w6 - T_Hw5)   (8) (gas-side heat release equals water-side heat gain in HP economizer 2). For high-pressure economizer 1, m_g C_Pg (T_g5 - T_g6) = m_HPw C_Pw (T_Hw4 - T_w3)   (9) (gas-side heat release equals water-side heat gain in HP economizer 1).",
+      "terms": [
+        "Energy balance",
+        "high-pressure superheater",
+        "high-pressure evaporator",
+        "high-pressure economizer",
+        "m_g",
+        "C_Pg",
+        "m_HPw",
+        "λ_HP"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-020",
+      "doc_id": "R011",
+      "section": "2.2. Temperature Profile",
+      "page_start": 199,
+      "page_end": 199,
+      "text": "For low-pressure superheater, m_g C_Pg (T_g4 - T_g5) = m_LPw C_Pw (T_Lw5 - T_Lw4)   (10) (gas-side heat release equals LP steam heat gain in the LP superheater). For low-pressure evaporator, m_g C_Pg (T_g6 - T_g7) = m_LPw λ_LP   (11) (gas-side heat release in the LP evaporator equals LP steam flow times latent heat of vaporization). For the preheater, m_g C_Pg (T_g7 - T_go) = m_w C_Pw (T_w2 - T_w1)   (12) (gas-side heat release equals feed water heat gain in the preheater).",
+      "terms": [
+        "low-pressure superheater",
+        "low-pressure evaporator",
+        "preheater",
+        "m_LPw",
+        "λ_LP",
+        "T_go"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-021",
+      "doc_id": "R011",
+      "section": "2.2. Temperature Profile",
+      "page_start": 199,
+      "page_end": 199,
+      "text": "Figure 3. Gas and steam temperature profile of dual pressure HRSG after Ref. [15].",
+      "terms": [
+        "temperature profile",
+        "dual pressure HRSG"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-022",
+      "doc_id": "R011",
+      "section": "2.3. Calculating Heat Transfer Area",
+      "page_start": 200,
+      "page_end": 200,
+      "text": "The design method in this study leverages the heat transfer coefficients to obtain the heat transfer area for each heat exchanger in the high- and low-pressure regions of the HRSG. The designing method is based on logarithmic means temperature difference; therefore, the heat transfer areas are obtained by: Q = UA LMTD,   (13) (heat transfer rate = overall heat transfer coefficient × heat transfer area × log mean temperature difference) With, LMTD = [(T_g1 - T_w2) - (T_g2 - T_w1)] / Ln[(T_g1 - T_w2) - (T_g2 - T_w1)]   (14) (log mean temperature difference between the gas and water/steam streams of a section, as printed).",
+      "terms": [
+        "heat transfer coefficients",
+        "heat transfer area",
+        "logarithmic means temperature difference",
+        "LMTD",
+        "UA"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-023",
+      "doc_id": "R011",
+      "section": "2.3. Calculating Heat Transfer Area",
+      "page_start": 200,
+      "page_end": 200,
+      "text": "The overall heat transfer coefficient of each section is defined by the following equation according to Ref. [22]: 1/U = A_t/(h_i A_i) + ff_i (A_t/A_i) + ff_o + (A_t/A_w) (d/(2K_m)) ln(d/d_i) + 1/(ηh_o)   (15) (overall resistance = inside convection + inside fouling + outside fouling + tube wall conduction + outside convection with fin effectiveness).",
+      "terms": [
+        "overall heat transfer coefficient",
+        "ff_i",
+        "ff_o",
+        "K_m",
+        "ηh_o"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-024",
+      "doc_id": "R011",
+      "section": "2.4. Overall Heat Transfer Coefficient Calculation",
+      "page_start": 200,
+      "page_end": 200,
+      "text": "Considering the use of finned tubes in all sections of the HRSG, the calculation of the overall heat transfer coefficient would be more complicated than that for bare tubes. The outside heat transfer coefficient of finned tubes can be calculated using various methods. Convection heat transfer coefficient is considered in the calculation of flue gas heat transfer coefficient. For instance, Ganapathy proposed a methodology for the calculation of the finned tube heat transfer coefficient [21,22]. The calculation of the inside and outside heat transfer coefficients are presented in the following sections.",
+      "terms": [
+        "finned tubes",
+        "overall heat transfer coefficient",
+        "bare tubes",
+        "outside heat transfer coefficient",
+        "Convection heat transfer coefficient",
+        "flue gas heat transfer coefficient",
+        "Ganapathy"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-025",
+      "doc_id": "R011",
+      "section": "2.4.1. Average inside heat transfer coefficient",
+      "page_start": 200,
+      "page_end": 200,
+      "text": "The average inside heat transfer coefficient is defined by, h_i = 0.024 Re^0.8 P_r^0.4 K/d_i   (16) (inside convection coefficient from Reynolds and Prandtl numbers, fluid conductivity and tube inner diameter). Reynolds number is obtained by the following equation, Re_i = ρud_i/μ   (17) (inside Reynolds number = density × velocity × inner diameter / viscosity). And Prandtl number is formulated by, P_r = C_P μ/K   (18) (Prandtl number = heat capacity × viscosity / thermal conductivity).",
+      "terms": [
+        "average inside heat transfer coefficient",
+        "Reynolds number",
+        "Prandtl number",
+        "h_i",
+        "Re_i",
+        "P_r"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-026",
+      "doc_id": "R011",
+      "section": "2.4.2. Average outside heat transfer coefficient",
+      "page_start": 200,
+      "page_end": 201,
+      "text": "Radiation heat transfer is negligible so the convection heat transfer coefficient is considered in the calculation of the average outside heat transfer coefficient. Figs. 4(a,b) illustrate the geometry and arrangement of serrated and solid finned tubes [24]. In Shatt AL-Basrah power plant, the HRSG has a solid fin and staggered tube arrangement. The average outside convection heat transfer coefficient is then calculated by the following expression, h_o = C1 C3 C5 ((d + 2hf)/d)^0.5 ((Tb + 273.15)/(Ts + 273.15))^0.25 G Cp (K/(μCp))^0.67   (19) (average outside convection coefficient of the solid-finned staggered tube bank from geometry factors, gas and fin temperatures, gas mass velocity and gas properties).",
+      "terms": [
+        "Radiation heat transfer",
+        "convection heat transfer coefficient",
+        "serrated and solid finned tubes",
+        "solid fin",
+        "staggered tube arrangement",
+        "h_o",
+        "C1 C3 C5"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-027",
+      "doc_id": "R011",
+      "section": "2.4.2. Average outside heat transfer coefficient",
+      "page_start": 201,
+      "page_end": 201,
+      "text": "Figure 4. (a) Fin tube Arrangement and (b) fin tube geometry.",
+      "terms": [
+        "Fin tube Arrangement",
+        "fin tube geometry"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-028",
+      "doc_id": "R011",
+      "section": "2.4.2. Average outside heat transfer coefficient",
+      "page_start": 201,
+      "page_end": 201,
+      "text": "Here, the coefficients C1, C2 and C3 have been calculated by, C1 = 0.25 Re_o^(-0.35)   (20) (coefficient C1 as a function of the outside Reynolds number); C3 = 0.2 + 0.65 e^(-0.25 h/s)   (21) (coefficient C3 as a function of fin height to fin spacing); C5 = 1.1 + (0.75 - 1.5 e^(-0.7Nr^2)) e^(-2 SL/ST)   (22) (coefficient C5 as a function of the number of tubes per row and the longitudinal/transverse pitch ratio).",
+      "terms": [
+        "C1",
+        "C3",
+        "C5",
+        "Re_o",
+        "Nr",
+        "SL/ST"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-029",
+      "doc_id": "R011",
+      "section": "2.4.2. Average outside heat transfer coefficient",
+      "page_start": 201,
+      "page_end": 201,
+      "text": "Fin spacing (S) can be found by, s = 1/n - b   (23) (fin spacing = 1 / number of fins per meter - fin thickness). Eq. (24) calculates mass flow rate of flue gas, G = M_g/([ST - A_o]N_w L)   (24) (gas mass velocity = flue gas flow divided by the free flow area of the tube bank). Where, A_o = d + 2 n b hf   (25) (obstruction surface area per metre of finned tube).",
+      "terms": [
+        "Fin spacing",
+        "mass flow rate of flue gas",
+        "M_g",
+        "A_o",
+        "N_w"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-030",
+      "doc_id": "R011",
+      "section": "2.4.2. Average outside heat transfer coefficient",
+      "page_start": 202,
+      "page_end": 202,
+      "text": "In this regard, the Reynolds number is calculated with the formulation, Re_o = Gd/μ   (26) (outside Reynolds number from gas mass velocity, tube outer diameter and viscosity). tube inner surface area A_i (m^2) calculated by: A_i = π d_i   (27) (inside surface area per metre of tube). average wall surface area Aw (m^2) calculated by: A_w = (π d + d_i)/2   (28) (average wall surface area per metre of tube, as printed).",
+      "terms": [
+        "Reynolds number",
+        "Re_o",
+        "tube inner surface area",
+        "average wall surface area",
+        "A_i",
+        "A_w"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-031",
+      "doc_id": "R011",
+      "section": "2.4.2. Average outside heat transfer coefficient",
+      "page_start": 202,
+      "page_end": 202,
+      "text": "average fin temperature T_s calculated by, T_s = (T_w1 + T_w2)/2 + 0.3 (T_b - (T_w1 + T_w2)/2)   (29) (fin temperature from the mean water/steam temperature and the average outside fluid temperature). Where T_b is average outside fluid temperature, T_b = (T_g1 + T_g2)/2   (30) (mean of the inlet and outlet gas temperatures of the section). effectiveness η is, η = 1 - (1 - E) A_f/A_t   (31) (fin effectiveness from fin efficiency and the fin to total surface area ratio).",
+      "terms": [
+        "average fin temperature",
+        "average outside fluid temperature",
+        "effectiveness",
+        "T_s",
+        "T_b",
+        "A_f/A_t"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-032",
+      "doc_id": "R011",
+      "section": "2.4.2. Average outside heat transfer coefficient",
+      "page_start": 202,
+      "page_end": 202,
+      "text": "and A_f = π n(2d hf + 2hf^2 + bd + 2b hf)   (32) (fin surface area per metre of tube); A_t = A_f + π d(1 - n b)   (33) (total surface area = fin area + exposed tube area); E = 1/(1 + 0.002292 m^2 hf^2 ((d + 2 hf)/d)^0.5)   (34) (fin efficiency); where, m = (2h_c/(K_f b))^0.5   (35) (fin parameter m from the heat transfer coefficient, fin thermal conductivity and fin thickness).",
+      "terms": [
+        "A_f",
+        "A_t",
+        "h_c",
+        "K_f",
+        "fin efficiency"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-033",
+      "doc_id": "R011",
+      "section": "3. RESULTS AND DISCUSSION",
+      "page_start": 202,
+      "page_end": 202,
+      "text": "As mentioned before this power station operates on two types of fuel: (a) Heavy Fuel Oil (HFO) and (b) Light Diesel Oil (LDO). Thus, the exhaust gas temperature and composition will vary depending on the type of fuel used, and also each case will have different pinch point and approach point. Therefore, the model will incorporate the specific properties of each fuel type separately.",
+      "terms": [
+        "Heavy Fuel Oil (HFO)",
+        "Light Diesel Oil (LDO)",
+        "exhaust gas temperature",
+        "pinch point",
+        "approach point"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-034",
+      "doc_id": "R011",
+      "section": "3. RESULTS AND DISCUSSION",
+      "page_start": 203,
+      "page_end": 203,
+      "text": "Table 1. Parameters of each operation cases at different fuel. Exhaust gas temperature: Unit=°C; LDO=537.1; HFO=475.2. Exhaust gas flow rate: Unit=Kg/s; LDO=429.72; HFO=427.2. Low-pressure pinch point: Unit=°C; LDO=8.28; HFO=6.05. High-pressure pinch point: Unit=°C; LDO=7.19; HFO=5.81. Low-pressure approach point: Unit=°C; LDO=16.4; HFO=6.65. High-pressure approach point: Unit=°C; LDO=2.7; HFO=2.46. Component of exhaust gas: CO_2: Unit=V%; LDO=4.55; HFO=3.98. O_2: Unit=V%; LDO=13.44; HFO=14.56. N_2: Unit=V%; LDO=74.32; HFO=75.12. H_2O: Unit=V%; LDO=6.8; HFO=5.44. Ar: Unit=V%; LDO=0.89; HFO=0.89.",
+      "terms": [
+        "Exhaust gas temperature",
+        "Exhaust gas flow rate",
+        "pinch point",
+        "approach point",
+        "LDO",
+        "HFO",
+        "CO_2",
+        "H_2O"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-035",
+      "doc_id": "R011",
+      "section": "3. RESULTS AND DISCUSSION",
+      "page_start": 203,
+      "page_end": 203,
+      "text": "The mathematical model has been developed and solved using Excel, chosen for its user-friendly interface and high computational accuracy since it offers several advantages in solving mathematical models, including its ability to handle large datasets, perform complex calculations efficiently, and provide built-in functions for numerical analysis. Additionally, its flexibility in data visualization and ease of integration with external sources make it a practical with both datasets seamlessly integrated tool for engineering and scientific applications. The model was supplied with the properties of water, steam, and other gases from a separate Excel sheet. Fig. 5 illustrates the heat transfer from exhaust gases to steam/water within each heat exchanger of a heat recovery steam generation (HRSG) system, across various fuel types (LDO, HFO). The analysis shows that the highest heat transfer occurs in the high-pressure evaporator (VHP), while the lowest occurs in the low-pressure Superheater (SLP). Specifically, the figures show that with a LDO fuel type, the LP steam production absorbs 26,220.42 KW of energy (14.22% of the total heat recovered), while the HP steam production absorbs 158,112.72 KW (85.78%). With a HFO fuel type, the LP and HP steam production account for 22,001.91 KW (15.08%) and 123,872.16 KW (84.92%) respectively. Fig. 6 show temperatures of the water/steam within each heat exchanger in HRSG, comparing model predictions with actual plant data, demonstrating strong agreement across the operational conditions for different fuel types. The error is 2.234% for the Case #1 and 2.789 % for Case #2. Similarly in Fig. 7, temperatures of the flue gases exiting each exchanger are presented, again showing very good agreement between the model and actual data for different fuel types. The error is 3.447% for Case #1 and 4.349 % for Case #2.",
+      "terms": [
+        "Excel",
+        "high-pressure evaporator (VHP)",
+        "low-pressure Superheater (SLP)",
+        "LP steam production",
+        "HP steam production",
+        "LDO",
+        "HFO",
+        "flue gases"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-036",
+      "doc_id": "R011",
+      "section": "3. RESULTS AND DISCUSSION",
+      "page_start": 203,
+      "page_end": 203,
+      "text": "Figs. 8 and 9 show the temperature profile for both the exhaust gases and the water/steam sides of each heat exchanger, along with the heat flux. The exhaust gas temperature is highest at the HRSG inlet and decreases progressively through the system, reaching its lowest value at the PREH outlet. Conversely, the water/steam temperature is lowest at the inlet and highest at the HP superheater outlet, reflecting the heat transfer from the exhaust gases. The diagrams highlight the temperature behavior in both the HP and LP sections including pinch points and approach points temperatures. Note that the temperature profiles of each case of types of fuels are seen clearly.",
+      "terms": [
+        "temperature profile",
+        "exhaust gases",
+        "heat flux",
+        "PREH outlet",
+        "HP superheater outlet",
+        "pinch points",
+        "approach points"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-037",
+      "doc_id": "R011",
+      "section": "3. RESULTS AND DISCUSSION",
+      "page_start": 203,
+      "page_end": 204,
+      "text": "Figure 5. The heat transfer rates at (a) Case 1 (LDO) and (b) Case 2 (HFO) Figure 6. Temperatures of the water/steam side at (a) Case 1 (LDO) and (b) Case 2 (HFO). Figure 7. Temperatures of the exhaust gas side at (a) Case 1 (LDO) and (b) Case 2 (HFO). Figure 8. Temperature profile for HRSG at case 1 (LDO). Figure 9. Temperature profile for HRSG at case 2 (HFO).",
+      "terms": [
+        "heat transfer rates",
+        "water/steam side",
+        "exhaust gas side",
+        "Temperature profile",
+        "LDO",
+        "HFO"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-038",
+      "doc_id": "R011",
+      "section": "3. RESULTS AND DISCUSSION",
+      "page_start": 205,
+      "page_end": 205,
+      "text": "Fig. 10 shows the heat transfer surface area for each exchanger by comparing mathematical model results with actual values and showing close agreement with an error of 5%. The HP evaporator exhibits the largest surface area (i.e. 22243.56 m^2), consistent with its role as the primary heat transfer component within the HRSG.",
+      "terms": [
+        "heat transfer surface area",
+        "HP evaporator",
+        "mathematical model",
+        "HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-039",
+      "doc_id": "R011",
+      "section": "3. RESULTS AND DISCUSSION",
+      "page_start": 205,
+      "page_end": 205,
+      "text": "Figure 10. Heat transfer area for each heat exchanger.",
+      "terms": [
+        "Heat transfer area",
+        "heat exchanger"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-040",
+      "doc_id": "R011",
+      "section": "4. CONCLUSION",
+      "page_start": 205,
+      "page_end": 205,
+      "text": "This research established a validated mathematical model for simulating the performance of the Heat Recovery Steam Generator (HRSG) at the Shatt Al-Basra power plant, with a particular emphasis on its thermal behavior across varied operational scenarios. This model established some essential parameters like exhaust gas temperature, exhaust gas mass flow rate, and fuel type, enabling accurate calculations of steam temperatures and heat exchange areas in each level of HRSG. The good correlation between simulated and actual plant data shows that the developed model is accurate. High-pressure evaporator has the highest heat transfer rate and the greatest heat exchange area. The study also detailed how system performance is affected by fuel type, where using Light Diesel Oil (LDO) results in higher exhaust gas temperatures than Heavy Fuel Oil (HFO) will provide, increasing steam temperatures and overall efficiency.",
+      "terms": [
+        "Heat Recovery Steam Generator (HRSG)",
+        "exhaust gas temperature",
+        "exhaust gas mass flow rate",
+        "fuel type",
+        "heat exchange areas",
+        "High-pressure evaporator",
+        "Light Diesel Oil (LDO)",
+        "Heavy Fuel Oil (HFO)"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R011-041",
+      "doc_id": "R011",
+      "section": "4. CONCLUSION",
+      "page_start": 205,
+      "page_end": 205,
+      "text": "The results of the present work will, thereby, be beneficial towards improving overall waste heat recovery, overall power plant efficiency enhancement and thus improvement in the HRSG plant design through advanced thermodynamic analysis and validation with matching plant data. These findings hold implications for engineers and researchers to enhance energy recovery, cut emissions, and advance the sustainability of power generation systems. The validated model offers a reliable foundation for optimizing heat recovery performance in gas power plants, especially in developing regions. As a forward step, this model can be extended to assess the performance of integrated HRSG-desalination systems, enabling dual-purpose energy-water optimization in arid climates.",
+      "terms": [
+        "waste heat recovery",
+        "HRSG plant design",
+        "thermodynamic analysis",
+        "heat recovery performance",
+        "HRSG-desalination systems"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    }
+  ],
+  "report": {
+    "paragraph_count": 41,
+    "pages_processed": "194-206 (PDF 1-13쪽 전체)",
+    "last_paragraph_id": "R011-041",
+    "skipped": [
+      "194쪽 저자 소속·이메일, Corresponding Author 표시: 저자 연락처",
+      "194쪽 저널 로고·ISSN(2602-2052)·Submitted/Accepted/Published 날짜, \"Cite this paper as\" 인용 안내 및 \"2025 Published by peer-reviewed open access scientific journal\" 문구: 머리글/저작권 문구(라이선스 정보는 document.license에 반영)",
+      "각 쪽 머리글(Journal of Energy Systems)과 바닥 쪽번호: 머리글/바닥글",
+      "205-206쪽 REFERENCES [1]-[24]: 참고문헌 목록",
+      "Figure 1-10의 그래프·도식 내용: 캡션만 수록, 그림 내용은 추측하지 않음"
+    ],
+    "uncertain": [
+      "식 (14) LMTD의 분모가 원문에 \"Ln[(Tg1-Tw2)-(Tg2-Tw1)]\"(뺄셈)으로 인쇄됨(통상 로그 안은 비율) — 인쇄된 그대로 수록",
+      "식 (28)은 원문에 \"Aw = (π d + di)/2\" 형태로 인쇄됨(괄호 위치 불명확) — 인쇄 그대로 수록",
+      "식 (19) 다음 문장은 \"the coefficients C1, C2 and C3\"라고 쓰지만 식 (19)-(22)의 계수는 C1, C3, C5임 — 원문 그대로 둠",
+      "식 (21)의 지수 \"0.25 h/s\"에서 h가 fin height(hf)를 뜻하는지 원문에 명시 없음 — 기호 인쇄 그대로",
+      "식 (1)-(35)는 PDF 페이지 이미지를 보고 선형 표기(아래첨자 _, 지수 ^)로 옮김; 원문 일부 기호는 아래첨자 없이(hf, Tb, Ts, SL, ST, Nr) 인쇄되어 그대로 둠",
+      "본문 \"Mathematically on ecan formulate\"(오탈자), \"Fin Hight\", \"Transferred pitch\" 등은 원문 철자 그대로 유지",
+      "Nomenclature의 단위 표기(w m /°C, m^2s °C /kJ, 온도 단위 C 등)는 원문 인쇄 그대로",
+      "url은 PDF에 표기된 저널 홈페이지(https://dergipark.org.tr/jes)이며 논문 개별 URL은 아님"
+    ]
+  }
+}

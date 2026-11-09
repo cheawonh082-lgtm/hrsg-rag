@@ -1,0 +1,783 @@
+{
+  "document": {
+    "doc_id": "R020",
+    "title": "삼중압 열회수 증기발생기와 증기터빈 시스템의 열설계 해석",
+    "authors": [
+      "이봉렬",
+      "김동섭",
+      "노승탁",
+      "신흥태",
+      "전용준"
+    ],
+    "year": 2002,
+    "venue": "대한기계학회논문집 B권, 제26권 제3호, pp.507-514, 2002",
+    "doi": "",
+    "url": "",
+    "license": "원문(스캔본)에 저작권·라이선스 표기 없음 (대한기계학회 학술지, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "ko"
+  },
+  "paragraphs": [
+    {
+      "id": "R020-001",
+      "doc_id": "R020",
+      "section": "Abstract",
+      "page_start": 507,
+      "page_end": 507,
+      "text": "The authors built a computer routine for the thermal design analysis of the triple-pressure bottoming system of a combined cycle plant, i.e. the heat recovery steam generator together with the steam turbine. The routine rests on a thermal analysis of the heat recovery steam generator, an estimate of its size, and a prediction of steam turbine power, and it can be used for many parametric studies, optimized design included. Results are reported for how the arrangement of heat exchangers in the intermediate and high temperature parts, and the steam pressures, affect design performance, and for how the choice of steam source for deaeration changes it. Key Words: Combined Cycle(복합발전), Bottoming System(하부시스템), Heat Recovery Steam Generator(열회수 증기발생기), Triple Pressure(삼중압), Steam Turbine(증기터빈).",
+      "terms": [
+        "triple-pressure bottoming system",
+        "heat recovery steam generator",
+        "steam turbine",
+        "combined cycle",
+        "parametric studies",
+        "deaeration",
+        "Triple Pressure(삼중압)",
+        "Bottoming System"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-002",
+      "doc_id": "R020",
+      "section": "기호설명",
+      "page_start": 507,
+      "page_end": 508,
+      "text": "기호: A 면적, d 직경, DA 탈기기(deaerator), E_fo 핀효율, EC 절탄기(economizer), EV 증발기(evaporator), h 열전달계수, HP 고압(high pressure), HPT 고압 터빈, HRSG 열회수 증기발생기, i 엔탈피, IP 중압(intermediate pressure), IPT 중압 터빈, k 열전도율, L 길이, LP 저압(low pressure), LPT 저압 터빈, LTE 저온절탄기(low temperature economizer), ṁ 질량유량, Pr Prandtl 수, Re Reynolds 수, RH 재열기(reheater), SH 과열기(superheater), ST 증기터빈, ΔT_lm 로그평균 온도차, Q̇_rec 열회수율, U 열관류율, Ẇ 출력. 하첨자: g 가스, i 관내부, in 입구, s 증기, o 관외부, out 출구.",
+      "terms": [
+        "E_fo",
+        "LTE",
+        "ΔT_lm",
+        "Q̇_rec",
+        "열관류율",
+        "HRSG",
+        "재열기(reheater)",
+        "과열기(superheater)"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-003",
+      "doc_id": "R020",
+      "section": "1. 서론",
+      "page_start": 508,
+      "page_end": 508,
+      "text": "가스터빈 기반 복합발전은 이미 세계 곳곳에서 일반화되었고, 국내에서도 다수의 플랜트가 가동 중이며 앞으로도 설치가 늘 것으로 보인다. 복합발전은 가스터빈과, 배기가스 열을 회수해 증기터빈을 돌리는 하부시스템으로 구성된다. 시스템 전체 성능을 높이려면 고온부의 가스터빈 성능 향상이 가장 중요하지만, 그 열을 얼마나 잘 쓰느냐를 좌우하는 하부시스템 설계 최적화의 영향도 작지 않다.",
+      "terms": [
+        "복합발전",
+        "가스터빈",
+        "배기가스",
+        "증기터빈",
+        "하부시스템",
+        "설계 최적화"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-004",
+      "doc_id": "R020",
+      "section": "1. 서론",
+      "page_start": 508,
+      "page_end": 508,
+      "text": "따라서 복합발전 플랜트를 최적으로 설계하려면 하부시스템 성능 분석이 중요하며, 하부시스템 형태를 무엇으로 고르고 세부 설계를 어떻게 하느냐에 따라 성능이 꽤 달라질 수 있다. 가스터빈 개발 자체가 이미 복합발전을 전제로 진행되는 만큼, 가스터빈 기술과 더불어 전체 시스템 설계 최적화에 큰 영향을 주는 하부시스템 설계도 똑같이 비중 있게 다뤄야 한다. 국내 여건상 가스터빈보다 열회수기를 포함한 하부시스템 쪽이 기술적으로 접근하기 쉬워, 최근 몇 년 사이 기초 설계와 운전에 관한 연구가 나오고 있다(1-4).",
+      "terms": [
+        "복합발전 플랜트",
+        "하부시스템",
+        "세부 설계",
+        "가스터빈",
+        "열회수기",
+        "기초 설계"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-005",
+      "doc_id": "R020",
+      "section": "1. 서론",
+      "page_start": 508,
+      "page_end": 508,
+      "text": "이 연구는 복합화력발전 하부시스템을 설계할 때 필요한 여러 열 성능해석에 쓸 수 있는 계산 과정을 만들고, 이를 이용해 주요 설계 파라미터가 열성능에 주는 영향을 분석하는 것을 목표로 한다. 오늘날 가장 진보한 열회수 시스템은 3중압(triple pressure) 시스템이다. 압력단을 늘리는 이유는 열역학적 효율을 높이기 위해서, 곧 가스와 증기(물) 사이 열교환에서 생기는 엑서지(exergy) 손실을 줄여 하부시스템 출력을 키우기 위해서이다. 본 연구 역시 3중압 재열 시스템을 다루며, 열적 해석 모델링과 계산 절차를 간략히 소개한 뒤 열교환기 배치와 설계 파라미터 선택에 따른 열성능 차이를 중심으로 결과를 제시한다.",
+      "terms": [
+        "복합화력발전",
+        "설계 파라미터",
+        "3중압(triple pressure)",
+        "압력단",
+        "엑서지(exergy)",
+        "3중압 재열 시스템",
+        "열교환기 배치"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-006",
+      "doc_id": "R020",
+      "section": "2.1 시스템의 구성",
+      "page_start": 508,
+      "page_end": 509,
+      "text": "복합화력 하부시스템은 가스터빈 배기 열을 회수하는 열회수 증기발생기(heat recovery steam generator, HRSG), 발생 증기로 동력을 내는 증기터빈, 응축기 등으로 이뤄진다. HRSG는 운전 압력 수에 따라 단압과 다압(2중압, 3중압 등)으로 나뉘며, 현재 최고 성능 시스템은 모두 3중압 시스템을 쓰고 있다. 대표적 3중압 HRSG 구성은 Fig. 1과 같다.",
+      "terms": [
+        "하부시스템",
+        "열회수 증기발생기",
+        "HRSG",
+        "응축기",
+        "단압",
+        "다압",
+        "3중압",
+        "Fig. 1"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-007",
+      "doc_id": "R020",
+      "section": "2.1 시스템의 구성",
+      "page_start": 509,
+      "page_end": 509,
+      "text": "흔히 쓰이는 대표 구성을 기준으로 흐름을 정리하면 다음과 같다. 응축기에서 나온 순환수는 저온절탄기(급수예열기)에서 열을 받고 탈기기에서 가스성분이 빠진 뒤 각 압력단으로 갈라진다. 고압부 급수는 고압 제2 절탄기와 제1 절탄기를 지나 고압 증기드럼에 들어가고, 고압 증발기에서 열을 받아 포화증기로 고압 과열기에 들어가며, 과열기를 나온 고온·고압 과열 증기가 고압 증기터빈을 돌린다. 중압부 급수는 절탄기에서 먼저 열을 받고 중압 증기드럼에서 증발한 뒤 과열기를 거쳐 고온 증기로 나간다. 중압 과열기 출구 증기는 고압 증기터빈에서 팽창한 증기와 합쳐져 재열을 거친 다음 중압터빈으로 간다. 저압부 급수는 저압 과열증기가 되어, 중압터빈에서 팽창해 나온 증기와 섞여 저압터빈을 구동한다. 증기드럼이나 과열기에서 나오는 포화·과열증기 일부는 탈기기 열원이 된다. Fig. 1은 한 가지 예일 뿐이며 열교환기 배치나 탈기기 구성 등에서 여러 시스템 구성이 가능하고, 본 논문은 국부적으로 다른 설계방법이 설계성능에 주는 영향을 살핀다.",
+      "terms": [
+        "저온절탄기(급수예열기)",
+        "탈기기",
+        "고압 증기드럼",
+        "고압 증발기",
+        "고압 과열기",
+        "재열",
+        "중압터빈",
+        "저압터빈"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-008",
+      "doc_id": "R020",
+      "section": "2.1 시스템의 구성",
+      "page_start": 508,
+      "page_end": 508,
+      "text": "Fig. 1 The schematic diagram of a triple-pressure bottoming system: 3중압 하부시스템의 개략도.",
+      "terms": [
+        "Fig. 1",
+        "triple-pressure bottoming system",
+        "3중압 하부시스템"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-009",
+      "doc_id": "R020",
+      "section": "2.2 열회수 증기발생기의 모델링",
+      "page_start": 509,
+      "page_end": 509,
+      "text": "HRSG의 열교환기는 원관 안으로 물이나 증기가 흐르고 바깥으로 가스가 지나가는 직교류형(cross flow) 방식이다. 다만 전체로 보면 물과 가스의 출입구가 서로 반대편에 있는 대향류형 열교환기이며, 과열기, 재열기, 증발기, 절탄기, 급수예열기 등 각 열교환기에 다음 에너지 균형식을 적용한다.",
+      "terms": [
+        "HRSG",
+        "직교류형(cross flow)",
+        "대향류형 열교환기",
+        "과열기",
+        "재열기",
+        "증발기",
+        "절탄기",
+        "에너지 균형식"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-010",
+      "doc_id": "R020",
+      "section": "2.2 열회수 증기발생기의 모델링",
+      "page_start": 509,
+      "page_end": 509,
+      "text": "(1) ṁ_g(i_g,in − i_g,out) = ṁ_g(i_s,out − i_s,in) = U_g·A_g·ΔT_lm (가스가 잃은 엔탈피 = 증기(물)가 얻은 엔탈피 = 열관류율 × 전열면적 × 로그평균 온도차; 증기측 유량 기호도 원문에 ṁ_g로 인쇄됨). (2) 1/(U_g·A_g) = 1/(E_fo·h_g·A_g) + ln(d_o/d_i)/(2πkL) + 1/(h_s·A_s) (전체 열저항 = 관외부 가스측 대류 저항 + 관벽 전도 저항 + 관내부 증기측 대류 저항). 파울링 효과는 고려하지 않았고, E_fo는 관외부 가스측 핀 때문에 생기는 표면효율(surface efficiency)이다.",
+      "terms": [
+        "ṁ_g",
+        "U_g·A_g·ΔT_lm",
+        "E_fo",
+        "ln(d_o/d_i)/(2πkL)",
+        "h_s",
+        "파울링",
+        "표면효율(surface efficiency)",
+        "열저항"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-011",
+      "doc_id": "R020",
+      "section": "2.2 열회수 증기발생기의 모델링",
+      "page_start": 509,
+      "page_end": 509,
+      "text": "관 내부 열전달계수는 널리 쓰이는 Dittus-Boelter 형 상관식(5)으로 구한다: (3) h_s = 0.023Re^0.8·Pr^0.4·k/d_i (관내 단상 대류 열전달계수). 증발기 관내 흐름은 핵비등을 동반한 강제대류이므로, 두 열전달을 함께 고려한 Chen(6)의 경험식을 쓴다: (4) h_two phase = h_forced convection + h_nucleate boiling (2상 열전달계수 = 강제대류 성분 + 핵비등 성분). 관 외부 열전달계수와 핀효율은 형상과 유동조건의 함수인 경험식(7)으로 구한다: (5) E_fo·h_g = f(tube size & arrangement, fin geometry, flow condition, gas properties) (관 크기·배열, 핀 형상, 유동 조건, 가스 물성의 함수).",
+      "terms": [
+        "Dittus-Boelter",
+        "h_s = 0.023Re^0.8·Pr^0.4·k/d_i",
+        "핵비등",
+        "강제대류",
+        "Chen(6)",
+        "h_two phase",
+        "E_fo·h_g",
+        "fin geometry"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-012",
+      "doc_id": "R020",
+      "section": "2.2 열회수 증기발생기의 모델링",
+      "page_start": 509,
+      "page_end": 509,
+      "text": "가스 물성은 가스터빈 계산 프로그램의 부프로그램(8)으로, 물과 증기의 물성은 전산화된 자료(9)로 구한다. 각 열교환 유니트의 구체적 계산식과 방법은 단압 및 2중압 계산 때와 동일하다(2,10). 이런 열전달 관계식과 에너지 균형식으로 각 열교환기의 열회수량과 필요한 전열면적을 계산할 수 있다.",
+      "terms": [
+        "가스 물성",
+        "부프로그램(8)",
+        "전산화된 자료(9)",
+        "열교환 유니트",
+        "2중압",
+        "열회수량",
+        "전열면적"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-013",
+      "doc_id": "R020",
+      "section": "2.3 증기터빈의 모델링",
+      "page_start": 509,
+      "page_end": 509,
+      "text": "과열기를 나온 증기는 제어밸브를 지나 증기터빈에서 팽창하며 일을 한다. 계산에서는 고압·중압 터빈 각 1개와 저압터빈 2개로 된 충동형식의 재열터빈을 가정했고, 각 터빈 섹션 성능은 증기터빈 시스템 설계에 흔히 쓰이는 Spencer 등(11)의 방법으로 산정했다.",
+      "terms": [
+        "제어밸브",
+        "증기터빈",
+        "저압터빈 2개",
+        "충동형식",
+        "재열터빈",
+        "Spencer 등(11)"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-014",
+      "doc_id": "R020",
+      "section": "2.4 해석 방법 및 조건",
+      "page_start": 509,
+      "page_end": 510,
+      "text": "Table 1에 열회수기 입구 가스온도·유량, 고압과열기 출구와 재열기 출구 증기온도 같은 주요 설계조건을 정리했다. 가스 조건은 출력 약 220MW, 효율 35%급 고성능 가스터빈의 출구 조건이다. 핀치온도차(pinch point temperature difference)와 절탄기 출구 과냉도(approach subcooling)는 모두 15K로 두었고, 전체 계산 흐름은 Fig. 2에 있다. 3중압 HRSG는 단압·2중압과 달리 열교환기 배치에 따라 여러 시스템 구성이 가능하므로, 배치에 따른 설계 성능과 전열면적 변화를 보는 일은 기초 설계 단계에서 특히 중요하다. 본 논문은 중간온도 부분의 고압 제1 절탄기, 중압과열기, 저압과열기의 상호 배열 순서와, 고온부에서 재열기와 고압과열기를 어떤 순서로 놓느냐에 따른 설계성능 차이를 분석한다. 이어 설계 파라미터 해석 예로 고·중·저압 각 압력 변화에 대한 설계 성능 민감도를 보고, 탈기기(deaerator) 열원 증기의 추기 위치에 따른 설계성능 변화를 살핀다.",
+      "terms": [
+        "Table 1",
+        "220MW",
+        "35%",
+        "핀치온도차(pinch point temperature difference)",
+        "approach subcooling",
+        "15K",
+        "Fig. 2",
+        "탈기기(deaerator)"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-015",
+      "doc_id": "R020",
+      "section": "2.4 해석 방법 및 조건",
+      "page_start": 510,
+      "page_end": 510,
+      "text": "Table 1 Main reference design parameters (주요 기준 설계값). gas inlet temperature: 값=625 °C. gas flow rate: 값=599.3 kg/s (2157 ton/hr). HP steam temperature: 값=555 °C. RH steam temperature: 값=555 °C. HP: 값=140 bar. IP: 값=40 bar. LP: 값=8 bar. condenser pressure: 값=0.07 bar.",
+      "terms": [
+        "Table 1",
+        "625 °C",
+        "599.3 kg/s",
+        "555 °C",
+        "140 bar",
+        "40 bar",
+        "8 bar",
+        "0.07 bar"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-016",
+      "doc_id": "R020",
+      "section": "2.4 해석 방법 및 조건",
+      "page_start": 510,
+      "page_end": 510,
+      "text": "Fig. 2 Flow chart for the analysis of a triple pressure HRSG: 3중압 HRSG 해석 순서도. Fig. 3 Temperature profile of a triple pressure HRSG: 3중압 HRSG의 온도 분포.",
+      "terms": [
+        "Fig. 2",
+        "Flow chart",
+        "Fig. 3",
+        "Temperature profile",
+        "triple pressure HRSG"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-017",
+      "doc_id": "R020",
+      "section": "3.1 일반적 결과",
+      "page_start": 510,
+      "page_end": 510,
+      "text": "먼저 Fig. 1 구성(원문 표기: 중간온도 부분 HPEC1, LPSH, IPSH 순서 배치, 고온부 HPSH/RH 병렬 배치)의 해석 결과를 제시한다. 온도와 회수열량의 관계는 Fig. 3에 있다. 총 열회수율은 약 1.26x10^6 MJ/hr(350MW)이고, 응축수 펌프(condensate pump) 급수량은 97.4 kg/s이다. 고압·중압·저압부 발생 증기량과 탈기기 유량(중압과열기에서 추기)은 차례로 73.3, 10.6, 13.5, 2.2 kg/s이다. 터빈 출력은 127.5 MW로 HP, IP, LP 터빈이 각각 17%, 30%, 53%를 담당한다. 3.2절 이후에서 보듯 열교환기 배치 등에 따라 압력단별 증기량과 터빈별 출력은 달라진다.",
+      "terms": [
+        "HPEC1",
+        "HPSH/RH",
+        "1.26x10^6 MJ/hr",
+        "350MW",
+        "응축수 펌프(condensate pump)",
+        "97.4 kg/s",
+        "127.5 MW",
+        "탈기기 유량"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-018",
+      "doc_id": "R020",
+      "section": "3.1 일반적 결과",
+      "page_start": 510,
+      "page_end": 511,
+      "text": "Fig. 4는 열회수량과 전열면적의 분배를 보여 준다. 가장 많은 열을 회수하는 곳은 고압단으로, 고압 과열기·증발기·절탄기가 총 회수열량의 60%에 가까운 몫을 거둔다. 그럼에도 고압단 열교환기 전열면적은 총 전열면적의 50% 미만이다. 2중압 HRSG에서는 고압단 전열면적이 지배적이었던 것(2,10)과 달리, 재열기가 추가된 영향 등으로 고압단 면적 비중이 상대적으로 줄었다. 특히 재열기는 3중압 HRSG에서 주의해 설계해야 할 부분으로 보이는데, 전열면적 비중은 전체의 약 7%~8%정도에 불과하지만 회수열량은 약 12% 이상이어서 배기열 회수에 크게 기여한다. 이 하부시스템의 가스 입구 조건이 약 220MW, 효율 35%인 가스터빈 출구 조건임을 고려하면, 계산 결과는 복합화력 전체 열효율이 55%에 가깝다는 뜻이며 현재 가동 중인 플랜트의 최상급 효율과 맞아 계산이 현실적임을 보여 준다.",
+      "terms": [
+        "Fig. 4",
+        "전열면적",
+        "고압단",
+        "60%",
+        "50% 미만",
+        "재열기",
+        "약 7%~8%정도",
+        "55%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-019",
+      "doc_id": "R020",
+      "section": "3.1 일반적 결과",
+      "page_start": 511,
+      "page_end": 511,
+      "text": "Fig. 4 Distribution of HRSG area and recovered heat: HRSG 전열면적과 회수열량의 분배 ((a) Area distribution 면적 분배, (b) Recovered heat distribution 회수열 분배).",
+      "terms": [
+        "Fig. 4",
+        "Distribution of HRSG area and recovered heat",
+        "Area distribution",
+        "Recovered heat distribution"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-020",
+      "doc_id": "R020",
+      "section": "3.2 열교환기 배치의 영향",
+      "page_start": 511,
+      "page_end": 511,
+      "text": "Table 2처럼 열회수기 중간부에서 중압과열기(IPSH) 앞에 놓이는 고압 제1 절탄기(HPEC1)와 저압과열기(LPSH)의 배열 순서에 따라 세 형식을 둔다. 가스온도가 상대적으로 높은 쪽에 고압 절탄기를 두는 것이 configuration 1 (Fig. 1)로 3.1절에서 이미 결과를 보였고, 반대로 저압과열기를 고온 쪽에 두는 것이 configuration 2, 두 열교환기를 병렬로 놓는 것이 configuration 3이다. 즉 configuration 2와 3은 1과 비교해 열회수기 중간부 구성만 다르다. 각 경우 해당 열교환기 구간만의 온도-열량 선도는 Fig. 5에 있다.",
+      "terms": [
+        "Table 2",
+        "중압과열기(IPSH)",
+        "고압 제1 절탄기(HPEC1)",
+        "저압과열기(LPSH)",
+        "configuration 1",
+        "configuration 2",
+        "configuration 3",
+        "Fig. 5"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-021",
+      "doc_id": "R020",
+      "section": "3.2 열교환기 배치의 영향",
+      "page_start": 511,
+      "page_end": 512,
+      "text": "Table 3은 세 배치방법에 대해 터빈별 출력과 압력단별 발생 증기량 등을 비교한다. 열교환기 구성에 따라 증기터빈 출력이 달라진다. 중압 과열기 다음에 고압 제1 절탄기, 저압 과열기 순으로 놓는 configuration 1을 기준으로 하면, 저압 과열기를 고압 제1 절탄기보다 고온 쪽에 두어 저압과열기 출구온도가 오르는 configuration 2에서 터빈 출력이 커진다. HRSG 전체 회수열량은 거의 같지만, LPSH 출구온도 상승으로 열회수기 전체의 엔탈피 상승폭이 커져 유량은 조금 줄며, 그 감소는 주로 중압부(IP)에서 나타나고 감소율은 0.5% 내외로 작다. 유량이 약간 줄었는데도 터빈출력이 오히려 커진 것은 터빈 출력이 유량뿐 아니라 각 터빈 섹션의 열낙차에도 좌우되기 때문이다. 지금처럼 탈기기 열원 증기를 중압과열기 출구에서 추기할 때 터빈 출력은 아래 식으로 쓸 수 있다.",
+      "terms": [
+        "Table 3",
+        "configuration 1",
+        "configuration 2",
+        "LPSH",
+        "엔탈피",
+        "중압부(IP)",
+        "0.5% 내외",
+        "열낙차"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-022",
+      "doc_id": "R020",
+      "section": "3.2 열교환기 배치의 영향",
+      "page_start": 512,
+      "page_end": 512,
+      "text": "(6) Ẇ_ST = Ẇ_HPT + Ẇ_IPT + Ẇ_LPT (증기터빈 총출력 = 고압·중압·저압 터빈 출력의 합). (7a) Ẇ_HPT = ṁ_HP·Δi_HPT (고압터빈 출력 = 고압 증기유량 × 고압터빈 엔탈피 강하). (7b) Ẇ_IPT = (ṁ_HP + ṁ_IP − ṁ_DA)·Δi_IPT (중압터빈 출력 = 고압·중압 증기 합에서 탈기기 추기량을 뺀 유량 × 중압터빈 엔탈피 강하). (7c) Ẇ_LPT = (ṁ_HP + ṁ_IP − ṁ_DA + ṁ_LP)·Δi_LPT (저압터빈 출력 = 저압 증기까지 더한 유량 × 저압터빈 엔탈피 강하).",
+      "terms": [
+        "Ẇ_ST",
+        "Ẇ_HPT",
+        "ṁ_HP·Δi_HPT",
+        "Ẇ_IPT",
+        "ṁ_DA",
+        "Δi_IPT",
+        "Ẇ_LPT",
+        "Δi_LPT"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-023",
+      "doc_id": "R020",
+      "section": "3.2 열교환기 배치의 영향",
+      "page_start": 512,
+      "page_end": 512,
+      "text": "HP 터빈은 유량과 열낙차 변화가 아주 작아 출력도 거의 변하지 않는다. IP 발생 증기량(ṁ_IP)보다 HP 발생 증기량(ṁ_HP)이 커서, IP 증기량이 줄어도 IP 터빈 유입유량에 대한 영향은 상대적으로 작아 감소폭이 1% 정도이다. IPSH 출구온도가 사실상 같아 열낙차(Δi_IPT)도 그대로이므로 IP 터빈출력 감소도 1% 정도에 머문다(탈기기 유량 ṁ_DA는 거의 일정). LP 터빈도 유량은 줄지만, 저압터빈 입구 온도(곧 LPSH 출구온도)가 올라 열낙차(Δi_LPT)가 커지고 그 효과가 유량 감소보다 훨씬 커서 LP 터빈 출력이 7% 정도 증가한다. 그 결과 저압 터빈 출력 증가 덕에 총출력은 약 3.7% 높아진다. 저압 과열기와 고압 제1 절탄기를 병렬로 둔 configuration 3도 저압터빈 입구 증기 온도를 올릴 수 있어 configuration 2와 비슷한 출력 증가를 얻는다.",
+      "terms": [
+        "ṁ_IP",
+        "ṁ_HP",
+        "IPSH",
+        "Δi_IPT",
+        "ṁ_DA",
+        "Δi_LPT",
+        "7%",
+        "약 3.7%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-024",
+      "doc_id": "R020",
+      "section": "3.2 열교환기 배치의 영향",
+      "page_start": 512,
+      "page_end": 512,
+      "text": "정리하면 configuration 2와 3은 1과 거의 같은 열을 회수하면서 더 큰 출력을 내며, 이는 아래 식으로 정의한 하부 랭킨사이클 효율이 더 높다는 뜻이다. (8) η_R = Ẇ_ST/Q̇_rec (랭킨사이클 효율 = 증기터빈 출력 ÷ 열회수율). 이 효율이 높을수록 더 우수한 증기터빈 사이클이며, 이번 계산의 효율 범위는 35.6~36.9 %이다.",
+      "terms": [
+        "configuration 2",
+        "랭킨사이클",
+        "η_R = Ẇ_ST/Q̇_rec",
+        "증기터빈 사이클",
+        "35.6~36.9 %"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-025",
+      "doc_id": "R020",
+      "section": "3.2 열교환기 배치의 영향",
+      "page_start": 511,
+      "page_end": 511,
+      "text": "Table 2 Three cases with different arrangements at the intermediate temperature part (중간온도부 배치가 다른 세 경우). configuration 1: order=LPSH, HPEC1, IPSH. configuration 2: order=HPEC1, LPSH, IPSH. configuration 3: order=LPSH/HPEC1(parallel), IPSH.",
+      "terms": [
+        "Table 2",
+        "intermediate temperature part",
+        "LPSH",
+        "HPEC1",
+        "IPSH",
+        "parallel"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-026",
+      "doc_id": "R020",
+      "section": "3.2 열교환기 배치의 영향",
+      "page_start": 511,
+      "page_end": 511,
+      "text": "Table 3 Performance comparison for the three cases at the intermediate temperature part (중간온도부 세 경우의 성능 비교). HP power (MW): configuration 1=22.0; 2=22.0; 3=21.9. IP power (MW): 1=37.9; 2=37.6; 3=37.5. LP power (MW): 1=67.6; 2=72.6; 3=71.9. total power (MW): 1=127.5; 2=132.2; 3=131.3. HP steam (kg/s): 1=73.3; 2=73.5; 3=73.1. IP steam (kg/s): 1=10.6; 2=9.8; 3=10.0. LP steam (kg/s): 1=13.5; 2=13.6; 3=13.6. DA steam (kg/s): 1=2.20; 2=2.18; 3=2.19. Feed water (kg/s): 1=95.2; 2=94.7; 3=94.5. recovered heat (MW): 1=349.7; 2=349.4; 3=349.3.",
+      "terms": [
+        "Table 3",
+        "HP power (MW)",
+        "total power (MW)",
+        "DA steam (kg/s)",
+        "Feed water (kg/s)",
+        "recovered heat (MW)",
+        "127.5",
+        "132.2"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-027",
+      "doc_id": "R020",
+      "section": "3.2 열교환기 배치의 영향",
+      "page_start": 511,
+      "page_end": 511,
+      "text": "Fig. 5 Temperature profile at the intermediate temperature part (LPSH, HPEC1, IPSH) of the HRSG: HRSG 중간온도부(LPSH, HPEC1, IPSH)의 온도 분포.",
+      "terms": [
+        "Fig. 5",
+        "intermediate temperature part",
+        "LPSH, HPEC1, IPSH",
+        "HRSG"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-028",
+      "doc_id": "R020",
+      "section": "3.2 열교환기 배치의 영향",
+      "page_start": 512,
+      "page_end": 512,
+      "text": "HRSG 중간온도부뿐 아니라 고온부에서도 고압과열기(HPSH)와 중압재열기(RH)의 배열 순서를 바꿀 수 있다. 앞선 계산은 Fig. 1처럼 두 열교환기가 병렬인 경우였으나, 여기서는 두 기기 배치에 따른 성능 차이도 본다. 계산 경우는 Table 4에 있으며, 모든 경우 중간온도부는 Table 2, 3에서 성능이 상대적으로 좋았던 configuration 2로 고정했다. Case I은 HPSH와 RH가 병렬인 경우로 앞의 configuration 2와 같고, Case II는 RH 다음에 HPSH를 두며, case III는 그 반대이다. 고온부만 떼어 낸 온도-열량 선도가 Fig. 6이고, Table 5에서 세 경우의 성능 차이를 분석했다.",
+      "terms": [
+        "고압과열기(HPSH)",
+        "중압재열기(RH)",
+        "Table 4",
+        "configuration 2",
+        "Case I",
+        "Case II",
+        "Fig. 6",
+        "Table 5"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-029",
+      "doc_id": "R020",
+      "section": "3.2 열교환기 배치의 영향",
+      "page_start": 512,
+      "page_end": 512,
+      "text": "II와 III에서는 I에 비해 각각 RH, HPSH 출구 온도가 낮아져, II에서는 중압 터빈, III에서는 고압 터빈의 출력이 조금 줄어든다. 그러나 전체로는 급수량이 늘어나 II, III에서 각각 고압, 중압 터빈 출력이 I보다 오히려 커지고, 늘어난 유량으로 저압터빈 출력도 올라 총출력은 병렬 배열인 I보다 약간 많아진다. 고온부에서는 HPSH, RH 출구 설계온도가 시스템 최고 온도로 묶여 있으므로, 배치 차이에 따른 성능 차이는 열교환기 출구온도 차가 큰 중간온도부의 배치 차이보다 상대적으로 작다고 결론지었다.",
+      "terms": [
+        "RH",
+        "HPSH",
+        "출구 온도",
+        "급수량",
+        "저압터빈",
+        "병렬 배열",
+        "설계온도",
+        "중간온도부"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-030",
+      "doc_id": "R020",
+      "section": "3.2 열교환기 배치의 영향",
+      "page_start": 512,
+      "page_end": 512,
+      "text": "Table 4 Three cases with different arrangements at the high temperature part (The intermediate temperature part follows configuration 2 in Table 2) (고온부 배치가 다른 세 경우, 중간온도부는 configuration 2). case I: order=HPSH/RH (parallel). case II: order=RH, HPSH. case III: order=HPSH, RH.",
+      "terms": [
+        "Table 4",
+        "high temperature part",
+        "configuration 2",
+        "HPSH/RH (parallel)",
+        "RH, HPSH"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-031",
+      "doc_id": "R020",
+      "section": "3.2 열교환기 배치의 영향",
+      "page_start": 512,
+      "page_end": 512,
+      "text": "Table 5 Performance comparison for the three cases at the high temperature part (고온부 세 경우의 성능 비교). HP power (MW): case I=22.0; II=23.2; III=21.8. IP power (MW): I=37.6; II=36.5; III=38.2. LP power (MW): I=72.6; II=74.4; III=73.3. total power (MW): I=132.2; II=134.1; III=133.2. recovered heat (MW): I=349.4; II=350.6; III=349.9. feed water (kg/s): I=94.7; II=97.1; III=95.7.",
+      "terms": [
+        "Table 5",
+        "high temperature part",
+        "HP power (MW)",
+        "total power (MW)",
+        "recovered heat (MW)",
+        "feed water (kg/s)",
+        "134.1"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-032",
+      "doc_id": "R020",
+      "section": "3.2 열교환기 배치의 영향",
+      "page_start": 513,
+      "page_end": 513,
+      "text": "Fig. 6 Temperature profile at the high temperature part (HPSH, RH) of the HRSG: HRSG 고온부(HPSH, RH)의 온도 분포.",
+      "terms": [
+        "Fig. 6",
+        "high temperature part",
+        "HPSH, RH",
+        "HRSG"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-033",
+      "doc_id": "R020",
+      "section": "3.3 설계 압력의 영향 해석",
+      "page_start": 513,
+      "page_end": 513,
+      "text": "다압 열회수기에는 HP, IP, LP 압력, 압력별 핀치온도차, 절탄기출구 과냉도, 과열·재열증기 온도, 가스 입구온도 등 설계 파라미터가 매우 많고, 본 연구의 계산 프로그램으로 이들에 대한 다양한 해석을 할 수 있다. 여기서는 가장 기본적인 파라미터인 각 압력이 설계에 주는 영향을 예로 든다. Fig. 7은 각 압력에 따른 열회수기 열회수량, 필요 전열면적, 증기터빈 출력이다. HRSG 형태는 configuration 2이고 기준압력은 Table 1, 기준 설계값은 Table 3의 configuration 2(Table 5의 case I과 같음)이며, 온도차 등 다른 파라미터는 고정했다.",
+      "terms": [
+        "다압 열회수기",
+        "핀치온도차",
+        "절탄기출구 과냉도",
+        "Fig. 7",
+        "configuration 2",
+        "Table 1",
+        "Table 3",
+        "case I"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-034",
+      "doc_id": "R020",
+      "section": "3.3 설계 압력의 영향 해석",
+      "page_start": 513,
+      "page_end": 513,
+      "text": "HP를 올리면 HP, IP, LP 터빈출력이 모두 늘어 총출력이 증가한다. LP를 올리면 HP 터빈 출력은 거의 그대로이지만 IP 터빈출력 감소가 LP 터빈출력 증가보다 커서 총출력이 줄어든다. IP를 낮추면 HP 터빈출력은 늘지만 LP 터빈출력 감소가 더 커서 출력이 줄고, IP가 지나치게 높으면 반대로 HP 터빈출력 감소가 IP 터빈출력 증가를 앞질러 출력이 준다. 그래서 현재 설계점인 40bar 부근에서 출력이 최대가 되지만, 그 변화폭은 HP나 LP를 바꿀 때보다 작다.",
+      "terms": [
+        "HP",
+        "LP",
+        "IP",
+        "총출력",
+        "터빈출력",
+        "40bar",
+        "설계점"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-035",
+      "doc_id": "R020",
+      "section": "3.3 설계 압력의 영향 해석",
+      "page_start": 513,
+      "page_end": 513,
+      "text": "Fig. 7 Effect of HP, LP and IP pressures on recovered heat, HRSG area and steam turbine power (reference configuration 2 in Table 2): HP, LP, IP 압력이 회수열량, HRSG 면적, 증기터빈 출력에 주는 영향(기준은 Table 2의 configuration 2).",
+      "terms": [
+        "Fig. 7",
+        "HP, LP and IP pressures",
+        "recovered heat",
+        "HRSG area",
+        "steam turbine power",
+        "configuration 2"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-036",
+      "doc_id": "R020",
+      "section": "3.4 탈기기(deaerator) 열원에 의한 영향 해석",
+      "page_start": 513,
+      "page_end": 514,
+      "text": "탈기(deaeration)용 증기를 어디서 추기하느냐에 따른 터빈 출력 차이를 검토했으며, 이번에도 Table 2의 configuration 2를 기본 시스템으로 했다. 기본 시스템은 Fig. 1처럼 중압과열기(IPSH) 출구 증기를 탈기기 열원으로 쓴다. Table 6은 이를 기준으로 탈기 열원을 중압 증발기(IPEV), 저압 과열기(LPSH), 저압 증발기(LPEV), 고압 과열기(HPSH), 고압 증발기(HPEV) 등으로 바꿨을 때의 설계성능 차이를 비교한다.",
+      "terms": [
+        "탈기(deaeration)",
+        "configuration 2",
+        "중압과열기(IPSH)",
+        "탈기기",
+        "IPEV",
+        "LPSH",
+        "LPEV",
+        "HPEV"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-037",
+      "doc_id": "R020",
+      "section": "3.4 탈기기(deaerator) 열원에 의한 영향 해석",
+      "page_start": 514,
+      "page_end": 514,
+      "text": "중압부 추기를 기준으로 하면 고압부에서 추기할 때 출력이 조금 떨어지는데, 고압에서 증기를 빼면 고압터빈 유입 증기유량이 줄어드는 것이 주된 이유이다. 반대로 저압부에서 추기하면 출력이 오른다. 같은 압력이라도 과열기보다 증발기에서 추기할 때 출력이 상대적으로 낮은데, 엔탈피가 더 낮은 증발기 증기를 쓰면 더 많은 유량이 필요해 터빈 유입 유량이 줄기 때문으로 해석된다. 추기지점 선택에 따라 출력이 최대 약 2% 정도 달라지므로 탈기기 열원도 설계 때 비중 있게 고려할 요소로 보인다.",
+      "terms": [
+        "중압부",
+        "고압부",
+        "추기",
+        "고압터빈",
+        "저압부",
+        "과열기",
+        "증발기",
+        "약 2%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-038",
+      "doc_id": "R020",
+      "section": "3.4 탈기기(deaerator) 열원에 의한 영향 해석",
+      "page_start": 514,
+      "page_end": 514,
+      "text": "Table 6 Performance comparison for different deaerator steam sources (탈기기 열원 증기별 성능 비교). IPSH*: power (%)=0. IPEV: power (%)=- 0.22. LPSH: power (%)=+0.81. LPEV: power (%)=+0.60. HPSH: power (%)=-0.14. HPEV: power (%)=-1.08. 각주: * reference : 132.2 MW.",
+      "terms": [
+        "Table 6",
+        "deaerator steam sources",
+        "IPSH*",
+        "power (%)",
+        "+0.81",
+        "-1.08",
+        "132.2 MW"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R020-039",
+      "doc_id": "R020",
+      "section": "4. 결어",
+      "page_start": 514,
+      "page_end": 514,
+      "text": "본 연구는 복합화력발전용 3중압 하부시스템의 성능 설계해석 프로그램을 만들고, 열회수 증기발생기의 열교환기 배치, 고압·중압·저압 압력 설정, 탈기기용 열원증기 추기지점이 주는 영향을 검토했다. HRSG 중간온도부에서 고압 제1 절탄기와 저압 과열기의 배치순서에 따라 터빈출력이 3% 이상 달라질 수 있으며, 저압 과열기를 고압 제1 절탄기보다 고온 쪽에 두거나 두 기기를 평행하게 배열하는 편이 유리했다. HRSG 고온부의 고압과열기·재열기 배치 순서에 따른 성능 차이는 중간온도부 배치에 따른 차이보다 작았다. 설계압력 결정에서는 고압이나 저압보다 중압 변화가 시스템 출력에 주는 영향이 상대적으로 작았고, 탈기기 열원 증기의 추기 위치에 따라서도 출력이 최대 약 2%까지 변했다. 이 해석 수단은 다압 열회수 증기발생기의 기초 설계 자료 도출과 최적 설계 사양 결정 등 발전플랜트 설계 업무에 쓰일 것으로 기대된다.",
+      "terms": [
+        "3중압 하부시스템",
+        "열교환기 배치",
+        "추기지점",
+        "고압 제1 절탄기",
+        "3% 이상",
+        "재열기",
+        "약 2%",
+        "다압 열회수 증기발생기"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 39,
+    "pages_processed": "507-514 (PDF 1-8쪽 전체, 스캔본)",
+    "last_paragraph_id": "R020-039",
+    "skipped": [
+      "507쪽 저자 소속·책임저자 Email·TEL·FAX(서울대·인하대·현대건설 등): 저자 연락처",
+      "507쪽 접수일(2001년 9월 20일)·심사완료일(2002년 1월 2일), 영문 제목·영문 저자명: 서지정보로만 반영",
+      "각 쪽 머리글(학술지명·권호·쪽, 저자명, 논문 제목)과 쪽번호: 머리글·바닥글",
+      "514쪽 후기(2000학년도 인하대학교 연구지원, INHA-21344): 감사의 글",
+      "514쪽 참고문헌 (1)~(11): 참고문헌 목록",
+      "그림 1~7 내부 내용(계통도, 순서도, 온도-열량 선도, Fig. 4 원그래프 비율값, Fig. 7 그래프): 캡션만 수록"
+    ],
+    "uncertain": [
+      "텍스트 레이어가 없는 스캔본이라 300dpi 렌더링 이미지를 구역별로 잘라 직접 판독했고, tesseract kor+eng OCR은 품질이 낮아(한글 오인식 다수) 보조·중복 확인용으로만 사용함",
+      "식 (1)의 증기측 항이 원문에 'ṁ_g(i_s,out − i_s,in)'로 인쇄되어 있음(증기 유량 ṁ_s의 오기로 보이나 원문 표기 유지)",
+      "3.1절은 Fig. 1 구성을 '중간온도 부분 HPEC1, LPSH, IPSH 순서'라 적었으나 Table 2의 configuration 1은 'LPSH, HPEC1, IPSH'로 인쇄되어 있고, 3.1절 수치(127.5 MW 등)는 Table 3 configuration 1과 일치함. 순서 표기 방향(가스측/물측)이 불명확해 원문 표기를 그대로 둠",
+      "3.2절 configuration 1 설명('가스온도가 고온인 곳에 고압 절탄기', '중압 과열기 이후에 고압 제1 절탄기, 저압 과열기 순서')도 원문 문장 의미대로만 옮김",
+      "Table 6의 IPEV 값은 원문에 '- 0.22'(부호 뒤 공백)로 인쇄됨",
+      "기호설명의 k(열전도율), Q̇_rec(열회수율) 등 일부 작은 글자는 스캔 해상도 한계로 문맥과 대조해 판독함",
+      "기호설명은 507쪽 하단~508쪽 상단(out: 출구)에 걸쳐 있음"
+    ]
+  }
+}

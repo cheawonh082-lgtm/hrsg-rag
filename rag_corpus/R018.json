@@ -1,0 +1,826 @@
+{
+  "document": {
+    "doc_id": "R018",
+    "title": "발전소 복수기 배열회수의 지역난방 및 연료라인 예열용 활용타당성 검토",
+    "authors": [
+      "정훈",
+      "황광원"
+    ],
+    "year": 2009,
+    "venue": "신재생에너지, Vol.5, No.3, pp.40-48 (2009. 9), 논문코드 [2009-09-GT-006]",
+    "doi": "",
+    "url": "",
+    "license": "원문에 저작권·라이선스 표기 없음 (DBpia/NuriMedia 제공 PDF, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "ko"
+  },
+  "paragraphs": [
+    {
+      "id": "R018-001",
+      "doc_id": "R018",
+      "section": "Abstract",
+      "page_start": 40,
+      "page_end": 40,
+      "text": "In Europe, recovered heat has counted as renewable energy since 2008 owing to its large contribution to energy saving and carbon reduction in plant processes, and many industries now apply technologies that save energy and cut carbon dioxide. This study examines whether heat taken from a power plant condenser by a heat pump can feasibly serve district heating and fuel line preheating, verifying the mass balance and the energy (heat) balance of a modelled power plant. Several system layouts for condenser heat recovery are proposed and assessed, and the limits on how much heat a power plant can recover are discussed. The results are checked by computing input/output energy with measured performance test data from Korea's Taean Thermal Power Plant, which show a clear performance gain where low temperature (<100 C) heat is needed, e.g. district heating and fuel line heating. Key words: Condenser(복수기), Heat Recovery(배열회수), Heat Pump(열펌프), COP(성적계수), Air Pre-heater(공기예열기), Heating Steam(가열증기).",
+      "terms": [
+        "condenser heat recovery",
+        "heat pump",
+        "district heating",
+        "fuel line preheating",
+        "Taean Thermal Power Plant",
+        "COP",
+        "Air Pre-heater",
+        "Heating Steam"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-002",
+      "doc_id": "R018",
+      "section": "Nomenclature",
+      "page_start": 40,
+      "page_end": 41,
+      "text": "기호 정의: Q̇_ah는 공기 가열에 드는 열량(kcal), ṁ_a는 실제 연소용 공기량(kg/s), c_a는 공기 비열(단위는 원문에 kg/m^3로 인쇄), Φ는 당량비(실제연공비/이론연공비), P_hp는 히트펌프 투입전력(kW), η_p는 플랜트 효율(%), Δη_p는 플랜트 효율 증가(%p), P_G와 P_1-3은 발전기 출력(kW), W_fe는 연료 소비량(kg/h), H_f는 연료 고위발열량(kcal/kg, as fired base), c, h, s, o는 연료 속 탄소·수소·황·산소의 중량분율(kg/kg)과 체적분율(m_N^3/kg)이다. 첨자(subscrip) 약어: COP = Coefficient of Performance (Heat Pump), FWH = Feed Water Heater, BLR = Boiler, TBN = Turbine, GEN = Generator.",
+      "terms": [
+        "Q̇_ah",
+        "ṁ_a",
+        "Φ",
+        "P_hp",
+        "η_p",
+        "Δη_p",
+        "H_f",
+        "COP"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-003",
+      "doc_id": "R018",
+      "section": "1. 서론",
+      "page_start": 41,
+      "page_end": 41,
+      "text": "히트펌프로 버려지는 열을 되찾는 기술은 국내에서는 아직 재생에너지 범주에 들지 않고 편입을 논의하는 단계인 반면, 유럽은 2008년부터 재생에너지로 인정해 연구와 실증을 활발히 하고 있다. 투자에 견주어 에너지 회수와 탄소저감 효과가 커서 국가 에너지 산업에 주는 영향이 크기 때문이다. 발전소 같은 대형 플랜트의 복수기는 엄청난 열을 버리는 곳이지만 온도가 30-34℃로 낮아 히트펌프 같은 장치 없이는 열을 되찾기 어렵고, 난방·온수처럼 저온열을 쓸 곳이 없으면 회수한 열의 용도도 마땅치 않다. 저자들은 발전 플랜트 효율이 40% 안팎에 머무는 원인을 바로 이 복수기에서의 대규모 열 방출 손실로 본다.",
+      "terms": [
+        "히트펌프",
+        "재생에너지",
+        "2008년",
+        "탄소저감",
+        "복수기",
+        "30-34℃",
+        "저온열",
+        "40%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-004",
+      "doc_id": "R018",
+      "section": "1. 서론",
+      "page_start": 41,
+      "page_end": 41,
+      "text": "연구의 착상은 다음과 같다. 복수기에서 히트펌프로 얻은 열로 프로세스 급수를 데우고, 그만큼 덜 쓰게 된 급수가열용 증기로 연소용 공기를 데워 100℃이상의 열을 확보한 뒤, 그 열을 지역난방이나 연료 예열에 돌려 플랜트 효율이 실제로 오르는지 따져 본다. 기준 설비(Reference Plant)는 태안화력 4호기이며, 적용 가능성과 배열회수 효과를 수치로 계산하는 데 '태안화력 제 4호기 계획예방정비 전 정밀 열성능진단 결과보고서'의 Data를 썼다.",
+      "terms": [
+        "히트펌프",
+        "급수가열용 증기",
+        "연소용 공기",
+        "100℃이상",
+        "지역난방",
+        "연료 예열",
+        "Reference Plant",
+        "태안화력 4호기"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-005",
+      "doc_id": "R018",
+      "section": "2. 발전플랜트 복수기의 배열회수를 위한 설비 구성 변경",
+      "page_start": 41,
+      "page_end": 41,
+      "text": "복수기 열을 회수하려면 지금의 설비 배치를 바꿔야 한다. 복수기에서 나가는 유량과 열량이 워낙 크고, 냉각수로 해수(Sea Water)를 쓰는 대다수 발전플랜트의 배치가 필요한 만큼의 열을 거두기에 알맞지 않기 때문이다. 그래서 복수기 설계를 바꾸거나, 응축 증기의 일부를 따로 뽑아 보조 복수기를 두는 방안을 생각할 수 있다.",
+      "terms": [
+        "복수기",
+        "해수(Sea Water)",
+        "냉각수",
+        "응축 증기",
+        "설비 배치"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-006",
+      "doc_id": "R018",
+      "section": "2.1 발전소 복수기 구성",
+      "page_start": 41,
+      "page_end": 41,
+      "text": "국내 표준형 석탄 화력에서 흔히 쓰는 복수기(Condenser) 배치를 Fig. 1에 보였다. 보일러에서 연료와 연소용 공기를 태워 급수를 데우고 증발시키면, 증기가 터빈을 돌려 발전기를 구동한다. 터빈을 나온 증기는 복수기에서 해수(Sea Water) 냉각수에 의해 응축되고, 이후 여러 단의 가열용 증기(Steam)로 예열된 다음 보일러로 돌아간다. 응축 과정은 막대한 열을 내놓지만 온도가 낮아(30-34℃, -722mmHg) 회수가 힘들고, 급수 가열은 열을 받아들이려면 비교적 높은 온도가 필요하므로 고온 증기를 쓰는 재생사이클을 택한다.",
+      "terms": [
+        "Fig. 1",
+        "복수기(Condenser)",
+        "석탄 화력",
+        "해수(Sea Water)",
+        "가열용 증기(Steam)",
+        "30-34℃",
+        "-722mmHg",
+        "재생사이클"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-007",
+      "doc_id": "R018",
+      "section": "2.1 발전소 복수기 구성",
+      "page_start": 41,
+      "page_end": 41,
+      "text": "Fig. 1 Condenser and Feed-water Heater: 복수기와 급수가열기의 구성도.",
+      "terms": [
+        "Fig. 1",
+        "Condenser",
+        "Feed-water Heater",
+        "급수가열기"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-008",
+      "doc_id": "R018",
+      "section": "2.2 복수기 배열회수를 위한 구성변경 1",
+      "page_start": 42,
+      "page_end": 42,
+      "text": "낮은 온도의 열원으로 높은 온도의 물을 데우려면 히트펌프를 넣어 복수기와 급수가열기를 다시 짜고, 그 결과 남는 증기를 연소용 공기 예열(Pre-heating)에 쓰는 시스템을 Fig. 2처럼 꾸민다. 복수기 냉각에는 흔히 대량의 해수(Sea Water)가 쓰이지만, 실제로 회수되는 열은 버려지는 열의 일부(5% 내외)에 그치고, 해수는 배관 부식 문제 때문에 히트펌프 열원으로 쓰기 어렵다. 그래서 Fig. 2처럼 복수기 냉각수 구역을 나눠 담수 냉각수 폐회로를 따로 두는 경우를 상정한다. 이렇게 하면 히트펌프가 미리 데운 급수가 급수가열기에 들어가므로, 데워진 만큼 급수가열용 증기(터빈 추기 증기)가 줄어든다. 줄어든 증기를 쓰는 방법은 여럿이지만, 여기서는 보일러로 들어가는 연소용 공기를 예열해 공기예열기의 열교환량을 늘리고, 그로써 높아진 배기가스 온도에서 열을 다시 거두는 방식을 택한다.",
+      "terms": [
+        "히트펌프",
+        "급수가열기",
+        "Pre-heating",
+        "Fig. 2",
+        "5% 내외",
+        "담수 냉각수 폐회로",
+        "터빈 추기 증기",
+        "공기예열기"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-009",
+      "doc_id": "R018",
+      "section": "2.2 복수기 배열회수를 위한 구성변경 1",
+      "page_start": 42,
+      "page_end": 42,
+      "text": "Fig. 2 Modified Condenser and Feed-water Heater: 배열회수를 위해 바꾼 복수기·급수가열기 구성.",
+      "terms": [
+        "Fig. 2",
+        "Modified Condenser",
+        "Feed-water Heater"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-010",
+      "doc_id": "R018",
+      "section": "2.3 복수기 배열회수를 위한 구성 변경 2",
+      "page_start": 42,
+      "page_end": 43,
+      "text": "실제 복수기의 냉각수 구역을 나눠 별도 폐회로를 만드는 일은 설계·제작이 매우 까다롭다. 그래서 Fig. 3처럼 증기 일부를 복수기 밖으로 뽑아 따로 응축시키며 열을 거두는 편이 합리적이다. 이 방식은 기존 복수기를 손대지 않고 쓸 수 있고, 증기 응축의 잠열을 곧바로 회수하므로 냉각수보다 3-4℃ 높은 열원을 쓸 수 있어 히트펌프에도 유리하다. 해외에는 증기 응축량이 지나쳐 복수기 용량이 모자라자 Fig. 4처럼 증기 일부를 나눠 별도 복수기에서 응축시킨 발전플랜트 사례가 있다. 뽑아내는 증기량은 프로세스가 요구하는 열량으로 정해지고, 히트펌프 투입전력은 성적계수로 정해진다. 따라서 쓸 수 있는 열이 많을수록 더 많은 증기를 뽑아 더 많은 열을 거둘 수 있고, 성적계수가 클수록 히트펌프에 들어가는 전력은 줄어든다.",
+      "terms": [
+        "Fig. 3",
+        "잠열",
+        "3-4℃",
+        "Fig. 4",
+        "별도 복수기",
+        "투입전력",
+        "성적계수",
+        "히트펌프"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-011",
+      "doc_id": "R018",
+      "section": "2.3 복수기 배열회수를 위한 구성 변경 2",
+      "page_start": 42,
+      "page_end": 42,
+      "text": "Fig. 3 Using Steam as Heat Source: 증기를 열원으로 쓰는 구성. Fig. 4 Aux. Condenser for Power Plant: 발전플랜트의 보조 복수기.",
+      "terms": [
+        "Fig. 3",
+        "Using Steam as Heat Source",
+        "Fig. 4",
+        "Aux. Condenser",
+        "보조 복수기"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-012",
+      "doc_id": "R018",
+      "section": "2.4 복수기 배열회수 량의 한계",
+      "page_start": 43,
+      "page_end": 43,
+      "text": "복수기에서 꺼낼 수 있는 열이 아무리 많더라도 필요량을 넘겨 회수하면 오히려 플랜트 효율이 떨어진다. 회수열의 온도가 높지 않아 쓸 곳이 한정된 상태에서 회수량만 늘리면 히트펌프 소비 에너지만 커지기 때문이다. 앞의 방법은 약 60℃ 정도의 절약된 증기로 연소용 공기를 예열해 보일러 입열량을 키우는 것인데, 공기를 가열증기보다 뜨겁게 만들 수는 없으므로 실제 쓸 수 있는 에너지는 절약 증기 온도와 대기 온도의 차로 결정된다. Reference 플랜트 연료의 탄소, 수소, 연소성 황, 산소, 질소, 회분 질량분률(kg/kg)을 써서 연료 1kg 완전연소에 필요한 이론 산소량과 이론 공기량을 구한다.",
+      "terms": [
+        "플랜트 효율",
+        "약 60℃",
+        "연소용 공기",
+        "보일러 입열량",
+        "가열증기",
+        "대기 온도",
+        "이론 산소량",
+        "이론 공기량"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-013",
+      "doc_id": "R018",
+      "section": "2.4 복수기 배열회수 량의 한계",
+      "page_start": 43,
+      "page_end": 43,
+      "text": "(1) O_o = 2.66c + 7.94h + (s − o) kg/kg (연료 1kg 완전연소에 필요한 이론 산소량, 질량 기준). (2) O_o = 1.87c + 5.56h + (s − o) m_N^3/kg (같은 이론 산소량, 체적 기준). 표준 건조공기 속 산소는 0.232kg/kg(=0.210 m^3/m^3)이다. (3) A_o = O_o/0.232 = 11.48c + 34.23h + 4.30(s − o) kg/kg (이론 공기량 = 이론 산소량 ÷ 공기 중 산소 질량분율). (4) Φ = (F/A)/(F/A)_o (당량비 = 실제 연공비 ÷ 이론 연공비). 과잉공기를 반영한 공연비(Air Fuel Ratio)로 Φ를 계산하면 실제 과잉 공기율(공기비)과 실제 연소용 공기량을 얻는다.",
+      "terms": [
+        "O_o",
+        "2.66c + 7.94h",
+        "0.232kg/kg",
+        "A_o = O_o/0.232",
+        "Φ = (F/A)/(F/A)_o",
+        "당량비",
+        "공연비(Air Fuel Ratio)",
+        "과잉 공기율"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-014",
+      "doc_id": "R018",
+      "section": "2.4 복수기 배열회수 량의 한계",
+      "page_start": 43,
+      "page_end": 43,
+      "text": "Reference 플랜트의 연소용 공기량 ṁ_a는 1,745,110 Ton/hr이고 공기 비열은 c_a = 0.240 kcal/kg-C이다. 공기 온도상승 목표를 40도(대기 온도 20℃에서 추기 증기 온도 60℃까지)로 잡고 Q̇_ah = ṁ_a·c_a·dT (공기 가열 열량 = 공기량 × 비열 × 온도상승)를 적용하면 공기 가열에 필요한 열량은 19.471 MW가 되며, 이 값이 복수기에서 회수해 쓸 수 있는 열량의 최댓값이다.",
+      "terms": [
+        "ṁ_a",
+        "1,745,110 Ton/hr",
+        "c_a = 0.240 kcal/kg-C",
+        "40도",
+        "Q̇_ah = ṁ_a·c_a·dT",
+        "19.471 MW"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-015",
+      "doc_id": "R018",
+      "section": "2.5 공기온도 변화에 의한 배기가스 온도 변화",
+      "page_start": 43,
+      "page_end": 43,
+      "text": "공기예열기의 열교환 효율은 변하지 않으므로, 입구 공기 온도가 오르면 출구 배기가스 온도도 함께 올라 배기가스 열손실을 키우게 된다(2)(ASME PTC 4.1, 4.3). 공기예열기 온도효율(Gas Side Efficiency)은 온도 Head에 대한 가스온도 강하의 비로 정의되며 Fig. 5를 이용해 식으로 쓸 수 있다. 공기예열기 입구 공기온도나 입구 배가스 온도가 바뀌면 출구 배가스 온도도 바뀌는데, 이때 변화 전후의 열교환 효율이 같다고 놓고 관계식을 세운다.",
+      "terms": [
+        "공기예열기",
+        "배기가스 열손실",
+        "ASME PTC 4.1, 4.3",
+        "온도효율(Gas Side Efficiency)",
+        "온도 Head",
+        "Fig. 5",
+        "출구 배가스 온도"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-016",
+      "doc_id": "R018",
+      "section": "2.5 공기온도 변화에 의한 배기가스 온도 변화",
+      "page_start": 43,
+      "page_end": 43,
+      "text": "(5) η_G = Gas Temp.Drop / Temp.Head = (TG1 − TG2)/(TG1 − TA1) (공기예열기 가스측 온도효율 = 가스 온도 강하 ÷ 가스 입구와 공기 입구의 온도차). (6) η_G = η_g, (TG1 − TG2)/(TG1 − TA1) = (tg1 − tg2)/(tg1 − ta1), tg2 = tg1 − (TG1 − TG2)(tg1 − ta1)/(TG1 − TA1) = [ta1(TG1 − TG2) + tg1(TG2 − TA1)]/(TG1 − TA1) (변화 전후 온도효율이 같다는 조건에서 변화 후 출구 가스온도 tg2를 구하는 식).",
+      "terms": [
+        "η_G",
+        "Gas Temp.Drop",
+        "Temp.Head",
+        "TG1",
+        "TA1",
+        "η_g",
+        "tg2",
+        "ta1"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-017",
+      "doc_id": "R018",
+      "section": "2.5 공기온도 변화에 의한 배기가스 온도 변화",
+      "page_start": 43,
+      "page_end": 43,
+      "text": "Fig. 5 Temperature change in Air Pre-heater: 공기예열기 안의 온도 변화. 범례: TG1, tg1은 공기예열기 Inlet Gas Temp. ℃, TG2, tg2는 Outlet Gas Temp. ℃, TA1, ta1은 Inlet Air Temp. ℃, TA2, ta2는 Outlet Air Temp. ℃이며, 대문자는 입구공기온도 변화 전, 소문자는 변화 후 값이다.",
+      "terms": [
+        "Fig. 5",
+        "Air Pre-heater",
+        "TG1",
+        "tg1",
+        "TA2",
+        "Inlet Gas Temp.",
+        "Outlet Air Temp."
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-018",
+      "doc_id": "R018",
+      "section": "2.5 공기온도 변화에 의한 배기가스 온도 변화",
+      "page_start": 44,
+      "page_end": 44,
+      "text": "계산 시 입구 공기온도(ta1)가 바뀌는 경우에는 입구 배기가스온도를 고정(TG1=tg1)하고, 입구 배기가스온도(tg1)가 바뀌는 경우에는 입구 공기온도를 고정(TA1=ta1)한다. 입구 공기온도 변화에 대해서는 Δtg2 = Δta1 × ηG, tg2 = TG2 + Δtg2 (출구 가스온도 변화 = 입구 공기온도 변화 × 온도효율). 입구 배기가스온도 변화에 대해서는 Δtg2 = Δtg1 × (1 − ηG), tg2 = TG2 + Δtg2 (출구 가스온도 변화 = 입구 가스온도 변화 × (1 − 온도효율)).",
+      "terms": [
+        "ta1",
+        "TG1=tg1",
+        "TA1=ta1",
+        "Δtg2 = Δta1 × ηG",
+        "Δtg2 = Δtg1 × (1 − ηG)",
+        "tg2 = TG2 + Δtg2"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-019",
+      "doc_id": "R018",
+      "section": "2.5 공기온도 변화에 의한 배기가스 온도 변화",
+      "page_start": 44,
+      "page_end": 44,
+      "text": "따라서 히트펌프로 연소용 공기를 더 뜨겁게 하면 배기가스 온도가 따라 올라 배기가스 열손실이 커지고, 배열회수 효과가 깎여 도리어 손해가 될 수도 있다. 이를 막으려면 공기예열기 온도효율을 높이거나 배기가스 열교환기를 추가해 배기가스 온도를 히트펌프 도입 전 수준으로 묶어야 하며, 초기 설계 때 이를 반영하면 공기예열기를 재설계해 비용을 아낄 수 있다. Reference Plant의 공기예열기 설계값(Table 1)을 식 (5)에 넣으면 온도 효율 η_G = 0.7087이고, 입구 공기온도를 60C로 높이면 출구 배기가스 온도가 143.6C로 오른다. 공기예열기 출구 공기온도는 X-Ratio로 구할 수 있는데, X-ratio는 공기예열기를 지나는 가스 열용량 대비 공기 열용량의 비이다.",
+      "terms": [
+        "배기가스 열손실",
+        "공기예열기 온도효율",
+        "배기가스 열교환기",
+        "Table 1",
+        "η_G = 0.7087",
+        "143.6C",
+        "X-Ratio",
+        "열용량"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-020",
+      "doc_id": "R018",
+      "section": "2.5 공기온도 변화에 의한 배기가스 온도 변화",
+      "page_start": 44,
+      "page_end": 44,
+      "text": "(7) X − Ratio = (Heat Capacity)_air/(Heat Capacity)_gas = W_a·c_p,a/(W_g·c_p,g) = (Temp.Drop)_gas/(Temp.Rising)_air = (T_in,gas − T_out,gas,corrected)/(T_out,air − T_in,air) (공기 열용량 ÷ 가스 열용량 = 가스 온도강하 ÷ 공기 온도상승). Reference 플랜트 성능시험 Data를 넣으면 (347 − 122.59)/(T_out,air − 60) = 0.7717이며, 이로부터 공기예열기 출구 공기온도 T_out,air = 350.8이 나온다.",
+      "terms": [
+        "X − Ratio",
+        "Heat Capacity",
+        "c_p,a",
+        "T_out,gas,corrected",
+        "T_out,air",
+        "0.7717",
+        "350.8"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-021",
+      "doc_id": "R018",
+      "section": "2.5 공기온도 변화에 의한 배기가스 온도 변화",
+      "page_start": 44,
+      "page_end": 44,
+      "text": "Table 1. Air & Gas Temp at Air Pre-heater (공기예열기 설계 온도). 공기: 입구(℃)=22.48; 출구(℃)=313.27. 가스: 입구(℃)=347; 출구(℃)=117.",
+      "terms": [
+        "Table 1",
+        "Air Pre-heater",
+        "22.48",
+        "313.27",
+        "347",
+        "117"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-022",
+      "doc_id": "R018",
+      "section": "2.5 공기온도 변화에 의한 배기가스 온도 변화",
+      "page_start": 44,
+      "page_end": 44,
+      "text": "계산 결과 출구 공기온도는 고작 약 4℃ 오를 뿐이다. 그러면 회수한 열 상당 부분이 배기가스 손실로 다시 새어 나가고, 뒤에 놓인 탈황설비에도 영향이 간다. 결국 회수열이 프로세스에 거의 보탬이 되지 못해 플랜트 효율 개선으로 이어지지 않는다. 그러므로 온도가 올라간 배기가스에서 열을 다시 거둬 지역난방이나 연료 예열에 쓰고, 배기가스 온도를 원래 값(117℃)으로 지키면서 증기를 아껴 효율을 높이도록 해야 한다.",
+      "terms": [
+        "약 4℃",
+        "배기가스 손실",
+        "탈황설비",
+        "플랜트 효율",
+        "지역난방",
+        "연료 예열",
+        "117℃"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-023",
+      "doc_id": "R018",
+      "section": "3. 히트펌프의 성적계수 검토",
+      "page_start": 44,
+      "page_end": 44,
+      "text": "히트펌프 성능은 투입 에너지에 대한 이동 열량의 비로 나타내며 이를 성적계수(COP)라 부른다. 복수기 배열회수에 히트펌프를 쓰는 것이 타당한지 보려면 들인 에너지 대비 얻은 열을 계산해야 하므로 이 값이 꼭 필요하다. 성적계수는 외부 환경(온도)과 히트펌프 종류에 좌우되므로, 알맞은 값을 가정해 결과를 예측해야 한다.",
+      "terms": [
+        "히트펌프",
+        "성적계수(COP)",
+        "복수기",
+        "배열회수",
+        "외부 환경(온도)"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-024",
+      "doc_id": "R018",
+      "section": "3.1 히트펌프의 성적계수(COP)",
+      "page_start": 44,
+      "page_end": 44,
+      "text": "히트펌프 방식에는 압축식, 흡수식, MVR(Mechanical Vapor Re-compression), TVR(Thermal Vapor Re-compression), TEC(Thermo-Electric Cooler) 등이 있고, 주변 온도와 환경에 맞춰 골라 COP를 최대로 끌어내도록 구성한다. 담수화 설비, 진공 확보, 소형화 같은 특수 목적이 아니면 냉매와 압축기를 쓰는 압축식이 주로 쓰이며, 성능은 성적계수(COP : Coefficient of Performance)로 표시한다.",
+      "terms": [
+        "압축식",
+        "흡수식",
+        "MVR(Mechanical Vapor Re-compression)",
+        "TVR(Thermal Vapor Re-compression)",
+        "TEC(Thermo-Electric Cooler)",
+        "냉매",
+        "압축기",
+        "COP : Coefficient of Performance"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-025",
+      "doc_id": "R018",
+      "section": "3.1 히트펌프의 성적계수(COP)",
+      "page_start": 44,
+      "page_end": 44,
+      "text": "이상적인 냉매압축 사이클에서 Fig. 6의 각 과정을 기준으로 COP = heat out / work in = condenser heating / compressor work = (h1-h4) / (h2-h1) (성적계수 = 응축기 방열량 ÷ 압축기 일, 각 상태점 엔탈피 h로 표시).",
+      "terms": [
+        "냉매압축 사이클",
+        "Fig. 6",
+        "COP = heat out / work in",
+        "condenser heating / compressor work",
+        "(h1-h4) / (h2-h1)"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-026",
+      "doc_id": "R018",
+      "section": "3.1 히트펌프의 성적계수(COP)",
+      "page_start": 44,
+      "page_end": 45,
+      "text": "Fig. 6은 이론상 가능한 이상적 히트펌프 사이클이며, 실제 히트펌프는 배관·밸브의 온도·압력 손실 때문에 Fig. 7과 같은 모양이 된다. 요즘 나오는 히트펌프의 COP는 공기 열원일 때 2-4 정도, 지열 이용 시 그보다 조금 높은 3-5 정도이다. 영하 15도 외기에서 열을 흡수해 물을 60도까지 데우는 제품도 나왔고, 기술 발전으로 성적계수가 해마다 약 2% 정도씩 올라 열원이 넉넉하면 COP 6-9에 달하는 제품도 시판된다.",
+      "terms": [
+        "Fig. 6",
+        "Fig. 7",
+        "COP",
+        "2-4",
+        "지열",
+        "3-5",
+        "영하 15도",
+        "6-9"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-027",
+      "doc_id": "R018",
+      "section": "3.1 히트펌프의 성적계수(COP)",
+      "page_start": 45,
+      "page_end": 45,
+      "text": "Fig. 6 Ideal Vapor-Compression Cycle: 이상적 증기압축 사이클. Fig. 7 Actual Vapor-Compression Cycle: 실제 증기압축 사이클.",
+      "terms": [
+        "Fig. 6",
+        "Ideal Vapor-Compression Cycle",
+        "Fig. 7",
+        "Actual Vapor-Compression Cycle"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-028",
+      "doc_id": "R018",
+      "section": "3.2 히트펌프의 성적계수 가정",
+      "page_start": 45,
+      "page_end": 45,
+      "text": "히트펌프와 냉동기는 사이클이 같아 난방과 냉방 모두에 쓸 수 있지만, 예전 히트펌프는 냉각 용도가 주였기에 냉각 효율 위주로 개발되었다. 근래에는 가열용 히트펌프가 늘면서 가열효율이 높은 제품이 많아졌다. 이 설비 역시 급수 가열로 증기를 아끼는 것이 목적이므로 가열 효율이 높은 히트펌프가 필요하다. 32 C의 증기가 대량으로 꾸준히 공급되는 비교적 좋은 열원이 있고, 급수 목표 승온도 15 - 20℃ 정도로 크지 않아 높은 COP에 꽤 유리한 조건이다. 열원의 온도·유량과 가열 대상 급수의 목표 온도·유량에 맞춰 최적 설계하면 높은 COP를 기대할 수 있다고 보고, 목표 COP를 9로 가정한 뒤 COP 변화에 따른 효율 향상폭을 예측했다.",
+      "terms": [
+        "냉동기",
+        "가열효율",
+        "급수 가열",
+        "32 C",
+        "15 - 20℃",
+        "COP",
+        "목표 COP를 9"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-029",
+      "doc_id": "R018",
+      "section": "4. 히트펌프 적용 전후의 성능변화",
+      "page_start": 45,
+      "page_end": 45,
+      "text": "히트펌프 적용 효과를 확인하려고 적용 전후 성능을 열정산으로 비교했다. 먼저 국내 표준 석탄 화력 태안화력에 대한 정밀 열성능 진단 결과보고서를 토대로 주요 설비 열정산을 실제 성능시험 결과와 대조해 모델링 정확성을 검증했다. 이어 여기에 히트펌프 모델을 더한 계산 결과를 원래 모델 결과와 비교해, 주요 설비 열정산과 플랜트 전체 성능이 어떻게 바뀌는지 예측했다.",
+      "terms": [
+        "히트펌프",
+        "열정산",
+        "석탄 화력",
+        "태안화력",
+        "정밀 열성능 진단",
+        "모델링"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-030",
+      "doc_id": "R018",
+      "section": "4.1 발전 플랜트의 성능 계산",
+      "page_start": 45,
+      "page_end": 45,
+      "text": "발전플랜트 성능은 효율(η_p)로 표시하며, Heat Input/Output Method(입출열법)와 Heat Loss Method(열손실법) 두 방식으로 구한다. 실제 운영에서는 발전기 출력, 사용 연료량, 연료 대표시료 발열량으로 Heat Input/Output Method에 따라 효율을 산출·확정한다. 이 방식은 시험 불확도가 커서 정량적 결과가 필요한 시험법으로는 부족하지만, 설비 운용의 경향 파악과 수급 관리 측면에서는 간편해 널리 쓰인다. Reference 플랜트의 정밀 성능진단으로 잰 출력 P_1을 식 (8)에 넣어 플랜트 효율을 구한다.",
+      "terms": [
+        "η_p",
+        "Heat Input/Output Method(입출열법)",
+        "Heat Loss Method(열손실법)",
+        "발전기 출력",
+        "발열량",
+        "시험 불확도",
+        "P_1"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-031",
+      "doc_id": "R018",
+      "section": "4.1 발전 플랜트의 성능 계산",
+      "page_start": 45,
+      "page_end": 45,
+      "text": "(8) η_p = (860P × 100)/(W_fe × H_f) % (플랜트 효율 = 발전기 출력을 열량으로 환산한 값 ÷ 연료 소비량 × 고위발열량).",
+      "terms": [
+        "η_p = (860P × 100)/(W_fe × H_f) %",
+        "W_fe",
+        "H_f",
+        "플랜트 효율"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-032",
+      "doc_id": "R018",
+      "section": "4.2 히트펌프 적용 전의 열정산",
+      "page_start": 46,
+      "page_end": 46,
+      "text": "Reference Plant는 500MW 관류형 초임계압 보일러를 갖춘 유연탄 화력 발전소이다. 정격부하 정밀 성능시험 결과에서 설비별 효율은 보일러 90.54%, 터빈 45.43, 발전기 97.05%이다. 측정 출력 P_1 = 474.183MW를 η_p = 출력/입력 = 발전기출력/연료 발열량, 즉 η_p = (860P×100)/(W_fe × H_f) %에 넣으면, 연료 보유에너지 Q_f = 1187.183 MW, 발전기 출력 P_G = 474.183 MW이므로 η_p = P_G/Q_f = 474.183/1187.183 = 39.919%가 된다. 설비별 에너지 입출력은 Fig. 8과 Table 2에 정리되어 있다.",
+      "terms": [
+        "500MW",
+        "관류형 초임계압 보일러",
+        "유연탄",
+        "90.54%",
+        "97.05%",
+        "474.183MW",
+        "Q_f = 1187.183 MW",
+        "39.919%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-033",
+      "doc_id": "R018",
+      "section": "4.2 히트펌프 적용 전의 열정산",
+      "page_start": 46,
+      "page_end": 46,
+      "text": "Fig. 8 Energy Balance without Heat Pump: 히트펌프 적용 전 에너지 수지.",
+      "terms": [
+        "Fig. 8",
+        "Energy Balance without Heat Pump"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-034",
+      "doc_id": "R018",
+      "section": "4.2 히트펌프 적용 전의 열정산",
+      "page_start": 46,
+      "page_end": 46,
+      "text": "Table 2. Energy Balance without Heat Pump (MW). Boiler: 입력=1187.833; 출력=1075.464; 효율(%)=90.540. Turbine: 입력=1075.464; 출력=488.583; 효율(%)=45.430. Generator: 입력=488.583; 출력=474.183; 효율(%)=97.05.",
+      "terms": [
+        "Table 2",
+        "Energy Balance without Heat Pump",
+        "Boiler",
+        "Turbine",
+        "Generator",
+        "1187.833",
+        "474.183"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-035",
+      "doc_id": "R018",
+      "section": "4.3 히트펌프 적용 후의 열정산(COP=9)",
+      "page_start": 46,
+      "page_end": 46,
+      "text": "정밀 성능시험 데이터로 만든 모델에 COP=9인 히트펌프를 더해 플랜트를 다시 구성하면 수정된 플랜트가 에너지를 얼마나 주고받고 어떤 성능을 낼지 예측할 수 있다. 실제 적용하려면 가열부와 냉각부의 입·출구 조건(유량, 온도, 압력)에서 제시한 COP를 지키도록 히트펌프를 설계해야 한다. 이 조건에서 회수열이 전부 보일러 입열로 들어간다고 하면 플랜트 효율(출력/연료 발열량)은 40.387%로 0.467%만큼 올라야 한다. 실제 발전 플랜트에서 이만한 향상은 연료를 더 넣지 않고 약 5.5MW를 더 생산하는 셈이어서 결코 작지 않은, 매우 의미 있는 크기이다.",
+      "terms": [
+        "COP=9",
+        "가열부",
+        "냉각부",
+        "보일러 입열",
+        "40.387%",
+        "0.467%",
+        "약 5.5MW"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-036",
+      "doc_id": "R018",
+      "section": "4.3 히트펌프 적용 후의 열정산(COP=9)",
+      "page_start": 46,
+      "page_end": 47,
+      "text": "하지만 2.5절에서 본 것처럼 회수열의 상당 부분이 배가스 손실로 빠지므로, 제대로 쓰지 못하면 효율은 도리어 떨어진다. 회수한 열에너지의 가치는 같은 양의 전기에너지와 같지 않고 활용 방식에 따라 정해진다. 활용처로는 지역난방용 가열기(Domestic Heater), 연료라인 예열기(Fuel Line Heater), 기타 프로세스 가열기 등이 있으나 분야와 방법에 따라 가치가 달라 경제적 가치로 바꾸기는 쉽지 않다. 그래서 연료 에너지 가치와 상대 비교하고자 플랜트 종합 효율을 기준으로 회수열의 39.919%를 순수 유효에너지로 보고, 거기서 히트펌프 투입 전기에너지를 뺀 값을 실제 출력 증가로 삼아 회수 타당성을 계산했다. 지역난방수는 100 - 120 C로 데워져 공급되고 40 - 60 C로 돌아오므로, 회수열로 지역난방수나 환수를 데우면 에너지를 효과적으로 회수할 수 있다고 판단했다. 또 대도시 근처에서 가스를 연료로 쓰는 복합·열병합 발전소는 액화 연료(LNG)가 기화하면서 온도가 내려가 증기로 예열하는데, 이때 연료 온도가 5 - 15 C이므로 회수된 143 C 배기가스로 예열하기에도 알맞다. Table 3은 COP = 9 히트펌프 적용 시 주요 설비별 에너지 입출력이다.",
+      "terms": [
+        "배가스 손실",
+        "Domestic Heater",
+        "Fuel Line Heater",
+        "39.919%",
+        "유효에너지",
+        "100 - 120 C",
+        "LNG",
+        "143 C"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-037",
+      "doc_id": "R018",
+      "section": "4.3 히트펌프 적용 후의 열정산(COP=9)",
+      "page_start": 46,
+      "page_end": 46,
+      "text": "Table 3. Energy Balance without Heat Pump (MW), COP=9 (원문 표 제목 그대로). 투입 에너지(MW)=2.230; 회수 에너지(MW)=19.471; 유효 회수에너지(MW)=7.773; 효율 증가(%P)=0.467.",
+      "terms": [
+        "Table 3",
+        "COP=9",
+        "투입 에너지",
+        "회수 에너지",
+        "유효 회수에너지",
+        "효율 증가",
+        "19.471",
+        "7.773"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-038",
+      "doc_id": "R018",
+      "section": "4.4 히트펌프 적용 후의 열정산(COP=5)",
+      "page_start": 47,
+      "page_end": 47,
+      "text": "앞에서는 증기열원이 넉넉하고 가열온도 폭이 작아(ΔT = 15℃) COP=9를 가정했지만, 실제로 이만한 성능계수의 히트펌프는 흔하지 않다. 적용 히트펌프의 COP=5로 두면 효과가 줄어 플랜트 효율 향상은 0.316%가 되며, 원문은 그 결과가 Fig. 6과 같다고 적고 있다. 이때 히트펌프 투입 전력은 약 4MW로 늘지만, 연료를 더 들이지 않고도 약 3.8MW의 전력을 추가로 얻는다. Table 4는 COP = 5 히트펌프 적용 시 주요 설비별 에너지 입출력이다.",
+      "terms": [
+        "ΔT = 15℃",
+        "COP=9",
+        "COP=5",
+        "성능계수",
+        "0.316%",
+        "약 4MW",
+        "약 3.8MW",
+        "Table 4"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-039",
+      "doc_id": "R018",
+      "section": "4.4 히트펌프 적용 후의 열정산(COP=5)",
+      "page_start": 47,
+      "page_end": 47,
+      "text": "Table 4. Energy Balance without Heat Pump (MW), COP=5 (원문 표 제목 그대로). 투입 에너지(MW)=4.014; 회수 에너지(MW)=19.471; 유효 회수에너지(MW)=7.773; 효율 증가(%P)=0.316.",
+      "terms": [
+        "Table 4",
+        "COP=5",
+        "투입 에너지",
+        "회수 에너지",
+        "유효 회수에너지",
+        "4.014",
+        "0.316"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-040",
+      "doc_id": "R018",
+      "section": "4.5 성적계수에 따른 효율과 투입전력 변화",
+      "page_start": 47,
+      "page_end": 47,
+      "text": "COP가 커지면 히트펌프 투입 전력이 줄어 효율 증가분이 커지므로, 주어진 운전 조건에서 최적 설계로 COP가 가장 큰 히트펌프를 써야 한다. 히트펌프 투입 전력이 Q̇_ah/COP이므로 플랜트 효율변화 Δη_p를 다음처럼 쓴다. (9) P_2 = (ṁH_f + Q̇_ah)η_p1 − Q̇_ah/COP (히트펌프 적용 후 출력 = 연료 입열과 회수열의 합에 효율을 곱한 값 − 히트펌프 투입 전력). (10) Δη_p = η_p1 − η_p2 = (P1 − P2)/COP (플랜트 효율변화를 출력 차와 COP로 나타낸 식, 원문 표기 그대로). 이 식으로 COP에 따른 플랜트 효율변화를 나타낼 수 있으며, Fig. 9는 COP 증가에 따른 효율 향상과 히트펌프 투입 전력 변화를 보여 준다.",
+      "terms": [
+        "COP",
+        "Q̇_ah/COP",
+        "Δη_p",
+        "P_2",
+        "η_p1",
+        "Δη_p = η_p1 − η_p2",
+        "Fig. 9",
+        "투입 전력"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-041",
+      "doc_id": "R018",
+      "section": "4.5 성적계수에 따른 효율과 투입전력 변화",
+      "page_start": 47,
+      "page_end": 47,
+      "text": "Fig. 9 COP vs Δη and Power Input / 10: COP에 따른 Δη와 투입전력(1/10 축척).",
+      "terms": [
+        "Fig. 9",
+        "COP vs Δη",
+        "Power Input / 10"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R018-042",
+      "doc_id": "R018",
+      "section": "5. 결론",
+      "page_start": 47,
+      "page_end": 47,
+      "text": "복수기 회수열로 급수를 예열하고, 그로써 아낀 가열증기로 연소용 공기를 데우는 경우를 가정해 발전 플랜트 성능변화를 예측하고 복수기 열에너지 회수의 타당성을 살핀 결과는 다음과 같다. 1) 성적계수가 충분히 높으면(COP > 1/η_p) 발전플랜트 효율이 오를 수 있다. 2) 복수기에서 회수해 쓸 수 있는 열량의 상한은 절감 증기와 대기의 온도 차가 정한다. 3) 회수열의 상당량이 공기예열기 배가스 온도 상승 때문에 배가스 손실로 빠지므로, 지역난방·연료라인 예열·프로세스 활용 등으로 이를 알맞게 다시 거둬야 한다. 4) 성적계수가 커질수록 플랜트 효율 증가분은 커지고 히트펌프 투입 전력량은 줄어든다.",
+      "terms": [
+        "복수기",
+        "가열증기",
+        "COP > 1/η_p",
+        "공기예열기",
+        "배가스 손실",
+        "연료라인 예열",
+        "성적계수",
+        "투입 전력량"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 42,
+    "pages_processed": "40-48 (PDF 1-9쪽 전체)",
+    "last_paragraph_id": "R018-042",
+    "skipped": [
+      "40쪽 머리글('논문 6')·각 쪽 머리글(논문 제목)·바닥글(쪽번호, '신재생에너지', '2009. 9 Vol.5, No.3'): 머리글·바닥글",
+      "40쪽 영문 제목·영문 저자명: 서지정보로만 반영",
+      "40쪽 접수일·수정일·게재확정일, 교신저자 소속(전력연구원 녹색성장 연구소)·E-mail·Tel·Fax: 저자 연락처·편집 정보",
+      "47-48쪽 References [1]~[10]: 참고문헌 목록",
+      "48쪽 저자 약력(학력·소속·E-mail): 저자 연락처",
+      "그림 1~9 내부 내용(계통도 라벨, T-s/P-h 선도, Fig. 8 에너지 흐름 수치, Fig. 9 그래프 값): 캡션만 수록(Fig. 5 범례는 캡션 영역 문자이므로 포함)"
+    ],
+    "uncertain": [
+      "pdftotext 추출본에 한글 본문은 대부분 들어 있었으나 수식 글리프가 빠져 있어, 식 (1)~(10)·Δtg2 식·Q̇_ah 식은 150dpi 페이지 이미지로 직접 판독함(OCR 불필요)",
+      "Nomenclature의 공기 비열 c_a 단위가 원문에 'kg/m^3'로 인쇄되어 있으나 본문 값은 0.240 kcal/kg-C임. 원문 표기를 그대로 적음",
+      "4.2절 본문의 연료 보유에너지는 1187.183 MW, Table 2의 Boiler 입력은 1187.833으로 서로 다름. 각각 원문대로 둠",
+      "Table 3·4 제목이 히트펌프 적용 후 결과인데도 'Energy Balance without Heat Pump'로 인쇄됨. 원문 제목 그대로 둠",
+      "4.4절 'Fig. 6과 같은 결과가 나온다'는 Fig. 9를 가리키는 것으로 보이나 확인 불가, 원문 표기대로 둠",
+      "4.2절 '터빈 효율 = 45.43'은 % 기호 없이 인쇄됨(Table 2는 45.430%)",
+      "식 (10) Δη_p = η_p1 − η_p2 = (P1 − P2)/COP 의 분모 표기는 이미지 판독 결과 그대로이며 차원 정합성은 검증하지 않음",
+      "Table 4는 지면상 4.5절 칼럼에 놓였으나 내용상 4.4절(COP=5)에 배정함",
+      "영문 초록은 영어로 paraphrase(문서 lang='ko', 해당 문단만 영어)"
+    ]
+  }
+}

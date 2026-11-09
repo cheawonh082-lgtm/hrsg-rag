@@ -1,0 +1,805 @@
+{
+  "document": {
+    "doc_id": "R024",
+    "title": "Study of the effect of using duct burner on the functional parameters of the two repowered cycles through exergy analysis",
+    "authors": [
+      "Karim Maghsoudi Mehrabani",
+      "Abdollah Mehrpanahi",
+      "Vahid Rouhani",
+      "Sadegh Nikbakht Naser Abad"
+    ],
+    "year": 2017,
+    "venue": "Thermal Science, Year 2017, Vol. 21, No. 6B, pp. 3011-3023",
+    "doi": "10.2298/TSCI151207310M",
+    "url": "https://doi.org/10.2298/TSCI151207310M",
+    "license": "© 2017 Society of Thermal Engineers of Serbia. Published by the Vinča Institute of Nuclear Sciences, Belgrade, Serbia. Open access article distributed under the CC BY-NC-ND 4.0 terms and conditions (CC BY-NC-ND 4.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R024-001",
+      "doc_id": "R024",
+      "section": "Abstract",
+      "page_start": 3011,
+      "page_end": 3011,
+      "text": "Steam power plants have been extensively used in Iran for a long time, yet no specific step has been taken for promoting their performance. In this regard, full repowering is considered as a way to enhance the performance of steam power plants. Furthermore, because of the continental condition of Iran, duct burners can be used as a common strategy to compensate for power generation shortage caused by environmental conditions. In this study, the effect of using a duct burner on the full repowering of Be’sat Steam Cycle representing both single-and dual-pressure cycles was investigated based on exergy analysis. The results showed that by using the duct burner, due to the increase in the heat recovery steam generator inlet gas temperature, the general thermal efficiency of the combined cycle and the exergy efficiency of the combined cycle and heat recovery steam generator decreased. However, the results revealed an increase in the stack temperature and resulting exergy losses, steam flow and power generation. Key words: repowering, heat recovery steam generator, duct burner, exergy, thermal efficiency",
+      "terms": [
+        "full repowering",
+        "duct burners",
+        "exergy analysis",
+        "heat recovery steam generator",
+        "stack temperature",
+        "exergy efficiency",
+        "single-and dual-pressure cycles",
+        "Be’sat Steam Cycle"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-002",
+      "doc_id": "R024",
+      "section": "Introduction",
+      "page_start": 3011,
+      "page_end": 3012,
+      "text": "Repowering refers to the utilization of exhaust gas of a gas turbine set to upgrade the performance of steam power plants. Repowering methods are classified into two main types: full repowering and partial repowering. Full repowering is the most common method of repowering. In this method, a heat recovery steam generator (HRSG) and gas turbine(s) are used instead of old boilers. This method is useful for power plants with the minimum age of 25 years and aims to convert steam power plants into the combined cycle with promising technical and economic advantages. Because of the impact of continental conditions as well as wide range of temperature spectrum in Iran, the design and modification of new high performance cycles are very important and critical. Today, using additional combustion in HRSG has been widely developed for the purpose of controlling the temperature and generated steam flow in the mode of lowering gas turbine load and/or offsetting ambient changes; so far, 75% of HRSG have been proven to benefit from this approach. The burners that generate this additional combustion in boilers are called duct burners and have the following advantages [1-3]: – better control of exhaust thermal power, – higher efficiency of steam generation, – keeping the steam generation fixed as the gas turbine load decreases or even in the case of the gas turbine off-design operation, – compensation for ambient changes, and – using fuels that are not suitable for combustion in gas turbines. In addition to the above-mentioned advantages, there are also some disadvantages in using duct burners, including: – being far from the optimum states in unfired and/or part load modes since the cycle elements should be designed for maximum heat temperature, – requiring more care about the utilization time to prevent the overheated pipes, and – increasing manufacturing cost of the unit by 10 to 15%.",
+      "terms": [
+        "Repowering",
+        "full repowering",
+        "partial repowering",
+        "heat recovery steam generator (HRSG)",
+        "duct burners",
+        "additional combustion",
+        "gas turbine load",
+        "overheated pipes"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-003",
+      "doc_id": "R024",
+      "section": "Introduction",
+      "page_start": 3012,
+      "page_end": 3012,
+      "text": "Studies carried out on repowering can be generally categorized into solid and non-solid fuel-based repowering options [4-7]. In spite of some differences, all these investigations have been aimed to improve technical, environmental and economic specifications of the system. In this research, Be’sat steam power plant in Tehran (fig. 1) was repowered through two distinct methods using full repowering method. Further, two distinct cycles combined with different HRSG (single- and dual-pressure) were modeled. Be’sat Power Plant is an old steam power plant designed by General Electric Corporation with 31.46% efficiency, however, its current real efficiency is 26.81%. Efficiency reduction has been caused by the power plant’s old lifetime and exhaustion [8]. Since the reference cycle has a steam injection line to the steam turbines, a single-pressure HRSG is used to be in better correspondence with the reference cycle and dual-pressure HRSG is employed in alternative designs to perfectly use the turbine exhaust gas. Using full repowering method and modeling the new combined cycles, this study was done to enhance the efficiency and power generation of the old Be’sat Power Plant. Moreover, considering the design restrictions and using the exergy analysis, the effects of using a duct burner on the functional parameters of the repowered cycles, including thermal and exergy efficiencies as well as exergy efficiency of the HRSG, were studied. Accordingly, the efficiencies of the combined cycle power plants modeled in this research were generally lower than other existing combined cycles. Modeling procedure was conducted by EES software [9].",
+      "terms": [
+        "full repowering method",
+        "single-pressure HRSG",
+        "dual-pressure HRSG",
+        "duct burner",
+        "exergy analysis",
+        "EES software",
+        "Be’sat Power Plant",
+        "steam injection line"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-004",
+      "doc_id": "R024",
+      "section": "Introduction",
+      "page_start": 3012,
+      "page_end": 3012,
+      "text": "Previous studies on duct burners have separately considered the cycle modeling, repowering and thermodynamics analysis. However, in this research, some efforts were made to model two combined cycles by using full repowering methods and a comprehensive thermodynamic analysis followed by modeling to evaluate the performance of the cycles with regard to not using duct burners and various modes of using duct burners. Hence, this study is of novelty in terms of investigating the effects of duct burners on repowered cycles using exergy analysis. On the other hand, although the efficiency of heat recovery of a single-pressure cycle is lower than that of a dual-pressure cycle, the main benefit of single-pressure cycle compared with a dual-pressure cycle in the studied power plant was its consistency with the power plant steam turbines. Additionally, due to the necessity of changes in the structures of steam turbines, capital cost for the dual-pressure case is higher than that of the single-pressure cycle. This study can be used as a scale to compare the mentioned cycles with or without duct burners. Duct burners have been of interest for many researchers. For example, Batshon and Backlund [1] introduced the advantages and disadvantages of duct burners and examined using irregular fuels such as the gas produced from sewers, furnaces of steel plants and decomposition of solid urban wastes in duct burners.",
+      "terms": [
+        "duct burners",
+        "full repowering",
+        "single-pressure cycle",
+        "dual-pressure cycle",
+        "exergy analysis",
+        "irregular fuels",
+        "duct burner"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-005",
+      "doc_id": "R024",
+      "section": "Introduction",
+      "page_start": 3012,
+      "page_end": 3013,
+      "text": "Ahmadi and Dincer [10] designed a combined cycle equipped with a duct burner by using a genetic algorithm and optimized the objective functions. Efficiency and power improvement using a triple-pressure HRSG was also investigated by Basily [11]. In his study, he used the duct burner and vapor reheating to increase the generation power. Regarding the field of cycle modeling, Ibraham and Rahman [12] presented the thermodynamic analysis of a triple-pressure combined cycle equipped with a duct burner and studied the impacts of changes in the gas cycle functional parameters on the combined cycle efficiency and power. They suggested that TIT changes have the most significant effects on these variables. Tajik Mansouri et al. [13] evaluated and compared three types of HRSG used in a combined cycle to examine the effects of increasing the steam pressure levels on the power and efficiency improvement and reduced exergy destruction. Repowering cycle was proposed by Hosseinalipour et al. [14] for a steam cycle. In his study, the optimization of the presented combined cycle was done by thermo-economic objective functions. With regard to the exergy analysis of the combined cycles, Ameri et al. [15] analyzed a combined cycle in Iran and found that the highest exergy loss took place in the gas turbine combustion chamber. Bracco and Siri [8] optimized the performance of a combined cycle with single-pressure HRSG by using exergy analysis and concluded that the optimized cycle pressure provided higher levels of power and efficiency.",
+      "terms": [
+        "exergy analysis",
+        "genetic algorithm",
+        "triple-pressure HRSG",
+        "duct burner",
+        "vapor reheating",
+        "exergy loss",
+        "exergy destruction",
+        "TIT"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-006",
+      "doc_id": "R024",
+      "section": "Reference cycle specifications",
+      "page_start": 3013,
+      "page_end": 3013,
+      "text": "Figure 1 shows the schematic diagram of the Be’sat steam power plant which was an old steam power plant designed by General Electric Corporation with 31.46% design efficiency, however, its current real efficiency was 26.81%. Efficiency reduction has been caused by the power’s plant old lifetime and exhaustion [8]. A V94.2 gas turbine was used in the gas chamber and the steam cycle had a boiler, two high-, two intermediate-, and two low-pressure steam turbines. In addition, a condenser and a set of feed water reheaters were included in this cycle. In the steam turbines, a part of steam was extracted to the feed waters and reheated the feed water boiler. Thermodynamic specifications of steam/water in different parts of Be’sat power plant are represented in tab. 1.",
+      "terms": [
+        "Be’sat steam power plant",
+        "General Electric Corporation",
+        "V94.2 gas turbine",
+        "boiler",
+        "condenser",
+        "feed water reheaters",
+        "steam turbines"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-007",
+      "doc_id": "R024",
+      "section": "Reference cycle specifications",
+      "page_start": 3013,
+      "page_end": 3013,
+      "text": "Figure 1. Schematic diagram of Be’sat steam power plant",
+      "terms": [
+        "Be’sat steam power plant"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-008",
+      "doc_id": "R024",
+      "section": "Reference cycle specifications",
+      "page_start": 3013,
+      "page_end": 3013,
+      "text": "Table 1. Water/steam properties of Be’sat power plant. Point 1: Temperature [K]=581.7; Pressure [bar]=96.61; Entropy [kJ/kg K]=3.334; Mass flow [kg/s]=91.94; Enthalpy [kJ/kg]=1392.5. Point 2: Temperature [K]=578.0; Pressure [bar]=91.78; Entropy [kJ/kg K]=5.665; Mass flow [kg/s]=91.94; Enthalpy [kJ/kg]=2739.0. Point 3: Temperature [K]=783.1; Pressure [bar]=87.20; Entropy [kJ/kg K]=6.708; Mass flow [kg/s]=91.94; Enthalpy [kJ/kg]=3415.0. Point 4: Temperature [K]=663.0; Pressure [bar]=33.60; Entropy [kJ/kg K]=6.826; Mass flow [kg/s]=84.58; Enthalpy [kJ/kg]=3200.6. Point 5: Temperature [K]=580.4; Pressure [bar]=17.23; Entropy [kJ/kg K]=6.873; Mass flow [kg/s]=78.58; Enthalpy [kJ/kg]=3047.5. Point 6: Temperature [K]=476.7; Pressure [bar]=6.50; Entropy [kJ/kg K]=6.941; Mass flow [kg/s]=73.05; Enthalpy [kJ/kg]=2854.9. Point 7: Temperature [K]=392.8; Pressure [bar]=1.68; Entropy [kJ/kg K]=7.211; Mass flow [kg/s]=68.09; Enthalpy [kJ/kg]=2707.0. Point 8: Temperature [K]=365.6; Pressure [bar]=0.77; Entropy [kJ/kg K]=7.090; Mass flow [kg/s]=62.67; Enthalpy [kJ/kg]=2533.2. Point 9: Temperature [K]=315.8; Pressure [bar]=0.08; Entropy [kJ/kg K]=7.321; Mass flow [kg/s]=62.67; Enthalpy [kJ/kg]=2298.8. Point 10: Temperature [K]=663.0; Pressure [bar]=33.60; Entropy [kJ/kg K]=6.826; Mass flow [kg/s]=7.36; Enthalpy [kJ/kg]=3200.6. Point 11: Temperature [K]=580.4; Pressure [bar]=17.23; Entropy [kJ/kg K]=6.873; Mass flow [kg/s]=6.00; Enthalpy [kJ/kg]=3047.5. Point 12: Temperature [K]=476.7; Pressure [bar]=6.50; Entropy [kJ/kg K]=6.941; Mass flow [kg/s]=5.33; Enthalpy [kJ/kg]=2854.9. Point 13: Temperature [K]=403.0; Pressure [bar]=2.68; Entropy [kJ/kg K]=7.001; Mass flow [kg/s]=4.96; Enthalpy [kJ/kg]=2708.6. Point 14: Temperature [K]=365.6; Pressure [bar]=0.77; Entropy [kJ/kg K]=7.090; Mass flow [kg/s]=5.42; Enthalpy [kJ/kg]=2533.2. Point 15: Temperature [K]=635.7; Pressure [bar]=31.26; Entropy [kJ/kg K]=6.766; Mass flow [kg/s]=7.36; Enthalpy [kJ/kg]=3141.5. Point 16: Temperature [K]=558.9; Pressure [bar]=16.02; Entropy [kJ/kg K]=6.825; Mass flow [kg/s]=6.00; Enthalpy [kJ/kg]=3001.5. Point 17: Temperature [K]=466.5; Pressure [bar]=6.05; Entropy [kJ/kg K]=6.930; Mass flow [kg/s]=5.33; Enthalpy [kJ/kg]=2834.6.",
+      "terms": [
+        "Water/steam properties",
+        "Temperature",
+        "Pressure",
+        "Entropy",
+        "Mass flow",
+        "Enthalpy"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-009",
+      "doc_id": "R024",
+      "section": "Reference cycle specifications",
+      "page_start": 3013,
+      "page_end": 3013,
+      "text": "Table 1. Water/steam properties of Be’sat power plant (continued). Point 18: Temperature [K]=400.6; Pressure [bar]=2.50; Entropy [kJ/kgK]=6.897; Mass Flow [kg/s]=4.96; Enthalpy [kJ/kg]=2654.4. Point 19: Temperature [K]=365.6; Pressure [bar]=0.72; Entropy [kJ/kgK]=6.979; Mass Flow [kg/s]=5.42; Enthalpy [kJ/kg]=2533.2. Point 20: Temperature [K]=316.2; Pressure [bar]=0.72; Entropy [kJ/kgK]=0.612; Mass Flow [kg/s]=73.05; Enthalpy [kJ/kg]=180.0. Point 21: Temperature [K]=316.2; Pressure [bar]=6.43; Entropy [kJ/kgK]=0.610; Mass Flow [kg/s]=73.05; Enthalpy [kJ/kg]=180.0. Point 22: Temperature [K]=358.3; Pressure [bar]=6.24; Entropy [kJ/kgK]=1.132; Mass Flow [kg/s]=73.05; Enthalpy [kJ/kg]=355.9. Point 23: Temperature [K]=393.6; Pressure [bar]=6.05; Entropy [kJ/kgK]=1.527; Mass Flow [kg/s]=73.05; Enthalpy [kJ/kg]=503.9. Point 24: Temperature [K]=435.3; Pressure [bar]=108.08; Entropy [kJ/kgK]=1.952; Mass Flow [kg/s]=91.94; Enthalpy [kJ/kg]=690.8. Point 25: Temperature [K]=471.2; Pressure [bar]=104.84; Entropy [kJ/kgK]=2.270; Mass Flow [kg/s]=91.94; Enthalpy [kJ/kg]=834.2. Point 26: Temperature [K]=315.8; Pressure [bar]=0.08; Entropy [kJ/kgK]=0.727; Mass Flow [kg/s]=10.38; Enthalpy [kJ/kg]=216.4. Point 27: Temperature [K]=324.9; Pressure [bar]=0.14; Entropy [kJ/kgK]=0.725; Mass Flow [kg/s]=10.38; Enthalpy [kJ/kg]=216.4. Point 28: Temperature [K]=363.3; Pressure [bar]=0.71; Entropy [kJ/kgK]=1.250; Mass Flow [kg/s]=4.96; Enthalpy [kJ/kg]=398.0. Point 29: Temperature [K]=368.3; Pressure [bar]=0.85; Entropy [kJ/kgK]=1.250; Mass Flow [kg/s]=4.96; Enthalpy [kJ/kg]=398.0. Point 30: Temperature [K]=432.4; Pressure [bar]=6.05; Entropy [kJ/kgK]=2.061; Mass Flow [kg/s]=13.36; Enthalpy [kJ/kg]=726.9. Point 31: Temperature [K]=444.4; Pressure [bar]=8.16; Entropy [kJ/kgK]=2.059; Mass Flow [kg/s]=13.36; Enthalpy [kJ/kg]=726.9. Point 32: Temperature [K]=455.6; Pressure [bar]=16.02; Entropy [kJ/kgK]=2.330; Mass Flow [kg/s]=7.36; Enthalpy [kJ/kg]=852.4. Point 33: Temperature [K]=473.2; Pressure [bar]=18.62; Entropy [kJ/kgK]=2.330; Mass Flow [kg/s]=7.36; Enthalpy [kJ/kg]=852.4. Point 34: Temperature [K]=508.2; Pressure [bar]=101.69; Entropy [kJ/kgK]=2.641; Mass Flow [kg/s]=91.94; Enthalpy [kJ/kg]=1015.1.",
+      "terms": [
+        "Water/steam properties",
+        "Temperature",
+        "Pressure",
+        "Entropy",
+        "Mass Flow",
+        "Enthalpy"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-010",
+      "doc_id": "R024",
+      "section": "Modeling conditions of repowered cycles",
+      "page_start": 3014,
+      "page_end": 3014,
+      "text": "– In repowered cycles, there exist a steam turbine, a gas turbine, a condenser, a HRSG equipped with a duct burner and feed water pumps. Gas and steam turbines are considered in exact concordance with the reference cycle. – The HRSG and gas turbine sizes are determined based on the maximum arrival steam to the first high pressure turbine in the thermodynamic conditions of the reference cycle (point 6 in fig. 3 and point 13 in fig. 4). – To design the cycles, the cooling tower is assumed to be used when the condenser pressure in those cycles ranges between 0.068 and 0.136 bar [16]. In this research, the functional pressure of condenser was considered fixed and equal to 0.72 bar. – Restrictions on the condenser in receiving the amount of steam fed by present cycles must be carefully specified. To design the condenser, the amount of feeding steam flow is considered as ṁ_cond = 73.05 kg/s; however, this amount could also increase up to 45% [17]. – The steam produced by HRSG should be compatible with the cycle conditions and the condenser limitations. Thus, the coefficient value k is regarded in studying the designed cycle, indicating the steam flow having arrived at the condenser. In fact, k is the amount of steam generated by the boiler with respect to the performance conditions of the duct burner and combined cycle.",
+      "terms": [
+        "repowered cycles",
+        "HRSG",
+        "duct burner",
+        "condenser pressure",
+        "cooling tower",
+        "ṁ_cond",
+        "coefficient value k",
+        "feed water pumps"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-011",
+      "doc_id": "R024",
+      "section": "Modeling conditions of repowered cycles",
+      "page_start": 3014,
+      "page_end": 3014,
+      "text": "– The pressure generated by the water pump experiences some losses in the transferring pipes. As a result, to have better compliance with the actual states, the pressure losses are taken as 3.5% in economizer pipes, 3% in super heater, 5% in re-heater and 5.5% in water/steam pipes; however, no pressure loss is observed in the evaporator [18]. In addition, 5% of the gas energy is taken as gas energy loss within the HRSG sections (E_Loss = 5%) [14]. – In case of the boiler’s gas discharge temperature being less than the acid dew point of the gas mix, the water vapor content is distilled on the pre-heater and economizer pipes and generate corrosive acids which damage the pipes in their compositions with other combustion products such as CO_2. In order not to encounter the above-mentioned problem, the dew point temperature of the gas mixture in the HRSG design is considered as 361 K to keep the stack temperature less than the acid dew point [13, 18]. – To design the cycles, the pinch temperature difference should not be less than 10 K because if the pinch temperature is less, higher heat transfer levels will be required to produce the steam [12]. – All processes are performed under steady-state and steady-flow conditions [12, 13].",
+      "terms": [
+        "pressure losses",
+        "economizer",
+        "super heater",
+        "re-heater",
+        "acid dew point",
+        "stack temperature",
+        "pinch temperature difference",
+        "E_Loss"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-012",
+      "doc_id": "R024",
+      "section": "Energy analysis",
+      "page_start": 3014,
+      "page_end": 3014,
+      "text": "The energy balance to control the volume in a steady-state condition has been employed in order to model all elements of gas turbine and steam cycles [14, 15], however, with regard to the procedure adopted in this research, only following equations are mentioned.",
+      "terms": [
+        "energy balance",
+        "steady-state",
+        "gas turbine",
+        "steam cycles"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-013",
+      "doc_id": "R024",
+      "section": "Energy analysis: Net produced power by gas turbine",
+      "page_start": 3014,
+      "page_end": 3014,
+      "text": "Ẇ_net = Ẇ_GT − Ẇ_AC (1) (net produced power by gas turbine = gas turbine power − air compressor power) The following parameters are considered constant: R = 0.2944 kJ/kgK, LHV = 50000 kJ/kg, and η_CCh = 99%.",
+      "terms": [
+        "Ẇ_net",
+        "Ẇ_GT",
+        "Ẇ_AC",
+        "LHV",
+        "η_CCh"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-014",
+      "doc_id": "R024",
+      "section": "Energy analysis: Duct burner",
+      "page_start": 3014,
+      "page_end": 3015,
+      "text": "The modeling of duct burners is similar to the combustion chamber modeling. The amount of the fuel fed to duct burner is regarded as a variable and the amount of fed fuel should be less than 1 kg/s in order to prevent the overheating of the super heater pipes [14]. ṁ_g C_pg + ṁ_f,DB LHV = ṁ_g,in,HRSG C_p,g,in,HRSG T_E + (1 − η_CCh,DB) ṁ_f,DB LHV (2) (duct burner energy balance: gas energy plus duct burner fuel heat input = energy of HRSG inlet gas at T_E plus the fuel heat not released due to duct burner combustion efficiency η_CCh,DB)",
+      "terms": [
+        "duct burners",
+        "combustion chamber modeling",
+        "super heater pipes",
+        "ṁ_f,DB",
+        "LHV",
+        "η_CCh,DB",
+        "T_E"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-015",
+      "doc_id": "R024",
+      "section": "Energy analysis: HRSG",
+      "page_start": 3015,
+      "page_end": 3015,
+      "text": "With regard to the similarities between single and dual-pressure HRSG equations, the dual-pressure HRSG equations are only presented below [13]. In single and dual-pressure boilers (fig. 2), the approach point temperature difference values are considered 40 K [8] and 15 K (fig. 3), respectively. In the design process, the pinch temperature difference is less than 10 K in none of the HRSG. By using the energy equations for water/steam and gas in different parts of HRSG [15, 17-23]: Steam/water flow T_gt,out,pre,eva = T_pre,eva + DELTA_T_pre,pinch (3) (gas temperature leaving the pre-heater evaporator = pre-heater evaporator temperature + pinch temperature difference) T_gt,out,hp,eva = T_hp,eva + DELTA_T_hp,pinch (4) (gas temperature leaving the HP evaporator = HP evaporator temperature + HP pinch temperature difference) T_gt,out,lp,eva = T_lp,eva + DELTA_T_lp,pinch (5) (gas temperature leaving the LP evaporator = LP evaporator temperature + LP pinch temperature difference)",
+      "terms": [
+        "dual-pressure HRSG",
+        "approach point temperature difference",
+        "pinch temperature difference",
+        "T_gt,out,hp,eva",
+        "DELTA_T_hp,pinch",
+        "T_lp,eva"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-016",
+      "doc_id": "R024",
+      "section": "Energy analysis: HRSG",
+      "page_start": 3015,
+      "page_end": 3015,
+      "text": "Gas flow E to F: ṁ_g,in,HRSG C_p,gt (T_E − T_F)(1 − E_loss) = ṁ_hp (h_12 − h_11 + h_16 − h_15) (6) (heat given up by the gas between points E and F, less the HRSG energy loss = heat absorbed by HP steam between points 11-12 and 15-16) F to G: ṁ_g,in,HRSG C_p,gt (T_F − T_G)(1 − E_loss) = ṁ_hp (h_11 − h_10) (7) (gas heat released between F and G = HP steam/water enthalpy rise from point 10 to 11) G to H: ṁ_g,in,HRSG C_p,gt (T_G − T_H)(1 − E_loss) = ṁ_hp (h_10 − h_5) + ṁ_Lp (h_7 – h_5) (8) (gas heat released between G and H = HP water enthalpy rise from 5 to 10 + LP enthalpy rise from 5 to 7) H to I: ṁ_g,in,HRSG C_p,gt (T_H − T_I)(1 − E_loss) = (ṁ_hp + ṁ_Lp)(h_5 − h_4) (9) (gas heat released between H and I = enthalpy rise of the total HP + LP water flow from 4 to 5) I to J: ṁ_g,in,HRSG C_p,gt (T_J − T_I)(1 − E_loss) = (ṁ_hp + ṁ_Lp)(h_4 − h_2) (10) (gas heat released between I and J, temperature difference as printed = enthalpy rise of the total water flow from 2 to 4) J to K: ṁ_g,in,HRSG C_p,gt (T_J − T_K)(1 − E_loss) = (ṁ_hp + ṁ_Lp)(h_2 − h_1) (11) (gas heat released between J and K = enthalpy rise of the total water flow from 1 to 2) The amount of emerged steam is defined: ṁ_steam = K ṁ_cond (12) (amount of generated steam = generated steam coefficient K × condenser steam flow ṁ_cond)",
+      "terms": [
+        "ṁ_g,in,HRSG",
+        "C_p,gt",
+        "E_loss",
+        "ṁ_hp",
+        "ṁ_Lp",
+        "ṁ_steam",
+        "ṁ_cond"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-017",
+      "doc_id": "R024",
+      "section": "Energy analysis: Steam turbine",
+      "page_start": 3015,
+      "page_end": 3015,
+      "text": "The steam turbines generated power is calculated by eq. (13): Ẇ_ST = Σ_stages ṁ_ST,in (h_ST,in – h_ST,out) (13) (steam turbine power = sum over stages of inlet steam flow × enthalpy drop) The thermal efficiency of the repowered cycles is obtained by eq. (14): η_CC = (Ẇ_GT − Ẇ_AC + Ẇ_steam) / Q̇_in,CC (14) (combined cycle thermal efficiency = net gas turbine power plus steam power divided by heat input to the combined cycle)",
+      "terms": [
+        "steam turbines",
+        "Ẇ_ST",
+        "thermal efficiency",
+        "repowered cycles",
+        "η_CC",
+        "Q̇_in,CC"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-018",
+      "doc_id": "R024",
+      "section": "Energy analysis: Steam turbine",
+      "page_start": 3016,
+      "page_end": 3016,
+      "text": "Figure 2. Schematic diagram of steam cycle of single-pressure combined cycle Figure 3. Schematic diagram of steam cycle of dual-pressure reheat combined cycle",
+      "terms": [
+        "single-pressure combined cycle",
+        "dual-pressure reheat combined cycle",
+        "steam cycle"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-019",
+      "doc_id": "R024",
+      "section": "Exergy analysis",
+      "page_start": 3016,
+      "page_end": 3016,
+      "text": "Exergy analysis is defined according to the first and second laws of thermodynamics to analyze and determine the system inefficiencies. Exergy is defined as follows [14]: If a system contains n subsets of temperature (T) pressure (P) and the mole fractions Y_i (i = 1,2,…,n), exergy is defined as the maximum obtainable theoretical work in process from state (P, T, Y_i) to dead state (P_0, T_0, Y_i). It should be mentioned that the dead state (P_0, T_0, Y_i) is a system state in which there is a perfect balance between the system and its environment with temperature T_0 and pressure P_0. This state is also considered as the reference state. Exergy is divided into four types: physical exergy, chemical exergy, kinematic exergy, and potential exergy. Physical and chemical exergies have just been of interest in most exergy analyses. In the analysis employed in this study, the kinematic and potential exergies were ignored. Using the first and second laws of thermodynamics, some equations are adopted to model different parts of both gas and steam cycles [8, 14, 24]. Exergy efficiencies of the new combined cycles and HRSGs are evaluated using the following equations: η_ex,CC = (Ẇ_GT − Ẇ_AC + Ẇ_steam) / Ė_f (15) (combined cycle exergy efficiency = net power output / fuel exergy) η_ex,HRSG = (Ė_steam,out − Ė_water,in) / (Ė_flue,gas,in − Ė_flue,gas,out) (16) (HRSG exergy efficiency = exergy gained by water/steam / exergy given up by flue gas)",
+      "terms": [
+        "Exergy analysis",
+        "dead state",
+        "physical exergy",
+        "chemical exergy",
+        "reference state",
+        "η_ex,CC",
+        "η_ex,HRSG",
+        "Ė_f"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-020",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3016,
+      "page_end": 3016,
+      "text": "Two combined cycles were designed by using two different HRSG. In the single-pressure repowered cycle, the steam injection was just possible through one pressure line; however, the steam could be injected with two different pressures in dual-pressure mode. In these cycles, natural gas was used as the fuel [14, 16]. The specifications of the gas turbine used in both cycles are listed in tab. 2. The conditions of the condenser and steam turbines were considered the same for both cycles in terms of temperature and the entry steam pressure based on the reference steam cycle. These conditions for single- and dual-pressure cycles are listed in tab. 3. Gas properties at different points of the gas turbine cycle are represented in tab. 4. It must be noted that a similar type of gas turbine was inserted in both cycles. The modeling reference ambient was air containing the following thermodynamic conditions: P = 1.013 bar, T = 298.15 K [24].",
+      "terms": [
+        "single-pressure repowered cycle",
+        "dual-pressure mode",
+        "steam injection",
+        "natural gas",
+        "gas turbine",
+        "condenser",
+        "reference steam cycle"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-021",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3017,
+      "page_end": 3017,
+      "text": "Table 2. Some characteristics of the gas turbine. Fuel flow (LHV): Unit=MW; Amount=50. Pressure ratio: Unit=–; Amount=15.98. Gas turbine inlet temperature: Unit=K; Amount=1353. Gas turbine outlet temperature: Unit=K; Amount=793.2. Power output: Unit=MW; Amount=160. Table 3. Input data to model the cycles. HP inlet temperature: Unit=K; Amount=783.1. HP inlet pressure: Unit=bar; Amount=87.21. LP inlet temperature: Unit=K; Amount=580^a. LP inlet pressure: Unit=bar; Amount=10.27. Condenser pressure: Unit=bar; Amount=0.72. a = Hot reheat temperature",
+      "terms": [
+        "Fuel flow (LHV)",
+        "Pressure ratio",
+        "Gas turbine inlet temperature",
+        "Gas turbine outlet temperature",
+        "HP inlet pressure",
+        "LP inlet temperature",
+        "Condenser pressure",
+        "Hot reheat temperature"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-022",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3017,
+      "page_end": 3017,
+      "text": "Table 4. Steam characteristics of the gas turbine cycle. Point A: Temperature [K]=298.15; Pressure [bar]=1.013; Mass Flow [kgs^–1]=544.9; Specific exergy [kJkg^–1]=0; Exergy [MW]=0. Point B: Temperature [K]=733.2; Pressure [bar]=16.19; Mass Flow [kgs^–1]=544.9; Specific exergy [kJkg^–1]=417.3; Exergy [MW]=227.3. Point C: Temperature [K]=1353; Pressure [bar]=15.71; Mass Flow [kgs^–1]=555.4; Specific exergy [kJkg^–1]=1013.6; Exergy [MW]=562.8. Point D: Temperature [K]=793.2; Pressure [bar]=1.013; Mass Flow [kgs^–1]=555.4; Specific exergy [kJkg^–1]=235.2; Exergy [MW]=130.6.",
+      "terms": [
+        "gas turbine cycle",
+        "Temperature",
+        "Pressure",
+        "Mass Flow",
+        "Specific exergy",
+        "Exergy"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-023",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3017,
+      "page_end": 3017,
+      "text": "In continuation, the thermodynamic conditions of water/steam and gas at all the points of the repowered cycle were investigated for both fired and unfired duct burner. In the fired mode of the single- and dual-pressure cycles, the specific mode ṁ_f,DB = 0.5 kg/s was selected. The coefficient K in the single pressure for both with and without the duct burner was taken as 0.814 and 0.727, respectively, to make the performance conditions of the combined cycle in terms of pinch point temperature difference and amount of generated steam become close to the optimum. For the dual-pressure states, the coefficients were 1 and 1.093, respectively, (tabs. 5-8). The duct burner conditions might change with respect to the cycle demands during each time interval by changes made in feeding fuel flow. For example, the amount of steam generation increased as the flow of fuel fed to duct burner and the gas temperature increased. This is shown in the following tables and diagrams and, with such a trend, the amount of K is also increasing. In tabs. 9 and 10, the information on the performance of repowered cycles in different states of using the duct burners is listed.",
+      "terms": [
+        "fired",
+        "unfired",
+        "duct burner",
+        "ṁ_f,DB",
+        "coefficient K",
+        "pinch point temperature difference",
+        "single pressure",
+        "dual-pressure"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-024",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3017,
+      "page_end": 3017,
+      "text": "Table 5. Water/steam properties in fired and unfired modes for single-pressure repowered cycle (Unfired case load 100% T_amb = 298.15 K; Fired case ṁ_f,DB = 0.5 kg/s load 100% T_amb = 298.15 K), points 1-5. Point 1: Unfired Temperature [K]=316.2; Unfired Pressure [bar]=6.43; Unfired Mass flow [kgs^–1]=53.16; Unfired Enthalpy [kJkg^–1]=180.9; Unfired Exergy [MW]=0.138; Fired Temperature [K]=316.2; Fired Pressure [bar]=6.43; Fired Mass flow [kgs^–1]=61.29; Fired Enthalpy [kJkg^–1]=180.9; Fired Exergy [MW]=0.159. Point 2: Unfired Temperature [K]=540.2; Unfired Pressure [bar]=6.237; Unfired Mass flow [kgs^–1]=53.16; Unfired Enthalpy [kJkg^–1]=1168; Unfired Exergy [MW]=15.825; Fired Temperature [K]=540.2; Fired Pressure [bar]=6.237; Fired Mass flow [kgs^–1]=61.29; Fired Enthalpy [kJkg^–1]=1168; Fired Exergy [MW]=18.24. Point 3: Unfired Temperature [K]=541.7; Unfired Pressure [bar]=98.07; Unfired Mass flow [kgs^–1]=53.16; Unfired Enthalpy [kJkg^–1]=1168; Unfired Exergy [MW]=15.841; Fired Temperature [K]=541.6; Fired Pressure [bar]=98.07; Fired Mass flow [kgs^–1]=61.29; Fired Enthalpy [kJkg^–1]=1168; Fired Exergy [MW]=18.26. Point 4: Unfired Temperature [K]=580.2; Unfired Pressure [bar]=98.07; Unfired Mass flow [kgs^–1]=53.16; Unfired Enthalpy [kJkg^–1]=2734; Unfired Exergy [MW]=56.083; Fired Temperature [K]=580.2; Fired Pressure [bar]=98.07; Fired Mass flow [kgs^–1]=61.29; Fired Enthalpy [kJkg^–1]=2734; Fired Exergy [MW]=64.66. Point 5: Unfired Temperature [K]=788.2; Unfired Pressure [bar]=91.08; Unfired Mass flow [kgs^–1]=53.16; Unfired Enthalpy [kJkg^–1]=3422; Unfired Exergy [MW]=76.071; Fired Temperature [K]=788.2; Fired Pressure [bar]=91.08; Fired Mass flow [kgs^–1]=61.29; Fired Enthalpy [kJkg^–1]=3422; Fired Exergy [MW]=87.70.",
+      "terms": [
+        "single-pressure repowered cycle",
+        "fired",
+        "unfired",
+        "T_amb",
+        "ṁ_f,DB",
+        "Enthalpy",
+        "Exergy"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-025",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3017,
+      "page_end": 3017,
+      "text": "Table 5. Water/steam properties in fired and unfired modes for single-pressure repowered cycle (Unfired case load 100% T_amb = 298.15 K; Fired case ṁ_f,DB = 0.5 kg/s load 100% T_amb = 298.15 K), points 6-10. Point 6: Unfired Temperature [K]=783.1; Unfired Pressure [bar]=87.21; Unfired Mass flow [kgs^–1]=53.16; Unfired Enthalpy [kJkg^–1]=3415; Unfired Exergy [MW]=75.434; Fired Temperature [K]=783.1; Fired Pressure [bar]=87.21; Fired Mass flow [kgs^–1]=61.29; Fired Enthalpy [kJkg^–1]=3415; Fired Exergy [MW]=86.97. Point 7: Unfired Temperature [K]=580.4; Unfired Pressure [bar]=9.77; Unfired Mass flow [kgs^–1]=53.16; Unfired Enthalpy [kJkg^–1]=3067; Unfired Exergy [MW]=49.78; Fired Temperature [K]=556.1; Fired Pressure [bar]=10.94; Fired Mass flow [kgs^–1]=61.29; Fired Enthalpy [kJkg^–1]=3064; Fired Exergy [MW]=57.39. Point 8: Unfired Temperature [K]=392.8; Unfired Pressure [bar]=1.22; Unfired Mass flow [kgs^–1]=53.16; Unfired Enthalpy [kJkg^–1]=2714; Unfired Exergy [MW]=27.72; Fired Temperature [K]=392.8; Fired Pressure [bar]=1.371; Fired Mass flow [kgs^–1]=61.29; Fired Enthalpy [kJkg^–1]=2712; Fired Exergy [MW]=31.96. Point 9: Unfired Temperature [K]=312.6; Unfired Pressure [bar]=0.071; Unfired Mass flow [kgs^–1]=53.16; Unfired Enthalpy [kJkg^–1]=2325; Unfired Exergy [MW]=5.438; Fired Temperature [K]=315.3; Fired Pressure [bar]=0.080; Fired Mass flow [kgs^–1]=61.29; Fired Enthalpy [kJkg^–1]=2337; Fired Exergy [MW]=7.33. Point 10: Unfired Temperature [K]=316.2; Unfired Pressure [bar]=0.72; Unfired Mass flow [kgs^–1]=53.16; Unfired Enthalpy [kJkg^–1]=180.1; Unfired Exergy [MW]=0.116; Fired Temperature [K]=316.2; Fired Pressure [bar]=0.72; Fired Mass flow [kgs^–1]=61.29; Fired Enthalpy [kJkg^–1]=180.1; Fired Exergy [MW]=0.134.",
+      "terms": [
+        "single-pressure repowered cycle",
+        "fired",
+        "unfired",
+        "T_amb",
+        "ṁ_f,DB",
+        "Enthalpy",
+        "Exergy"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-026",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3018,
+      "page_end": 3018,
+      "text": "Table 6. Gas side properties in fired and unfired cases for single-pressure repowered cycle (Unfired case load 100% T_amb = 298.15 K; Fired case ṁ_f,DB = 0.5 kg/s load 100% T_amb = 298.15 K). Point E: Unfired Temperature [K]=793.2; Unfired Pressure [bar]=1.013; Unfired Mass flow [kgs^–1]=555.4; Unfired Specific exergy [kJkg^–1]=235.17; Unfired Exergy [MW]=130.61; Fired Temperature [K]=823.6; Fired Pressure [bar]=1.013; Fired Mass flow [kgs^–1]=555.9; Fired Specific exergy [kJkg^–1]=255.19; Fired Exergy [MW]=144.08. Point F: Unfired Temperature [K]=733.2; Unfired Pressure [bar]=1.039; Unfired Mass flow [kgs^–1]=555.4; Unfired Specific exergy [kJkg^–1]=192.50; Unfired Exergy [MW]=106.91; Fired Temperature [K]=755; Fired Pressure [bar]=1.039; Fired Mass flow [kgs^–1]=555.9; Fired Specific exergy [kJkg^–1]=208.4; Fired Exergy [MW]=115.84. Point G: Unfired Temperature [K]=590.2; Unfired Pressure [bar]=1.026; Unfired Mass flow [kgs^–1]=555.4; Unfired Specific exergy [kJkg^–1]=98.59; Unfired Exergy [MW]=54.75; Fired Temperature [K]=590.2; Fired Pressure [bar]=1.026; Fired Mass flow [kgs^–1]=555.9; Fired Specific exergy [kJkg^–1]=98.62; Fired Exergy [MW]=54.82. Point H: Unfired Temperature [K]=499.9; Unfired Pressure [bar]=1.013; Unfired Mass flow [kgs^–1]=555.4; Unfired Specific exergy [kJkg^–1]=51.42; Unfired Exergy [MW]=28.55; Fired Temperature [K]=486.2; Fired Pressure [bar]=1.013; Fired Mass flow [kgs^–1]=555.9; Fired Specific exergy [kJkg^–1]=45.45; Fired Exergy [MW]=25.26.",
+      "terms": [
+        "Gas side properties",
+        "single-pressure repowered cycle",
+        "fired",
+        "unfired",
+        "Specific exergy",
+        "Exergy"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-027",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3018,
+      "page_end": 3018,
+      "text": "Table 7. Water/steam specifications in fired and unfired modes for dual-pressure repowered cycle (Unfired case load 100% T_amb = 298.15 K; Fired case ṁ_f,DB = 0.5 kg/s load 100% T_amb = 298.15 K), points 1-5. Point 1: Unfired Temperature [K]=316.2; Unfired Pressure [bar]=6.43; Unfired Mass flow [kgs^–1]=73.05; Unfired Enthalpy [kJkg^–1]=180.9; Unfired Exergy [MW]=0.207; Fired Temperature [K]=316.2; Fired Pressure [bar]=6.43; Fired Mass flow [kgs^–1]=79.84; Fired Enthalpy [kJ^–1kg]=180.9; Fired Exergy [MW]=0.22. Point 2: Unfired Temperature [K]=418.5; Unfired Pressure [bar]=6.237; Unfired Mass flow [kgs^–1]=73.05; Unfired Enthalpy [kJkg^–1]=612.5; Unfired Exergy [MW]=5.99; Fired Temperature [K]=418.5; Fired Pressure [bar]=6.237; Fired Mass flow [kgs^–1]=79.84; Fired Enthalpy [kJ^–1kg]=612.5; Fired Exergy [MW]=6.55. Point 3: Unfired Temperature [K]=433.5; Unfired Pressure [bar]=6.237; Unfired Mass flow [kgs^–1]=73.05; Unfired Enthalpy [kJkg^–1]=677.3; Unfired Exergy [MW]=7.41; Fired Temperature [K]=433.5; Fired Pressure [bar]=6.237; Fired Mass flow [kgs^–1]=79.84; Fired Enthalpy [kJ^–1kg]=677.3; Fired Exergy [MW]=8.1. Point 4: Unfired Temperature [K]=433.6; Unfired Pressure [bar]=11.61; Unfired Mass flow [kgs^–1]=73.05; Unfired Enthalpy [kJkg^–1]=678.1; Unfired Exergy [MW]=7.46; Fired Temperature [K]=433.7; Fired Pressure [bar]=12.7; Fired Mass flow [kgs^–1]=79.84; Fired Enthalpy [kJ^–1kg]=678.2; Fired Exergy [MW]=8.16. Point 5: Unfired Temperature [K]=443.3; Unfired Pressure [bar]=11.27; Unfired Mass flow [kgs^–1]=73.05; Unfired Enthalpy [kJkg^–1]=720.2; Unfired Exergy [MW]=8.44; Fired Temperature [K]=447.3; Fired Pressure [bar]=12.31; Fired Mass flow [kgs^–1]=79.84; Fired Enthalpy [kJ^–1kg]=737.2; Fired Exergy [MW]=9.7.",
+      "terms": [
+        "dual-pressure repowered cycle",
+        "fired",
+        "unfired",
+        "Enthalpy",
+        "Exergy",
+        "ṁ_f,DB"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-028",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3018,
+      "page_end": 3018,
+      "text": "Table 7. Water/steam specifications in fired and unfired modes for dual-pressure repowered cycle (Unfired case load 100% T_amb = 298.15 K; Fired case ṁ_f,DB = 0.5 kg/s load 100% T_amb = 298.15 K), points 6-10. Point 6: Unfired Temperature [K]=458.3; Unfired Pressure [bar]=11.27; Unfired Mass flow [kgs^–1]=17.17; Unfired Enthalpy [kJkg^–1]=2782; Unfired Exergy [MW]=14.34; Fired Temperature [K]=462.3; Fired Pressure [bar]=12.31; Fired Mass flow [kgs^–1]=18.76; Fired Enthalpy [kJ^–1kg]=2785; Fired Exergy [MW]=15.9. Point 7: Unfired Temperature [K]=584.1; Unfired Pressure [bar]=10.87; Unfired Mass flow [kgs^–1]=17.17; Unfired Enthalpy [kJkg^–1]=3072; Unfired Exergy [MW]=16.36; Fired Temperature [K]=584.1; Fired Pressure [bar]=11.88; Fired Mass flow [kgs^–1]=18.76; Fired Enthalpy [kJ^–1kg]=3069; Fired Exergy [MW]=18.08. Point 8: Unfired Temperature [K]=580.4; Unfired Pressure [bar]=10.27; Unfired Mass flow [kgs^–1]=17.17; Unfired Enthalpy [kJkg^–1]=3065; Unfired Exergy [MW]=16.18; Fired Temperature [K]=580.4; Fired Pressure [bar]=11.23; Fired Mass flow [kgs^–1]=18.76; Fired Enthalpy [kJ^–1kg]=3063; Fired Exergy [MW]=17.88. Point 9: Unfired Temperature [K]=445.0; Unfired Pressure [bar]=98.59; Unfired Mass flow [kgs^–1]=55.88; Unfired Enthalpy [kJkg^–1]=732.3; Unfired Exergy [MW]=7.04; Fired Temperature [K]=449.0; Fired Pressure [bar]=98.59; Fired Mass flow [kgs^–1]=61.08; Fired Enthalpy [kJ^–1kg]=749.8; Fired Exergy [MW]=8.06. Point 10: Unfired Temperature [K]=565.9; Unfired Pressure [bar]=95.63; Unfired Mass flow [kgs^–1]=55.88; Unfired Enthalpy [kJkg^–1]=1302; Unfired Exergy [MW]=20.09; Fired Temperature [K]=565.9; Fired Pressure [bar]=95.63; Fired Mass flow [kgs^–1]=61.08; Fired Enthalpy [kJ^–1kg]=1302; Fired Exergy [MW]=21.96.",
+      "terms": [
+        "dual-pressure repowered cycle",
+        "fired",
+        "unfired",
+        "Enthalpy",
+        "Exergy",
+        "ṁ_f,DB"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-029",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3018,
+      "page_end": 3018,
+      "text": "Table 7. Water/steam specifications in fired and unfired modes for dual-pressure repowered cycle (Unfired case load 100% T_amb = 298.15 K; Fired case ṁ_f,DB = 0.5 kg/s load 100% T_amb = 298.15 K), points 11-15. Point 11: Unfired Temperature [K]=580.9; Unfired Pressure [bar]=95.63; Unfired Mass flow [kgs^–1]=55.88; Unfired Enthalpy [kJkg^–1]=2732; Unfired Exergy [MW]=58.95; Fired Temperature [K]=580.9; Fired Pressure [bar]=95.63; Fired Mass flow [kgs^–1]=61.08; Fired Enthalpy [kJ^–1kg]=2732; Fired Exergy [MW]=64.43. Point 12: Unfired Temperature [K]=788.2; Unfired Pressure [bar]=92.29; Unfired Mass flow [kgs^–1]=55.88; Unfired Enthalpy [kJkg^–1]=3422; Unfired Exergy [MW]=79.96; Fired Temperature [K]=788.2; Fired Pressure [bar]=92.29; Fired Mass flow [kgs^–1]=61.08; Fired Enthalpy [kJ^–1kg]=3422; Fired Exergy [MW]=87.4. Point 13: Unfired Temperature [K]=783.1; Unfired Pressure [bar]=87.21; Unfired Mass flow [kgs^–1]=55.88; Unfired Enthalpy [kJkg^–1]=3415; Unfired Exergy [MW]=79.29; Fired Temperature [K]=783.1; Fired Pressure [bar]=87.21; Fired Mass flow [kgs^–1]=61.08; Fired Enthalpy [kJ^–1kg]=3415; Fired Exergy [MW]=86.67. Point 14: Unfired Temperature [K]=552.1; Unfired Pressure [bar]=11.38; Unfired Mass flow [kgs^–1]=55.88; Unfired Enthalpy [kJkg^–1]=3001; Unfired Exergy [MW]=51.73; Fired Temperature [K]=557.8; Fired Pressure [bar]=12.44; Fired Mass flow [kgs^–1]=61.08; Fired Enthalpy [kJ^–1kg]=3010; Fired Exergy [MW]=57.53. Point 15: Unfired Temperature [K]=552.1; Unfired Pressure [bar]=11.38; Unfired Mass flow [kgs^–1]=55.88; Unfired Enthalpy [kJkg^–1]=3001; Unfired Exergy [MW]=51.73; Fired Temperature [K]=557.8; Fired Pressure [bar]=12.44; Fired Mass flow [kgs^–1]=61.08; Fired Enthalpy [kJ^–1kg]=3010; Fired Exergy [MW]=57.53.",
+      "terms": [
+        "dual-pressure repowered cycle",
+        "fired",
+        "unfired",
+        "Enthalpy",
+        "Exergy",
+        "ṁ_f,DB"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-030",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3018,
+      "page_end": 3018,
+      "text": "Table 7. Water/steam specifications in fired and unfired modes for dual-pressure repowered cycle (Unfired case load 100% T_amb = 298.15 K; Fired case ṁ_f,DB = 0.5 kg/s load 100% T_amb = 298.15 K), points 16-20. Point 16: Unfired Temperature [K]=584.1; Unfired Pressure [bar]=10.81; Unfired Mass flow [kgs^–1]=55.88; Unfired Enthalpy [kJkg^–1]=3072; Unfired Exergy [MW]=53.24; Fired Temperature [K]=584.1; Fired Pressure [bar]=11.82; Fired Mass flow [kgs^–1]=61.08; Fired Enthalpy [kJ^–1kg]=3070; Fired Exergy [MW]=58.84. Point 17: Unfired Temperature [K]=580.4; Unfired Pressure [bar]=10.27; Unfired Mass flow [kgs^–1]=73.05; Unfired Enthalpy [kJkg^–1]=3065; Unfired Exergy [MW]=52.67; Fired Temperature [K]=580.4; Fired Pressure [bar]=11.23; Fired Mass flow [kgs^–1]=61.08; Fired Enthalpy [kJ^–1kg]=3063; Fired Exergy [MW]=58.22. Point 18: Unfired Temperature [K]=392.8; Unfired Pressure [bar]=1.682; Unfired Mass flow [kgs^–1]=73.05; Unfired Enthalpy [kJkg^–1]=2730; Unfired Exergy [MW]=42.74; Fired Temperature [K]=392.8; Fired Pressure [bar]=11.83; Fired Mass flow [kgs^–1]=79.84; Fired Enthalpy [kJ^–1kg]=2707; Fired Exergy [MW]=45.9. Point 19: Unfired Temperature [K]=318.7; Unfired Pressure [bar]=0.098; Unfired Mass flow [kgs^–1]=73.05; Unfired Enthalpy [kJkg^–1]=2344; Unfired Exergy [MW]=10.34; Fired Temperature [K]=320.4; Fired Pressure [bar]=0.107; Fired Mass flow [kgs^–1]=79.84; Fired Enthalpy [kJ^–1kg]=2366; Fired Exergy [MW]=12.31. Point 20: Unfired Temperature [K]=316.2; Unfired Pressure [bar]=0.72; Unfired Mass flow [kgs^–1]=73.05; Unfired Enthalpy [kJkg^–1]=180.1; Unfired Exergy [MW]=0.16; Fired Temperature [K]=316.2; Fired Pressure [bar]=0.72; Fired Mass flow [kgs^–1]=79.84; Fired Enthalpy [kJ^–1kg]=180.1; Fired Exergy [MW]=0.174.",
+      "terms": [
+        "dual-pressure repowered cycle",
+        "fired",
+        "unfired",
+        "Enthalpy",
+        "Exergy",
+        "ṁ_f,DB"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-031",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3018,
+      "page_end": 3018,
+      "text": "Table 8. Gas side properties in fired and unfired cases for dual-pressure repowered cycle (Unfired case load100% T_amb = 298.15 K; Fired case ṁ_f,DB = 0.5 kg/s load 100% T_amb = 298.15 K). Point E: Unfired Temperature [K]=793.2; Unfired Pressure [bar]=1.013; Unfired Mass flow [kgs^–1]=555.4; Unfired Specific exergy [kJkg^–1]=235.2; Unfired Exergy [MW]=130.6; Fired Temperature [K]=823.6; Fired Pressure [bar]=1.013; Fired Mass flow [kgs^–1]=555.9; Fired Specific exergy [kJkg^–1]=259.9; Fired Exergy [MW]=144.47. Point F: Unfired Temperature [K]=723.6; Unfired Pressure [bar]=1.037; Unfired Mass flow [kgs^–1]=555.4; Unfired Specific exergy [kJkg^–1]=185.3; Unfired Exergy [MW]=102.9; Fired Temperature [K]=749.3; Fired Pressure [bar]=1.037; Fired Mass flow [kgs^–1]=555.9; Fired Specific exergy [kJkg^–1]=204; Fired Exergy [MW]=113.4. Point G: Unfired Temperature [K]=586.0; Unfired Pressure [bar]=1.028; Unfired Mass flow [kgs^–1]=555.4; Unfired Specific exergy [kJkg^–1]=96.69; Unfired Exergy [MW]=53.7; Fired Temperature [K]=599.6; Fired Pressure [bar]=1.028; Fired Mass flow [kgs^–1]=555.9; Fired Specific exergy [kJkg^–1]=104.4; Fired Exergy [MW]=58.35. Point H: Unfired Temperature [K]=467.9; Unfired Pressure [bar]=1.021; Unfired Mass flow [kgs^–1]=555.4; Unfired Specific exergy [kJkg^–1]=38.61; Unfired Exergy [MW]=21.45; Fired Temperature [K]=473.4; Fired Pressure [bar]=1.021; Fired Mass flow [kgs^–1]=555.9; Fired Specific exergy [kJkg^–1]=40.8; Fired Exergy [MW]=22.68. Point I: Unfired Temperature [K]=462.5; Unfired Pressure [bar]=1.018; Unfired Mass flow [kgs^–1]=555.4; Unfired Specific exergy [kJkg^–1]=36.21; Unfired Exergy [MW]=20.1; Fired Temperature [K]=465.0; Fired Pressure [bar]=1.018; Fired Mass flow [kgs^–1]=555.9; Fired Specific exergy [kJkg^–1]=37.19; Fired Exergy [MW]=20.67. Point J: Unfired Temperature [K]=454.5; Unfired Pressure [bar]=1.015; Unfired Mass flow [kgs^–1]=555.4; Unfired Specific exergy [kJkg^–1]=32.92; Unfired Exergy [MW]=18.3; Fired Temperature [K]=456.3; Fired Pressure [bar]=1.015; Fired Mass flow [kgs^–1]=555.9; Fired Specific exergy [kJkg^–1]=33.58; Fired Exergy [MW]=18.66. Point K: Unfired Temperature [K]=398.6; Unfired Pressure [bar]=1.013; Unfired Mass flow [kgs^–1]=555.4; Unfired Specific exergy [kJkg^–1]=14.63; Unfired Exergy [MW]=8.1; Fired Temperature [K]=295.2; Fired Pressure [bar]=1.013; Fired Mass flow [kgs^–1]=555.9; Fired Specific exergy [kJkg^–1]=13.74; Fired Exergy [MW]=7.63.",
+      "terms": [
+        "Gas side properties",
+        "dual-pressure repowered cycle",
+        "fired",
+        "unfired",
+        "Specific exergy",
+        "Exergy"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-032",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3019,
+      "page_end": 3019,
+      "text": "Table 9. Operation parameters of single pressure repowered cycle with changes in the fuel of duct burner. State 1: ṁ_f,DB [kgs^–1]=0; K=0.727; ṁ_steam [kgs^–1]=53.16; Ẇ_CC [MW]=221.1; T_in,HRSG [K]=793.2; T_out,stack [K]=499.9; T_HP,pinch [K]=10; E_loss,HRSG [MW]=26.86; η_loss,stack [MW]=28.42; η_Th,CC [%]=0.4192; η_ex,CC [%]=0.4066. State 2: ṁ_f,DB [kgs^–1]=0.111; K=0.729; ṁ_steam [kgs^–1]=53.28; Ẇ_CC [MW]=221.3; T_in,HRSG [K]=795.4; T_out,stack [K]=499.4; T_HP,pinch [K]=10.37; E_loss,HRSG [MW]=27.04; η_loss,stack [MW]=28.12; η_Th,CC [%]=0.4312; η_ex,CC [%]=0.4183. State 3: ṁ_f,DB [kgs^–1]=0.250; K=0.761; ṁ_steam [kgs^–1]=55.62; Ẇ_CC [MW]=224; T_in,HRSG [K]=803.9; T_out,stack [K]=495.1; T_HP,pinch [K]=10.06; E_loss,HRSG [MW]=28.48; η_loss,stack [MW]=27.08; η_Th,CC [%]=0.4306; η_ex,CC [%]=0.4177. State 4: ṁ_f,DB [kgs^–1]=0.361; K=0.782; ṁ_steam [kgs^–1]=57.18; Ẇ_CC [MW]=225.8; T_in,HRSG [K]=810.7; T_out,stack [K]=493.5; T_HP,pinch [K]=11.04; E_loss,HRSG [MW]=29.64; η_loss,stack [MW]=26.69; η_Th,CC [%]=0.4294; η_ex,CC [%]=0.4166. State 5: ṁ_f,DB [kgs^–1]=0.444; K=0.804; ṁ_steam [kgs^–1]=58.75; Ẇ_CC [MW]=227.5; T_in,HRSG [K]=815.8; T_out,stack [K]=490; T_HP,pinch [K]=10.22; E_loss,HRSG [MW]=30.51; η_loss,stack [MW]=25.86; η_Th,CC [%]=0.4293; η_ex,CC [%]=0.4165. State 6: ṁ_f,DB [kgs^–1]=0.500; K=0.814; ṁ_steam [kgs^–1]=59.53; Ẇ_CC [MW]=228.4; T_in,HRSG [K]=819.2; T_out,stack [K]=489.2; T_HP,pinch [K]=10.70; E_loss,HRSG [MW]=31.10; η_loss,stack [MW]=25.67; η_Th,CC [%]=0.4287; η_ex,CC [%]=0.4159. State 7: ṁ_f,DB [kgs^–1]=0.638; K=0.847; ṁ_steam [kgs^–1]=61.87; Ẇ_CC [MW]=231; T_in,HRSG [K]=827.6; T_out,stack [K]=484.8; T_HP,pinch [K]=10.34; E_loss,HRSG [MW]=32.57; η_loss,stack [MW]=24.65; η_Th,CC [%]=0.4280; η_ex,CC [%]=0.4152. State 8: ṁ_f,DB [kgs^–1]=0.750; K=0.868; ṁ_steam [kgs^–1]=63.44; Ẇ_CC [MW]=232.7; T_in,HRSG [K]=834.4; T_out,stack [K]=483.1; T_HP,pinch [K]=11.29; E_loss,HRSG [MW]=33.78; η_loss,stack [MW]=24.27; η_Th,CC [%]=0.4268; η_ex,CC [%]=0.4140. State 9: ṁ_f,DB [kgs^–1]=0.888; K=0.900; ṁ_steam [kgs^–1]=65.78; Ẇ_CC [MW]=235.2; T_in,HRSG [K]=842.8; T_out,stack [K]=478.7; T_HP,pinch [K]=10.90; E_loss,HRSG [MW]=35.28; η_loss,stack [MW]=23.27; η_Th,CC [%]=0.4259; η_ex,CC [%]=0.4131. State 10: ṁ_f,DB [kgs^–1]=1; K=0.921; ṁ_steam [kgs^–1]=67.34; Ẇ_CC [MW]=236.8; T_in,HRSG [K]=849.5; T_out,stack [K]=477.1; T_HP,pinch [K]=11.82; E_loss,HRSG [MW]=36.52; η_loss,stack [MW]=22.89; η_Th,CC [%]=0.4245; η_ex,CC [%]=0.4118.",
+      "terms": [
+        "single pressure repowered cycle",
+        "duct burner",
+        "ṁ_f,DB",
+        "ṁ_steam",
+        "T_out,stack",
+        "T_HP,pinch",
+        "E_loss,HRSG",
+        "η_ex,CC"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-033",
+      "doc_id": "R024",
+      "section": "Designed cycles",
+      "page_start": 3019,
+      "page_end": 3019,
+      "text": "Table 10. Operation parameters of dual-pressure repowered cycle with changes in the fuel of duct burner. State 1: ṁ_f,DB [kgs^–1]=0; K=1; ṁ_steam [kgs^–1]=73.05; Ẇ_CC [MW]=234.2; T_in,HRSG [K]=793.2; T_out,stack [K]=398.6; T_HP,pinch [K]=5.129; T_IP,pinch [K]=9.623; T_pre,pinch [K]=21; E_loss,HRSG [MW]=42.42; E_loss,stack [MW]=8.103; η_Th,CC [%]=0.4439; η_ex,CC [%]=0.4306. State 2: ṁ_f,DB [kgs^–1]=0.15; K=1.020; ṁ_steam [kgs^–1]=74.51; Ẇ_CC [MW]=235.3; T_in,HRSG [K]=802.3; T_out,stack [K]=400.7; T_HP,pinch [K]=10.79; T_IP,pinch [K]=12.72; T_pre,pinch [K]=24.21; E_loss,HRSG [MW]=44.57; E_loss,stack [MW]=8.428; η_Th,CC [%]=0.4396; η_ex,CC [%]=0.4265. State 3: ṁ_f,DB [kgs^–1]=0.25; K=1.047; ṁ_steam [kgs^–1]=76.48; Ẇ_CC [MW]=236.6; T_in,HRSG [K]=808.4; T_out,stack [K]=396.7; T_HP,pinch [K]=11.81; T_IP,pinch [K]=10.10; T_pre,pinch [K]=21.71; E_loss,HRSG [MW]=45.79; E_loss,stack [MW]=7.828; η_Th,CC [%]=0.4380; η_ex,CC [%]=0.4249. State 4: ṁ_f,DB [kgs^–1]=0.35; K=1.067; ṁ_steam [kgs^–1]=77.94; Ẇ_CC [MW]=237.4; T_in,HRSG [K]=814.5; T_out,stack [K]=395.5; T_HP,pinch [K]=14.23; T_IP,pinch [K]=9.925; T_pre,pinch [K]=21.58; E_loss,HRSG [MW]=47.14; E_loss,stack [MW]=7.649; η_Th,CC [%]=0.4355; η_ex,CC [%]=0.4225. State 5: ṁ_f,DB [kgs^–1]=0.5; K=1.093; ṁ_steam [kgs^–1]=79.84; Ẇ_CC [MW]=238.3; T_in,HRSG [K]=823.6; T_out,stack [K]=395.2; T_HP,pinch [K]=18.67; T_IP,pinch [K]=11.06; T_pre,pinch [K]=22.76; E_loss,HRSG [MW]=49.26; E_loss,stack [MW]=7.615; η_Th,CC [%]=0.4312; η_ex,CC [%]=0.4184. State 6: ṁ_f,DB [kgs^–1]=0.6; K=1.113; ṁ_steam [kgs^–1]=81.30; Ẇ_CC [MW]=238.9; T_in,HRSG [K]=829.6; T_out,stack [K]=394; T_HP,pinch [K]=21.08; T_IP,pinch [K]=10.93; T_pre,pinch [K]=22.63; E_loss,HRSG [MW]=50.64; E_loss,stack [MW]=7.439; η_Th,CC [%]=0.4284; η_ex,CC [%]=0.4156. State 7: ṁ_f,DB [kgs^–1]=0.7; K=1.133; ṁ_steam [kgs^–1]=82.77; Ẇ_CC [MW]=239.3; T_in,HRSG [K]=835.7; T_out,stack [K]=392.7; T_HP,pinch [K]=23.50; T_IP,pinch [K]=10.84; T_pre,pinch [K]=22.51; E_loss,HRSG [MW]=52.03; E_loss,stack [MW]=7.265; η_Th,CC [%]=0.4253; η_ex,CC [%]=0.4126. State 8: ṁ_f,DB [kgs^–1]=0.8; K=1.153; ṁ_steam [kgs^–1]=84.23; Ẇ_CC [MW]=239.5; T_in,HRSG [K]=841.7; T_out,stack [K]=391.5; T_HP,pinch [K]=25.92; T_IP,pinch [K]=10.76; T_pre,pinch [K]=22.40; E_loss,HRSG [MW]=53.43; E_loss,stack [MW]=7.093; η_Th,CC [%]=0.4220; η_ex,CC [%]=0.4093. State 9: ṁ_f,DB [kgs^–1]=0.9; K=1.173; ṁ_steam [kgs^–1]=85.69; Ẇ_CC [MW]=215.3; T_in,HRSG [K]=847.6; T_out,stack [K]=390.3; T_HP,pinch [K]=28.34; T_IP,pinch [K]=10.71; T_pre,pinch [K]=22.28; E_loss,HRSG [MW]=54.84; E_loss,stack [MW]=6.923; η_Th,CC [%]=0.3759; η_ex,CC [%]=0.3647. State 10: ṁ_f,DB [kgs^–1]=1; K=1.193; ṁ_steam [kgs^–1]=87.15; Ẇ_CC [MW]=215.7; T_in,HRSG [K]=853.6; T_out,stack [K]=389.1; T_HP,pinch [K]=30.76; T_IP,pinch [K]=10.69; T_pre,pinch [K]=22.17; E_loss,HRSG [MW]=56.27; E_loss,stack [MW]=6.756; η_Th,CC [%]=0.3734; η_ex,CC [%]=0.3623.",
+      "terms": [
+        "dual-pressure repowered cycle",
+        "duct burner",
+        "ṁ_f,DB",
+        "ṁ_steam",
+        "T_out,stack",
+        "T_IP,pinch",
+        "E_loss,stack",
+        "η_ex,CC"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-034",
+      "doc_id": "R024",
+      "section": "Results and discussion",
+      "page_start": 3019,
+      "page_end": 3020,
+      "text": "In this study, the effects of using a duct burner on the performance parameters of the repowered cycle, such as thermal and exergy efficiencies of repowered cycle, exergy efficiency of HRSG, exergy loss from stack, flow of produced steam and the production power of combined cycle, were studied. According to tabs. 9 and 10, it can be observed that the amount of steam generation increased in both repowered cycles using the duct burner because of an increase in the HRSG inlet gas temperature. In steam turbines, this issue led to the increased generation power. On the other hand, the exergy increase of the duct burner gas was absorbed by the HRSG and was consumed to generate more steam. As a result, the temperature of stack outlet gas and, subsequently, its exergy loss decreased. The exergy and thermal efficiencies were also reduced. It is also worth noting that those cycles were not similar in terms of general design and the pinch and approach temperatures and they were designed and studied with respect to their specific restrictions. The designed cycles were only similar in some cases such as condenser function conditions, steam turbines and thermodynamic conditions of steam generation in boilers. Thus, the results related to the exergy analysis of each cycle were studied in separate diagrams. Figures 5 and 6 reveal that the temperature of the HRSG inlet gas increased by increasing the gas burn in duct burners. To prevent the overheating of the super-heater pipes, the temperature must not exceed a certain point, depending on the type of super-heater design and its texture material. The effects of the amount of duct burner’s fuel flow and the amount of produced steam flow on the temperature of HRSG outlet gas (stack temperature) are shown in figs. 4 and 5. In each performance state of the duct burner, the stack temperature decreased with increasing the amount of k (k as the determining factor for the amount of produced steam), implying the absorption of more heat and better use of exergy by HRSG.",
+      "terms": [
+        "duct burner",
+        "HRSG inlet gas temperature",
+        "steam generation",
+        "stack outlet gas",
+        "exergy loss",
+        "super-heater pipes",
+        "stack temperature",
+        "pinch"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-035",
+      "doc_id": "R024",
+      "section": "Results and discussion",
+      "page_start": 3020,
+      "page_end": 3020,
+      "text": "Figure 4. Effects of the amount of duct burner’s fuel and produced steam on single-pressure HRSG outlet gas temperature Figure 5. Effects of the amount of duct burner’s fuel and produced steam on dual-pressure HRSG outlet gas temperature",
+      "terms": [
+        "duct burner’s fuel",
+        "single-pressure HRSG",
+        "dual-pressure HRSG",
+        "outlet gas temperature"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-036",
+      "doc_id": "R024",
+      "section": "Results and discussion",
+      "page_start": 3020,
+      "page_end": 3020,
+      "text": "In order to produce constant steam flow per k increase in different performance modes of the duct burner and with increasing the flow of fed fuel to the duct burner, the stack temperature increased and the exergy loss went up. Therefore, for producing more steam, temperature and exergy were increased in the duct burner. Such conditions could increase temperature and exergy of the heat exiting from the boiler an, consequently, increased exergy loss. For example, if the steam flow were ṁ_ST = 73.05 kg/s (k = 1) in the dual-pressure combined cycle, the stack temperature would be T_stack = 398.6, 452.3, and 505 K in the three states of ṁ_f,DB= 0, 0.8, and 1.6 kg/s, respectively. The comparison of the two HRSG shows that the steam generation potential of the dual-pressure HRSG was greater. For example, the maximum amount of generation occurred at k = 1.076 and k = 0.94 for the dual- and single-pressure cycles with ṁ_f,DB = 0, respectively. The effect of the amount of fuel flow of the duct burner and amount of steam production flow on exergy loss by stack are presented in figs. 6 and 7. With increasing the flow of the produced steam in each performance condition of the duct burner, the gas heat absorption increased and the exergy loss of the stack outlet gas decreased.",
+      "terms": [
+        "stack temperature",
+        "exergy loss",
+        "duct burner",
+        "ṁ_ST",
+        "T_stack",
+        "ṁ_f,DB",
+        "dual-pressure HRSG",
+        "gas heat absorption"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-037",
+      "doc_id": "R024",
+      "section": "Results and discussion",
+      "page_start": 3020,
+      "page_end": 3020,
+      "text": "Figure 6. Effects of the amount of duct burner’s fuel and produced steam on exergy loss of single-pressure HRSG stack Figure 7. Effects of the amount of duct burner’s fuel and produced steam on exergy loss of dual-pressure HRSG stack",
+      "terms": [
+        "duct burner’s fuel",
+        "exergy loss",
+        "single-pressure HRSG stack",
+        "dual-pressure HRSG stack"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-038",
+      "doc_id": "R024",
+      "section": "Results and discussion",
+      "page_start": 3021,
+      "page_end": 3021,
+      "text": "To produce a similar steam flow in different functional states of the duct burner, the exhaust gas temperature increased and the exergy loss by the stack increased through increasing the fuel flow of the duct burner. In both cycles, by increasing the steam flow generation in each state of the duct burner activation, the exergy efficiency of the HRSG, the thermal efficiency of the combined cycle and the exergy efficiency of the combined cycle increased due to the increased gas heat absorption. However, to generate the same steam flow in different performance states of the duct burner, these values decreased with increasing the flow of fuel being fed to the duct burner, which was due to the increased HRSG inlet gas temperature and increased exergy loss caused by gas. On the other hand, the fuel in the duct burner was consumed in the Rankin cycle. The efficiency of the Rankine cycle is less than combined cycle; therefore, the efficiency of the combined cycle decreased [3], figs. 9-11.",
+      "terms": [
+        "exhaust gas temperature",
+        "exergy loss",
+        "exergy efficiency of the HRSG",
+        "thermal efficiency",
+        "duct burner",
+        "Rankine cycle",
+        "HRSG inlet gas temperature"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-039",
+      "doc_id": "R024",
+      "section": "Results and discussion",
+      "page_start": 3021,
+      "page_end": 3021,
+      "text": "Figure 8. Effects of amount of duct burner’s fuel and produced steam on the exergy efficiency of single-pressure HRSG Figure 9. Effects of amount of duct burner’s fuel and produced steam on the exergy efficiency of dual-pressure HRSG Figure 10. Effects of amount of duct burner’s fuel and produced steam on the exergy efficiency of single-pressure repowered cycle Figure 11. Effects of amount of duct burner’s fuel and produced steam on the exergy efficiency of dual-pressure repowered cycle",
+      "terms": [
+        "duct burner’s fuel",
+        "exergy efficiency",
+        "single-pressure HRSG",
+        "dual-pressure HRSG",
+        "single-pressure repowered cycle",
+        "dual-pressure repowered cycle"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-040",
+      "doc_id": "R024",
+      "section": "Conclusions",
+      "page_start": 3021,
+      "page_end": 3022,
+      "text": "In this study, two different combined cycles with HRSG (single-pressure and dual-pressure) were designed to investigate the effects of using the duct burner on their functional parameters. The designed cycles were two different models used to repower Be’sat Steam Power Plant in Tehran, Iran. By the exergy analysis of the cycles, the different functional modes of the duct burner were examined. To sum, although the exergy efficiency of HRSG as well as the exergy and thermal efficiencies of the repowered cycle decreased after using the duct burner and increasing the fuel flow fed to it, the temperature of the stack gas, the stack exergy loss and the generated steam flow and generation power of the combined cycle increased.",
+      "terms": [
+        "combined cycles",
+        "HRSG",
+        "single-pressure",
+        "dual-pressure",
+        "duct burner",
+        "exergy analysis",
+        "stack exergy loss",
+        "Be’sat Steam Power Plant"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R024-041",
+      "doc_id": "R024",
+      "section": "Nomenclature",
+      "page_start": 3022,
+      "page_end": 3022,
+      "text": "C_p – specific heat at constant pressure, [kJkg^–1 ]; C_v – pecific heat at constant volume, [kJkg^–1K^–1]; CC – combined cycle; CCH – combustion chamber; Comp – compressor; Cond – condenser; E – exergy, [kJ]; e – specific exergy, [kJkg^–1K^–1]; eco – economizer; eva – evaporator; G^E – excess free Gibbs energy, [kJ]; GT – gas turbine; HP – high pressure; HPT – high pressure steam turbine; HRSG – heat recovery steam generator; h – specific heat [kJkg^–1]; I – exergy loss, [kJ]; IPT – intermediate pressure steam turbine; K – generated steam coefficient; LHV – lower heating value, [kJkg^–1]; LP – low pressure; LPT – low pressure steam turbine; m – mass flow, [kg]; P – pressure, [bar]; pre- eco – pre-heater economizer; Q – heat transfer, [kJ]; R – gas constant, [kJkg^–1K^–1]; r_Comp – compressor pressure ratio; S – specific entropy, [kJkg^–1K^–1]; supp – superheater; T – temperature [K]; TIT – turbine inlet temperature; W – work [kJ]; x – molar fraction; η – efficiency. Subscripts and superscripts: Amb – ambient; a – air; CV – control volume; Comp – air compressor; ch – chemical; eva – evaporator; e – exit condition; ex – exergy; f – fuel; Gt – gas turbine; g – gas; g – combustion gases; i – inlet condition; Mix – mixture; Ph – physical; pre – pre-heater; ST – steam; s – steam/water; t – thermal; 0 – dead state; ˙ – rate",
+      "terms": [
+        "specific heat at constant pressure",
+        "combustion chamber",
+        "exergy loss",
+        "generated steam coefficient",
+        "lower heating value",
+        "pre-heater economizer",
+        "superheater",
+        "turbine inlet temperature"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    }
+  ],
+  "report": {
+    "paragraph_count": 41,
+    "pages_processed": "3011-3023 (PDF 1-14쪽 전체; 본문은 3011-3022, 3022-3023은 참고문헌, PDF 14쪽은 라이선스 문구만 있음)",
+    "last_paragraph_id": "R024-041",
+    "skipped": [
+      "3011쪽 저자 소속(a, b), \"Original scientific paper\" 표시, 교신저자 각주(Corresponding author, e-mail): 저자 연락처/머리 정보",
+      "각 쪽 머리글(Maghsoudi Mehrabani, K., et al.: Study of the Effect of Using Duct Burner on the ... / THERMAL SCIENCE: Year 2017, Vol. 21, No. 6B, pp. 3011-3023)과 쪽번호: 머리글/바닥글",
+      "3022-3023쪽 References [1]-[24], Paper submitted/revised/accepted 날짜: 참고문헌 목록/투고 정보",
+      "3023쪽 \"© 2017 Society of Thermal Engineers of Serbia ... CC BY-NC-ND 4.0\" 및 PDF 14쪽 \"© 2017. This work is licensed under ... ProQuest Terms ...\" 문구: 저작권 문구(document.license에 반영)",
+      "Figure 1-11의 도식·그래프 내용(축 눈금, 점 번호, 기기 라벨): 캡션만 수록, 그림 내용은 추측하지 않음"
+    ],
+    "uncertain": [
+      "식 (1)-(16)은 PDF 이미지에서 기호를 확인해 선형 표기로 옮김(ṁ = 질량유량, Ẇ = 동력, Ė = 엑서지율, 아래첨자 _). 추출본에서 η가 'h'로 깨져 있어 이미지 기준으로 η 복원(η_CC, η_ex,CC, η_ex,HRSG, η_CCh,DB)",
+      "식 (2) 좌변 \"ṁ_g C_pg\"에는 온도 기호가 인쇄되어 있지 않음; 식 (10)의 온도차는 인쇄대로 (T_J − T_I); 식 (3)-(5)의 \"DELTA _ T\" 표기는 인쇄 그대로 DELTA_T로 옮김",
+      "3015쪽 소제목 \"Steam/water flow\"(식 3-5)와 \"Gas flow\"(식 6-11)는 추출본에서 위치가 뒤섞여 있어 페이지 이미지 기준 순서로 배치",
+      "3013쪽 Reference cycle 문단은 Figure 1 라벨과 섞여 추출되어 이미지 기준으로 문장 복원(\"includ-ed\", \"boil-er\" 연결)",
+      "표 1-10은 이미지와 대조해 열 순서를 복원함. 표 9의 열 머리 \"η_loss,stack [MW]\", 표 7 Fired 엔탈피 단위 \"[kJ^–1kg]\", 표 6 Fired 온도 단위 \"[k]\" 등은 인쇄 그대로",
+      "표 1(2개), 표 5(2개), 표 7(4개)은 350단어를 넘지 않도록 같은 표 번호로 행 그룹 문단으로 나눔",
+      "Energy analysis 도입 문단은 50단어 미만이지만 같은 절 안에 합칠 문단이 없어(바로 소절로 이어짐) 단독 문단으로 둠",
+      "Nomenclature의 \"pecific heat\", \"specific heat [kJkg^–1]\"(h) 등 원문 오탈자와 본문 오탈자(\"Ibraham\", \"Rankin cycle\", \"boiler an, consequently\", \"Table 5 .Water\")는 verbatim 원칙에 따라 그대로 유지",
+      "Introduction 셋째 원문 문단(Previous studies ...)은 350단어 초과로 문장 경계에서 분할"
+    ]
+  }
+}

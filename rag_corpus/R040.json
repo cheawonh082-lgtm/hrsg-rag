@@ -1,0 +1,591 @@
+{
+  "document": {
+    "doc_id": "R040",
+    "title": "Optimization of the triple-pressure combined cycle power plant",
+    "authors": [
+      "Muammer Alus",
+      "Milan V. Petrović"
+    ],
+    "year": 2012,
+    "venue": "Thermal Science, Year 2012, Vol. 16, No. 3, pp. 901-914",
+    "doi": "10.2298/TSCI120517137A",
+    "url": "",
+    "license": "Copyright of Thermal Science is the property of Society of Thermal Engineers of Serbia (EBSCO 사본, CC 표기 없음 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R040-001",
+      "doc_id": "R040",
+      "section": "Abstract",
+      "page_start": 901,
+      "page_end": 901,
+      "text": "The work builds a new parameter-optimization system for combined cycle power plants (CCGT) equipped with a triple-pressure heat recovery steam generator (HRSG), covering both thermodynamic and thermoeconomic optimization. The thermodynamic goal is higher CCGT efficiency together with the largest possible steam cycle output (steam turbine gross power), pursued by optimizing two operating parameters: the gas-to-steam temperature difference (pinch point) and the HRSG steam pressure. The thermoeconomic goal is the lowest production cost per unit of electricity generated. The procedure first fixes the optimal pinch point and then identifies the remaining optimal parameters (steam pressure and condenser pressure). It is demonstrated on a 282 MW CCGT plant of a design typical for commercial combined cycle plants, and the optimized cycle is set against a regular CCGT plant. Key words: combined cycle, heat recovery steam generator, thermodynamic optimization, thermoeconomic optimization.",
+      "terms": [
+        "CCGT",
+        "triple-pressure",
+        "HRSG",
+        "thermoeconomic optimization",
+        "pinch point",
+        "steam turbine gross power",
+        "condenser pressure",
+        "282 MW"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-002",
+      "doc_id": "R040",
+      "section": "Introduction",
+      "page_start": 901,
+      "page_end": 902,
+      "text": "Within a combined cycle power plant (CCGT), the heat recovery steam generator (HRSG) is among the components with the strongest influence on overall efficiency and cost. It links the gas and steam cycles: gas turbine exhaust is cooled in it and the recovered heat raises steam, and several pressure levels are used to recover more heat. A single-pressure HRSG yields roughly 30% of total plant output from the steam turbine; going to dual pressure can lift steam cycle output by up to 10%, and triple pressure adds another 3% [1]. Current plants with a triple-pressure HRSG and steam reheat readily exceed 55% thermal efficiency [1]. Previous thermodynamic and thermoeconomic CCGT optimizations include Valdes et al. [2], who applied a genetic algorithm with two alternative objective functions, minimum cost per unit of electricity and maximum annual cash flow, and Attala et al. [3], who optimized a dual pressure level CCGT with a three-module simulation program (cycle simulation, evaluation of thermodynamic and thermoeconomic parameters, and optimization).",
+      "terms": [
+        "HRSG",
+        "CCGT",
+        "single-pressure",
+        "dual pressure",
+        "triple-pressure",
+        "steam reheat",
+        "55%",
+        "genetic algorithm"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-003",
+      "doc_id": "R040",
+      "section": "Introduction",
+      "page_start": 902,
+      "page_end": 902,
+      "text": "Kumar et al. [4] used first and second law analysis to study how single and dual pressure HRSG configurations affect plant efficiency, assessing via energy and exergy analysis how HRSG performance responds to gas flow rate, steam temperature, steam pressure, approach point and pinch point (PP). Behbahani-nia et al. [5] proposed an exergy based thermoeconomic method to find optimal design values of the PP and gas-side velocity for a particular HRSG. Ahmadi et al. [6] carried out energy and exergy analysis of a combined cycle with a supplementary firing system and then optimized its operating parameters through an objective function and a generic algorithm (GA) type method. Valdes et al. [7] optimized an HRSG using influence coefficients that exploit how design parameters affect cycle thermodynamic performance, though for multiple pressure configurations the method grows complex because many combinations must be evaluated.",
+      "terms": [
+        "pinch point (PP)",
+        "approach point",
+        "exergy",
+        "gas-side velocity",
+        "supplementary firing",
+        "generic algorithm (GA)",
+        "influence coefficients"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-004",
+      "doc_id": "R040",
+      "section": "Introduction",
+      "page_start": 902,
+      "page_end": 902,
+      "text": "Here the gas turbine outlet conditions (mass flow ṁ_GT,out and temperature T_GT,out) are treated as fixed inputs for HRSG optimization, which is done in two forms, thermodynamic and thermoeconomic. In both, the variables are the cycle operating parameters, namely PP, condenser pressure and steam drum pressures, which together influence HRSG cost more than all other operating parameters combined [2]. The PP is defined as the saturation temperature subtracted from the temperature of the gas at the evaporator exit [5]. Earlier authors picked the PP from experience, usually within 5-15 K [8]; the present idea is instead to find first the PP value that minimizes electricity production cost and then, holding it fixed, optimize the steam drum pressures and condenser pressure. An initial case and an optimized case are compared to test the model and method, and a cost hypothesis had to be assumed for every plant component.",
+      "terms": [
+        "ṁ_GT,out",
+        "T_GT,out",
+        "PP",
+        "steam drum pressures",
+        "condenser pressure",
+        "saturation temperature",
+        "5-15 K",
+        "cost hypothesis"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-005",
+      "doc_id": "R040",
+      "section": "Thermodynamic optimization model",
+      "page_start": 902,
+      "page_end": 903,
+      "text": "Thermodynamic optimization seeks higher CCGT efficiency and maximum electrical output of the steam cycle (steam turbine gross power). The case treated is a CCGT with a triple-pressure HRSG, the most complex arrangement; the same procedure also suits single- or dual-pressure HRSG CCGT plants. Fig. 1 is the schematic of the triple-pressure HRSG combined cycle, and Tab. 1 lists the assumptions and parameters of the thermodynamic analysis. Figure 1. Heat balance diagram of the gas turbine and steam turbine combined cycle.",
+      "terms": [
+        "triple-pressure HRSG",
+        "steam turbine gross power",
+        "single- or dual-pressure",
+        "Figure 1",
+        "heat balance diagram"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-006",
+      "doc_id": "R040",
+      "section": "Thermodynamic optimization model",
+      "page_start": 903,
+      "page_end": 904,
+      "text": "Table 1. Gas turbine parameters and assumptions for component performances of the CCGT with the triple-pressure HRSG selected for the optimization. Gas turbine cycle (Alstom GT24/1994): Ambient air pressure [bar]: Value=1.013; Ambient air temperature [°C]: Value=15; Relative humidity: Value=0.60; Electrical power at the generator output [MW]: Value=187.7; Exhaust gas mass flow [kgs^-1]: Value=445; Exhaust gas temperature at the gas turbine outlet [°C]: Value=612; The gas turbine efficiency [%]: Value=36.9; Lower heat value of the fuel [kJkg^-1]: Value=47141; Minimum stack temperature [°C]: Value=100. Assumption: The isentropic efficiency of all three steam turbine parts: Value=90%; The isentropic efficiencies of water pumps: Value=82%; The mechanical efficiency: Value=99.5%; The generator efficiency: Value=98%; The heat recovery steam generator efficiency [9, 10]: Value=99.3%; The pressure drops for water in the economizers [10]: Value=25%; The pressure drops for steam in the reheat and superheater tubes [10]: Value=8%; The overall heat transfer coefficients for sections of the HRSG [Wm^-2K^-1] [1]: economizer=42.6, evaporator=43.7, superheater and reheat=50; The minimum temperature difference between the gas turbine exhaust gases and live/reheat steam [°C]: Value=25; Minimum dryness fraction of steam at low steam turbine outlet [9]: Value=0.88; Low-pressure steam turbine outlet (condenser pressure) [bar]: Value=0.055; The inlet cooling water temperature in condenser [°C]: Value=20; Feed water temperature at 3 [°C]: Value=60.",
+      "terms": [
+        "Table 1",
+        "Alstom GT24/1994",
+        "Exhaust gas mass flow",
+        "47141",
+        "isentropic efficiency",
+        "overall heat transfer coefficients",
+        "dryness fraction",
+        "condenser pressure"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-007",
+      "doc_id": "R040",
+      "section": "Thermodynamic optimization model – Energy balance of HRSG sections",
+      "page_start": 904,
+      "page_end": 904,
+      "text": "Water-steam properties come from the standard \"IAPWS\" 97 [11], and properties of the gas turbine exhaust gases, i.e. combustion products of the given fuel, follow Baehr et al. [12]. A FORTRAN 90 code computes the heat balance of the triple-pressure HRSG CCGT. To locate the optimum, PP was stepped from 3 to 40 °C, and at each step the plant heat balance, overall efficiency and gross power output were evaluated; the same PP is applied to all three pressure parts of the HRSG. Gas temperatures at entry to the LP, IP and HP economizers are: T_6g = T_20 + PP (1), T_8g = T_11 + PP (2), T_10g = T_6 + PP (3) (gas temperature entering each economizer = temperature of the corresponding water-steam point plus the pinch point).",
+      "terms": [
+        "IAPWS",
+        "Baehr",
+        "FORTRAN 90",
+        "3 to 40 °C",
+        "T_6g = T_20 + PP",
+        "T_8g = T_11 + PP",
+        "T_10g = T_6 + PP",
+        "economizer"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-008",
+      "doc_id": "R040",
+      "section": "Thermodynamic optimization model – Energy balance of HRSG sections",
+      "page_start": 904,
+      "page_end": 904,
+      "text": "Once water–steam properties are known at every steam cycle point, the steam mass flows generated in the HRSG follow from energy balances at each pressure level. For the high-pressure part: ṁ_GT,out η_HRSG (h_4g − h_6g) = ṁ_ST,HP [(h_22 − h_20) + (h_15 − h_24)] + ṁ_ST,IP (h_15 − h_13) (4) (heat given up by the exhaust gas between 4g and 6g, times HRSG efficiency = heat taken up by HP steam plus IP steam). Here ṁ_GT,out is the gas mass flow and ṁ_ST,HP, ṁ_ST,IP the steam mass flows entering sections 1 and 2; h_4g and h_13, h_24 are gas and steam enthalpies at the inlet of section 1, h_20 is the steam enthalpy at the inlet of section 2, h_15 and h_22 are steam enthalpies leaving section 1, and the gas enthalpy at the exit of section 2 is described without its symbol in the original.",
+      "terms": [
+        "ṁ_GT,out",
+        "η_HRSG",
+        "ṁ_ST,HP",
+        "ṁ_ST,IP",
+        "h_4g",
+        "h_6g",
+        "high-pressure part",
+        "energy balances"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-009",
+      "doc_id": "R040",
+      "section": "Thermodynamic optimization model – Energy balance of HRSG sections",
+      "page_start": 905,
+      "page_end": 905,
+      "text": "For the intermediate-pressure part: ṁ_GT,out η_HRSG (h_6g − h_8g) = ṁ_ST,HP (h_20 − h_19) + ṁ_ST,IP (h_13 − h_11) (5) (gas heat released between 6g and 8g = heat absorbed by HP and IP streams in sections 3 and 4), with h_6g the gas enthalpy at the inlet of section 3, h_8g the gas enthalpy leaving section 4, h_11 the steam enthalpy at the inlet of section 4, and h_13, h_20 the steam enthalpies leaving section 3. For the low-pressure part: ṁ_GT,out η_HRSG (h_8g − h_10g) = ṁ_ST,HP (h_19 − h_18) + ṁ_ST,IP (h_11 − h_10) + ṁ_ST,LP (h_8 − h_6) (6) (gas heat released between 8g and 10g = heat absorbed by HP, IP and LP streams), where h_8g and h_10, h_18 are gas and steam enthalpies at the inlet of section 5, h_6 is the steam enthalpy for all of section 6, h_8, h_11 and h_19 are steam enthalpies leaving section 5, and h_10g is the gas enthalpy leaving section 6.",
+      "terms": [
+        "intermediate-pressure part",
+        "low-pressure part",
+        "ṁ_ST,LP",
+        "h_8g",
+        "h_10g",
+        "η_HRSG",
+        "ṁ_GT,out"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-010",
+      "doc_id": "R040",
+      "section": "Thermodynamic optimization model – Energy balance of HRSG sections",
+      "page_start": 905,
+      "page_end": 905,
+      "text": "Total steam flow comes from the HRSG mass balance: ṁ_ST = ṁ_ST,HP + ṁ_ST,IP + ṁ_ST,LP (7) (total steam mass flow = sum of HP, IP and LP steam flows). The gas temperature T_5g leaving section 1 follows from that section's energy balance: h_5g = h_4g − {ṁ_ST,HP [(h_22 − h_21) + (h_15 − h_13)] + ṁ_ST,IP (h_15 − h_24)} / (ṁ_GT,out η_HRSG) (8) (gas enthalpy leaving section 1 = inlet gas enthalpy minus heat absorbed by steam in that section divided by gas flow × HRSG efficiency). T_7g, T_9g and T_11g, the gas temperatures leaving sections 3, 5 and 7, are obtained in the same way as T_5g.",
+      "terms": [
+        "ṁ_ST = ṁ_ST,HP + ṁ_ST,IP + ṁ_ST,LP",
+        "mass balance",
+        "T_5g",
+        "h_5g",
+        "T_7g",
+        "T_9g",
+        "T_11g"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-011",
+      "doc_id": "R040",
+      "section": "Thermodynamic optimization model – Calculation of the heat transfer area",
+      "page_start": 905,
+      "page_end": 906,
+      "text": "The HRSG is modelled as a counter flow heat exchanger, and the area A needed to transfer heat at a given PP is computed after Rovira et al. [13]. Heat through each HRSG area: Q̇_i = U_m,i A_i LMTD_i (9) (heat duty of section i = average overall heat transfer coefficient × area × log mean temperature difference), with A the exchange area and U_m the average overall heat transfer coefficient. LMTD_i = (ΔT_1,i − ΔT_2,i) / ln(ΔT_1,i / ΔT_2,i) (10) (log mean of the gas-steam temperature differences), where ΔT_1 and ΔT_2 are the gas-steam temperature differences at heater inlet and exit. Net HRSG area is the sum over all pressure levels: A_HRSG = Σ_E A_E + Σ_V A_V + Σ_SH A_SH + Σ_RE A_RE (11) (total area = economizer + evaporator + superheater + reheater areas).",
+      "terms": [
+        "counter flow heat exchanger",
+        "Q̇_i = U_m,i A_i LMTD_i",
+        "U_m",
+        "LMTD_i",
+        "ΔT_1",
+        "ΔT_2",
+        "A_HRSG"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-012",
+      "doc_id": "R040",
+      "section": "Thermodynamic optimization model – Calculation of the heat transfer area",
+      "page_start": 905,
+      "page_end": 906,
+      "text": "Condenser area A_cond is computed per [14]: A_cond = Q̇_cond / (U_cond LMTD_cond) (12) (condenser area = condenser heat duty over heat transfer coefficient × log mean temperature difference), with Q̇_cond the heat transferred and U_cond the condenser heat transfer coefficient. The condenser log mean temperature difference is LMTD_cond = TR / ln[1 / (1 − TR/ITD)] (13) (condenser LMTD from the cooling water temperature rise and the initial temperature difference), where TR is the cooling water temperature rise and ITD the difference between steam temperature and cooling water inlet temperature (initial temperature difference).",
+      "terms": [
+        "A_cond",
+        "Q̇_cond",
+        "U_cond",
+        "LMTD_cond",
+        "TR",
+        "ITD",
+        "initial temperature difference"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-013",
+      "doc_id": "R040",
+      "section": "Thermodynamic optimization model – Combined cycle efficiency",
+      "page_start": 906,
+      "page_end": 906,
+      "text": "Overall cycle efficiency is derived from steam and gas turbine power, which depend on HRSG area and also on many other quantities such as condenser pressure, pressure drum and ambient temperature: η_CCGT = [W_ST(ṁ_ST, h_cond, η_ST) + W_GT] / (ṁ_f H_t) (14) (combined cycle efficiency = steam turbine power, a function of steam flow, condenser enthalpy and steam turbine efficiency, plus gas turbine power, divided by fuel mass flow × fuel heating value). For the initial case, typical PP and HP, IP and LP drum values were chosen; its heat balance results (Tab. 2) are later set against the optimized case.",
+      "terms": [
+        "η_CCGT",
+        "W_ST",
+        "W_GT",
+        "ṁ_f",
+        "H_t",
+        "condenser pressure",
+        "initial case"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-014",
+      "doc_id": "R040",
+      "section": "Thermodynamic optimization model – Combined cycle efficiency",
+      "page_start": 906,
+      "page_end": 906,
+      "text": "Table 2. Initial case – Results of the thermodynamic analysis. Steam turbine cycle: The pinch point temperature difference for HP, IP and LP [°C]: Value=13; Live steam pressure (HP) [bar]: Value=104; Live steam temperature at the inlet of the HP steam turbine [°C]: Value=545; Pressure of reheat steam (IP steam turbine) [bar]: Value=36; Temperature of the reheat steam (IP steam turbine) [°C]: Value=545; Pressure of the inlet LP steam turbine [bar]: Value=5; Temperature of the superheated steam at 8 [°C]: Value=235; Temperature of the superheated steam at 13 [°C]: Value=325; Steam mass flow [kgs^-1]: Value=70; High-pressure steam mass flow [kgs^-1]: Value=52.5; Intermediate-pressure mass flow [kgs^-1]: Value=10.5; Low-pressure mass flow [kgs^-1]: Value=7; Steam turbine gross power [MW]: Value=94.6. Combined cycle power plant: Combined cycle gross power [MW]: Value=282.3; Combined cycle efficiency [%]: Value=55.5.",
+      "terms": [
+        "Table 2",
+        "Initial case",
+        "pinch point temperature difference",
+        "Live steam pressure (HP)",
+        "reheat steam",
+        "Steam turbine gross power",
+        "Combined cycle gross power",
+        "Combined cycle efficiency"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-015",
+      "doc_id": "R040",
+      "section": "Thermoeconomic optimization model – Main thermoeconomic characteristics of CCGT",
+      "page_start": 907,
+      "page_end": 907,
+      "text": "Thermoeconomic optimization aims at the lowest electricity production cost of the plant. Its conditions, set from experience and present market conditions, are: (1) average combined cycle plant life of 20 years; (2) 7500 operating hours a year; (3) natural gas price c_f = 0.0467 $/kWh; (4) installed costs of the HRSG economizer, evaporator, superheater and reheat sections of 45.7, 34.8, 96.2 and 56.2 $/m^2 respectively [1].",
+      "terms": [
+        "thermoeconomic optimization",
+        "20 years",
+        "7500 operating hours",
+        "c_f = 0.0467 $/kWh",
+        "economizer",
+        "evaporator",
+        "superheater",
+        "56.2 $/m^2"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-016",
+      "doc_id": "R040",
+      "section": "Thermoeconomic optimization model – Functions of component capital costs",
+      "page_start": 907,
+      "page_end": 907,
+      "text": "Determining capital costs is the central difficulty when judging the economic effectiveness of energy system investments. Cost functions for the main CCGT components were taken from the literature: gas turbine C_GT [15], HRSG C_HRSG [5], steam turbine C_ST [16], condenser C_cond [3], pump C_pump [16] and generator C_gen [16]. These functions give net capital costs only, excluding transport and assembly, supervision, accessories, engineering and project management, commissioning and similar connected costs; a correction factor R, set from analysis and market consultation, is therefore applied in eq. 15 to cover those items and recent price increases, with R = 3.0 in the calculations. Total capital (investment) cost of a CCGT: C_CCGT = R Σ_i C = R(C_GT + C_HRSG + C_ST + C_cond + C_pump + C_gen) (15) (total investment = correction factor × sum of component costs). The HRSG, steam turbine, condenser, pump and generator cost functions depend on the operating parameters (PP, HP, IP, LP and P_cond), so changing any of them alters total capital cost.",
+      "terms": [
+        "capital costs",
+        "C_GT",
+        "C_HRSG",
+        "correction factor R",
+        "R = 3.0",
+        "C_CCGT",
+        "P_cond",
+        "investment"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-017",
+      "doc_id": "R040",
+      "section": "Thermoeconomic optimization model – Objective function",
+      "page_start": 907,
+      "page_end": 908,
+      "text": "The optimization minimizes the electricity production cost of the CCGT plant, defined as yearly total cost over total annual energy production W_CCGT h [2, 17]: C_kWh = C_tot / (W_CCGT h) (16) (production cost per kWh = total annual cost over annual energy output). Annual total cost sums fuel, amortization and operating and maintenance costs: C_tot = C_Tf + C_a + C_o&m (17) (total yearly cost = fuel + amortization + O&M). Total fuel cost: C_Tf = c_f (W_CCGT / η_CCGT) h (18) (fuel cost = fuel price × fuel energy needed for the output over the yearly hours). Amortization, i.e. total fixed cost spread over the plant economic lifetime: C_a = C_CCGT / N (19) (amortization = total investment over economic life N). Annual O&M cost is taken as 10% of total plant cost [17]: C_o&m = 0.10C_tot (20) (O&M cost = 10% of total cost).",
+      "terms": [
+        "C_kWh",
+        "C_tot",
+        "C_Tf",
+        "C_a",
+        "C_o&m",
+        "amortization",
+        "η_CCGT",
+        "0.10C_tot"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-018",
+      "doc_id": "R040",
+      "section": "Results and discussion – The optimization procedure",
+      "page_start": 908,
+      "page_end": 908,
+      "text": "A simple 4-step procedure was built to optimize the five CCGT parameters with most influence: PP, HP, IP, LP drum and condenser pressure. Step one keeps HP, IP and LP drum pressures at experience-based values (here equal to the initial case) while PP is swept from 3 to 40 °C in 0.5 °C steps; thermodynamic and thermoeconomic parameters are computed and the optimal PP is chosen from steam turbine gross power, i.e. electricity production cost. Step two, at that PP, varies one drum pressure at a time with the other three parameters fixed, e.g. HP drum from 100 to 200 bar with PP, IP and LP drum held, picking the optimum from the computed production cost, and then repeats this for IP and LP drum. Step three checks mutual influences iteratively: PP selection is redone with the improved drum pressures, after which the drum pressure selection is redone with the new PP and HRSG steam pressures; convergence is fast, needing few iterations.",
+      "terms": [
+        "4-step procedure",
+        "PP",
+        "HP",
+        "LP drum",
+        "condenser pressure",
+        "0.5 °C",
+        "100 to 200 bar",
+        "steam turbine gross power"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-019",
+      "doc_id": "R040",
+      "section": "Results and discussion – The optimization procedure",
+      "page_start": 908,
+      "page_end": 908,
+      "text": "In the method the drum pressures were varied within these ranges: HP drum 100 to 200 bar, IP drum 32 to 50 bar, LP drum 1 to 4.25 bar. With the HRSG operating parameters optimized, condenser pressure was varied from 0.04 to 0.08 bar and the optimization repeated, which forms the fourth step.",
+      "terms": [
+        "HP drum",
+        "IP drum",
+        "LP drum",
+        "32 to 50 bar",
+        "1 to 4.25 bar",
+        "0.04 to 0.08 bar",
+        "fourth step"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-020",
+      "doc_id": "R040",
+      "section": "Results and discussion – Results of the thermodynamic optimization",
+      "page_start": 909,
+      "page_end": 910,
+      "text": "Fig. 2 shows that combined cycle gross power falls as PP rises. Lowering PP sharply enlarges the required HRSG area and hence the device capital cost of eq. 15; maximum efficiency and steam turbine gross power would clearly be reached at zero PP with an infinite heat transfer surface (HRSG area), so thermoeconomic optimization was added to balance maximum CCGT gross power against low HRSG cost. Fig. 3 plots gross power against HRSG high pressure drum and shows no upper limit value of the HP drum: gross power keeps rising with HP drum. Fig. 4 shows gross power dropping as IP drum rises. Against LP drum (Fig. 5), gross power climbs up to 4 bar and declines beyond, so the CCGT gross power maximum lies at 4 bar.",
+      "terms": [
+        "PP",
+        "combined cycle gross power",
+        "HRSG area",
+        "heat transfer surface",
+        "HP drum",
+        "IP drum",
+        "LP drum",
+        "4 bar"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-021",
+      "doc_id": "R040",
+      "section": "Results and discussion – Results of the thermodynamic optimization",
+      "page_start": 909,
+      "page_end": 910,
+      "text": "Figure 2. Influence of PP variation on combined cycle gross power. Figure 3. Combined cycle gross power at optimal PP versus HRSG high drum pressure. Figure 4. Combined gross power at optimal PP versus HRSG intermediate drum pressure. Figure 5. Combined cycle gross power at optimal PP versus HRSG low pressure drum (printed as 'prower').",
+      "terms": [
+        "Figure 2",
+        "Figure 3",
+        "Figure 4",
+        "Figure 5",
+        "combined cycle gross power",
+        "optimal PP",
+        "drum pressure"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-022",
+      "doc_id": "R040",
+      "section": "Results and discussion – Results of the thermoeconomic optimization",
+      "page_start": 910,
+      "page_end": 911,
+      "text": "Fig. 6 gives the electricity production cost of eq. 16 for the triple-pressure HRSG CCGT as PP varies: cost first falls as PP grows, reaches a minimum at the optimal value and then rises again. The optimal PP giving minimum production cost C_kWh is 9.5 °C, which appears plausible against experience, though the optimum depends heavily on the cost hypothesis. Figs. 7, 8 and 9 show how HP, IP and LP drum variations change C_kWh. In this case pinch point mainly governs efficiency, whereas HRSG steam pressures mainly govern production cost, and each of the three optimized steam pressures has an optimal value, namely HP drum = 188 bar, IP drum = 35 bar and LP drum = 3 bar.",
+      "terms": [
+        "C_kWh",
+        "9.5 °C",
+        "cost hypothesis",
+        "HP",
+        "IP",
+        "LP drum",
+        "pinch point",
+        "188 bar"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-023",
+      "doc_id": "R040",
+      "section": "Results and discussion – Results of the thermoeconomic optimization",
+      "page_start": 911,
+      "page_end": 911,
+      "text": "The optimized HP drum (188 bar) is higher than in the initial case (104 bar). Because the steam turbine inlet temperature is fixed by material limits, raising the HP steam drum pressure in a triple-pressure HRSG has two main consequences: heat is redistributed between economizer and superheater, and the higher evaporation temperature that comes with higher drum pressure shifts the HRSG PP upward along the flue-gas line. The optimum LP drum is below the initial value, while the IP drum optimum differs little from the initial case. The extra HRSG cost of a more expensive HP level (area, piping, material, etc.) is recovered through more electricity and better overall efficiency.",
+      "terms": [
+        "HP drum",
+        "188 bar",
+        "104 bar",
+        "steam turbine inlet temperature",
+        "evaporation temperature",
+        "flue-gas line",
+        "economizer",
+        "superheater"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-024",
+      "doc_id": "R040",
+      "section": "Results and discussion – Results of the thermoeconomic optimization",
+      "page_start": 911,
+      "page_end": 912,
+      "text": "Fig. 10 shows production cost C_kWh against condenser pressure P_cond: it decreases as P_cond rises to an optimum and increases thereafter, with the minimum at P_cond = 0.045 bar. Tab. 3 compares the initial and optimized cases, the financial figures being clearly better after optimization. Thermoeconomic optimization trades higher efficiency off against minimum electricity production cost; here the method raised the efficiency of the chosen combined cycle by about 1.2% and electrical output by more than 6 MW, while optimal parameter selection cut production cost by 0.12 cent-dollar per kilowatt-hour.",
+      "terms": [
+        "C_kWh",
+        "P_cond",
+        "0.045 bar",
+        "Tab. 3",
+        "1.2%",
+        "6 MW",
+        "0.12 cent-dollar per kilowatt-hour",
+        "initial and optimized cases"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-025",
+      "doc_id": "R040",
+      "section": "Results and discussion – Results of the thermoeconomic optimization",
+      "page_start": 910,
+      "page_end": 911,
+      "text": "Figure 6. Influence of PP variations on electricity production cost. Figure 7. Influence of HP drum variations on electricity production cost. Figure 8. Influence of IP drum variations on electricity production cost. Figure 9. Influence of LP drum variations on electricity production cost. Figure 10. Influence of P_cond variations on electricity production cost (printed as 'production coast').",
+      "terms": [
+        "Figure 6",
+        "Figure 7",
+        "Figure 8",
+        "Figure 9",
+        "Figure 10",
+        "P_cond",
+        "production cost"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-026",
+      "doc_id": "R040",
+      "section": "Results and discussion – Results of the thermoeconomic optimization",
+      "page_start": 912,
+      "page_end": 912,
+      "text": "Table 3. Comparison between the initial case and the optimized case. Pinch point (PP): Initial case=13 °C; Optimized case=9.5 °C. High pressure drum (HP): Initial case=104 bar; Optimized case=188 bar. Intermediate pressure drum (IP): Initial case=36 bar; Optimized case=35 bar. Low pressure drum (LP): Initial case=5 bar; Optimized case=3 bar. Condenser pressure (Pcond): Initial case=0.055 bar; Optimized case=0.045 bar. Combined cycle-efficiency (ηCCGT): Initial case=55.5%; Optimized case=56.7%. Combined cycle-gross power (WCCGT): Initial case=282.3 MW; Optimized case=288.4 MW. Production cost (CkWh): Initial case=9.88 c$/kWh; Optimized case=9.76 c$/kWh.",
+      "terms": [
+        "Table 3",
+        "Pinch point (PP)",
+        "High pressure drum (HP)",
+        "Condenser pressure (Pcond)",
+        "ηCCGT",
+        "WCCGT",
+        "CkWh",
+        "9.76 c$/kWh"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-027",
+      "doc_id": "R040",
+      "section": "Conclusions",
+      "page_start": 912,
+      "page_end": 913,
+      "text": "The paper introduces a new thermodynamic and thermoeconomic optimization method for triple-pressure combined cycle power plants intended to improve plant performance. As anticipated, thermodynamic analysis alone points to a zero pinch point (infinite evaporator surface) as optimum and cannot yield optimal steam pressures. The thermoeconomic procedure adds economic effectiveness through computed economic parameters to the thermodynamic ones, identifies operating parameters that minimize electricity production cost, and accounts for mutual parameter influences through an interactive procedure, showing that optimal operating settings exist. Applied to an example, it markedly improved the economic parameters, lowering production cost by 0.12 c$/kWh relative to the initial case, so it may replace the a priori choice method as more comprehensive and reliable. Results depend heavily on the gas turbine chosen and cannot be carried over to other CCGT plants given the complexity and many possible configurations; future work should apply optimization algorithms jointly to the steam cycle operating parameters and the triple-pressure HRSG.",
+      "terms": [
+        "thermoeconomic optimization",
+        "triple-pressure",
+        "zero pinch point",
+        "evaporator surface",
+        "production cost",
+        "0.12 c$/kWh",
+        "a priori choice method",
+        "optimization algorithms"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R040-028",
+      "doc_id": "R040",
+      "section": "Nomenclature",
+      "page_start": 913,
+      "page_end": 913,
+      "text": "Nomenclature (symbol: meaning, [unit]). A: heat transfer area, [m^2]; C: cost, [$]; c_f: price of the fuel, [$kWh^-1]; H_l: lower heat value of the fuel, [kJkg^-1]; h: specific enthalpy, [kJkg^-1]; h (upright): number of operating hours of the plant per year, [hour]; LMTD: log mean temperature difference, [°C]; ṁ_ST: steam mass flow rate, [kgs^-1]; ṁ_ST,HP, ṁ_ST,IP, ṁ_ST,LP: high-, intermediate- and low-pressure steam mass flow rates, [kgs^-1]; ṁ_GT,out: gas turbine exhaust mass flow rate, [kgs^-1]; mf: fuel mass flow rate, [kgs^-1]; N: economic life of the plant, [year]; P: pressure, [bar]; PP: pinch point (PP) temperature difference, [°C]; Q̇: heat transferred, [kW]; R: correction factor for components cost (printed 'componetns'), [–]; T: temperature, [K or °C]; U: overall heat transfer coefficient, [kWm^-2K^-1]; W: power, [MW]; η: efficiency, [–]. Subscripts: CCGT: combined cycle power plant; cond: condenser; E: economizer; GT: gas turbine; HP: high pressure; HRSG: heat recovery steam generator; IP: intermediate pressure; LP: low pressure; Out: outlet from the gas turbine; RE: reheat; ST: steam turbine; SH: superheater; V: evaporator.",
+      "terms": [
+        "LMTD",
+        "ṁ_GT,out",
+        "PP",
+        "pinch point",
+        "correction factor",
+        "overall heat transfer coefficient",
+        "CCGT",
+        "HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 28,
+    "pages_processed": "901-914 (PDF 1-14쪽; PDF 15쪽은 EBSCO 저작권 고지만 있어 제외)",
+    "last_paragraph_id": "R040-028",
+    "skipped": [
+      "901쪽 저자 소속(University of Belgrade), 교신저자 표시·이메일 각주, 'Original scientific paper' 표기: 저자 연락처·서지 부가정보",
+      "각 쪽 머리글(Alus, M., et al.: Optimization of the Triple-Pressure Combined Cycle ... / THERMAL SCIENCE: Year 2012, Vol. 16, No. 3, pp. 901-914)과 쪽번호: 머리글",
+      "913-914쪽 References [1]-[17] 및 논문 접수·수정·게재 일자: 참고문헌 목록·서지 부가정보",
+      "PDF 15쪽 EBSCO 저작권 문구('Copyright of Thermal Science is the property of Society of Thermal Engineers of Serbia ...'): 저작권 문구",
+      "그림 1~10 내부 내용(계통도·그래프): 캡션과 본문 설명만 수록",
+      "감사의 글: 원문에 없음"
+    ],
+    "uncertain": [
+      "쪽번호는 인쇄된 저널 쪽번호(901-914, PDF 1-14쪽) 사용",
+      "저자명은 PDF 텍스트 추출에서 'PETROVI]'로 깨져 페이지 이미지·저널 표기에 따라 'Petrović'로 기재",
+      "수식 (1)-(20)과 Nomenclature는 텍스트 추출이 깨져(m&, h→η, D→Δ, å→Σ 등) PDF 쪽 이미지로 판독해 전사함",
+      "Eq. (4) 설명문 끝 '... and is the enthalpy of gas at the exit of section 2'에서 기호가 원문에 인쇄되어 있지 않아 기호 없이 서술",
+      "Eq. (8)은 h_21, h_13, h_24 조합으로 인쇄되어 Eq. (4)(h_20, h_24, h_13)와 다르지만 인쇄된 그대로 둠",
+      "Eq. (14) 분모 H_t는 Nomenclature의 H_l(lower heat value)과 표기가 다르나 원문대로 둠; Nomenclature에서 'h'가 비엔탈피(이탤릭)와 연간 운전시간(직립) 두 뜻으로 쓰임",
+      "Table 3 열 이름 'Pcond', 'ηCCGT', 'WCCGT', 'CkWh'는 표에 인쇄된 대로(아래첨자 미분리) 기재",
+      "Figure 5 캡션 'prower', Figure 10 캡션 'coast', Nomenclature 'componetns'는 원문 오기",
+      "원문과 10단어 이상 연속 일치 점검 결과: 남은 일치는 Key words 목록(R040-001), 표 제목·표 항목명(Table 1·2·3: R040-006, R040-014, R040-026), 수식 기호열(R040-007, R040-016)뿐이며 표 제목·항목명·수식 기호는 원문대로 두는 규칙에 따른 것임"
+    ]
+  }
+}

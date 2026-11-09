@@ -1,0 +1,1467 @@
+{
+  "document": {
+    "doc_id": "R026",
+    "title": "Energy and exergy analysis for state-of-art intercooled gas turbine injected steam CCPP",
+    "authors": [
+      "E Z Massoud",
+      "W M El-Maghlany",
+      "A I Shehata",
+      "M K A Kandil"
+    ],
+    "year": 2025,
+    "venue": "Journal of Physics: Conference Series 3028 (2025) 012005 (Technologies and Materials for Renewable Energy, Environment and Sustainability), IOP Publishing",
+    "doi": "10.1088/1742-6596/3028/1/012005",
+    "url": "https://doi.org/10.1088/1742-6596/3028/1/012005",
+    "license": "Content from this work may be used under the terms of the Creative Commons Attribution 4.0 licence. Published under licence by IOP Publishing Ltd (CC BY 4.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R026-001",
+      "doc_id": "R026",
+      "section": "Abstract",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Combined cycle power plants have emerged as a promising economic solution for escalating global energy demand. So, the researchers always have a non-end competition for more improvements of cycle design of the fossil fuel power plants in terms of capacity, and efficiency, and pointing to most components requires a potential optimization as well. This study presents and analyzes the performance of a novel modification on a combined cycle power plant that is mainly designed to reduce the effect of intercooling on CCPP efficiency degradation. As well as handing over the detailed chemical and physical combustion process exergy analysis using energy and exergy approaches under on-design and off-design operating conditions. The results yielded an increase in the efficiency of SCC5-8000H CCPP by 0.26% and marginal output power enhancement by 14.5 MW. While the exergy destruction of the whole power plant decreased by 41.23 MW.",
+      "terms": [
+        "Combined cycle power plants",
+        "intercooling",
+        "CCPP",
+        "exergy analysis",
+        "on-design and off-design",
+        "SCC5-8000H",
+        "exergy destruction",
+        "combustion process"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-002",
+      "doc_id": "R026",
+      "section": "1. Introduction",
+      "page_start": 1,
+      "page_end": 2,
+      "text": "Appropriate energy sources management especially electricity would be a pillar and fulcrum for nations’ economic development, civilization, globalization, and international relations improvement that all stakeholders intend to have in the most profitable and economical form as showed by (Gellings, 2020; Yu et al., 2019). The last uprising in energy prices worldwide due to geopolitically wars motivated the forefront attention of all nations to get energy economically and cleaner by depending on renewable energy sources. Despite the high initial cost, the low availability of RES made the CCPP unparalleled in mastering the produced power and most preferable as (Neha and Rambeer, 2021) claimed. The CCPPs significantly affect the global energy demand due to their dominance in the power generation sector. This dominance is because of their high efficiency, which can exceed 60%, and their high reliability as well. Also, the CCPPs are characterized by high availability due to fuel variety dependence as well as operational flexibility, as they can quickly adjust to changes in electricity demand, providing the necessary flexibility to complement intermittent renewable energy sources like wind and solar which will result in grid stability. Also, they function as base load or peak load power sources. Furthermore, many advanced CCPPs may be powered by natural gas, and others can run on clean hydrogen fuel. This is not to announce that CCPPs or RES plants will be the exclusive market leaders. However, both of them are involved in electricity generation for a purpose. The RES plants are designed to cut emissions and achieve zero carbon emissions. While the CCPPs operate, they will adjust their output to balance fluctuations caused by various renewable energy sources. So, CCPPs allowed non-end competition to design the best flexible and performance-enhancing cycle regarding energy, exergy, economic, and environmental concerns.",
+      "terms": [
+        "CCPP",
+        "RES",
+        "renewable energy sources",
+        "base load",
+        "peak load",
+        "natural gas",
+        "hydrogen fuel",
+        "operational flexibility"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-003",
+      "doc_id": "R026",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Studies proposed different retrofitting cycles with performance investigation for optimization purposes; (Briesch et al., 1995) discussed the technologies and components under development. As well as limitations of parametric optimization and cycle retrofitting including TIT, CPR, intercooling, recuperation, reheat, and thermochemical recuperation to exceed CCPP efficiency of 60%. (Dellenback, 2002) proposed an alternative recuperated gas turbine cycle and claimed that the proposed cycle would exhibit the highest efficiency compared to the conventional recuperated cycle. (Cai and Jiang, 2006) analyzed the alternative recuperated cycle proposed by (Dellenback, 2002) and showed off the reasonability of this analysis results in the ideal case of the cycle. However, with irreversibility consideration, the proposed alternative recuperated cycle will not be the highest efficiency. (Gogoi, 2014) performed a comparative performance study among conventional and recuperated CCPP. This study showed that CCPP with both air and fuel recuperators is the most efficient cycle. (Mostafa, Eldrainy and EL-Kassaby, 2018) investigated the performance of simple and recuperated gas turbine cycles and proved that employing inlet fogging with overspray systems can reduce compressor power consumption by 12% at high ambient temperatures. (Sanjay and Prasad, 2013) investigated air film cooling and novel closed-loop steam bucket cooling systems on IC-GT- 3P CCPP performance using energy and exergy analysis. The study showed that air film cooling technology demonstrates higher efficiency. (Kayadelen, Ust and Bashan, 2021) performed an optimization study of simple, reheat, steam-injected, and reheated steam-injected gas turbine cycles based on CPR variation at different reheat pressure ratios and steam injection rates. (Khan, 2021b) investigated the proposal of splitting combustion gases between gas turbine and HRSG at different pressure and air-fuel ratios.",
+      "terms": [
+        "TIT",
+        "CPR",
+        "intercooling",
+        "recuperation",
+        "recuperated gas turbine cycle",
+        "reheat",
+        "irreversibility",
+        "inlet fogging"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-004",
+      "doc_id": "R026",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "The peak efficiency and power were found at maximum pressure ratio and minimum air-fuel ratio with no combustible gases bypassing the gas turbine expansion section. Also, many studies have presented the effect of SF systems on cycle performance; (Abdollahian and Ameri, 2021; Mokhtari, Esmaieli and Hajabdollahi, 2016) investigated the SF effect on CCPP’s performance using energy and exergy approaches under different operating modes, condenser pressure, CPR, and fuel LHV variation. The studies showed that SF increases the generated power with a slight decrease in thermal efficiency. Many studies have been conducted to optimize energy recovery management through repowering steam power plants and extending ORC as a bottoming cycle; (Ahmed and Oudah, 2018) proposed repowering of the AL-Mussaib steam power plant and investigated its performance under different operating conditions. The study showed that ambient temperature is the most effective parameter for performance. While, (Bǎlǎnescu and Homutescu, 2019; Hemadri and Subbarao, 2021) proposed and analyzed the performance of ORC as a bottoming cycle of CCPP and RH-ORC as a bottoming cycle for gas turbines, respectively. Other different studies investigated the performance of already existing combined cycles under different operating modes as; (Altarawneh et al., 2022; Al-Qudaha et al., 2020) performed energy and exergy investigation on 400 MW KOSPO CCPP and Al-Qatrana Power Plant (AQPP), respectively under full load and 75% load using natural gas and diesel fuel oil. These studies showed that full-load operation using natural gas is the best choice for the sake of efficiency and output power. (Egware and Obanor, 2022) investigated the energy performance of the SGT5-2000E gas turbine under CPR, TIT, and ambient temperature variation.",
+      "terms": [
+        "TIT",
+        "CPR",
+        "SF",
+        "ORC",
+        "RH-ORC",
+        "repowering",
+        "energy and exergy",
+        "ambient temperature"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-005",
+      "doc_id": "R026",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 3,
+      "text": "The results emphasized that power and efficiency have indirect relation against ambient temperature increment and can be enhanced by CPR and TIT increment. (Mohd Saif and Tariq, 2017) showed that ambient temperature and CPR are the most affecting parameters on simple gas turbine cycle performance. (Albishti and Dabashi, 2019) verified the design point and evaluated the off-design performance of simple and intercooled aero-derivative gas turbine cycles over ambient temperature, elevation, and power variation. The study unveiled that the intercooled cycle performance was less affected by ambient temperature variation. (El-Badri et al., 2022) investigated the performance of different gas turbines in open and combined cycles at the location of the North Benghazi power plant under ambient temperature and humidity variation. (Jamnani et al., 2021) investigated the performance of different gas turbine configurations in 3PR CCPP and showed that the combustion chamber has the highest exergy destruction while the air compressor has the lowest irreversibility destruction. (Almutairi and Alenezi, 2019) analyzed the performance of Al Sabiya CCPP with various topping gas cycle engines and showed that the best choice for the highest power, efficiency, and lowest exergy destruction was the gas turbine with the highest CPR. Many studies have investigated the performance of power plants based on energy and exergy approaches as; (Moussa, Hassan and El-Fouly, 2021; Chen et al., 2022) performed 2E performance analyses on 4800 MW CCPP located in Beni-Suef, Egypt, and Banshan power plant located in Hangzhou, China under ambient temperature and humidity variation. (Babaei Jamnani and Kardgar, 2020) investigated a 396 MW CCPP located in the Malay Peninsula based on energy and exergy approaches with reference temperature, pressure ratios, condenser and reheat pressure variations.",
+      "terms": [
+        "TIT",
+        "CPR",
+        "reheat",
+        "irreversibility",
+        "energy and exergy",
+        "exergy destruction",
+        "combustion chamber",
+        "ambient temperature"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-006",
+      "doc_id": "R026",
+      "section": "1. Introduction",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "(Ibrahim et al., 2017) analyzed the performance of the MARAFEQ Power plant in Saudi Arabia. On the other hand, (Aliyu et al., 2020) analyzed the performance of 1.24 GW CCPP located in the eastern province of Saudi Arabia based on energy and exergy analyses under ambient temperature variation. Also, (Şen et al., 2018) investigated the performance of a 240 MW CCPP located in Aliağa, İzmir, Turkey using energy and exergy analyses under ambient temperature variation. while (Abuelnuor et al., 2024) analyzed a steam cycle power plant located in Khartoum, Sudan based on energy and exergy approaches. All these studies concluded that the combustion chamber is the major source of potential destruction in the whole cycle. Other studies emphasized the importance of optimizing the condenser pressure for overall cycle performance enhancement as (Alus, Elrawemi and Eldabee, 2017; Laskowski et al., 2021; Pattanayak, Padhi and Kodamasingh, 2019) presented a universally applicable model for condenser simulation based on standards for steam surface condensers (Heat Exchanger Institute, 2012). Many studies regarded the future of CCPP in the era of developing RES power plants. (Alberto Boretti, 2025) pointed toward fuels that can be used in gas turbine engines and CCPP such as free-carbon ammonia and the promising transitional green hydrogen fuel and their roles in the future of CCPP operation toward net zero, as they can accommodate a fuel mixture with green hydrogen to pure hydrogen only as the main fuel used.",
+      "terms": [
+        "TIT",
+        "energy and exergy",
+        "combustion chamber",
+        "ambient temperature",
+        "condenser pressure",
+        "steam surface condensers",
+        "green hydrogen",
+        "ammonia"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-007",
+      "doc_id": "R026",
+      "section": "1. Introduction",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "According to the literature review, previous studies either conducted on performance investigations of thermal power plants or gave different proposals for performance optimization. These studies have confirmed that the CCPP's performance deteriorates during operation beyond its stipulated design conditions, especially in hot climates, since ambient temperature increase is the reason behind the reduced CCPP performance, including output power and thermal energy efficiency, and therefore significant waste energy and emissions released into the environment. Also, the previous studies conducted on performance investigation did not address all of the parameters that influence energy and exergy analysis accuracy. Additionally, the analysis was performed regardless of the chemical compositions of air, fuel, and product combustion gases, and it was assumed that natural gas is pure Methane, which is not true. However, all studies showed that the combustion chamber is the major source of potential destruction. Therefore, the CCPP is in a conundrum due to the renewable energy resources trend, which makes it challenging for all researchers to develop a retrofitted cycle that improves the performance under ambient temperature variation.",
+      "terms": [
+        "CCPP",
+        "ambient temperature",
+        "combustion chamber",
+        "chemical compositions",
+        "natural gas",
+        "Methane",
+        "retrofitted cycle",
+        "exergy analysis"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-008",
+      "doc_id": "R026",
+      "section": "1. Introduction",
+      "page_start": 3,
+      "page_end": 4,
+      "text": "One of the most commonly known retrofitting is the intercooled gas turbine combined cycle which plays a vital role in boosting output power and decreasing the significant effect of ambient temperature variation on the overall performance. However, in many cases, the resultant thermal efficiency may slightly decrease since the compressed air entering the combustion chamber at a relatively lower temperature will consume a higher amount of fuel to reach TIT. Therefore, the heat addition increases and there is higher exergy destruction in the combustion chamber. Also, the intercooler operating pressure and pressure loss will affect the exhaust gas temperature and flow rate passing through the HRSG. So, this study's main objectives are to present and investigate the proposed modification to the conventional intercooled gas turbine combined cycle to overcome the efficiency drawback, maximize the heat recovery capability that will reflect on decreasing the exergy destruction on the overall CCPP, and hand over guidelines for exergy analysis of hydrocarbon and natural gas combustion with-respect- to its composition that is supplied to El-Burullus CCPP for ultimate analysis accuracy. The results are validated against one of the largest and most efficient SCC5-8000H CCPP worldwide located in Kafr El-Shaikh province, Burullus, Egypt with technical specifications published by Siemens [37-41].",
+      "terms": [
+        "intercooled gas turbine combined cycle",
+        "TIT",
+        "exergy destruction",
+        "combustion chamber",
+        "intercooler",
+        "HRSG",
+        "SCC5-8000H",
+        "El-Burullus CCPP"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-009",
+      "doc_id": "R026",
+      "section": "2. Study Design",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "El-Burullus CCPP is located in Kafr el-Shaikh province and is considered the largest and the most efficient CCPP in Egypt and even in the world. Similar to the Beni-Suef CCPP that was described by (Moussa, Hassan and El-Fouly, 2021). This plant consists of four modules each of 2 x 2 x 1 configuration with 4800 MW total capacity and thermal efficiency exceeds 60% at ISO operating conditions. Each module consists of two SGT5-8000H gas turbines, two triple-pressure reheat HRSGs, one set of steam turbines operating at three different pressures, and three generators. The gas turbine consists of three main components: compressor, combustion chamber, and turbine section. These two gas turbine engines are fired with preheated natural gas up to 215℃ during combined cycle operation and the flue gas is fed through a bypass stack with a diverter damper to both unfired vertical three-pressure reheat HRSG for steam generation at three different pressure levels that are directed toward the steam turbines. The expanded steam is condensed in a steam surface condenser that is aligned to the LP turbine and utilizes recirculating cooling water from the cooling tower.",
+      "terms": [
+        "El-Burullus CCPP",
+        "SGT5-8000H",
+        "triple-pressure reheat HRSGs",
+        "2 x 2 x 1 configuration",
+        "diverter damper",
+        "steam surface condenser",
+        "cooling tower",
+        "preheated natural gas"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-010",
+      "doc_id": "R026",
+      "section": "2. Study Design",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "According to the last Egyptian energy report 2022/2023 submitted by EEHC (Egyptian Electricity Holding Company, 2023), Egypt has a surplus electricity capacity as this plant operates at a 61.33% loading factor only. Thus, the main objective of this study is to enhance efficiency. One of the most popular retrofits is conventional intercooling which utilizes two compressors and an intercooler to lower the air temperature before the second compression stage using an open cooling water source or air that is usually discarded. So, the main objective of conventional intercooling retrofitting is boosting the net output power. However, efficiency isn’t necessarily enhanced.",
+      "terms": [
+        "EEHC",
+        "loading factor",
+        "conventional intercooling",
+        "intercooler",
+        "second compression stage",
+        "net output power"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-011",
+      "doc_id": "R026",
+      "section": "2. Study Design",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "According to conventional intercooling investigation that is applied on El-Burullus CCPP, the power output is noticeably enhanced as much as the ambient air temperature and compressed air temperature are lowered before entering the high-pressure compressor. However, the resultant compressed air temperature will be lower than the conventional cycle which results in higher exergy destruction, higher fuel consumption, and therefore lower thermal energy efficiency. So, the current study examines several alternative intercooling retrofitting proposals with the optimum selection of intercooler pressure and different other parameters for optimization purposes.",
+      "terms": [
+        "conventional intercooling",
+        "El-Burullus CCPP",
+        "high-pressure compressor",
+        "exergy destruction",
+        "fuel consumption",
+        "intercooler pressure"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-012",
+      "doc_id": "R026",
+      "section": "2. Study Design",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Utilizing a partial amount of the bottoming cycle’s economizing water at three different pressures for the gas turbine’s intercooler, either by itself solely or in combination with reheating or regeneration retrofitting, is the primary foundation of these alternative intercooling retrofitting concepts. Additionally, there are other suggestions based on alternative intercooling accompanied by bypassing the flue gases between two HRSGs and, lastly, the state-of-the-art alternative intercooling accompanied by a steam injection system. All these proposals are put forth to save a portion of flue gas’ heat energy to be subsequently utilized.",
+      "terms": [
+        "economizing water",
+        "intercooler",
+        "reheating",
+        "regeneration",
+        "alternative intercooling",
+        "steam injection system",
+        "flue gas"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-013",
+      "doc_id": "R026",
+      "section": "2. Study Design",
+      "page_start": 4,
+      "page_end": 5,
+      "text": "The study yielded that the optimum cycle proposal is based on utilizing the low-pressure economizing water as a coolant for the intercooler and accompanied by a steam injection system for the sake of power and efficiency degrading enhancement that is accompanied by conventional intercooling retrofitting. The proposed cycle layout is depicted in Figure 1, which illustrates that the air enters the LP compressor after passing through a series of filters and is subsequently cooled before the HP compressor using varying amounts of the low-pressure economizing water for lower compression power consumption, higher work ratio, water preheating, and trading off between higher cycle power capacity or efficiency since high amount of coolant leads to increase gas turbine output power and decrease the thermal efficiency. The air and preheated natural gas are mixed and burned to produce high-pressure and temperature flue gases that expand through gas turbines and are directed to HRSG through a bypass stack with a diverter damper for steam generation at three different pressure levels. The preheated economizing water outlet from the intercooler is mixed with the remaining amount of the water before entering the LP economizer which contributes to saving a portion of flue gas heat energy.",
+      "terms": [
+        "low-pressure economizing water",
+        "intercooler",
+        "steam injection system",
+        "LP compressor",
+        "HP compressor",
+        "conventional intercooling",
+        "work ratio",
+        "diverter damper"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-014",
+      "doc_id": "R026",
+      "section": "2. Study Design",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "This heat energy is subsequently exploited through an additional small-capacity evaporator and economizer that are placed at the end of HRSG at the stack section which is designed to produce saturated steam which will be injected into the LP steam turbine at an appropriate pressure. The steam-injected system is an additional mechanism that primarily utilizes the energy present in flue gases after they pass through the LP economizer, before being released into the environment. This process can be achieved by pumping varying quantities of water, which becomes saturated and is then injected into the steam turbine, helping to maintain the flue gas temperatures released into the atmosphere at a lower level, approximately 80 degrees Celsius. This innovation is set to transform the design of Combined Cycle Power Plants (CCPP) by enhancing the operational flexibility of gas turbines, allowing for a balance between output and efficiency, as well as improving heat recovery capabilities since the temperature of the flue gases exiting the stack is regulated by the volume of water used in the supplemental steam injection system.",
+      "terms": [
+        "steam injection system",
+        "HRSG",
+        "LP economizer",
+        "saturated steam",
+        "LP steam turbine",
+        "steam-injected system",
+        "flue gases",
+        "stack section"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-015",
+      "doc_id": "R026",
+      "section": "2. Study Design",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Figure 1. Proposed layout of an intercooled gas turbine three-pressure reheat combined cycle with a saturated steam injection system.",
+      "terms": [
+        "intercooled gas turbine",
+        "three-pressure reheat combined cycle",
+        "saturated steam injection system"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-016",
+      "doc_id": "R026",
+      "section": "3. Mathematical Modelling",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The analysis of the SGT5-8000H Gas Turbine and SCC5-8000H CCPP was performed based on energy and exergy approaches under on-design and off-design operating conditions at the plant location with the help of a MATLAB R2017a that was developed specifically for this purpose concerning the following assumptions: 1. All components associated with the cycle are considered as an open system with steady-state flow. 2. Working fluids (Air and flue gases) are considered ideal gases with neglected cooling airflow rates. 3. Extracted cooling compressed air mass flow rate for turbine blades cooling is neglected. 4. Constant turbine inlet temperature = 1647.15 K. 5. Intercooler and combustion chamber pressure drop = 1%. 6. Combustion process efficiency = 99%. 7. Potential and kinetic energies will be neglected for simplifications. 8. Fuel preheating exergy destruction is relatively small and can be neglected. All processes are adiabatic.",
+      "terms": [
+        "SGT5-8000H",
+        "SCC5-8000H",
+        "MATLAB R2017a",
+        "steady-state",
+        "ideal gases",
+        "turbine inlet temperature",
+        "pressure drop",
+        "Combustion process efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-017",
+      "doc_id": "R026",
+      "section": "3.1. Energy Analysis",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The energy analysis approach is based on the first law of thermodynamics. It is used in all thermal systems to show off its capability and efficiency regardless of the location and quantity of irreversibilities causing that efficiency [43].",
+      "terms": [
+        "energy analysis",
+        "first law of thermodynamics",
+        "irreversibilities"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-018",
+      "doc_id": "R026",
+      "section": "3.1.1. Compressor",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The specific heat at a constant pressure of air is a function of temperature [44] and can be obtained from equation (1) and equation (2) for air temperature ranges from 250 K to 599 K and 600 K to 1500 K respectively. C_p_air = {1.023204 − [(1.76021 x 10^−4) T] + [(4.0205 x 10^−7) T^2] − [(4.87272 x 10^−11) T^3]} (1) (specific heat of air at constant pressure as a cubic function of air temperature T, for 250 K to 599 K) C_p_air = {0.874334 − [(3.22814 x 10^−4) T] + [(3.58694 x 10^−8) T^2] − [(1.99196 x 10^−11) T^3]} (2) (specific heat of air at constant pressure as a cubic function of air temperature T, for 600 K to 1500 K) The actual pressurized air temperature outlet from the compressor and consumption power can be obtained from the following equation (3) and equation (4) T_out,comp = T_in,comp [(P_r_comp)^((γ_air−1)/γ_air) − 1 + η_comp,is] / η_comp,is (3) (actual compressed air outlet temperature from inlet temperature, compressor pressure ratio, specific heat ratio and isentropic efficiency) Ẇ_compressor = ṁ_air C_p_air T_in [(P_r_comp)^((γ_air−1)/γ_air) − 1] / (η_Comp,is η_mech) (4) (compressor consumption power)",
+      "terms": [
+        "specific heat at a constant pressure of air",
+        "C_p_air",
+        "T_out,comp",
+        "P_r_comp",
+        "γ_air",
+        "η_comp,is",
+        "Ẇ_compressor",
+        "η_mech"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-019",
+      "doc_id": "R026",
+      "section": "3.1.2. Intercooler",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "In the case of an intercooled cycle, the intercooler’s effectiveness and cooled compressed air outlet temperature can be obtained from the following equations (5, 6); ε_I.C = [ṁ_air C_P_air (T_in − T_out)] / [C_min (T_in − T_water_in)] (5) (intercooler effectiveness = actual heat removed from the air / maximum possible heat transfer based on C_min and the inlet temperature difference) T_air,out = T_air,in − {[ε_I.C C_min (T_in − T_water_in)] / (ṁ_air C_P_air)} (6) (cooled compressed air outlet temperature from the intercooler effectiveness)",
+      "terms": [
+        "intercooled cycle",
+        "intercooler’s effectiveness",
+        "ε_I.C",
+        "C_min",
+        "T_water_in",
+        "T_air,out"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-020",
+      "doc_id": "R026",
+      "section": "3.1.3. Combustion chamber",
+      "page_start": 6,
+      "page_end": 7,
+      "text": "The mass and heat balance of the combustion chamber can be evaluated according to equation (7); Q̇_C.C = [(ṁ_gas C_p_gas TIT) − (ṁ_air C_p_air T_c.c,in)] / η_C.C (7) (combustion chamber heat addition rate = enthalpy rise from compressed air to gas at TIT, divided by combustion chamber efficiency) From the mass and heat balance of the combustion chamber, the fuel-to-air ratio (F/A) concerning the physical properties of fuel at constant TIT can be obtained from the following equation (8); F/A = [((C_p_gas TIT) − (C_P_air T_c.c,in)) / ((η_combustion LHV) − (C_p_gas TIT) + (C_p_fuel T_fuel))] (8) (fuel-to-air ratio from the combustion chamber heat balance at constant TIT)",
+      "terms": [
+        "mass and heat balance",
+        "combustion chamber",
+        "Q̇_C.C",
+        "TIT",
+        "fuel-to-air ratio (F/A)",
+        "η_combustion",
+        "LHV",
+        "T_fuel"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-021",
+      "doc_id": "R026",
+      "section": "3.1.4. Gas turbine",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "The turbine pressure ratio depends on pressure drop in the combustion chamber, intercooler, and back pressure on the turbine. This ratio can be obtained as follows from the following equation (9). P_r_Turbine = P_(s.c) P_r_comp [1−(ΔP_I.C%/100)] [1−(ΔP_C.C%/100)] / P_exit GT (9) (turbine pressure ratio from compressor pressure ratio reduced by intercooler and combustion chamber pressure drops, divided by turbine exit back pressure) The produced power from the gas turbine stages can be obtained from the following equation (10); Ẇ_Turbine = ṁ_gas C_p_gas TIT η_mech η_Turb,is [(P_r_Turbine)^((γ_g−1)/γ_g) − 1] / (P_r_Turbine)^((γ_g−1)/γ_g) (10) (power produced by the gas turbine stages) The overall energy performance indicators for the gas turbine cycle include thermal energy efficiency, net output power, and specific fuel consumption that can be obtained from the following equations (11-13) respectively. η_en = (Ẇ_Turbine − Ẇ_compressor) / Q̇_C.C (11) (gas turbine cycle thermal energy efficiency), Ẇ_net = Ẇ_Turbine – Ẇ_compressor (12) (net output power), SFC = 3600 ṁ_fuel / Ẇ_net (13) (specific fuel consumption)",
+      "terms": [
+        "turbine pressure ratio",
+        "P_r_Turbine",
+        "ΔP_I.C%",
+        "Ẇ_Turbine",
+        "η_Turb,is",
+        "η_en",
+        "Ẇ_net",
+        "SFC"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-022",
+      "doc_id": "R026",
+      "section": "3.1.5. HRSG",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "The pressurized water is heated to produce superheated steam at three different pressures in the HRSG that is arranged into four sections: reheater section, high-pressure section, intermediate-pressure section, and low-pressure section respectively. As terminal temperature difference (TTD), pinch points, and approach points for the three pressures are known, the flue gas temperature after passing the reheater, steam generation rate at the high-pressure section, and the gas temperature at the end of the high-pressure section can be obtained from equation (14 – 16); T_gas,in_hp−sh = T_hp−st + 273.15 + TTD = T_gas,out_GT − ΔT_across−R.H (14) (flue gas temperature after the reheater = HP steam temperature + 273.15 + terminal temperature difference = GT exhaust gas temperature − temperature drop across the reheater) ṁ_st_h = {[ṁ_gas C_p_gas (T_gas,in_hp−sh − T_gas,out_hp−evap) (1 − heat loss%)] − [blow down% (h_sat,in_hp−evap − h2h)]} / (h_hp−sh−outlet − h_hp−evap−inlet) (15) (high-pressure steam generation rate from the gas-side heat balance over the HP superheater and evaporator, less blowdown) T_gas,out_hp−eco = T_gas,out_hp−evap − [ṁ_st_h (h_hp−evap−inlet − h_hp−eco−inlet) / (ṁ_gas C_p_gas)] (16) (gas temperature at the end of the high-pressure section, after the HP economizer)",
+      "terms": [
+        "HRSG",
+        "superheated steam",
+        "reheater section",
+        "terminal temperature difference (TTD)",
+        "pinch points",
+        "approach points",
+        "ṁ_st_h",
+        "T_gas,out_hp−eco"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-023",
+      "doc_id": "R026",
+      "section": "3.1.5. HRSG",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "The intermediate and low-pressure steam generation rates can be obtained as follows in equations (17, 18) respectively: ṁ_st_i = {[ṁ_gas C_p_gas (T_gas,out_hp−eco − T_gas,out_iP−evap) (1 − heat loss%)] − [blow down% (h_sat,in_iP−evap − h2i)]} / (h_iP−sh−outlet − h_iP−evap−inlet) (17) (intermediate-pressure steam generation rate) ṁ_st_L = {[ṁ_gas C_p_gas (T_gas,out_ip−eco − T_gas,out_LP−evap) (1 − heat loss%)] − [blow down% (h_sat,in_LP−evap − h2L)]} / (h_LP−sh−outlet − h_LP−evap−inlet) (18) (low-pressure steam generation rate)",
+      "terms": [
+        "intermediate and low-pressure steam generation rates",
+        "ṁ_st_i",
+        "ṁ_st_L",
+        "heat loss%",
+        "blow down%"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-024",
+      "doc_id": "R026",
+      "section": "3.1.5. HRSG",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "Operating the HRSG at off-design conditions causes the evaporator’s performance to vary from the design point and the performance factor for each evaporator can be evaluated from the following equation (19-21) (Hicks, 2006): For high-pressure evaporator constant K1: K_1 = {ln[(T_gas,in_hp−evap(℉) − T_saturation,in_hp−evap(℉)) / (T_gas,out_hp−evap(℉) − T_saturation,in_hp−evap(℉))] / (ṁ_gas (lb/hr))^−0.4} (19) (HP evaporator performance factor from the log ratio of gas-to-saturation temperature differences at inlet and outlet, in ℉, and gas flow in lb/hr) For intermediate pressure evaporator constant K2: K_2 = {ln[(T_gas,in_ip−evap(℉) − T_saturation,in_ip−evap(℉)) / (T_gas,out_ip−evap(℉) − T_saturation,in_ip−evap(℉))] / (ṁ_gas (lb/hr))^−0.4} (20) (IP evaporator performance factor) For low-pressure evaporator constant K3: K_3 = {ln[(T_gas,in_Lp−evap(℉) − T_saturation,in_Lp−evap(℉)) / (T_gas,out_Lp−evap(℉) − T_saturation,in_Lp−evap(℉))] / (ṁ_gas (lb/hr))^−0.4} (21) (LP evaporator performance factor)",
+      "terms": [
+        "off-design conditions",
+        "evaporator’s performance",
+        "performance factor",
+        "K1",
+        "K_1",
+        "T_saturation,in_hp−evap",
+        "lb/hr",
+        "Hicks, 2006"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-025",
+      "doc_id": "R026",
+      "section": "3.1.6. Steam Turbine",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "The power output can be obtained as follows from equation (23). While, the entropy of superheated steam and ideal expanded steam are same as shown in equation (22). s_LP expand steam = s_HP superheat steam [ideal case] (22) (ideal expansion: entropy of the expanded steam equals that of the superheated steam) Ẇ_st = ṁ_st η_st (h_superheat steam − h_LP ideal expand steam) (23) (steam turbine power output = steam flow × isentropic efficiency × ideal enthalpy drop)",
+      "terms": [
+        "power output",
+        "superheated steam",
+        "ideal expanded steam",
+        "Ẇ_st",
+        "η_st"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-026",
+      "doc_id": "R026",
+      "section": "3.1.7. Pump",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "The power output can be obtained as follows from equation (25). While, the entropy of inlet and outlet water from feed water pumps are same as shown in equation (24). s_HP outlet water = s_LP inlet water [ideal case] (24) (ideal pumping: outlet water entropy equals inlet water entropy) Ẇ_pump = ṁ_st [(h_HP ideal outlet water − h_LP inlet water) / η_pump] (25) (pump power = water flow × ideal enthalpy rise / pump efficiency)",
+      "terms": [
+        "feed water pumps",
+        "Ẇ_pump",
+        "η_pump",
+        "entropy"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-027",
+      "doc_id": "R026",
+      "section": "3.1.8. Condenser",
+      "page_start": 8,
+      "page_end": 9,
+      "text": "The mass .and heat balance for the steam condenser can be obtained from equation (26) while equations (27 – 33) are used to evaluate condenser operating pressure under off-design operating conditions. Q̇_condenser = ṁ_c.w C_p_CW (T_CW_out − T_CW_in) = ṁ_st (h_st_in − T_st_out) (26) (condenser heat balance: heat gained by cooling water = heat released by condensing steam, as printed) T_A = T_COOLING TOWER WATER_INLET = T_CONDENSER WATER OUTLET (27) (hot water temperature T_A) T_B = T_COOLING TOWER WATER_OUTLET = T_CONDENSER WATER INLET (28) (cold water temperature T_B) Range = T_A − T_B (29) (cooling tower range) Ideal Range = T_A − T_air wet bulb (30) (ideal range down to the air wet bulb temperature) ε_condenser = Range / Ideal Range (31) (effectiveness) T_approach = T_B − T_air wet bulb (32) (approach temperature) T_saturation = TTD + T_B (33) (condenser saturation temperature = terminal temperature difference + cooling water inlet temperature T_B)",
+      "terms": [
+        "steam condenser",
+        "condenser operating pressure",
+        "off-design",
+        "Q̇_condenser",
+        "T_air wet bulb",
+        "ε_condenser",
+        "T_approach",
+        "T_saturation"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-028",
+      "doc_id": "R026",
+      "section": "3.2. Exergy Analysis",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "Unlike the energy approach, the exergy analysis approach is based on the second law of thermodynamics used to quantify and locate the irreversibilities to help the design engineers concentrate their potential on components that require potential improvements [43]. For an open steady-state system, the exergy rate balance will be evaluated according to equation (34). 0 = Σ Q̇_j [1 − (T_o/T_i)] − Ẇ_cv + [ṁ (ef_in − ef_out)] − Ėx_dest (34) (steady-state exergy rate balance: heat exergy − work + flow exergy change − exergy destruction = 0) While, equation (35) shows the specific physical exergy flow of flowing gas and water. ef = (h– h_o) − [T_o (s − s_o)] = (h– ḣ_o) − {T_o {(s − ṡ_o) − [R ln (P/P_o)]}} (35) (specific physical exergy flow relative to the dead state T_o, P_o)",
+      "terms": [
+        "exergy analysis",
+        "second law of thermodynamics",
+        "irreversibilities",
+        "exergy rate balance",
+        "Ėx_dest",
+        "specific physical exergy flow",
+        "ef"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-029",
+      "doc_id": "R026",
+      "section": "3.2. Exergy Analysis",
+      "page_start": 9,
+      "page_end": 10,
+      "text": "Table 1. Cycle’s component exergy analysis equations. Compressor: Ėx_W=−Ẇ_comp; Ėx_Q=Neglect; Ėx_flow=ṁ_air (ef_e − ef_i); Ėx_Dest=Ėx_Q − Ėx_W − Ėx_Flow; η_ex=[1 − (Ėx_Dest compressor / Ėx_W compressor)]. Intercooler: Ėx_W=0; Ėx_Q=Neglect; Ėx_flow=[ṁ_air (ef_in,air − ef_out,air)] − [ṁ_water (ef_out,water − ef_in,water)]; Ėx_Dest=Ėx_Q + Ėx_W + Ėx_Flow; η_ex=ṁ_water (ef_out,water − ef_in,water) / ṁ_air (ef_in,air − ef_out,air). Combustion chamber: Ėx_W=0; Ėx_Q=Neglect; Ėx_flow=Ėx_f = Ėx_fuel + Ėx_air = [ṁ_fuel (ef_Phy_fuel + ef_Ch_fuel)] + [ṁ_air (ef_Phy_air + ef_Ch_air)]; Ėx_p = ṁ_gas (ef_Phy_gas + ef_Ch_gas); Ėx_Dest=Ėx_Q − Ėx_W + Ėx_f − Ėx_p (Details are given in section 3.2.1.); η_ex=[(Ėx_gas − Ėx_air) / Ėx_fuel]. GT Turbine: Ėx_W=Ẇ_Turb; Ėx_Q=Neglect; Ėx_flow=ṁ_gas (ef_in − ef_out); Ėx_Dest=Ėx_flow − Ėx_W; η_ex=[1 − (Ėx_Dest gas turbine / Ėx_flow)]. HRSG: Ėx_W=0; Ėx_Q=Neglect; Ėx_flow=[ṁ_gas (ef_in,gas − ef_out,gas)] − [ṁ_water (ef_out,water − ef_in,water)]; Ėx_Dest=Ėx_Q + Ėx_W + Ėx_flow; η_ex=ṁ_water (ef_out − ef_in) / ṁ_gas (ef_in − ef_out). Condenser: Ėx_W=0; Ėx_Q=Neglect; Ėx_flow=ṁ_steam (ef_in − ef_out); Ėx_Dest=Ėx_Q + Ėx_flow; η_ex=(blank). Pump: Ėx_W=Ẇ_pump; Ėx_Q=Neglect; Ėx_flow=ṁ_steam (ef_out − ef_in); Ėx_Dest=Ėx_Q + Ėx_W − Ėx_flow; η_ex=[1 − (Ėx_Dest pump / Ėx_W pump)]. ST Turbine: Ėx_W=Ẇ_st; Ėx_Q=Neglect; Ėx_flow=ṁ_steam (ef_in − ef_out); Ėx_Dest=Ėx_Q − Ėx_W + Ėx_flow; η_ex=[1 − (Ėx_Dest ST. turbine / Ėx_flow)]. Surrounding (Stack): Ėx_W=0; Ėx_Q=Neglect; Ėx_flow=ṁ_gas (ef_in − ef_out); Ėx_Dest=ṁ_gas (ef_in − ef_out); η_ex=(blank).",
+      "terms": [
+        "Ėx_W",
+        "Ėx_Q",
+        "Ėx_flow",
+        "Ėx_Dest",
+        "η_ex",
+        "Compressor",
+        "Combustion chamber",
+        "HRSG"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-030",
+      "doc_id": "R026",
+      "section": "3.2.1. Combustion chamber exergy destruction",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "The combustion chamber exergy destruction occurs due to the physical properties, chemical composition of fuel and combustion gases that differ from the ambient physical properties. The destruction can be evaluated by differences between the input air, fuel exergies flow rate, and output combustion products exergy flow rate based on chemical and physical exergies as shown in equation (36). Ėx_Dest = Ėx_Fuel + Ėx_Air − Ėx_combustion gases (36) (combustion chamber exergy destruction = fuel exergy + air exergy − combustion products exergy) Where, equation (37) shows the exergy flow rate of flowing gas whether it is air, fuel or combustion gases that includes the physical and chemical specific exergy flow Ėx_fuel, air, combustion gases = ṁ_fuel, air, combustion gases (ef_phy + ef_che) (37) (exergy flow rate = mass flow rate × sum of physical and chemical specific exergy)",
+      "terms": [
+        "exergy destruction",
+        "chemical composition",
+        "physical and chemical",
+        "Ėx_Dest",
+        "Ėx_combustion gases",
+        "ef_phy",
+        "ef_che"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-031",
+      "doc_id": "R026",
+      "section": "3.2.1. Combustion chamber exergy destruction",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "The specific physical exergy of air, fuel, and combustion gases can be obtained from equation (38); ef_physical = [C_p_gas (T − T_o)] − {T_o {[C_p_gas ln (T/T_o)] − [R_gas ln (P/P_o)]}} (38) (specific physical exergy of air, fuel and combustion gases relative to the dead state T_o, P_o) Where; R_gas is the combustion product gas constant which is based on the molar fraction of combustion products specimen and can be obtained from equation (39). R_gas = ΣY_i [R_Universal / Molar mass of gas (M_i)] (39) (combustion product gas constant = sum over species of molar fraction Y_i × universal gas constant / species molar mass)",
+      "terms": [
+        "specific physical exergy",
+        "ef_physical",
+        "C_p_gas",
+        "R_gas",
+        "molar fraction",
+        "R_Universal"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-032",
+      "doc_id": "R026",
+      "section": "3.2.1. Combustion chamber exergy destruction",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "The general hydrocarbon combustion interaction is as follows in equation (40). However, for stoichiometric combustion, there is no excess oxygen in the products and therefore “d” coefficient is equal to 0. C_xH_y + z (O_2 + 3.76 N_2) ⟶ x CO_2 + (y/2) H_2O + 3.76 z N_2 + d O_2 (40) (general hydrocarbon combustion with air; d = excess oxygen moles, 0 for stoichiometric combustion)",
+      "terms": [
+        "hydrocarbon combustion",
+        "stoichiometric combustion",
+        "excess oxygen",
+        "C_xH_y",
+        "N_2",
+        "O_2"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-033",
+      "doc_id": "R026",
+      "section": "3.2.1. Combustion chamber exergy destruction",
+      "page_start": 10,
+      "page_end": 11,
+      "text": "Natural gas is supplied from the El-Gamil treatment plant which is owned by Petrobel (Egypt) and Eni (Italy) to the United Gas Derivative Company (UGDC) that feeds the natural gas to El-Burullus combined cycle power plant and meets the Egyptian N.G quality standards with the composition shown in Table 2. (Elhefnawy et al., 2017). According to the fuel composition aforementioned in Table 2, for stoichiometric combustion, each mole of fuel requires 2.1478 moles of standard air composition as shown in Table 3. The produced combustion gases obtained from the stoichiometric combustion process will have a composition as shown in Table 4.",
+      "terms": [
+        "Natural gas",
+        "El-Gamil treatment plant",
+        "United Gas Derivative Company (UGDC)",
+        "El-Burullus",
+        "N.G quality standards",
+        "stoichiometric combustion",
+        "standard air composition",
+        "combustion gases"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-034",
+      "doc_id": "R026",
+      "section": "3.2.1. Combustion chamber exergy destruction",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "Table 2. Natural gas molar fraction and composition. (Elhefnawy et al., 2017). Nitrogen (N_2): Molar fraction (%)=1.06 * 10^−3; Molar Mass (g/mol)=28; Gibbs function of formation g⃡_Fuel (KJ/Kmol) [43]=0. Oxygen (O_2): Molar fraction (%)=0; Molar Mass (g/mol)=32; Gibbs function of formation g⃡_Fuel (KJ/Kmol) [43]=0. Water vapor (H_2O): Molar fraction (%)=0; Molar Mass (g/mol)=18; Gibbs function of formation g⃡_Fuel (KJ/Kmol) [43]=−228590. Carbon dioxide (CO_2): Molar fraction (%)=7.24 * 10^−3; Molar Mass (g/mol)=44; Gibbs function of formation g⃡_Fuel (KJ/Kmol) [43]=−394380. Methane (CH_4): Molar fraction (%)=0.91806; Molar Mass (g/mol)=16; Gibbs function of formation g⃡_Fuel (KJ/Kmol) [43]=−50790. Ethane (C_2H_6): Molar fraction (%)=4.53 * 10^−2; Molar Mass (g/mol)=30; Gibbs function of formation g⃡_Fuel (KJ/Kmol) [43]=−32890. Propane (C_3H_8): Molar fraction (%)=1.75 * 10^−2; Molar Mass (g/mol)=44; Gibbs function of formation g⃡_Fuel (KJ/Kmol) [43]=−23490. i-Butane (C_4H_10): Molar fraction (%)=3.91 * 10^−3; Molar Mass (g/mol)=58; Gibbs function of formation g⃡_Fuel (KJ/Kmol) [43]=−15710. n-Butane (C_4H_10): Molar fraction (%)=3.59 * 10^−3; Molar Mass (g/mol)=58; Gibbs function of formation g⃡_Fuel (KJ/Kmol) [43]=−15710. i-Pentane (C_5H_12): Molar fraction (%)=1.36 * 10^−3; Molar Mass (g/mol)=72; Gibbs function of formation g⃡_Fuel (KJ/Kmol) [43]=−8200. n-Pentane (C_5H_12): Molar fraction (%)=7.5 * 10^−4; Molar Mass (g/mol)=72; Gibbs function of formation g⃡_Fuel (KJ/Kmol) [43]=−8200.",
+      "terms": [
+        "Natural gas",
+        "Molar fraction",
+        "Molar Mass",
+        "Gibbs function of formation",
+        "Methane (CH_4)",
+        "Ethane (C_2H_6)",
+        "Propane (C_3H_8)",
+        "n-Pentane (C_5H_12)"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-035",
+      "doc_id": "R026",
+      "section": "3.2.1. Combustion chamber exergy destruction",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "Table 3. Air composition with molar fraction and mass (Ibrahim et al., 2017). Nitrogen (N2): Molar fraction (%)=75.67; Molar Mass (g/mol)=28. Oxygen (O2): Molar fraction (%)=20.34; Molar Mass (g/mol)=32. Water (H2O): Molar fraction (%)=3.03; Molar Mass (g/mol)=18. Carbon dioxide (CO2): Molar fraction (%)=0.03; Molar Mass (g/mol)=44.",
+      "terms": [
+        "Air composition",
+        "Molar fraction",
+        "Molar Mass",
+        "Nitrogen (N2)",
+        "Oxygen (O2)"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-036",
+      "doc_id": "R026",
+      "section": "3.2.1. Combustion chamber exergy destruction",
+      "page_start": 11,
+      "page_end": 12,
+      "text": "The molar mass of fuel and air can be obtained from equation (41) as follows: M_gas = ΣM_i composite molar mass (41) (molar mass of fuel or air from its composites) The molar stoichiometric air-to-fuel ratio can be evaluated according to equation (42). AF⃡_stoich = 4.76 ∗ number of stoichiometric moles of air (42) (molar stoichiometric air-to-fuel ratio) Then, the stoichiometric air-to-fuel ratio in Kg_air/Kg_fuel can be obtained as follows from equation (43): AF_stoich = AF⃡_stoich (Molar mass of air / Molar mass of N.G) (43) (mass-based stoichiometric air-to-fuel ratio) The actual air-fuel ratio can be used for excess air percentage evaluation as in equation (44): excess air percentage = AF_actual / AF_stoich (44) (ratio of actual to stoichiometric air-fuel ratio) While the actual molar air-to-fuel ratio and number of air moles required can be evaluated according to equations (45-46) respectively. AF⃡_actual = AF_actual (Molar mass for N.G with its composition / Molar mass of air) (45) (actual molar air-to-fuel ratio) Actual moles of air = AF⃡_actual / 4.76 (46) (number of air moles required)",
+      "terms": [
+        "molar mass",
+        "M_gas",
+        "molar stoichiometric air-to-fuel ratio",
+        "AF⃡_stoich",
+        "AF_stoich",
+        "excess air percentage",
+        "AF_actual",
+        "AF⃡_actual"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-037",
+      "doc_id": "R026",
+      "section": "3.2.1. Combustion chamber exergy destruction",
+      "page_start": 12,
+      "page_end": 12,
+      "text": "Table 4. Moles of product combustion gases. Carbon dioxide (CO2): Molar fraction (%)=1.10895; Gibbs function of formation g⃡_ḟ (KJ/Kmol) [43]=-394380; Standard chemical exergy ex_i^−ch (J/mole) [43]=19,480. Water (H2O): Molar fraction (%)=2.09218; Gibbs function of formation g⃡_ḟ (KJ/Kmol) [43]=-228590; Standard chemical exergy ex_i^−ch (J/mole) [43]=9,500. Nitrogen (N2): Molar fraction (%)=8.076788; Gibbs function of formation g⃡_ḟ (KJ/Kmol) [43]=0; Standard chemical exergy ex_i^−ch (J/mole) [43]=720. Oxygen (O_2): Molar fraction (%)=0; Gibbs function of formation g⃡_ḟ (KJ/Kmol) [43]=0; Standard chemical exergy ex_i^−ch (J/mole) [43]=3970.",
+      "terms": [
+        "product combustion gases",
+        "Molar fraction",
+        "Gibbs function of formation",
+        "Standard chemical exergy",
+        "Carbon dioxide (CO2)",
+        "Water (H2O)"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-038",
+      "doc_id": "R026",
+      "section": "3.2.1. Combustion chamber exergy destruction",
+      "page_start": 12,
+      "page_end": 12,
+      "text": "Then, the combustion products will be the same as the stoichiometric combustion as shown in Table 4. However, additional oxygen moles that do not participate in the combustion process and all moles of nitrogen found in the air and natural gas can be calculated through the following formula (47): Actual moles of combustion products = 1.10895 CO_2 + 2.09218 H_2O + (((3.76 ∗ Number of air moles) + Molar fraction in fuel composition) N_2) + ((Actual number of air moles − Stoichiometric number of air moles) ∗ O_2) (47) (actual combustion products: CO_2 and H_2O as in stoichiometric combustion, plus nitrogen from air and fuel, plus unreacted excess oxygen)",
+      "terms": [
+        "combustion products",
+        "stoichiometric combustion",
+        "additional oxygen moles",
+        "nitrogen",
+        "CO_2",
+        "H_2O",
+        "N_2"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-039",
+      "doc_id": "R026",
+      "section": "3.2.1. Combustion chamber exergy destruction",
+      "page_start": 12,
+      "page_end": 12,
+      "text": "The chemical exergy for fuel can be obtained through the following comprehensive formula (48) as follow: e^−ch = {g⃡ḟ_fuel + [Number of air moles (g⃡ḟ_O_2 + 3.76 g⃡ḟ_N_2)] − {[(3.76 ∗ Number of air moles)+molar fraction in fuel composition] g⃡ḟ_N_2} − [(actual air moles− stoichiometric air moles) g⃡ḟ_O_2]} / molar mass of N.G (48) (chemical exergy of fuel per unit mass, from Gibbs functions of formation of fuel, air and products, divided by the natural gas molar mass) Where g⃡_Fuel is the Gibbs function of formation (kJ/kmol) that is stated in Table 2 for each fuel composite and can be obtained as follows in equation (49): g⃡_Fuel = ΣM_i g⃡_Fuel_i (49) (fuel Gibbs function of formation summed over fuel composites) While the fuel exergy flow rate can be obtained as in equation (50): Ėx_fuel = e^−ch ṁ_fuel (50) (fuel exergy flow rate = fuel chemical exergy × fuel mass flow rate)",
+      "terms": [
+        "chemical exergy for fuel",
+        "e^−ch",
+        "Gibbs function of formation",
+        "g⃡_Fuel",
+        "fuel exergy flow rate",
+        "Ėx_fuel",
+        "ṁ_fuel"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-040",
+      "doc_id": "R026",
+      "section": "3.2.1. Combustion chamber exergy destruction",
+      "page_start": 12,
+      "page_end": 13,
+      "text": "The chemical exergy for combustion gases can be obtained through the following comprehensive formula (51) as follow: ef_chemical_combustion gases = [(ΣX_i ex_i^−ch) + [R_g T_o (ΣX_i ex_i^−ch)]] / molar fraction of combustion gases (51) (chemical specific exergy of combustion gases from species molar fractions X_i and standard chemical exergies ex_i^−ch) Where ex_i^−ch is the standard chemical exergy for each composite in the combustion products and can be obtained from Table 4. The combustion chamber exergy destruction can be calculated from the following equation (52). However, the combustion chamber doesn’t produce any work, and it is assumed that no heat loss dissipates to the surroundings based on the assumptions. Then, Eẋ Qc.c and Eẋ Wc.c can be neglected. Ėx_Dest_c.c = Ėx_Q_c.c − Ėx_W_c.c + Ėx_fuel + Ėx_air − Ėx_combustion gases (52) (combustion chamber exergy destruction from the exergy balance)",
+      "terms": [
+        "chemical exergy for combustion gases",
+        "ef_chemical_combustion gases",
+        "standard chemical exergy",
+        "ex_i^−ch",
+        "combustion chamber exergy destruction",
+        "Ėx_Dest_c.c",
+        "Ėx_Q_c.c"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-041",
+      "doc_id": "R026",
+      "section": "3.2.1. Combustion chamber exergy destruction",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "If heat dissipation is considered, then the exergy transfer rate accompanying heat transfer Ėx_Q_c.c can be evaluated from the following equation (53) Ėx_Q_c.c = Q̇_CV ∗ (1 − T_o/T) (53) (exergy transfer rate accompanying heat transfer) Where Q̇_CV is the rate of heat transfer occurring that can be evaluated as shown in equation (54) Q̇_CV = %loss x ṁ_fuel x LHV (54) (heat transfer rate = loss percentage × fuel mass flow rate × lower heating value)",
+      "terms": [
+        "heat dissipation",
+        "exergy transfer rate",
+        "Ėx_Q_c.c",
+        "Q̇_CV",
+        "LHV"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-042",
+      "doc_id": "R026",
+      "section": "4. Results and discussion",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "The first goal of the current study is to validate the governing mathematical modeling’s robustness in simulating both conventional and proposed cycles under off-design operating conditions using Siemens’ technical specifications for the SCC5-8000H GT-CCPP under ISO conditions. To demonstrate the extent of the improvement, this study examined the suggested cycle’s performance using energy and exergy methodologies to show how much improvement was achieved.",
+      "terms": [
+        "mathematical modeling",
+        "off-design operating conditions",
+        "Siemens’ technical specifications",
+        "SCC5-8000H GT-CCPP",
+        "ISO conditions",
+        "energy and exergy methodologies"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-043",
+      "doc_id": "R026",
+      "section": "4.1. Mathematical Modeling validation",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "The energy mathematical modeling is validated on the conventional SCC5-8000H cycle under on-design conditions (15 ℃ ambient temperature and 60% relative humidity at sea level). The analysis yielded extremely accurate results, demonstrating the stability of the MATLAB code script in the cycle performance investigation. The input parameters used for the analysis, which are obtained from technical datasheets and the plant’s control room are presented in Table 5. The analysis results are shown in Table 6 with error percentages compared to the published technical datasheets of SGT5-8000H and SCC5-8000H.",
+      "terms": [
+        "SCC5-8000H",
+        "on-design conditions",
+        "MATLAB code script",
+        "technical datasheets",
+        "SGT5-8000H",
+        "relative humidity"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-044",
+      "doc_id": "R026",
+      "section": "4.1. Mathematical Modeling validation",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "To compare engine performance, standardized on-design conditions are used. However, the evaporator and condenser operate differently at off-design operating conditions. So, the whole CCPP performance is investigated under ambient temperature variation and validated with the study’s results of (Ahmed and Oudah, 2018), who presented the steam generation rate concerning ambient temperature variation at different turbine inlet temperatures. The current study's findings are plotted as shown in Figure 2. The findings demonstrate a comparatively highly accurate validation with an average error of 1.3% alongside the ambient temperature range at the turbine inlet temperature of 1200 K and an average error of 0.71% alongside the ambient temperature range at the turbine inlet temperature of 1400 K.",
+      "terms": [
+        "on-design conditions",
+        "evaporator",
+        "condenser",
+        "off-design operating conditions",
+        "steam generation rate",
+        "turbine inlet temperature",
+        "average error"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-045",
+      "doc_id": "R026",
+      "section": "4.1. Mathematical Modeling validation",
+      "page_start": 13,
+      "page_end": 14,
+      "text": "Also, the detailed physical and chemical exergy analysis of the gas turbine was evaluated considering the fuel composition as shown in Table 2 and validated with the study’s results (Ibrahim et al., 2017). This study’s findings and Ibrahim et al., [31] results are shown in Figures [3 - 6]. Figure 3 shows a comparatively highly accurate evaluation of the exergy destruction rate for all gas turbine components with an overall error of 8%, 8.99%, and 6.8% in the compressor, combustion chamber, and gas turbine respectively. While Figure 4 illustrates the fuel’s specific exergy flow and rate of exergy has an overall error evaluated by 0.09% and 0.0114% respectively. On the other hand, Figure 5 shows the molar fraction of combustion products with a relatively small error of 0.0756%, 0.9772%, 4.06% and 6.24% in oxygen, nitrogen, carbon dioxide and water vapor respectively. Also, Figure 6 showed a variation percentage of 4.28% and 4.25% between this study and reference’s results in specific exergy flow of product combustion gases and exergy flow rate. Then, the analysis results showed an accurate representation of exergy analysis. However, the variation between the current study and Ibrahim et al., [31] results shows the importance of considering fuel composition toward obtaining accurate exergy destruction, especially for the combustion process.",
+      "terms": [
+        "physical and chemical exergy analysis",
+        "fuel composition",
+        "exergy destruction rate",
+        "compressor",
+        "combustion chamber",
+        "molar fraction of combustion products",
+        "specific exergy flow",
+        "combustion process"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-046",
+      "doc_id": "R026",
+      "section": "4.1. Mathematical Modeling validation",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Table 5. Input data for analysis (COMPONENT groups Compressor, Combustion chamber, Gas turbine section). Ambient Temperature: VALUE=15; UNIT=℃. Relative Humidity: VALUE=60; UNIT=%. Ambient Pressure: VALUE=1.01325; UNIT=bar. Air Specific Heat at Constant Pressure: VALUE=1.0047; UNIT=kJ/kg K. Air-Specific Heat Ratio: VALUE=1.400256; UNIT=(blank). Inlet air filtration pressure drop: VALUE=0; UNIT=Pa. Compressor Isentropic Efficiency: VALUE=92.14; UNIT=%. Overall Pressure Ratio: VALUE=19.2: 1; UNIT=bar. Combustion Chamber Pressure Drop: VALUE=0; UNIT=Pa. N.G lower heating value: VALUE=50000; UNIT=kJ/kg. N.G temperature: VALUE=215; UNIT=℃. N.G specific heat at constant pressure: VALUE=2.232; UNIT=kJ/kg K. Combustion Efficiency: VALUE=100; UNIT=%. Average Flue Gas Specific Heat at Constant Pressure: VALUE=1.145; UNIT=kJ/kg K. Flue Gas Specific Heat Ratio: VALUE=1.33; UNIT=(blank). Turbine Isentropic Efficiency: VALUE=88.25; UNIT=%. Turbine Inlet Temperature: VALUE=1373.9; UNIT=℃. Turbine Exit Pressure (Simple): VALUE=1.01325; UNIT=bar. Turbine Exit Pressure (Combined): VALUE=1.04240; UNIT=bar.",
+      "terms": [
+        "Input data",
+        "Ambient Temperature",
+        "Compressor Isentropic Efficiency",
+        "Overall Pressure Ratio",
+        "N.G lower heating value",
+        "Turbine Inlet Temperature",
+        "Turbine Isentropic Efficiency",
+        "Flue Gas Specific Heat Ratio"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-047",
+      "doc_id": "R026",
+      "section": "4.1. Mathematical Modeling validation",
+      "page_start": 14,
+      "page_end": 15,
+      "text": "Table 5. Input data for analysis (continued). Alternator – Alternator Efficiency: VALUE=98.9; UNIT=%. Mechanical components – Mechanical Efficiency: VALUE=100; UNIT=%. Condenser – Operating pressure: VALUE=0.043; UNIT=bar. HP feed water – Operating pressure: VALUE=220; UNIT=bar. IP feed water – Operating pressure: VALUE=60; UNIT=bar. LP feed water – Operating pressure: VALUE=5; UNIT=bar. Pressure drop in HRG (Water Side) – HP and IP Superheater Pressure drop: VALUE=8; UNIT=%. Pressure drop in HRG (Water Side) – HP and IP Economizer Pressure drop: VALUE=25; UNIT=%. Pressure drop in HRG (Water Side) – HP Evaporator Pressure drop: VALUE=3.16; UNIT=%. Pressure drop in HRG (Water Side) – IP Evaporator Pressure drop: VALUE=15.46; UNIT=%. Pressure drop in HRG (Water Side) – LP Evaporator Pressure drop: VALUE=1; UNIT=%. Pressure drop in HRG (Water Side) – LP Superheater Pressure drop: VALUE=2.5; UNIT=%. Pressure drop in HRG (Water Side) – LP Economizer Pressure drop: VALUE=2.5; UNIT=%. Reheating Section – Reheater pressure drop: VALUE=8; UNIT=%. Pinch Points – HP pinch point: VALUE=10; UNIT=℃. Pinch Points – IP pinch point: VALUE=10; UNIT=℃. Pinch Points – LP pinch point: VALUE=15; UNIT=℃. Approach Points, TTD – HP approach point: VALUE=21.5608; UNIT=℃. Approach Points, TTD – IP approach point: VALUE=7.581; UNIT=℃. Approach Points, TTD – LP approach point: VALUE=0.697; UNIT=℃. Approach Points, TTD – HP- Superheater approach point: VALUE=10; UNIT=℃. Approach Points, TTD – Reheater TTD: VALUE=48.536; UNIT=℃. St Turbine – HP-ST isentropic efficiency: VALUE=60.54; UNIT=%. St Turbine – IP-ST isentropic efficiency: VALUE=95; UNIT=%. St Turbine – LP-ST isentropic efficiency: VALUE=95; UNIT=%. Feed water pumps – Isentropic efficiency: VALUE=85; UNIT=%. Blowdown – Blowdown flow rate: VALUE=0; UNIT=kg/s.",
+      "terms": [
+        "Input data",
+        "Condenser",
+        "Pressure drop in HRG (Water Side)",
+        "HP pinch point",
+        "HP approach point",
+        "Reheater TTD",
+        "HP-ST isentropic efficiency",
+        "Blowdown flow rate"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-048",
+      "doc_id": "R026",
+      "section": "4.1. Mathematical Modeling validation",
+      "page_start": 15,
+      "page_end": 15,
+      "text": "Table 6. Output analysis results. Compressed air temperature: RESULTS’ VALUES=430; REFERENCE’S VALUES=430; UNIT=℃; ERROR %=0. Flue gas exit temperature: RESULTS’ VALUES=625.32; REFERENCE’S VALUES=625; UNIT=℃; ERROR %=0.0512. GT net output power: RESULTS’ VALUES=393.4; REFERENCE’S VALUES=400; UNIT=MW; ERROR %=1.65. Thermal energy efficiency: RESULTS’ VALUES=39.34; REFERENCE’S VALUES=40; UNIT=%; ERROR %=1.65. Air flow rate: RESULTS’ VALUES=855.6; REFERENCE’S VALUES=855; UNIT=kg/s; ERROR %=0.07. Flue gas flow rate: RESULTS’ VALUES=875.15; REFERENCE’S VALUES=875; UNIT=kg/s; ERROR %=0.0714. Total steam generation rate: RESULTS’ VALUES=151.72; REFERENCE’S VALUES=150; UNIT=kg/s; ERROR %=1.147. St net output power: RESULTS’ VALUES=214.3; REFERENCE’S VALUES=200; UNIT=MW; ERROR %=7.15. CCPP net output power: RESULTS’ VALUES=607.7; REFERENCE’S VALUES=600; UNIT=MW; ERROR %=1.28. CCPP thermal energy eff.: RESULTS’ VALUES=60.77; REFERENCE’S VALUES=60.75; UNIT=%; ERROR %=0.0329.",
+      "terms": [
+        "Output analysis results",
+        "Compressed air temperature",
+        "Flue gas exit temperature",
+        "GT net output power",
+        "Total steam generation rate",
+        "CCPP net output power",
+        "CCPP thermal energy eff."
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-049",
+      "doc_id": "R026",
+      "section": "4.1. Mathematical Modeling validation",
+      "page_start": 15,
+      "page_end": 15,
+      "text": "Figure 2. Steam flow rate w.r.t ambient temperature",
+      "terms": [
+        "Steam flow rate",
+        "ambient temperature"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-050",
+      "doc_id": "R026",
+      "section": "4.1. Mathematical Modeling validation",
+      "page_start": 16,
+      "page_end": 17,
+      "text": "Figure 3. Simple gas turbine exergy destruction of gas turbine components Figure 4. Simple gas turbine Fuel specific exergy flow and exergy flow rate Figure 5. Simple gas turbine combustion gases molar fraction% Figure 6. Simple gas turbine combustion gases' exergy flow and exergy flow rate",
+      "terms": [
+        "Simple gas turbine",
+        "exergy destruction",
+        "specific exergy flow",
+        "exergy flow rate",
+        "molar fraction%"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-051",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 17,
+      "page_end": 17,
+      "text": "The proposed cycle is analyzed and discussed under energy and exergy approaches, and the results are shown in Figure 7 to Figure 16. While Table 8 shows the iso condition performance for both conventional and proposed cycles, as well as, the proposed cycle performance at the lowest and highest ambient temperature selected in this analysis. Figure 7 shows that gas turbine, steam turbine, and overall combined cycle net output power decreases with ambient temperature increment as ambient air temperature increment leads to relatively lower air density and air mass flow rate entering the compressor which leads to lower fuel consumption in the combustion chamber to reach the turbine inlet temperature and therefore, relatively lower gas flow rate that leads to lowering the gas turbine work ratio.",
+      "terms": [
+        "proposed cycle",
+        "iso condition",
+        "net output power",
+        "ambient temperature",
+        "air density",
+        "turbine inlet temperature",
+        "work ratio"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-052",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 17,
+      "page_end": 17,
+      "text": "According to the aforementioned condition of ambient temperature increment, the resultant compressed air temperature is increasing and the fuel demand will decrease to keep turbine inlet temperature at a constant value which reflects on heat addition reduction required in the combustion chamber as shown in Figure 8 and leads to a lower steam generation rate and lower output power from steam and overall combined cycle.",
+      "terms": [
+        "compressed air temperature",
+        "fuel demand",
+        "turbine inlet temperature",
+        "heat addition",
+        "steam generation rate"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-053",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 17,
+      "page_end": 18,
+      "text": "As the ambient temperature increases, the compression process becomes less efficient due to lower air density and higher power demand to compress the air which leads to lower gas turbine efficiency. Also, ambient temperature increment effect on cooling tower effectiveness and inlet temperature of cooling water to the steam condenser which leads to relatively higher condenser operating pressure and therefore, higher back pressure on the low-pressure steam turbine, and lower produced output power and therefore, lower steam cycle efficiency and overall CCPP efficiency as illustrated in Figure 9. The power and efficiency degradation with ambient temperature increment leads to an increase in the specific fuel consumption as shown in Figure 10. For connection, the gas turbine performance with HRSG performance based on ambient temperature variation, Figure 11 summarizes the scene of ambient temperature increment as the temperature of flowing exhaust gas drops and lower flue gases flowing through the HRSG, resulting in less heat energy being available for steam generation. In addition to the ambient temperature increment degrading the thermal energy efficiency, the commonly known intercooled gas turbine retrofitting is mainly used for boosting the net output power through compression power reduction and reduce the cycle performance sensitivity to ambient temperature increment.",
+      "terms": [
+        "compression process",
+        "cooling tower effectiveness",
+        "condenser operating pressure",
+        "back pressure",
+        "specific fuel consumption",
+        "HRSG",
+        "intercooled gas turbine retrofitting",
+        "thermal energy efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-054",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 18,
+      "page_end": 18,
+      "text": "The exergy analysis is performed mainly to quantify and evaluate the useful work potential loss in order to refer to the most deficient component that requires potential improvement. The destroyed potential can occur in the form of heat loss, mechanical loss, or mass-flowing loss. The exergy destruction rates for gas turbine components are shown in Figure 12 to Figure 15.",
+      "terms": [
+        "exergy analysis",
+        "useful work potential",
+        "exergy destruction rates",
+        "heat loss",
+        "mechanical loss"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-055",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 18,
+      "page_end": 18,
+      "text": "The combustion chamber is considered as the major source of exergy destruction in the whole cycle. This potential loss is mainly due to several factors including but not limited to temperature gradient, inadequate air-fuel mixing process, and chemical reaction irreversibilities. Figure 12 shows that the exergy destruction rate is decreasing with ambient temperature increment. As the compressed air temperature increases, a relatively lower temperature difference between compressed air and fuel and between the flue gases and surroundings as well as reduced fuel consumption that leads to lower fuel composition variation with standard ambient air compositions. On the other hand, Figure 13 and Figure 14 show that the compressors demonstrate increasing exergy destruction rate with ambient temperature increment as the air becomes less dense and the required power by the compressor to achieve the same pressure ratio increases. This leads to lower compression process efficiency and higher heat dissipation that is lost in the form of entropy generation. Also, Figure 14 shows that waste exergy to the surroundings decreases with ambient temperature increment as a result of reducing the temperature gradient between the flue gas getting out from the HRSG’s stack and the ambient temperature of the air.",
+      "terms": [
+        "combustion chamber",
+        "exergy destruction",
+        "temperature gradient",
+        "air-fuel mixing",
+        "chemical reaction irreversibilities",
+        "compressors",
+        "entropy generation",
+        "waste exergy"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-056",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 18,
+      "page_end": 18,
+      "text": "The gas turbine is split into high and low-pressure gas turbines. For the high-pressure gas turbine, the turbine inlet temperature is kept constant while the expanded gas temperature decreases, resulting in a higher difference in physical exergy by mass flow at those two state points while the power output decreases with ambient temperature increment, leading to an exergy destruction rate increment of the high-pressure gas turbine as illustrated in Figure 15. The exergy destruction rate of HRSG’s coils is evaluated under ambient temperature variation, considering the flue gas’s pressure drop across each coil is constant and the results are shown in Figure 16 to Figure 20. While Figure 21 shows the overall HRSG exergy destruction. Figure 22 and Figure 23 illustrate the exergy destruction rate of steam turbines with ambient temperature increment. In this proposed study, the steam turbines demonstrate a decreasing exergy destruction rate as a result of lower steam flow rate through the steam turbines, lower output power, and reduction in entropy generation rate.",
+      "terms": [
+        "high-pressure gas turbine",
+        "turbine inlet temperature",
+        "physical exergy",
+        "exergy destruction rate",
+        "HRSG’s coils",
+        "steam turbines",
+        "entropy generation rate"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-057",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 18,
+      "page_end": 18,
+      "text": "It’s commonly known that the exergy destruction rate of feed water pumps and condensate pumps is increasing with ambient temperature increment. However, this proposal aimed to decrease that effect through different operation strategies to maximize the potential of the steam system. The feed water pumps and condensate pumps are assumed to work on a constant delivery pressure. While, the ambient temperature increment leads to steam and condensate flow rate reduction thus, will reduce the pump's required power. Note that the low-pressure injection pump operates at different pressures for maximum steam generation at the stack section and well use of flue gas heat energy for the lowest exergy destruction to the surroundings which is the reason behind low-pressure steam turbine has a significant reduction in exergy destruction rate with ambient temperature increment due to a relative increment in power output as shown in Figure 24 and Figure 25.",
+      "terms": [
+        "feed water pumps",
+        "condensate pumps",
+        "constant delivery pressure",
+        "low-pressure injection pump",
+        "flue gas heat energy",
+        "low-pressure steam turbine",
+        "exergy destruction rate"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-058",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 18,
+      "page_end": 18,
+      "text": "As commonly known, the ambient temperature increment leads to a reduction in flue gas flow rate and therefore, a reduction of steam generation rate. While the cooling water temperature outlet from the cooling tower is close to the wet bulb ambient air temperature. So, the temperature difference between cooling water at a higher ambient temperature and steam temperature decreases. These reasons result in relatively higher condenser operating pressure and exergy destruction reduction as illustrated in Figure 26.",
+      "terms": [
+        "flue gas flow rate",
+        "steam generation rate",
+        "cooling water",
+        "wet bulb",
+        "condenser operating pressure",
+        "exergy destruction"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-059",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 19,
+      "page_end": 19,
+      "text": "Figure 7. Net output power for gas, steam, and combined cycle power plant variation with ambient temperature Figure 8. Cycle heat addition w.r.t ambient temperature Figure 9. Thermal energy efficiencies for gas, steam, and CCPP variation with ambient temperature Figure 10. CCPP’s specific fuel consumption variation with ambient temperature",
+      "terms": [
+        "Net output power",
+        "Cycle heat addition",
+        "Thermal energy efficiencies",
+        "specific fuel consumption",
+        "ambient temperature"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-060",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 20,
+      "page_end": 20,
+      "text": "Figure 11. CCPP steam generation rate concerning ambient temperature and flue gas flow rate Figure 12. GT combustion chamber exergy destruction rate w.r.t ambient temperature variation Figure 13. LP Compressor exergy destruction rate w.r.t ambient temperature variation",
+      "terms": [
+        "steam generation rate",
+        "flue gas flow rate",
+        "GT combustion chamber",
+        "LP Compressor",
+        "exergy destruction rate"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-061",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 21,
+      "page_end": 21,
+      "text": "Figure 14. HP Compressor and waste surrounding exergy destruction rate w.r.t ambient temperature variation Figure 15. HP gas turbine and LP gas turbine exergy destruction rate w.r.t ambient temperature variation Figure 16. Exergy destruction rate of HP Super-heater, HP Evaporator, and LP Economizer w.r.t ambient temperature variation Figure 17. Exergy destruction rate of IP Economizer w.r.t ambient temperature variation",
+      "terms": [
+        "HP Compressor",
+        "waste surrounding",
+        "HP gas turbine",
+        "HP Super-heater",
+        "HP Evaporator",
+        "LP Economizer",
+        "IP Economizer"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-062",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 22,
+      "page_end": 22,
+      "text": "Figure 18. Exergy destruction rate of Reheater w.r.t ambient temperature variation Figure 19. Exergy destruction rate of HP Economizer, IP Evaporator, and LP Evaporator w.r.t ambient temperature variation Figure 20. Exergy destruction rate of IP Superheater, LP Superheater, Added Evaporator, and Added Economizer w.r.t ambient temperature variation Figure 21. Overall HRSG exergy destruction rate w.r.t ambient temperature variation",
+      "terms": [
+        "Reheater",
+        "HP Economizer",
+        "IP Evaporator",
+        "IP Superheater",
+        "Added Evaporator",
+        "Added Economizer",
+        "Overall HRSG exergy destruction rate"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-063",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 23,
+      "page_end": 23,
+      "text": "Figure 22. HP ST exergy destruction rate w.r.t ambient temperature variation Figure 23. IP ST exergy destruction rate w.r.t ambient temperature variation Figure 24. LP ST exergy destruction rate w.r.t ambient temperature variation Figure 25. FWPs exergy destruction rate w.r.t ambient temperature variation",
+      "terms": [
+        "HP ST",
+        "IP ST",
+        "LP ST",
+        "FWPs",
+        "exergy destruction rate"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-064",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "Figure 26. Condenser exergy destruction rate w.r.t ambient temperature variation",
+      "terms": [
+        "Condenser exergy destruction rate",
+        "ambient temperature variation"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-065",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "To clarify components that are sensitive to ambient temperature variation, Table 8 shows how much variation rate of exergy destruction of each component concerning ambient temperature variation to help the designer engineers give their potential to improve these components to be less affected by ambient temperature variation. The aforementioned plots showed energy and exergy analysis results for the proposed cycle at specific preselected ambient temperatures that commonly exist at the El-Burullus CCPP location that are obtained from RETScreen Expert software which is the reason that plots don’t have a linear trend. So, Table 8 shows the exergy destruction of each component at the lowest and highest expected temperatures at the plant location. The performance of proposed and conventional cycles can be compared at the ISO operating conditions (15 ℃, 60% R.H, sea level altitude). So, Table 8 shows the exergy destruction of both proposed and conventional cycles at the ISO operating conditions as well. The results conclude that the proposed cycle has a positive effect on reducing the exergy destruction by more than 1.4% at ISO conditions. The overall exergy destruction of the proposed intercooled combined cycle has a decreasing trend with ambient temperature increment as shown below in Figure 27.",
+      "terms": [
+        "exergy destruction",
+        "ambient temperature variation",
+        "RETScreen Expert",
+        "El-Burullus CCPP",
+        "ISO operating conditions",
+        "proposed intercooled combined cycle"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-066",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "Through this study’s results and the previous studies related to intercooling systems that can be integrated into CCPPs, it’s shown that this methodology can benefit the performance of the advanced CCPP by reducing the internal and external energy loss for the sake of marginal thermal energy efficiency, and flexibility of operation as shown in Table 7 Regarding this study’s results, it’s shown that all Previous studies reviewed (Elwardany et al., 2023; Khoshkar Vandani, Bidi and Ahmadi, 2016; Mohammadi Khoshkar Vandani, Joda and Bozorgmehry Boozarjomehry, 2016; Jamnani et al., 2021; Ahmed and Oudah, 2018) are using exergy analysis based on several equations to calculate approximate values for exergy flow and molar fraction of fuel and combustion gases assuming that natural gas is pure methane regardless of its actual composition. However, in this study, a guideline that can be universally applicable in any combustion system is handed over for accurate exergy analysis regardless of fuel type but with consideration of the fuel’s chemical composition.",
+      "terms": [
+        "intercooling systems",
+        "CCPP",
+        "thermal energy efficiency",
+        "exergy analysis",
+        "molar fraction",
+        "pure methane",
+        "fuel’s chemical composition"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-067",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 25,
+      "page_end": 25,
+      "text": "Table 7. Previous similar studies. Methodology: Current Study=IC GT 3PR CCPP with LP ST injection steam system; Sanjay, Bishwa N. Prasad [9]=IC GT 3PR CCPP with air film cooling technology. CPR: Current Study=19.2; Sanjay, Bishwa N. Prasad [9]=36. TIT (K): Current Study=1647; Sanjay, Bishwa N. Prasad [9]=1900. Net output power increment %: Current Study=0.03%; Sanjay, Bishwa N. Prasad [9]=20%. Energy efficiency increment %: Current Study=0.43%; Sanjay, Bishwa N. Prasad [9]=(blank). Exergy destruction reduction %: Current Study=1.4%; Sanjay, Bishwa N. Prasad [9]=2%. Comment: Current Study=• The enhancement obtained as a result of deep utilization of flue gases in HRSG, and reducing loss through the stack.; Sanjay, Bishwa N. Prasad [9]=• This gas turbine has higher TIT and CPR which are the two most affecting parameters on the performance • The high-power increment resulted from the intercooler while exergy destruction was reduced as a result of turbine blade cooling technology",
+      "terms": [
+        "IC GT 3PR CCPP",
+        "LP ST injection steam system",
+        "air film cooling technology",
+        "CPR",
+        "TIT",
+        "Exergy destruction reduction",
+        "turbine blade cooling technology"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-068",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 25,
+      "page_end": 25,
+      "text": "Figure 27. Overall exergy destruction rate w.r.t ambient temperature variation",
+      "terms": [
+        "Overall exergy destruction rate",
+        "ambient temperature variation"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-069",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 25,
+      "page_end": 26,
+      "text": "Table 8. Exergy destruction variation rates. Low-pressure compressor: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=5098.37; Proposed cycle Exergy Destruction at 15℃ (KW)=5169.79; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=5551.1; Variation Rate (KW / 1 ℃)=20.57864; Reference cycle Exergy Destruction at 15℃ (KW)=53054.4. Intercooler: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=867.49; Proposed cycle Exergy Destruction at 15℃ (KW)=839.94; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=855.2; Variation Rate (KW / 1 ℃)=-0.55864; Reference cycle Exergy Destruction at 15℃ (KW)=N/A. High-pressure compressor: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=48592; Proposed cycle Exergy Destruction at 15℃ (KW)=50062.85; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=56476.2; Variation Rate (KW / 1 ℃)=358.3727; Reference cycle Exergy Destruction at 15℃ (KW)=N/A. Combustion chamber: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=165407.3; Proposed cycle Exergy Destruction at 15℃ (KW)=162342.56; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=148004.3; Variation Rate (KW / 1 ℃)=-791.045; Reference cycle Exergy Destruction at 15℃ (KW)=162840.9. High-pressure gas turbine: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=15425.4; Proposed cycle Exergy Destruction at 15℃ (KW)=15660.38; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=16654.4; Variation Rate (KW / 1 ℃)=55.86364; Reference cycle Exergy Destruction at 15℃ (KW)=45903.3. Low-pressure gas turbine: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=25486.4; Proposed cycle Exergy Destruction at 15℃ (KW)=25092.42; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=23322.2; Variation Rate (KW / 1 ℃)=-98.3727; Reference cycle Exergy Destruction at 15℃ (KW)=N/A. Reheater: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=4214.9; Proposed cycle Exergy Destruction at 15℃ (KW)=4211.22; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=4184.9; Variation Rate (KW / 1 ℃)=-1.36364; Reference cycle Exergy Destruction at 15℃ (KW)=4140.3. High-pressure superheater: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=5774.96; Proposed cycle Exergy Destruction at 15℃ (KW)=5769.28; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=5732.8; Variation Rate (KW / 1 ℃)=-1.91636; Reference cycle Exergy Destruction at 15℃ (KW)=6330.31.",
+      "terms": [
+        "Exergy destruction variation rates",
+        "Proposed cycle Exergy Destruction",
+        "Variation Rate",
+        "Reference cycle Exergy Destruction",
+        "Low-pressure compressor",
+        "Intercooler",
+        "High-pressure compressor",
+        "Combustion chamber"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-070",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "Table 8. Exergy destruction variation rates (continued). High-pressure evaporator: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=5513.57; Proposed cycle Exergy Destruction at 15℃ (KW)=5502.05; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=5440.97; Variation Rate (KW / 1 ℃)=-3.3; Reference cycle Exergy Destruction at 15℃ (KW)=5902.56. High-pressure economizer: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=2323.05; Proposed cycle Exergy Destruction at 15℃ (KW)=2316.37; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=2282.52; Variation Rate (KW / 1 ℃)=-1.84227; Reference cycle Exergy Destruction at 15℃ (KW)=2127.91. intermediate-pressure superheater: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=614.8; Proposed cycle Exergy Destruction at 15℃ (KW)=612.8; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=602.92; Variation Rate (KW / 1 ℃)=-0.54; Reference cycle Exergy Destruction at 15℃ (KW)=873.9. Intermediate-pressure evaporator: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=1946.58; Proposed cycle Exergy Destruction at 15℃ (KW)=1936.68; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=1889.91; Variation Rate (KW / 1 ℃)=-2.57591; Reference cycle Exergy Destruction at 15℃ (KW)=1870.09. intermediate-pressure economizer: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=2843.56; Proposed cycle Exergy Destruction at 15℃ (KW)=2832.72; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=2779.82; Variation Rate (KW / 1 ℃)=-2.89727; Reference cycle Exergy Destruction at 15℃ (KW)=2630.61. Low-pressure superheater: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=317.3; Proposed cycle Exergy Destruction at 15℃ (KW)=316.47; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=312.03; Variation Rate (KW / 1 ℃)=-0.23955; Reference cycle Exergy Destruction at 15℃ (KW)=570.8. Low-pressure evaporator: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=2134.8; Proposed cycle Exergy Destruction at 15℃ (KW)=2125.15; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=2078.7; Variation Rate (KW / 1 ℃)=-2.55; Reference cycle Exergy Destruction at 15℃ (KW)=2046.62. Low-pressure economizer: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=6238.42; Proposed cycle Exergy Destruction at 15℃ (KW)=5836.53; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=4314.82; Variation Rate (KW / 1 ℃)=-87.4364; Reference cycle Exergy Destruction at 15℃ (KW)=6247.54.",
+      "terms": [
+        "Exergy destruction variation rates",
+        "Proposed cycle Exergy Destruction",
+        "Variation Rate",
+        "Reference cycle Exergy Destruction",
+        "High-pressure evaporator",
+        "High-pressure economizer",
+        "intermediate-pressure superheater",
+        "Intermediate-pressure evaporator"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-071",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "Table 8. Exergy destruction variation rates (continued). [rows 1-4 of 8] Added Evaporator: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=304.15; Proposed cycle Exergy Destruction at 15℃ (KW)=559.23; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=937.67; Variation Rate (KW / 1 ℃)=28.79636; Reference cycle Exergy Destruction at 15℃ (KW)=N/A. Added Economizer: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=251.83; Proposed cycle Exergy Destruction at 15℃ (KW)=276.36; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=258.57; Variation Rate (KW / 1 ℃)=0.306364; Reference cycle Exergy Destruction at 15℃ (KW)=N/A. Surrounding (Stack): Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=43766.1; Proposed cycle Exergy Destruction at 15℃ (KW)=41506.17; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=38176.9; Variation Rate (KW / 1 ℃)=-254.055; Reference cycle Exergy Destruction at 15℃ (KW)=43313.43. Condenser: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=17095.7; Proposed cycle Exergy Destruction at 15℃ (KW)=16703.15; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=13872.63; Variation Rate (KW / 1 ℃)=-146.503; Reference cycle Exergy Destruction at 15℃ (KW)=16443.32. Feed water pumps: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=321.29; Proposed cycle Exergy Destruction at 15℃ (KW)=321.35; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=319.75; Variation Rate (KW / 1 ℃)=-0.07; Reference cycle Exergy Destruction at 15℃ (KW)=332.8. Condensate pumps: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=27.34; Proposed cycle Exergy Destruction at 15℃ (KW)=26.02; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=16.53; Variation Rate (KW / 1 ℃)=-0.49136; Reference cycle Exergy Destruction at 15℃ (KW)=25.7.",
+      "terms": [
+        "Exergy destruction variation rates",
+        "Proposed cycle Exergy Destruction",
+        "Variation Rate",
+        "Reference cycle Exergy Destruction",
+        "Added Evaporator",
+        "Added Economizer",
+        "Surrounding (Stack)",
+        "Condenser"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-072",
+      "doc_id": "R026",
+      "section": "4.2. Proposal Cycle analysis results",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "Table 8. Exergy destruction variation rates (continued). [rows 5-8 of 8] High-pressure steam turbine: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=8097.35; Proposed cycle Exergy Destruction at 15℃ (KW)=8093.74; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=8059.66; Variation Rate (KW / 1 ℃)=-1.71318; Reference cycle Exergy Destruction at 15℃ (KW)=8467.43. Intermediate-pressure steam turbine: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=2041.27; Proposed cycle Exergy Destruction at 15℃ (KW)=2039.81; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=2028.8; Variation Rate (KW / 1 ℃)=-0.56682; Reference cycle Exergy Destruction at 15℃ (KW)=2094.72. Low-pressure steam turbine: Proposed cycle Exergy Destruction at 10.9 ℃ (KW)=5774.1; Proposed cycle Exergy Destruction at 15℃ (KW)=5554.6; Proposed cycle Exergy Destruction at 32.9 ℃ (KW)=4496.05; Variation Rate (KW / 1 ℃)=-58.0932; Reference cycle Exergy Destruction at 15℃ (KW)=5644.31. Total Exergy destruction: Proposed cycle Exergy Destruction at 15℃ (KW)=365708; Reference cycle Exergy Destruction at 15℃ (KW)=370860.95.",
+      "terms": [
+        "Exergy destruction variation rates",
+        "Proposed cycle Exergy Destruction",
+        "Variation Rate",
+        "Reference cycle Exergy Destruction"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-073",
+      "doc_id": "R026",
+      "section": "5. Conclusion",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "In conclusion, this study presented and investigated the performance of the proposed state-of-the-art modification on combined cycle power plants based on intercooled gas turbine 3PR CCPP accompanied by a steam injection system for performance enhancement with extensive utilization of the available exergy of the flowing gases while minimizing the exergy destruction purpose. The proposed cycle primarily relies on low-pressure economizing water of the bottoming cycle as a coolant for the intercooler of the topping cycle for preheating. Thus, it will result in partial energy saving of the flue gases passing through the HRSG, which will be exploited in additional sections dedicated to steam generation.",
+      "terms": [
+        "intercooled gas turbine 3PR CCPP",
+        "steam injection system",
+        "exergy destruction",
+        "low-pressure economizing water",
+        "intercooler",
+        "topping cycle",
+        "HRSG",
+        "bottoming cycle"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-074",
+      "doc_id": "R026",
+      "section": "5. Conclusion",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "The study yielded that a partial amount of low-pressure economizing water is the optimum choice for efficiency enhancement while maintaining a marginal net output power enhancement. Also, the study's key findings showed that the proposed cycle enhanced the net output power and thermal energy efficiency by 14.5 MW and 0.26% respectively with decreased impact of ambient temperature variation on the overall performance.",
+      "terms": [
+        "low-pressure economizing water",
+        "efficiency enhancement",
+        "net output power",
+        "thermal energy efficiency",
+        "ambient temperature variation"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-075",
+      "doc_id": "R026",
+      "section": "5. Conclusion",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "on the other hand, the proposed cycle showed that the combustion chamber is considered as the major source of vulnerability and the most effective component which accounts for 44.4% of the total exergy destruction of the whole cycle with a small augmentation in the combustion chamber's exergy destruction by 0.3%. While the gas turbine's exergy destruction accounts for 11.14% of the overall destruction with a reduction of exergy destruction by 11.22% and HRSG’s destruction rate decreased by 1.36% compared to the reference cycle. while the condensate pump has the lowest exergy destruction rate which accounts for 0.007% of the total exergy destruction of the whole cycle. on the other hand, exergy losses to the surrounding whether through the chimney or steam surface condenser were evaluated by 15.92% of the total exergy destruction of the proposed cycle compared to 16.13% in the conventional cycle. the exergy destructions of the additional intercooler, evaporator, and economizer were evaluated by 1.675 MW. Concluding that the proposed cycle’s exergy destruction rate decreased by 5.152 MW compared to the conventional cycle.",
+      "terms": [
+        "combustion chamber",
+        "exergy destruction",
+        "gas turbine",
+        "HRSG’s destruction rate",
+        "condensate pump",
+        "steam surface condenser",
+        "intercooler",
+        "economizer"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R026-076",
+      "doc_id": "R026",
+      "section": "6. Nomenclature",
+      "page_start": 27,
+      "page_end": 27,
+      "text": "Symbol – Description: ṁ – Mass flow rate; h – Specific enthalpy; s – Specific entropy; T – Temperature; P_r – Pressure Ratio; Ėx – Exergy rate; R – Universal gas constant; R_v – Water vapor pressure; R_d – Dry air pressure; F/A – Fuel-to-Air Ratio; g⃡_Fuel – Gibbs function of formation; P_0 – Atmospheric pressure [Pa]; h_0 – Altitude at sea level [meter]; g – Gravitational Acceleration; C_p – Specific heat at constant pressure; ef_i – Inlet-specific exergy flow; ef_o – Outlet-specific exergy flow; ex_i^−ch – Standard chemical exergy; ∆P_I.C % – Intercooler pressure drop percentage; ∆P_C.C % – Combustion chamber pressure drop percentage. Subscripts: In – Inlet; Out – Outlet; mech – Mechanical; is – Isentropic; dest – Destruction; st – Steam; h – High; i – Intermediate; l – Low; CW – Cooling water; flow – Flow; phy – Physical; che – Chemical; Q – Heat transfer; w – work. Acronym: CCPP – Combined Cycle Power Plant; SGT5-8000H – H-frame Siemens Gas Turbine 50 HZ; SCC5-8000H – H-frame Siemens Combined Cycle 50 HZ; RES – Renewable Energy Resources; TIT – Turbine Inlet Temperature; CRP – Compressor Pressure Ratio; HRSG – Heat Recovery Steam Generator; SF – Supplementary Firing; LHV – Lower Heating Value; RH-ORC – Reheated Organic Rankine Cycle; TTD – Terminal Temperature Difference; Comp – Compressor; 3PR – Three Pressure Reheat; HEI – Heat Exchanger Institution; EEHC – Egyptian Electricity Holding Company; AR – Alternative Air Recuperation; FR – Fuel Recuperation; IC – Intercooling; 2x2x1 configuration – 2 GT x 2 HRSG x 1 ST configuration; AP – Approach Point; C.C – Combustion chamber; eco – Economical; GT – Gas Turbine; ST – Steam Turbine; LP – Low Pressure; IP – Intermediate Pressure; HP – High Pressure; R.H – Relative Humidity; ISO – International standard organization; SFC – Specific fuel consumption; PP – Pinch Point; GTCCPP – Gas turbine combined cycle power plant; 2E – Energy and exergy. Greek Symbols: ρ – Density; γ – Specific Heat Ratio; η – Efficiency; ε – Effectiveness",
+      "terms": [
+        "Mass flow rate",
+        "Exergy rate",
+        "Gibbs function of formation",
+        "Standard chemical exergy",
+        "Intercooler pressure drop percentage",
+        "Terminal Temperature Difference",
+        "Three Pressure Reheat",
+        "Approach Point"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    }
+  ],
+  "report": {
+    "paragraph_count": 76,
+    "pages_processed": "인쇄 1-31쪽(PDF 1-32쪽 전체; PDF 1쪽 표지는 제외 대상만 있음). 본문 인쇄 1-27쪽 처리, 27-31쪽은 기여/이해충돌/데이터/감사의 글/참고문헌",
+    "last_paragraph_id": "R026-076",
+    "skipped": [
+      "PDF 1쪽(인쇄 번호 없음) 표지: \"You may also like\" 추천 논문 목록 3건, \"To cite this article\"·\"View the article online\" 안내, \"This content was downloaded from IP address ... on 21/10/2026\" 다운로드 IP 문구: IOP 표지/머리 정보",
+      "각 쪽 IOP 머리글(Technologies and Materials for Renewable Energy, Environment and Sustainability / IOP Publishing / Journal of Physics: Conference Series 3028 (2025) 012005 / doi:10.1088/1742-6596/3028/1/012005)과 쪽번호: 머리글/바닥글",
+      "1쪽 저자 소속(1, 2)과 이메일(enasselgazzar@aast.edu): 저자 연락처",
+      "1쪽 바닥 \"Content from this work may be used under the terms of the Creative Commons Attribution 4.0 licence ... Published under licence by IOP Publishing Ltd\": 저작권 문구(document.license에 반영)",
+      "27-28쪽 7. Credit authorship contribution statement, 8. Declaration of Competing Interest, 9. Conflict of Interest, 10. Data Availability Statement: 저자 기여/이해충돌/데이터 진술(저자 정보·행정 문구)",
+      "28쪽 11. Acknowledgments: 감사의 글",
+      "28-31쪽 12. References [1]-[49]: 참고문헌 목록",
+      "Figure 1-27의 도식·그래프 내용(축, 범례, 그래프 안 제목 예: \"steam flow rate with respect to ambient temperature\", \"exeregy destruction of overall CCPP\", 계통도 점 번호·기기 라벨) 및 Table 1의 기기 아이콘: 캡션만 수록, 그림 내용은 추측하지 않음"
+    ],
+    "uncertain": [
+      "쪽 번호는 인쇄 번호(1-31)를 사용. PDF 1쪽 표지는 인쇄 번호가 없고 내용이 모두 제외 대상이라 문단 없음",
+      "식 (1)-(54)는 PDF 페이지 이미지(식 48은 400dpi 확대)로 기호를 확인해 선형 표기로 옮김(분수는 a / b, 지수 ^, 아래첨자 _, ṁ = 질량유량, Ẇ = 동력, Ėx = 엑서지율). 추출본의 수학 이탤릭 유니코드(𝐶𝑝 등)는 일반 문자로 바꿈",
+      "식 (26) 우변 \"ṁ_st (h_st_in − T_st_out)\", 식 (35)의 \"ḣ_o\", \"ṡ_o\", 식 (6) 번호 \"(6)\"이 두 번 인쇄된 점 등은 인쇄 그대로(식 번호 중복은 한 번만 기재)",
+      "\"⃡\"(위쪽 양방향 화살표) 표기는 AF⃡_stoich, AF⃡_actual, g⃡_Fuel, g⃡ḟ_O_2처럼 결합 문자로 옮김",
+      "Table 1은 기기 그림 아이콘을 빼고 Component별 Ėx_W/Ėx_Q/Ėx_flow/Ėx_Dest/η_ex 값을 행 문장으로 풀었으며, η_ex 칸이 빈 행(Condenser, Surrounding (Stack))은 (blank)로 표시",
+      "Table 5의 COMPONENT 열에서 Compressor/Combustion chamber/Gas turbine section 라벨은 여러 행에 걸쳐 세로 중앙 배치되어 행별 소속 경계가 불명확하므로 첫 19행은 세 구성요소 묶음으로 표기하고 행별 귀속은 하지 않음. 단위 칸이 빈 행은 (blank)",
+      "Table 5(인쇄 14-15쪽)와 Table 8(인쇄 25-26쪽)은 쪽을 넘어 이어지는 표로, 행 그룹 단위로 나눠 같은 표 번호로 수록",
+      "2단 배치 캡션(Figure 9/10, 12/13, 16/17, 20/21)은 추출본에서 두 캡션의 줄이 섞여 있어 페이지 배치 기준으로 각 캡션을 분리·복원",
+      "원문 줄끝에서 하이픈이 빠진 합성어는 \"performance-enhancing\", \"intermediate-pressure\", \"El-Burullus\"로, \"equations (1113)\"은 이미지 기준 \"equations (11-13)\"으로 복원",
+      "원문 오탈자·비문(예: \"mass .and heat\", \"with-respect- to\", \"Proposal Cycle\", \"Ibrahim et al., [31]\", Nomenclature의 R_v \"Water vapor pressure\")은 verbatim 원칙에 따라 그대로 유지. Nomenclature의 일부 기호(Ėx, R, R_v, R_d)는 추출 순서가 어긋나 이미지 표 배치 기준으로 짝지음",
+      "3.1. Energy Analysis 도입 문단과 4. Results and discussion 도입 문단은 50단어 안팎이지만 바로 하위 절로 이어져 같은 절 안에 합칠 문단이 없어 단독 문단으로 둠",
+      "1. Introduction의 긴 문헌 검토 문단은 350단어 규칙에 따라 문장 경계에서 분할하고, 짧은 원문 문단(\"The RES plants are designed ...\", \"The results are validated ...\", 4.2절 일부)은 같은 절 인접 문단과 합침",
+      "Table 8 (continued) 문단이 350단어를 넘어 행 1-4/5-8로 분할(R026-071, R026-072), 이후 ID 1씩 밀림."
+    ]
+  }
+}

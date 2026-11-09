@@ -1,0 +1,786 @@
+{
+  "document": {
+    "doc_id": "R036",
+    "title": "Ansaldo Caldaie Experience in HRSG Design Developments",
+    "authors": [
+      "G. Volpi",
+      "G. Silva",
+      "R. Piasente"
+    ],
+    "year": null,
+    "venue": "",
+    "doi": "",
+    "url": "",
+    "license": "저작권·라이선스 표기 없음 (Ansaldo Caldaie, Italy 기술 논문; 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R036-001",
+      "doc_id": "R036",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "HRSGs are expected to be highly flexible in two respects: delivering the largest possible steam output across a broad span of gas turbine loads, and offering maximum cycling capability together with high plant efficiency. The first need is characteristic of cogeneration (Combined Heat and Power generation) combined cycles, which supply electricity and useful heat at the same time for uses such as industry, district heating and desalination. Post firing systems (supplementary firing) are installed so that steam output can be maximised independently of gas turbine load, and in certain applications fresh air systems are added so steam can be raised even while the gas turbines are shut down. For the Ras Laffan B (Qatar) Electricity and Water project, EPC contractor Siemens produced a highly flexible plant layout whose HRSGs carry double post firing, admitting thermal input up to max 280 MWth, so that a wide range of GT electrical output and of steam for power or desalinated water can be covered. Operating data gathered over several years confirm that this tailor-made design delivered the flexibility requested.",
+      "terms": [
+        "HRSGs",
+        "cogeneration",
+        "post firing",
+        "supplementary firing",
+        "fresh air systems",
+        "Ras Laffan B",
+        "double post firing",
+        "280 MWth"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-002",
+      "doc_id": "R036",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "The second need arises in deregulated power markets: to stay competitive, plants must run at top efficiency and also respond with maximum operating flexibility, delivering requested power within a very short time. Severe grid demands for frequency control and fluctuating factors such as gas price or wind power availability make this harder. Over the past ten years Ansaldo Caldaie has supplied several HRSGs for heavy cycling combined cycles, a notable one being the once through Benson HRSG built for the German plants Hamm Uentrop and Herdecke. Because a once through boiler has no HP drum, which is normally its thickest part, the HRSG ought not to restrict combined cycle start-up. To meet this expectation, a fatigue analysis procedure for estimating life consumption of thick HRSG components was established during project execution, and Hamm Uentrop operating data have confirmed that it reliably sizes pressure parts for the flexibility required. Building on this, a further development is in progress for advanced combined cycles with steam temperatures reaching 600°C.",
+      "terms": [
+        "deregulated power markets",
+        "frequency control",
+        "Benson HRSG",
+        "once through",
+        "HP drum",
+        "fatigue analysis",
+        "life consumption",
+        "600°C"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-003",
+      "doc_id": "R036",
+      "section": "2.1 General overview",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Power generation serves two kinds of end users, industry and civil consumers; in the Middle East both groups need drinking water as well as electricity. Points to weigh when planning a plant there: desalination plants make water from seawater and heat; industrial demand for these products is nearly constant whereas civil demand rises sharply in the daytime; demineralised water is easy to store but electrical energy is not; and fossil fuels are generally plentiful. Rough economic reasoning on these points leads to the conclusions that water and electricity can both come from the chemical energy released by combustion, that an integrated system producing heat and electricity together is advisable, and that this system must be very flexible, chiefly on the electricity side, since power cannot be stored efficiently.",
+      "terms": [
+        "drinking water",
+        "desalination plants",
+        "demineralised water",
+        "fossil fuels",
+        "combustion",
+        "integrated system"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-004",
+      "doc_id": "R036",
+      "section": "2.1 General overview",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Cogeneration is therefore the best technical-economical choice. Where the fuel on hand is oil, a cogenerative utility boiler combined with a counterpressure - extraction steam turbine is practically obligatory; with natural gas, a cogenerative combined cycle is also an option. A rough comparison of these two cogeneration technologies indicates that the cogenerative combined cycle gives both better performance and greater flexibility, particularly when HRSG post firing technology is applied.",
+      "terms": [
+        "Cogeneration",
+        "cogenerative utility boiler",
+        "counterpressure - extraction steam turbine",
+        "natural gas",
+        "cogenerative combined cycle",
+        "HRSG post firing"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-005",
+      "doc_id": "R036",
+      "section": "2.2 HRSG optimum configuration",
+      "page_start": 3,
+      "page_end": 4,
+      "text": "Designing a cogenerative combined cycle requires fixing many parameters according to project requirements; for the HRSG the key ones are listed. Number and value of steam pressure levels: since the steam cycle normally assumes counterpressure steam generation, more than one pressure level is no longer justified. Whether to use post firing (PF): it becomes necessary as flexibility demand grows, which is usual in cogeneration. Number and position of PF stages: the simplest arrangement is a single PF device, normally placed in the inlet duct; when the project calls for a very flexible system the PF power grows and the best technical - economic solution needs careful assessment. At high PF heat input rate, three options can be examined for the optimum firing configuration; the design and economic remarks that follow refer to the Ras Laffan HRSG, for which double post firing (paragraph 2.3) was chosen.",
+      "terms": [
+        "cogenerative combined cycle",
+        "pressure level",
+        "counterpressure",
+        "post firing (PF)",
+        "inlet duct",
+        "PF heat input rate",
+        "double post firing",
+        "Ras Laffan"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-006",
+      "doc_id": "R036",
+      "section": "2.2 HRSG optimum configuration",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Option 1, a single PF at the HRSG inlet: gas temperatures may climb steeply, so HRSG design criteria must be revised to avoid problems with fin resistance and with non-cooled metal parts (membrane water walls may be considered); for Ras Laffan the average gas temperature would approach 900°C. Option 2, a single PF at an intermediate HRSG section (usually ahead of the HP EVA section): temperatures remain high but the HRSG design normally needs no major rework; because firing occurs upstream of the evaporator, high steam demand calls for a very large superheater, which for Ras Laffan would raise pressure parts costs by about 30% relative to the double PF arrangement.",
+      "terms": [
+        "PF",
+        "HRSG inlet",
+        "fin resistance",
+        "membrane water walls",
+        "900°C",
+        "HP EVA",
+        "superheater",
+        "30%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-007",
+      "doc_id": "R036",
+      "section": "2.2 HRSG optimum configuration",
+      "page_start": 4,
+      "page_end": 5,
+      "text": "Option 3, two PF stages, one at the HRSG inlet ahead of the superheater and one at an intermediate section ahead of the evaporator, performs well on temperature profiles, weight, cost, flexibility and control. It yields an optimum gas and steam-water temperature profile that avoids very high gas temperatures while keeping enough ∆T to cut SH weight. PF1 is used mostly to regulate steam temperature and PF2 mostly to raise steam, securing flexibility in every condition: if only process steam (low temperature, low pressure) is wanted, PF2 follows steam flow demand and PF1 may be switched off; if steam is needed only for the steam turbine, PF2 may be switched off while PF1 holds the steam turbine inlet parameters. Being able to control steam production and steam temperature separately lets the boiler run with near zero spray attemperation under all conditions.",
+      "terms": [
+        "PF1",
+        "PF2",
+        "superheater",
+        "evaporator",
+        "∆T",
+        "SH weight",
+        "process steam",
+        "spray attemperation"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-008",
+      "doc_id": "R036",
+      "section": "2.2 HRSG optimum configuration",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Fig 1 – Cost Comparison (pressure parts cost comparison between the double PF arrangement and a single PF located at the evaporator inlet, referred to in the discussion of Ras Laffan firing options).",
+      "terms": [
+        "Fig 1",
+        "Cost Comparison",
+        "double PF",
+        "single PF"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-009",
+      "doc_id": "R036",
+      "section": "2.3 Test case: the Ras Laffan project",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "For Ras Laffan B Qatar Electricity and Water project, EPC contractor Siemens created a highly flexible plant to satisfy the specified requirements for electrical power or desalinated water output. The power island, 1025 MW in total, comprises three V943A gas turbines with bypass stack for open cycle operation, three HRSGs with double post firing and two 200 MW range back-pressure steam turbines; its steam supplies four Doosan desalination units producing in total 273 million litres of desalinated water per day. The HRSGs are horizontal gas flow, top supported, natural circulation units with one pressure level plus a condensate preheater and two-stage supplementary firing from Forney. Ansaldo Caldaie's scope for the 3 Heat Recovery Steam Generators covered engineering, manufacturing and supply, plus supervising their erection and start-up; the contract was awarded in October 2004 and completed in June 2006. Ras Laffan B was also one of the two technical tours of Power Gen Middle East 2010. Fig. 2 – Ras Laffan B HRSGs (photograph of the units).",
+      "terms": [
+        "Ras Laffan B",
+        "1025 MW",
+        "V943A",
+        "bypass stack",
+        "back-pressure steam turbine",
+        "natural circulation",
+        "condensate preheater",
+        "supplementary firing"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-010",
+      "doc_id": "R036",
+      "section": "2.4 Main design topics",
+      "page_start": 5,
+      "page_end": 6,
+      "text": "At the design condition (100% TG load @ 50 °C ambient temperature) the HRSG delivers steam at pressure = 85.4 bar and temperature = 563 °C. During design several load cases, among them a severe gas turbine aged condition, were examined to confirm that the HRSG copes with different plant configurations of gas turbine load (tied to electrical demand) and steam output (tied to desalinated water demand); the post firing design conditions in the table were chosen from this study. Untitled table of design conditions (p. 5). Steam Flow [t/h]: Nominal=636; Max=703. PF1 power [MWth]: Nominal=110; Max=145. PF2 power [MWth]: Nominal=105; Max=170.",
+      "terms": [
+        "100% TG load",
+        "85.4 bar",
+        "563 °C",
+        "aged condition",
+        "Steam Flow [t/h]",
+        "PF1 power [MWth]",
+        "PF2 power [MWth]",
+        "post firing"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-011",
+      "doc_id": "R036",
+      "section": "2.4 Main design topics",
+      "page_start": 6,
+      "page_end": 7,
+      "text": "As the post firing system is the most critical element, the complete firing system was designed carefully. To give the uniform flow distribution at post firing inlet demanded by the post firing supplier, a flow distribution arrangement was studied (Fig. 3): a devortex device at the start of the HRSG inlet duct to remove TG swirl, and a grid upstream of PF1 to even out flow across the post firing burners. The fluid-dynamic behaviour at different gas turbine loads was studied in depth with the Fluent CFD tool (Fig. 4). To rule out resonance, devortex mechanical frequencies were obtained by FEM analysis and natural vibration frequencies by CFD dynamical simulation; the fluid-dynamic frequencies proved to be one order of magnitude below the mechanical ones and hence fully decoupled (Fig. 5).",
+      "terms": [
+        "devortex",
+        "TG swirl",
+        "PF1",
+        "post firing burners",
+        "Fluent CFD",
+        "FEM analysis",
+        "resonance",
+        "natural vibration frequencies"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-012",
+      "doc_id": "R036",
+      "section": "2.4 Main design topics",
+      "page_start": 6,
+      "page_end": 7,
+      "text": "Fig. 3 – Ras Laffan longitudinal section (labels: Devortex, Distribution grid, Post firing 1, Post firing 2). Fig. 4 – Ras Laffan CFD analysis. Fig. 5 – Ras Laffan aeroelastic analysis (devortex natural frequencies by FEM analysis compared with natural vibration frequencies of induced vortices in the devortex by dynamical CFD analysis; annotated no resonance).",
+      "terms": [
+        "Fig. 3",
+        "Fig. 4",
+        "Fig. 5",
+        "Devortex",
+        "Distribution grid",
+        "CFD analysis",
+        "aeroelastic analysis",
+        "FEM analysis"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-013",
+      "doc_id": "R036",
+      "section": "2.5 Operation vs. design comparison",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "More than four years of operation now allow an overall judgement of how well the HRSG meets its flexibility targets. Commissioning and tuning of the post firing system went smoothly, and the required maximum power and modulation between PF1 and PF2 were reached during commissioning without any boiler limitation, with alarm thermocouples staying inside their limits. Figg. 6 and 7 contrast design data with a representative selection of operating data. In Fig. 6 steam production is plotted against gas turbine load: the lower curve gathers all unfired operating points, while the upper curve is the maximum fired steam output allowed by the PF system and by gas temperature limits.",
+      "terms": [
+        "post firing system",
+        "commissioning",
+        "PF1",
+        "PF2",
+        "alarm thermocouples",
+        "unfired",
+        "gas temperature limits",
+        "Fig. 6"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-014",
+      "doc_id": "R036",
+      "section": "2.5 Operation vs. design comparison",
+      "page_start": 7,
+      "page_end": 8,
+      "text": "The PF system limit is set by the largest heat rate PF1 and PF2 can deliver, equal to the maximum operating heat rate plus a 10% margin, and it must respect the maximum temperatures assumed in mechanical design. The resulting upper boundary is irregular: the PF limit governs in the high GT load range and the temperature limit at low GT loads. The HRSG thus covers a very broad operating envelope, holding nominal steam output down to below 60% GT load and allowing a wide spread of steam output at every GT condition, which implies post firing at high heat input even at low GT loads.",
+      "terms": [
+        "PF system",
+        "heat rate",
+        "10% margin",
+        "mechanical design",
+        "GT load",
+        "60% GT load",
+        "nominal steam output",
+        "heat input"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-015",
+      "doc_id": "R036",
+      "section": "2.5 Operation vs. design comparison",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "An index of thermal input density per unit gas mass flow is introduced: PFSpecific Heat Input = Total power to PF/ GT Mass Flow (post firing specific heat input = total power supplied to post firing divided by gas turbine exhaust mass flow, unit MW/(kg/s)). Fig. 7 plots this index against gas turbine load; at low GT loads the firing density rises so that desalinated water output stays unchanged, and even under these severe conditions the post firing design keeps HRSG operation reliable.",
+      "terms": [
+        "PFSpecific Heat Input",
+        "Total power to PF",
+        "GT Mass Flow",
+        "MW/(kg/s)",
+        "firing density",
+        "GT loads"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-016",
+      "doc_id": "R036",
+      "section": "2.5 Operation vs. design comparison",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "Fig. 6 – Operational point vs design points comparison (steam flow in % nominal against GT load in % nominal, showing unfired and maximum fired design points, operational points, nominal point and aged condition). Fig. 7 – Operational point vs design points comparison (PF Specific Heat Input [MW/(kg/s)] against GT load in % nominal).",
+      "terms": [
+        "Fig. 6",
+        "Fig. 7",
+        "Operational point",
+        "design points",
+        "GT Load",
+        "PF Specific Heat Input",
+        "Steam Flow"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-017",
+      "doc_id": "R036",
+      "section": "3.1 General overview",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "With deregulation of power markets, plants compete with one another and must combine top efficiency with maximum operational flexibility so that requested power can be dispatched very quickly. Demanding grid frequency control rules and variable gas price or wind power availability aggravate the situation. Consequently, cycling requirements, both fast start-up and the number of start-ups per year, have grown considerably in recent years, and HRSG cycling capability has become essential for competing in a very aggressive market.",
+      "terms": [
+        "deregulation",
+        "operational flexibility",
+        "frequency control",
+        "cycling requirements",
+        "fast start-up",
+        "start-ups per year",
+        "cycling capability"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-018",
+      "doc_id": "R036",
+      "section": "3.2 Ansaldo Caldaie specific cycling design features",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "Over the last ten years Ansaldo Caldaie has created and applied design features that raise the cycling capability of HRSG components in three areas. 1. Basic design, optimised so that frequent fast start-ups affect boiler behaviour as little as possible. Its main features and checks: small diameter evaporator tubes, giving a smaller evaporator volume and limited drum level fluctuations; automatic drains that clear condensate effectively and avoid uneven steam/water distribution within heated tubes; spray attemperation at the final SH and RH stages to manage steam turbine warming without restricting gas turbine start-up; fatigue life consumption evaluation per EN12952-3 so that start-up time and the number of start-ups can be optimised; HRSG start-up procedure optimisation from the fatigue life consumption analysis to shorten overall combined cycle start-up; and a boiler stress evaluator for creep/fatigue in-line evaluation.",
+      "terms": [
+        "evaporator tubes",
+        "drum level fluctuations",
+        "automatic drains",
+        "spray attemperation",
+        "EN12952-3",
+        "fatigue life consumption",
+        "boiler stress evaluator",
+        "creep/fatigue"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-019",
+      "doc_id": "R036",
+      "section": "3.2 Ansaldo Caldaie specific cycling design features",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "2. Mechanical design: the HRSG as a whole, and pressure parts especially, should be detailed to lower stress concentrations at geometric discontinuities and to let components expand freely. Key features: high strength drum shell plate materials (WB36/A302 Gr.B) whose higher yield stress limits plate thickness against thermal fatigue stresses in load transients; full penetration welds to cut peak stresses at tube-to-header joints of SH/RH; a cold casing concept, in which outer structures held at ambient temperature and top supported heating elements free to expand downward, as the best structural layout for limiting transient stresses; and a reduced number of tubes on each SH and RH header so that differential expansions stay small. 3. Heat preservation: to shorten start-up time spent heating and pressurising the HRSG, pressure parts should stay as hot as possible while shut down, best achieved with a stack damper and insulated stack to slow cooling, sparging steam to cut evaporator heating and start-up time, and motorised valves at superheater outlet to keep the drum under pressure.",
+      "terms": [
+        "WB36/A302 Gr.B",
+        "full penetration welds",
+        "tube-to-header",
+        "cold casing",
+        "stack damper",
+        "sparging steam",
+        "motorised valves",
+        "differential expansions"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-020",
+      "doc_id": "R036",
+      "section": "3.2 Ansaldo Caldaie specific cycling design features",
+      "page_start": 10,
+      "page_end": 11,
+      "text": "Some of these features, such as full penetration welding of SH/RH tube-to-header joints, are compulsory for a \"cycling\" HRSG, while others may be chosen per project or client requirements. Whether a feature satisfies the client can usually be shown during commissioning, performance test and reliability run, or at least within the warranty period; the issues that can cause serious problems only after years of service are those of component life consumption, namely creep and fatigue. Creep does not matter for HP drums, which operate at low temperature, generally below 340 °C. For HP superheaters and reheaters, suitable materials normally give a theoretical design creep time to rupture equal to a conventional life consumption of 20%-30% once the standard 200.000 h design life has elapsed. Hence, for state of the art HRSG temperatures and pressures, creep is not a concern provided design temperature and material selection are properly defined.",
+      "terms": [
+        "full penetration weld",
+        "creep",
+        "fatigue",
+        "HP drums",
+        "340 °C",
+        "time to rupture",
+        "20%-30%",
+        "200.000 h"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-021",
+      "doc_id": "R036",
+      "section": "3.2 Ansaldo Caldaie specific cycling design features",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "Fatigue is the more severe factor for the life of a cycling HRSG. Fatigue life consumption for one start-up/shutdown cycle is generally computed as Lf = N / Nmax ⋅100 (fatigue life consumption in percent = expected number of cycles N divided by number of load cycles to crack initiation Nmax, times 100). The total life consumption is the sum of the Lf values over all normal and emergency start-up and shutdown cycle types expected in service. N is chosen from the end user's assessment of combined cycle operation, while Nmax is set by the boiler maker from client requirements (start-up time and the start and end states of start-up and shutdown), code requirements for fatigue assessment (TRD 301, EN12952) and the boiler maker's internal fatigue evaluation procedure.",
+      "terms": [
+        "Lf",
+        "N",
+        "Nmax",
+        "fatigue life consumption",
+        "crack initiation",
+        "TRD 301",
+        "EN12952",
+        "emergency start-up"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-022",
+      "doc_id": "R036",
+      "section": "3.2 Ansaldo Caldaie specific cycling design features",
+      "page_start": 11,
+      "page_end": 12,
+      "text": "On the last two points, current boiler engineering practice expects HRSGs to be designed, manufactured and tested to Standard Codes and Regulations and to the legislation of the country where the unit is installed and/or the Client's Specification. In Europe the Pressure Equipment Directive (PED) is a mandatory Regulation for all pressure containing equipment, HRSGs and their auxiliaries included, whereas elsewhere compliance with the American ASME Code may be demanded. In line with the PED, which only sets Essential Safety Requirements, the European harmonized Code EN 12952 was published and is now widely used for boilers and HRSGs; it provides standard methods for checking the mechanical strength of pressurized parts so that they also resist time-dependent damage, i.e. creep and fatigue (mechanical and thermal). The Code's general fatigue criteria and formulas can be supplemented with \"tailored\" calculation procedures that simulate component behaviour more closely; this is fully consistent with the PED, can serve as an extra code calculation for HRSGs built to ASME Code Section I (Power Boilers), and is always used by Ansaldo Caldaie whenever cycling capability is required, which today is almost always. Possible fatigue evaluation procedures are outlined next.",
+      "terms": [
+        "Pressure Equipment Directive (PED)",
+        "ASME Code",
+        "Essential Safety Requirements",
+        "EN 12952",
+        "creep",
+        "fatigue",
+        "ASME Code Section I",
+        "Power Boilers"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-023",
+      "doc_id": "R036",
+      "section": "3.3 \"Extensive\" procedure for fatigue assessment",
+      "page_start": 12,
+      "page_end": 13,
+      "text": "Analysing thick wall components under high temperature and cycling is complicated because several phenomena overlap: 1. HRSG transient behaviour in \"normal\" start-up and shutdown with widely varying boundary conditions (initial state set by shutdown length, gas turbine behaviour depending on ambient conditions over the year, etc.) and in emergencies (GT trip, GT runback etc); 2. steam side fluid dynamics of heat exchangers and related thick wall components far from nominal operation (very low steam production, steam condensation in heating surfaces during GT purging, etc.), plus gas side heat exchange where relevant; 3. how thick wall components heat up or cool down thermally during transients; 4. how they respond mechanically. Current tools handle this through dynamic simulation of steam parameters in each HRSG section from transient boundary conditions (e.g. steam pressure and gas turbine mass flow and temperature); CFD is used to simulate header internal flow and heat transfer coefficient, and FEM to compute thermal transients, resulting stresses, mechanical stresses and stress concentration at geometric discontinuities.",
+      "terms": [
+        "thick wall components",
+        "GT trip",
+        "GT runback",
+        "GT purging",
+        "dynamic simulation",
+        "CFD",
+        "FEM",
+        "heat transfer coefficient"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-024",
+      "doc_id": "R036",
+      "section": "3.3 \"Extensive\" procedure for fatigue assessment",
+      "page_start": 12,
+      "page_end": 13,
+      "text": "In-house these analyses rely on commercial software: Protrax for dynamic simulation, Fluent for CFD and Ansys for FEM calculations. Such a detailed study consumes much time, its results hold only for the given geometry and boundary conditions and cannot be transferred to other applications, and because the interacting phenomena are non-linear it is very hard to define the design margins that pressure part design requires.",
+      "terms": [
+        "Protrax",
+        "Fluent",
+        "CFD",
+        "Ansys",
+        "FEM",
+        "design margins",
+        "pressure part"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-025",
+      "doc_id": "R036",
+      "section": "3.4 \"Quick\" procedure for fatigue assessment",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "The extensive procedure cannot be run in the proposal phase, when the optimum design has to be fixed against performance requirements (with their guarantees) and economic optimisation, and occasionally the assessment is needed even at the \"bid-no bid\" stage, when unusual cycling requirements may justify requesting clarification before an offer is prepared. Alongside the extensive analysis, Ansaldo Caldaie therefore built an internal procedure for fast estimation of fatigue life consumption. Besides being fast, it must be intrinsically safe so as to cover unforeseen events in plant operation and the scatter in the local thermal and mechanical response of heat exchangers and associated thick wall components. Using known HRSG operating behaviour and simplified physical models, the approach below, keyed to the points of paragraph 3.3, was coded into ad hoc calculation tools.",
+      "terms": [
+        "proposal phase",
+        "bid-no bid",
+        "fatigue life consumption",
+        "intrinsically safe",
+        "thick wall components",
+        "simplified physical models",
+        "ad hoc calculation tools"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-026",
+      "doc_id": "R036",
+      "section": "3.4 \"Quick\" procedure for fatigue assessment",
+      "page_start": 13,
+      "page_end": 14,
+      "text": "1. Transient behaviour: reliable start-up curves can be built from plant data of earlier HRSGs combined with GT and ST start-up data; sudden rises in steam parameters that deviate from these curves do not affect the overall fatigue assessment, because thermal conduction relaxes them, smoothing thermal diffusion and the resulting mechanical stresses. 2. Steam side and gas side behaviour: comparison with CFD analysis of header internal flow allows simplified models for internal convective heat exchange and, when the component sits inside the boiler, external radiative heat exchange. 3. Thermal behaviour of thick wall components in transients: a dedicated numerical model integrates the Fourier equation in cylindrical coordinates, from which the maximum temperature difference ∆T=Tinnerwall - Tmeanwall (difference between inner wall and mean wall temperature across the thick component) is obtained to estimate the peak thermal stress.",
+      "terms": [
+        "start-up curves",
+        "thermal conduction",
+        "CFD",
+        "convective heat exchange",
+        "radiative heat exchange",
+        "Fourier equation",
+        "cylindrical coordinates",
+        "∆T=Tinnerwall - Tmeanwall"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-027",
+      "doc_id": "R036",
+      "section": "3.4 \"Quick\" procedure for fatigue assessment",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "4. Creep life assessment: following EN 12952, Part 4, the theoretical lifetime of a component under creep is determined from operating pressure and metal temperature, and the creep life consumed over the design lifetime (usually Top=200.000 hours) is obtained as Lc= Top / Tal (creep life consumption = design operating time divided by theoretical time to creep rupture Tal). 5. Fatigue life assessment: per EN 12952 the principal stress near openings or branches is determined for every component, with the circumferential stress combining pressure and temperature effects taken from the transient analysis.",
+      "terms": [
+        "EN 12952, Part 4",
+        "creep",
+        "Lc",
+        "Top",
+        "Tal",
+        "200.000 hours",
+        "principal stress",
+        "circumferential stress"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-028",
+      "doc_id": "R036",
+      "section": "3.4 \"Quick\" procedure for fatigue assessment",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "During start-up, fluid pressure and temperature inside the component both rise, each following its own physical law. At the inner surface the pressure stress is always positive and increases with pressure, whereas the thermal stress is always negative and grows until quasi-stationary conditions are reached (Fig. 10); together they give a smaller (negative) total stress than thermal stress alone. Since the real superposition depends strongly on the actual start-up curve and initial state, extra margin is obtained by taking start-up total stress as the sum of the minimum pressure and thermal stress values, and shutdown total stress as the sum of their maximum values; from these the cyclic stress range and the number of load cycles to crack initiation Nmax follow. The fatigue usage factor is Lf=N/ Nmax (usage factor = total number of cycles N over cycles to crack initiation Nmax), and the total life consumption is the sum of the Lf values for all normal and emergency start-up and shutdown cycles expected.",
+      "terms": [
+        "pressure",
+        "thermal stress",
+        "quasi-stationary",
+        "cyclic stress range",
+        "Nmax",
+        "Lf=N/ Nmax",
+        "fatigue usage factor",
+        "crack initiation"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-029",
+      "doc_id": "R036",
+      "section": "3.4 \"Quick\" procedure for fatigue assessment",
+      "page_start": 15,
+      "page_end": 15,
+      "text": "6. Total usage factor: according to EN12952 it is Lt=Lf+Lc (total usage factor = fatigue usage plus creep life consumption), and every component must satisfy Lt≤1. EN12952-4 proposes this sum for assessing combined creep and fatigue, judging it conservative enough for normal applications thanks to the margins built into the calculation; where life consumption comes from FEM stress analysis, another creep-fatigue combination approach (the \"Creep-Fatigue interaction\" graph, ASME case N-47) should be used instead. All these steps were merged into a calculation tool that takes start-up and shutdown curves, thick wall component and nozzle geometry and material selection, and returns the number of cycles to rupture for every start-up and shutdown condition.",
+      "terms": [
+        "Lt=Lf+Lc",
+        "Lt≤1",
+        "EN12952-4",
+        "total usage factor",
+        "Creep-Fatigue interaction",
+        "ASME case N-47",
+        "FEM",
+        "cycles to rupture"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-030",
+      "doc_id": "R036",
+      "section": "3.5 Test case: Hamm Uentrop project",
+      "page_start": 15,
+      "page_end": 15,
+      "text": "The Hamm Uentrop combined cycle plant in Germany was built by Siemens as EPC contractor for Trianel and consists of two single shaft units with Siemens V94.3A gas turbines. The HP level of each HRSG uses once through evaporators following the Siemens Benson low mass flux concept, and the HRSGs are horizontal gas flow, top supported units with three pressure level and reheater. Ansaldo Caldaie took on engineering, manufacturing and supply of the 2 Heat Recovery Steam Generators as well as their erection and start-up under a Lump Sum Turn Key Contract awarded in June 2005 and completed in November 2007. Fig. 8 – Hamm Uentrop HRSG (photograph).",
+      "terms": [
+        "Hamm Uentrop",
+        "V94.3A",
+        "once through evaporators",
+        "Benson low mass flux",
+        "three pressure level",
+        "reheater",
+        "Lump Sum Turn Key Contract",
+        "Fig. 8"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-031",
+      "doc_id": "R036",
+      "section": "3.5 Test case: Hamm Uentrop project",
+      "page_start": 15,
+      "page_end": 16,
+      "text": "The Hamm Uentrop HRSGs belong to a multiple purchase agreement with Siemens that also covered Herdecke (one Benson type HRSG) and Knapsack (two drum type HRSGs). The drum type and Benson type boilers had different cycling specifications (25 minutes of HRSG start-up time in cold, warm and hot condition), yet one overall design was kept for both, differing only in the evaporator module. Having run for more than 3 years, the Hamm Uentrop units, together with Herdecke, are the Benson HRSGs with the longest commercial operation. Their cycling capability is confirmed since roughly 230 cycles per year occur, consistent with the design value of 250. At the end of 2009, at the client's request, the design-phase fatigue analysis of the HP SH outlet header and separator vessel was checked against plant data, showing that design assumptions agreed with operating data. Extra instrumentation fitted on Hamm Uentrop unit 20 for boiler tuning allowed a detailed check of the \"Quick\" procedure of paragraph 3.4.",
+      "terms": [
+        "Herdecke",
+        "Knapsack",
+        "drum type",
+        "Benson",
+        "evaporator module",
+        "HP SH outlet header",
+        "separator vessel",
+        "\"Quick\" procedure"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-032",
+      "doc_id": "R036",
+      "section": "3.5 Test case: Hamm Uentrop project",
+      "page_start": 16,
+      "page_end": 17,
+      "text": "Figs. 9 and 10 give the design-phase calculations for HP SH outlet header fatigue assessment: Fig. 9 shows hot start-up curves, where the blue \"T Midwall\" curve is the computed header midwall temperature, and Fig. 10 shows hot start-up stresses as a percentage of the total stress used in the fatigue evaluation. Fig. 11 shows measured hot start-up curves; everything there is measured except \"T Midwall calculated\", obtained with the \"Quick procedure\" using the design calculation model with plant data as boundary conditions and with no tuning of the model to improve the match. The measured start-up (Fig. 11) is slower than the design one (Fig. 9) because of load dispatcher requirements rather than combined cycle limits, and the initial temperature was above the expected value; therefore the minimum stresses derived from measurements (Fig. 12) are clearly below the design values (Fig. 10), giving lower overall fatigue life consumption. The key outcome is the very close match of measured and calculated midwall temperatures in Fig. 11, which demonstrates that the \"quick\" procedure is valid.",
+      "terms": [
+        "HP SH outlet header",
+        "hot start-up",
+        "T Midwall",
+        "T Midwall calculated",
+        "Quick procedure",
+        "load dispatcher",
+        "fatigue life consumption",
+        "midwall temperatures"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-033",
+      "doc_id": "R036",
+      "section": "3.5 Test case: Hamm Uentrop project",
+      "page_start": 16,
+      "page_end": 17,
+      "text": "Fig. 9 - design-phase hot start-up curves of the HP SH outlet header (T Gas, T Steam, T Midwall, GT Load, p steam, w steam versus time [min]). Fig. 10 - design-phase hot start-up stress curves of the HP SH outlet header (s(pressure), s(temperature), s(total) in % design stress). Fig. 11 - measured hot start-up curves of the HP SH outlet header (including T Midwall Measured and T Midwall calculated). Fig. 12 - measured hot start-up stress curves of the HP SH outlet header.",
+      "terms": [
+        "Fig. 9",
+        "Fig. 10",
+        "Fig. 11",
+        "Fig. 12",
+        "HP SH outlet header",
+        "hot start-up",
+        "s(pressure)",
+        "T Midwall Measured"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-034",
+      "doc_id": "R036",
+      "section": "3.6 Future developments",
+      "page_start": 18,
+      "page_end": 18,
+      "text": "As combined cycle plants and gas turbines grow in size and output, HRSG components face, and will increasingly face, tougher steam temperature and pressure requirements. Because cycling hurts the thickest parts most, materials with high creep strength are \"a must\" to keep design thickness as low as possible, while cost and physical properties argue for avoiding austenitic stainless steels where feasible. The current standard material for hot components (HP Superheaters and Reheaters) of a high performance HRSG is grade 91 ferritic steel, for tubes as well as heavy wall headers and pipes; it suits steam temperatures up to 560 – 580 °C even under heavy cycling, and advanced low alloy steels such as grade 23 or grade 24 are adopted for medium temperature components.",
+      "terms": [
+        "creep strength",
+        "austenitic stainless steels",
+        "HP Superheaters",
+        "Reheaters",
+        "grade 91",
+        "560 – 580 °C",
+        "grade 23",
+        "grade 24"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-035",
+      "doc_id": "R036",
+      "section": "3.6 Future developments",
+      "page_start": 18,
+      "page_end": 18,
+      "text": "The most critical parts, namely final HP superheater headers, the main HP steam pipe, final reheater headers and the main RH steam pipe, can be properly designed in grade 91 under these conditions by allotting at most 20 – 30 % of design life consumption to creep damage for a typical design life of 200.000 hours, which leaves most of the life for fatigue and also keeps Creep Fatigue Interaction under control. When higher design conditions and larger components push wall thickness up, grade 91 becomes unsuitable: limiting creep consumption calls for a thicker wall, but a thicker wall raises fatigue consumption because the thermal gradients of cycling operation usually cannot be reduced. A better material is therefore needed for higher performance HRSGs.",
+      "terms": [
+        "final HP superheater headers",
+        "main HP steam pipe",
+        "main RH steam pipe",
+        "grade 91",
+        "20 – 30 %",
+        "200.000 hours",
+        "Creep Fatigue Interaction",
+        "thermal gradients"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-036",
+      "doc_id": "R036",
+      "section": "3.6 Future developments",
+      "page_start": 18,
+      "page_end": 19,
+      "text": "Here the company's USC Utility Boilers experience can be transferred by using advanced alloy steel grade 92, available and suitable for heavy wall components. Grade 92 serves steam temperatures up to 600 – 620 °C with allowable stresses (creep strength) high enough to size header and pipe shells that meet both creep and fatigue life targets and their combination; at 600 °C its allowable stress exceeds that of grade 91 by about 20 %, so the required thickness drops by 20 %. As grade 92 belongs to the same alloy composition class as grade 91, its physical and metallurgical behaviour is not expected to require particular design changes.",
+      "terms": [
+        "USC Utility Boilers",
+        "grade 92",
+        "600 – 620 °C",
+        "allowable stresses",
+        "creep strength",
+        "600 °C",
+        "grade 91",
+        "20 %"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-037",
+      "doc_id": "R036",
+      "section": "3.6 Future developments",
+      "page_start": 19,
+      "page_end": 19,
+      "text": "To gain safe and reliable knowledge of grade 92 behaviour and performance over the component life, compared against the extensive grade 91 experience, the company launched a full lifetime analysis study of thick wall components with an FEM model. A large part of the study evaluates published material test data, which are still less complete and reliable than those for grade 91 though steadily improving. The aim is to compare these complete (\"off line\") results with similar grade 91 cases so that the company procedure can also be tuned for this steel, expected to be widely used for such boiler components in the future.",
+      "terms": [
+        "grade 92",
+        "grade 91",
+        "lifetime analysis",
+        "thick wall components",
+        "FEM model",
+        "material test data",
+        "off line"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R036-038",
+      "doc_id": "R036",
+      "section": "4. Conclusion",
+      "page_start": 19,
+      "page_end": 19,
+      "text": "HRSGs are recognised as very flexible steam generators, and two configurations were examined: an HRSG with a double post firing system giving a very broad steam production range over the whole gas turbine operating range, and HRSG design features enabling heavy cycling operation. They were illustrated by two applications: Ras Laffan B (Qatar), a cogeneration plant producing electrical power and desalinated water, and Hamm Uentrop (Germany), the fastest HRSG application, which uses a Benson once through design. Although the projects differ greatly, both follow the same tailor made design philosophy, which operating data have confirmed.",
+      "terms": [
+        "HRSGs",
+        "double post firing",
+        "heavy cycling",
+        "Ras Laffan B",
+        "cogeneration",
+        "Hamm Uentrop",
+        "Benson once through",
+        "tailor made"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 38,
+    "pages_processed": "1-19 (PDF 1-19쪽 전체)",
+    "last_paragraph_id": "R036-038",
+    "skipped": [
+      "1쪽 표지의 저자 소속 표기(Ansaldo Caldaie, Italy): 저자 소속·연락처 (저자명은 document.authors에 기재)",
+      "각 쪽 하단 쪽번호: 바닥글",
+      "그림 1~12 내부 내용(막대그래프·사진·CFD·곡선): 캡션과 본문 설명만 수록, 캡션 괄호 안은 그림에 인쇄된 축·범례 라벨만 기재",
+      "참고문헌·감사의 글·저작권 문구: 원문에 없음"
+    ],
+    "uncertain": [
+      "발행처(venue)·발행연도·DOI·URL이 PDF에 인쇄되어 있지 않아 venue/doi/url은 빈칸, year는 null로 둠. 본문에 2006년 준공(Ras Laffan), 'end of year 2009' 분석, 'Power Gen Middle East 2010' 언급이 있어 2010년 이후 작성으로 보이나 연도는 추정하지 않음 (PDF 메타데이터 생성일 2012-10-01은 사본 생성일일 수 있음)",
+      "쪽번호: 2-19쪽은 인쇄된 쪽번호(PDF 쪽번호와 동일) 사용, 1쪽(표지)은 인쇄 번호가 없어 PDF 쪽번호 1 사용(문단 없음)",
+      "5쪽 설계조건 표에 표 번호·제목이 없어 'Untitled table of design conditions'로 표기",
+      "Fig 1 막대그래프 두 번째 막대 라벨은 'Single PF @ EVA in'으로 인쇄됨(잘린 듯함) → 캡션 괄호에 'single PF located at the evaporator inlet'으로 본문(2.2절 Option 2) 근거 기술",
+      "원문 철자 오류(unt, forseen, embeddend, corves, Gemrany, strat-up 등)는 paraphrase 과정에서 정상 철자로 기술; 'HRSGSs'는 'HRSGs'로 기술",
+      "8쪽 수식 'PFSpecific Heat Input'은 원문에서 'Specific Heat Input'이 아래첨자로 인쇄됨; 단위 MW/(kg/s)는 Fig. 7 축 라벨에서 가져옴",
+      "Fig. 4·Fig. 8은 사진/CFD 이미지로 내부 라벨 없음",
+      "원문과 10단어 이상 연속 일치 점검 결과: R036-015의 수식 표기(PFSpecific Heat Input = Total power to PF/ GT Mass Flow)만 일치하며, 수식 기호는 원문대로 두는 규칙에 따른 것임"
+    ]
+  }
+}

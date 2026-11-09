@@ -1,0 +1,659 @@
+{
+  "document": {
+    "doc_id": "R038",
+    "title": "Slagging and Fouling Characteristics of HRSG for Ferrosilicon Electric Furnaces",
+    "authors": [
+      "Yungang Wang",
+      "Heng Chen",
+      "Zhongya Chen",
+      "Haidong Ma",
+      "Qinxin Zhao"
+    ],
+    "year": 2015,
+    "venue": "Energies 2015, 8, 1101-1113, MDPI",
+    "doi": "10.3390/en8021101",
+    "url": "https://doi.org/10.3390/en8021101",
+    "license": "© 2015 by the authors; licensee MDPI, Basel, Switzerland. Open access article distributed under the terms and conditions of the Creative Commons Attribution license (http://creativecommons.org/licenses/by/4.0/) (CC BY 4.0 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R038-001",
+      "doc_id": "R038",
+      "section": "Abstract",
+      "page_start": 1101,
+      "page_end": 1102,
+      "text": "Abstract: The slagging and fouling characteristics of the heat recovery steam generator (HRSG) for ferrosilicon electric furnaces are discussed in this paper. Three ash samples were taken from the HRSG of a ferrosilicon furnace in Ningxia Province, China, which suffered from serious slagging and fouling. X-ray fluorescence (XRF), X-ray powder diffraction (XRD) and scanning electron microscope (SEM) were used to analyze the ash samples. The results show that low melting point salt Na_2SO_4 and composite salts Na (AlSi_3O_8) and 3K_2SO_4·CaSO_4 deposit on the superheater tube walls in aerosol form and solidify to form the initial slag layer. With the continuous deposition of the low melting point compounds, more and more ash particles in the flue gas adhere to the slag surface to form a thicker slag. Low melting point composite salt NaO·Al_2O_3·SiO_2 is absorbed on the evaporator tube walls in aerosol form. With the deposition of NaO·Al_2O_3·SiO_2, more and more ash particles are absorbed to form the fouling. Since there is less space between pin-finned tubes, the large iron-rich slag particles are easily deposited on tube walls and fin surfaces, which is advantageous to the fouling process. There are large quantities of superfine ash particles in the flue gas that easily adhere to other particles or tube walls, which facilitates the slagging and fouling process. Keywords: ferrosilicon furnace; HRSG; slagging; fouling; low melting point compound; superfine particle",
+      "terms": [
+        "heat recovery steam generator",
+        "HRSG",
+        "ferrosilicon",
+        "slagging and fouling",
+        "Na_2SO_4",
+        "3K_2SO_4·CaSO_4",
+        "NaO·Al_2O_3·SiO_2",
+        "pin-finned tubes"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-002",
+      "doc_id": "R038",
+      "section": "1. Introduction",
+      "page_start": 1102,
+      "page_end": 1102,
+      "text": "Ferrosilicon is composed of silicon and iron. In addition, it is one of the essential raw materials for the production of steel and casts, which can improve the chemical and mechanical properties of steel and casts, to improve their quality [1]. Ferrosilicon is made from coke, silica and steel cuttings by the electric furnace. The ferrosilicon production process includes three steps: raw materials are put into the furnace; coke and silicon iron ore react under electrical heating; and melting ferrosilicon flows out of the furnace. It takes about 24 h every production cycle. The chemical reactions that take place in the process are complex, including oxidation reactions and reduction reactions. There are plenty of fine ash particles generated in the furnace and exhausted out in the flue gas.",
+      "terms": [
+        "Ferrosilicon",
+        "silicon and iron",
+        "coke",
+        "silica",
+        "steel cuttings",
+        "electric furnace",
+        "fine ash particles",
+        "flue gas"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-003",
+      "doc_id": "R038",
+      "section": "1. Introduction",
+      "page_start": 1102,
+      "page_end": 1102,
+      "text": "Ferrosilicon production is a high-energy consumption and high-pollution process. The production of one ton of ferrosilicon consumes 8000–9000 kW·h and 510–530 kg of coke. The energy consumption accounts for about 40–50 percent of the production cost. A large amount of high temperature waste gas forms in the process. Producing one ton of ferrosilicon alloy, about 50,000 m^3/h of waste gas (450–650 °C) are discharged, and the energy of the high-temperature flue gas takes 40–55 percent of the total energy consumption [2–4]. More than half of the energy supplied to the furnace in the form of electricity and raw materials is lost to the environment as heat [5]. There are more than 1000 ferrosilicon electric furnaces in China, and their waste heat is enormous. Therefore, the waste heat recovery of ferrosilicon electric furnaces is of major importance.",
+      "terms": [
+        "Ferrosilicon production",
+        "kW·h",
+        "coke",
+        "waste gas",
+        "m^3/h",
+        "high-temperature flue gas",
+        "waste heat recovery",
+        "ferrosilicon electric furnaces"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-004",
+      "doc_id": "R038",
+      "section": "1. Introduction",
+      "page_start": 1102,
+      "page_end": 1102,
+      "text": "In recent years, several ferrosilicon electric furnaces in China have used HRSGs to recover the heat from the high-temperature flue gas. However, during the operation of the waste heat recovery systems, the HRSGs suffer from serious slagging and fouling, which causes the heat transfer efficiency of the HRSGs to decrease, as well as the evaporation capacity and electricity output to decrease, and some HRSGs even shut down. The slagging and fouling problems have severely restricted the application of HRSGs in ferrosilicon electric furnaces, which is urgent to deal with.",
+      "terms": [
+        "HRSGs",
+        "high-temperature flue gas",
+        "waste heat recovery systems",
+        "slagging and fouling",
+        "heat transfer efficiency",
+        "evaporation capacity"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-005",
+      "doc_id": "R038",
+      "section": "1. Introduction",
+      "page_start": 1102,
+      "page_end": 1102,
+      "text": "Currently, the study of the ash deposition of boilers has mainly been on utility boilers and industrial boilers [6–15]. There is little in the literature about the slagging and fouling of HRSG. In addition, no research has been conducted on the slagging and fouling characteristics of HGSGs for ferrosilicon electric furnaces. In this paper, we discuss the slagging and fouling mechanism of the HRSG of a ferrosilicon electric furnace in Ningxia, China. The ash samples taken from different parts of the HRSG are analyzed by X-ray fluorescence (XRF), XRD and SEM. The main objective of our work is to estimate the reason for slagging and fouling on HRSGs for ferrosilicon electric furnaces, which will be helpful in reducing the slagging and fouling of HRSGs and crucial to the heat recovery of ferrosilicon electric furnaces.",
+      "terms": [
+        "ash deposition",
+        "utility boilers",
+        "industrial boilers",
+        "HRSG",
+        "X-ray fluorescence (XRF)",
+        "XRD",
+        "SEM",
+        "slagging and fouling"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-006",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1103,
+      "page_end": 1103,
+      "text": "The ash samples are taken from the HRSG of a ferrosilicon electric furnace in Ningxia, China. The rated electric power of the ferrosilicon electric furnace is 18 MW, and the temperature of the reacting area in the furnace is 1700–2000 °C. As shown in Figure 1, the waste heat recovery system is composed of one forced circulation HRSG, one low-pressure turbine and one generator. The rated power output of the system is 10 MW.",
+      "terms": [
+        "ferrosilicon electric furnace",
+        "18 MW",
+        "waste heat recovery system",
+        "forced circulation HRSG",
+        "low-pressure turbine",
+        "generator",
+        "10 MW"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-007",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1103,
+      "page_end": 1103,
+      "text": "Figure 1. Diagram of the waste heat recovery system.",
+      "terms": [
+        "Figure 1",
+        "waste heat recovery system"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-008",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1103,
+      "page_end": 1103,
+      "text": "The HRSG (Figure 2) consists of the one-stage superheater, the three-stage evaporator, the two-stage economizer and the drum. The superheater is composed of smooth tubes, while the evaporator and economizer are made up of pin-finned tubes, which lead to the high heat transfer efficiency of the HRSG. The design parameters of the HRSG are shown in Table 1. The inlet flue gas temperature of the HRSG changes periodically with the production cycle of the ferrosilicon electric furnace. Its minimum is about 450 °C, and its maximum is about 700 °C. During 90% of the production cycle, the inlet flue gas temperature is maintained at about 600 °C. The inlet flue gas components are as shown in Table 2. In addition, Tables 3–5 show the components of the raw materials. An ash blowing technology, consisting of combustion gas and pulsing, is used to clean the deposited ash every two hours.",
+      "terms": [
+        "one-stage superheater",
+        "three-stage evaporator",
+        "two-stage economizer",
+        "drum",
+        "smooth tubes",
+        "pin-finned tubes",
+        "inlet flue gas temperature",
+        "ash blowing technology"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-009",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1104,
+      "page_end": 1104,
+      "text": "Figure 2. Diagram of the HRSG and sampling positions.",
+      "terms": [
+        "Figure 2",
+        "HRSG",
+        "sampling positions"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-010",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1104,
+      "page_end": 1104,
+      "text": "Table 1. Operating parameters of the HRSG. Columns: Parameters; Unit; Value. Inlet flow of flue gas: Unit=Nm^3·h^−1; Value=50,000. Rated temperature of inlet flue gas: Unit=°C; Value=600. Temperature range of inlet flue gas: Unit=°C; Value=450–700. Pressure of superheated steam: Unit=MPa; Value=1.27. Temperature of superheated steam: Unit=°C; Value=320. Rated evaporating capacity: Unit=t/h; Value=10. Rated temperature of outlet flue gas: Unit=°C; Value=170.",
+      "terms": [
+        "Operating parameters",
+        "HRSG",
+        "Nm^3·h^−1",
+        "inlet flue gas",
+        "superheated steam",
+        "MPa",
+        "Rated evaporating capacity",
+        "outlet flue gas"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-011",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1104,
+      "page_end": 1104,
+      "text": "Table 2. Components of the inlet flue gas (on a volume basis). Columns: Components; Unit; Value. CO_2: Unit=%; Value=3. N_2: Unit=%; Value=77.5. O_2: Unit=%; Value=18.3. H_2O: Unit=%; Value=≤1.2. Ash: Unit=g·m^−3; Value=≤10.",
+      "terms": [
+        "inlet flue gas",
+        "volume basis",
+        "CO_2",
+        "N_2",
+        "O_2",
+        "H_2O",
+        "Ash",
+        "g·m^−3"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-012",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1105,
+      "page_end": 1105,
+      "text": "Table 3. Components of the silica (wt%). Value: SiO_2=98.42; Fe_2O_3=0.67; Al_2O_3=0.42; CaO=0.24; MgO=0.13; Others=0.12.",
+      "terms": [
+        "silica",
+        "wt%",
+        "SiO_2",
+        "Fe_2O_3",
+        "Al_2O_3",
+        "CaO",
+        "MgO"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-013",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1105,
+      "page_end": 1105,
+      "text": "Table 4. Proximate analysis of the semi-coke (wt%, as received basis). Moisture=7.4; Ash=3.5; Volatile Matter=2.8; Fixed Carbon=86.3.",
+      "terms": [
+        "Proximate analysis",
+        "semi-coke",
+        "as received basis",
+        "Moisture",
+        "Ash",
+        "Volatile Matter",
+        "Fixed Carbon"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-014",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1105,
+      "page_end": 1105,
+      "text": "Table 5. Ash composition of the semi-coke (wt%). SiO_2=54.22; Al_2O_3=17.38; Fe_2O_3=16.26; CaO=2.13; MgO=3.89; Na_2O=1.64; K_2O=4.48.",
+      "terms": [
+        "Ash composition",
+        "semi-coke",
+        "SiO_2",
+        "Al_2O_3",
+        "Fe_2O_3",
+        "Na_2O",
+        "K_2O"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-015",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1105,
+      "page_end": 1105,
+      "text": "In the operation of the HRSG, the superheater suffers from serious slagging (Figure 3), which causes the superheated steam temperature to be less than the design value. Meanwhile, the evaporator suffers from serious fouling (Figure 4), resulting in the decline of the evaporation capacity. During the daily operation, the evaporation capacity is about 8 t/h (designed value: 10 t/h), and the superheated steam temperature is maintained at about 280 °C (designed value 320 °C). When evaporation capacity is maintained at 8 t/h and the superheated steam temperature is maintained at 280 °C, the actual temperatures of each heating surfaces are measured, as shown in Table 6.",
+      "terms": [
+        "HRSG",
+        "superheater",
+        "slagging",
+        "evaporator",
+        "fouling",
+        "evaporation capacity",
+        "superheated steam temperature",
+        "heating surfaces"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-016",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1105,
+      "page_end": 1105,
+      "text": "Figure 3. Slagging on the superheater. Figure 4. Fouling on the evaporator.",
+      "terms": [
+        "Figure 3",
+        "Slagging",
+        "superheater",
+        "Figure 4",
+        "Fouling",
+        "evaporator"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-017",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1106,
+      "page_end": 1106,
+      "text": "Table 6. Inlet flue gas temperatures of the heating surfaces. Temperature/°C: Superheater=590–605; Evaporator=545–555; Economizer=215–225.",
+      "terms": [
+        "Inlet flue gas temperatures",
+        "heating surfaces",
+        "Superheater",
+        "Evaporator",
+        "Economizer"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-018",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1106,
+      "page_end": 1106,
+      "text": "When the HRSG is shut down, the samples are taken from the slagging, fouling and ash deposition parts, as shown in Figure 2. In addition, the tube surface temperatures of sampling Positon 1 and Positon 2 are calculated based on the temperature of the working medium inside, which is also illustrated in Figure 2. Because of the manhole and shutdown time limitations, only three positions were available for taking samples. Sample 1 is the slag on the windward side of the bottom tubes of the superheater. Sample 2 is the fouling on the windward side of the upper tubes of the evaporator. Sample 3 is the ash deposited in the ash hopper, with the standard ash in the flue gas for comparison. The slag body of Sample 1 is gray brown and uniform without obvious layers, as shown in Figure 5. Sample 2 is composed of fragile, small ash blocks, and Sample 3 is fine ash.",
+      "terms": [
+        "slagging",
+        "fouling",
+        "ash deposition",
+        "tube surface temperatures",
+        "superheater",
+        "evaporator",
+        "ash hopper",
+        "windward side"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-019",
+      "doc_id": "R038",
+      "section": "2. HRSG and Sampling Positions",
+      "page_start": 1106,
+      "page_end": 1106,
+      "text": "Figure 5. Sample 1.",
+      "terms": [
+        "Figure 5",
+        "Sample 1"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-020",
+      "doc_id": "R038",
+      "section": "3. Experimental Section",
+      "page_start": 1106,
+      "page_end": 1106,
+      "text": "The samples were ground, and the main crystalline compounds in the samples were identified by XRD. XRF was used for elemental determination. Comparing the XRF with XRD results, the compound contents of each sample are inferred. In order to obtain the physical morphology characteristic of each sample, SEM was applied to observe the sample microstructures. By synthetically analyzing the above consequences, the reasons for slagging and fouling can be proposed.",
+      "terms": [
+        "XRD",
+        "XRF",
+        "crystalline compounds",
+        "elemental determination",
+        "SEM",
+        "microstructures",
+        "slagging and fouling"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-021",
+      "doc_id": "R038",
+      "section": "4.1.1. XRF Analysis Results",
+      "page_start": 1106,
+      "page_end": 1107,
+      "text": "Table 7 shows the XRF analysis results of the three samples. Mg, K, Fe, Si and O are the main elements in every sample, while there is less Na, Ca, S, Al, Zn and Mn. Compared with that in Sample 3, the contents of Na, Ca and Fe are obviously higher in Sample 2 and Sample 3. Sample 1 contains more S than Sample 2 and Sample 3. Moreover, the content of Fe in Sample 2 is the highest.",
+      "terms": [
+        "Table 7",
+        "XRF analysis",
+        "Mg, K, Fe, Si and O",
+        "Na, Ca and Fe",
+        "Sample 2",
+        "Sample 3"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-022",
+      "doc_id": "R038",
+      "section": "4.1.1. XRF Analysis Results",
+      "page_start": 1107,
+      "page_end": 1107,
+      "text": "Table 7. X-ray fluorescence (XRF) analysis results of the ash samples. Sample 1: Na=2.11; Ca=2.35; Mg=2.61; K=4.75; S=5.4; Fe=7.89; Si=24.2; O=48.9; Al=0.948; Zn=0.171; Mn=0.314. Sample 2: Na=2.23; Ca=2.45; Mg=2.62; K=4.71; S=2.45; Fe=12.4; Si=26.7; O=44.7; Al=0.607; Zn=0.248; Mn=0.354. Sample 3: Na=1.53; Ca=1.05; Mg=3.18; K=4.55; S=1.79; Fe=6.31; Si=31.6; O=48.1; Al=0.398; Zn=0.274; Mn=0.209.",
+      "terms": [
+        "X-ray fluorescence (XRF)",
+        "ash samples",
+        "Sample 1",
+        "Na=",
+        "Fe=",
+        "Si=",
+        "Mn="
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-023",
+      "doc_id": "R038",
+      "section": "4.1.2. XRD Analysis Results",
+      "page_start": 1107,
+      "page_end": 1107,
+      "text": "To determine the compounds in which the elements exist, the three samples were analyzed by XRD. The results of XRD illustrated in Figure 6 and Table 8 indicate that Si and Fe mainly exist in SiO_2 and Fe_2O_3 in each sample. Because of Fe_2O_3, Sample 1 appears grey brown. CaSO_4, Na_2SO_4, Na (AlSi_3O_8) and 3K_2SO_4·CaSO_4 are also the main compounds in Sample 1. In addition, there are other compounds, CaSO_4, NaFeO_2, NaO·Al_2O_3·SiO_2, existing in Sample 2.",
+      "terms": [
+        "XRD",
+        "SiO_2",
+        "Fe_2O_3",
+        "CaSO_4",
+        "Na_2SO_4",
+        "Na (AlSi_3O_8)",
+        "3K_2SO_4·CaSO_4",
+        "NaO·Al_2O_3·SiO_2"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-024",
+      "doc_id": "R038",
+      "section": "4.1.2. XRD Analysis Results",
+      "page_start": 1108,
+      "page_end": 1108,
+      "text": "Figure 6. XRD analysis pictures of the ash samples. (a) Sample 1; (b) Sample 2; (c) Sample 3.",
+      "terms": [
+        "Figure 6",
+        "XRD analysis",
+        "ash samples",
+        "Sample 1"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-025",
+      "doc_id": "R038",
+      "section": "4.1.2. XRD Analysis Results",
+      "page_start": 1108,
+      "page_end": 1108,
+      "text": "Table 8. XRD analysis results of the ash samples. Columns: Sample; Main components. Sample 1: Main components=Fe_2O_3, SiO_2, CaSO_4, Na_2SO_4, Na (AlSi_3O_8), 3K_2SO_4·CaSO_4. Sample 2: Main components=Fe_2O_3, SiO_2, Fe_3O_4, CaSO_4, NaFeO_2, NaO·Al_2O_3·SiO_2. Sample 3: Main components=Fe_2O_3, SiO_2.",
+      "terms": [
+        "XRD analysis",
+        "Main components",
+        "Fe_2O_3",
+        "SiO_2",
+        "Na_2SO_4",
+        "Na (AlSi_3O_8)",
+        "Fe_3O_4",
+        "NaO·Al_2O_3·SiO_2"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-026",
+      "doc_id": "R038",
+      "section": "4.1.3. SEM Analysis Results",
+      "page_start": 1108,
+      "page_end": 1108,
+      "text": "Figures 7–9 show the SEM photographs of the microstructures of the three samples. It is obvious that the ash particles in the flue gas are almost all spherical and less than 1 μm, and many them are less than 0.1 μm. These superfine particles are easily deposited on other particles or tube walls. There are obvious signs that melting particles merged and absorbed other ash particles in Sample 1 and Sample 2, which indicates that melting low melting point compounds play an important role in the slagging and fouling process. From Figures 7 and 8, we can note that ash particles bonded to each other by sintering of low melting compounds and superfine particles. Figure 9 shows that the superfine particles adhere to other particles. Since there were no melting compounds, no strong connections between ash particles were built.",
+      "terms": [
+        "SEM photographs",
+        "microstructures",
+        "ash particles",
+        "superfine particles",
+        "1 μm",
+        "low melting point compounds",
+        "sintering",
+        "slagging and fouling"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-027",
+      "doc_id": "R038",
+      "section": "4.1.3. SEM Analysis Results",
+      "page_start": 1108,
+      "page_end": 1109,
+      "text": "Figure 7. SEM photographs of the cross-sectional structures of Sample 1. Figure 8. SEM photographs of the cross-sectional structures of Sample 2. Figure 9. SEM photographs of the cross-sectional structures of Sample 3.",
+      "terms": [
+        "Figure 7",
+        "SEM photographs",
+        "cross-sectional structures",
+        "Figure 8",
+        "Figure 9"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-028",
+      "doc_id": "R038",
+      "section": "4.2.1. Slagging Mechanism",
+      "page_start": 1109,
+      "page_end": 1109,
+      "text": "A lot of research has shown that the slagging and fouling on heating surfaces during coal combustion are usually related to alkali metal elements Na and K [16–22]. As shown in Table 4, the ash in the flue gas exhausted from the ferrosilicon electric furnace has high Na and K contents, which leads to easy slagging and fouling. Tables 4 and 5 show that Na, Ca and S are enriched in Sample 1, existing in sulfates (CaSO_4 and Na_2SO_4) and composite salts (Na (AlSi_3O_8) and 3K_2SO_4·CaSO_4), which means that the slagging on the superheater is probably related to the chemical reactions and migration of Na, Ca and S.",
+      "terms": [
+        "slagging and fouling",
+        "coal combustion",
+        "alkali metal elements",
+        "Na and K",
+        "CaSO_4",
+        "Na_2SO_4",
+        "3K_2SO_4·CaSO_4",
+        "superheater"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-029",
+      "doc_id": "R038",
+      "section": "4.2.1. Slagging Mechanism",
+      "page_start": 1109,
+      "page_end": 1110,
+      "text": "In the high temperature area of the furnace, most alkali metal does not attach to the walls, but vaporizes or sublimates and suspends in the high temperature area or flies out with the flue gas [23]. Under high temperature conditions, alkali metal gasifies in the form of low melting point salts, such as KCl, NaCl and Na_2SO_4 [16,24,25]. In addition, there are low melting point composite slats forming in the furnace [14,26,27]. Tables 4 and 5 shows that there are low melting point salt Na_2SO_4 and composite salts Na (AlSi_3O_8) and 3K_2SO_4·CaSO_4 existing in Sample 1, which results in the slagging on the superheater. When the high temperature flue gas comes to the middle temperature area (the superheater), a lot of these low melting point salt and composite salts begin to condense and form aerosol particles. In addition, these aerosol particles are usually super fine, less than 1 μm and even 0.1 μm [25]. Therefore, these aerosol particles are easily deposited on the tube walls with the effects of electrostatic force and thermophoretic force, solidifying and forming the initial slag layer. As more and more low melting point compounds are deposited on the tube walls, the thermal resistance of the slag increases, the slag surface temperature increases and the low melting point compounds solidify more slowly, but the viscosity of the slag surface increases. Meanwhile, the surface area and surface roughness of the slag increase several times over. Then, more and more ash particles in the flue gas are absorbed on the slag surface to form a thicker slag. In addition, Section 4.1.3. shows that the ash particles in the flue gas are superfine and easily deposited, which accelerates the slagging progress. The slagging process is illustrated in Figure 10.",
+      "terms": [
+        "alkali metal",
+        "low melting point salts",
+        "Na_2SO_4",
+        "aerosol particles",
+        "electrostatic force",
+        "thermophoretic force",
+        "initial slag layer",
+        "thermal resistance"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-030",
+      "doc_id": "R038",
+      "section": "4.2.1. Slagging Mechanism",
+      "page_start": 1110,
+      "page_end": 1110,
+      "text": "Figure 10. Diagram of the slagging process.",
+      "terms": [
+        "Figure 10",
+        "slagging process"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-031",
+      "doc_id": "R038",
+      "section": "4.2.2. Fouling Mechanism",
+      "page_start": 1110,
+      "page_end": 1110,
+      "text": "From Tables 4 and 5, we can see that Na and Fe are enriched in Sample 2, existing as s Fe_2O_3, Fe_3O_4, NaFeO_2 and NaO·Al_2O_3·SiO_2, which means that the fouling on the evaporator is closely related to Na and Fe. When the flue gas reaches the evaporator, low melting point composite salt NaO·Al_2O_3·SiO_2 adheres to tube walls in aerosol form. With the deposition of NaO·Al_2O_3·SiO_2, more and more ash particles are absorbed to form the fouling. Many superfine fly ash particles also promote the fouling formation. Besides, there are numerous, large, iron-rich slag particles in the flue gas [18]. Since there is less space between pin-finned tubes, the large iron-rich slag particles are easily deposited on the tube walls and fin surfaces, which also facilitates the fouling process. The fouling process is similar to the slagging process. However, because of different formation temperatures, the low melting point compounds deposited in the fouling differ from that in the slag, and the slag body is tough, while the fouling body is frangible.",
+      "terms": [
+        "Fe_2O_3",
+        "Fe_3O_4",
+        "NaFeO_2",
+        "NaO·Al_2O_3·SiO_2",
+        "fouling",
+        "evaporator",
+        "pin-finned tubes",
+        "iron-rich slag particles"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-032",
+      "doc_id": "R038",
+      "section": "5. Conclusions",
+      "page_start": 1110,
+      "page_end": 1111,
+      "text": "(1) Low melting point salt Na_2SO_4 and composite salts Na (AlSi_3O_8) and 3K_2SO_4·CaSO_4 adhere to the superheater tube walls in aerosol form and solidify to form the initial slag layer. With the continuous deposition of the low melting point compounds, the thermal resistance of the slag increases, the slag surface temperature increases and the low melting point compounds solidify more slowly, but the viscosity of the slag surface increases. Meanwhile, the surface area and surface roughness of the slag increase several times over. Then, more and more ash particles in the flue gas are absorbed on the slag surface to form a thicker slag.",
+      "terms": [
+        "Na_2SO_4",
+        "Na (AlSi_3O_8)",
+        "3K_2SO_4·CaSO_4",
+        "superheater",
+        "aerosol",
+        "initial slag layer",
+        "thermal resistance",
+        "viscosity"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R038-033",
+      "doc_id": "R038",
+      "section": "5. Conclusions",
+      "page_start": 1111,
+      "page_end": 1111,
+      "text": "(2) Low melting point composite salt NaO·Al_2O_3·SiO_2 adheres to the evaporator tube walls in aerosol form. With the deposition of NaO·Al_2O_3·SiO_2, more and more ash particles are absorbed to form the fouling. Since there is less space between pin-finned tubes, the big, iron-rich slag particles are easily deposited on the tube walls and fin surfaces, which is advantageous to the fouling process. In addition, the fouling process is similar to the slagging process. Because of different forming temperatures, the low melting point compounds deposited in the fouling are different from that in the slag. (3) There are a lot of superfine ash particles in the flue gas that easily adhere to other particles or tube walls, which facilitates the slagging and fouling process.",
+      "terms": [
+        "NaO·Al_2O_3·SiO_2",
+        "evaporator",
+        "aerosol",
+        "fouling",
+        "pin-finned tubes",
+        "iron-rich slag particles",
+        "slagging process",
+        "superfine ash particles"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    }
+  ],
+  "report": {
+    "paragraph_count": 33,
+    "pages_processed": "인쇄 1101-1113쪽 전체(PDF 1-13쪽). 본문 1101-1111쪽 처리, 1111-1113쪽은 감사의 글·기여·이해상충·참고문헌",
+    "last_paragraph_id": "R038-033",
+    "skipped": [
+      "1101쪽 머리 정보(Energies 2015, 8, 1101-1113; doi, OPEN ACCESS, energies 로고, ISSN 1996-1073, www.mdpi.com/journal/energies, \"Article\"): 저널 로고·머리글",
+      "1101쪽 저자 소속·이메일·교신저자 전화/팩스, Academic Editor, Received/Accepted/Published 날짜: 저자 연락처·출판 정보",
+      "각 쪽 머리글 \"Energies 2015, 8\"과 쪽번호",
+      "1111쪽 Acknowledgments, Author Contributions, Conflicts of Interest: 감사의 글·기여·이해상충",
+      "1111-1113쪽 References 1-27: 참고문헌 목록",
+      "1113쪽 \"© 2015 by the authors; licensee MDPI ... Creative Commons Attribution license\": 저작권 문구(document.license에 반영)",
+      "Figure 1, 2, 10 도식 내부 라벨(Raw materials, Bag-filter, Sample 1-3 설명 및 관 표면온도 등), Figure 3-5·7-9 사진, Figure 6 XRD 그래프(축·피크 라벨·범례)와 \"Figure 6. Cont.\" 표시: 캡션만 수록, 그림 내용은 추측하지 않음"
+    ],
+    "uncertain": [
+      "쪽 번호는 인쇄 번호(1101-1113)를 사용",
+      "화학식·단위의 아래/위첨자는 페이지 이미지로 확인해 Na_2SO_4, Al_2O_3, 3K_2SO_4·CaSO_4, Na (AlSi_3O_8), CO_2, H_2O, m^3/h, Nm^3·h^−1, g·m^−3처럼 표기(\"Na (AlSi_3O_8)\"의 공백은 인쇄 그대로)",
+      "Table 7(XRF 결과)은 인쇄본에 단위가 표기되어 있지 않아 값만 옮김. Table 3·4·5는 1행짜리 표라 \"열=값\" 형태로 풀어 씀",
+      "원문 오탈자·비문(\"HGSGs\", \"Positon 1\", \"composite slats\", \"many them\", \"existing as s Fe2O3\", \"Tables 4 and 5 shows\", 4.1.1절의 \"Compared with that in Sample 3, ... higher in Sample 2 and Sample 3\" 등)은 verbatim 원칙에 따라 그대로 유지. 4.2절이 XRF/XRD 결과를 \"Table 4\"·\"Tables 4 and 5\"로 지칭하는 부분도 인쇄 그대로",
+      "Keywords 행(1102쪽)은 Abstract 문단 끝에 붙임",
+      "50단어 미만 짧은 문단 병합: 1절 \"Currently, the study of the ash deposition...\"+다음 문단, 4.2.1절 첫 두 문단, 4.2.2절 첫 두 문단, 5절 결론 (2)+(3). 같은 쪽의 그림 캡션 Fig 3+4, Fig 7-9(1108-1109쪽)는 묶음"
+    ]
+  }
+}

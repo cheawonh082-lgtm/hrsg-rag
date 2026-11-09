@@ -1,0 +1,3164 @@
+{
+  "document": {
+    "doc_id": "R030",
+    "title": "Thermal Design and Optimization of Heat Recovery Steam Generators and Waste Heat Boilers",
+    "authors": [
+      "Ali Rezaie Navaie"
+    ],
+    "year": 2017,
+    "venue": "Dissertation (Dr.-Ing.), Technische Universität Berlin, Fakultät III – Prozesswissenschaften, Institut für Energietechnik, Berlin 2017",
+    "doi": "",
+    "url": "",
+    "license": "PDF에 저작권·라이선스 표기 없음 (DOI/URN 표기도 없음) (라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R030-001",
+      "doc_id": "R030",
+      "section": "Abstract",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "In a combined cycle power plant (CCPP), the heat recovery steam generator (HRSG) is the critical link between the gas turbine and the steam cycle, and its thermal design and optimization determine safe operation, efficiency and product cost. This thesis optimizes the thermal design and cost of an HRSG comprehensively by means of a genetic algorithm (GA). The configuration studied mirrors HRSGs found in most existing combined cycle plants: a water tube unit with two superheaters, one evaporator and one economizer. A dedicated program was written in Visual Basic for the task.",
+      "terms": [
+        "HRSG",
+        "CCPP",
+        "genetic algorithm",
+        "GA",
+        "water tube",
+        "superheaters",
+        "evaporator",
+        "economizer"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-002",
+      "doc_id": "R030",
+      "section": "Abstract",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "Optimization variables cover the fin tube arrangement (transverse pitch, longitudinal pitch, rows in the flue gas direction, tubes around a header circumference, in line versus staggered layout), the fin tube specification (tube diameter, fin height, fin thickness, solid or serrated fin type, fins per meter, serrated segment width), plus approach point and water/steam velocity. The principal constraints are the gas turbine exit pressure, fin tube metal temperature, desuperheater spray water flow, steam pressure drop, a guaranteed minimum HRSG thermal efficiency, the gap between fin tubes and the overall HRSG length, width and height.",
+      "terms": [
+        "transverse pitch",
+        "longitudinal pitch",
+        "staggered",
+        "serrated",
+        "approach point",
+        "desuperheater",
+        "spray water",
+        "fin tube"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-003",
+      "doc_id": "R030",
+      "section": "Abstract",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "The method picks the best geometry and arrangement of finned tubes for minimum capital cost under the defined constraints; other objective functions, e.g. minimum flue gas pressure drop, minimum heat transfer area or maximum heat transfer rate, can also be set in the program and optimized with little effort. For validation the optimized design was compared with an existing HRSG of a combined cycle plant. Design parameters and arrangement follow readily from any chosen strategy and constraint set, and the approach can be extended to triple pressure HRSGs.",
+      "terms": [
+        "finned tubes",
+        "capital cost",
+        "objective function",
+        "flue gas pressure drop",
+        "triple pressure HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-004",
+      "doc_id": "R030",
+      "section": "Zusammenfassung",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "Abhitzekessel (AHK) bilden in Kombikraftwerken das Bindeglied zwischen Gasturbinensystem und Dampfkreislauf; ihre wärmetechnische Auslegung und Optimierung bestimmen sicheren Betrieb, Wirkungsgrad und Produktkosten. Die Arbeit optimiert Auslegung und Kosten eines AHK mit einem genetischen Algorithmus. Betrachtet wird, entsprechend real bestehenden Anlagen, ein Wasserrohr-AHK mit zwei Überhitzern, einem Verdampfer und einem Economiser; dafür wurde ein Programm in Visual Basic erstellt.",
+      "terms": [
+        "Abhitzekessel",
+        "AHK",
+        "genetischen Algorithmus",
+        "Wasserrohr-AHK",
+        "Überhitzern",
+        "Verdampfer",
+        "Economiser",
+        "Visual Basic"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-005",
+      "doc_id": "R030",
+      "section": "Zusammenfassung",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "Als Optimierungsvariablen dienen die Rippenrohranordnung (Querteilung, Längsteilung, Reihenzahl in Rauchgasrichtung, Rohre am Sammlerumfang, fluchtend oder versetzt), die Rippenrohrgeometrie (Rohrdurchmesser, Rippenhöhe, Rippendicke, Vollrippe oder segmentierte Rippe, Rippen pro Meter, Segmentbreite) sowie Approach Point und Wasser- bzw. Dampfgeschwindigkeit. Hauptnebenbedingungen sind der Gasturbinen-Austrittsdruck, die Metalltemperatur der Rippenrohre, die Einspritzwassermenge des Einspritzkühlers, der Dampfdruckabfall, ein garantierter Mindestwirkungsgrad des AHK, der Abstand zwischen Rippenrohren und die Gesamtmaße (Länge, Breite, Höhe).",
+      "terms": [
+        "Rippenrohranordnung",
+        "Querteilung",
+        "Längsteilung",
+        "segmentierte Rippe",
+        "Approach Point",
+        "Einspritzkühlers",
+        "Dampfdruckabfall"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-006",
+      "doc_id": "R030",
+      "section": "Zusammenfassung",
+      "page_start": 8,
+      "page_end": 9,
+      "text": "Das Verfahren bestimmt die geometrischen Parameter und die Anordnung der Rippenrohre mit minimalen Kapitalkosten unter den festgelegten Nebenbedingungen; ebenso lassen sich andere Zielfunktionen, etwa minimaler Rauchgasdruckabfall, minimale Wärmeübertragungsfläche oder höchste Wärmeübergangszahl, im Programm festlegen und optimieren. Zur Prüfung wurde der optimierte Entwurf einem bestehenden AHK eines Kombikraftwerks gegenübergestellt. Entwurfsparameter und Anordnung ergeben sich für beliebige Strategien und Nebenbedingungen, und eine Erweiterung auf Dreidruck-AHK ist möglich.",
+      "terms": [
+        "Kapitalkosten",
+        "Zielfunktion",
+        "Rauchgasdruckabfall",
+        "Wärmeübertragungsfläche",
+        "Dreidruck-AHK"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-007",
+      "doc_id": "R030",
+      "section": "Nomenclature",
+      "page_start": 15,
+      "page_end": 15,
+      "text": "Nomenclature (symbol: unit; meaning), part 1: a: dimensionless; pressure drop acceleration term. A_b: m²; bare tube outside surface area. A_fo: m²; fin surface area. A_i: m²; total inside surface area. A_o: m²; total outside surface area. A_po: m²; prime outside surface area. A_c: m²/m; finned tube projected cross sectional area per unit tube length. A_d: m²; cross sectional flow area of the ducts. A_n: m²; net free area in a tube row. C_p: J/kg.K; heat capacity at constant pressure. d_f: m; fin outside diameter. d_i: m; tube inside diameter. d_o: m; tube outside diameter. E_f: dimensionless; fin efficiency. f: dimensionless; fanning friction factor. f_f: dimensionless; friction factor. f_T: dimensionless; friction coefficient. G: kg/s.m²; mass velocity.",
+      "terms": [
+        "A_b",
+        "A_o",
+        "A_c",
+        "A_n",
+        "C_p",
+        "E_f",
+        "fanning friction factor",
+        "mass velocity"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-008",
+      "doc_id": "R030",
+      "section": "Nomenclature",
+      "page_start": 16,
+      "page_end": 16,
+      "text": "Nomenclature (symbol: unit; meaning), part 2: h_f: m; fin height. h_i: W/m²·K; average inside heat transfer coefficient. h_o: W/m²·K; average outside heat transfer coefficient. h_r: W/m²·K; average outside radiation heat transfer coefficient. h_c: W/m²·K; average outside convection heat transfer coefficient. K: W/m²·K; fluid thermal conductivity. K_1: dimensionless; resistance coefficient for one 90° bend. K_B: dimensionless; total resistance coefficient. K_en: dimensionless; entrance resistance coefficient. K_ex: dimensionless; exit resistance coefficient. K_T: dimensionless; total resistance coefficient. k_f: W/m²·K; average fin thermal conductivity. k_w: W/m²·K; average tube wall thermal conductivity. k_s: m; roughness of tube wall. LMTD: °C; logarithmic mean temperature difference. L_b: m; mean radiating length. L_f: m; finned length of the tubes. L_str: m; straight length of the tube. M_g: Kg/s; flue gas mass flow rate. M_w: Kg/s; water mass flow rate.",
+      "terms": [
+        "h_i",
+        "h_o",
+        "h_r",
+        "h_c",
+        "K_B",
+        "LMTD",
+        "L_b",
+        "M_g"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-009",
+      "doc_id": "R030",
+      "section": "Nomenclature",
+      "page_start": 17,
+      "page_end": 17,
+      "text": "Nomenclature (symbol: unit; meaning), part 3: N_r: dimensionless; number of tube rows in the flow direction. N_t: dimensionless; number of tubes per row. n_B: dimensionless; number of 90° elbows. n_f: 1/m; number of fins per unit tube length. p: bar; pressure. P_p: bar; total partial pressure of CO_2 and H_2O. Pr: dimensionless; prandtl number. Q: W; total heat transfer rate. R_B: mm; bending radius. R_fi: W/m²·K; inside fouling resistance. R_fo: W/m²·K; outside fouling resistance. Re: dimensionless; reynolds number. s_f: m; fin spacing. t_1: °C; water or steam inlet temperature of each section. t_2: °C; water or steam outlet temperature of each section. T_1: °C; flue gas inlet temperature of each section. T_b: °C; average outside fluid temperature. T_s: °C; average fin temperature. T_2: °C; flue gas outlet temperature of each section. t_f: m; fin thickness.",
+      "terms": [
+        "N_r",
+        "N_t",
+        "n_f",
+        "P_p",
+        "R_fi",
+        "R_fo",
+        "s_f",
+        "T_s"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-010",
+      "doc_id": "R030",
+      "section": "Nomenclature",
+      "page_start": 18,
+      "page_end": 19,
+      "text": "Nomenclature (symbol: unit; meaning), part 4: t_w: m; tube wall thickness. S_L: m; longitudinal pitch. S_T: m; transverse pitch. u: m/s; velocity. U: W/m²·K; overall heat transfer coefficient. w_s: m; segment width of serrated fin. ρ: kg/m³; fluid density. ρ_1: kg/m³; flue gas inlet density. ρ_2: kg/m³; flue gas outlet density. ρ_b: kg/m³; average flue gas density at bulk temperature. ΔP: mbar; pressure drop across fin tube bundle. ΔP_i: Pa; pressure drop in the tube. μ: Pa.s; viscosity. β: dimensionless; contraction factor. γ_r: Btu/hr ft2 F; radiation factor. Abbreviations: CCPP = combined cycle power plant; ECO = economizer; EVA = evaporator; GA = genetic algorithm; GT = gas turbine; HRSG = heat recovery steam generator; SH1 = superheater no. 1; SH2 = superheater no. 2; ST = steam turbine.",
+      "terms": [
+        "S_L",
+        "S_T",
+        "w_s",
+        "ΔP",
+        "γ_r",
+        "ECO",
+        "EVA",
+        "SH1"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-011",
+      "doc_id": "R030",
+      "section": "1. Introduction",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Industry today pursues broader energy supply, design optimization and higher efficiency. Growing population means ever more electricity must be produced, using options such as wind, hydro, steam turbines (ST) and gas turbines (GT); steam is the main energy carrier in most industries for processes, heating, chemical reactions and power generation. Because fuel prices keep rising worldwide, new generation methods, efficiency gains and cost optimization of power plants are attractive engineering topics.",
+      "terms": [
+        "steam turbines",
+        "ST",
+        "gas turbines",
+        "GT",
+        "cost optimization"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-012",
+      "doc_id": "R030",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Some electricity is produced in thermal plants using fired boilers plus steam turbines; however, CCPPs (combined cycle power plants) currently offer the highest production efficiency, which can exceed 60% depending on ambient conditions and component design. Their two main components are gas turbines and steam turbines: gas turbine exhaust enters a heat recovery steam generator (HRSG) to raise steam that then drives the steam turbines. Roughly 65% of total CCPP output comes from the gas turbine and 35% from the steam turbine. The HRSG links the Brayton and Rankine cycles and must satisfy both the steam turbine requirements and the gas turbine constraints.",
+      "terms": [
+        "CCPPs",
+        "60%",
+        "HRSG",
+        "Brayton",
+        "Rankine",
+        "65%",
+        "35%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-013",
+      "doc_id": "R030",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 2,
+      "text": "The HRSG must therefore be designed with care so that it meets steam cycle needs without disturbing gas turbine operation, maximizing transferred heat, delivering the guaranteed thermal efficiency and keeping cost low to lift overall CCPP performance. Any design change in the HRSG directly alters plant efficiency, net output, production cost and other system variables. The market offers many gas turbines with different back pressure and exhaust gas temperature; the latter is crucial for HRSG design and generally lies between 700 and 950K. Each selected gas turbine needs a matching steam cycle (HRSG plus steam turbine), and steam cycle thermal efficiency depends strongly on the HRSG thermal design.",
+      "terms": [
+        "back pressure",
+        "exhaust gas temperature",
+        "950K",
+        "thermal efficiency",
+        "steam cycle"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-014",
+      "doc_id": "R030",
+      "section": "1. Introduction",
+      "page_start": 2,
+      "page_end": 3,
+      "text": "Like conventional thermal plants, combined cycle plants deliver thousands of megawatts, and HRSG steam pressure and temperature have been raised to boost output; multi-pressure HRSGs were developed to recover more energy, and a modern HRSG produces steam with parameters comparable to fired boilers in thermal plants. Emissions such as NOx, SOx and CO can also be cut during heat recovery. Alongside gas turbine advances, HRSG development has been a main focus of power engineering for raising efficiency and lowering cost, with extensive research and optimization lifting efficiency from about 35% for the Rankine cycle to about 60% in combined cycle plants. Given the wide range of exhaust gas temperatures and specifications, HRSGs play a key role in CCPPs.",
+      "terms": [
+        "multi-pressure HRSGs",
+        "NOx",
+        "SOx",
+        "CO",
+        "35%",
+        "60%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-015",
+      "doc_id": "R030",
+      "section": "1. Introduction",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Waste gases from many processes, not only gas turbine exhaust, can be recovered, sometimes to heat other fluids but chiefly to produce steam. HRSGs are therefore used in chemical plants, refineries and cogeneration plants to generate steam for power and internal plant use, so 'waste heat boiler' and 'heat recovery boiler' are regarded as equivalent names. Because steam cycle efficiency depends so strongly on HRSG thermal design and every gas turbine needs a compatible HRSG/steam turbine combination, the HRSG is among the most critical items in a combined plant. Maximizing thermal efficiency alone would make the total cost very high, so economic considerations are central to HRSG design.",
+      "terms": [
+        "waste heat boiler",
+        "heat recovery boiler",
+        "cogeneration plants",
+        "refineries",
+        "economic considerations"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-016",
+      "doc_id": "R030",
+      "section": "1.1. Brief description of combined cycle and cogeneration plants",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Fig. 1.1 [11]: schematic of a CCPP (combined cycle power plant).",
+      "terms": [
+        "combined cycle power plant"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-017",
+      "doc_id": "R030",
+      "section": "1.1. Brief description of combined cycle and cogeneration plants",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "In both combined cycle and cogeneration plants the gas turbine is a key component that delivers power and also supplies thermal energy to the heat recovery boiler; Fig. 1.1 depicts the general layout of an unfired HRSG. Large combined cycle plants today produce hundreds of megawatts, while refineries, chemical and process plants use HRSGs for steam supply in cogeneration. Progress in gas turbines and HRSGs together with the thermodynamic coupling of the Brayton and Rankine cycles (gas turbine, HRSG, steam turbine) yields the most efficient electricity generating system presently available. This coupling reaches thermal efficiencies above the 45% that was previously the upper limit for large thermal plants. Gas turbines can burn oil or natural gas, so fuel supply should be as simple as in thermal plants.",
+      "terms": [
+        "unfired HRSG",
+        "cogeneration",
+        "Brayton",
+        "Rankine",
+        "45%",
+        "natural gas"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-018",
+      "doc_id": "R030",
+      "section": "1.1. Brief description of combined cycle and cogeneration plants",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Advantages of combined cycle plants listed by the author: short start-up times; faster construction than a large coal-fired plant; higher efficiencies, possibly over 60%; very low NOx and CO emissions; lower cooling water needs because of higher efficiency and the small share of Rankine cycle power in total output, with no cooling water needed for the Brayton cycle; and large-capacity plants are now feasible. Since many gas turbine systems are on the market, developing and adapting HRSG designs to a given gas turbine remains an attractive R&D topic.",
+      "terms": [
+        "start-up times",
+        "coal-fired",
+        "60%",
+        "NOx",
+        "cooling water",
+        "Brayton cycle"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-019",
+      "doc_id": "R030",
+      "section": "1.2. Heat recovery steam generator (HRSG)",
+      "page_start": 5,
+      "page_end": 7,
+      "text": "The HRSG is an indispensable part of combined cycle and cogeneration plants and also serves as a waste heat boiler in refineries, chemical plants and process systems. These boilers work similarly; the main difference is whether it serves to recover heat and raise steam or performs process duties such as cooling waste gas or heating process streams. Figs. 1.2 and 1.3 give general views of an HRSG with inlet duct, heating surfaces, drum, stack and so on. Fig. 1.2 [12] and Fig. 1.3 [13]: views of an HRSG.",
+      "terms": [
+        "waste heat boiler",
+        "inlet duct",
+        "heating surfaces",
+        "drum",
+        "stack",
+        "Fig. 1.2"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-020",
+      "doc_id": "R030",
+      "section": "1.2. Heat recovery steam generator (HRSG)",
+      "page_start": 8,
+      "page_end": 9,
+      "text": "Natural gas is the main fuel in combined cycle plants, so the flue gas is expected to be clean, and water tube boilers with extended surfaces are generally used for heat recovery and steam production. HRSG inlet gas temperature ranges from 700 to 950 K, and flue gas pressure is usually slightly above atmospheric; these two quantities are the main constraints in HRSG design. Fig. 1.4 [14]: an HRSG in cross section (depicting a double pressure HRSG that has supplementary firing). Fig. 1.5 [15]: an HRSG seen from above, where steam reaches the drum via riser tubes and riser manifolds.",
+      "terms": [
+        "water tube boilers",
+        "extended surfaces",
+        "700 to 950 K",
+        "double pressure HRSG",
+        "supplementary firing",
+        "riser tubes"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-021",
+      "doc_id": "R030",
+      "section": "1.3. Individual design of an HRSG",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "Although many gas turbine systems on the market are standardized, an HRSG has to be designed individually for each CCPP because fuels vary and their flue gas requirements must be respected, cycle optimization differs from plant to plant, and changing ambient conditions affect GT output. Various HRSG parts are standardized to ease construction, yet design and optimization of the HRSG remain an important issue in CCPPs.",
+      "terms": [
+        "CCPP",
+        "flue gas",
+        "GT output",
+        "ambient conditions",
+        "standardized"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-022",
+      "doc_id": "R030",
+      "section": "1.4. State of the art",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "Numerous authors optimized CCPPs and set optimal HRSG operating parameters [1-6]. Franco and Russo [3] used a hierarchical strategy to optimize HRSG operating parameters and raise CCPP efficiency. Valdés et al. [5] performed a thermoeconomic optimization taking HRSG thermodynamic parameters as variables, and Valdés et al. [6] did so for a CCPP with genetic algorithms; Valdés et al. [7] optimized a CCPP focusing on HRSG operating parameters. Franco and Giannini [8] built a hierarchical method for HRSG optimization aimed at lower draft loss and greater compactness. Manassaldi et al. [9] optimized HRSG design by maximizing net power, the net power to material weight ratio and net heat transfer. Durán et al. [10] developed the design of a three-section HRSG (economizer, evaporator, one superheater) seeking small heat transfer area and low pressure losses.",
+      "terms": [
+        "thermoeconomic optimization",
+        "genetic algorithms",
+        "hierarchical strategy",
+        "draft loss",
+        "economizer",
+        "evaporator",
+        "superheater"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-023",
+      "doc_id": "R030",
+      "section": "1.4. State of the art",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "Cost optimization of an HRSG is more important and harder than those studies. This work treats cost optimization together with a complete thermal design, using a genetic algorithm (GA). Since high, controllable steam temperature is required at the steam turbine inlet, steam is superheated in two superheaters with spray water injected between them to control outlet temperature; hence four sections (two superheaters, evaporator, economizer) are modelled, as in real plants. Contributions: a Visual Basic program for thermal design and cost optimization; a GA in the optimization module; determination of the best pinch point and approach point and of the optimal arrangement after cost minimization; variables covering tube diameter, staggered or in-line arrangement, transverse and longitudinal pitch, tube rows, tubes around a header, fin height, thickness, density, solid or serrated type, segment width, steam velocity and approach point; and constraints on flue gas draft loss, steam/water pressure drops, tube wall and fin metal temperatures, pinch and approach points, allowable fin gap and overall HRSG dimensions.",
+      "terms": [
+        "cost optimization",
+        "genetic algorithm",
+        "spray water",
+        "pinch point",
+        "approach point",
+        "staggered",
+        "serrated",
+        "draft loss"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-024",
+      "doc_id": "R030",
+      "section": "2.1. Economic analysis",
+      "page_start": 12,
+      "page_end": 13,
+      "text": "Chapter 2 deals with thermoeconomics and the cost balance of HRSGs. In thermal design work the main costs (capital investment, fuel, final product and so on) must be estimated properly [16], and designers have to weigh predictions, assumptions and constraints such as technical requirements, economics and engineering techniques. The final product cost is usually the dominant factor shaping the thermal design of a system or component; an item's cost is the money paid to buy or make it, and under market competition the overall analysis aims to minimize product cost. Market price itself depends on production cost, supply, demand, regulation and competition, and designers should take it into account when optimizing.",
+      "terms": [
+        "thermoeconomics",
+        "cost balance",
+        "capital investment",
+        "fuel",
+        "product cost",
+        "market price"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-025",
+      "doc_id": "R030",
+      "section": "2.1. Economic analysis",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "Total cost splits into fixed costs, independent of production rate (e.g. insurance, depreciation, maintenance), and variable costs that scale with output (e.g. material, fuel, electric power). Accurate cost estimation is the key to a competitive design and should accompany every design step. Once the whole combined cycle or cogeneration plant design is fixed, all thermodynamic parameters of the components are known; in a CCPP the HRSG's product is steam, and this work concentrates on estimating and optimizing the cost of that HRSG product.",
+      "terms": [
+        "fixed costs",
+        "variable costs",
+        "depreciation",
+        "cost estimation",
+        "CCPP",
+        "HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-026",
+      "doc_id": "R030",
+      "section": "2.2. Thermoeconomics",
+      "page_start": 13,
+      "page_end": 14,
+      "text": "Thermoeconomics combines exergy analysis with economic principles to obtain a cost-effective system [16]. End users need the true product cost for investment and competition decisions, and the analysis can be applied to a whole system or one component. It yields the product cost, insight into how cost is formed, and optimized component variables. Cost accounting of a system essentially serves to determine the actual product cost, set a rational pricing basis, allocate and control expenditures, and supply information for making and evaluating operating decisions.",
+      "terms": [
+        "Thermoeconomics",
+        "exergy analysis",
+        "product cost",
+        "cost accounting",
+        "pricing"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-027",
+      "doc_id": "R030",
+      "section": "2.2. Thermoeconomics",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Ċ_P = Ċ_F + Ż^CI + Ż^OM (1) (cost balance: the product cost rate Ċ_P equals the fuel cost rate Ċ_F plus the capital investment cost rate Ż^CI plus the operating and maintenance cost rate Ż^OM).",
+      "terms": [
+        "Ċ_P",
+        "Ċ_F",
+        "Ż^CI",
+        "Ż^OM",
+        "cost balance"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-028",
+      "doc_id": "R030",
+      "section": "2.3. Cost balance of HRSGs",
+      "page_start": 14,
+      "page_end": 15,
+      "text": "Fig.2.1: schematic of the combined cycle plant. Product cost accounting forms part of a system's economic evaluation, and here the HRSG of the CCPP in Fig. 2.1 is optimized for cost on its own. At steady state, the material streams entering the HRSG are the gas turbine exhaust flue gas and the feed water, and the streams leaving are the HRSG exhaust flue gas and the steam. Exergy costing is applied to the HRSG.",
+      "terms": [
+        "Fig.2.1",
+        "combined cycle plant",
+        "steady state",
+        "feed water",
+        "flue gas",
+        "Exergy costing"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-029",
+      "doc_id": "R030",
+      "section": "2.3. Cost balance of HRSGs",
+      "page_start": 15,
+      "page_end": 15,
+      "text": "Ċ_i = c_i·Ė_i = c_i(ṁ_i·e_i) (2) (cost rate of stream i = average cost per unit of exergy c_i × exergy transfer rate Ė_i, where ṁ_i is mass flow rate and e_i specific exergy).",
+      "terms": [
+        "Ċ_i",
+        "c_i",
+        "Ė_i",
+        "ṁ_i",
+        "e_i",
+        "specific exergy"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-030",
+      "doc_id": "R030",
+      "section": "2.3. Cost balance of HRSGs",
+      "page_start": 15,
+      "page_end": 15,
+      "text": "Ċ_5 + Ċ_7 = Ċ_4 + Ċ_6 + Ż^CI + Ż^OM (3) and c_5·Ė_5 + c_7·Ė_7 = c_4·Ė_4 + c_6·Ė_6 + Ż^CI + Ż^OM (4) (HRSG cost balance: cost rates of the exiting streams 5 and 7 equal those of the entering streams 4 and 6 plus capital investment Ż^CI and operating/maintenance Ż^OM contributions). Auxiliary relation chosen: c_5 = c_6 = 0 (5) (zero unit exergy cost assigned to the exhausted flue gas 5 and feed water 6).",
+      "terms": [
+        "Ċ_5",
+        "Ċ_7",
+        "Ż^CI",
+        "Ż^OM",
+        "c_5 = c_6 = 0",
+        "auxiliary relation"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-031",
+      "doc_id": "R030",
+      "section": "2.3. Cost balance of HRSGs",
+      "page_start": 15,
+      "page_end": 15,
+      "text": "c_7 = (c_4·Ė_4 + Ż^CI + Ż^OM) / Ė_7 (6) (average cost per unit of exergy of the product stream 7, the steam).",
+      "terms": [
+        "c_7",
+        "Ė_7",
+        "c_4",
+        "product stream"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-032",
+      "doc_id": "R030",
+      "section": "2.3. Cost balance of HRSGs",
+      "page_start": 15,
+      "page_end": 16,
+      "text": "Since the exergy entering the HRSG comes from the combustion chamber, charging all investment and maintenance costs of the gas turbine system and the cost of its exergy destructions to the net power of that system gives c_4 = c_8 (7) (unit exergy cost of gas turbine exhaust equals that of the fuel). Hence c_7 = (c_8·ṁ_4·e_4 + Ż^CI + Ż^OM) / (ṁ_7·e_7) (8) (unit exergy cost of the steam expressed with fuel cost c_8 and stream mass flows and specific exergies).",
+      "terms": [
+        "combustion chamber",
+        "exergy destructions",
+        "c_4 = c_8",
+        "c_7",
+        "ṁ_4",
+        "e_4"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-033",
+      "doc_id": "R030",
+      "section": "2.3. Cost balance of HRSGs",
+      "page_start": 16,
+      "page_end": 16,
+      "text": "For a given application the average fuel cost c_8 (e.g. of natural gas) is known, and ṁ_4 and e_4 follow once a gas turbine model is chosen from the market; ṁ_7 (and e_7) is normally specified by the company ordering the HRSG. With the HRSG's fuel supplied by the gas turbine, a fixed product and roughly fixed operation and maintenance cost, the cost optimization reduces to minimizing the HRSG capital investment.",
+      "terms": [
+        "c_8",
+        "natural gas",
+        "ṁ_4",
+        "ṁ_7",
+        "capital investment",
+        "cost optimization"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-034",
+      "doc_id": "R030",
+      "section": "3.1. Thermal design demand",
+      "page_start": 17,
+      "page_end": 18,
+      "text": "Because the HRSG cost optimization depends on it, the thermal design must be as accurate as possible; Chapter 3 explains the thermal design simulation and heat transfer calculation. An HRSG has to absorb as much thermal energy as possible and deliver the expected steam output, and its design is exacting work that cannot later be fixed by extra measures: if an error occurs, heating surface cannot simply be added to reach the expected efficiency or steam output. Reasons given: a design fault would require large added surface to lower the flue gas temperature, which is impractical; fitting extra surface into the designed space is hard; GT back pressure is set by the GT manufacturer and must stay limited, so extra or rearranged surface raising flue gas pressure drop would hurt the whole system; and the HRSG is an expensive CCPP component whose cost rises needlessly with an unreasonable design.",
+      "terms": [
+        "heating surface",
+        "flue gas temperature",
+        "GT back pressure",
+        "GT manufacturer",
+        "flue gas pressure drop",
+        "CCPP"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-035",
+      "doc_id": "R030",
+      "section": "3.1. Thermal design demand",
+      "page_start": 18,
+      "page_end": 18,
+      "text": "Compared with fired boilers, HRSG thermal design matters further because: unfired HRSGs have no luminous radiant heat transfer, though nonluminous radiation between tubes must be included; finned tubes are needed for adequate heat transfer, giving higher pressure drop than in fired boilers and thus many design restrictions; besides tube diameter and arrangement, fin type, fin spacing, fin thickness and fin height must be considered; and fin material and fin temperature have to be checked carefully in addition to tube material.",
+      "terms": [
+        "unfired HRSGs",
+        "luminous radiant heat transfer",
+        "nonluminous radiation",
+        "finned tubes",
+        "fin spacing",
+        "fin temperature"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-036",
+      "doc_id": "R030",
+      "section": "3.2. HRSG temperature profile, pinch point and approach point",
+      "page_start": 18,
+      "page_end": 19,
+      "text": "HRSG thermal design starts by evaluating steam generation and the gas and steam temperature profiles. Because the gas enters at only 700 - 950 K in an unfired HRSG and the gas to steam flow ratio is high, HRSG design differs from fired boiler design, and the flue gas exit temperature becomes an important factor. With the same gas flow, the cooler entering gas yields less steam than conventional steam generators and a small economizer duty, so the HRSG should absorb as much heat from the flue gas as possible. Plant designers supply the HRSG requirements, and the ordering company usually specifies steam capacity, operating parameters and expected efficiency, all of which the HRSG designer must guarantee.",
+      "terms": [
+        "700 - 950 K",
+        "unfired HRSG",
+        "flue gas exit temperature",
+        "economizer duty",
+        "steam generation"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-037",
+      "doc_id": "R030",
+      "section": "3.2. HRSG temperature profile, pinch point and approach point",
+      "page_start": 19,
+      "page_end": 20,
+      "text": "Fig. 3.1 gives the HRSG temperature profile. Of the sections, the superheater profile is the easiest to obtain: with known steam flow and steam inlet and outlet temperatures, the superheater duty and thus the flue gas inlet and outlet temperatures follow directly. Gas cooling then continues in the evaporator and economizer, where two key quantities are defined. The pinch point equals the evaporator-exit gas temperature minus the saturated steam temperature; the approach point equals the saturated steam temperature minus the economizer-exit water temperature. Their choice strongly affects evaporator and economizer size and specification, making them the most important HRSG design parameters. For a given duty, a bigger pinch point gives a smaller evaporator and a bigger economizer, whereas a larger approach point gives a bigger evaporator and smaller economizer. Choosing their optimal values is a major design objective, after which the section surface areas can be fixed. Fig. 3.1: HRSG temperature profile.",
+      "terms": [
+        "pinch point",
+        "approach point",
+        "saturated steam temperature",
+        "superheater",
+        "evaporator",
+        "economizer",
+        "Fig. 3.1"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-038",
+      "doc_id": "R030",
+      "section": "3.3. Necessity of using finned tubes",
+      "page_start": 20,
+      "page_end": 22,
+      "text": "Unlike a fired boiler, an HRSG takes heat from medium-temperature flue gas and so needs very large heating surface for evaporation and superheating; a plain-tube design is not feasible, and finned tubes with closely spaced fins in a counter flow arrangement are today's best solution. Figs. 3.2 and 3.3 show serrated and solid finned tubes. At equal size, serrated fins give more surface and a higher heat transfer coefficient but suit only clean, particle-free gas, since particles sharply reduce their heat transfer, and they cause higher gas pressure drop. Because of their better performance most HRSGs use serrated fins, but fin tip temperature and pressure drop must be tightly controlled. Solid fins work with many gases, cool better and give lower gas pressure drop. Fig. 3.2 [17]: serrated-fin tube. Fig. 3.3 [17]: solid-fin tube.",
+      "terms": [
+        "finned tubes",
+        "plain-tube",
+        "counter flow",
+        "serrated fins",
+        "solid fins",
+        "fin tip temperature",
+        "pressure drop"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-039",
+      "doc_id": "R030",
+      "section": "3.4. Thermal design simulation of the HRSG sections",
+      "page_start": 23,
+      "page_end": 23,
+      "text": "The HRSG performance simulation computes heat transfer in each section (superheaters, evaporator, economizer) with the LMTD (logarithmic mean temperature difference) method, including both convective and radiation heat transfer. Optimization variables are the finned tube geometry (outside tube diameter, staggered or inline arrangement, tube rows, tubes around a header, fin density, fin height, fin thickness, solid or serrated fin type, segment width), the steam velocity in the superheater tubes and the approach point. All components must share the same gas pass width and length, which is achieved using the effectiveness-NTU method inside an iteration loop. Fig. 3.4: overall HRSG arrangement.",
+      "terms": [
+        "LMTD",
+        "logarithmic mean temperature difference",
+        "staggered",
+        "fin density",
+        "segment width",
+        "effectiveness-NTU method",
+        "Fig. 3.4"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-040",
+      "doc_id": "R030",
+      "section": "3.4.1. Input data",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "Heat transfer calculations take as input: flue gas mass flow, chemical composition, inlet pressure and inlet temperature, plus the expected outlet temperature or minimum HRSG thermal efficiency, which comes from the CCPP thermodynamic optimization and is the main guaranteed requirement; the inlet water mass flow, pressure and temperature; and the outlet steam mass flow, temperature and pressure.",
+      "terms": [
+        "flue gas",
+        "chemical composition",
+        "thermal efficiency",
+        "CCPP",
+        "mass flow"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-041",
+      "doc_id": "R030",
+      "section": "3.4.2. Water, steam and flue gas properties",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "Water and steam properties (density, specific heat, conductivity, viscosity, enthalpy) are computed in a separate program module using IAPWS [18] correlations and data. Flue gas specific heat, conductivity and viscosity come from another module based on correlations in \"The properties of gases and liquids\" [19], and a further module evaluates flue gas enthalpy according to ASME PTC4 [20].",
+      "terms": [
+        "IAPWS",
+        "specific heat",
+        "viscosity",
+        "enthalpy",
+        "flue gas enthalpy",
+        "ASME PTC4"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-042",
+      "doc_id": "R030",
+      "section": "3.4.3. Assumptions",
+      "page_start": 24,
+      "page_end": 25,
+      "text": "Simulation assumptions: heat loss to the surroundings is neglected; finned tube specifications (e.g. tube length and diameter) respect manufacturing capabilities; metal properties follow ASME Sec. II [21]; tube wall strength is calculated with ASME Sec. I [22]; for erection reasons all sections have identical width and length; and spray water flow is limited to at most 5% of HRSG steam capacity.",
+      "terms": [
+        "heat loss",
+        "finned tube",
+        "ASME Sec. II",
+        "ASME Sec. I",
+        "tube wall strength",
+        "spray water",
+        "5%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-043",
+      "doc_id": "R030",
+      "section": "3.4.4. Overall heat transfer coefficient of HRSG sections",
+      "page_start": 25,
+      "page_end": 25,
+      "text": "Q = U A_o LMTD (9) (section heat duty = overall heat transfer coefficient × total outside surface area × logarithmic mean temperature difference), with LMTD = [(T_1 − t_2) − (T_2 − t_1)] / Ln[(T_1 − t_2)/(T_2 − t_1)] (10) (counter flow LMTD from flue gas inlet/outlet temperatures T_1, T_2 and water/steam inlet/outlet temperatures t_1, t_2).",
+      "terms": [
+        "Q = U A_o LMTD",
+        "LMTD",
+        "T_1",
+        "t_2",
+        "T_2",
+        "t_1"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-044",
+      "doc_id": "R030",
+      "section": "3.4.4. Overall heat transfer coefficient of HRSG sections",
+      "page_start": 25,
+      "page_end": 25,
+      "text": "Since capital cost minimization needs heat transfer computed as precisely as possible, each section's overall coefficient follows [23]: U = 1 / [(1/h_o + R_fo) · A_o/(E_f A_fo + A_po) + (t_w/k_w)(A_o/A_w) + (1/h_i + R_fi)(A_o/A_i)] (11) (overall coefficient as inverse sum of outside film plus fouling resistance corrected by fin efficiency, tube wall conduction, and inside film plus fouling resistance, all referred to A_o).",
+      "terms": [
+        "U",
+        "h_o",
+        "R_fo",
+        "E_f",
+        "A_fo",
+        "k_w",
+        "R_fi",
+        "A_i"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-045",
+      "doc_id": "R030",
+      "section": "3.4.4. Overall heat transfer coefficient of HRSG sections",
+      "page_start": 25,
+      "page_end": 26,
+      "text": "Because all four sections must have equal length and width, the required number of tube rows in the flue gas direction comes out non-integer and has to be rounded, which is done with the effectiveness-NTU method (details in Rohsenow [24] and Holman [25]). With finned tubes in every section, the overall coefficient is harder to obtain than for bare tubes, fin efficiency being especially important. Among several methods for the finned tube outside coefficient, the flue gas side includes both convection and radiation; the methodology of Annaratone [23], also used by Manassaldi et al. [9], is applied, with inside and outside coefficients given in 3.4.4.1 and 3.4.4.2.",
+      "terms": [
+        "tube rows",
+        "effectiveness-NTU method",
+        "bare tubes",
+        "Fin efficiency",
+        "Annaratone",
+        "convection",
+        "radiation"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-046",
+      "doc_id": "R030",
+      "section": "3.4.4.1. Average inside heat transfer coefficient",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "h_i = 0.024 Re^0.8 Pr^0.4 K/d_i (12) (average inside heat transfer coefficient from Reynolds and Prandtl numbers, fluid conductivity K and tube inside diameter d_i [24]); Re = ρ u d_i / μ (13) (Reynolds number from density, velocity, inside diameter and viscosity).",
+      "terms": [
+        "h_i",
+        "Re^0.8",
+        "Pr^0.4",
+        "K/d_i",
+        "Re = ρ u d_i / μ"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-047",
+      "doc_id": "R030",
+      "section": "3.4.4.2. Average outside heat transfer coefficient",
+      "page_start": 26,
+      "page_end": 27,
+      "text": "h_o = h_c + h_r (14) (average outside coefficient = convection plus radiation contributions [23]). Figs. 3.5 and 3.6 show the geometry and arrangement of serrated and solid finned tubes. Fig. 3.5 [26]: fin tube dimensions. Fig. 3.6 [26]: arrangement of fin tubes.",
+      "terms": [
+        "h_o = h_c + h_r",
+        "Fig. 3.5",
+        "Fig. 3.6",
+        "serrated",
+        "solid finned tubes"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-048",
+      "doc_id": "R030",
+      "section": "3.4.4.2. Average outside heat transfer coefficient",
+      "page_start": 27,
+      "page_end": 27,
+      "text": "h_c = C_1 C_3 C_5 ((d_o + 2 h_f)/d_o)^0.5 ((T_b + 273.15)/(T_s + 273.15))^0.25 G C_p (K/(μ C_p))^0.67 (15) (average outside convection coefficient [23], [26] from correlation coefficients C_1, C_3, C_5, fin-to-tube diameter ratio, bulk gas to fin temperature ratio, mass velocity G and gas properties).",
+      "terms": [
+        "h_c",
+        "C_1",
+        "C_3",
+        "C_5",
+        "T_b",
+        "T_s",
+        "G",
+        "C_p"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-049",
+      "doc_id": "R030",
+      "section": "3.4.4.2. Average outside heat transfer coefficient",
+      "page_start": 28,
+      "page_end": 28,
+      "text": "Serrated fins: C_1 = 0.25 Re^−0.35 (16) (Reynolds-dependent coefficient). C_3 = 0.35 + 0.5 e^(−0.35 h_f/s_f) (17) for inline and C_3 = 0.55 + 0.45 e^(−0.35 h_f/s_f) (18) for staggered arrangement (fin height to fin spacing effect). C_5 = 1.1 − (0.75 − 1.5 e^(−0.7 N_r)) e^(−2 S_L/S_T) (19) for inline and C_5 = 0.7 + (0.7 − 0.8 e^(−0.15 N_r^2)) e^(−S_L/S_T) (20) for staggered arrangement (effect of number of rows N_r and pitch ratio S_L/S_T).",
+      "terms": [
+        "serrated fins",
+        "C_1 = 0.25 Re^−0.35",
+        "C_3",
+        "h_f/s_f",
+        "C_5",
+        "N_r",
+        "S_L/S_T"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-050",
+      "doc_id": "R030",
+      "section": "3.4.4.2. Average outside heat transfer coefficient",
+      "page_start": 28,
+      "page_end": 29,
+      "text": "Solid fins: C_1 = 0.25 Re^−0.35 (21). C_3 = 0.2 + 0.65 e^(−0.25 h_f/s_f) (22) for inline and C_3 = 0.35 + 0.65 e^(−0.25 h_f/s_f) (23) for staggered arrangement. C_5 = 1.1 − (0.75 − 1.5 e^(−0.7 N_r)) e^(−2 S_L/S_T) (24) for inline and C_5 = 0.7 + (0.7 − 0.8 e^(−0.15 N_r^2)) e^(−S_L/S_T) (25) for staggered arrangement (same form as for serrated fins, with different C_3 constants).",
+      "terms": [
+        "Solid fins",
+        "C_1 = 0.25 Re^−0.35",
+        "C_3",
+        "C_5",
+        "inline",
+        "staggered"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-051",
+      "doc_id": "R030",
+      "section": "3.4.4.2. Average outside heat transfer coefficient",
+      "page_start": 29,
+      "page_end": 29,
+      "text": "Reynolds number for the gas side: A_c = d_o + 2 h_f t_f n_f (26) (finned tube projected cross sectional area per unit length); A_n = A_d − A_c L_f N_t (27) (net free flow area in a tube row = duct area minus area blocked by the finned tubes); Re = M_g d_o / (A_n μ) (28) (gas-side Reynolds number from flue gas mass flow, tube outside diameter, net free area and viscosity).",
+      "terms": [
+        "A_c",
+        "A_n = A_d − A_c L_f N_t",
+        "M_g",
+        "d_o",
+        "N_t",
+        "Reynolds number"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-052",
+      "doc_id": "R030",
+      "section": "3.4.4.2. Average outside heat transfer coefficient",
+      "page_start": 29,
+      "page_end": 29,
+      "text": "Fin efficiency needed in equation (11), serrated fins: T_b = (T_1 + T_2)/2 (29) (average outside gas temperature); T_s = ((t_1 + t_2)/2) + 0.3 (T_b − (t_1 + t_2)/2) (30) (estimated average fin temperature); b = h_f + (t_f/2) (31) (corrected fin height); m = (2 h_o (t_f + w_s) / k_f t_f w_s)^0.5 (32) (fin parameter including segment width w_s); X = tanh mb / mb (33); E_f = X (0.9 + 0.1 X) (34) (serrated fin efficiency).",
+      "terms": [
+        "T_b",
+        "T_s",
+        "b = h_f + (t_f/2)",
+        "w_s",
+        "k_f",
+        "tanh mb",
+        "E_f = X (0.9 + 0.1 X)"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-053",
+      "doc_id": "R030",
+      "section": "3.4.4.2. Average outside heat transfer coefficient",
+      "page_start": 29,
+      "page_end": 30,
+      "text": "Solid fins: m = (2 h_o / k_f t_f)^0.5 (35) (fin parameter); X = tanh mb / mb (36); E_f = X (0.7 + 0.3 X) (37) (solid fin efficiency).",
+      "terms": [
+        "Solid fins",
+        "m = (2 h_o / k_f t_f)^0.5",
+        "tanh mb",
+        "E_f = X (0.7 + 0.3 X)"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-054",
+      "doc_id": "R030",
+      "section": "3.4.4.2. Average outside heat transfer coefficient",
+      "page_start": 30,
+      "page_end": 31,
+      "text": "h_r = 77.87 γ_r (P_p L_b)^0.5 (A_b/A_o)^0.75 (38) (average outside nonluminous radiation coefficient [26] from radiation factor γ_r, partial pressure P_p of CO_2 and H_2O, mean radiating length L_b and bare-to-total outside area ratio). L_b = f_L d_o (39) (mean radiating length from correction factor f_L read from Fig. 3.7). The radiation factor γ_r is read from Fig. 3.8 using T_bF and T_sF from equations (29) and (30), both converted to Fahrenheit. Fig. 3.7 [26]: correction factor f_L for the mean radiating length. Fig. 3.8 [26]: radiation factor of the flue gas.",
+      "terms": [
+        "h_r",
+        "γ_r",
+        "P_p",
+        "L_b = f_L d_o",
+        "f_L",
+        "T_bF",
+        "Fahrenheit",
+        "Fig. 3.8"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-055",
+      "doc_id": "R030",
+      "section": "3.4.5. Pressure drop across fin tube bundle",
+      "page_start": 31,
+      "page_end": 31,
+      "text": "Flue gas pressure drop is a principal constraint in HRSG thermal design [9]; allowing a relatively high value reduces heat transfer area and cost. Across a fin tube bundle [26]: ΔP = 0.02 (f + a) G^2 N_r / ρ_b (39) (bundle pressure drop from friction factor f, acceleration term a, mass velocity G, number of rows N_r and average gas density ρ_b; this equation also carries the number (39) in the source).",
+      "terms": [
+        "Flue gas pressure drop",
+        "ΔP = 0.02 (f + a) G^2 N_r / ρ_b",
+        "fin tube bundle",
+        "ρ_b",
+        "N_r"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-056",
+      "doc_id": "R030",
+      "section": "3.4.5. Pressure drop across fin tube bundle",
+      "page_start": 32,
+      "page_end": 32,
+      "text": "Serrated fins: f = C_2 C_4 C_6 (d_f/d_o)^0.5 (40) (friction factor); C_2 = 0.07 + 8.0 Re^−0.45 (41). C_4 = 0.08 (0.15 S_T/d_o)^(−1.1 (h_f/s_f)^0.20) (42) for inline and C_4 = 0.11 (0.05 S_T/d_o)^(−0.7 (h_f/s_f)^0.23) (43) for staggered arrangement. C_6 = 1.6 − (0.75 − 1.5 e^(−0.7 N_r)) (e^(−0.2 (S_L/S_T)^2)) (44) for inline and C_6 = 1.1 + (1.8 − 2.1 e^(−0.15 N_r^2)) (e^(−2 S_L/S_T)) − (0.7 − 0.8 e^(−0.15 N_r^2)) (e^(−0.6 S_L/S_T)) (45) for staggered arrangement (geometry and row-number corrections of the friction factor).",
+      "terms": [
+        "f = C_2 C_4 C_6 (d_f/d_o)^0.5",
+        "C_2",
+        "C_4",
+        "C_6",
+        "S_T/d_o",
+        "h_f/s_f",
+        "S_L/S_T"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-057",
+      "doc_id": "R030",
+      "section": "3.4.5. Pressure drop across fin tube bundle",
+      "page_start": 32,
+      "page_end": 33,
+      "text": "Solid fins: f = C_2 C_4 C_6 (d_f/d_o)^1.0 (46); C_2 = 0.07 + 8.0 Re^−0.45 (47). C_4 = 0.08 (0.15 S_T/d_o)^(−1.1 (h_f/s_f)^0.15) (48) for inline and C_4 = 0.11 (0.05 S_T/d_o)^(−0.7 (h_f/s_f)^0.2) (49) for staggered arrangement. C_6 = 1.6 − (0.75 − 1.5 e^(−0.7 N_r)) (e^(−0.2 (S_L/S_T)^2)) (50) for inline and C_6 = 1.1 + (1.8 − 2.1 e^(−0.15 N_r^2)) (e^(−2 S_L/S_T)) − (0.7 − 0.8 e^(−0.15 N_r^2)) (e^(−0.6 S_L/S_T)) (51) for staggered arrangement (solid fin friction factor; differs from serrated by the exponent on d_f/d_o and the h_f/s_f exponents in C_4).",
+      "terms": [
+        "Solid fins",
+        "f = C_2 C_4 C_6 (d_f/d_o)^1.0",
+        "C_4",
+        "C_6",
+        "inline",
+        "staggered"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-058",
+      "doc_id": "R030",
+      "section": "3.4.5. Pressure drop across fin tube bundle",
+      "page_start": 33,
+      "page_end": 33,
+      "text": "Both fin types: β^2 = (A_n/A_d)^2 (52) (contraction factor from net free area to duct area); a = ((1 + β^2)/(4 N_r))^2 ρ_b (1/ρ_2 − 1/ρ_1) (53) (acceleration term from density change between gas inlet ρ_1 and outlet ρ_2).",
+      "terms": [
+        "β^2 = (A_n/A_d)^2",
+        "contraction factor",
+        "ρ_b",
+        "ρ_2",
+        "ρ_1",
+        "acceleration term"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-059",
+      "doc_id": "R030",
+      "section": "3.4.6. Pressure drop in the tubes",
+      "page_start": 33,
+      "page_end": 34,
+      "text": "ΔP_i = f_f (L_str/d_i + K_T)(ρ u^2/2) (54) (in-tube pressure drop [27] from friction factor f_f, straight length to diameter ratio, total resistance coefficient K_T and dynamic pressure). Colebrook equation for turbulent friction factor [16]: 1/√f_f = −4 log((k_s/d_i)/3.7 + 1.256/(√f_f Re)) (55) (implicit friction factor relation with relative roughness k_s/d_i).",
+      "terms": [
+        "ΔP_i",
+        "f_f",
+        "L_str",
+        "K_T",
+        "Colebrook equation",
+        "k_s/d_i"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-060",
+      "doc_id": "R030",
+      "section": "3.4.6. Pressure drop in the tubes",
+      "page_start": 34,
+      "page_end": 34,
+      "text": "Moody also developed the friction factor [28], shown in Fig. 3.9 [24] (Moody's friction factor chart). Ref. [24] gives Moody's correlation as f_f = 0.001375 [1 + 21.544 (k_s/d_i + 100/Re)^(1/3)] (56) (explicit friction factor from relative roughness and Reynolds number).",
+      "terms": [
+        "Moody",
+        "Fig. 3.9",
+        "f_f = 0.001375",
+        "k_s/d_i",
+        "100/Re"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-061",
+      "doc_id": "R030",
+      "section": "3.4.6. Pressure drop in the tubes",
+      "page_start": 35,
+      "page_end": 35,
+      "text": "K_T = K_B + K_en + K_ex (57) (total resistance coefficient = bends + entrance + exit), with K_en = 0.5 and K_ex = 1.0. K_B = (n_B − 1)(0.25 π f_T R_B/d_i + 0.5 K_1) + K_1 (58) (bends resistance coefficient from number of 90° elbows n_B, friction coefficient f_T, bend radius ratio R_B/d_i and single-bend coefficient K_1). f_T and K_1 are listed in Tables 3.1 and 3.2.",
+      "terms": [
+        "K_T = K_B + K_en + K_ex",
+        "K_en = 0.5",
+        "K_ex = 1.0",
+        "K_B",
+        "n_B",
+        "f_T",
+        "K_1"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-062",
+      "doc_id": "R030",
+      "section": "3.4.6. Pressure drop in the tubes",
+      "page_start": 35,
+      "page_end": 35,
+      "text": "Table 3.1 Friction coefficient (f_T): Tube diameter 15 mm: f_T=0.027; 20 mm: f_T=0.025; 25 mm: f_T=0.023; 32 mm: f_T=0.022; 40 mm: f_T=0.021; 50 mm: f_T=0.019; 65, 80 mm: f_T=0.018; 100 mm: f_T=0.017; 125 mm: f_T=0.016; 150 mm: f_T=0.015; 200, 250 mm: f_T=0.013; 300,400 mm: f_T=0.012.",
+      "terms": [
+        "Table 3.1",
+        "Friction coefficient",
+        "f_T",
+        "Tube diameter"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-063",
+      "doc_id": "R030",
+      "section": "3.4.6. Pressure drop in the tubes",
+      "page_start": 36,
+      "page_end": 36,
+      "text": "Table 3.2 Resistance coefficient for a 90° bend (K_1): R_B/d_i=1: K_1=20 f_T; R_B/d_i=1.5: K_1=14 f_T; R_B/d_i=2: K_1=12 f_T; R_B/d_i=3: K_1=12 f_T; R_B/d_i=4: K_1=14 f_T; R_B/d_i=6: K_1=17 f_T; R_B/d_i=8: K_1=24 f_T; R_B/d_i=10: K_1=30 f_T; R_B/d_i=12: K_1=34 f_T; R_B/d_i=14: K_1=38 f_T; R_B/d_i=16: K_1=42 f_T; R_B/d_i=20: K_1=50 f_T.",
+      "terms": [
+        "Table 3.2",
+        "Resistance coefficient",
+        "90° bend",
+        "K_1",
+        "R_B/d_i",
+        "f_T"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-064",
+      "doc_id": "R030",
+      "section": "4.1. General description of the constraints",
+      "page_start": 37,
+      "page_end": 38,
+      "text": "Several important constraints limit HRSG design, and Chapter 4 covers the main ones for thermal design and optimization. A combined cycle plant generates power in two steps: the gas turbine produces power first, and its exhaust then passes through the HRSG to raise steam for the steam turbine, the second generation stage. The HRSG thus links gas and steam turbines and must meet the requirements of both. Sitting downstream of the gas turbine, it must never impose unacceptable resistance on the gas cycle or impair gas turbine performance; sitting upstream of the steam turbine, it must also satisfy the steam cycle requirements. Meeting both sides is essential, and the chapter sets out the general constraints and design limits.",
+      "terms": [
+        "combined cycle",
+        "gas turbine",
+        "steam turbine",
+        "HRSG",
+        "gas cycle",
+        "steam cycle"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-065",
+      "doc_id": "R030",
+      "section": "4.2.1. Allowable draft loss of the flue gas",
+      "page_start": 38,
+      "page_end": 39,
+      "text": "Many constraints must be handled together in HRSG thermal design. The HRSG draft loss is the foremost one, because gas turbine performance depends strongly on back pressure and every gas turbine manufacturer states the maximum allowable back pressure. Optimization therefore stays within the allowable flue gas pressure drop: the summed pressure drops downstream of the gas turbine (all ducts, dampers, HRSG and stack) must remain below that limit, so the pressure drop of the finned HRSG must be calculated carefully. Lowering pressure drop requires a less compact HRSG, which raises cost. Gas leaving a gas turbine is typically only a few mbar above atmospheric and the allowable back pressure is around 35 mbar, so finding a minimum-cost design that respects the back pressure limit is a central design goal.",
+      "terms": [
+        "draft loss",
+        "back pressure",
+        "flue gas pressure drop",
+        "dampers",
+        "stack",
+        "35 mbar",
+        "compact"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-066",
+      "doc_id": "R030",
+      "section": "4.2.2. Pinch point, approach point and economizer steaming",
+      "page_start": 39,
+      "page_end": 39,
+      "text": "Fig. 4.1 gives a typical HRSG temperature profile. The pinch is the gap between the evaporator flue gas outlet temperature and the saturated steam temperature, and the approach is the saturated steam temperature minus the water temperature at the economizer outlet; choosing sensible values for both is one of the designer's main constraints. A smaller pinch point increases steam production but also the heat transfer surface and therefore cost. The approach governs economizer heat absorption; it must be large enough to avoid steam generation (steaming) in the economizer, and it also limits economizer surface. For a fixed steam production, pinch plus approach is constant.",
+      "terms": [
+        "pinch",
+        "approach",
+        "saturated steam temperature",
+        "steam production",
+        "steaming",
+        "economizer"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-067",
+      "doc_id": "R030",
+      "section": "4.2.2. Pinch point, approach point and economizer steaming",
+      "page_start": 39,
+      "page_end": 40,
+      "text": "Lowering the pinch point means raising the approach point, i.e. a bigger evaporator and smaller economizer; since the saturated steam temperature is fixed, evaporator cost can climb considerably. Raising the pinch point means lowering the approach point, i.e. a smaller evaporator and larger economizer, but the larger economizer surface risks steaming. Designers favour a small approach and large pinch for cost reasons, yet must prevent economizer steaming and check flue gas pressure drop; heat recovered in the economizer is cheaper than heat absorbed in the evaporator. Optimizing both values is therefore a key design task. Fig. 4.1 [29]: a typical HRSG temperature profile.",
+      "terms": [
+        "pinch point",
+        "approach point",
+        "evaporator",
+        "economizer",
+        "steaming",
+        "Fig. 4.1"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-068",
+      "doc_id": "R030",
+      "section": "4.2.3. Overall dimensions of the heat recovery steam generator",
+      "page_start": 40,
+      "page_end": 41,
+      "text": "The overall HRSG dimensions constrain the optimization, the fin tube length (i.e. HRSG height) being especially important. First, finning capability, the maximum tube length that can be finned, limits it. Second, natural water circulation requires a sufficient static head, which depends on steam drum elevation, so a minimum HRSG height (fin tube length) is imposed; a maximum height is also applied. Width is a further dimensional constraint: the height to width ratio matters, various recommendations exist for it, and it prevents unusual configurations, so minimum and maximum widths are set to keep dimensions acceptable.",
+      "terms": [
+        "overall HRSG dimensions",
+        "fin tube length",
+        "finning capability",
+        "natural water circulation",
+        "static head",
+        "steam drum"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-069",
+      "doc_id": "R030",
+      "section": "4.2.4. Steam and water pressure drop",
+      "page_start": 41,
+      "page_end": 41,
+      "text": "Steam pressure drop constrains superheater design: the total drop over both superheaters is limited in the optimization and, by design judgment and recommendations, must stay below ten percent of the drum pressure. This limit restricts tube diameter choice and tube arrangement options in the headers. A larger steam pressure drop raises the working pressure, and a higher drum pressure affects the strength calculation and increases drum and pressure part thickness. Likewise economizer water pressure drop is limited, since a high value raises water inlet pressure and economizer design pressure. To meet the steam and water pressure drop limits, the count of tubes around a header's circumference is taken as an optimization variable.",
+      "terms": [
+        "steam pressure drop",
+        "superheaters",
+        "ten percent",
+        "drum pressure",
+        "headers",
+        "design pressure",
+        "economizer"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-070",
+      "doc_id": "R030",
+      "section": "4.2.5. Constraints of the finning (fin tube manufacturing)",
+      "page_start": 42,
+      "page_end": 42,
+      "text": "Fin tube manufacturing capability must be considered in HRSG design. Modern high frequency fin tube machines can fin tubes from 1\" to 8\", although HRSGs use at most 2.5\" tubes. Fin specifications strongly affect fin tube performance, with fin height 9 - 38 mm, fin thickness 0.8 - 2.6 mm and fin density 1 - 8 fins per inch. Solid or serrated fins are used, and carbon steel or alloy steel is chosen for fin tubes depending on fin tube metal temperature.",
+      "terms": [
+        "high frequency fin tube machines",
+        "2.5",
+        "fin height",
+        "9 - 38 mm",
+        "0.8 - 2.6 mm",
+        "fins per inch",
+        "carbon steel",
+        "alloy steel"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-071",
+      "doc_id": "R030",
+      "section": "4.2.6. Fin tube limitations",
+      "page_start": 42,
+      "page_end": 43,
+      "text": "Hot flue gas flows across the fin tubes, so fin and tube metal temperatures matter. The fin tip is the hottest point and its temperature must be checked during optimization to keep the fin from burning; fin material is selected on this basis. Alloy steels tolerate higher working temperatures than carbon steel but cost more. Higher fin density or smaller tube pitch raises heat transfer but also fin and tube metal temperatures. Since fin height, thickness, density and type all influence heat transfer, flue gas pressure drop and fin tube temperature, all are optimization variables. At equal specifications serrated fins give higher heat transfer coefficient and pressure drop, with limits for high-fouling flue gas; with the clean gas from natural gas combustion designers prefer them, while checking pressure drop and metal temperature. Even with clean gas a fouling factor is applied and a suitable minimum gap between the fin edges of adjacent finned tubes is kept.",
+      "terms": [
+        "fin tip",
+        "metal temperatures",
+        "Alloy steels",
+        "fin density",
+        "serrated fins",
+        "fouling factor",
+        "natural gas"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-072",
+      "doc_id": "R030",
+      "section": "4.2.7. Maximum spray water flow",
+      "page_start": 43,
+      "page_end": 43,
+      "text": "A desuperheater injects water between the two superheaters to control steam outlet temperature. Large injection lowers overall efficiency and calls for a bigger desuperheater, increasing cost, and the desuperheater turn down ratio is also important. For a sound optimization the maximum spray water flow is limited to 5% of total steam flow.",
+      "terms": [
+        "desuperheater",
+        "superheaters",
+        "steam outlet temperature",
+        "turn down ratio",
+        "spray water flow",
+        "5%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-073",
+      "doc_id": "R030",
+      "section": "5.1. Introduction to optimization",
+      "page_start": 44,
+      "page_end": 45,
+      "text": "Chapter 5 treats optimization in general, optimization methods, the genetic algorithm and the background of its use, since this work covers both thermal design and optimization of HRSGs. Optimization is an old idea: in daily life people seek the most output or goods per unit of expenditure with the least effort, and prices of consumer goods, advertising, engineering services or education per dollar are quoted as cost-effectiveness measures, just as a buyer of a large power plant uses available information to get the best value. In thermal system design optimization has become essential: a merely workable design that performs the task, meets requirements and respects constraints is no longer enough; several workable designs should be produced and the one that best minimizes or maximizes the chosen requirement selected.",
+      "terms": [
+        "optimization",
+        "cost-effectiveness",
+        "power plant",
+        "thermal system",
+        "workable"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-074",
+      "doc_id": "R030",
+      "section": "5.1. Introduction to optimization",
+      "page_start": 45,
+      "page_end": 45,
+      "text": "Many competing factors influence system performance and cost. By varying the governing parameters, an optimum can be sought for quantities such as capital cost, cost per unit product, power per unit fuel input, efficiency or energy use per unit output, focusing on the most relevant characteristics; examples are weight for airplanes, acceleration for cars, energy use for cooling systems, flow rate for water pumping and heat loss for insulation. In thermal systems the usual goals are minimum cost and maximum efficiency. Acceptable designs come from the allowed ranges of design variables while meeting requirements and constraints; several designs can satisfy the same requirements, so there is no unique final design. The designer optimizes to minimize or maximize the quantity of interest: local optima may exist at various points of the acceptable domain, but only the single global optimum over the whole domain is wanted, and the final design rests on it.",
+      "terms": [
+        "capital cost",
+        "efficiency",
+        "design variables",
+        "constraints",
+        "Local optima",
+        "global optimum"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-075",
+      "doc_id": "R030",
+      "section": "5.1. Introduction to optimization",
+      "page_start": 46,
+      "page_end": 46,
+      "text": "Optimal design variables are then adjusted to standard sizes and items offered by suppliers; for instance an optimal tube diameter of 30.15 mm is not usable, so a standard 31.8 or 38.1 mm tube is taken instead. A safety margin is added for calculation, simulation and design inaccuracies, operating fluctuations and unforeseen conditions, and the optimum must also respect fabrication and material limits; the final optimized system accounts for all of these. A system's hardware (arrangement, geometry, dimensions, materials, components) strongly governs optimization, being the fixed parts that set the overall specification and are not easily changed, while performance also depends on operating conditions such as temperature, pressure, mass flow and heat input. Every system cost feeds into the product (component) cost, so component cost optimization depends on careful component design, and heat transfer equipment design parameters can be optimized within ranges fixed by the hardware, together with the best operating conditions.",
+      "terms": [
+        "30.15 mm",
+        "31.8",
+        "38.1 mm",
+        "safety margin",
+        "hardware",
+        "operating conditions",
+        "heat transfer equipment"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-076",
+      "doc_id": "R030",
+      "section": "5.2. Basic concepts",
+      "page_start": 46,
+      "page_end": 47,
+      "text": "Formulating a thermal system optimization requires that the optimal design satisfy the requirements and constraints; only then is it an acceptable candidate, and the search proceeds within the domain of acceptable designs. If, for example, design procedures yield several acceptable HRSG designs for a combined cycle plant, the best can be chosen by a criterion such as steam production cost per unit heat transfer area or per unit exergy of the stream. The conceptual design is normally fixed beforehand from experience, environmental impact, material availability and the like, and optimization is done for that concept; different concepts may be considered early, and if one concept yields no acceptable design, another concept may be optimized instead.",
+      "terms": [
+        "acceptable designs",
+        "HRSG",
+        "heat transfer area",
+        "exergy",
+        "conceptual design"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-077",
+      "doc_id": "R030",
+      "section": "5.3. Objective function",
+      "page_start": 47,
+      "page_end": 48,
+      "text": "Every optimization needs a quantity to be minimized or maximized, the objective function, which expresses the feature of special interest. Capital, initial, maintenance and product costs are the most common, though the choice depends on the application. Objectives often chosen for thermal systems include energy consumption rate, costs incurred, efficiency, cost of product, total profit, rate of heat transfer, performance or delivered output, environmental impact, safety, and weight or volume.",
+      "terms": [
+        "objective function",
+        "product costs",
+        "energy consumption",
+        "rate of heat transfer",
+        "environmental impact",
+        "safety"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-078",
+      "doc_id": "R030",
+      "section": "5.3. Objective function",
+      "page_start": 48,
+      "page_end": 48,
+      "text": "Energy consumption, usually per unit product or as an energy rating giving power use under specified conditions, is the most important objective for thermal systems and reflects efficiency. Costs and profits always matter, and economic optimization (minimum cost or maximum profit) is a common objective. Output, e.g. power from a power plant, is often of interest, but maximizing it raises cost, so many optimizations use output per unit cost, and other performance requirements are likewise expressed per unit cost. Size may be optimized to reduce required space, and efficiency, heat transfer rate, performance, safety and weight can also serve as objectives.",
+      "terms": [
+        "Energy consumption",
+        "energy rating",
+        "Economic optimization",
+        "output per unit cost",
+        "heat transfer rate"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-079",
+      "doc_id": "R030",
+      "section": "5.4. Optimization constraints",
+      "page_start": 48,
+      "page_end": 49,
+      "text": "Constraints in design optimization come from limits on variable ranges and from conservation principles that must hold. In thermal systems they arise from material properties, space, equipment and process specifications and similar limits, and may bound dimensions, safe maximum operating temperature, allowable pressure drop, mass flow and more. For instance, a maximum fin tip temperature must be set for finned tubes to avoid fin damage, and minimum values can restrict design too, so both lower and upper bounds are specified, narrowing the acceptable design domain. In heat treatment of a pressure vessel or HRSG, a standard fixes minimum temperature and holding time while the maximum temperature before material damage must also be stated. Water tube boilers with natural circulation require a height limitation to provide the necessary positive water-side pressure.",
+      "terms": [
+        "constraints",
+        "conservation principles",
+        "fin tip temperature",
+        "heat treatment",
+        "natural circulation",
+        "water-side pressure"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-080",
+      "doc_id": "R030",
+      "section": "5.4. Optimization constraints",
+      "page_start": 49,
+      "page_end": 49,
+      "text": "Other constraints stem from conservation of mass, momentum and energy. At steady state inlet and outlet mass flows must be equal, giving an equation that the design variables must satisfy and thereby restricting their values. Energy balances are equally important and may limit heat flux, allowable temperatures and system dimensions. Because the governing equations used in modelling and simulation already embody these conservation principles, the optimized objective function inherently respects them, and the boundaries of the design domain are then treated as additional limits.",
+      "terms": [
+        "conservation",
+        "momentum",
+        "steady state",
+        "energy balance",
+        "heat flux",
+        "design domain"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-081",
+      "doc_id": "R030",
+      "section": "5.5. Operating conditions and hardware",
+      "page_start": 50,
+      "page_end": 51,
+      "text": "Optimization usually targets the system design so that hardware such as dimensions, materials and components is optimal for the chosen objective, but performance also depends on operating conditions, which must be specified; e.g., to maximize steam boiler efficiency, operating pressure and temperature must be fixed (e.g. 100 bar and 450°C). Operating conditions are application-specific and their ranges are generally set by the hardware; selecting a thermal heater for a furnace fixes the heat input and temperature ranges. Typical operating variables: rate of heat input, temperature, pressure, mass and volume flow rates, velocity and chemical composition. Temperature, pressure, composition and heat input may vary within allowed ranges for a steam boiler, volume or mass flow is chosen for an HRSG, and composition matters for chemical reactor inlets, e.g. moisture content in a food extruder. These conditions, set within the design ranges, affect thermal output, and determining optimum operating conditions and resulting performance is very important, often being the last optimization target.",
+      "terms": [
+        "hardware",
+        "operating conditions",
+        "100 bar",
+        "450°C",
+        "steam boiler",
+        "heat input",
+        "chemical composition"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-082",
+      "doc_id": "R030",
+      "section": "5.6. Optimization methods",
+      "page_start": 51,
+      "page_end": 52,
+      "text": "Many methods exist for mathematical optimization of thermal systems, each with limits and advantages. The choice depends on the nature of the equations for the objective function and constraints, and on whether the model is in explicit functions or the objective and constraints are evaluated numerically. Because thermal systems are complex, numerical solutions of the governing equations are usually used; sometimes detailed numerical results are curve-fitted into analytical or algebraic expressions on which the design is then optimized. Frequently used methods are described next.",
+      "terms": [
+        "optimization",
+        "objective function",
+        "numerical solutions",
+        "curve-fitted",
+        "algebraic expressions"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-083",
+      "doc_id": "R030",
+      "section": "5.6.1. Calculus methods",
+      "page_start": 52,
+      "page_end": 52,
+      "text": "Calculus methods locate a minimum or maximum from derivatives of the objective function and constraints, so the formulating expressions must be continuous and differentiable across the design domain. A key example is the method of Lagrange multipliers, which turns the search for an extremum into solving a set of algebraic equations. Owing to the complexity of thermal system design, calculus methods have limited use there.",
+      "terms": [
+        "Calculus methods",
+        "derivatives",
+        "differentiable",
+        "Lagrange multipliers",
+        "algebraic equations"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-084",
+      "doc_id": "R030",
+      "section": "5.6.2. Search methods",
+      "page_start": 52,
+      "page_end": 53,
+      "text": "Search methods pick the best among a number of workable designs. If design variables can take only certain fixed values, acceptable designs arise from their combinations; if they vary continuously within allowed ranges, a finite set of acceptable designs can still be generated and the optimum chosen. The simplest form, evaluating the objective at uniformly spaced points (exhaustive search), is inefficient and not used for practical optimization of complex thermal systems. Nevertheless, choosing the best of a set of acceptable designs is important when no detailed optimization is undertaken, sometimes via a non-systematic search guided by prior system knowledge, called heuristic search.",
+      "terms": [
+        "Search methods",
+        "design variables",
+        "exhaustive search",
+        "heuristic search",
+        "acceptable designs"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-085",
+      "doc_id": "R030",
+      "section": "5.6.2. Search methods",
+      "page_start": 53,
+      "page_end": 53,
+      "text": "In many practical thermal systems design variables are discrete rather than continuous because only limited materials and components exist: pumps, fans, compressors and heat exchangers come in defined specifications from manufacturers, though custom intermediate sizes may sometimes be cheaper and more convenient, and pipe and tube diameters and thicknesses are likewise finite. An acceptable optimum needs modelling, simulation and evaluation; simulation results reveal how variables affect the objective, and a systematic search strategy is needed, since random searches with many runs across the domain are inefficient. Search methods apply from unconstrained single-variable problems to highly constrained multivariable systems and are useful both for finding optimal designs and improving existing systems. This work uses a genetic algorithm, explained in this chapter.",
+      "terms": [
+        "pumps",
+        "fans",
+        "compressors",
+        "heat exchangers",
+        "simulation",
+        "systematic search",
+        "genetic algorithm"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-086",
+      "doc_id": "R030",
+      "section": "5.6.3. Other methods",
+      "page_start": 54,
+      "page_end": 55,
+      "text": "Strong demand for system and process optimization has produced many methods [30], several of them application-specific and unsuited to thermal systems. Shape, trajectory and structural optimization use specialized techniques often coupled with a finite element method. Monotonicity analysis studies how objective functions and constraints increase or decrease monotonically, focusing on the constraints and their effect. Recent artificial-intelligence-based approaches include ANNs (artificial neural networks), fuzzy logic and GAs (genetic algorithms); ANN and fuzzy logic are described in [30] and [31].",
+      "terms": [
+        "finite element method",
+        "monotonicity analysis",
+        "artificial neural networks",
+        "ANNs",
+        "fuzzy logic",
+        "genetic algorithms"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-087",
+      "doc_id": "R030",
+      "section": "5.6.3. Other methods",
+      "page_start": 54,
+      "page_end": 54,
+      "text": "Genetic algorithms are evolutionary search methods from artificial intelligence that mimic evolutionary biology through inheritance, selection, crossover and mutation. Optimization starts from an initial population of solutions (individuals) and advances through generations guided by a fitness defined by the objective function. Individuals are evaluated with the fitness function, several are chosen from the current generation according to fitness, and the operators crossover and mutation modify them to form the next population, which is iterated until the desired optimum is reached.",
+      "terms": [
+        "evolutionary search methods",
+        "inheritance",
+        "selection",
+        "crossover",
+        "mutation",
+        "initial population",
+        "fitness function"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-088",
+      "doc_id": "R030",
+      "section": "5.7. Genetic algorithms used in the optimization of thermal design and heat transfer",
+      "page_start": 55,
+      "page_end": 55,
+      "text": "Genetic algorithms are used increasingly to optimize thermal systems [32] and are the method chosen here. The term \"genetic algorithm\" was coined by Bagley [33], whose first application appeared in 1967; GAs became an optimization method in the 1970s amid work on evolutionary computation, with Holland [34] and De Jong [35] producing the first main work in 1975, and Grefenstette [36], Baker [37] and Goldberg [38] substantially improving them in the 1980s, Goldberg also writing a book on GA applications; [39] gives more history. Use in thermal design and heat transfer came later, probably because numerical thermal problems are hard and slow to compute, and a GA needs many simulations, which can be too long when each design is evaluated with CFD.",
+      "terms": [
+        "genetic algorithm",
+        "Bagley",
+        "1967",
+        "Holland",
+        "Goldberg",
+        "evolutionary computation",
+        "CFD"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-089",
+      "doc_id": "R030",
+      "section": "5.7. Genetic algorithms used in the optimization of thermal design and heat transfer",
+      "page_start": 55,
+      "page_end": 56,
+      "text": "GA use in heat transfer began in the mid-1990s and is now routine, and a marked increase in applications to complex thermal design and heat transfer optimization is expected, helped by widely available high performance computers. Gosselin [32] reviewed heat transfer, numerical modelling, optimization and energy systems papers in major journals, with the publication timeline in Fig. 5.1, summarized the key features of the thermal design studies, and found that model complexity ranges from simple analytical equations to advanced CFD. Fig. 5.1 [32]: counts of heat transfer articles applying GAs found in the review.",
+      "terms": [
+        "mid-1990s",
+        "heat transfer",
+        "high performance computers",
+        "Gosselin",
+        "Fig. 5.1",
+        "CFD"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-090",
+      "doc_id": "R030",
+      "section": "5.8. Optimizing thermal systems with genetic algorithms",
+      "page_start": 56,
+      "page_end": 57,
+      "text": "Design and optimization of thermal systems, e.g. heat exchangers, heat and fluid flow networks, fins, porous media and heat sinks, was the first class of heat transfer problems tackled with genetic algorithms in the literature [32]. Gosselin [32] also reviewed GA use for systems that convert and transfer energy, especially thermal energy, finding that the number of candidate designs is usually very large and GAs are helpful. Application areas include power plants, chemical plants, heat exchangers and their networks, general heat transfer problems, and heating, ventilation, air conditioning and refrigeration systems, as outlined below.",
+      "terms": [
+        "genetic algorithm",
+        "heat exchangers",
+        "porous media",
+        "heat sinks",
+        "chemical plants",
+        "refrigeration"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-091",
+      "doc_id": "R030",
+      "section": "5.8.1.1. Heat exchangers",
+      "page_start": 57,
+      "page_end": 58,
+      "text": "A heat exchanger must fit the whole system or it will operate poorly and cost too much, and GAs suit such designs. Exchangers are normally designed and rated with correlations and analytical models including empirical relations. GA objectives have included minimum cost, maximum heat transfer and minimum pressure drop, by choosing tube diameter, pitch, number of passes and arrangement. Examples: Selbas et al. [40] minimized shell-and-tube cost with tube diameter, tube pitch, passes, shell outer diameter and baffle cut as variables; Wildi-Tremblay and Gosselin [41] minimized capital plus operating cost using tube pitch, arrangement, passes, central and inlet/outlet baffle spacing, baffle cut, tube-to-baffle clearance, bundle and shell diameters and tube outer diameter; [42] minimized cost with shell diameter, tube diameter and baffle spacing; [43] minimized annual exergetic plus capital cost; [44] designed a plate fin heat exchanger for weight and operating cost; and [45] maximized NTU per unit pressure drop of an intercooler and a regenerator.",
+      "terms": [
+        "shell-and-tube",
+        "tube pitch",
+        "baffle cut",
+        "baffle spacing",
+        "plate fin heat exchanger",
+        "NTU",
+        "regenerator"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-092",
+      "doc_id": "R030",
+      "section": "5.8.1.2. Power generation",
+      "page_start": 58,
+      "page_end": 59,
+      "text": "In power generation GAs have been used to cut cost and raise performance, notably for complex plants with many components and energy sources, typically to raise thermal efficiency and output and reduce cost. Sirikum and Techanitisawad [46] minimized total cost of a power plant expansion. [47] maximized cooling, heating and power value considering economy, thermal efficiency and emissions, with variables such as gas engine and gas turbine series and number, water mass flow shares, supply temperatures and the pinch floor cooling device. [48] optimized single, dual and triple pressure gas turbine plants (with and without reheating) by varying cycle pressures and temperatures to minimize energy generation cost and maximize cash flow. [49] maximized steam turbine internal efficiency using flow angles and velocities; [50] minimized operating cost of a multi-device energy supplier; [51] minimized energy cost of multi-production plant processes; [52] optimized a cogeneration plant; and [53] maximized total electrical power of a cogeneration system.",
+      "terms": [
+        "thermal efficiency",
+        "power plant expansion",
+        "triple pressure",
+        "reheating",
+        "steam turbine",
+        "internal efficiency",
+        "cogeneration"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-093",
+      "doc_id": "R030",
+      "section": "5.8.1.3. Heat exchanger networks (HENs), design integration and chemical plants",
+      "page_start": 59,
+      "page_end": 59,
+      "text": "Beyond single exchanger design, GAs have served to design and optimize HENs and chemical plants [32], usually to minimize cost or maximize energy recovery. Pettersson and Soderman [54] minimized total cost of a heat recovery system as a function of exchanger number, areas and hot/cold utility costs, with fluid matches and areas as variables. For retrofit of large HENs, GAs split the system into smaller subsystems [55]; [56] minimized structural change cost for a fixed hot/cold network topology and then exchanger cost; [57] minimized capital and energy cost; [58] optimized the morphology of a five-layer HEN to minimize utilities at set performance; and [59] minimized total exergetic and capital (surface-related) cost with temperature difference and exchanger position as variables.",
+      "terms": [
+        "HENs",
+        "energy recovery",
+        "utility costs",
+        "retrofit",
+        "topology",
+        "capital",
+        "exergetic"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-094",
+      "doc_id": "R030",
+      "section": "5.8.1.4. Heating, ventilation, air conditioning and refrigeration (HVAC&R) systems",
+      "page_start": 60,
+      "page_end": 60,
+      "text": "In HVAC&R systems GAs mainly address minimum energy consumption, minimum cost and maximum comfort [32]. [60, 61] minimized total HVAC power using variables such as numbers of operating chillers, chilled water pumps, cooling coils, conditioned rooms, condenser water pumps and cooling tower fans and the chilled and condenser water supply temperatures, saving 800 kWh per day. [62] and [64] minimized HVAC power consumption; [63] jointly minimized energy use and predicted percentage of dissatisfaction, determining set points for static duct pressure and supply air temperature, plus chiller water temperature and reheat; and [65] optimized air conditioning energy consumption.",
+      "terms": [
+        "HVAC&R",
+        "chillers",
+        "cooling tower fans",
+        "800 kWh",
+        "predicted percentage of dissatisfaction",
+        "supply air temperature"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-095",
+      "doc_id": "R030",
+      "section": "5.8.2. Other applications of genetic algorithms",
+      "page_start": 60,
+      "page_end": 61,
+      "text": "GAs have solved many other design problems [32]. In conduction, fin design appears in [66]-[73] and heat conduction equation based designs in [74]-[78]; thermofluid system design is covered in [79]-[91]; [92] designed a radiative enclosure by minimizing the difference between desired and estimated heat flux profiles on the surface; and inverse radiation, conduction and convection heat transfer problems are treated in [93]-[111].",
+      "terms": [
+        "conduction",
+        "fin design",
+        "thermofluid system",
+        "radiative enclosure",
+        "heat flux",
+        "inverse radiation"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-096",
+      "doc_id": "R030",
+      "section": "5.9. Description of genetic algorithms",
+      "page_start": 61,
+      "page_end": 62,
+      "text": "John Holland [40] laid down the basic GA principle, and GAs entered heat transfer around the mid-1990s, cautiously at first and now regularly [32]. They imitate natural selection: stronger individuals tend to win in competition. A candidate solution is an individual described by parameters treated as genes of a chromosome. GAs need no analytical system equations; they judge behaviour through each individual's fitness value, which is generally tied to the objective function and expresses the chromosome's suitability. Advantages [112]: only fitness values, no derivatives, are needed; a wide sample of the cost surface is searched; many variables can be handled; very complex cost functions can be optimized; a list of optimum variables rather than one solution is obtained; variables can be encoded and optimized in encoded form; and numerical, experimental or analytical data can all be used.",
+      "terms": [
+        "John Holland",
+        "natural selection",
+        "chromosome",
+        "genes",
+        "fitness value",
+        "derivative",
+        "encode"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-097",
+      "doc_id": "R030",
+      "section": "5.9.1. Introducing the parameters of a genetic algorithm",
+      "page_start": 62,
+      "page_end": 62,
+      "text": "GA vocabulary combines evolution, mathematics and computing. Gene: an optimization variable. Chromosome: an array of genes passed to the cost function. Individual: a possible solution, one population member made of a chromosome and its cost value. Population: a group of individuals. Generation: one GA iteration. Objective function: the function evaluating or being optimized. GA operators: selection, crossover and mutation. Selection: choosing parents for reproduction, usually by fitness. Crossover: building a new chromosome by combining parts of two parent chromosomes. Mutation: randomly changing gene values in a parent chromosome. Reproduction: creating offspring with the GA operators. Further terms appear in the glossary.",
+      "terms": [
+        "Gene",
+        "Chromosome",
+        "Population",
+        "Generation",
+        "Selection",
+        "Crossover",
+        "Mutation",
+        "Reproduction"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-098",
+      "doc_id": "R030",
+      "section": "5.9.2. General Description of the genetic algorithm method",
+      "page_start": 62,
+      "page_end": 64,
+      "text": "A GA is an evolutionary optimization algorithm based on Darwinian selection and proceeds as follows: a population of individuals is created from randomly generated genes; all individuals are evaluated with the fitness function and ranked; the GA operators then produce the next generation, first selecting the fittest individuals as parents and then applying crossover and mutation, keeping population size constant; the new generation is evaluated again, and since it comes from fitter parents it should be fitter than the last; the loop repeats until a stopping criterion such as a set number of generations is met. Goldberg [38] and Bentley [113] give full treatments, and Fig. 5.2 gives an overview flowchart. Fig. 5.2 [112]: GA flowchart.",
+      "terms": [
+        "Darwinian selection",
+        "fitness function",
+        "crossover",
+        "mutation",
+        "population size",
+        "Fig. 5.2"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-099",
+      "doc_id": "R030",
+      "section": "6. Optimization program",
+      "page_start": 65,
+      "page_end": 65,
+      "text": "As in most engineering projects, thermal design and optimization of thermal systems need an accurate, adequate program, so a comprehensive Visual Basic program was written for HRSG thermal design and optimization. Since many process plants cool large amounts of gas or waste gas in a waste heat boiler, the program also applies to the design and optimization of such waste heat boilers. A general description follows.",
+      "terms": [
+        "Visual basic",
+        "waste heat boiler",
+        "thermal design",
+        "optimization",
+        "waste gas"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-100",
+      "doc_id": "R030",
+      "section": "6.1. Modules of the program",
+      "page_start": 65,
+      "page_end": 66,
+      "text": "Designing and optimizing an HRSG requires simulating its performance and computing heat transfer accurately, and the optimization variables, i.e. everything influencing the objective function, must be chosen properly. Outlet steam temperature is a key operating condition the designer must guarantee; to control it, steam is superheated in two superheaters with spray water injected between them. The HRSG is therefore modelled with four sections (two superheaters, evaporator, economizer), like real plant HRSGs, and the program modules are described below.",
+      "terms": [
+        "optimization variables",
+        "steam temperature",
+        "superheaters",
+        "spray water",
+        "evaporator",
+        "economizer"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-101",
+      "doc_id": "R030",
+      "section": "6.1.1. Thermal simulation of superheater no. 2",
+      "page_start": 66,
+      "page_end": 66,
+      "text": "Superheater no. 2 is the first HRSG section and receives the hottest flue gas, so both radiative and convective heat transfer are significant and must be computed precisely. Fin tip, fin surface and tube wall temperatures are its main constraints, and the radiative term in particular must be calculated accurately to avoid fin tube overheating; finned tubes are generally used for better heat absorption. Steam pressure drop is the other key constraint. The module delivers the full thermal design, heat transfer calculation, geometry, arrangement, steam and flue gas pressure drops and fin and tube metal temperatures, and finally the section cost, which is the main optimization requirement.",
+      "terms": [
+        "superheater no. 2",
+        "radiative",
+        "convective",
+        "Fin tip",
+        "tube wall",
+        "steam pressure drop",
+        "metal temperature"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-102",
+      "doc_id": "R030",
+      "section": "6.1.2. Thermal simulation of superheater no. 1",
+      "page_start": 66,
+      "page_end": 67,
+      "text": "Superheater no.1 is the second section; it too sees high-temperature flue gas, so radiation and convection must both be computed accurately. Because all sections share the same gas pass width and length, fitting superheater no. 1 into the dimensions of superheater no. 2 is a key constraint. Fin tip, fin surface and tube wall temperatures are further constraints, with accurate radiation needed to avoid overheating, along with flue gas and steam pressure drops. The module yields the full thermal design, heat transfer, geometry, arrangement, steam and flue gas pressure drops, spray water flow rate and fin and tube metal temperatures, ending with the section cost.",
+      "terms": [
+        "superheater no. 1",
+        "gas pass width",
+        "Fin tip",
+        "radiation",
+        "spray water flow rate",
+        "steam pressure drops"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-103",
+      "doc_id": "R030",
+      "section": "6.1.3. Thermal simulation of the evaporator",
+      "page_start": 67,
+      "page_end": 67,
+      "text": "The evaporator, third section, receives medium-temperature flue gas; convection dominates though radiation is not negligible. Its main constraint is the pinch point, which affects HRSG operation and can raise cost considerably, so it must be optimized carefully. The evaporator must also fit the width and length of superheater no. 1, and flue gas pressure drop and fin tip, fin surface and tube wall temperatures must be satisfied. The module provides the full thermal design, heat transfer, geometry, arrangement, pinch point, flue gas pressure drop, fin and tube metal temperatures and the evaporator investment cost.",
+      "terms": [
+        "evaporator",
+        "medium-temperature flue gas",
+        "pinch point",
+        "flue gas pressure drop",
+        "metal temperature",
+        "investment cost"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-104",
+      "doc_id": "R030",
+      "section": "6.1.4. Thermal simulation of the economizer",
+      "page_start": 68,
+      "page_end": 68,
+      "text": "The economizer is the last section, receiving low-temperature flue gas; heat transfer is by convection and radiation is normally neglected. Its foremost constraint is the approach point, which affects operation and can raise cost substantially and must be optimized carefully; water pressure drop, which influences economizer design pressure and cost, is next, and equal width and length with the other sections is required. The cold gas calls for a large heat transfer surface and hence a high flue gas pressure drop, which must be computed accurately, along with fin tip, fin surface and tube wall temperature limits. The module delivers the full thermal design, heat transfer, geometry, arrangement, approach point, flue gas pressure drop, fin and tube metal temperatures and economizer investment cost.",
+      "terms": [
+        "economizer",
+        "low-temperature flue gas",
+        "approach point",
+        "water pressure drop",
+        "design pressure",
+        "heat transfer surface"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-105",
+      "doc_id": "R030",
+      "section": "6.1.5. Water and steam properties",
+      "page_start": 68,
+      "page_end": 69,
+      "text": "Water and steam flow inside the tubes of all sections, and their properties, especially thermal conductivity, specific heat, viscosity, density and enthalpy, are needed for accurate design and heat transfer iterations; with many iterations across all sections, accurate properties are essential for convergence. The module implements IAPWS-If97 [18] data and correlations. The industrial formulation provides equation sets per region covering 273.15 K ≤ T ≤ 1073.15 K, p ≤ 100 MPa and 1073.15 K ≤ T ≤ 2273.15 K, p ≤ 50 MPa.",
+      "terms": [
+        "IAPWS-If97",
+        "273.15 K ≤ T ≤ 1073.15 K",
+        "p ≤ 100 MPa",
+        "p ≤ 50 MPa",
+        "enthalpy",
+        "convergence"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-106",
+      "doc_id": "R030",
+      "section": "6.1.5. Water and steam properties",
+      "page_start": 69,
+      "page_end": 70,
+      "text": "Fig. 6.1 shows the regions dividing the IAPWS-IF97 validity range; region boundaries can be read from it except the region 2-3 boundary, which has its own equation. Regions 1 and 2 each use a fundamental equation for specific Gibbs free energy g(p,T), region 3 uses a fundamental equation for specific Helmholtz free energy f(ρ,T) with ρ the density, and the saturation curve uses a saturation-pressure equation p_s(T). These basic equations reproduce the IAPWS formulation for general and scientific use [114] for specific volume ν, specific enthalpy h, specific isobaric heat capacity c_p and saturation pressure p_s; full details are in IAPWS-If97 [18]. All water and steam properties are computed in this module. Fig. 6.1 [18]: IAPWS-IF97 regions and their equations.",
+      "terms": [
+        "IAPWS-IF97",
+        "Gibbs free energy",
+        "g(p,T)",
+        "Helmholtz free energy",
+        "f(ρ,T)",
+        "p_s(T)",
+        "c_p",
+        "Fig. 6.1"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-107",
+      "doc_id": "R030",
+      "section": "6.1.6. Flue gas properties",
+      "page_start": 70,
+      "page_end": 71,
+      "text": "Accurate flue gas physical properties are essential, because the gas-side coefficient outside the fin tubes strongly affects the overall heat transfer coefficient and property errors propagate into significant design errors, particularly during iterations. Properties enter the dimensionless groups of conduction, convection and radiation equations (Nusselt, Prandtl and Reynolds numbers); thermal conductivity, specific heat, viscosity, density and enthalpy matter most. The flue gas is the gas turbine's combustion products, including CO_2, O_2, H_2O, N_2 etc.; the module computes each component's properties and then the mixture's. Given the many iterations, accurate properties are needed for convergence, and correlations from \"The properties of gases and liquids\" [19] are used.",
+      "terms": [
+        "flue gas",
+        "Nusselt",
+        "Prandtl",
+        "Reynolds numbers",
+        "CO_2",
+        "H_2O",
+        "N_2",
+        "mixture"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-108",
+      "doc_id": "R030",
+      "section": "6.1.7. Genetic algorithm",
+      "page_start": 71,
+      "page_end": 71,
+      "text": "A dedicated genetic algorithm module optimizes the HRSG thermal design and cost; it defines and computes all genes, chromosomes, costs, fitness, selection, crossover, mutation and so on.",
+      "terms": [
+        "genetic algorithm",
+        "genes",
+        "chromosomes",
+        "fitness",
+        "crossover",
+        "mutation"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-109",
+      "doc_id": "R030",
+      "section": "6.2. Definition of the optimization variables",
+      "page_start": 71,
+      "page_end": 71,
+      "text": "The optimization treats a single-pressure HRSG with four sections (two superheaters, evaporator, economizer), though a multi-pressure version could also be programmed. Heating surface specifications of all sections, fluid velocity and approach point form the optimization variables (genes).",
+      "terms": [
+        "single-pressure",
+        "multi-pressure",
+        "heating surface",
+        "approach point",
+        "genes"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-110",
+      "doc_id": "R030",
+      "section": "6.2.1. Approach point",
+      "page_start": 71,
+      "page_end": 71,
+      "text": "The approach point is the variable with the greatest influence on HRSG optimization; choosing the best approach and pinch points is the engineers' most important decision, and the approach point must be selected carefully to minimize cost, avoid steaming and control the pinch point.",
+      "terms": [
+        "approach point",
+        "pinch point",
+        "steaming",
+        "cost"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-111",
+      "doc_id": "R030",
+      "section": "6.2.2. Tube diameter",
+      "page_start": 72,
+      "page_end": 72,
+      "text": "Tube diameter influences inside and outside heat transfer coefficients and pressure drops and the cost of each section, so it is an optimization variable. Variables must be optimized within sensible ranges: standard tube diameters available on the market were assumed for all sections. A non-standard diameter such as 35.9 mm might give a lower-cost result, but it is unavailable and cannot be chosen for an HRSG.",
+      "terms": [
+        "tube diameter",
+        "heat transfer coefficients",
+        "pressure drop",
+        "standard tube diameters",
+        "35.9 mm"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-112",
+      "doc_id": "R030",
+      "section": "6.2.3. Fin type",
+      "page_start": 72,
+      "page_end": 72,
+      "text": "As described in section 3, serrated fins have a higher heat transfer coefficient than solid fins of equal specification, promising more heat transfer and lower cost, but they cause higher flue gas pressure drop and higher fin tip temperature; fin type is therefore an optimization variable.",
+      "terms": [
+        "serrated fins",
+        "solid fins",
+        "heat transfer coefficient",
+        "fin tip temperature",
+        "fin type"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-113",
+      "doc_id": "R030",
+      "section": "6.2.4. Fins per meter",
+      "page_start": 72,
+      "page_end": 73,
+      "text": "Extended surfaces are used to enlarge heat transfer area, and fins per meter affect the heat transfer coefficient, total surface and flue gas pressure drop. The value must suit the flue gas composition: natural gas combustion products carry no solid particles, allowing more fins per meter, whereas fuels with sulphur and ash require a limit; manufacturer capability also restricts the choice. More fins per meter increase heat transfer rate and surface but also flue gas pressure drop, so the parameter must be selected precisely.",
+      "terms": [
+        "Extended surfaces",
+        "fins per meter",
+        "flue gas pressure drop",
+        "natural gas",
+        "sulphur",
+        "ash"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-114",
+      "doc_id": "R030",
+      "section": "6.2.5. Fin height and fin thickness",
+      "page_start": 73,
+      "page_end": 73,
+      "text": "Fin tip and fin surface temperatures must be checked carefully, or fins burn and harps are damaged. Fin height and fin thickness govern these temperatures and also the heat transfer coefficient, heat transfer surface and flue gas pressure drop, so both are optimization variables.",
+      "terms": [
+        "Fin tip",
+        "fin surface temperatures",
+        "harps",
+        "Fin height",
+        "fin thickness"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-115",
+      "doc_id": "R030",
+      "section": "6.2.6. Steam and water velocities",
+      "page_start": 73,
+      "page_end": 73,
+      "text": "Steam velocity affects heat transfer and steam pressure drop, and water velocity affects economizer heat transfer and water pressure drop; allowable ranges based on boiler designers' judgment and recommendations are given in tables 7.3 (steam) and 7.4 (water). Water velocity is generally recommended around 1 m/s and must exceed 0.6 m/s to avoid economizer steaming.",
+      "terms": [
+        "Steam velocity",
+        "Water velocity",
+        "tables 7.3",
+        "1 m/s",
+        "0.6 m/s",
+        "steaming"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-116",
+      "doc_id": "R030",
+      "section": "6.2.7. Number of tubes on the circumference of a header",
+      "page_start": 74,
+      "page_end": 74,
+      "text": "An HRSG is built from harps forming its sections; Fig. 6.2 shows cross sections of harp types. The number of tubes on a header's circumference is central to harp configuration, matters for harp manufacture and influences each section's tube arrangement and cost. Fig. 6.2 [12]: harps with one tube row and with several rows.",
+      "terms": [
+        "harps",
+        "header",
+        "tube arrangement",
+        "Fig. 6.2",
+        "tube row"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-117",
+      "doc_id": "R030",
+      "section": "6.3. Objective function",
+      "page_start": 74,
+      "page_end": 75,
+      "text": "All four sections are designed and optimized together under many constraints. Their cost functions differ fundamentally because of section-specific heat transfer and constraints, and global constraints also apply, e.g. the total pressure drop of all components must stay within the allowable gas turbine back pressure, so all components are optimized simultaneously. The objective function is the sum of the four section cost functions, i.e. the HRSG investment cost, to be minimized subject to allowable flue gas pressure drop, steam and water pressure drops, spray water amount, pinch point, allowable fin tube material temperature and overall allowable dimensions.",
+      "terms": [
+        "objective function",
+        "cost functions",
+        "gas turbine back pressure",
+        "investment cost",
+        "spray water",
+        "pinch point"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-118",
+      "doc_id": "R030",
+      "section": "6.3. Objective function",
+      "page_start": 75,
+      "page_end": 78,
+      "text": "Per ASME - Sec. II [21], metal temperature governs fin and tube material choice: alloy steel, at higher material cost, is used in the superheaters with their high metal temperature, and carbon steel in the evaporator and economizer. Manufacturers usually price HRSGs by component weight; here the cost is computed from the total weight of heat transfer surface in each section with carbon steel at 7 USD/kg and alloy steel at 10 USD/kg. The full design lets engineers apply any other cost formula. Program screenshots: Fig. 6.3, the program's main page; Fig. 6.4, its screen of optimization variables; Fig. 6.5, its screen of thermal design data.",
+      "terms": [
+        "ASME - Sec. II",
+        "alloy steel",
+        "carbon steel",
+        "7 USD/kg",
+        "10 USD/kg",
+        "weight",
+        "Fig. 6.3"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-119",
+      "doc_id": "R030",
+      "section": "7. Results and comparison",
+      "page_start": 79,
+      "page_end": 80,
+      "text": "The method was tested on an HRSG running in a combined cycle plant for some years, whose design data, heat transfer area and operating parameters are known. Following the cost balance discussion of chapter 2, the goal is minimum HRSG cost, with thermal design and cost considered together to find the best variables, and all design, manufacturing and operating constraints of chapter 4 enforced. The existing HRSG was optimized for two cases with different variable and constraint ranges and the results compared with the existing unit. Since the existing boiler uses alloy steel in both superheaters, alloy steel was kept for both superheaters in the optimization for comparability, while carbon steel suffices for evaporator and economizer.",
+      "terms": [
+        "combined cycle plant",
+        "cost balance",
+        "constraints",
+        "alloy steel",
+        "superheaters",
+        "carbon steel"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-120",
+      "doc_id": "R030",
+      "section": "7.1. Input data",
+      "page_start": 80,
+      "page_end": 80,
+      "text": "The case studied is the high-pressure section of an HRSG with 241.4 t/h capacity, 97.5 bar working pressure and 523°C steam temperature, comprising two superheaters, an evaporator and an economizer. Gas turbine exhaust data are the main input; Table 7.1 lists mass flow, inlet temperature, expected minimum outlet temperature, composition and fouling resistance.",
+      "terms": [
+        "high-pressure section",
+        "241.4 t/h",
+        "97.5 bar",
+        "523°C",
+        "Table 7.1",
+        "fouling resistance"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-121",
+      "doc_id": "R030",
+      "section": "7.1.1. Flue gas data",
+      "page_start": 80,
+      "page_end": 80,
+      "text": "Table 7.1 Flue gas data: Mass flow rate, kg/s = 409.56; Inlet temperature, °C = 631.15; Minimum outlet temperature, °C = 245.9; Composition, volume % = CO_2: 3.49, H_2O: 8.15, N_2: 75, O_2: 13.36; Fouling resistance, m²·K/W = 0.00052.",
+      "terms": [
+        "Table 7.1",
+        "Flue gas data",
+        "409.56",
+        "631.15",
+        "245.9",
+        "CO_2",
+        "H_2O",
+        "0.00052"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-122",
+      "doc_id": "R030",
+      "section": "7.1.2. Steam and water data",
+      "page_start": 81,
+      "page_end": 81,
+      "text": "Table 7.2 Water and steam data (steam capacity, working pressure, superheater outlet temperature, inlet water temperature, fouling factor, spray water flow): Steam mass flow rate, kg/s = 67.07; Steam pressure, Bar = 97.5; Outlet steam temperature, °C = 523; Inlet water temperature, °C = 182.4; Fouling resistance, m²·K/W = 0.000081; Spray water mass flow rate, kg/s = 0.433.",
+      "terms": [
+        "Table 7.2",
+        "Steam mass flow rate",
+        "67.07",
+        "97.5",
+        "523",
+        "182.4",
+        "0.000081",
+        "0.433"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-123",
+      "doc_id": "R030",
+      "section": "7.2. HRSG optimization, case 1",
+      "page_start": 81,
+      "page_end": 81,
+      "text": "In case 1 the variable and constraint ranges are set close to the existing boiler's parameters; variables, constraints, design data and thermal designs of both HRSGs are compared below. Tables 7.3 and 7.4 give the optimization variables (genes) and allowed ranges for all sections in case 1.",
+      "terms": [
+        "case 1",
+        "variables",
+        "constraints",
+        "genes",
+        "Tables 7.3"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-124",
+      "doc_id": "R030",
+      "section": "7.2.1. Variation ranges of the optimization variables, case 1",
+      "page_start": 82,
+      "page_end": 82,
+      "text": "Table 7.3 Design variables and variation range for superheater no. 2 and superheater no. 1, case 1 (SH2 / SH1): Tube diameter, mm: SH2=31.8, 33.7, 38.1; SH1=31.8, 33.7, 38.1. Tube arrangement: SH2=in line, staggered; SH1=in line, staggered. Fin height, mm: SH2=8 to 13; SH1=12 to 18. Fin thickness, mm: SH2=0.8,0.9,1,1.1,1.2; SH1=0.8,0.9,1,1.1,1.2. Fins per meter: SH2=100 to 140; SH1=180 to 260. Fin type: SH2=solid, serrated; SH1=solid, serrated. Transvers pitch, mm: SH2=55 to 120; SH1=55 to 120. Longitudinal pitch, mm: SH2=55 to 120; SH1=55 to 120. Steam velocity, m/s: SH2=10 to 25; SH1=7 to 20. Number of tube rows: SH2=1 to 4; SH1=1 to 4. Segment width, mm: SH2=4, 4.5; SH1=4, 4.5. number of tubes on the circumference of a header: SH2=2, 3; SH1=2, 3.",
+      "terms": [
+        "Table 7.3",
+        "superheater no. 2",
+        "Fin height",
+        "Fins per meter",
+        "Transvers pitch",
+        "Steam velocity",
+        "Segment width"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-125",
+      "doc_id": "R030",
+      "section": "7.2.1. Variation ranges of the optimization variables, case 1",
+      "page_start": 83,
+      "page_end": 83,
+      "text": "Table 7.4 Design variables and variation range for the evaporator and economizer, case 1 (Evaporator / Economizer): Tube diameter, mm: Evaporator=38.1, 44.5; Economizer=31.8, 33.7, 38.1. Tube arrangement: Evaporator=in line, staggered; Economizer=in line, staggered. Fin height, mm: Evaporator=15 to 20; Economizer=15 to 20. Fin thickness, mm: Evaporator=0.8,0.9,1,1.1,1.2; Economizer=0.8,0.9,1,1.1,1.2. Fins per meter: Evaporator=180 to 260; Economizer=180 to 260. Fin type: Evaporator=solid, serrated; Economizer=solid, serrated. Transvers pitch, mm: Evaporator=60 to 120; Economizer=55 to 120. Longitudinal pitch, mm: Evaporator=60 to 120; Economizer=55 to 120. Water velocity, m/s: Evaporator=-; Economizer=0.6 to 1.5. Number of tube rows: Evaporator=2 to 30; Economizer=2 to 30. Segment width, mm: Evaporator=4, 4.5; Economizer=4, 4.5. number of tubes on the circumference of a header: Evaporator=1, 2, 3; Economizer=2, 3.",
+      "terms": [
+        "Table 7.4",
+        "Evaporator",
+        "Economizer",
+        "Tube diameter",
+        "Water velocity",
+        "Number of tube rows"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-126",
+      "doc_id": "R030",
+      "section": "7.2.2. Constraints and their range of variation, case 1",
+      "page_start": 84,
+      "page_end": 84,
+      "text": "Satisfying the chapter 4 constraints strongly shapes the optimization result. In case 1, to make the comparison with the existing HRSG meaningful, constraint ranges were set close to the existing unit, e.g. minimum and maximum fin tube lengths near the existing length. Table 7.5 Constraints and their variation range, case 1: Allowable flue gas draft loss, mbar: From=-, To=13. Tube length, mm: From=14,000, To=20,000. Width of HRSG, mm: From=3,000, To=9,000. Carbon steel fin tip temperature, °C: From=-, To=449. Alloy steel fin tip temperature, °C: From=450, To=650. Economizer water pressure drop, bar: From=-, To=5. Pinch point, °C: From=8, To=22. Approach point, °C: From=12, To=27. Steam pressure drop, bar: From=-, To=3. Maximum spray water flow as percentage of total steam flow, %: From=-, To=5.",
+      "terms": [
+        "Table 7.5",
+        "flue gas draft loss",
+        "Tube length",
+        "fin tip temperature",
+        "Pinch point",
+        "Approach point",
+        "Steam pressure drop",
+        "spray water"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-127",
+      "doc_id": "R030",
+      "section": "7.2.3. Optimization results and comparison, case 1",
+      "page_start": 85,
+      "page_end": 85,
+      "text": "Case 1 results are given section by section in 7.2.3.1 (optimized variables and thermal design versus the existing HRSG), then general data and cost (objective function) in 7.2.3.2, and heat transfer surfaces in 7.2.3.3.",
+      "terms": [
+        "case 1",
+        "objective function",
+        "heat transfer surfaces",
+        "existing HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-128",
+      "doc_id": "R030",
+      "section": "7.2.3.1. Optimization variables and thermal design results of the HRSG sections, case 1",
+      "page_start": 85,
+      "page_end": 85,
+      "text": "Each section's results (SH2, SH1, evaporator, economizer) are set against the existing HRSG. Tables 7.6 and 7.7 cover superheater no. 2: relative to the existing unit, the optimized one has fewer fins per meter, thinner fins and smaller longitudinal pitch (S_L), but taller fins and larger transverse pitch (S_T), and serrated fins were chosen; the costs of existing and optimized superheater no. 2 are about the same. As the first section exposed to the hottest gas, superheater no. 2 is governed mainly by fin tip and tube wall temperatures, and the chosen variables keep both within allowable limits.",
+      "terms": [
+        "superheater no. 2",
+        "fins per meter",
+        "S_L",
+        "S_T",
+        "serrated fin",
+        "fin tip",
+        "tube wall temperatures"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-129",
+      "doc_id": "R030",
+      "section": "7.2.3.1. Optimization variables and thermal design results of the HRSG sections, case 1",
+      "page_start": 86,
+      "page_end": 86,
+      "text": "Table 7.6 Variables of existing and optimized superheaters no. 2, case 1 (Existing / Optimized): Tube arrangement: staggered / staggered; Tube diameter, mm: 38.1 / 38.1; Transverse pitch, mm: 96 / 99.1; Longitudinal pitch, mm: 90 / 79.4; Fin type: solid / serrated; Fin height, mm: 10 / 13; Fin thickness, mm: 1.2 / 0.9; Fins per meter: 120 / 104; Segment width, mm: 4 / 4; Number of rows: 3 / 3; Steam velocity, m/s: 15 / 16.2; number of tubes on the circumference of a header: 3 / 3.",
+      "terms": [
+        "Table 7.6",
+        "superheaters no. 2",
+        "Transverse pitch",
+        "Longitudinal pitch",
+        "serrated",
+        "Fins per meter",
+        "Steam velocity"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-130",
+      "doc_id": "R030",
+      "section": "7.2.3.1. Optimization variables and thermal design results of the HRSG sections, case 1",
+      "page_start": 87,
+      "page_end": 87,
+      "text": "Table 7.7 Thermal design results of the existing and optimized superheater no. 2, case 1 (Existing / Optimized): Length of fin tube, mm: 15,700 / 15,916.2; Gas pass length, mm: 15,736 / 15,964.2; Gas pass width, mm: 7,536 / 7,086; Tubes per row: 78 / 71; Overall heat transfer coefficient, W/m²·K: 61.8 / 56.9; Flue gas pressure drop, mbar: 0.79 / 0.88; Heat transfer surface, m²: 1,805.4 / 1939; Steam pressure drop, bar: 1.39 / 1.68.",
+      "terms": [
+        "Table 7.7",
+        "Gas pass width",
+        "Tubes per row",
+        "Overall heat transfer coefficient",
+        "Flue gas pressure drop",
+        "Heat transfer surface"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-131",
+      "doc_id": "R030",
+      "section": "7.2.3.1. Optimization variables and thermal design results of the HRSG sections, case 1",
+      "page_start": 87,
+      "page_end": 88,
+      "text": "Tables 7.8 and 7.9 cover superheater no. 1. Better bundle arrangement and fin geometry raised its overall heat transfer coefficient by 25.5% over the existing unit, lowering required surface. The row count dropped most: with equal length and width imposed on all sections, choosing transverse pitch and rounding rows is critical; the optimized transverse pitch is smaller, so tubes per row rose and rows fell from three to two, and total tube quantity is lower. Fins per meter, fin thickness and fin height are stated to be reduced versus the existing unit. Less surface, fewer tubes and lighter fins reduce weight and cost, giving better fitness; fin tip and tube wall temperatures remain within limits.",
+      "terms": [
+        "superheater no. 1",
+        "25.5%",
+        "overall heat transfer coefficient",
+        "transverse pitch",
+        "tubes per row",
+        "fitness",
+        "fin tip"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-132",
+      "doc_id": "R030",
+      "section": "7.2.3.1. Optimization variables and thermal design results of the HRSG sections, case 1",
+      "page_start": 89,
+      "page_end": 89,
+      "text": "Table 7.8 Variables of existing and optimized superheater no. 1, case 1 (Existing / Optimized): Tube arrangement: staggered / staggered; Tube diameter, mm: 38.1 / 38.1; Transverse pitch, mm: 96 / 69.1; Longitudinal pitch, mm: 90 / 90.3; Fin type: serrated / serrated; Fin height, mm: 15 / 13.2; Fin thickness, mm: 1.2 / 1; Fins per meter: 225 / 236; Segment width, mm: 4 / 4; Number of rows: 3 / 2; Steam velocity, m/s: 9.6 / 9.9; Number of tubes on the circumference of a header: 3 / 2.",
+      "terms": [
+        "Table 7.8",
+        "superheater no. 1",
+        "Transverse pitch",
+        "Fin height",
+        "Fins per meter",
+        "Number of rows"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-133",
+      "doc_id": "R030",
+      "section": "7.2.3.1. Optimization variables and thermal design results of the HRSG sections, case 1",
+      "page_start": 90,
+      "page_end": 90,
+      "text": "Table 7.9 Thermal design result of the existing and optimized superheater no. 1, case 1 (Existing / Optimized): Length of fin tubes, mm: 15,700 / 15,916.2; Gas pass length, mm: 15,736 / 15,964.2; Gas pass width, mm: 7,536 / 7,086; Tubes per row: 78 / 102; Overall heat transfer coefficient, W/m²·K: 40.4 / 50.7; Flue gas pressure drop, mbar: 1.38 / 2.14; Heat transfer surface, m²: 4,843.2 / 3,629.4; Steam pressure drop, bar: 0.65 / 0.59.",
+      "terms": [
+        "Table 7.9",
+        "Tubes per row",
+        "Overall heat transfer coefficient",
+        "Flue gas pressure drop",
+        "Heat transfer surface",
+        "Steam pressure drop"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-134",
+      "doc_id": "R030",
+      "section": "7.2.3.1. Optimization variables and thermal design results of the HRSG sections, case 1",
+      "page_start": 90,
+      "page_end": 91,
+      "text": "Tables 7.10 and 7.11 cover the evaporator, where transverse pitch must again be optimized and rows rounded to keep common dimensions. Fins per meter and fin height were lowered to save weight and improve fitness. The ratios (h_f/s_f) and (S_L/S_T) are smaller than in the existing evaporator, so C_3 and C_5 in equations (18) and (20) rise and the outside coefficient in equation (15) increases. With a high inside coefficient, the evaporator's overall coefficient depends mainly on the outside one, so it rises too, cutting required surface and evaporator cost.",
+      "terms": [
+        "evaporator",
+        "h_f/s_f",
+        "S_L/S_T",
+        "C_3",
+        "C_5",
+        "outside coefficient",
+        "overall coefficient"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-135",
+      "doc_id": "R030",
+      "section": "7.2.3.1. Optimization variables and thermal design results of the HRSG sections, case 1",
+      "page_start": 91,
+      "page_end": 91,
+      "text": "Table 7.10 Variables of the existing and optimized evaporators, case 1 (Existing / Optimized): Tube arrangement: staggered / staggered; Tube diameter, mm: 38.1 / 38.1; Transverse pitch, mm: 96 / 105; Longitudinal pitch, mm: 90 / 87.4; Fin type: serrated / serrated; Fin height, mm: 17 / 15.6; Fin thickness, mm: 1.2 / 1.2; Fins per meter: 240 / 190; Segment width, mm: 4 / 4.5; Number of rows: 15 / 18; Water/steam velocity, m/s: - / -; number of tubes on the circumference of a header: 3 / 3.",
+      "terms": [
+        "Table 7.10",
+        "evaporators",
+        "Transverse pitch",
+        "Fin height",
+        "Fins per meter",
+        "Number of rows"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-136",
+      "doc_id": "R030",
+      "section": "7.2.3.1. Optimization variables and thermal design results of the HRSG sections, case 1",
+      "page_start": 92,
+      "page_end": 92,
+      "text": "Table 7.11 Thermal design results of the existing and optimized evaporators, case 1 (Existing / Optimized): Length of fin tube, mm: 15,700 / 15,916.2; Gas pass length, mm: 15,736 / 15,964.2; Gas pass width, mm: 7,536 / 7,086; Tubes per row: 78 / 67; Overall heat transfer coefficient, W/m²·K: 49.2 / 54; Flue gas pressure drop, mbar: 6.84 / 5.56; Heat transfer surface, m²: 29,159.6 / 21,941.4.",
+      "terms": [
+        "Table 7.11",
+        "evaporators",
+        "Tubes per row",
+        "Overall heat transfer coefficient",
+        "Flue gas pressure drop",
+        "Heat transfer surface"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-137",
+      "doc_id": "R030",
+      "section": "7.2.3.1. Optimization variables and thermal design results of the HRSG sections, case 1",
+      "page_start": 92,
+      "page_end": 93,
+      "text": "Tables 7.12 and 7.13 cover the economizer, which must also match the common length and width, making transverse pitch and row rounding critical. The optimized economizer uses a smaller tube diameter, which per the ASME code [22] permits a thinner tube wall and lowers cost. Fins per meter, fin thickness and fin height were reduced, and smaller (h_f/s_f) and (S_L/S_T) ratios raise C_3 and C_5 in equations (18) and (20) and thus the outside coefficient in equation (15). Since the economizer's inside coefficient far exceeds its outside one, equation (11) shows the overall coefficient follows the outside value; it rose by 27.3% over the existing economizer, reducing surface, weight and cost and improving fitness.",
+      "terms": [
+        "economizer",
+        "tube diameter",
+        "ASME code",
+        "h_f/s_f",
+        "C_3",
+        "27.3%",
+        "fitness"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-138",
+      "doc_id": "R030",
+      "section": "7.2.3.1. Optimization variables and thermal design results of the HRSG sections, case 1",
+      "page_start": 94,
+      "page_end": 94,
+      "text": "Table 7.12 Variables of the existing and optimized economizers, case 1 (Existing / Optimized): Tube arrangement: staggered / staggered; Tube diameter, mm: 38.1 / 31.8; Transverse pitch, mm: 96 / 100.5; Transverse pitch (second row with the same label), mm: 90 / 70.1; Fin type: serrated / serrated; Fin height, mm: 17 / 13.5; Fin thickness, mm: 1.2 / 0.8; Fins per meter: 236 / 214; Segment width, mm: 4 / 4.5; Number of rows: 10 / 16; Water velocity, m/s: 0.67 / 1.09; Number of tubes on the circumference of a header: 2 / 2; Approach point, °C: 21 / 16.17.",
+      "terms": [
+        "Table 7.12",
+        "economizers",
+        "Tube diameter",
+        "Fin thickness",
+        "Water velocity",
+        "Approach point"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-139",
+      "doc_id": "R030",
+      "section": "7.2.3.1. Optimization variables and thermal design results of the HRSG sections, case 1",
+      "page_start": 95,
+      "page_end": 95,
+      "text": "Table 7.13 Thermal design result of the existing and optimized economizers, case 1 (Existing / Optimized): Length of fin tube, mm: 15,700 / 15,916.2; Gas pass length, mm: 15,736 / 15,964.2; Gas pass width, mm: 7,536 / 7,086; Tubes per row: 78 / 70; Overall heat transfer coefficient, W/m²·K: 39.2 / 49.9; Flue gas pressure drop, mbar: 3.67 / 3.22; Heat transfer surface, m²: 19,140.1 / 15,192.8; Steam pressure drop, bar: 4.8 / 1.18.",
+      "terms": [
+        "Table 7.13",
+        "economizers",
+        "Overall heat transfer coefficient",
+        "Flue gas pressure drop",
+        "Heat transfer surface",
+        "Steam pressure drop"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-140",
+      "doc_id": "R030",
+      "section": "7.2.3.2. General data and cost (objective function) comparison of the optimized and existing HRSGs, case 1",
+      "page_start": 96,
+      "page_end": 96,
+      "text": "Table 7.14 Comparison of the existing and optimized HRSGs, case 1 (Existing HRSG / Optimized HRSG): Length of fin tube, mm: 15,700 / 15,916.2; Gas pass length, mm: 15,736 / 15,964.2; Gas pass width, mm: 7,536 / 7,086; Flue gas outlet temperature, °C: 245.9 / 244.9; Approach point, °C: 21 / 16.17; Pinch point, °C: 9.1 / 13.82; Flue gas pressure drop, mbar: 12.68 / 11.8; Steam pressure drop, bar: 2.04 / 2.27; Economizer water pressure drop, bar: 4.8 / 1.18; Heat transfer surface, m²: 54,948.3 / 42,702.6; Total weight, t: 281 / 216; Capital cost (Objective function), USD: 2,113,428 / 1,598,428.",
+      "terms": [
+        "Table 7.14",
+        "Flue gas outlet temperature",
+        "Pinch point",
+        "Approach point",
+        "Total weight",
+        "Capital cost"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-141",
+      "doc_id": "R030",
+      "section": "7.2.3.2. General data and cost (objective function) comparison of the optimized and existing HRSGs, case 1",
+      "page_start": 95,
+      "page_end": 97,
+      "text": "Table 7.14 (above) compares general data and cost. Because case 1 constraint ranges mirror the existing HRSG, overall dimensions are nearly the same: the optimized fin tube is only 1.3% longer, and gas pass length and width are close to those of the existing unit. To deliver the guaranteed HP steam capacity, pressure and temperature, the optimized HRSG's flue gas outlet temperature must not exceed that of the existing unit; at 244.9°C versus 245.9°C it is lower, so the guaranteed steam capacity is met. Beyond reducing surface and section cost, finding optimum pinch and approach points (see 4.2.2) is the main aim. Evaporation occurs at constant temperature, so for fixed steam generation and thermal efficiency the combined evaporator and economizer duty, and hence pinch plus approach, is constant; since economizer heat transfer is cheaper, designers shift duty toward it. The optimized HRSG has a larger pinch and smaller approach than the existing one, meaning the program enlarged the economizer and shrank the evaporator to lower total cost.",
+      "terms": [
+        "flue gas outlet temperature",
+        "244.9°C",
+        "245.9°C",
+        "pinch",
+        "approach",
+        "economizer",
+        "evaporator"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-142",
+      "doc_id": "R030",
+      "section": "7.2.3.2. General data and cost (objective function) comparison of the optimized and existing HRSGs, case 1",
+      "page_start": 97,
+      "page_end": 97,
+      "text": "The flue gas draft loss (4.2.1) of the optimized HRSG is lower than the existing one, so the gas turbine's allowable back pressure is respected in case 1. Steam and water pressure drops (4.2.4) are 2.27 and 1.18 bar, within Table 7.5 limits. Better variables raised the overall heat transfer in superheater no. 1, evaporator and economizer, reducing their surface and thus HRSG weight and capital cost markedly: per Table 7.14, total weight falls by 23.1 % and cost by 24.3 % relative to the existing HRSG.",
+      "terms": [
+        "flue gas draft loss",
+        "back pressure",
+        "2.27",
+        "1.18 bar",
+        "Table 7.5",
+        "23.1 %",
+        "24.3 %"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-143",
+      "doc_id": "R030",
+      "section": "7.2.3.3. Comparison of the heat transfer surface in the existing and optimized HRSGs, case 1",
+      "page_start": 98,
+      "page_end": 98,
+      "text": "Section-wise heat transfer surfaces of the existing and optimized HRSG are plotted (cited in the text as Fig. 7.2, captioned Fig. 7.1); apart from superheater no. 2, every section's surface was reduced simply through better variable choice. Fig. 7.1: section-by-section and total heat transfer surface, case 1.",
+      "terms": [
+        "heat transfer surfaces",
+        "superheater no. 2",
+        "Fig. 7.1",
+        "case 1"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-144",
+      "doc_id": "R030",
+      "section": "7.3. HRSG optimization, case 2",
+      "page_start": 98,
+      "page_end": 99,
+      "text": "Case 1 used variable and constraint ranges near the existing boiler, but engineering judgment, design recommendations and fin tube manufacturing capability allow, and recommend, wider ranges. Case 2 therefore widens the ranges, e.g. admitting more fins per meter, and its variables, constraints, design parameters and thermal design are compared with the existing HRSG below.",
+      "terms": [
+        "case 2",
+        "fins per meter",
+        "fin tube",
+        "manufacturing capability",
+        "engineering judgment"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-145",
+      "doc_id": "R030",
+      "section": "7.3.1. Variation ranges of the optimization variables, case 2",
+      "page_start": 99,
+      "page_end": 99,
+      "text": "Tables 7.15 and 7.16 list the genes and allowed ranges for all sections in case 2; relative to case 1, larger values of tube diameter, fins per meter, transverse and longitudinal pitch, steam velocity and number of rows are admitted.",
+      "terms": [
+        "Tables 7.15",
+        "genes",
+        "tube diameter",
+        "fins per meter",
+        "steam velocity",
+        "number of rows"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-146",
+      "doc_id": "R030",
+      "section": "7.3.1. Variation ranges of the optimization variables, case 2",
+      "page_start": 100,
+      "page_end": 100,
+      "text": "Table 7.15 Design variables and variation range for superheater no. 2 and superheater no. 1, case 2 (SH2 / SH1): Tube diameter, mm: SH2=31.8, 33.7, 38.1, 44.5; SH1=31.8, 33.7, 38.1, 44.5. Tube arrangement: SH2=in line, staggered; SH1=in line, staggered. Fin height, mm: SH2=8 to 15; SH1=10 to 20. Fin thickness, mm: SH2=0.8,0.9,1,1.1,1.2; SH1=0.8,0.9,1,1.1,1.2. Fins per meter: SH2=100 to 180; SH1=140 to 276. Fin type: SH2=solid, serrated; SH1=solid, serrated. Transvers pitch, mm: SH2=55 to 130; SH1=55 to 130. Longitudinal pitch, mm: SH2=55 to 130; SH1=55 to 130. Steam velocity, m/s: SH2=10 to 30; SH1=7 to 40. Number of tube rows: SH2=1 to 6; SH1=1 to 6. Segment width, mm: SH2=4, 4.5; SH1=4, 4.5. number of tubes on the circumference of a header: SH2=2, 3; SH1=2, 3.",
+      "terms": [
+        "Table 7.15",
+        "superheater no. 2",
+        "44.5",
+        "Fins per meter",
+        "Transvers pitch",
+        "Steam velocity",
+        "Number of tube rows"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-147",
+      "doc_id": "R030",
+      "section": "7.3.1. Variation ranges of the optimization variables, case 2",
+      "page_start": 101,
+      "page_end": 101,
+      "text": "Table 7.16 Design variables and variation range for evaporator and economizer, case 2 (Evaporator / Economizer): Tube diameter, mm: Evaporator=33.7, 38.1, 44.5; Economizer=31.8, 33.7, 38.1. Tube arrangement: Evaporator=in line, staggered; Economizer=in line, staggered. Fin height, mm: Evaporator=10 to 20; Economizer=10 to 20. Fin thickness, mm: Evaporator=0.8,0.9,1,1.1,1.2; Economizer=0.8,0.9,1,1.1,1.2. Fins per meter: Evaporator=140 to 276; Economizer=140 to 276. Fin type: Evaporator=solid, serrated; Economizer=solid, serrated. Transvers pitch, mm: Evaporator=55 to 130; Economizer=55 to 130. Longitudinal pitch, mm: Evaporator=55 to 130; Economizer=55 to 130. Water velocity, m/s: Evaporator=-; Economizer=0.6 to 1.5. Number of tube rows: Evaporator=2 to 30; Economizer=2 to 30. Segment width, mm: Evaporator=4, 4.5; Economizer=4, 4.5. number of tubes on the circumference of a header: Evaporator=1, 2, 3; Economizer=2, 3.",
+      "terms": [
+        "Table 7.16",
+        "evaporator",
+        "economizer",
+        "Fins per meter",
+        "Water velocity",
+        "Segment width"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-148",
+      "doc_id": "R030",
+      "section": "7.3.2. Constraints and their range of variation, case 2",
+      "page_start": 101,
+      "page_end": 102,
+      "text": "Constraint ranges strongly influence results, and the wider case 2 ranges should give better fitness and lower cost than case 1: overall dimensions, steam pressure drop, pinch point and approach point are wider, while the allowable flue gas draft loss stays as in case 1 because of gas turbine back pressure, and the acceptable fin tip temperature again follows the ASME code [21]. Table 7.17 Constraints and their variation range, case 2: Allowable flue gas draft loss, mbar: From=-, To=13. Tube length, mm: From=14,000, To=22,000. Width of HRSG, mm: From=3,000, To=10,000. Fin tip temperature of carbon steel, °C: From=-, To=449. Fin tip temperature of alloy steel, °C: From=450, To=650. Economizer water pressure drop, Bar: From=-, To=5. Pinch point, °C: From=8, To=28. Approach point, °C: From=8, To=28. Steam pressure drop, bar: From=-, To=5. Maximum spray water flow as Percentage of total steam flow, %: From=-, To=5.",
+      "terms": [
+        "Table 7.17",
+        "flue gas draft loss",
+        "back pressure",
+        "ASME code",
+        "Tube length",
+        "Pinch point",
+        "Approach point",
+        "fin tip temperature"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-149",
+      "doc_id": "R030",
+      "section": "7.3.3. Optimization results and comparison, case 2",
+      "page_start": 102,
+      "page_end": 103,
+      "text": "Case 2 results are presented as in case 1: section variables and thermal design versus the existing HRSG in 7.3.3.1, general data and cost (objective function) in 7.3.3.2, and heat transfer surfaces in 7.3.3.3.",
+      "terms": [
+        "case 2",
+        "objective function",
+        "heat transfer surfaces",
+        "thermal design"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-150",
+      "doc_id": "R030",
+      "section": "7.3.3.1. Optimization variables and thermal design results of the HRSG sections, case 2",
+      "page_start": 103,
+      "page_end": 104,
+      "text": "Tables 7.18 and 7.19 cover superheater no. 2 in case 2. Versus the existing unit, rows, fins per meter, fin thickness, longitudinal pitch (S_L) and transvers pitch (S_T) decreased while fin height increased, and an in line arrangement with serrated fins was chosen. Although both pitches are smaller with the in line layout, the ratio (S_L/S_T) was raised to increase C_5 in equation (19), improving the outside coefficient. Rows dropped markedly: the smaller transverse pitch gives more tubes per row and fewer rows, so total tube count is lower; together with fewer, thinner fins, total weight and cost fall and fitness improves, while fin and tube wall temperatures, the main constraints here, remain satisfied.",
+      "terms": [
+        "superheater no. 2",
+        "S_L",
+        "S_T",
+        "in line arrangement",
+        "serrated fins",
+        "S_L/S_T",
+        "C_5",
+        "tubes per row"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-151",
+      "doc_id": "R030",
+      "section": "7.3.3.1. Optimization variables and thermal design results of the HRSG sections, case 2",
+      "page_start": 104,
+      "page_end": 104,
+      "text": "Table 7.18 Variables of the existing and optimized superheaters no. 2, case 2 (Existing / Optimized): Tube arrangement: staggered / in line; Tube diameter, mm: 38.1 / 38.1; Transverse pitch, mm: 96 / 78; Longitudinal pitch, mm: 90 / 82.4; Fin type: solid / serrated; Fin height, mm: 10 / 13; Fin thickness, mm: 1.2 / 0.9; Fins per meter: 120 / 116; Segment width, mm: 4 / 4; Number of rows: 3 / 2; Steam velocity, m/s: 15 / 18; number of tubes on the circumference of a header: 3 / 2.",
+      "terms": [
+        "Table 7.18",
+        "superheaters no. 2",
+        "in line",
+        "Transverse pitch",
+        "Fins per meter",
+        "Number of rows"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-152",
+      "doc_id": "R030",
+      "section": "7.3.3.1. Optimization variables and thermal design results of the HRSG sections, case 2",
+      "page_start": 105,
+      "page_end": 105,
+      "text": "Table 7.19 Thermal design results of the existing and optimized superheaters no. 2, case 2 (Existing / Optimized): Length of fin tube, mm: 15,700 / 16,484.3; Gas pass length, mm: 15,736 / 16,533; Gas pass width, mm: 7,536 / 7,488; Tubes per row: 78 / 96; Overall heat transfer coefficient, W/m²·K: 61.8 / 55.88; Flue gas pressure drop, mbar: 0.79 / 0.75; Heat transfer surface, m²: 1,805.4 / 1,975.5; Steam pressure drop, bar: 1.39 / 1.44.",
+      "terms": [
+        "Table 7.19",
+        "Length of fin tube",
+        "Tubes per row",
+        "Overall heat transfer coefficient",
+        "Heat transfer surface",
+        "Steam pressure drop"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-153",
+      "doc_id": "R030",
+      "section": "7.3.3.1. Optimization variables and thermal design results of the HRSG sections, case 2",
+      "page_start": 105,
+      "page_end": 106,
+      "text": "Tables 7.20 and 7.21 cover superheater no. 1 in case 2. With common length and width, the best transverse pitch was found; fins per meter, fin thickness, fin height and tube diameter are all smaller than in the existing unit. A lower (h_f/s_f) raises C_3 in equation (18) and the outside coefficient in equation (15), and per the ASME code [22] the smaller tube diameter allows a thinner wall and less weight. Improved bundle arrangement and fin geometry raised the overall heat transfer coefficient by 43.6%, reducing surface, weight and cost; fin tip and tube wall temperatures remain allowable.",
+      "terms": [
+        "superheater no. 1",
+        "h_f/s_f",
+        "C_3",
+        "ASME code",
+        "43.6%",
+        "overall heat transfer coefficient",
+        "fin tip"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-154",
+      "doc_id": "R030",
+      "section": "7.3.3.1. Optimization variables and thermal design results of the HRSG sections, case 2",
+      "page_start": 106,
+      "page_end": 106,
+      "text": "Table 7.20 Variables of existing and optimized superheater no. 1, case 2 (Existing / Optimized): Tube arrangement: staggered / staggered; Tube diameter, mm: 38.1 / 31.8; Transverse pitch, mm: 96 / 57.4; Longitudinal pitch, mm: 90 / 55.2; Fin type: serrated / serrated; Fin height, mm: 15 / 10.7; Fin thickness, mm: 1.2 / 0.8; Fins per meter: 225 / 212; Segment width, mm: 4 / 4; Number of rows: 3 / 2; Steam velocity, m/s: 9.6 / 12.2; number of tubes on the circumference of a header: 3 / 2.",
+      "terms": [
+        "Table 7.20",
+        "superheater no. 1",
+        "Tube diameter",
+        "Transverse pitch",
+        "Fin height",
+        "Steam velocity"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-155",
+      "doc_id": "R030",
+      "section": "7.3.3.1. Optimization variables and thermal design results of the HRSG sections, case 2",
+      "page_start": 107,
+      "page_end": 107,
+      "text": "Table 7.21 Thermal design results of the existing and optimized superheaters no. 1, case 2 (Existing / Optimized): Length of fin tube, mm: 15,700 / 16,484.3; Gas pass length, mm: 15,736 / 16,533; Gas pass width, mm: 7,536 / 7,488; Tubes per row: 78 / 130; Overall heat transfer coefficient, W/m²·K: 40.4 / 58.03; Flue gas pressure drop, mbar: 1.38 / 1.72; Heat transfer surface, m²: 4,843.2 / 3,131.3; Steam pressure drop, bar: 0.65 / 0.92.",
+      "terms": [
+        "Table 7.21",
+        "Tubes per row",
+        "Overall heat transfer coefficient",
+        "Flue gas pressure drop",
+        "Heat transfer surface",
+        "Steam pressure drop"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-156",
+      "doc_id": "R030",
+      "section": "7.3.3.1. Optimization variables and thermal design results of the HRSG sections, case 2",
+      "page_start": 107,
+      "page_end": 107,
+      "text": "Tables 7.22 and 7.23 cover the evaporator in case 2, whose transverse pitch was optimized and rows rounded to keep common dimensions. The number of rows is the main reduction, tied to the optimized pinch point, which is much higher than in the existing evaporator; the optimized evaporator therefore transfers less heat, needs less surface and is lighter and cheaper.",
+      "terms": [
+        "evaporator",
+        "transverse pitch",
+        "number of rows",
+        "pinch point",
+        "surface"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-157",
+      "doc_id": "R030",
+      "section": "7.3.3.1. Optimization variables and thermal design results of the HRSG sections, case 2",
+      "page_start": 108,
+      "page_end": 108,
+      "text": "Table 7.22 Variables of the existing and optimized evaporators, case 2 (Existing / Optimized): Tube arrangement: staggered / staggered; Tube diameter, mm: 38.1 / 38.1; Transverse pitch, mm: 96 / 78.4; Longitudinal pitch, mm: 90 / 71.6; Fin type: serrated / serrated; Fin height, mm: 17 / 16.7; Fin thickness, mm: 1.2 / 0.8; Fins per meter: 240 / 274; Segment width, mm: 4 / 4.5; Number of rows: 15 / 9; Water velocity, m/s: - / -; number of tubes on the circumference of a header: 3 / 3.",
+      "terms": [
+        "Table 7.22",
+        "evaporators",
+        "Transverse pitch",
+        "Fins per meter",
+        "Number of rows",
+        "Segment width"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-158",
+      "doc_id": "R030",
+      "section": "7.3.3.1. Optimization variables and thermal design results of the HRSG sections, case 2",
+      "page_start": 109,
+      "page_end": 109,
+      "text": "Table 7.23 Thermal design results of the existing and optimized evaporators, case 2 (Existing / Optimized): Length of fin tube, mm: 15,700 / 16,484.3; Gas pass length, mm: 15,736 / 16,533; Gas pass width, mm: 7,536 / 7,488; Tubes per row: 78 / 95; Overall heat transfer coefficient, W/m²·K: 49.2 / 46.22; Flue gas pressure drop, mbar: 6.84 / 6.45; Heat transfer surface, m²: 29,159.6 / 23,135.8; Pinch point, °C: 9.1 / 17.54.",
+      "terms": [
+        "Table 7.23",
+        "evaporators",
+        "Overall heat transfer coefficient",
+        "Heat transfer surface",
+        "Pinch point",
+        "17.54"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-159",
+      "doc_id": "R030",
+      "section": "7.3.3.1. Optimization variables and thermal design results of the HRSG sections, case 2",
+      "page_start": 109,
+      "page_end": 109,
+      "text": "Tables 7.24 and 7.25 cover the economizer in case 2; its transverse pitch was optimized and rows rounded to match the other sections. The smaller tube diameter permits a thinner tube wall under the ASME code [22], and fin thickness is also lower than in the existing economizer, so weight and cost were reduced.",
+      "terms": [
+        "economizer",
+        "transverse pitch",
+        "ASME code",
+        "tube wall",
+        "fin thickness"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-160",
+      "doc_id": "R030",
+      "section": "7.3.3.1. Optimization variables and thermal design results of the HRSG sections, case 2",
+      "page_start": 110,
+      "page_end": 110,
+      "text": "Table 7.24 Variables of existing and optimized economizer, Case 2 (Existing / Optimized): Tube arrangement: staggered / staggered; Tube diameter, mm: 38.1 / 31.8; Transverse pitch, mm: 96 / 86.6; Longitudinal pitch, mm: 90 / 79.6; Fin type: serrated / serrated; Fin height, mm: 17 / 18.7; Fin thickness, mm: 1.2 / 0.8; Fins per meter: 236 / 271; Segment width, mm: 4 / 4; Number of rows: 10 / 10; Water velocity, m/s: 0.67 / 0.89; number of tubes on the circumference of a header: 2 / 2; Approach point, °C: 21 / 12.51.",
+      "terms": [
+        "Table 7.24",
+        "economizer",
+        "Tube diameter",
+        "Fins per meter",
+        "Water velocity",
+        "Approach point"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-161",
+      "doc_id": "R030",
+      "section": "7.3.3.1. Optimization variables and thermal design results of the HRSG sections, case 2",
+      "page_start": 111,
+      "page_end": 111,
+      "text": "Table 7.25 Thermal design results of the existing and optimized economizers, case 2 (Existing / Optimized): Length of fin tube, mm: 15,700 / 16,484.3; Gas pass length, mm: 15,736 / 16,533; Gas pass width, mm: 7,536 / 7,488; Tubes per row: 78 / 86; Overall heat transfer coefficient, W/m²·K: 39.2 / 35.79; Flue gas pressure drop, mbar: 3.67 / 3.47; Heat transfer surface, m²: 19,140.1 / 22,576.2; Water pressure drop, Bar: 4.8 / 0.51; Approach point, °C: 21 / 12.51.",
+      "terms": [
+        "Table 7.25",
+        "economizers",
+        "Overall heat transfer coefficient",
+        "Heat transfer surface",
+        "Water pressure drop",
+        "Approach point"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-162",
+      "doc_id": "R030",
+      "section": "7.3.3.2. General data and cost (objective function) comparison of the optimized and existing HRSGs, case 2",
+      "page_start": 112,
+      "page_end": 112,
+      "text": "Table 7.26 Comparison of the existing and optimized HRSGs, case 2 (Existing HRSG / Optimized HRSG): Length of fin tube, mm: 15,700 / 16,484.3; Gas pass length, mm: 15,736 / 16,533; Gas pass width, mm: 7,536 / 7,488; Approach point, °C: 21 / 12.51; Pinch point, °C: 9.1 / 17.54; Flue gas outlet temperature, °C: 245.9 / 245.7; Flue gas pressure drop, mbar: 12.68 / 12,38; Heat transfer surface, m²: 54,948.3 / 50,818.9; Steam pressure drop, bar: 2.04 / 2.37; Economizer water pressure drop, bar: 4.8 / 0.51; Total weight, t: 281 / 199.6; Capital cost (Objective function), USD: 2,113,428 / 1,496,960.",
+      "terms": [
+        "Table 7.26",
+        "Approach point",
+        "Pinch point",
+        "Flue gas pressure drop",
+        "Total weight",
+        "Capital cost",
+        "1,496,960"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-163",
+      "doc_id": "R030",
+      "section": "7.3.3.2. General data and cost (objective function) comparison of the optimized and existing HRSGs, case 2",
+      "page_start": 111,
+      "page_end": 113,
+      "text": "Table 7.26 (above) compares general data and cost. The wider case 2 constraint ranges gave better fitness. The optimized flue gas outlet temperature (245.7°C) is below the existing value (245.9°C), so the guaranteed steam capacity is met in case 2. Because economizer heat transfer is cheaper than evaporator heat transfer and case 2 allows wider pinch and approach ranges, the program chose a lower approach point than in case 1: 12.51°C versus 16.17°C (tables 7.14 and 7.26). Thus economizer duty was raised and evaporator duty cut, i.e. a bigger economizer was selected to lower total HRSG cost further. The case 2 flue gas draft loss is below that of the existing HRSG, so the gas turbine back pressure limit holds, and steam and water pressure drops satisfy table 7.17.",
+      "terms": [
+        "economizer",
+        "evaporator",
+        "approach point",
+        "12.51°C",
+        "16.17°C",
+        "draft loss",
+        "back pressure"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-164",
+      "doc_id": "R030",
+      "section": "7.3.3.2. General data and cost (objective function) comparison of the optimized and existing HRSGs, case 2",
+      "page_start": 113,
+      "page_end": 113,
+      "text": "Better variables in case 2 gave better fitness than case 1 and a large drop in weight and capital cost: per table 7.26, total weight and cost are 28.9% and 29.2% below the existing HRSG, and per tables 7.14 and 7.26 they are 7.6% and 6.3% below case 1. The case 2 results demonstrate the influence of constraint and variable ranges: wider ranges lead to better fitness and lower HRSG cost.",
+      "terms": [
+        "fitness",
+        "capital cost",
+        "28.9%",
+        "29.2%",
+        "7.6%",
+        "6.3%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-165",
+      "doc_id": "R030",
+      "section": "7.3.3.3. Comparison of the heat transfer surface in the existing and optimized HRSGs, case 2",
+      "page_start": 113,
+      "page_end": 114,
+      "text": "Section surfaces for case 2 are shown (referred to in the text as Fig. 7.3, captioned Fig. 7.2). Optimized superheater no. 2 has about the same surface as the existing one; superheater no. 1 and the evaporator have less; the economizer has more, because the program lowered the approach point to exploit cheaper economizer heat transfer. Per table 7.26 section costs fell significantly. Fig. 7.2: section-by-section and total heat transfer surface, case 2.",
+      "terms": [
+        "heat transfer surface",
+        "superheater no. 2",
+        "economizer",
+        "approach point",
+        "Fig. 7.2"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-166",
+      "doc_id": "R030",
+      "section": "8. Conclusion",
+      "page_start": 115,
+      "page_end": 116,
+      "text": "Combined cycle plants currently achieve the highest generation efficiency, and HRSGs are their most important component, also in cogeneration, with a profound role in plant and industrial economics; proper HRSG design and optimization is key to raising CCPP efficiency. HRSG optimization has two levels: the first sets the main thermodynamic and operating parameters, and the second, using those as input, produces the thermal and detailed design of the sections. Economic aspects matter as much as thermodynamics, and many authors have proposed thermodynamic HRSG optimization methods. This work covered both thermal design and cost optimization; applying exergy costing showed that cost optimization should target minimum HRSG capital investment.",
+      "terms": [
+        "CCPP",
+        "cogeneration",
+        "thermodynamic",
+        "operating parameters",
+        "Exergy costing",
+        "capital investment"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-167",
+      "doc_id": "R030",
+      "section": "8. Conclusion",
+      "page_start": 116,
+      "page_end": 117,
+      "text": "Four sections were modelled, with two superheaters included to avoid simplification and represent real plant HRSGs, steam being superheated in both with spray water injected between them to control outlet temperature. A comprehensive design program for all sections was combined with a genetic algorithm to minimize cost. Steam generation and temperature profiles cannot be set arbitrarily but follow from pinch point and approach point, which affect both thermodynamics and economics; normally taken from experience, here they are optimization variables. Variables also included water and steam velocity and every section's geometry (tube diameter, staggered or in-line arrangement, transverse and longitudinal pitch, rows, tubes per header circumference, fin height, thickness, density, solid or serrated type, segment width). All main constraints were met: minimum thermal efficiency, allowable draft loss of the flue gas, steam and water pressure drops, minimum gap between fin tubes, fin tip and tube wall temperatures, pinch and approach bounds and overall dimensions.",
+      "terms": [
+        "superheaters",
+        "spray water",
+        "genetic algorithm",
+        "pinch point",
+        "approach point",
+        "segment width",
+        "draft loss",
+        "fin tip"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-168",
+      "doc_id": "R030",
+      "section": "8. Conclusion",
+      "page_start": 117,
+      "page_end": 117,
+      "text": "The work yields the cost-minimizing pinch point, approach point, geometry and arrangement while satisfying all design constraints. Applied twice to an operating CCPP HRSG, case 1 used ranges near the existing values and case 2 wider ranges. Capital cost fell by 24.3% in case 1 and 29.2% in case 2 relative to the existing HRSG, purely through better variable selection. Pinch and approach points changed most: in both cases the approach point was lowered and the pinch point raised, a result linked to evaporator heat transfer; the optimized HRSGs have bigger economizers yet a lower combined economizer and evaporator cost, which favours lower approach and higher pinch.",
+      "terms": [
+        "pinch point",
+        "approach point",
+        "24.3%",
+        "29.2%",
+        "capital cost",
+        "economizers",
+        "evaporator"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-169",
+      "doc_id": "R030",
+      "section": "8. Conclusion",
+      "page_start": 117,
+      "page_end": 118,
+      "text": "Section heat duty depends on the product of overall heat transfer coefficient and surface, so for given ranges the best fin tube arrangement, geometry and specification should raise the coefficient and shrink surface, weight and cost. Serrated fins give higher coefficients than solid fins and are preferred in all sections, with flue gas pressure drop and fin tip and tube wall temperatures kept in check through arrangement and specification. Fin thickness was reduced in every section in both cases; thinner fins cut surface slightly but weight markedly, lowering cost. More fins per meter increase surface per unit tube length, reducing tube count and cost in economizer and evaporator, provided flue gas pressure drop stays below the gas turbine back pressure. Staggered tubes and serrated fins were chosen in most sections, and lower (h_f/s_f) and (S_L/S_T) ratios are recommended to raise the overall coefficient and minimize cost.",
+      "terms": [
+        "overall heat transfer coefficient",
+        "Serrated fins",
+        "fin tip",
+        "fin thickness",
+        "fins per meter",
+        "staggered",
+        "h_f/s_f",
+        "S_L/S_T"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-170",
+      "doc_id": "R030",
+      "section": "8. Conclusion",
+      "page_start": 118,
+      "page_end": 118,
+      "text": "Case 2 shows the effect of the ranges: wider limits gave better fitness and lower cost than case 1, with the program choosing a lower approach point and more fins per meter. The lowest allowable approach point is recommended for minimum cost, but steaming must be avoided in every operating case. Because the program provides a complete HRSG thermal design, other strategies and objective functions, such as minimum flue gas pressure drop, can be defined, and the program can be extended to HRSGs with several pressure levels through extra modules for a second or third drum.",
+      "terms": [
+        "fitness",
+        "approach point",
+        "fins per meter",
+        "steaming",
+        "objective functions",
+        "pressure levels",
+        "drum"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R030-171",
+      "doc_id": "R030",
+      "section": "Glossary",
+      "page_start": 119,
+      "page_end": 119,
+      "text": "Glossary of GA terms: Cost function, the function optimized; Cost, its output; Crossover rate, a value between zero and one giving how often crossover is applied to a population; Elitism, keeping the best-cost chromosome from one generation to the next; Evolution, a sequence of genetic changes through which organisms gain distinguishing traits; Evolutionary algorithm, any program using biological evolution concepts to solve problems, e.g. GAs, genetic programming, evolution strategies and evolutionary programming; Fitness, the opposite of cost, a relative merit attached to a chromosome; Fitness function, the negative of the cost function, a subroutine assigning fitness to a variable set; Genetic algorithm (GA), evolutionary computation devised by John Holland that models biological genetics with crossover and mutation operators; Mutation rate, the percentage of bits mutated per GA iteration; Optimization, iterative improvement of a solution against an objective function; Reproduction operator, the technique implementing reproduction; Natural selection, the fittest individuals reproduce and pass their genetic information to offspring.",
+      "terms": [
+        "Cost function",
+        "Crossover rate",
+        "Elitism",
+        "Evolutionary algorithm",
+        "Fitness function",
+        "Genetic algorithm (GA)",
+        "Mutation rate",
+        "Natural selection"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 171,
+    "pages_processed": "PDF 1-156 전체 검토 (처리: Abstract/Zusammenfassung PDF 7-9, Nomenclature/Abbreviations PDF 15-19, 본문 인쇄 1-118, Glossary 119)",
+    "last_paragraph_id": "R030-171",
+    "skipped": [
+      "표지·속표지·심사위원(Promotionsausschuss) 정보(PDF 1-4): 지시에 따라 제외",
+      "헌사(PDF 5) 및 Acknowledgements(PDF 6): 감사의 글 제외",
+      "Contents(인쇄 i-v), List of figures(xi-xii), List of tables(xiii-xiv): 목차·그림/표 목록 제외",
+      "References(인쇄 120-133, PDF 143-156): 참고문헌 목록 제외",
+      "머리글(장 제목)·바닥글(쪽 번호) 제외",
+      "그림 내용(Fig. 1.1-1.5, 2.1, 3.1-3.9, 5.1-5.2, 6.1-6.5, 7.1-7.2): 캡션만 수록, 그래프/도식 값은 추측하지 않음",
+      "이력서(CV)·부록: PDF에 해당 부분이 없음(문서는 References로 끝남)"
+    ],
+    "uncertain": [
+      "Abstract(PDF 7), Zusammenfassung(PDF 8-9)는 인쇄 쪽번호가 없어 PDF 쪽 번호 사용",
+      "Nomenclature/Abbreviations는 로마자 인쇄 쪽(vi-x)이라 정수 필드에 PDF 쪽 번호 15-19 사용",
+      "수식·Nomenclature 기호는 텍스트 추출에서 누락되어 페이지 이미지로 판독해 기입(지수·첨자 표기는 m^3식으로 변환)",
+      "원문에서 수식 번호 (39)가 두 번 사용됨: L_b = f_L d_o (p.30)와 ΔP = 0.02 (f + a) G^2 N_r / ρ_b (p.31) — 원문 번호 그대로 둠",
+      "식 (26) A_c = d_o + 2 h_f t_f n_f 는 원문 인쇄 그대로 옮김",
+      "Nomenclature에서 K, k_f, k_w 단위가 W/m²·K로, R_fi/R_fo 단위가 W/m²·K로 인쇄됨 — 원문 그대로",
+      "Table 7.12(p.94)에 'Transverse pitch' 행이 두 번 나옴(두 번째 90/70.1) — 라벨 그대로 두고 동일 라벨임을 표기",
+      "Table 7.13(p.95) 이코노마이저 결과의 'Steam pressure drop' 라벨(4.8/1.18) 원문 그대로",
+      "Table 7.26(p.112) 최적 HRSG 배가스 압력손실이 '12,38'로 인쇄(콤마) — 원문 그대로",
+      "p.88 본문은 최적 SH1의 fins per meter가 감소했다고 하나 Table 7.8은 225→236으로 증가 — 본문 서술과 표 값을 각각 원문대로 수록",
+      "그림 번호 불일치: 본문은 case 1/2 전열면적 그림을 Fig. 7.2/7.3으로 언급하나 캡션은 Fig. 7.1/7.2",
+      "p.80 본문은 두 케이스를 '7.3 and 7.4'로 지칭하나 실제 절은 7.2/7.3 — 요약에서는 절 번호 언급 생략",
+      "6.1.7, 6.2, 6.2.1, 6.2.3, 6.2.5, 7.2, 7.2.3, 7.3.1, 7.3.3 절은 절 전체가 50단어 미만 문단 1개라 절 경계 규칙상 병합하지 않음",
+      "7.2.3.2/7.3.3.2 도입 문단(p.95/p.111)은 같은 절의 표 뒤 본문 문단과 병합 → page_start가 표 문단보다 앞섬",
+      "IAPWS-IF97 적용 범위 수치(273.15 K ≤ T ≤ 1073.15 K, p ≤ 100 MPa 등)는 수치 유지 원칙에 따라 원문 표기 그대로",
+      "4.2.6 절 제목: 목차는 'Fin tube and operating data', 본문은 'Fin tube limitations' — 본문 제목 사용"
+    ]
+  }
+}

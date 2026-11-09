@@ -1,0 +1,620 @@
+{
+  "document": {
+    "doc_id": "R021",
+    "title": "관류형 아임계압 배열회수보일러의 열성능 모델링과 검증",
+    "authors": [
+      "이채수",
+      "최영준",
+      "김현기",
+      "양옥철",
+      "정재헌"
+    ],
+    "year": 2004,
+    "venue": "대한기계학회 2004년도 추계학술대회 논문집, pp.1692-1697",
+    "doi": "",
+    "url": "",
+    "license": "원문에 라이선스 표기 없음; PDF 각 쪽에 'Copyright (C) 2005 NuriMedia Co., Ltd.' 워터마크 (DBpia/NuriMedia 제공, 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "ko"
+  },
+  "paragraphs": [
+    {
+      "id": "R021-001",
+      "doc_id": "R021",
+      "section": "Abstract",
+      "page_start": 1692,
+      "page_end": 1692,
+      "text": "Once-through HRSG designs suit operation at very high pressure and temperature, extending well into the supercritical region, and they are simpler in construction than drum-type units. In a drum-type boiler every tube bank has a fixed function (feedwater preheating, vaporization or superheating), so empirical correlations giving a mean heat transfer coefficient for each regime can be applied. That separation does not exist in a once-through heat recovery steam generator: because the distinct economizer, boiler and superheater sections of the drum design are absent, the mathematical model must be modified, general correlations must be applied tube by tube, and the actual heat transfer condition inside each tube has to be determined.",
+      "terms": [
+        "Once-through",
+        "HRSG",
+        "supercritical",
+        "drum-type",
+        "heat transfer coefficient",
+        "heat recovery steam generator",
+        "economizer",
+        "superheater"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-002",
+      "doc_id": "R021",
+      "section": "기호설명",
+      "page_start": 1692,
+      "page_end": 1692,
+      "text": "기호설명(Nomenclature) 표를 정리하면 다음과 같다. A: 의미=표면적; 단위=m^2. d: 의미=직경; 단위=m. h: 의미=전열계수; 단위=kW/m^2K. L: 의미=전열관 길이; 단위=m. ṁ: 의미=질량유속; 단위=kg/m^2s. Nu: 의미=Nusselt 수. P: 의미=압력; 단위=bara. △P: 의미=압력강하; 단위=mbar. Pr: 의미=Prandtl수. q: 의미=흡열량; 단위=kW. Re: 의미=Reynold 수. Rf: 의미=오염계수; 단위=m^2K/kW. SL: 의미=횡방향 거리; 단위=m. SLN: 의미=종방향 전열관 개수. ST: 의미=종방향 거리; 단위=m. T: 의미=온도; 단위=℃. U: 의미=총괄열전달 계수; 단위=kW/m^2K. v: 의미=비체적; 단위=m^3/kg. x: 의미=건도. μ: 의미=점성계수; 단위=Ns/m^2. ρ: 의미=밀도; 단위=kg/m^3. 상첨자 ’: 포화수; 상첨자 ”: 포화증기. 하첨자 f: 물/증기; g: 가스; i: 내부; o: 외부.",
+      "terms": [
+        "Nusselt",
+        "Prandtl",
+        "오염계수",
+        "총괄열전달 계수",
+        "건도",
+        "kW/m^2K",
+        "포화증기",
+        "질량유속"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-003",
+      "doc_id": "R021",
+      "section": "1.1 배열회수 보일러의 개발 동향",
+      "page_start": 1692,
+      "page_end": 1693,
+      "text": "가스터빈 기술이 빠르게 발전하면서 대용량 가스터빈이 나오고 가스터빈 출구 온도도 함께 상승하였다. 늘어난 출구 열을 회수하려고 배열회수 보일러의 주증기 온도·압력 역시 높아졌으며, 이 흐름 때문에 기존 드럼형 외에 관류형 배열회수 보일러의 개발이 필요해지고 있다.",
+      "terms": [
+        "가스터빈",
+        "배열회수 보일러",
+        "주증기",
+        "드럼형",
+        "관류형"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-004",
+      "doc_id": "R021",
+      "section": "1.2 관류형 배열회수 보일러의 개발 배경",
+      "page_start": 1693,
+      "page_end": 1693,
+      "text": "관류형 배열회수 보일러가 요구되는 이유로는 플랜트 효율 향상, 부분부하 특성의 이점, start-up 시간 단축 등이 꼽히며, 이 때문에 가스터빈 제작사와 여러 선진 발전 업체가 관련 기술 개발에 뛰어들고 있다. 저자들의 회사도 앞으로 열릴 관류형 배열회수 보일러 시장에 자사 모델을 적용하려고 2000년부터 개발을 진행해 왔다. 본 논문은 본격 개발에 앞서, 이미 알려진 전열 관련 식과 자사 모델링 process로 관류형 배열회수 보일러의 열성능을 평가하고 그 결과를 실험값과 비교·검증한 내용을 다룬다.",
+      "terms": [
+        "관류형 배열회수 보일러",
+        "플랜트 효율",
+        "부분부하",
+        "start-up",
+        "process",
+        "열성능"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-005",
+      "doc_id": "R021",
+      "section": "2.1 계산모델",
+      "page_start": 1693,
+      "page_end": 1693,
+      "text": "드럼형 배열회수보일러는 증발기·절탄기·과열기 각 모듈에 맞는 전열식을 적용해 전체를 한 번에 계산한다. 반면 관류형에서는 단상의 물이 들어와 고온 가스에서 열을 받아 포화 상태의 작동유체가 되고, 증발관 출구에서는 과열증기가 되어 빠져나간다. 따라서 증발관 안에는 Fig. 1처럼 여러 조건의 유동이 생기므로 이 유동특성을 정확히 그려낼 수 있도록 계산해야 한다. Fig.2는 2상류가 있는 증발관의 열계산 방법을 보여 준다. 증발관 내부에서는 물의 특성이 차례로 나타나므로, 각 특성을 정확히 예측하려면 증발관을 잘게 나누고 구간마다 그 특성에 맞는 모델을 적용해야 한다.",
+      "terms": [
+        "드럼형",
+        "증발기",
+        "절탄기",
+        "과열기",
+        "증발관",
+        "과열증기",
+        "2상류",
+        "열계산"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-006",
+      "doc_id": "R021",
+      "section": "2.1 계산모델",
+      "page_start": 1693,
+      "page_end": 1693,
+      "text": "Fig. 1 수평관 내부의 유동 양식(Flow Pattern in Horizontal Tube). Fig.2 열계산 모델(Thermal Calculation Model).",
+      "terms": [
+        "Flow Pattern in Horizontal Tube",
+        "Thermal Calculation Model",
+        "수평관"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-007",
+      "doc_id": "R021",
+      "section": "2.2 열전달",
+      "page_start": 1693,
+      "page_end": 1694,
+      "text": "관류형 배열회수보일러 증발관 내부 유동의 열전달 메커니즘은 Fig.3에서 보듯 크게 두 영역으로 구분된다. 하나는 아냉각비등(subcooled boiling)·포화비등(saturation boiling)이 일어나는 구간이고, 다른 하나는 막비등(film boiling)이 일어나는 구간이다. 아냉각비등 구간에서는 들어온 물의 열평형상 아직 포화에 이르지 않았지만 벽면에서는 이미 포화 조건이 만들어져 있어 벽면에서 기포가 생기며 증발이 시작되고, 증발관이 계속 가열되면 포화비등으로 옮겨 간다. 벽면에 증기막이 생기면 벽에서 작동유체로 가는 열전달이 차단되어 열전달이 급감하고 벽면온도가 급상승하는 지점이 나타나는데, 이 구간의 현상을 막비등 현상이라 부른다.",
+      "terms": [
+        "아냉각비등",
+        "subcooled boiling",
+        "포화비등",
+        "saturation boiling",
+        "막비등",
+        "film boiling",
+        "벽면온도",
+        "증발관"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-008",
+      "doc_id": "R021",
+      "section": "2.2 열전달",
+      "page_start": 1693,
+      "page_end": 1693,
+      "text": "Fig.3 열전달 메커니즘(Heat Transfer Mechanism).",
+      "terms": [
+        "Heat Transfer Mechanism"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-009",
+      "doc_id": "R021",
+      "section": "2.2.1 물/증기측",
+      "page_start": 1694,
+      "page_end": 1694,
+      "text": "관류형 배열회수보일러 증발관의 열전달 현상은 단상류에서의 현상과 이상류에서의 현상으로 구분되며, 증발관 열전달을 예측하려면 현상마다 알맞은 전열식을 써야 한다. 1) 단상영역은 작동유체가 물이나 증기 한 상태로만 있는 영역으로, 수치적 모델에는 널리 쓰이는 Dittus-Boelter 식을 적용하였다. 2) 2상영역은 앞서 설명한 대로 두 부분으로 나누어 모델에 반영하였다. 아냉각 및 포화비등영역에는 Jens-Lottes(1)의 식을 썼고, 막비등영역에는 문헌상 여러 실험식 가운데 Groeneveld(2)의 식을 채택하였다.",
+      "terms": [
+        "단상류",
+        "이상류",
+        "Dittus-Boelter",
+        "2상영역",
+        "Jens-Lottes",
+        "Groeneveld",
+        "막비등영역",
+        "포화비등영역"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-010",
+      "doc_id": "R021",
+      "section": "2.2.1 물/증기측",
+      "page_start": 1694,
+      "page_end": 1694,
+      "text": "1) 단상영역(Dittus-Boelter 식): Nu = 0.023·Re^0.8·Pr^(1/3) (Nusselt 수 = 0.023 × Reynolds 수의 0.8승 × Prandtl 수의 1/3승). 아냉각 및 포화비등영역(Jens-Lottes 식): T_wall − T_sat = 0.79·q^0.25·e^(−p/62) (벽면온도와 포화온도의 차 = 0.79 × 흡열량 q의 0.25승 × e^(−p/62)).",
+      "terms": [
+        "Nu = 0.023·Re^0.8·Pr^(1/3)",
+        "Dittus-Boelter",
+        "Jens-Lottes",
+        "T_wall",
+        "T_sat",
+        "e^(−p/62)"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-011",
+      "doc_id": "R021",
+      "section": "2.2.1 물/증기측",
+      "page_start": 1694,
+      "page_end": 1694,
+      "text": "막비등영역(Groeneveld 식): Nu = 7.75·10^−4·[Re(x + (v′/v″)(1 − x))]^0.902·Pr^1.47·Y^−1.57·(q/3.15459)^0.112 (막비등 영역의 Nusselt 수를 건도 x, 포화수·포화증기 비체적 v′·v″, Prandtl 수, Y, 흡열량 q로 나타낸 식). Re = ṁ·d_i/μ\" (Reynolds 수 = 질량유속 × 관 내경 / 포화증기 점성계수). Y = 1 − 0.1(v″/v′ − 1)^0.4·(1 − x)^0.4 (포화증기·포화수 비체적 비와 건도로 정하는 Y).",
+      "terms": [
+        "Groeneveld",
+        "v′/v″",
+        "Pr^1.47",
+        "Y^−1.57",
+        "3.15459",
+        "ṁ·d_i",
+        "건도"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-012",
+      "doc_id": "R021",
+      "section": "2.2.2 가스측",
+      "page_start": 1694,
+      "page_end": 1694,
+      "text": "배열회수보일러 전열관은 열전달 효율을 올리려고 대부분 핀튜브로 만든다. 핀튜브의 가스측 전열계수를 구하는 식은 문헌에 많지만, 가장 정확한 것은 핀튜브 제작업체가 제공하는 전열식을 쓰는 것이다. 그래서 본 수치적 모델에서는 ESCOA(3)가 제시한 식을 적용하였다.",
+      "terms": [
+        "핀튜브",
+        "가스측 전열계수",
+        "ESCOA",
+        "전열식"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-013",
+      "doc_id": "R021",
+      "section": "2.2.3 총괄전열계수",
+      "page_start": 1694,
+      "page_end": 1694,
+      "text": "앞의 전열식들로 최종적으로 구하려는 값은 총괄전열계수이며 다음 식으로 계산한다. 1/U = (1/h_o + R_fo)(1/η_o) + (1/h_i + R_fi)(A_o/A_i) + ln(d_i/d_o)/(2πkL) (총괄전열계수의 역수 = η_o로 나눈 외측 열저항(전열계수·오염계수) + 면적비로 환산한 내측 열저항 + 관벽 전도 열저항).",
+      "terms": [
+        "총괄전열계수",
+        "1/U",
+        "R_fo",
+        "R_fi",
+        "η_o",
+        "A_o/A_i",
+        "2πkL"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-014",
+      "doc_id": "R021",
+      "section": "2.2.3 총괄전열계수",
+      "page_start": 1694,
+      "page_end": 1694,
+      "text": "구한 총괄전열계수로 핀튜브 하나하나의 흡수열량을 다음 식으로 산출한다. Q = UAΔT_LMTD (흡수열량 = 총괄전열계수 × 전열면적 × 대수평균온도차). ΔT_LMTD = [(T_gi − T_fo) − (T_go − T_fi)] / ln[(T_gi − T_fo)/(T_go − T_fi)] (가스 입·출구 온도와 물/증기 입·출구 온도로 구한 대수평균온도차).",
+      "terms": [
+        "Q = UAΔT_LMTD",
+        "ΔT_LMTD",
+        "T_gi",
+        "T_fo",
+        "T_go",
+        "T_fi",
+        "흡수열량"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-015",
+      "doc_id": "R021",
+      "section": "2.3.1 물/증기측",
+      "page_start": 1694,
+      "page_end": 1694,
+      "text": "1) 단상영역: 단상 구간의 압력강하는 관 내부 유체의 유속으로 정해지며 모델링에는 다음 식을 적용하였다. ΔP = f·(l/d_i)·(ṁ^2/(2·ρ)) (압력강하 = 마찰계수 × 관길이/내경 × 질량유속 제곱/(2 × 밀도)).",
+      "terms": [
+        "단상영역",
+        "압력강하",
+        "ΔP = f·(l/d_i)·(ṁ^2/(2·ρ))"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-016",
+      "doc_id": "R021",
+      "section": "2.3.1 물/증기측",
+      "page_start": 1694,
+      "page_end": 1694,
+      "text": "2) 2상류영역: 상변화가 일어나는 관의 압력강하는 마찰, 밀도변화(가속), 중력에 의한 성분으로 나누어 계산했고 Thom(4)의 모델을 적용하였다. ΔP_f = f·(l/d_i)·(ṁ^2/(2·ρ_f))·R_3 (마찰에 의한 압력강하, 계수 R_3 포함). ΔP_acc = (ṁ^2/ρ_f)·R_2 (밀도변화에 의한 압력강하, 계수 R_2 포함). ΔP_g = ρ_f·g·H·R_4 (높이 H에 걸친 중력에 의한 압력강하, 계수 R_4 포함).",
+      "terms": [
+        "2상류영역",
+        "Thom",
+        "ΔP_f",
+        "ΔP_acc",
+        "ΔP_g",
+        "R_3",
+        "R_2",
+        "R_4"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-017",
+      "doc_id": "R021",
+      "section": "2.3.2 가스측",
+      "page_start": 1694,
+      "page_end": 1694,
+      "text": "모델링에서 가스측 압력강하는 ESCOA 사가 내놓은 압력강하식으로 계산하였다.",
+      "terms": [
+        "가스측 압력강하",
+        "ESCOA"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-018",
+      "doc_id": "R021",
+      "section": "3.1 시험설비 개요",
+      "page_start": 1695,
+      "page_end": 1695,
+      "text": "관류형 배열회수 보일러 열성능 모델링을 검증하려고 Fig. 4와 같은 시험설비를 꾸렸다. 배열회수 보일러를 기준으로 본 주요 특징은 다음과 같다. 입구 경계조건을 흉내 내려고 Blower와 덕트버너를 썼고, 가스 흐름과 배관은 모두 수평이다. 전열관 안팎의 열교환(유동) 방식은 Counter flow이다. 증기발생기 압력단은 고압단(HP, High pressure stage)과 중압단(IP, Intermediate pressure stage)으로 된 2중압 방식이다. 기동·정지 때 Evaporator 출구에서 Separator로 물과 증기를 분리한다.",
+      "terms": [
+        "Blower",
+        "덕트버너",
+        "Counter flow",
+        "HP",
+        "IP",
+        "2중압",
+        "Separator",
+        "Evaporator"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-019",
+      "doc_id": "R021",
+      "section": "3.1 시험설비 개요",
+      "page_start": 1695,
+      "page_end": 1695,
+      "text": "가스와 물/증기의 온도차로 증기를 만드는 이 2중압 증기발생기는 50열의 전열관으로 된 전열면을 5개 층으로 엇갈리게 쌓은 구조이며 전열관 제원은 Table 1에 있다. 전열면은 다음처럼 나뉜다. Superheater (SH): Start-up separator에서 live steam line 출구까지. Reheater (RH): Cold reheater line에서 hot reheater line까지. Evaporator (EV) & economizer (EC): Feed water (FW)가 들어오는 economiser 입구에서 start-up separator까지.",
+      "terms": [
+        "50열",
+        "Superheater (SH)",
+        "Reheater (RH)",
+        "Evaporator (EV)",
+        "economizer (EC)",
+        "Feed water (FW)",
+        "start-up separator",
+        "live steam line"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-020",
+      "doc_id": "R021",
+      "section": "3.1 시험설비 개요",
+      "page_start": 1695,
+      "page_end": 1695,
+      "text": "Table 1 Specification of Heat Transfer Surface(전열면 제원). Type (Fin Type): 값=Solid Fin Tube; Tube Material: 값=A213 T91; Tube Size (O.D x Thick.): 값=25.4 mm x 3.6 mm; Fin Material: 값=409SS; Fin Size (Height x Thick.): 값=10 mm x 1.0 mm; Finning Gap (Fin Density): 값=5.08 mm (6 fin/inch).",
+      "terms": [
+        "Table 1",
+        "Solid Fin Tube",
+        "A213 T91",
+        "25.4 mm x 3.6 mm",
+        "409SS",
+        "10 mm x 1.0 mm",
+        "5.08 mm",
+        "6 fin/inch"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-021",
+      "doc_id": "R021",
+      "section": "3.1 시험설비 개요",
+      "page_start": 1695,
+      "page_end": 1695,
+      "text": "Fig. 4 시험설비 구성(Test Facility Configuration).",
+      "terms": [
+        "Test Facility Configuration"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-022",
+      "doc_id": "R021",
+      "section": "3.2 관류형 배열회수 보일러 열성능 측정",
+      "page_start": 1695,
+      "page_end": 1695,
+      "text": "관류형 배열회수 보일러의 열성능 특성을 알아내기 위해 설비의 가스측과 물/증기측 양쪽에서 온도·압력·압력손실·유량 등의 상태량을 계측해야 하며, 계측기 설치 위치는 Fig. 5에 표시하였다. Fig. 5 계측 위치(Measuring Points).",
+      "terms": [
+        "물/증기측",
+        "가스측",
+        "압력손실",
+        "상태량",
+        "Measuring Points"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-023",
+      "doc_id": "R021",
+      "section": "3.2.1 압력측정",
+      "page_start": 1695,
+      "page_end": 1695,
+      "text": "물/증기측 압력을 계측하고, 이를 측정 온도와 함께 써서 관류형 배열회수 보일러 내부의 상태량을 판정하였다.",
+      "terms": [
+        "물/증기측",
+        "압력",
+        "상태량"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-024",
+      "doc_id": "R021",
+      "section": "3.2.2 온도측정",
+      "page_start": 1695,
+      "page_end": 1696,
+      "text": "물/증기측 온도는 외경 1.6mm의 sheathed K-type 열전대를 thermowell과 함께 설치해 측정하였다. 가스측 온도에는 외경 3.2mm의 sheathed K-type 열전대를 썼는데, 가스측은 고온이지만 압력이 물/증기측보다 훨씬 낮아 thermowell을 쓰지 않았다.",
+      "terms": [
+        "1.6mm",
+        "3.2mm",
+        "sheathed K-type",
+        "열전대",
+        "thermowell"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-025",
+      "doc_id": "R021",
+      "section": "3.2.3 유량 측정",
+      "page_start": 1696,
+      "page_end": 1696,
+      "text": "급수 유량: 시험설비에 들어가는 급수 유량은 coriolis 효과를 응용한 질량유량계로 측정하였다. 증기 유량: Superheater 출구와 reheater 입구의 증기 유량은 flow nozzle type 유량계로 측정했고, 여기에 더해 reheater oulet header 출구에도 같은 종류의 유량계를 달아 설비에서 생산된 총 증기량을 측정하였다. 가스 유량: Fig. 4의 덕트버너에서 나오는 가스 유량은 blower 입구와 연료 공급 배관의 유량계 값을 이용해 구하였다.",
+      "terms": [
+        "coriolis",
+        "질량유량계",
+        "flow nozzle type",
+        "Superheater",
+        "reheater",
+        "덕트버너",
+        "blower",
+        "총 증기량"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-026",
+      "doc_id": "R021",
+      "section": "3.3 경계 조건",
+      "page_start": 1696,
+      "page_end": 1696,
+      "text": "모델링 검증용 성능시험설비 운전의 경계조건은 Table 2에 정리되어 있다. Table 2 Boundary Conditions(경계조건; 열 제목 없는 세 운전 조건 값을 순서대로 조건1·조건2·조건3으로 표기). FG_in Temp.: 단위=℃; 조건1=491.5; 조건2=491.5; 조건3=491.4. FG Flowrate: 단위=kg/s; 조건1=2.602; 조건2=2.596; 조건3=2.603. FW Temp.: 단위=℃; 조건1=90.9; 조건2=91.2; 조건3=91.4. FW Flowrate: 단위=kg/s; 조건1=0.230; 조건2=0.240; 조건3=0.250. SH Press. (abs): 단위=Bar; 조건1=40.1; 조건2=41.2; 조건3=42.1. RH Press.: 단위=bar; 조건1=21.2; 조건2=21.7; 조건3=22.5. RH Flowrate: 단위=kg/s; 조건1=0.256; 조건2=0.265; 조건3=0.273. RH_in Temp.: 단위=℃; 조건1=293.2; 조건2=293.1; 조건3=292.8.",
+      "terms": [
+        "Table 2",
+        "FG_in Temp.",
+        "FG Flowrate",
+        "FW Temp.",
+        "FW Flowrate",
+        "SH Press. (abs)",
+        "RH Flowrate",
+        "RH_in Temp."
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-027",
+      "doc_id": "R021",
+      "section": "4.1 열성능 모델링 결과 검증",
+      "page_start": 1696,
+      "page_end": 1696,
+      "text": "3.3절 Table2 경계조건에서의 시험설비 운전 결과를 열성능 모델링 결과와 대조해 2장에서 제시한 모델이 타당한지 검증했으며, 결과는 Fig. 6 ~ Fig. 9 그래프로 정리하였다. Taitel and Dukler Flow Map: Fig. 6은 수평 전열관 내 2상류 유동특성을 나타내는 Tailel과 Dukler(5)의 선도에 Table 2 경계조건과 운전 결과를 찍은 것이다. K 값이 curve C 위쪽에, F 값이 curve A 위쪽에 위치하므로 관 내 유동은 환상류(Annular flow)로 판정된다.",
+      "terms": [
+        "Table2",
+        "Taitel and Dukler Flow Map",
+        "2상류",
+        "Dukler",
+        "curve C",
+        "curve A",
+        "환상류",
+        "Annular flow"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-028",
+      "doc_id": "R021",
+      "section": "4.1 열성능 모델링 결과 검증",
+      "page_start": 1696,
+      "page_end": 1696,
+      "text": "Fig. 6 Taitel and Dukler Flow Map(Taitel·Dukler 유동양식 선도). 그림에 함께 실린 좌표 대응표: Curve A + B: Co-ordinate=F – X; Curve C: Co-ordinate=K – X; Curve D: Co-ordinate=T – X. 그림 속 정의식: F = j_v·[ρ_v/((ρ_l − ρ_v)Dg)]^(1/2) (그림의 좌표 F 정의), X = [(dp/dz)^SP_l/(dp/dz)^SP_v]^(1/2) (그림의 좌표 X 정의: 두 단상 압력구배 비의 제곱근). K의 정의식은 일부 기호가 깨져 [판독 불가].",
+      "terms": [
+        "Fig. 6",
+        "Taitel and Dukler Flow Map",
+        "F – X",
+        "K – X",
+        "T – X",
+        "j_v",
+        "(dp/dz)^SP_l",
+        "[판독 불가]"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-029",
+      "doc_id": "R021",
+      "section": "4.1 열성능 모델링 결과 검증",
+      "page_start": 1696,
+      "page_end": 1697,
+      "text": "T-L 선도 및 열흡수량: Fig. 7은 시험설비 전열관 길이 방향의 열흡수량 변화와 가스·물/증기 온도 변화를 보여 준다. 압력이 높고 가스와 온도차가 가장 큰 evaporator & economizer 출구 부근에서 열흡수가 가장 크고, 포화영역에서 가장 작다. evaporator 출구 증기가 약간 과열된 상태로 나온다는 점이 드럼형과 다른 점이며, 그 덕분에 시험설비처럼 드럼 대신 더 작은 separator를 둘 수 있다. 이로써 기동·정지와 부하변동에 대한 추종성을 높일 수 있다.",
+      "terms": [
+        "T-L 선도",
+        "열흡수량",
+        "evaporator & economizer",
+        "포화영역",
+        "과열",
+        "드럼형",
+        "separator",
+        "추종성"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-030",
+      "doc_id": "R021",
+      "section": "4.1 열성능 모델링 결과 검증",
+      "page_start": 1696,
+      "page_end": 1696,
+      "text": "Fig. 7 전열면 전체에 걸친 열흡수량과 온도 변화(Heat Absorption & Temperature Evolution Through out the Heating Surface).",
+      "terms": [
+        "Heat Absorption & Temperature Evolution",
+        "Heating Surface"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-031",
+      "doc_id": "R021",
+      "section": "4.1 열성능 모델링 결과 검증",
+      "page_start": 1697,
+      "page_end": 1697,
+      "text": "Heat Loss: Fig. 8에 따르면 시험설비 운전 중 4.5% ~ 7.0%의 방열손실이 생겼다. 이 값은 설비 본체에서 주변으로 복사·대류로 빠져나간 열량이며, 열성능 평가 모델의 입력값으로 사용하였다. Fig. 8 대류 및 복사 손실(Convection and Radiation Loss). 열성능 평가 모델과 실험결과 비교: Fig. 9는 열성능 평가 모델로 얻은 계산값과 실험에서 얻은 값을 함께 그린 T-L 선도이다. 이 그림을 통해 3장에서 제시한(원문 표기) 열성능 평가 모델이 실험 결과와 잘 맞는다는 것을 확인할 수 있다. Fig. 9 계산 결과와 시험 결과의 비교(The Comparison between Calculation Result and Test Result).",
+      "terms": [
+        "Heat Loss",
+        "4.5% ~ 7.0%",
+        "방열손실",
+        "Convection and Radiation Loss",
+        "열성능 평가 모델",
+        "T-L 선도",
+        "Calculation Result",
+        "Test Result"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R021-032",
+      "doc_id": "R021",
+      "section": "후기",
+      "page_start": 1697,
+      "page_end": 1697,
+      "text": "관류형 배열회수 보일러는 보통 160bar 이상에서 운전되어 본 논문의 운전압력과 차이가 있다. 그래서 앞으로 실제 운전조건에서 성능 실험을 하여 그 결과를 열성능 평가 모델 계산값과 비교하고, 압력손실 모델도 실험결과와 대조하는 작업을 이어갈 계획이다.",
+      "terms": [
+        "관류형 배열회수 보일러",
+        "160bar",
+        "운전압력",
+        "열성능 평가 모델",
+        "압력손실 모델"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 32,
+    "pages_processed": "1692-1697 (PDF 1-6쪽 전체)",
+    "last_paragraph_id": "R021-032",
+    "skipped": [
+      "참고문헌 목록 (p.1697) - 규칙상 제외",
+      "저자 소속·이메일·전화/팩스 (p.1692 각주) - 저자 연락처 제외",
+      "머리글 '대한기계학회 2004년도 추계학술대회 논문집'과 쪽 번호 - 머리글/바닥글 제외",
+      "각 쪽 'Copyright (C) 2005 NuriMedia Co., Ltd.' 워터마크 - 저작권 문구 제외(license 필드에 기록)",
+      "Key Words 줄 (p.1692) - 별도 문단으로 만들지 않음",
+      "Fig. 1~9 그림 내부 내용(그래프 축·범례, Fig. 5 계측기 기호 범례, Fig. 2 STEAM/WATER/GAS 라벨 등) - 그림은 캡션만 작성(Fig. 6에 인쇄된 좌표 대응표·정의식은 캡션 문단에 포함)"
+    ],
+    "uncertain": [
+      "pdftotext/poppler에서 한글 폰트(Adobe-Korea1)가 깨져 PyMuPDF로 텍스트 추출 및 300dpi 렌더링 후 페이지 이미지로 교차 확인함",
+      "Fig. 6 그림 속 K 정의식의 일부 기호가 깨진 문자(ñ, gí 등)로 인쇄되어 [판독 불가] 처리",
+      "Table 2의 세 값 열에는 열 제목이 없어 '조건1~3'으로 임의 표기함(값 순서는 원문 그대로)",
+      "p.1696-1697: Fig. 7 캡션 위 그래프는 Heat Loss(%) vs Feed Water Flowrate 축, Fig. 8 캡션 위 그래프는 Temperature/Heat absorption vs Tube Row 축으로 보여 캡션과 그래프 배치가 서로 바뀌었을 가능성이 있음(캡션은 원문대로 작성)",
+      "Fig. 9 설명에서 원문은 '3장에서 제시한' 모델이라 적었으나 모델은 2장에 있음 - 원문 표기 유지",
+      "원문 철자 그대로 유지: 'Tailel'(Taitel), 'reheater oulet header', 'Reynold 수', 'economiser'",
+      "Groeneveld 식의 μ\" 첨자 표기는 이미지 판독 기준(포화증기 점성계수로 해석)"
+    ]
+  }
+}

@@ -1,0 +1,942 @@
+{
+  "document": {
+    "doc_id": "R012",
+    "title": "Simulating Combined Cycle and Gas Turbine Power Plant under Design Condition using Open-Source Software DWSIM: A Comparative Study",
+    "authors": [
+      "Twana N. Hassan",
+      "Saif T. Manji"
+    ],
+    "year": 2023,
+    "venue": "ARO-The Scientific Journal of Koya University, Vol. XI, No. 1 (2023), Article ID: ARO.11098, pp. 60-71",
+    "doi": "10.14500/aro.11098",
+    "url": "http://dx.doi.org/10.14500/aro.11098",
+    "license": "Copyright © 2023 Twana N. Hassan, Saif T. Manji. This is an open access article distributed under the Creative Commons Attribution License (CC BY → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R012-001",
+      "doc_id": "R012",
+      "section": "Abstract",
+      "page_start": 60,
+      "page_end": 60,
+      "text": "Nowadays, clean and high-power generation is essential matters worldwide. To be improved and optimized, power plants require accurate models that can be introduced to process simulators. There is various commercial software for industrial simulation which is not accessible to everyone. The open-source DWSIM process simulator is the first chemical engineering code that offers many tools for the better study of industrial plants. In this paper, we employ DWSIM software to simulate a combined cycle gas turbine (CCGT) power plant under design conditions for three cases. The generic models are predicted for multistage compressors and compressor maps. In the first case, two models developed in ASPEN HYSYS and GateCycle will be considered. The achieved results by DWSIM are acceptably comparable for thermal efficiency and power generation. The DWSIM result is 3.5% lower than the ASPEN HYSYS for thermal efficiency, and the power generation is completely the same. In the second case, rigorous simulation was carried out using actual field data from the local CCGT power plant. The DWSIM outcomes are very close to the practical data. The power generation of GT and CC is very close; the variety is nearly 0.45%. In the third case, the simulation of CCGT with a cogeneration system is precisely accomplished, and the outcomes of DWSIM are shown in excellent agreement. The DWSIM prediction shows lower values by 0.26%, 4.79%, and 0.72% for the HP turbine, LP turbine, and plant net power, respectively. Index Terms—Combined cycle gas turbine, Heat recovery steam generator, Megawatt generation, Open-source code DWSIM, Thermal efficiency.",
+      "terms": [
+        "DWSIM",
+        "combined cycle gas turbine (CCGT)",
+        "compressor maps",
+        "ASPEN HYSYS",
+        "GateCycle",
+        "thermal efficiency",
+        "cogeneration system",
+        "Heat recovery steam generator"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-002",
+      "doc_id": "R012",
+      "section": "I. Introduction",
+      "page_start": 60,
+      "page_end": 60,
+      "text": "Electric power is mainly generated through fuel combustion (coal, diesel oil, and natural gas). As electric power demand increases, CO_2 emissions also increase because of the combustion of hydrocarbon fuels. Combined cycle gas turbine (CCGT) is one of the investigative and alternative sources of providing electrical power because of their ability to reduce CO_2 emissions, high efficiency, excellent adjustability, faster service, and good control power (Polyzakis, Koroneos and Xydis, 2008) and (Boyce, 2012).",
+      "terms": [
+        "fuel combustion",
+        "CO_2 emissions",
+        "Combined cycle gas turbine (CCGT)",
+        "hydrocarbon fuels"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-003",
+      "doc_id": "R012",
+      "section": "I. Introduction",
+      "page_start": 60,
+      "page_end": 60,
+      "text": "The GT follows the Bryton cycle, in which ambient air is compressed to reach high pressure and mixed with fuel (natural gas). When the mixture is sparked in the combustion chamber to form high-pressure and high-temperature flue gas. The hot flue gas will expand in the turbine and convert its kinetic energy to mechanical energy, then to power through the generator (Cengel and Boles, 2008). The thermal efficiency of GT is generally between 35% and 40% (Ahmed, Elhosseini and Arafat Ali, 2018). When the heat recovery steam generator and steam turbine are combined, the high temperature from the GT’s exhaust is sent to a heat recovery steam generator (HRSG) unit, which uses deionized water to make high-temperature and high-pressure steam. This steam runs the steam turbine. Modelling and simulation are modern ways to consider and refine procedures to satisfy the rising requirements for performance, protection, and the climate. Simulation has evolved into a critical enabler in judgment, engineering, and operations, spanning the entire life cycle of a manufacturing device. Simulation can depict how the model changes over time under various circumstances.",
+      "terms": [
+        "Bryton cycle",
+        "combustion chamber",
+        "flue gas",
+        "thermal efficiency",
+        "heat recovery steam generator (HRSG)",
+        "deionized water",
+        "steam turbine",
+        "Simulation"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-004",
+      "doc_id": "R012",
+      "section": "I. Introduction",
+      "page_start": 60,
+      "page_end": 61,
+      "text": "There are commercial codes appropriate for designing CCGT, such as (GateCycle, EBSILON Professional, and Thermoflow). Ordys, et al. (1994) described Modeling and Simulation of Power Generation Plants. Griffin, et al., (1996) stated a power plant simulation software for optimizing thermodynamic and financial plant operation. The MATLAB®/Simulink®/SimPowerSystems® environment has been successfully implemented for CCGT, the simulation findings show that the created model is a valuable tool for studying and analyzing the majority of electrical oscillation phenomena that occur when a CCGT is linked to a power system grid (Ibrahim and Hamarash, 2008). Seifi, et al. (2008) also used MATLAB® and SIMULINK® to create a simulation toolbox for a combined-cycle power plant. Zabre, et al. (2009) developed a Simulator of a combined cycle power plant for operator training. Vieira, et al. (2010) described the effective integrated thermo economic improvement of the profitability of a complicated combined cycle cogeneration plant working under a variety of economic scenarios by using THERMO FLEX. A performance model for CCGT plants was created in MATLAB/Simulink by (Hasan, Rai and Arora, 2014), and the effect of changing various factors on efficiency was investigated. Saddiq, et al. (2015) utilized Aspen HYSYS software to investigate a simple gas turbine and gas turbine exhaust in a variety of configurations. GateCycle (version 6.1.2) as a commercial modeling program was used by Oh, Lee and Kwak. (2017) to analyze the thermodynamic properties of a 300-MW combined cycle power plant. Liu and Karimi (2018) in a commercial simulator proposed a technique and the essential connections for simulating the part-load operation of a common CCGT plant through (GateCycle).",
+      "terms": [
+        "GateCycle",
+        "EBSILON Professional",
+        "Thermoflow",
+        "MATLAB®/Simulink®/SimPowerSystems®",
+        "combined-cycle power plant",
+        "THERMO FLEX",
+        "Aspen HYSYS",
+        "part-load operation"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-005",
+      "doc_id": "R012",
+      "section": "I. Introduction",
+      "page_start": 61,
+      "page_end": 61,
+      "text": "The researchers modeled and evaluated the part-load performance of the CCGT system while considering the off-design behavior of all units. They presented a simulation-based optimization technique that generates an ideal operating strategy for every part-load to enhance overall plant efficiency. A 420MW CCGT power plant and thermal energy storage dynamic model have been created in Aspen Plus (Li, et al., 2017). Achimnole, Orhorhoro and Onogbotsere (2017) used the Aspen HYSYS software simulation for the performance evaluation of a gas turbine with and without a cooling system. Liu and Karimi (2018a) introduced a novel operating technique termed EGR-IGVC to increase a CCGT plant’s part-load performance. Reveillere, Longeon and Rossi (2019) they employed Simcenter Amesim software to generate dynamic models of all subsystems and their interconnections in combined cycle power plants. Wiguno, Tetrisyanda and Wibawa (2020) used the Aspen Hysys V9 process simulator to investigate the impact of gas composition, air intake cooling, and steam injections on combined cycle power plant (CCPP) efficiency. Because commercial software is very costly, finding open-source codes to simulate the CCGT power plant process is very needed to achieve plant analysis.",
+      "terms": [
+        "part-load performance",
+        "off-design behavior",
+        "Aspen Plus",
+        "EGR-IGVC",
+        "Simcenter Amesim",
+        "Aspen Hysys V9",
+        "combined cycle power plant (CCPP)",
+        "open-source codes"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-006",
+      "doc_id": "R012",
+      "section": "I. Introduction",
+      "page_start": 61,
+      "page_end": 61,
+      "text": "DWSIM is the only open-source simulation code in chemical engineering that can be used professionally that was created by Daniel Wagner Oliveira de Medeiros, a chemical engineer and software developer (DWSIM, 2004). DWSIM has proved its reliability in the past few years. The main advantage of adopting DWSIM in this work is its flexibility since it supports a wide variety of unit operations and makes user-defined unit operations and uses them. Another advantage of DWSIM over other chemical engineering simulation codes is its ease of use and free download from the internet. It also enables us to do studies and evaluate data using sophisticated models and processes. DWSIM contains the essential capability for steady-state mass and energy balances, as well as the ability to investigate component performance and setup conditions. It is simple to use, straightforward to report on, and has high convergence speeds. Tangsriwong, et al. (2020) show a comparative study between Aspen plus and DWSIM of Booster and sale gas compression. DWSIM was proven capable of adequately simulating chemical processes, and calculating thermodynamics and chemical characteristics, particularly for gas products. Andreasen (2022) presents a thorough analysis of the free and open-source process simulator DWSIM. The outcomes of DWSIM are examined to a commercial process simulator that is often used in the sector using a simulation model of an oil and gas separation plant that has already been reported. Compared outcomes are within 1% of one another. The outcomes positive and offer validity for the utilizing the examined open-sourced process simulation software in a professional setting. DWSIM was used to simulate the operation of reducing nitrobenzene to produce aniline. After careful consideration and evaluating viability, every component operation’s numerous thermodynamic data were included. The simulation produced promising findings that improved our understanding of the relationship between the reaction’s kinetics and thermodynamics (Halageri and Pauls, 2015).",
+      "terms": [
+        "DWSIM",
+        "open-source simulation code",
+        "unit operations",
+        "steady-state mass and energy balances",
+        "Aspen plus",
+        "open-source process simulator",
+        "oil and gas separation plant",
+        "nitrobenzene"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-007",
+      "doc_id": "R012",
+      "section": "I. Introduction",
+      "page_start": 61,
+      "page_end": 61,
+      "text": "This research aims to study the CCGT power plant and use open-source simulation code DWSIM which accessible to everyone to simulate the process under design conditions for different cases. In this study, a generic model proposes for various cases under design conditions for CCGT simulation. The generic model predicts a multistage compressor with an intercooler between stages and estimates compressor maps. The various units of each plant were simulated using DWSIM unit operations, including the simulation of CCGT, in which heat is recovered directly from GT exhaust to produce high-temperature steam via HRSG. The results were compared with published results in ASPEN HYSYS and GateCycle. The simulation was also validated by comparing DWSIM results with actual field data for CCGT. The CCGT simulation is also carried out for both with and without a cogeneration system, and the outcomes are contrasted to published data.",
+      "terms": [
+        "CCGT",
+        "DWSIM",
+        "generic model",
+        "multistage compressor",
+        "intercooler",
+        "compressor maps",
+        "HRSG",
+        "cogeneration system"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-008",
+      "doc_id": "R012",
+      "section": "II. Methodology of CCGT Simulation",
+      "page_start": 61,
+      "page_end": 61,
+      "text": "A very efficient electric generation cycle is created by combining the gas turbine cycle with the HRSG and steam turbine. A compressor, combustion chamber, and turbine are the three basic components of a gas turbine cycle power generation, and a series of heat exchangers is the main component of a steam cycle, which is followed by a steam turbine. Because the open-source process simulator DWSIM was not quite ready to simulate CCGT, we used a general model to help us deal with the challenges we encountered. From ambient conditions, air is filtered by air filter which is simulated using a valve in DWSIM and its pressure drop is defined by equation (1) (Liu and Karimi, 2018b). ΔP = ΔP_d (m/m_d)^1.84 (T/T_d)(P/P_d)^-1   (1) (air filter pressure drop scaled from its design value by mass flow rate, inlet temperature and inlet pressure relative to design) ΔP_d is the design pressure drop, M_d is the design mass flow rate, T_d is the design inlet temperature, P_d is the design inlet pressure, M is the inlet mass flow rate, T is the design inlet temperature, and P is the design inlet pressure.",
+      "terms": [
+        "gas turbine cycle",
+        "HRSG",
+        "combustion chamber",
+        "air filter",
+        "pressure drop",
+        "ΔP_d",
+        "design mass flow rate",
+        "DWSIM"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-009",
+      "doc_id": "R012",
+      "section": "II. Methodology of CCGT Simulation",
+      "page_start": 61,
+      "page_end": 62,
+      "text": "Gas turbine compressors consist of a multistage compressor with an intercooler in between. Because of the unavailability of multistage compressors in DWSIM codes, we predicted our gas turbine compressor into two stages of compressors. The pressure ratio for each compressor is predicted from the equation (2) (Sarathy, 2021). R = [P_Last/P_First]^(1/n)   (2) (pressure ratio per compressor stage = overall outlet-to-inlet pressure ratio raised to 1/number of stages) R is the compressors pressure ratio, P_First is the compressors inlet pressure, P_Last is the compressors outlet pressure, and n is the compressor stages.",
+      "terms": [
+        "multistage compressor",
+        "intercooler",
+        "pressure ratio",
+        "P_Last",
+        "P_First",
+        "compressor stages"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-010",
+      "doc_id": "R012",
+      "section": "II. Methodology of CCGT Simulation",
+      "page_start": 62,
+      "page_end": 62,
+      "text": "When the pressure of the first compressor increases, its discharge temperature also increases, so we need to cool down its temperature to prevent the second stage compressor blade from exceeding temperature and use cooled air to control turbine temperature through the (rotor and stator) cooling stream. When the first compressor outlet temperature is cooled down through an intercooler to near ambient temperature, it causes a water vapor droplet to form due to the air humidity that should be removed to prevent the second compressor from corrosion. In this case, we installed a gas-liquid separator to remove water droplets. When the compressed air leaves the separator, it goes to a second compressor to be compressed to the right pressure.",
+      "terms": [
+        "discharge temperature",
+        "intercooler",
+        "stator",
+        "rotor",
+        "cooling stream",
+        "air humidity",
+        "corrosion",
+        "gas-liquid separator"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-011",
+      "doc_id": "R012",
+      "section": "II. Methodology of CCGT Simulation",
+      "page_start": 62,
+      "page_end": 62,
+      "text": "Compressors work following the compressor map. We employ the general relativized compressor map as in Fig. 1., which is proposed by (Liu and Karimi, 2018b). In our case study, all parameters (mass flow, speed, pressure ratio, and isentropic efficiency) for each case are calculated depending on their design condition data through using equation (3), (4), (5), and (6) (Liu and Karimi, 2018). m_cor,r = (m_in √T_in / P_in) / (m_in,d √T_in,d / P_in,d)   (3) (relative corrected mass flow = corrected mass flow at the operating point divided by that at design) m_cor,r is the relative corrected mass flow, m_in is refer to the compressor inlet mass flow, P_in refer to the compressor inlet pressure, T_in is refer to the compressor inlet temperature, and d denotes to the parameter at design condition. PR_r = (PR - 1)/(PR_d - 1)   (4) (relative pressure ratio) PR_r refer to the relative pressure ratio and PR is referred to the pressure ratio. η_r = η/η_d   (5) (relative isentropic efficiency = efficiency / design efficiency) η_r refer to the relative efficiency and η is refer to the efficiency. N_cor,r = (N/√T_in) / (N_d/√T_in,d)   (6) (relative corrected speed) Where N_cor,r refer to the compressor corrective reactive speed, which are specify under each curve on the map.",
+      "terms": [
+        "compressor map",
+        "general relativized compressor map",
+        "isentropic efficiency",
+        "m_cor,r",
+        "relative corrected mass flow",
+        "PR_r",
+        "η_r",
+        "N_cor,r"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-012",
+      "doc_id": "R012",
+      "section": "II. Methodology of CCGT Simulation",
+      "page_start": 62,
+      "page_end": 62,
+      "text": "Fig. 1. General relativized compressor map: (a) Relative corrected mass flow versus relative pressure ratio, (b) relative corrected mass flow versus relative isentropic efficiency.",
+      "terms": [
+        "General relativized compressor map",
+        "Relative corrected mass flow",
+        "relative pressure ratio",
+        "relative isentropic efficiency"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-013",
+      "doc_id": "R012",
+      "section": "II. Methodology of CCGT Simulation",
+      "page_start": 62,
+      "page_end": 62,
+      "text": "After second compressor, the air is divided into three parts for stator cooling, rotor cooling, and combustion air. The hot flue gas from the combustion chamber expanded in the turbine to generate power while and the turbine inlet temperature was controlled by stator cooling. The following are the proposed CCGT case studies:",
+      "terms": [
+        "stator cooling",
+        "rotor cooling",
+        "combustion air",
+        "flue gas",
+        "combustion chamber",
+        "turbine inlet temperature"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-014",
+      "doc_id": "R012",
+      "section": "II. A. Case 1 (CCGT power plant using HYSYS data)",
+      "page_start": 62,
+      "page_end": 62,
+      "text": "Fig. 2. shows the flow sheet diagram of the GT plants which are predicted under our generic model, designed condition data of CCGT is stated in Table I. From ambient conditions, air is filtered by an air filter AFT, which is simulated by using a valve in DWSIM. Air is compressed to form high-pressure air, which is designed and settled by the compressor unit in DWSIM unit operation. The compressor maps of both compressors in case 1 are stated in Fig. 3. In case 1, we predicted the intercooler outlet temperature as 30°C. From compressor discharge, some of the air is split for cooling purposes (stator cooling and rotor cooling) by split-01. Natural gas is used as a fuel source for the combustion chamber, which the conversion reactor in DWSIM is used as a combustion chamber for burning natural gas. CTRL-01 is used as a controller to prevent the gas turbine from exceeding its temperature. DWSIM offers an expander for turbine simulation, which appears in Fig. 2. as TURB. Hot flue gas from the combustion chamber exit is expanded in the TURB to generate the desired megawatt MW. As stated in Fig. 4, the HRSG of CCGT contains three stages of pressure: low pressure (LP), intermediate pressure (IP), and high pressure (HP).",
+      "terms": [
+        "air filter AFT",
+        "compressor maps",
+        "intercooler outlet temperature",
+        "conversion reactor",
+        "CTRL-01",
+        "TURB",
+        "low pressure (LP)",
+        "intermediate pressure (IP)"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-015",
+      "doc_id": "R012",
+      "section": "II. A. Case 1 (CCGT power plant using HYSYS data)",
+      "page_start": 62,
+      "page_end": 63,
+      "text": "HRSG consists of a series of Shell and Tube Heat Exchanger as its shell is merged by GT exhaust flue gas and its tube serves three-stage pressure of steam production, LP economizer receives water from the LP pump which feeds the recirculation pump (RCP) to preheat the inlet water. For each stage of the HRSG a water pump is installed followed by the economizers, LP economizer receives water from LP pump (S22) and mix in (MIX3) with the RCP outlet (S27) to preheat condensate water then its outlet splits into two parts (SPLT2) first one recirculated to RCP (S25) and second part (S28) feed into the LP DRUM, liquid from LP drum bottom (S29) is splits (SPLT3) into three parts first stream (S30a) recirculated into the LP boiler to form water-steam mixture second stream (S34) feed water to the IPP and third stream (S43) feed water to the HPP. HRSG stages steam production work similarly so we take the HP line as an example to explain their process of steam production. HPP discharge is split into two parts first one sends water to the de-superheater one (DeSHT1) to prevent HPSPHT1 from exceeding temperature and the second part feeds water into the HP economizers (HPECO1, HPECO2, and HPECO3), respectively. After water absorbed the required temperature from economizers feed it into the HP drum then from the HP drum water recirculates into the HP boiler to form water-steam mixtures after that it feeds back to the HP drum to separate water-steam mixture, both recycle streams (R16 and R3) are control amount of the steam leaves the drum. Steam leaves the HP drum the passes through (HPSPH1 and HPSPH2), respectively, to produce dry superheated steam as a stream (S55).",
+      "terms": [
+        "Shell and Tube Heat Exchanger",
+        "LP economizer",
+        "recirculation pump (RCP)",
+        "LP DRUM",
+        "de-superheater",
+        "HP economizers",
+        "HP drum",
+        "dry superheated steam"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-016",
+      "doc_id": "R012",
+      "section": "II. A. Case 1 (CCGT power plant using HYSYS data)",
+      "page_start": 63,
+      "page_end": 63,
+      "text": "Fig. 2. Gas turbine process flow diagram for case 1. Fig. 3. Compressor map for GT case 1: (a) Stage 1 compressor map, (b) stage 2 compressor map.",
+      "terms": [
+        "Gas turbine process flow diagram",
+        "Compressor map",
+        "Stage 1 compressor map"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-017",
+      "doc_id": "R012",
+      "section": "II. A. Case 1 (CCGT power plant using HYSYS data)",
+      "page_start": 63,
+      "page_end": 63,
+      "text": "Fig. 5 shows the schematic diagram of the steam turbines and condensate units. HP superheated steam (S55) feeds into the HP turbine to produce power, then mixes in the (MIX4) with IP superheated steam then feed into the reheater one (RHT1) to absorb extra heat or reheating, then (DeSHT2) is installed to prevent the IP turbine from exceeding temperature, then reaches RHT2 and feeds to the IP turbine. The outlet IP turbine mixes in (MIX5) with the LP superheated steam, which then feeds into the LP turbine. The exhaust stream (S63) from the LP turbine is condensed through COND and recirculated into the LPP.",
+      "terms": [
+        "steam turbines",
+        "condensate units",
+        "HP superheated steam",
+        "reheater",
+        "DeSHT2",
+        "IP turbine",
+        "LP turbine",
+        "COND"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-018",
+      "doc_id": "R012",
+      "section": "II. A. Case 1 (CCGT power plant using HYSYS data)",
+      "page_start": 63,
+      "page_end": 63,
+      "text": "All economizers, evaporators, superheaters, and condensate are simulated in DWSIM using heat exchangers, DRUMs are simulated by the gas-liquid separator in DWSIM, PUMPs are simulated by pressure change using a pump, steam turbines and gas turbines are installed through expanders. Design variable of CCGT is stated in Table I (Liu and Karimi, 2018b).",
+      "terms": [
+        "economizers",
+        "evaporators",
+        "superheaters",
+        "heat exchangers",
+        "gas-liquid separator",
+        "expanders"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-019",
+      "doc_id": "R012",
+      "section": "II. A. Case 1 (CCGT power plant using HYSYS data)",
+      "page_start": 64,
+      "page_end": 64,
+      "text": "TABLE I Design Variable of CCGT Plant Case 1 (Variable: Value). Ambient condition — Pressure=1.013 bar; Temperature=15°C; Molar fraction=77.30% N_2, 20.74% O_2, 1.01% H_2O, 0.03% CO_2, 0.92% Ar. Fuel condition — Pressure=30 bar; Temperature=10°C; Molar fraction=87.08% CH_4, 7.83% C_2H_6, 2.94% C_3H_8, 1.47% N_2, 0.68% CO_2. Gas turbine — Inlet airflow=635 kg/s; Inlet air pressure loss=0.5 (%); Compressor pressure ratio=15.4; Compressor isentropic efficiency=88%; Compressor mechanical efficiency=99%; Fuel flow=14.74 kg/s; Combustor efficiency=99.50%; Combustor pressure loss=3.50%; Combustor exit temperature=1405°C; Turbine inlet temperature=1328°C; Turbine exhaust temperature=615°C. HRSG — HP/IP/LP steam temperatures=565.0/297.0/295°C; HP/IP/LP pinch point temperatures=10.0/10.0/10.0°C; HP/IP/LP approach point temperatures=8.0/10.0/16.4°C; HP SPHT 1 steam outlet temperature=510°C; RHT 1/2 steam outlet temperature=520.0/565.0°C; HP ECON 1/2 water outlet temperature=208.0/280.0°C; Pressure losses on gas/water/steam sides=1.5/5.0/3.0%. Steam turbines (STs) — HP/IP/LP ST inlet pressure=98.8/24.0/4.0 bar; HP/IP/LP ST isentropic efficiency=87.0/91.0/89.0%; Shaft speed 3000=3000 rpm. Note: °C: Cellules, kg: Kilo gram, s: Second, rpm: Revolution per minute, kpa: Kilo pascal, CCGT: Combined cycle gas turbine, HRSG: Heat recovery steam generator",
+      "terms": [
+        "HP/IP/LP pinch point temperatures",
+        "HP/IP/LP approach point temperatures",
+        "Turbine inlet temperature",
+        "Turbine exhaust temperature",
+        "Compressor pressure ratio",
+        "HP SPHT 1",
+        "RHT 1/2",
+        "HP ECON 1/2"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-020",
+      "doc_id": "R012",
+      "section": "II. B. Case 2 (CCGT power plant using field data from Sulaymaniyah CCGT Power Plant)",
+      "page_start": 63,
+      "page_end": 64,
+      "text": "The proposed GT plant of actual field data case 2 is also designed under our general model and similar to Fig. 2. and Case 1 except its inlet data will change as stated in Table II. The data has been collected from one of the local companies in the Kurdistan region. The plant includes four gas turbines, which are followed by four HRSG. The superheated steam from all HRSGs is combined to form main steam, which is then merged to the steam turbines. The components and simulation procedure are similar to those of the GT turbines in cases 1, except that it is designed for lower MW generation. The predicted compressor stage maps are stated in Fig. 6.",
+      "terms": [
+        "field data",
+        "gas turbines",
+        "HRSG",
+        "superheated steam",
+        "main steam",
+        "steam turbines",
+        "compressor stage maps"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-021",
+      "doc_id": "R012",
+      "section": "II. B. Case 2 (CCGT power plant using field data from Sulaymaniyah CCGT Power Plant)",
+      "page_start": 64,
+      "page_end": 65,
+      "text": "The combined cycle in case 2 containing two-stages (HP and LP) of pressure PFD diagram of CC is shown in Fig. 7. CC includes one preheater, one LP economizer, two HP economizers, one LP evaporator, one HP evaporator, one LP superheater, two HP superheaters, one LP DRUM, one HP DRUM, and two steam turbines (HP and LP). When the steam leaves the LP turbine, its condensate goes through an air-cooling cycle (ACC) and is mixed with makeup demineralized water and then collected in the condensate collection tank, condensate pump feeds water into the four HRSG because all HRSGs similarly. We take one HRSG as an example for our methodology. The preheater receives water from two streams which are mixed in (MIX3). The first stream (HRSG5 PREHEATER) comes from the condensate pump and the second stream (S21) comes from the recirculation discharge pump. The warm water from the outlet of the preheater is split (SPLT3) into two streams. The first stream recirculates to the RCP and the second stream (HRSG5 COND PREH) feeds into the deaerator. The deaerator works as a gas-liquid separator to remove dissolved gases. The bottom of the deaerator collects water and feeds warmed water to the BFP. BFP pumps include two stages of pressure (HP and LP) because both stages work similarly, so we take only the HP line to explain our methodology. High pressure water from BFP feeds water into (HPECO1 and HPECO2) then feeds into the HP drum. From the bottom of the HP drum, warmed water recirculated (R5) (S30) into the HP evaporator (HP EVAP) that turns warmed liquid water into water-vapor mixture and returns into the HP drum to separate water-vapor mixture, (R1 and R5) recalculate the steam flow amount that leaves the HP drum, then feeds into the (HP1SUPHTR) to make dry superheater steam. Its outlet mixes with the (HP DESUPERHEATER) stream which comes from BFP discharges to prevent superheated steam from exceeding temperature. Then feeds into the (HP2SUPHTR) to increase steam temperature and prepare it for feeding the HP steam turbine.",
+      "terms": [
+        "preheater",
+        "LP economizer",
+        "HP economizers",
+        "air-cooling cycle (ACC)",
+        "deaerator",
+        "BFP",
+        "HP evaporator (HP EVAP)",
+        "HP DESUPERHEATER"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-022",
+      "doc_id": "R012",
+      "section": "II. B. Case 2 (CCGT power plant using field data from Sulaymaniyah CCGT Power Plant)",
+      "page_start": 64,
+      "page_end": 64,
+      "text": "TABLE II Design Variable of CCGT Plant Case 2 (Variable: Value). Ambient condition — Pressure=101.3 kPa; Temperature=13.3°C; Molar fraction=77.30% N_2, 20.74% O_2, 1.01% H_2O, 0.03% CO_2, 0.92% Ar. Fuel condition — Pressure=23.8 bar; Temperature=40°C; Molar fraction=88.8% CH_4, 8.84% C_2H_6, 1.48% C_3H_8, 0.175% N_2, 0.093% CO_2. Gas turbine — Inlet air flow=458.2 kg/s; Inlet air after pressure loss of filter house=0.82; Compressor pressure ratio=13; Compressor isentropic efficiency=91.10%; Fuel flow=6.9 kg/s; Combustor efficiency=99%; Combustor pressure loss=0.1; Combustor exit temperature=1390°C; Turbine inlet temperature=1050°C; Turbine exhaust temperature=547°C; Gas turbine thermal efficiency=32.20%. Heat recovery steam generator (HRSG) — LP EVA outlet pressure=8.16 bar; HP EVA outlet pressure=72.8 bar; HP/LP steam temperatures=525.1/223.1 (°C); HP SUPHT 1 steam outlet temperature=497.3 (°C); HP ECON 1/2 water outlet temperature=120/284.2 (°C). Steam turbines (STs)=Turbines (STs) — HP/LP ST inlet pressure=67.15/6.04 (bar); HP/LP ST isentropic efficiency=90/65 (%); Shaft speed 3000=3000 (rpm). Note: °C: Cellules, kg: Kilo gram, s: Second, rpm: Revolution per minute, kpa: Kilo pascal, CCGT: Combined cycle gas turbine, HRSG: Heat recovery steam generator",
+      "terms": [
+        "LP EVA outlet pressure",
+        "HP EVA outlet pressure",
+        "HP/LP steam temperatures",
+        "HP SUPHT 1",
+        "HP ECON 1/2",
+        "Gas turbine thermal efficiency",
+        "Turbine exhaust temperature",
+        "filter house"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-023",
+      "doc_id": "R012",
+      "section": "II. B. Case 2 (CCGT power plant using field data from Sulaymaniyah CCGT Power Plant)",
+      "page_start": 65,
+      "page_end": 65,
+      "text": "Fig. 4. Heat recovery steam generator process flow diagram for case 1. Fig. 5. Steam turbine process flow diagram of case 1.",
+      "terms": [
+        "Heat recovery steam generator process flow diagram",
+        "Steam turbine process flow diagram"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-024",
+      "doc_id": "R012",
+      "section": "II. B. Case 2 (CCGT power plant using field data from Sulaymaniyah CCGT Power Plant)",
+      "page_start": 65,
+      "page_end": 66,
+      "text": "All HRSG HP superheated steam mixes to form an HP HEADER, which then feeds into the HP turbine to generate the required power. All LP superheated steam from all HRSG is mixed to form LP HEADER and fed to the LP turbine to generate the required power, exhaust of the LP turbine condensate through (ACC). The PFD diagram of the main superheated steam, steam turbines, and condensate system stated in Fig. 8. and the design condition of CCGT case 2 are shown in Table II. All preheaters, economizers, superheaters, and evaporators are simulated in DWSIM by heat exchangers. All drums and deaerators are simulated by gas-liquid separators in DWSIM. The main steam valve and filter house are simulated by the valve and also the pump in the unit operation in DWSIM.",
+      "terms": [
+        "HP HEADER",
+        "LP HEADER",
+        "HP turbine",
+        "LP turbine",
+        "ACC",
+        "heat exchangers",
+        "gas-liquid separators",
+        "main steam valve"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-025",
+      "doc_id": "R012",
+      "section": "II. B. Case 2 (CCGT power plant using field data from Sulaymaniyah CCGT Power Plant)",
+      "page_start": 66,
+      "page_end": 66,
+      "text": "Fig. 6. Compressor maps for GT case 2: (a) Compressor stage1 map, (b) compressor stage2 map.",
+      "terms": [
+        "Compressor maps",
+        "Compressor stage1 map",
+        "compressor stage2 map"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-026",
+      "doc_id": "R012",
+      "section": "II. C. Case 3",
+      "page_start": 66,
+      "page_end": 66,
+      "text": "The project includes two parts of operation CCGT and CCGT with a district heat system (DH). CCGT can be engaged with a DH system to produce auxiliary heat which provided to the companies that need heat and for heating purpose especially in the coldest country and seasons. The required heat can be obtained through utilizing heat exchanger that use HP turbine outlet and mixed with LP superheater to warm the water and obtain the required heat.",
+      "terms": [
+        "CCGT",
+        "district heat system (DH)",
+        "auxiliary heat",
+        "heat exchanger",
+        "HP turbine outlet",
+        "LP superheater"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-027",
+      "doc_id": "R012",
+      "section": "II. C. Case 3 — CCGT without cogeneration",
+      "page_start": 66,
+      "page_end": 67,
+      "text": "The simulation of GT with and without cogenerations is proposed similarly as our general model except its parameter values are changed, which is stated in Table III (Lee, Kim and Kim, 2017). The predicted compressor maps are shown in Fig. 9. The HRSG simulation model is stated in Fig. 10, and steam turbines are shown in Fig. 11. In this case, because the authors did not mention the required details of the process, we predicted each unit for our simulation. This model contains two gas turbines and HRSG. Demineralized water is fed to the preheater through an LP feed water pump to raise the water temperature, HP pump receives water from the preheater outlet and then feeds water into two stages of pressure in our HRSG Because both lines work similarly, we only describe the HP line in our procedures. (S9) from the HP pump will be the inlet of the HP economizer for absorbing required heat then inters the HP drum. From the HP drum bottom, warmed water leaves and is recirculated (R4) into the HP boiler to absorb required heat to form water-steam mixtures, then returned into the HP drum to separate water-steam mixtures. From the HP drum top, a steam stream leaves the drum which is calculated by (R4 and R5) then feeds into the HP superheater.",
+      "terms": [
+        "cogenerations",
+        "compressor maps",
+        "HRSG simulation model",
+        "Demineralized water",
+        "preheater",
+        "LP feed water pump",
+        "HP economizer",
+        "HP superheater"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-028",
+      "doc_id": "R012",
+      "section": "II. C. Case 3 — CCGT without cogeneration",
+      "page_start": 66,
+      "page_end": 66,
+      "text": "Fig. 7. Process flow diagram of combined cycle for case 2.",
+      "terms": [
+        "Process flow diagram",
+        "combined cycle"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-029",
+      "doc_id": "R012",
+      "section": "II. C. Case 3 — CCGT without cogeneration",
+      "page_start": 67,
+      "page_end": 67,
+      "text": "In this case, the steam turbine receives steam from two HRSG to form HP superheated main steam, which then feeds into the HP steam turbine. The outlet of the HP turbine is mixed in (HP and LP MIXER) with the LP main steam stream, which then enters the LP turbine to generate the required power. Table III shows design variables of CCGT without cogeneration for case 3.",
+      "terms": [
+        "HP superheated main steam",
+        "HP steam turbine",
+        "HP and LP MIXER",
+        "LP main steam",
+        "LP turbine",
+        "cogeneration"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-030",
+      "doc_id": "R012",
+      "section": "II. C. Case 3 — CCGT without cogeneration",
+      "page_start": 67,
+      "page_end": 67,
+      "text": "Fig. 8. PFD diagram of superheated main steams, steam turbines, and condensate system. Fig. 9. Compressors maps for GT case 3: (a) Compressor stage 1 map, (b) compressor stage 2 map.",
+      "terms": [
+        "PFD diagram",
+        "superheated main steams",
+        "condensate system",
+        "Compressors maps"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-031",
+      "doc_id": "R012",
+      "section": "II. C. Case 3 — CCGT without cogeneration",
+      "page_start": 67,
+      "page_end": 67,
+      "text": "TABLE III Design Parameter of CCGT Case 3 (Parameter: Value). Air temperature=15°C; Air pressure=101.325 kPa; Fuel flow rate=6.39 kg/s; Compressor pressure ratio=14; Compressor outlet temperature=376.73°C; Compressor efficiency=78.32%; Turbine inlet temperature=1140°C; Turbine exhaust temperature=533°C; Exhaust gas flow rate=365.08 kg/s; Gross power output=100 MW. Gas turbine — Gross efficiency=30.35%; Inlet gas temperature=533°C; Outlet gas temperature=112.88°C. HRSG — HP steam temperature=505°C; HP steam pressure=78.06 bar; HP steam flow rate=87.8 kg/s; LP steam temperature=147.2°C; LP steam pressure=4.41 bar; LP steam flow rate=27.44 kg/s; HP feed water temperature=89.39°C; LP feed water temperature=88.62°C. Steam Turbine — HP turbine power=53.09 MW; HP turbine efficiency=85.89%; HP turbine outlet pressure=6 bars; LP turbine power=54.83 MW; LP turbine efficiency=76.74%; LP turbine outlet pressure=0.08 bar. Note: °C: Cellules, kg: Kilo gram, s: Second, rpm: Revolution per minute, kpa: Kilo pascal, CCGT: Combined cycle gas turbine, HRSG: Heat recovery steam generator",
+      "terms": [
+        "Compressor pressure ratio",
+        "Turbine inlet temperature",
+        "Exhaust gas flow rate",
+        "HP steam pressure",
+        "LP steam flow rate",
+        "HP feed water temperature",
+        "HP turbine power",
+        "LP turbine outlet pressure"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-032",
+      "doc_id": "R012",
+      "section": "II. C. Case 3 — CCGT with DH system",
+      "page_start": 67,
+      "page_end": 69,
+      "text": "The simulation of GT and HRSG with DH is the same as the previous model, steam turbine with DH simulation PFD is stated in Fig. 12. The design condition of the GT and HRSG is as the previous model and steam turbines with DH parameters are stated in Table IV. The simulation of both is the same as above, except in this model the LP turbine did not serve to generate power. The superheated steam feeds into the HP turbine to make the required power, then leaves the HP turbine, then feeds into the HD1 to maintain required heat into the cold stream from the other side of the HD1 heat exchanger. After this, it leaves HD1 and mixes with LP superheated main steam and enters HD2 of the district heat system to maintain heat on the cold side of the HD2 heat exchanger. From the cold side of the HD2 heat exchanger, water is fed (S26 DH WATER) into the HD2 to absorb heat from the hot side, then enters HD1 to absorb extra heat and finally leaves (S28 DH HOT WATER) district heat system at 120°C that can be used for district systems.",
+      "terms": [
+        "DH",
+        "steam turbine",
+        "PFD",
+        "LP turbine",
+        "HP turbine",
+        "HD1",
+        "HD2",
+        "district heat system"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-033",
+      "doc_id": "R012",
+      "section": "II. C. Case 3 — CCGT with DH system",
+      "page_start": 68,
+      "page_end": 68,
+      "text": "Fig. 10. Heat recovery steam generator process flow diagram for case 3. Fig. 11. Steam turbines process flow diagram for case 3. Fig. 12. Steam turbine with a district heat system.",
+      "terms": [
+        "Heat recovery steam generator process flow diagram",
+        "Steam turbines process flow diagram",
+        "district heat system"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-034",
+      "doc_id": "R012",
+      "section": "II. C. Case 3 — CCGT with DH system",
+      "page_start": 68,
+      "page_end": 68,
+      "text": "TABLE IV Design Parameter of District Heating (Parameter: Value). DH water temperature=120°C; DH return water temperature=65°C; System DH water flow rate=1206.06 kg/s; Thermal efficiency=80.50%. Note: °C: Cellules, kg: Kilo gram, s: Second",
+      "terms": [
+        "District Heating",
+        "DH water temperature",
+        "DH return water temperature",
+        "System DH water flow rate",
+        "Thermal efficiency"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-035",
+      "doc_id": "R012",
+      "section": "III. A. Case 1",
+      "page_start": 69,
+      "page_end": 69,
+      "text": "The DWSIM open-source simulation software is used to simulate the design condition of the CCGT plant. The results of the simulation are compared with published results of ASPEN HYSYS and GateCycle (Liu and Karimi, 2018b) as shown in Fig. 13. Fig. 13 compares the performance of ASPEN HYSYS, GateCycle, and DWSIM in modeling the CCGT plant under design circumstances. The power generation of simulating GT turbines in DWSIM is in good agreement with HYSYS. The heat rate of DWSIM results is completely the same as ASPEN HYSYS and 1.55% higher than GateCycle results. These results are good agreement for DWSIM CCGT simulation.",
+      "terms": [
+        "DWSIM",
+        "ASPEN HYSYS",
+        "GateCycle",
+        "CCGT plant",
+        "power generation",
+        "heat rate"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-036",
+      "doc_id": "R012",
+      "section": "III. A. Case 1",
+      "page_start": 69,
+      "page_end": 69,
+      "text": "The thermal efficiency of both ASPEN HYSYS and GateCycle is nearly the same, but in DWSIM the value is less by about 3.5%. HYSYS and GateCycle support a multistage compressor and turbine, and in practically all GT work with the multistage compressor, the cooling air from the compressor is taken from the compressor stages depending on the target position of the cooling area, but DWSIM does not support a multistage compressor yet. As a result, exhaust GT simulation temperature also indicates excellent agreement as all three software’s are nearly the same around 615°C, which helps us simulate our combined cycle.",
+      "terms": [
+        "thermal efficiency",
+        "ASPEN HYSYS",
+        "GateCycle",
+        "multistage compressor",
+        "cooling air",
+        "exhaust GT simulation temperature"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-037",
+      "doc_id": "R012",
+      "section": "III. A. Case 1",
+      "page_start": 69,
+      "page_end": 69,
+      "text": "Conducting an HRSG simulation under DWSIM is quite similar to that in commercial codes since all unit operations are available (heat exchangers, expanders, separator for drum purpose, pumps, recycle, and controllers) and the designed parameters (pressure, temperature, isentropic efficiency, and flow) are set as Table I and the outcome is very similar and agreed. The MW generation by expanders is very close to the commercial software, which is 1.77%. DWSIM achieves MW lower than HYSYS result, and the DWSIM exhaust temperature through HRSG is practically accepted because it is higher than 100°C, which is higher than the NO_x dewpoint. Plant efficiency in DWSIM shows higher result than HYSYS by 5% this is because DWSIM steam cycle efficiency is higher than HYSYS this variety result is coming from lack of DWSIM multistage compressor that change its outlet temperature.",
+      "terms": [
+        "HRSG simulation",
+        "unit operations",
+        "isentropic efficiency",
+        "expanders",
+        "NO_x dewpoint",
+        "Plant efficiency",
+        "steam cycle efficiency",
+        "multistage compressor"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-038",
+      "doc_id": "R012",
+      "section": "III. B. Case 2",
+      "page_start": 69,
+      "page_end": 69,
+      "text": "The simulation of the CCGT plant carried out for actual field data from one of the Kurdistan region’s companies. Because of the operating company and manufacturer privacy some data cannot be given, GT is mostly working at part-load operation so using a compressor map becomes very essential for covering part-load operation and testing inlet condition parameters on the CCGT plant during design and part-load operations, because there is no actual compressor map data from practical even from literature and because of lack of multistage compressor in our open source code DWSIM we forced to make few assumptions.",
+      "terms": [
+        "CCGT plant",
+        "field data",
+        "part-load operation",
+        "compressor map",
+        "multistage compressor",
+        "DWSIM"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-039",
+      "doc_id": "R012",
+      "section": "III. B. Case 2",
+      "page_start": 69,
+      "page_end": 69,
+      "text": "As for case 1, we divided the air compressor into two stages with an intercooler in between. Because the GT performance is heavily dependent on compressor performance, and some of the air comes from various stages in the compressor (for cooling and valve opening or closing), we are unable to reach the desired cooling temperature of the cooling streams from the compressor’s final stages due to high temperatures. Fig. 14 shows that there is a lot of acceptance and response to the use of DWSIM software to simulate CCGT field data and assumptions.",
+      "terms": [
+        "air compressor",
+        "intercooler",
+        "GT performance",
+        "compressor performance",
+        "cooling streams",
+        "DWSIM"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-040",
+      "doc_id": "R012",
+      "section": "III. B. Case 2",
+      "page_start": 69,
+      "page_end": 69,
+      "text": "The power generation of GT and CC is very close. The variety is about 0.45%. Besides the equality of the GT exhaust temperature, which in field operation is about 547°C, there is a variety of GT thermal efficiency of about −1% because there is a variation in the heat rate between DWSIM and field data and there are no required data from the field, especially for turbine inlet temperature. Fig. 14 shows an excellent agreement between field results and DWSIM results for net power, gas turbine heat rate, and overall cycle heat rates.",
+      "terms": [
+        "power generation",
+        "GT exhaust temperature",
+        "GT thermal efficiency",
+        "heat rate",
+        "turbine inlet temperature",
+        "net power",
+        "gas turbine heat rate"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-041",
+      "doc_id": "R012",
+      "section": "III. B. Case 2",
+      "page_start": 69,
+      "page_end": 69,
+      "text": "Fig. 13. Design performance comparison between ASPEN HYSYS, GateCycle, and DWSIM for case 1. Fig. 14. Design performance comparisons between field and DWSIM results.",
+      "terms": [
+        "Design performance comparison",
+        "ASPEN HYSYS",
+        "GateCycle",
+        "DWSIM"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-042",
+      "doc_id": "R012",
+      "section": "III. C. Case 3 — CCGT without cogeneration",
+      "page_start": 69,
+      "page_end": 70,
+      "text": "Comparisons of CCGT in DWSIM and CCGT by the predicted model of the used reference are stated in Fig. 15. The generic model is applied to the GT of the CC power plant, which is designed to work without a cogeneration system. As in previous cases, due to unavailability of the multistage compressor, we used two cooling systems for gas turbine cooling. As with the compressor discharge, two lines are separate for cooling the gas turbine’s rotor and stator. The model is run so as to simulate the desired CCGT and achieve desirable results.",
+      "terms": [
+        "CCGT",
+        "DWSIM",
+        "generic model",
+        "cogeneration system",
+        "multistage compressor",
+        "gas turbine cooling",
+        "rotor and stator"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-043",
+      "doc_id": "R012",
+      "section": "III. C. Case 3 — CCGT without cogeneration",
+      "page_start": 70,
+      "page_end": 70,
+      "text": "We obtained gas turbine MW generation closely same as a predicted measure in the used reference as the difference is only about 0.27% which excellent gaining of DWSIM for simulating GT, in additional gas turbine exhaust temperature also very reasonable and have good agreement compared to the used reference its error about 0.96% higher than reference result, the thermal efficiency of the simulated gas turbine in DWSIM is higher about 4.11% than predicted reference because of assumed generic model of cooling air system and unavailability of compressor and turbine multistage.",
+      "terms": [
+        "gas turbine MW generation",
+        "gas turbine exhaust temperature",
+        "thermal efficiency",
+        "cooling air system",
+        "DWSIM"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-044",
+      "doc_id": "R012",
+      "section": "III. C. Case 3 — CCGT without cogeneration",
+      "page_start": 70,
+      "page_end": 70,
+      "text": "The HRSG simulation of DWSIM shows very close outcomes compared to the predicted model. The outlet temperature of both stages of pressure is close to the same as HP feed water outlet temperature has 1.19% error and LP feed water outlet temperature has 3.6% error. The exhaust temperature of the DWSIM simulator is 11.4% lower than the predicted reference temperature, which is (100°C and 112.99°C), respectively. This difference occurs because the model is predicted and the reference did not state required information about heat exchangers and their condition, but practically we can observe that the result is highly agreed. The power generation of both models has extremely similar outcomes as DWSIM prediction shows lower values of 0.26%, 4.79%, and 0.72% for HP turbine, LP turbine, and plant net power, respectively. The higher error of LP turbine power generation occurs because of steam separation in the LP drum, which produces lower flow of steam by 21.5%, but the results indicate that DWSIM software has excellent response for combine cycle simulation design.",
+      "terms": [
+        "HRSG simulation",
+        "HP feed water outlet temperature",
+        "LP feed water outlet temperature",
+        "exhaust temperature",
+        "HP turbine",
+        "LP turbine",
+        "plant net power",
+        "LP drum"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-045",
+      "doc_id": "R012",
+      "section": "III. C. Case 3 — CCGT without cogeneration",
+      "page_start": 70,
+      "page_end": 70,
+      "text": "Fig. 15. Comparison results between DWSIM and measured output of combined cycle gas turbine without cogeneration system.",
+      "terms": [
+        "DWSIM",
+        "combined cycle gas turbine",
+        "cogeneration system"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-046",
+      "doc_id": "R012",
+      "section": "III. C. Case 3 — CCGT with district heat system",
+      "page_start": 70,
+      "page_end": 70,
+      "text": "In the cogeneration mode, the LP turbine did not serve for MW generation, but the HP turbine and gas turbines remained in the previous mode for power generations that became 253.5 MW of net power in the DWSIM model. As a result, DWSIM net power is higher by 0.16% than predicted using the used reference. The cogeneration system in the DWSIM simulation shows excellent agreement as simulated under the same conditions in the predicted used reference.",
+      "terms": [
+        "cogeneration mode",
+        "LP turbine",
+        "HP turbine",
+        "gas turbines",
+        "net power",
+        "DWSIM model",
+        "cogeneration system"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-047",
+      "doc_id": "R012",
+      "section": "IV. Conclusion",
+      "page_start": 70,
+      "page_end": 70,
+      "text": "In this paper, DWSIM an open-source process simulator has been used to study and simulate CCGT power plants operated under design conditions. DWSIM had proved to be a reliable process simulator in the past few years and is continuously being improved and optimized with each version. DWSIM’s simulations capabilities were put to test against prominent commercial codes such as Aspen HYSYS and GateCycle and power plant data to see whether it is a viable choice to simulate and investigate CCGTs plants. For this purpose, a generic model for a CCGPT plant has been prepared and slightly modified for each case study as required. This model is capable of simulating a multistage compression with a compressor map as well as includes a rigorous model for the HRSG.",
+      "terms": [
+        "DWSIM",
+        "open-source process simulator",
+        "CCGT power plants",
+        "Aspen HYSYS",
+        "GateCycle",
+        "generic model",
+        "compressor map",
+        "HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-048",
+      "doc_id": "R012",
+      "section": "IV. Conclusion",
+      "page_start": 70,
+      "page_end": 70,
+      "text": "Three case studies have been adopted for the validation of the generic model: two simulations conducted in Aspen HYSYS and GateCycle and plant data. The parameters of each case were introduced to the generic model and the DWSIM’s obtained results (power generation, thermal efficiency, and heat rates) show very good agreement with the case studies results and the adoption of the relativized compressor map has proved to be successful. The results deviation from the respective case can be summarized as a maximum of 5% for the plant efficiency in Case 1 whereas it is much less for the power generation, GT exhaust temperature.etc., in Case 2, the agreement is more apparent whereas in Case 3 only without cogeneration condition the exhaust temperature is lower than expected by about 11% that has shown to largest deviation in this case. The main source of error of in the covered cases can be ascribed to the lack of crucial data such as the compressor’s multistage conditions.",
+      "terms": [
+        "generic model",
+        "Aspen HYSYS",
+        "GateCycle",
+        "thermal efficiency",
+        "heat rates",
+        "relativized compressor map",
+        "plant efficiency",
+        "GT exhaust temperature"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R012-049",
+      "doc_id": "R012",
+      "section": "IV. Conclusion",
+      "page_start": 70,
+      "page_end": 70,
+      "text": "For the final conclusion about the use and importance of DWSIM in CCGT plant simulation, we found that in light of the promising results that DWSIM is quite reliable in CCGT plants simulations under design conditions for applications such as operators training, academic studies, or process optimization given. It is worth noting that CCGT plants usually operate under part-load or off-design conditions and it is imperative to investigate how DWSIM is capable of simulating such cases but due to the complexity of part-load design simulations it was chosen be done in a future work.",
+      "terms": [
+        "DWSIM",
+        "CCGT plant simulation",
+        "design conditions",
+        "operators training",
+        "part-load",
+        "off-design conditions"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    }
+  ],
+  "report": {
+    "paragraph_count": 49,
+    "pages_processed": "60-71 (PDF 1-12쪽 전체)",
+    "last_paragraph_id": "R012-049",
+    "skipped": [
+      "60쪽 저자 소속, 하단 박스의 저널 정보·Received/Accepted/Published 날짜·Corresponding author e-mail·QR코드·Copyright/CC 문구: 저자 연락처/저작권 문구(라이선스는 document.license에 반영)",
+      "각 쪽 머리글(쪽번호, http://dx.doi.org/10.14500/aro.11098)과 바닥글(ARO p-ISSN: 2410-9355, e-ISSN: 2307-549X): 머리글/바닥글",
+      "71쪽 References 목록: 참고문헌 목록",
+      "Fig. 1-15의 그래프·공정도(PFD) 내부 라벨과 수치: 캡션만 수록, 그림 내용은 추측하지 않음"
+    ],
+    "uncertain": [
+      "2단 편집: 본문 순서는 비layout pdftotext와 페이지 이미지로 재구성함. 단/쪽을 넘는 문단(62-63쪽 HRSG 설명, 64-65쪽 Case 2 설명, 66-67쪽 Case 3, 67-69쪽 DH 설명, 69-70쪽 Case 3 결과)은 그림·표·바닥글을 건너뛰어 이어 붙임",
+      "70쪽 왼쪽 단의 \"The generic model is applied ...\"~\"...21.5%,\"는 페이지 이미지상 69쪽 \"Comparisons of CCGT in DWSIM ... Fig. 15.\"에 이어지는 III.C Case 3(without cogeneration) 결과 문단으로 판단, 오른쪽 단 첫 줄 \"but the results indicate ...\"로 문장이 이어짐",
+      "61쪽 \"GateCycle\" 뒤 글리프가 PDF에서 깨진 상자(□)로 인쇄되어 판독 불가 — 기호를 생략하고 \"GateCycle\"로 둠",
+      "하이픈 줄바꿈 복원: pdftotext가 지운 하이픈을 layout 추출본·이미지 기준으로 복원(Open-source, open-source, EGR-IGVC, high-temperature)",
+      "식 (1)-(6)은 PDF 이미지에서 기호를 확인해 선형 표기로 옮김; 식 (1) 설명문의 \"T is the design inlet temperature, and P is the design inlet pressure\"는 원문 그대로(원문상 T_d, P_d 설명과 중복)",
+      "Table II의 \"Steam turbines (STs)\" 행 Value 칸에 \"Turbines (STs)\"가 인쇄되어 있어 그대로 수록; Table III에서 Gross efficiency/Inlet·Outlet gas temperature가 \"Gas turbine\" 묶음 아래 인쇄된 배치도 원문 그대로",
+      "표 각주의 \"Cellules\"(Celsius 오기)는 원문 철자 그대로",
+      "소절 제목 \"CCGT without cogeneration\", \"CCGT with DH system\", \"CCGT with district heat system\"은 번호가 없어 상위 절 이름과 함께 section에 적음"
+    ]
+  }
+}

@@ -1,0 +1,2483 @@
+{
+  "document": {
+    "doc_id": "R015",
+    "title": "Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam",
+    "authors": [
+      "The International Association for the Properties of Water and Steam (IAPWS)"
+    ],
+    "year": 2007,
+    "venue": "IAPWS R7-97(2012), Lucerne, Switzerland, August 2007",
+    "doi": "",
+    "url": "http://www.iapws.org",
+    "license": "© 2007 International Association for the Properties of Water and Steam. Publication in whole or in part is allowed in all countries provided that attribution is given to IAPWS (출처 표기 시 전재 허용 → verbatim)",
+    "source_type": "verbatim",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R015-001",
+      "doc_id": "R015",
+      "section": "Cover page",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Revised Release on the IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam (The revision only relates to the extension of region 5 to 50 MPa) This revised release replaces the corresponding release of 1997 and contains 49 pages, including this cover page. This release has been authorized by the International Association for the Properties of Water and Steam (IAPWS) at its meeting in Lucerne, Switzerland, 26-31 August, 2007, for issue by its Secretariat. The members of IAPWS are: Argentina and Brazil, Britain and Ireland, Canada, the Czech Republic, Denmark, France, Germany, Greece, Italy, Japan, Russia, and the United States of America, and associate member Switzerland.",
+      "terms": [
+        "region 5",
+        "MPa"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-002",
+      "doc_id": "R015",
+      "section": "Cover page",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "The formulation provided in this release is recommended for industrial use, and is called \"IAPWS Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam\" abbreviated to \"IAPWS Industrial Formulation 1997\" (IAPWS-IF97). The IAPWS-IF97 replaces the previous Industrial formulation \"The 1967 IFC Formulation for Industrial Use\" (IFC-67) [1]. Further details about the formulation can be found in the article by W. Wagner et al. [2] and for the extended region 5 in [2a]. Additional supplementary backward equations have been adopted by IAPWS and are listed in [2b].",
+      "terms": [
+        "IAPWS-IF97",
+        "IFC-67",
+        "backward equation",
+        "region 5"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-003",
+      "doc_id": "R015",
+      "section": "Cover page",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "The material contained in this release is identical to that contained in the release on IAPWS-IF97, issued by IAPWS in September 1997, except for the basic equation for region 5. The previous basic equation for this region was replaced by a new equation of the same structure. For temperatures between 1073 K and 2273 K, this equation extends the upper range of validity of IAPWS-IF97 in pressure from 10 MPa to 50 MPa. Except for the basic equation for region 5 of IAPWS-IF97, the property calculations are unchanged.",
+      "terms": [
+        "IAPWS-IF97",
+        "basic equation",
+        "region 5",
+        "MPa"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-004",
+      "doc_id": "R015",
+      "section": "Cover page",
+      "page_start": 1,
+      "page_end": 1,
+      "text": "In addition, minor editorial changes to this document, involving correction of typographical errors and updating of references, were made in the 2007 revision, and again in 2009 and 2010. In 2012, the description of the range of validity of the equation for the metastable vapor was clarified. IAPWS also has a formulation intended for general and scientific use [3]. Further information about this release and other releases issued by IAPWS can be obtained from the Executive Secretary of IAPWS or from http://www.iapws.org.",
+      "terms": [
+        "metastable"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-005",
+      "doc_id": "R015",
+      "section": "1 Nomenclature",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Thermodynamic quantities: c_p Specific isobaric heat capacity; c_v Specific isochoric heat capacity; f Specific Helmholtz free energy; g Specific Gibbs free energy; h Specific enthalpy; M Molar mass; p Pressure; R Specific gas constant; R_m Molar gas constant; s Specific entropy; T Absolute temperature^a; u Specific internal energy; v Specific volume; w Speed of sound; x General quantity; β Transformed pressure, Eq. (29a); γ Dimensionless Gibbs free energy, γ = g/(RT); δ Reduced density, δ = ρ/ρ^*; Δ Difference in any quantity; η Reduced enthalpy, η = h/h^*; θ Reduced temperature, θ = T/T^*; ϑ Transformed temperature, Eq. (29b); π Reduced pressure, π = p/p^*; ρ Mass density; σ Reduced entropy, σ = s/s^*; τ Inverse reduced temperature, τ = T^*/T; φ Dimensionless Helmholtz free energy, φ = f/(RT). ^a Note: T denotes absolute temperature on the International Temperature Scale of 1990.",
+      "terms": [
+        "Specific isobaric heat capacity",
+        "Specific Gibbs free energy",
+        "Specific Helmholtz free energy",
+        "Reduced pressure",
+        "Inverse reduced temperature",
+        "Transformed temperature",
+        "Reduced density",
+        "International Temperature Scale of 1990"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-006",
+      "doc_id": "R015",
+      "section": "1 Nomenclature",
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Superscripts: o Ideal-gas part; r Residual part; * Reducing quantity; ′ Saturated liquid state; ″ Saturated vapor state. Subscripts: c Critical point; max Maximum value; RMS Root-mean-square value; s Saturation state; t Triple point; tol Tolerance of a quantity. Root-mean-square deviation: Δx_RMS = √( (1/N) ∑_{n=1}^{N} (Δx_n)^2 ) (square root of the mean of the squared differences Δx_n), where Δx_n can be either absolute or percentage difference between the corresponding quantities x ; N is the number of Δx_n values (depending on the property, between 10 million and 100 million points are uniformly distributed over the respective range of validity).",
+      "terms": [
+        "Ideal-gas part",
+        "Residual part",
+        "Reducing quantity",
+        "Saturated liquid state",
+        "Saturated vapor state",
+        "Root-mean-square deviation",
+        "Δx_RMS",
+        "Tolerance of a quantity"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-007",
+      "doc_id": "R015",
+      "section": "2 Structure of the Formulation",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "The IAPWS Industrial Formulation 1997 consists of a set of equations for different regions which cover the following range of validity: 273.15 K ≤ T ≤ 1073.15 K, p ≤ 100 MPa; 1073.15 K < T ≤ 2273.15 K, p ≤ 50 MPa. Figure 1 shows the five regions into which the entire range of validity of IAPWS-IF97 is divided. The boundaries of the regions can be directly taken from Fig. 1 except for the boundary between regions 2 and 3; this boundary is defined by the so-called B23-equation given in Section 4. Both regions 1 and 2 are individually covered by a fundamental equation for the specific Gibbs free energy g( p,T ), region 3 by a fundamental equation for the specific Helmholtz free energy f (ρ,T ), where ρ is the density, and the saturation curve by a saturation-pressure equation p_s(T). The high-temperature region 5 is also covered by a g( p,T ) equation. These five equations, shown in rectangular boxes in Fig. 1, form the so-called basic equations.",
+      "terms": [
+        "B23-equation",
+        "g( p,T )",
+        "p_s(T)",
+        "basic equations",
+        "IAPWS-IF97",
+        "Gibbs free energy",
+        "Helmholtz free energy",
+        "saturation-pressure equation"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-008",
+      "doc_id": "R015",
+      "section": "2 Structure of the Formulation",
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Fig. 1. Regions and equations of IAPWS-IF97.",
+      "terms": [
+        "Fig. 1",
+        "IAPWS-IF97"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-009",
+      "doc_id": "R015",
+      "section": "2 Structure of the Formulation",
+      "page_start": 4,
+      "page_end": 5,
+      "text": "Regarding the main properties specific volume v, specific enthalpy h, specific isobaric heat capacity c_p, speed of sound w, and saturation pressure p_s, the basic equations represent the corresponding values from the \"IAPWS Formulation 1995 for the Thermodynamic Properties of Ordinary Water Substance for General and Scientific Use\" [3] (hereafter abbreviated to IAPWS-95) to within the tolerances specified for the development of the corresponding equations; details of these requirements and their fulfillment are given in the comprehensive paper on IAPWS-IF97 [2]. The basic equations for regions 1 and 3 also yield reasonable values for the metastable states close to the stable regions. For region 2 there is a special equation for the metastable-vapor region. Along the region boundaries the corresponding basic equations are consistent with each other within specified tolerances; for details see Section 10.",
+      "terms": [
+        "IAPWS-IF97",
+        "IAPWS-95",
+        "basic equation",
+        "saturation pressure",
+        "metastable-vapor region",
+        "specific volume",
+        "specific enthalpy",
+        "specific isobaric heat capacity"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-010",
+      "doc_id": "R015",
+      "section": "2 Structure of the Formulation",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "In addition to the basic equations, for regions 1, 2, and 4 so-called backward equations are provided in the forms of T( p,h ) and T( p,s ) for regions 1 and 2, and T_s( p ) for region 4. These backward equations are numerically consistent with the corresponding basic equations and make the calculation of properties as functions of p,h and of p,s for regions 1 and 2, and of p for region 4, extremely fast. In this way, properties such as T( p,h ), h( p,s), and h′( p) can be calculated without any iteration from the backward equation alone or by combination with the corresponding basic equation, for example, h( p,s) via the relation h( p,T( p,s )). As a consequence, the calculation of the industrially most important properties is on average more than five times faster than the corresponding calculation with IFC-67; for details see Section 11. The estimates of uncertainty of the most relevant properties calculated from the corresponding equations of IAPWS-IF97 are summarized in Section 12.",
+      "terms": [
+        "backward equations",
+        "IAPWS-IF97",
+        "IFC-67",
+        "basic equation",
+        "region 4",
+        "uncertainty",
+        "T_s"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-011",
+      "doc_id": "R015",
+      "section": "3 Reference Constants",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "The specific gas constant of ordinary water used for this formulation is R = 0.461 526 kJ kg^−1 K^−1. (1) (R: specific gas constant of ordinary water.) This value results from the recommended values of the molar gas constant [4], and the molar mass of ordinary water [5, 6]. The values of the critical parameters T_c = 647.096 K (2) (critical temperature) p_c = 22.064 MPa (3) (critical pressure) ρ_c = 322 kg m^−3 (4) (critical density) are from the corresponding IAPWS release [7].",
+      "terms": [
+        "specific gas constant",
+        "R = 0.461 526 kJ kg^−1 K^−1",
+        "molar gas constant",
+        "critical parameters",
+        "T_c = 647.096 K",
+        "p_c = 22.064 MPa",
+        "ρ_c = 322 kg m^−3"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-012",
+      "doc_id": "R015",
+      "section": "4 Auxiliary Equation for the Boundary between Regions 2 and 3",
+      "page_start": 5,
+      "page_end": 5,
+      "text": "The boundary between regions 2 and 3 (see Fig. 1) is defined by the following simple quadratic pressure-temperature relation, the B23-equation π = n_1 + n_2θ + n_3θ^2 (5) (reduced pressure on the region 2/3 boundary as a quadratic function of reduced temperature) where π = p/p^* and θ = T/T^* with p^* = 1 MPa and T^* = 1 K. The coefficients n_1 to n_3 of Eq. (5) are listed in Table 1. Equation (5) roughly describes an isentropic line; the entropy values along this boundary line are between s = 5.047 kJ kg^−1 K^−1 and s = 5.261 kJ kg^−1 K^−1.",
+      "terms": [
+        "B23-equation",
+        "isentropic line",
+        "region 2",
+        "p^*",
+        "T^*",
+        "π",
+        "θ",
+        "kJ kg^−1"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-013",
+      "doc_id": "R015",
+      "section": "4 Auxiliary Equation for the Boundary between Regions 2 and 3",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Alternatively Eq. (5) can be expressed explicitly in temperature as θ = n_4 + [(π − n_5)/n_3]^{1/2} , (6) (reduced temperature on the region 2/3 boundary as an explicit function of reduced pressure) with θ and π defined for Eq. (5) and the coefficients n_3 to n_5 listed in Table 1. Equations (5) and (6) cover the range from 623.15 K at a pressure of 16.5292 MPa to 863.15 K at 100 MPa.",
+      "terms": [
+        "Eq. (5)",
+        "region 2",
+        "π",
+        "θ",
+        "MPa"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-014",
+      "doc_id": "R015",
+      "section": "4 Auxiliary Equation for the Boundary between Regions 2 and 3",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "Table 1. Numerical values of the coefficients of the B23-equation, Eqs. (5) and (6), for defining the boundary between regions 2 and 3: i = 1: n_i = 0.348 051 856 289 69 × 10^3. i = 2: n_i = −0.116 718 598 799 75 × 10^1. i = 3: n_i = 0.101 929 700 393 26 × 10^−2. i = 4: n_i = 0.572 544 598 627 46 × 10^3. i = 5: n_i = 0.139 188 397 788 70 × 10^2. For computer-program verification, Eqs. (5) and (6) must meet the following T-p point: T = 0.623 150 000 × 10^3 K , p = 0.165 291 643 × 10^2 MPa.",
+      "terms": [
+        "Table 1",
+        "B23-equation",
+        "computer-program verification",
+        "n_i",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-015",
+      "doc_id": "R015",
+      "section": "5 Equations for Region 1",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "This section contains all details relevant for the use of the basic and backward equations of region 1 of IAPWS-IF97. Information about the consistency of the basic equation of this region with the basic equations of regions 3 and 4 along the corresponding region boundaries is summarized in Section 10. The results of computing-time comparisons between IAPWS-IF97 and IFC-67 are given in Section 11. The estimates of uncertainty of the most relevant properties can be found in Section 12.",
+      "terms": [
+        "IAPWS-IF97",
+        "IFC-67",
+        "basic equation",
+        "backward equation",
+        "region 1",
+        "uncertainty"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-016",
+      "doc_id": "R015",
+      "section": "5.1 Basic Equation",
+      "page_start": 6,
+      "page_end": 6,
+      "text": "The basic equation for this region is a fundamental equation for the specific Gibbs free energy g. This equation is expressed in dimensionless form, γ = g/(RT ), and reads g(p,T)/(RT) = γ(π,τ) = ∑_{i=1}^{34} n_i (7.1 − π)^{I_i} (τ − 1.222)^{J_i} , (7) (dimensionless Gibbs free energy of region 1 as a sum of 34 terms) where π = p/p^* and τ = T^*/T with p^* = 16.53 MPa and T^* = 1386 K ; R is given by Eq. (1). The coefficients n_i and exponents I_i and J_i of Eq. (7) are listed in Table 2. All thermodynamic properties can be derived from Eq. (7) by using the appropriate combinations of the dimensionless Gibbs free energy and its derivatives. Relations between the relevant thermodynamic properties and γ and its derivatives are summarized in Table 3. All required derivatives of the dimensionless Gibbs free energy are explicitly given in Table 4.",
+      "terms": [
+        "Eq. (7)",
+        "p^* = 16.53 MPa",
+        "T^* = 1386 K",
+        "Gibbs free energy",
+        "basic equation",
+        "region 1",
+        "n_i",
+        "I_i"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-017",
+      "doc_id": "R015",
+      "section": "5.1 Basic Equation",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "Since the 5th International Conference on the Properties of Steam in London in 1956, the specific internal energy and the specific entropy of the saturated liquid at the triple point have been set equal to zero: u′_t = 0 ; s′_t = 0 . (8) (specific internal energy and specific entropy of the saturated liquid at the triple point are zero) In order to meet this condition at the temperature and pressure of the triple point T_t = 273.16 K [8] p_t = 611.657 Pa [9] , (9) (triple-point temperature and pressure) the coefficients n_3 and n_4 in Eq. (7) have been adjusted accordingly. As a consequence, Eq. (7) yields for the specific enthalpy of the saturated liquid at the triple point h′_t = 0.611 783 J kg^−1 . (10) (specific enthalpy of the saturated liquid at the triple point)",
+      "terms": [
+        "u′_t = 0",
+        "s′_t = 0",
+        "T_t = 273.16 K",
+        "p_t = 611.657 Pa",
+        "h′_t = 0.611 783 J kg^−1",
+        "specific enthalpy",
+        "specific entropy",
+        "specific internal energy"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-018",
+      "doc_id": "R015",
+      "section": "5.1 Basic Equation",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "Table 2 [rows i = 1 to 17 of 34]. Numerical values of the coefficients and exponents of the dimensionless Gibbs free energy for region 1, Eq. (7): i = 1: I_i = 0; J_i = −2; n_i = 0.146 329 712 131 67. i = 2: I_i = 0; J_i = −1; n_i = −0.845 481 871 691 14. i = 3: I_i = 0; J_i = 0; n_i = −0.375 636 036 720 40 × 10^1. i = 4: I_i = 0; J_i = 1; n_i = 0.338 551 691 683 85 × 10^1. i = 5: I_i = 0; J_i = 2; n_i = −0.957 919 633 878 72. i = 6: I_i = 0; J_i = 3; n_i = 0.157 720 385 132 28. i = 7: I_i = 0; J_i = 4; n_i = −0.166 164 171 995 01 × 10^−1. i = 8: I_i = 0; J_i = 5; n_i = 0.812 146 299 835 68 × 10^−3. i = 9: I_i = 1; J_i = −9; n_i = 0.283 190 801 238 04 × 10^−3. i = 10: I_i = 1; J_i = −7; n_i = −0.607 063 015 658 74 × 10^−3. i = 11: I_i = 1; J_i = −1; n_i = −0.189 900 682 184 19 × 10^−1. i = 12: I_i = 1; J_i = 0; n_i = −0.325 297 487 705 05 × 10^−1. i = 13: I_i = 1; J_i = 1; n_i = −0.218 417 171 754 14 × 10^−1. i = 14: I_i = 1; J_i = 3; n_i = −0.528 383 579 699 30 × 10^−4. i = 15: I_i = 2; J_i = −3; n_i = −0.471 843 210 732 67 × 10^−3. i = 16: I_i = 2; J_i = 0; n_i = −0.300 017 807 930 26 × 10^−3. i = 17: I_i = 2; J_i = 1; n_i = 0.476 613 939 069 87 × 10^−4.",
+      "terms": [
+        "Table 2",
+        "Gibbs free energy",
+        "region 1",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-019",
+      "doc_id": "R015",
+      "section": "5.1 Basic Equation",
+      "page_start": 7,
+      "page_end": 7,
+      "text": "Table 2 [rows i = 18 to 34 of 34]. Numerical values of the coefficients and exponents of the dimensionless Gibbs free energy for region 1, Eq. (7): i = 18: I_i = 2; J_i = 3; n_i = −0.441 418 453 308 46 × 10^−5. i = 19: I_i = 2; J_i = 17; n_i = −0.726 949 962 975 94 × 10^−15. i = 20: I_i = 3; J_i = −4; n_i = −0.316 796 448 450 54 × 10^−4. i = 21: I_i = 3; J_i = 0; n_i = −0.282 707 979 853 12 × 10^−5. i = 22: I_i = 3; J_i = 6; n_i = −0.852 051 281 201 03 × 10^−9. i = 23: I_i = 4; J_i = −5; n_i = −0.224 252 819 080 00 × 10^−5. i = 24: I_i = 4; J_i = −2; n_i = −0.651 712 228 956 01 × 10^−6. i = 25: I_i = 4; J_i = 10; n_i = −0.143 417 299 379 24 × 10^−12. i = 26: I_i = 5; J_i = −8; n_i = −0.405 169 968 601 17 × 10^−6. i = 27: I_i = 8; J_i = −11; n_i = −0.127 343 017 416 41 × 10^−8. i = 28: I_i = 8; J_i = −6; n_i = −0.174 248 712 306 34 × 10^−9. i = 29: I_i = 21; J_i = −29; n_i = −0.687 621 312 955 31 × 10^−18. i = 30: I_i = 23; J_i = −31; n_i = 0.144 783 078 285 21 × 10^−19. i = 31: I_i = 29; J_i = −38; n_i = 0.263 357 816 627 95 × 10^−22. i = 32: I_i = 30; J_i = −39; n_i = −0.119 476 226 400 71 × 10^−22. i = 33: I_i = 31; J_i = −40; n_i = 0.182 280 945 814 04 × 10^−23. i = 34: I_i = 32; J_i = −41; n_i = −0.935 370 872 924 58 × 10^−25.",
+      "terms": [
+        "Table 2",
+        "Gibbs free energy",
+        "region 1",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-020",
+      "doc_id": "R015",
+      "section": "5.1 Basic Equation",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "Table 3. Relations of thermodynamic properties to the dimensionless Gibbs free energy γ and its derivatives^a when using Eq. (7). Specific volume v = (∂g/∂p)_T: v(π,τ) p/(RT) = πγ_π. Specific internal energy u = g − T (∂g/∂T)_p − p(∂g/∂p)_T: u(π,τ)/(RT) = τγ_τ − πγ_π. Specific entropy s = −(∂g/∂T)_p: s(π,τ)/R = τγ_τ − γ. Specific enthalpy h = g − T (∂g/∂T)_p: h(π,τ)/(RT) = τγ_τ. Specific isobaric heat capacity c_p = (∂h/∂T)_p: c_p(π,τ)/R = −τ^2γ_ττ. Specific isochoric heat capacity c_v = (∂u/∂T)_v: c_v(π,τ)/R = −τ^2γ_ττ + (γ_π − τγ_πτ)^2/γ_ππ. Speed of sound w = v[−(∂p/∂v)_s]^{1/2}: w^2(π,τ)/(RT) = γ_π^2 / [ (γ_π − τγ_πτ)^2/(τ^2γ_ττ) − γ_ππ ]. ^a γ_π = [∂γ/∂π]_τ , γ_ππ = [∂^2γ/∂π^2]_τ , γ_τ = [∂γ/∂τ]_π , γ_ττ = [∂^2γ/∂τ^2]_π , γ_πτ = [∂^2γ/∂π∂τ].",
+      "terms": [
+        "Table 3",
+        "Specific volume",
+        "Specific internal energy",
+        "Specific entropy",
+        "Specific enthalpy",
+        "Specific isobaric heat capacity",
+        "Specific isochoric heat capacity",
+        "Speed of sound"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-021",
+      "doc_id": "R015",
+      "section": "5.1 Basic Equation",
+      "page_start": 8,
+      "page_end": 8,
+      "text": "Table 4. The dimensionless Gibbs free energy γ and its derivatives^a according to Eq. (7). γ = ∑_{i=1}^{34} n_i (7.1 − π)^{I_i} (τ − 1.222)^{J_i} (dimensionless Gibbs free energy); γ_π = ∑_{i=1}^{34} −n_i I_i (7.1 − π)^{I_i − 1} (τ − 1.222)^{J_i} (first derivative with respect to π); γ_ππ = ∑_{i=1}^{34} n_i I_i (I_i − 1)(7.1 − π)^{I_i − 2} (τ − 1.222)^{J_i} (second derivative with respect to π); γ_τ = ∑_{i=1}^{34} n_i (7.1 − π)^{I_i} J_i (τ − 1.222)^{J_i − 1} (first derivative with respect to τ); γ_ττ = ∑_{i=1}^{34} n_i (7.1 − π)^{I_i} J_i (J_i − 1)(τ − 1.222)^{J_i − 2} (second derivative with respect to τ); γ_πτ = ∑_{i=1}^{34} −n_i I_i (7.1 − π)^{I_i − 1} J_i (τ − 1.222)^{J_i − 1} (mixed derivative with respect to π and τ). ^a γ_π = [∂γ/∂π]_τ , γ_ππ = [∂^2γ/∂π^2]_τ , γ_τ = [∂γ/∂τ]_π , γ_ττ = [∂^2γ/∂τ^2]_π , γ_πτ = [∂^2γ/∂π∂τ].",
+      "terms": [
+        "Table 4",
+        "dimensionless Gibbs free energy",
+        "γ_π",
+        "γ_ππ",
+        "γ_τ",
+        "γ_ττ",
+        "γ_πτ",
+        "Eq. (7)"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-022",
+      "doc_id": "R015",
+      "section": "5.1 Basic Equation",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "Range of validity. Equation (7) covers region 1 of IAPWS-IF97 defined by the following range of temperature and pressure; see Fig. 1: 273.15 K ≤ T ≤ 623.15 K, p_s(T) ≤ p ≤ 100 MPa . In addition to the properties in the stable single-phase liquid region, Eq. (7) also yields reasonable values in the metastable superheated-liquid region close to the saturated liquid line. Note: For temperatures between 273.15 K and 273.16 K, the part of the range of validity between the pressures on the melting line [10] and on the saturation-pressure line, Eq. (30), corresponds to metastable states.",
+      "terms": [
+        "Range of validity",
+        "metastable superheated-liquid region",
+        "melting line",
+        "IAPWS-IF97",
+        "region 1",
+        "p_s",
+        "MPa"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-023",
+      "doc_id": "R015",
+      "section": "5.1 Basic Equation",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "Computer-program verification. To assist the user in computer-program verification of Eq. (7), Table 5 contains test values of the most relevant properties. Table 5. Thermodynamic property values calculated from Eq. (7) for selected values of T and p^a: v/(m^3 kg^−1): (T = 300 K, p = 3 MPa) = 0.100 215 168 × 10^−2; (T = 300 K, p = 80 MPa) = 0.971 180 894 × 10^−3; (T = 500 K, p = 3 MPa) = 0.120 241 800 × 10^−2. h/(kJ kg^−1): (T = 300 K, p = 3 MPa) = 0.115 331 273 × 10^3; (T = 300 K, p = 80 MPa) = 0.184 142 828 × 10^3; (T = 500 K, p = 3 MPa) = 0.975 542 239 × 10^3. u/(kJ kg^−1): (T = 300 K, p = 3 MPa) = 0.112 324 818 × 10^3; (T = 300 K, p = 80 MPa) = 0.106 448 356 × 10^3; (T = 500 K, p = 3 MPa) = 0.971 934 985 × 10^3. s/(kJ kg^−1 K^−1): (T = 300 K, p = 3 MPa) = 0.392 294 792; (T = 300 K, p = 80 MPa) = 0.368 563 852; (T = 500 K, p = 3 MPa) = 0.258 041 912 × 10^1. c_p/(kJ kg^−1 K^−1): (T = 300 K, p = 3 MPa) = 0.417 301 218 × 10^1; (T = 300 K, p = 80 MPa) = 0.401 008 987 × 10^1; (T = 500 K, p = 3 MPa) = 0.465 580 682 × 10^1. w/(m s^−1): (T = 300 K, p = 3 MPa) = 0.150 773 921 × 10^4; (T = 300 K, p = 80 MPa) = 0.163 469 054 × 10^4; (T = 500 K, p = 3 MPa) = 0.124 071 337 × 10^4. ^a It is recommended to verify programmed functions using 8 byte real values for all three combinations of T and p given in this table.",
+      "terms": [
+        "computer-program verification",
+        "Table 5",
+        "kJ kg^−1",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-024",
+      "doc_id": "R015",
+      "section": "5.2 Backward Equations",
+      "page_start": 9,
+      "page_end": 9,
+      "text": "For the calculation of properties as function of p,h or of p,s without any iteration, the two backward equations require extremely good numerical consistency with the basic equation. The exact requirements for these numerical consistencies were obtained from comprehensive test calculations for several characteristic power cycles. The result of these investigations, namely the assignment of the tolerable numerical inconsistencies between the basic equation, Eq. (7), and the corresponding backward equations, is given in Eqs. (12) and (14), respectively.",
+      "terms": [
+        "basic equation",
+        "backward equation",
+        "numerical consistency"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-025",
+      "doc_id": "R015",
+      "section": "5.2.1 The Backward Equation T ( p,h )",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "The backward equation T( p,h ) for region 1 has the following dimensionless form: T(p,h)/T^* = θ(π,η) = ∑_{i=1}^{20} n_i π^{I_i} (η + 1)^{J_i} , (11) (dimensionless temperature of region 1 as a function of reduced pressure and reduced enthalpy) where θ = T/T^*, π = p/p^*, and η = h/h^* with T^* = 1 K , p^* = 1 MPa, and h^* = 2500 kJ kg^−1. The coefficients n_i and exponents I_i and J_i of Eq. (11) are listed in Table 6.",
+      "terms": [
+        "Eq. (11)",
+        "h^* = 2500 kJ kg^−1",
+        "backward equation",
+        "region 1",
+        "n_i",
+        "I_i",
+        "J_i",
+        "p^*"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-026",
+      "doc_id": "R015",
+      "section": "5.2.1 The Backward Equation T ( p,h )",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "Table 6 [rows i = 1 to 10 of 20]. Numerical values of the coefficients and exponents of the backward equation T ( p,h ) for region 1, Eq. (11): i = 1: I_i = 0; J_i = 0; n_i = −0.238 724 899 245 21 × 10^3. i = 2: I_i = 0; J_i = 1; n_i = 0.404 211 886 379 45 × 10^3. i = 3: I_i = 0; J_i = 2; n_i = 0.113 497 468 817 18 × 10^3. i = 4: I_i = 0; J_i = 6; n_i = −0.584 576 160 480 39 × 10^1. i = 5: I_i = 0; J_i = 22; n_i = −0.152 854 824 131 40 × 10^−3. i = 6: I_i = 0; J_i = 32; n_i = −0.108 667 076 953 77 × 10^−5. i = 7: I_i = 1; J_i = 0; n_i = −0.133 917 448 726 02 × 10^2. i = 8: I_i = 1; J_i = 1; n_i = 0.432 110 391 835 59 × 10^2. i = 9: I_i = 1; J_i = 2; n_i = −0.540 100 671 705 06 × 10^2. i = 10: I_i = 1; J_i = 3; n_i = 0.305 358 922 039 16 × 10^2.",
+      "terms": [
+        "Table 6",
+        "backward equation",
+        "region 1",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-027",
+      "doc_id": "R015",
+      "section": "5.2.1 The Backward Equation T ( p,h )",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "Table 6 [rows i = 11 to 20 of 20]. Numerical values of the coefficients and exponents of the backward equation T ( p,h ) for region 1, Eq. (11): i = 11: I_i = 1; J_i = 4; n_i = −0.659 647 494 236 38 × 10^1. i = 12: I_i = 1; J_i = 10; n_i = 0.939 654 008 783 63 × 10^−2. i = 13: I_i = 1; J_i = 32; n_i = 0.115 736 475 053 40 × 10^−6. i = 14: I_i = 2; J_i = 10; n_i = −0.258 586 412 820 73 × 10^−4. i = 15: I_i = 2; J_i = 32; n_i = −0.406 443 630 847 99 × 10^−8. i = 16: I_i = 3; J_i = 10; n_i = 0.664 561 861 916 35 × 10^−7. i = 17: I_i = 3; J_i = 32; n_i = 0.806 707 341 030 27 × 10^−10. i = 18: I_i = 4; J_i = 32; n_i = −0.934 777 712 139 47 × 10^−12. i = 19: I_i = 5; J_i = 32; n_i = 0.582 654 420 206 01 × 10^−14. i = 20: I_i = 6; J_i = 32; n_i = −0.150 201 859 535 03 × 10^−16.",
+      "terms": [
+        "Table 6",
+        "backward equation",
+        "region 1",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-028",
+      "doc_id": "R015",
+      "section": "5.2.1 The Backward Equation T ( p,h )",
+      "page_start": 10,
+      "page_end": 10,
+      "text": "Range of validity. Equation (11) covers the same range of validity as the basic equation, Eq. (7), except for the metastable region (superheated liquid), where Eq. (11) is not valid. Numerical consistency with the basic equation. For ten million random pairs of p and h covering the entire region 1, the differences ΔT between temperatures from Eq. (11) and from Eq. (7) were calculated and the absolute maximum difference |ΔT|_max and the root-mean-square difference ΔT_RMS were determined. These actual inconsistency values and the tolerated value |ΔT|_tol (see the beginning of Section 5.2) amount to: |ΔT|_tol = 25 mK ; ΔT_RMS = 13.4 mK ; |ΔT|_max = 23.6 mK . (12) (tolerated, root-mean-square and maximum temperature differences between Eq. (11) and Eq. (7))",
+      "terms": [
+        "Numerical consistency",
+        "|ΔT|_tol = 25 mK",
+        "basic equation",
+        "metastable",
+        "region 1",
+        "|ΔT|_max",
+        "ΔT_RMS"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-029",
+      "doc_id": "R015",
+      "section": "5.2.1 The Backward Equation T ( p,h )",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "Computer-program verification. To assist the user in computer-program verification of Eq. (11), Table 7 contains the corresponding test values. Table 7. Temperature values calculated from Eq. (11) for selected values of p and h^a: p/MPa = 3, h/(kJ kg^−1) = 500: T/K = 0.391 798 509 × 10^3. p/MPa = 80, h/(kJ kg^−1) = 500: T/K = 0.378 108 626 × 10^3. p/MPa = 80, h/(kJ kg^−1) = 1500: T/K = 0.611 041 229 × 10^3. ^a It is recommended to verify the programmed equation (8 byte real values) for all three combinations of p and h given in this table.",
+      "terms": [
+        "computer-program verification",
+        "Table 7",
+        "kJ kg^−1",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-030",
+      "doc_id": "R015",
+      "section": "5.2.2 The Backward Equation T ( p,s )",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "The backward equation T( p,s ) for region 1 has the following dimensionless form: T(p,s)/T^* = θ(π,σ) = ∑_{i=1}^{20} n_i π^{I_i} (σ + 2)^{J_i} , (13) (dimensionless temperature of region 1 as a function of reduced pressure and reduced entropy) where θ = T/T^*, π = p/p^*, and σ = s/s^* with T^* = 1 K , p^* = 1 MPa, and s^* = 1 kJ kg^−1 K^−1. The coefficients n_i and exponents I_i and J_i of Eq. (13) are listed in Table 8.",
+      "terms": [
+        "Eq. (13)",
+        "s^* = 1 kJ kg^−1 K^−1",
+        "backward equation",
+        "region 1",
+        "n_i",
+        "I_i",
+        "J_i",
+        "p^*"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-031",
+      "doc_id": "R015",
+      "section": "5.2.2 The Backward Equation T ( p,s )",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "Table 8 [rows i = 1 to 10 of 20]. Numerical values of the coefficients and exponents of the backward equation T ( p,s ) for region 1, Eq. (13): i = 1: I_i = 0; J_i = 0; n_i = 0.174 782 680 583 07 × 10^3. i = 2: I_i = 0; J_i = 1; n_i = 0.348 069 308 928 73 × 10^2. i = 3: I_i = 0; J_i = 2; n_i = 0.652 925 849 784 55 × 10^1. i = 4: I_i = 0; J_i = 3; n_i = 0.330 399 817 754 89. i = 5: I_i = 0; J_i = 11; n_i = −0.192 813 829 231 96 × 10^−6. i = 6: I_i = 0; J_i = 31; n_i = −0.249 091 972 445 73 × 10^−22. i = 7: I_i = 1; J_i = 0; n_i = −0.261 076 364 893 32. i = 8: I_i = 1; J_i = 1; n_i = 0.225 929 659 815 86. i = 9: I_i = 1; J_i = 2; n_i = −0.642 564 633 952 26 × 10^−1. i = 10: I_i = 1; J_i = 3; n_i = 0.788 762 892 705 26 × 10^−2.",
+      "terms": [
+        "Table 8",
+        "backward equation",
+        "region 1",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-032",
+      "doc_id": "R015",
+      "section": "5.2.2 The Backward Equation T ( p,s )",
+      "page_start": 11,
+      "page_end": 11,
+      "text": "Table 8 [rows i = 11 to 20 of 20]. Numerical values of the coefficients and exponents of the backward equation T ( p,s ) for region 1, Eq. (13): i = 11: I_i = 1; J_i = 12; n_i = 0.356 721 106 073 66 × 10^−9. i = 12: I_i = 1; J_i = 31; n_i = 0.173 324 969 948 95 × 10^−23. i = 13: I_i = 2; J_i = 0; n_i = 0.566 089 006 548 37 × 10^−3. i = 14: I_i = 2; J_i = 1; n_i = −0.326 354 831 397 17 × 10^−3. i = 15: I_i = 2; J_i = 2; n_i = 0.447 782 866 906 32 × 10^−4. i = 16: I_i = 2; J_i = 9; n_i = −0.513 221 569 085 07 × 10^−9. i = 17: I_i = 2; J_i = 31; n_i = −0.425 226 570 422 07 × 10^−25. i = 18: I_i = 3; J_i = 10; n_i = 0.264 004 413 606 89 × 10^−12. i = 19: I_i = 3; J_i = 32; n_i = 0.781 246 004 597 23 × 10^−28. i = 20: I_i = 4; J_i = 32; n_i = −0.307 321 999 036 68 × 10^−30.",
+      "terms": [
+        "Table 8",
+        "backward equation",
+        "region 1",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-033",
+      "doc_id": "R015",
+      "section": "5.2.2 The Backward Equation T ( p,s )",
+      "page_start": 12,
+      "page_end": 12,
+      "text": "Range of validity. Equation (13) covers the same range of validity as the basic equation, Eq. (7), except for the metastable region (superheated liquid), where Eq. (13) is not valid. Numerical consistency with the basic equation. For ten million random pairs of p and s covering the entire region 1, the differences ΔT between temperatures from Eq. (13) and from Eq. (7) were calculated and the absolute maximum difference |ΔT|_max and the root-mean-square difference ΔT_RMS were determined. These actual differences and the tolerated value |ΔT|_tol (see the beginning of Section 5.2) amount to: |ΔT|_tol = 25 mK ; ΔT_RMS = 5.8 mK ; |ΔT|_max = 21.8 mK . (14) (tolerated, root-mean-square and maximum temperature differences between Eq. (13) and Eq. (7))",
+      "terms": [
+        "Numerical consistency",
+        "ΔT_RMS = 5.8 mK",
+        "basic equation",
+        "metastable",
+        "region 1",
+        "|ΔT|_max",
+        "|ΔT|_tol"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-034",
+      "doc_id": "R015",
+      "section": "5.2.2 The Backward Equation T ( p,s )",
+      "page_start": 12,
+      "page_end": 12,
+      "text": "Computer-program verification. To assist the user in computer-program verification of Eq. (13), Table 9 contains the corresponding test values. Table 9. Temperature values calculated from Eq. (13) for selected values of p and s^a: p/MPa = 3, s/(kJ kg^−1 K^−1) = 0.5: T/K = 0.307 842 258 × 10^3. p/MPa = 80, s/(kJ kg^−1 K^−1) = 0.5: T/K = 0.309 979 785 × 10^3. p/MPa = 80, s/(kJ kg^−1 K^−1) = 3: T/K = 0.565 899 909 × 10^3. ^a It is recommended to verify the programmed equation using 8 byte real values for all three combinations of p and s given in this table.",
+      "terms": [
+        "computer-program verification",
+        "Table 9",
+        "kJ kg^−1",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-035",
+      "doc_id": "R015",
+      "section": "6 Equations for Region 2",
+      "page_start": 12,
+      "page_end": 12,
+      "text": "This section contains all details relevant for the use of the basic and backward equations of region 2 of IAPWS-IF97. Information about the consistency of the basic equation of this region with the basic equations of regions 3, 4 and 5 along the corresponding region boundaries is summarized in Section 10. The auxiliary equation for defining the boundary between regions 2 and 3 is given in Section 4. Section 11 contains the results of computing-time comparisons between IAPWS-IF97 and IFC-67. The estimates of uncertainty of the most relevant properties can be found in Section 12.",
+      "terms": [
+        "IAPWS-IF97",
+        "IFC-67",
+        "basic equation",
+        "backward equation",
+        "region 2",
+        "uncertainty"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-036",
+      "doc_id": "R015",
+      "section": "6.1 Basic Equation",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "The basic equation for this region is a fundamental equation for the specific Gibbs free energy g. This equation is expressed in dimensionless form, γ = g/( RT ), and is separated into two parts, an ideal-gas part γ^o and a residual part γ^r, so that g(p,T)/(RT) = γ(π,τ) = γ^o(π,τ) + γ^r(π,τ) , (15) (dimensionless Gibbs free energy of region 2 as the sum of an ideal-gas part and a residual part) where π = p/p^* and τ = T^*/T with R given by Eq. (1). The equation for the ideal-gas part γ^o of the dimensionless Gibbs free energy reads γ^o = ln π + ∑_{i=1}^{9} n_i^o τ^{J_i^o} , (16) (ideal-gas part of the dimensionless Gibbs free energy) where π = p/p^* and τ = T^*/T with p^* = 1 MPa and T^* = 540 K. The coefficients n_1^o and n_2^o were adjusted in such a way that the values for the specific internal energy and specific entropy in the ideal-gas state relate to Eq. (8). Table 10 contains the coefficients n_i^o and exponents J_i^o of Eq. (16).",
+      "terms": [
+        "Eq. (16)",
+        "T^* = 540 K",
+        "Gibbs free energy",
+        "basic equation",
+        "ideal-gas part",
+        "residual part",
+        "specific entropy",
+        "specific internal energy"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-037",
+      "doc_id": "R015",
+      "section": "6.1 Basic Equation",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "Table 10. Numerical values of the coefficients and exponents of the ideal-gas part γ^o of the dimensionless Gibbs free energy for region 2, Eq. (16)^a: i = 1^a: J_i^o = 0; n_i^o = −0.969 276 865 002 17 × 10^1. i = 2^a: J_i^o = 1; n_i^o = 0.100 866 559 680 18 × 10^2. i = 3: J_i^o = −5; n_i^o = −0.560 879 112 830 20 × 10^−2. i = 4: J_i^o = −4; n_i^o = 0.714 527 380 814 55 × 10^−1. i = 5: J_i^o = −3; n_i^o = −0.407 104 982 239 28. i = 6: J_i^o = −2; n_i^o = 0.142 408 191 714 44 × 10^1. i = 7: J_i^o = −1; n_i^o = −0.438 395 113 194 50 × 10^1. i = 8: J_i^o = 2; n_i^o = −0.284 086 324 607 72. i = 9: J_i^o = 3; n_i^o = 0.212 684 637 533 07 × 10^−1. ^a If Eq.(16) is incorporated into Eq.(18), instead of the values for n_1^o and n_2^o given above, the following values for these two coefficients must be used: n_1^o = −0.969 372 683 930 49 × 10^1 , n_2^o = 0.100 872 759 700 06 × 10^2.",
+      "terms": [
+        "Table 10",
+        "Gibbs free energy",
+        "ideal-gas part",
+        "region 2",
+        "γ^o",
+        "n_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-038",
+      "doc_id": "R015",
+      "section": "6.1 Basic Equation",
+      "page_start": 13,
+      "page_end": 13,
+      "text": "The form of the residual part γ^r of the dimensionless Gibbs free energy is as follows: γ^r = ∑_{i=1}^{43} n_i π^{I_i} (τ − 0.5)^{J_i} , (17) (residual part of the dimensionless Gibbs free energy of region 2) where π = p/p^* and τ = T^*/T with p^* = 1 MPa and T^* = 540 K. The coefficients n_i and exponents I_i and J_i of Eq. (17) are listed in Table 11.",
+      "terms": [
+        "Eq. (17)",
+        "Table 11",
+        "Gibbs free energy",
+        "residual part",
+        "region 2",
+        "γ^r",
+        "n_i",
+        "I_i"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-039",
+      "doc_id": "R015",
+      "section": "6.1 Basic Equation",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Table 11 [rows i = 1 to 15 of 43]. Numerical values of the coefficients and exponents of the residual part γ^r of the dimensionless Gibbs free energy for region 2, Eq. (17): i = 1: I_i = 1; J_i = 0; n_i = −0.177 317 424 732 13 × 10^−2. i = 2: I_i = 1; J_i = 1; n_i = −0.178 348 622 923 58 × 10^−1. i = 3: I_i = 1; J_i = 2; n_i = −0.459 960 136 963 65 × 10^−1. i = 4: I_i = 1; J_i = 3; n_i = −0.575 812 590 834 32 × 10^−1. i = 5: I_i = 1; J_i = 6; n_i = −0.503 252 787 279 30 × 10^−1. i = 6: I_i = 2; J_i = 1; n_i = −0.330 326 416 702 03 × 10^−4. i = 7: I_i = 2; J_i = 2; n_i = −0.189 489 875 163 15 × 10^−3. i = 8: I_i = 2; J_i = 4; n_i = −0.393 927 772 433 55 × 10^−2. i = 9: I_i = 2; J_i = 7; n_i = −0.437 972 956 505 73 × 10^−1. i = 10: I_i = 2; J_i = 36; n_i = −0.266 745 479 140 87 × 10^−4. i = 11: I_i = 3; J_i = 0; n_i = 0.204 817 376 923 09 × 10^−7. i = 12: I_i = 3; J_i = 1; n_i = 0.438 706 672 844 35 × 10^−6. i = 13: I_i = 3; J_i = 3; n_i = −0.322 776 772 385 70 × 10^−4. i = 14: I_i = 3; J_i = 6; n_i = −0.150 339 245 421 48 × 10^−2. i = 15: I_i = 3; J_i = 35; n_i = −0.406 682 535 626 49 × 10^−1.",
+      "terms": [
+        "Table 11",
+        "Gibbs free energy",
+        "residual part",
+        "region 2",
+        "γ^r",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-040",
+      "doc_id": "R015",
+      "section": "6.1 Basic Equation",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Table 11 [rows i = 16 to 30 of 43]. Numerical values of the coefficients and exponents of the residual part γ^r of the dimensionless Gibbs free energy for region 2, Eq. (17): i = 16: I_i = 4; J_i = 1; n_i = −0.788 473 095 593 67 × 10^−9. i = 17: I_i = 4; J_i = 2; n_i = 0.127 907 178 522 85 × 10^−7. i = 18: I_i = 4; J_i = 3; n_i = 0.482 253 727 185 07 × 10^−6. i = 19: I_i = 5; J_i = 7; n_i = 0.229 220 763 376 61 × 10^−5. i = 20: I_i = 6; J_i = 3; n_i = −0.167 147 664 510 61 × 10^−10. i = 21: I_i = 6; J_i = 16; n_i = −0.211 714 723 213 55 × 10^−2. i = 22: I_i = 6; J_i = 35; n_i = −0.238 957 419 341 04 × 10^2. i = 23: I_i = 7; J_i = 0; n_i = −0.590 595 643 242 70 × 10^−17. i = 24: I_i = 7; J_i = 11; n_i = −0.126 218 088 991 01 × 10^−5. i = 25: I_i = 7; J_i = 25; n_i = −0.389 468 424 357 39 × 10^−1. i = 26: I_i = 8; J_i = 8; n_i = 0.112 562 113 604 59 × 10^−10. i = 27: I_i = 8; J_i = 36; n_i = −0.823 113 408 979 98 × 10^1. i = 28: I_i = 9; J_i = 13; n_i = 0.198 097 128 020 88 × 10^−7. i = 29: I_i = 10; J_i = 4; n_i = 0.104 069 652 101 74 × 10^−18. i = 30: I_i = 10; J_i = 10; n_i = −0.102 347 470 959 29 × 10^−12.",
+      "terms": [
+        "Table 11",
+        "Gibbs free energy",
+        "residual part",
+        "region 2",
+        "γ^r",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-041",
+      "doc_id": "R015",
+      "section": "6.1 Basic Equation",
+      "page_start": 14,
+      "page_end": 14,
+      "text": "Table 11 [rows i = 31 to 43 of 43]. Numerical values of the coefficients and exponents of the residual part γ^r of the dimensionless Gibbs free energy for region 2, Eq. (17): i = 31: I_i = 10; J_i = 14; n_i = −0.100 181 793 795 11 × 10^−8. i = 32: I_i = 16; J_i = 29; n_i = −0.808 829 086 469 85 × 10^−10. i = 33: I_i = 16; J_i = 50; n_i = 0.106 930 318 794 09. i = 34: I_i = 18; J_i = 57; n_i = −0.336 622 505 741 71. i = 35: I_i = 20; J_i = 20; n_i = 0.891 858 453 554 21 × 10^−24. i = 36: I_i = 20; J_i = 35; n_i = 0.306 293 168 762 32 × 10^−12. i = 37: I_i = 20; J_i = 48; n_i = −0.420 024 676 982 08 × 10^−5. i = 38: I_i = 21; J_i = 21; n_i = −0.590 560 296 856 39 × 10^−25. i = 39: I_i = 22; J_i = 53; n_i = 0.378 269 476 134 57 × 10^−5. i = 40: I_i = 23; J_i = 39; n_i = −0.127 686 089 346 81 × 10^−14. i = 41: I_i = 24; J_i = 26; n_i = 0.730 876 105 950 61 × 10^−28. i = 42: I_i = 24; J_i = 40; n_i = 0.554 147 153 507 78 × 10^−16. i = 43: I_i = 24; J_i = 58; n_i = −0.943 697 072 412 10 × 10^−6.",
+      "terms": [
+        "Table 11",
+        "Gibbs free energy",
+        "residual part",
+        "region 2",
+        "γ^r",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-042",
+      "doc_id": "R015",
+      "section": "6.1 Basic Equation",
+      "page_start": 15,
+      "page_end": 15,
+      "text": "All thermodynamic properties can be derived from Eq. (15) by using the appropriate combinations of the ideal-gas part γ^o, Eq. (16), and the residual part γ^r, Eq. (17), of the dimensionless Gibbs free energy and their derivatives. Relations between the relevant thermodynamic properties and γ^o and γ^r and their derivatives are summarized in Table 12. All required derivatives of the ideal-gas part and of the residual part of the dimensionless Gibbs free energy are explicitly given in Table 13 and Table 14, respectively.",
+      "terms": [
+        "Gibbs free energy",
+        "ideal-gas part",
+        "residual part",
+        "γ^o",
+        "γ^r"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-043",
+      "doc_id": "R015",
+      "section": "6.1 Basic Equation",
+      "page_start": 15,
+      "page_end": 15,
+      "text": "Table 12. Relations of thermodynamic properties to the ideal-gas part γ^o and the residual part γ^r of the dimensionless Gibbs free energy and their derivatives^a when using Eq. (15) or Eq. (18). Specific volume v = (∂g/∂p)_T: v(π,τ) p/(RT) = π(γ_π^o + γ_π^r). Specific internal energy u = g − T (∂g/∂T)_p − p (∂g/∂p)_T: u(π,τ)/(RT) = τ(γ_τ^o + γ_τ^r) − π(γ_π^o + γ_π^r). Specific entropy s = −(∂g/∂T)_p: s(π,τ)/R = τ(γ_τ^o + γ_τ^r) − (γ^o + γ^r). Specific enthalpy h = g − T (∂g/∂T)_p: h(π,τ)/(RT) = τ(γ_τ^o + γ_τ^r). Specific isobaric heat capacity c_p = (∂h/∂T)_p: c_p(π,τ)/R = −τ^2(γ_ττ^o + γ_ττ^r). Specific isochoric heat capacity c_v = (∂u/∂T)_v: c_v(π,τ)/R = −τ^2(γ_ττ^o + γ_ττ^r) − (1 + πγ_π^r − τπγ_πτ^r)^2/(1 − π^2γ_ππ^r). Speed of sound w = v[−(∂p/∂v)_s]^{1/2}: w^2(π,τ)/(RT) = (1 + 2πγ_π^r + π^2(γ_π^r)^2) / [ (1 − π^2γ_ππ^r) + (1 + πγ_π^r − τπγ_πτ^r)^2/(τ^2(γ_ττ^o + γ_ττ^r)) ]. ^a γ_π^r = [∂γ^r/∂π]_τ , γ_ππ^r = [∂^2γ^r/∂π^2]_τ , γ_τ^r = [∂γ^r/∂τ]_π , γ_ττ^r = [∂^2γ^r/∂τ^2]_π , γ_πτ^r = [∂^2γ^r/∂π∂τ] , γ_τ^o = [∂γ^o/∂τ]_π , γ_ττ^o = [∂^2γ^o/∂τ^2]_π.",
+      "terms": [
+        "Table 12",
+        "ideal-gas part",
+        "residual part",
+        "Specific volume",
+        "Specific enthalpy",
+        "Specific isobaric heat capacity",
+        "Speed of sound",
+        "Eq. (18)"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-044",
+      "doc_id": "R015",
+      "section": "6.1 Basic Equation",
+      "page_start": 16,
+      "page_end": 16,
+      "text": "Table 13. The ideal-gas part γ^o of the dimensionless Gibbs free energy and its derivatives^a according to Eq. (16). γ^o = ln π + ∑_{i=1}^{9} n_i^o τ^{J_i^o} (ideal-gas part); γ_π^o = 1/π + 0 (first derivative with respect to π); γ_ππ^o = −1/π^2 + 0 (second derivative with respect to π); γ_τ^o = 0 + ∑_{i=1}^{9} n_i^o J_i^o τ^{J_i^o − 1} (first derivative with respect to τ); γ_ττ^o = 0 + ∑_{i=1}^{9} n_i^o J_i^o (J_i^o − 1) τ^{J_i^o − 2} (second derivative with respect to τ); γ_πτ^o = 0 + 0 (mixed derivative). ^a γ_π^o = [∂γ^o/∂π]_τ , γ_ππ^o = [∂^2γ^o/∂π^2]_τ , γ_τ^o = [∂γ^o/∂τ]_π , γ_ττ^o = [∂^2γ^o/∂τ^2]_π , γ_πτ^o = [∂^2γ^o/∂π∂τ].",
+      "terms": [
+        "Table 13",
+        "ideal-gas part",
+        "γ^o",
+        "γ_π^o",
+        "γ_ππ^o",
+        "γ_τ^o",
+        "γ_ττ^o",
+        "γ_πτ^o"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-045",
+      "doc_id": "R015",
+      "section": "6.1 Basic Equation",
+      "page_start": 16,
+      "page_end": 16,
+      "text": "Table 14. The residual part γ^r of the dimensionless Gibbs free energy and its derivatives^a according to Eq. (17). γ^r = ∑_{i=1}^{43} n_i π^{I_i} (τ − 0.5)^{J_i} (residual part); γ_π^r = ∑_{i=1}^{43} n_i I_i π^{I_i − 1} (τ − 0.5)^{J_i} (first derivative with respect to π); γ_ππ^r = ∑_{i=1}^{43} n_i I_i (I_i − 1) π^{I_i − 2} (τ − 0.5)^{J_i} (second derivative with respect to π); γ_τ^r = ∑_{i=1}^{43} n_i π^{I_i} J_i (τ − 0.5)^{J_i − 1} (first derivative with respect to τ); γ_ττ^r = ∑_{i=1}^{43} n_i π^{I_i} J_i (J_i − 1) (τ − 0.5)^{J_i − 2} (second derivative with respect to τ); γ_πτ^r = ∑_{i=1}^{43} n_i I_i π^{I_i − 1} J_i (τ − 0.5)^{J_i − 1} (mixed derivative with respect to π and τ). ^a γ_π^r = [∂γ^r/∂π]_τ , γ_ππ^r = [∂^2γ^r/∂π^2]_τ , γ_τ^r = [∂γ^r/∂τ]_π , γ_ττ^r = [∂^2γ^r/∂τ^2]_π , γ_πτ^r = [∂^2γ^r/∂π∂τ].",
+      "terms": [
+        "Table 14",
+        "residual part",
+        "γ^r",
+        "γ_π^r",
+        "γ_ππ^r",
+        "γ_τ^r",
+        "γ_ττ^r",
+        "γ_πτ^r"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-046",
+      "doc_id": "R015",
+      "section": "6.1 Basic Equation",
+      "page_start": 17,
+      "page_end": 17,
+      "text": "Range of validity. Equation (15) covers region 2 of IAPWS-IF97 defined by the following range of temperature and pressure, see Fig. 1: 273.15 K ≤ T ≤ 623.15 K, 0 < p ≤ p_s(T)_Eq.(30); 623.15 K < T ≤ 863.15 K, 0 < p ≤ p(T)_Eq.(5); 863.15 K < T ≤ 1073.15 K, 0 < p ≤ 100 MPa. In addition to the properties in the stable single-phase vapor region, Eq. (15) also yields reasonable values in the metastable-vapor region for pressures above 10 MPa. Equation (15) is not valid in the metastable-vapor region at pressures p ≤ 10 MPa; for this part of the metastable-vapor region see Section 6.2. Note: For temperatures between 273.15 K and 273.16 K, the part of the range of validity between the pressures on the saturation-pressure line, Eq. (30), and on the sublimation line [10] corresponds to metastable states.",
+      "terms": [
+        "Range of validity",
+        "metastable-vapor region",
+        "sublimation line",
+        "IAPWS-IF97",
+        "region 2",
+        "p_s",
+        "MPa"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-047",
+      "doc_id": "R015",
+      "section": "6.1 Basic Equation",
+      "page_start": 17,
+      "page_end": 17,
+      "text": "Computer-program verification. To assist the user in computer-program verification of Eq. (15), Table 15 contains test values of the most relevant properties. Table 15. Thermodynamic property values calculated from Eq. (15) for selected values of T and p^a: v/(m^3 kg^−1): (T = 300 K, p = 0.0035 MPa) = 0.394 913 866 × 10^2; (T = 700 K, p = 0.0035 MPa) = 0.923 015 898 × 10^2; (T = 700 K, p = 30 MPa) = 0.542 946 619 × 10^−2. h/(kJ kg^−1): (T = 300 K, p = 0.0035 MPa) = 0.254 991 145 × 10^4; (T = 700 K, p = 0.0035 MPa) = 0.333 568 375 × 10^4; (T = 700 K, p = 30 MPa) = 0.263 149 474 × 10^4. u/(kJ kg^−1): (T = 300 K, p = 0.0035 MPa) = 0.241 169 160 × 10^4; (T = 700 K, p = 0.0035 MPa) = 0.301 262 819 × 10^4; (T = 700 K, p = 30 MPa) = 0.246 861 076 × 10^4. s/(kJ kg^−1 K^−1): (T = 300 K, p = 0.0035 MPa) = 0.852 238 967 × 10^1; (T = 700 K, p = 0.0035 MPa) = 0.101 749 996 × 10^2; (T = 700 K, p = 30 MPa) = 0.517 540 298 × 10^1. c_p/(kJ kg^−1 K^−1): (T = 300 K, p = 0.0035 MPa) = 0.191 300 162 × 10^1; (T = 700 K, p = 0.0035 MPa) = 0.208 141 274 × 10^1; (T = 700 K, p = 30 MPa) = 0.103 505 092 × 10^2. w/(m s^−1): (T = 300 K, p = 0.0035 MPa) = 0.427 920 172 × 10^3; (T = 700 K, p = 0.0035 MPa) = 0.644 289 068 × 10^3; (T = 700 K, p = 30 MPa) = 0.480 386 523 × 10^3. ^a It is recommended to verify programmed functions using 8 byte real values for all three combinations of T and p given in this table.",
+      "terms": [
+        "computer-program verification",
+        "Table 15",
+        "kJ kg^−1",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-048",
+      "doc_id": "R015",
+      "section": "6.2 Supplementary Equation for the Metastable-Vapor Region",
+      "page_start": 17,
+      "page_end": 17,
+      "text": "As for the basic equation, Eq. (15), the supplementary equation for a part of the metastable-vapor region bounding region 2 is given in the dimensionless form of the specific Gibbs free energy, γ = g/( RT ), consisting of an ideal-gas part γ^o and a residual part γ^r, so that g(p,T)/(RT) = γ(π,τ) = γ^o(π,τ) + γ^r(π,τ) , (18) (dimensionless Gibbs free energy of the metastable-vapor region as the sum of an ideal-gas part and a residual part) where π = p/p^* and τ = T^*/T with R given by Eq. (1).",
+      "terms": [
+        "metastable-vapor region",
+        "Gibbs free energy",
+        "basic equation",
+        "ideal-gas part",
+        "residual part",
+        "region 2",
+        "γ^o",
+        "γ^r"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-049",
+      "doc_id": "R015",
+      "section": "6.2 Supplementary Equation for the Metastable-Vapor Region",
+      "page_start": 18,
+      "page_end": 18,
+      "text": "The equation for the ideal-gas part γ^o is identical with Eq. (16) except for the values of the two coefficients n_1^o and n_2^o, see Table 10. For the use of Eq. (16) as part of Eq. (18) the coefficients n_1^o and n_2^o were slightly readjusted to meet the high consistency requirement between Eqs. (18) and (15) regarding the properties h and s along the saturated vapor line; see below. The equation for the residual part γ^r reads γ^r = ∑_{i=1}^{13} n_i π^{I_i} (τ − 0.5)^{J_i} , (19) (residual part of the dimensionless Gibbs free energy for the metastable-vapor region) where π = p/p^* and τ = T^*/T with p^* = 1 MPa and T^* = 540 K. The coefficients n_i and exponents I_i and J_i of Eq. (19) are listed in Table 16. Note: In the metastable-vapor region there are no experimental data to which an equation can be fitted. Thus, Eq.(18) is only based on input values extrapolated from the stable single-phase region 2. These extrapolations were performed with a special low-density gas equation [11] considered to be more suitable for such extrapolations into the metastable-vapor region than IAPWS-95 [3].",
+      "terms": [
+        "Eq. (19)",
+        "Eq. (18)",
+        "low-density gas equation",
+        "IAPWS-95",
+        "Gibbs free energy",
+        "metastable-vapor region",
+        "ideal-gas part",
+        "residual part"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-050",
+      "doc_id": "R015",
+      "section": "6.2 Supplementary Equation for the Metastable-Vapor Region",
+      "page_start": 18,
+      "page_end": 18,
+      "text": "Table 16. Numerical values of the coefficients and exponents of the residual part γ^r of the dimensionless Gibbs free energy for the metastable-vapor region, Eq. (19): i = 1: I_i = 1; J_i = 0; n_i = −0.733 622 601 865 06 × 10^−2. i = 2: I_i = 1; J_i = 2; n_i = −0.882 238 319 431 46 × 10^−1. i = 3: I_i = 1; J_i = 5; n_i = −0.723 345 552 132 45 × 10^−1. i = 4: I_i = 1; J_i = 11; n_i = −0.408 131 785 344 55 × 10^−2. i = 5: I_i = 2; J_i = 1; n_i = 0.200 978 033 802 07 × 10^−2. i = 6: I_i = 2; J_i = 7; n_i = −0.530 459 218 986 42 × 10^−1. i = 7: I_i = 2; J_i = 16; n_i = −0.761 904 090 869 70 × 10^−2. i = 8: I_i = 3; J_i = 4; n_i = −0.634 980 376 573 13 × 10^−2. i = 9: I_i = 3; J_i = 16; n_i = −0.860 430 930 285 88 × 10^−1. i = 10: I_i = 4; J_i = 7; n_i = 0.753 215 815 227 70 × 10^−2. i = 11: I_i = 4; J_i = 10; n_i = −0.792 383 754 461 39 × 10^−2. i = 12: I_i = 5; J_i = 9; n_i = −0.228 881 607 784 47 × 10^−3. i = 13: I_i = 5; J_i = 10; n_i = −0.264 565 014 828 10 × 10^−2.",
+      "terms": [
+        "Table 16",
+        "Gibbs free energy",
+        "metastable-vapor region",
+        "residual part",
+        "γ^r",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-051",
+      "doc_id": "R015",
+      "section": "6.2 Supplementary Equation for the Metastable-Vapor Region",
+      "page_start": 18,
+      "page_end": 19,
+      "text": "All thermodynamic properties can be derived from Eq. (18) by using the appropriate combinations of the ideal-gas part γ^o, Eq. (16), and the residual part γ^r, Eq. (19), of the dimensionless Gibbs free energy and their derivatives. Relations between the relevant thermodynamic properties and γ^o and γ^r and their derivatives are summarized in Table 12. All required derivatives of the ideal-gas part and of the residual part of the dimensionless Gibbs free energy are explicitly given in Table 13 and Table 17, respectively.",
+      "terms": [
+        "Gibbs free energy",
+        "ideal-gas part",
+        "residual part",
+        "γ^o",
+        "γ^r"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-052",
+      "doc_id": "R015",
+      "section": "6.2 Supplementary Equation for the Metastable-Vapor Region",
+      "page_start": 19,
+      "page_end": 19,
+      "text": "Table 17. The residual part γ^r of the dimensionless Gibbs free energy and its derivatives^a according to Eq. (19). γ^r = ∑_{i=1}^{13} n_i π^{I_i} (τ − 0.5)^{J_i} (residual part); γ_π^r = ∑_{i=1}^{13} n_i I_i π^{I_i − 1} (τ − 0.5)^{J_i} (first derivative with respect to π); γ_ππ^r = ∑_{i=1}^{13} n_i I_i (I_i − 1) π^{I_i − 2} (τ − 0.5)^{J_i} (second derivative with respect to π); γ_τ^r = ∑_{i=1}^{13} n_i π^{I_i} J_i (τ − 0.5)^{J_i − 1} (first derivative with respect to τ); γ_ττ^r = ∑_{i=1}^{13} n_i π^{I_i} J_i (J_i − 1) (τ − 0.5)^{J_i − 2} (second derivative with respect to τ); γ_πτ^r = ∑_{i=1}^{13} n_i I_i π^{I_i − 1} J_i (τ − 0.5)^{J_i − 1} (mixed derivative with respect to π and τ). ^a γ_π^r = [∂γ^r/∂π]_τ , γ_ππ^r = [∂^2γ^r/∂π^2]_τ , γ_τ^r = [∂γ^r/∂τ]_π , γ_ττ^r = [∂^2γ^r/∂τ^2]_π , γ_πτ^r = [∂^2γ^r/∂π∂τ].",
+      "terms": [
+        "Table 17",
+        "residual part",
+        "γ^r",
+        "γ_π^r",
+        "γ_ππ^r",
+        "γ_τ^r",
+        "γ_ττ^r",
+        "γ_πτ^r"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-053",
+      "doc_id": "R015",
+      "section": "6.2 Supplementary Equation for the Metastable-Vapor Region",
+      "page_start": 19,
+      "page_end": 20,
+      "text": "Range of validity. Equation (18) is valid in the metastable-vapor region from the saturated-vapor line to the 5 % equilibrium moisture line (determined from the equilibrium h′ and h′′ values calculated at the given pressure) for pressures from the triple-point pressure, see Eq. (9), up to 10 MPa. Consistency with the basic equation. The consistency of Eq. (18) with the basic equation, Eq. (15), along the saturated vapor line is characterized by the following maximum inconsistencies regarding the properties v, h, c_p, s, g, and w: |Δv|_max = 0.014 % ; |Δs|_max = 0.082 J kg^−1 K^−1 ; |Δh|_max = 0.043 kJ kg^−1 ; |Δg|_max = 0.023 kJ kg^−1 ; |Δc_p|_max = 0.78 % ; |Δw|_max = 0.051 % . These maximum inconsistencies are clearly smaller than the consistency requirements on region boundaries corresponding to the so-called Prague values [13], which are given in Section 10. Along the 10 MPa isobar in the metastable-vapor region, the transition between Eq. (18) and Eq. (15) is not smooth, which is however, not of importance for practical calculations.",
+      "terms": [
+        "Range of validity",
+        "5 % equilibrium moisture line",
+        "saturated vapor line",
+        "Prague values",
+        "basic equation",
+        "metastable-vapor region",
+        "kJ kg^−1",
+        "MPa"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-054",
+      "doc_id": "R015",
+      "section": "6.2 Supplementary Equation for the Metastable-Vapor Region",
+      "page_start": 20,
+      "page_end": 20,
+      "text": "Computer-program verification. To assist the user in computer-program verification of Eq. (18), Table 18 contains test values of the most relevant properties. Table 18. Thermodynamic property values calculated from Eq. (18) for selected values of T and p^a: v/(m^3 kg^−1): (T = 450 K, p = 1 MPa) = 0.192 516 540; (T = 440 K, p = 1 MPa) = 0.186 212 297; (T = 450 K, p = 1.5 MPa) = 0.121 685 206. h/(kJ kg^−1): (T = 450 K, p = 1 MPa) = 0.276 881 115 × 10^4; (T = 440 K, p = 1 MPa) = 0.274 015 123 × 10^4; (T = 450 K, p = 1.5 MPa) = 0.272 134 539 × 10^4. u/(kJ kg^−1): (T = 450 K, p = 1 MPa) = 0.257 629 461 × 10^4; (T = 440 K, p = 1 MPa) = 0.255 393 894 × 10^4; (T = 450 K, p = 1.5 MPa) = 0.253 881 758 × 10^4. s/(kJ kg^−1 K^−1): (T = 450 K, p = 1 MPa) = 0.656 660 377 × 10^1; (T = 440 K, p = 1 MPa) = 0.650 218 759 × 10^1; (T = 450 K, p = 1.5 MPa) = 0.629 170 440 × 10^1. c_p/(kJ kg^−1 K^−1): (T = 450 K, p = 1 MPa) = 0.276 349 265 × 10^1; (T = 440 K, p = 1 MPa) = 0.298 166 443 × 10^1; (T = 450 K, p = 1.5 MPa) = 0.362 795 578 × 10^1. w/(m s^−1): (T = 450 K, p = 1 MPa) = 0.498 408 101 × 10^3; (T = 440 K, p = 1 MPa) = 0.489 363 295 × 10^3; (T = 450 K, p = 1.5 MPa) = 0.481 941 819 × 10^3. ^a It is recommended to verify programmed functions using 8 byte real values for all three combinations of T and p given in this table.",
+      "terms": [
+        "computer-program verification",
+        "Table 18",
+        "kJ kg^−1",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-055",
+      "doc_id": "R015",
+      "section": "6.3 Backward Equations",
+      "page_start": 20,
+      "page_end": 20,
+      "text": "For the calculation of properties as function of p, h or of p, s without any iteration, the two backward equations require extremely good numerical consistency with the basic equation. The exact requirements for these numerical consistencies were obtained from comprehensive test calculations for several characteristic power cycles. The result of these investigations, namely the assignment of the tolerable numerical inconsistencies between the basic equation, Eq. (15), and the corresponding backward equations, is given in Tables 23 and 28, respectively.",
+      "terms": [
+        "basic equation",
+        "backward equation",
+        "numerical consistency"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-056",
+      "doc_id": "R015",
+      "section": "6.3 Backward Equations",
+      "page_start": 20,
+      "page_end": 20,
+      "text": "Region 2 is covered by three T( p,h ) and three T( p,s ) equations. Figure 2 shows the way in which region 2 is divided into three subregions for the backward equations. The boundary between the subregions 2a and 2b is the isobar p = 4 MPa; the boundary between the subregions 2b and 2c corresponds to the entropy line s = 5.85 kJ kg^−1 K^−1.",
+      "terms": [
+        "subregions",
+        "p = 4 MPa",
+        "s = 5.85 kJ kg^−1 K^−1",
+        "Figure 2",
+        "backward equation",
+        "region 2"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-057",
+      "doc_id": "R015",
+      "section": "6.3 Backward Equations",
+      "page_start": 21,
+      "page_end": 21,
+      "text": "Fig. 2. Division of region 2 of IAPWS-IF97 into the three subregions 2a, 2b, and 2c for the backward equations T(p,h) and T(p,s).",
+      "terms": [
+        "Fig. 2",
+        "region 2",
+        "subregions 2a, 2b, and 2c",
+        "backward equations",
+        "T(p,h)",
+        "T(p,s)"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-058",
+      "doc_id": "R015",
+      "section": "6.3 Backward Equations",
+      "page_start": 21,
+      "page_end": 21,
+      "text": "In order to know whether the T(p,h) equation for subregion 2b or for subregion 2c has to be used for given values of p and h, a special correlation equation for the boundary between subregions 2b and 2c (which approximates s = 5.85 kJ kg^−1 K^−1) is needed; see Fig. 2. This boundary equation, called the B2bc-equation, is a simple quadratic pressure-enthalpy relation which reads π = n_1 + n_2η + n_3η^2 , (20) (reduced pressure on the subregion 2b/2c boundary as a quadratic function of reduced enthalpy) where π = p/p^* and η = h/h^* with p^* = 1 MPa and h^* = 1 kJ kg^−1. The coefficients n_1 to n_3 of Eq. (20) are listed in Table 19. Based on its simple form, Eq. (20) does not describe exactly the isentropic line s = 5.85 kJ kg^−1 K^−1; the entropy values corresponding to this p-h relation are between s = 5.81 kJ kg^−1 K^−1 and s = 5.85 kJ kg^−1 K^−1. The enthalpy-explicit form of Eq. (20) is as follows: η = n_4 + [(π − n_5)/n_3]^{1/2} , (21) (reduced enthalpy on the subregion 2b/2c boundary as an explicit function of reduced pressure) with π and η according to Eq. (20) and the coefficients n_3 to n_5 listed in Table 19. Equations (20) and (21) give the boundary line between subregions 2b and 2c from the saturation state at T = 554.485 K and p_s = 6.546 70 MPa to T = 1019.32 K and p = 100 MPa. For the backward equations T( p,s ) the boundary between subregions 2b and 2c is, based on the value s = 5.85 kJ kg^−1 K^−1 along this boundary, automatically defined for given values of p and s.",
+      "terms": [
+        "B2bc-equation",
+        "Eq. (20)",
+        "backward equation",
+        "region 2",
+        "p_s",
+        "p^*",
+        "h^*",
+        "π"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-059",
+      "doc_id": "R015",
+      "section": "6.3 Backward Equations",
+      "page_start": 22,
+      "page_end": 22,
+      "text": "Table 19. Numerical values of the coefficients of the B2bc-equation, Eqs. (20) and (21), for defining the boundary between subregions 2b and 2c with respect to T(p,h) calculations: i = 1: n_i = 0.905 842 785 147 23 × 10^3. i = 2: n_i = −0.679 557 863 992 41. i = 3: n_i = 0.128 090 027 301 36 × 10^−3. i = 4: n_i = 0.265 265 719 084 28 × 10^4. i = 5: n_i = 0.452 575 789 059 48 × 10^1. For computer-program verification, Eqs. (20) and (21) must meet the following p-h point: p = 0.100 000 000 × 10^3 MPa , h = 0.351 600 432 3 × 10^4 kJ kg^−1.",
+      "terms": [
+        "Table 19",
+        "B2bc-equation",
+        "computer-program verification",
+        "n_i",
+        "kJ kg^−1",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-060",
+      "doc_id": "R015",
+      "section": "6.3.1 The Backward Equations T( p,h ) for Subregions 2a, 2b, and 2c",
+      "page_start": 22,
+      "page_end": 22,
+      "text": "The backward equation T(p,h) for subregion 2a in its dimensionless form reads T_2a(p,h)/T^* = θ_2a(π,η) = ∑_{i=1}^{34} n_i π^{I_i} (η − 2.1)^{J_i} , (22) (dimensionless temperature of subregion 2a as a function of reduced pressure and reduced enthalpy) where θ = T/T^* , π = p/p^*, and η = h/h^* with T^* = 1 K , p^* = 1 MPa, and h^* = 2000 kJ kg^−1. The coefficients n_i and exponents I_i and J_i of Eq. (22) are listed in Table 20.",
+      "terms": [
+        "Eq. (22)",
+        "subregion 2a",
+        "h^* = 2000 kJ kg^−1",
+        "backward equation",
+        "n_i",
+        "I_i",
+        "J_i",
+        "p^*"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-061",
+      "doc_id": "R015",
+      "section": "6.3.1 The Backward Equations T( p,h ) for Subregions 2a, 2b, and 2c",
+      "page_start": 22,
+      "page_end": 22,
+      "text": "Table 20 [rows i = 1 to 17 of 34]. Numerical values of the coefficients and exponents of the backward equation T ( p,h ) for subregion 2a, Eq. (22): i = 1: I_i = 0; J_i = 0; n_i = 0.108 989 523 182 88 × 10^4. i = 2: I_i = 0; J_i = 1; n_i = 0.849 516 544 955 35 × 10^3. i = 3: I_i = 0; J_i = 2; n_i = −0.107 817 480 918 26 × 10^3. i = 4: I_i = 0; J_i = 3; n_i = 0.331 536 548 012 63 × 10^2. i = 5: I_i = 0; J_i = 7; n_i = −0.742 320 167 902 48 × 10^1. i = 6: I_i = 0; J_i = 20; n_i = 0.117 650 487 243 56 × 10^2. i = 7: I_i = 1; J_i = 0; n_i = 0.184 457 493 557 90 × 10^1. i = 8: I_i = 1; J_i = 1; n_i = −0.417 927 005 496 24 × 10^1. i = 9: I_i = 1; J_i = 2; n_i = 0.624 781 969 358 12 × 10^1. i = 10: I_i = 1; J_i = 3; n_i = −0.173 445 631 081 14 × 10^2. i = 11: I_i = 1; J_i = 7; n_i = −0.200 581 768 620 96 × 10^3. i = 12: I_i = 1; J_i = 9; n_i = 0.271 960 654 737 96 × 10^3. i = 13: I_i = 1; J_i = 11; n_i = −0.455 113 182 858 18 × 10^3. i = 14: I_i = 1; J_i = 18; n_i = 0.309 196 886 047 55 × 10^4. i = 15: I_i = 1; J_i = 44; n_i = 0.252 266 403 578 72 × 10^6. i = 16: I_i = 2; J_i = 0; n_i = −0.617 074 228 683 39 × 10^−2. i = 17: I_i = 2; J_i = 2; n_i = −0.310 780 466 295 83.",
+      "terms": [
+        "Table 20",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-062",
+      "doc_id": "R015",
+      "section": "6.3.1 The Backward Equations T( p,h ) for Subregions 2a, 2b, and 2c",
+      "page_start": 22,
+      "page_end": 22,
+      "text": "Table 20 [rows i = 18 to 34 of 34]. Numerical values of the coefficients and exponents of the backward equation T ( p,h ) for subregion 2a, Eq. (22): i = 18: I_i = 2; J_i = 7; n_i = 0.116 708 730 771 07 × 10^2. i = 19: I_i = 2; J_i = 36; n_i = 0.128 127 984 040 46 × 10^9. i = 20: I_i = 2; J_i = 38; n_i = −0.985 549 096 232 76 × 10^9. i = 21: I_i = 2; J_i = 40; n_i = 0.282 245 469 730 02 × 10^10. i = 22: I_i = 2; J_i = 42; n_i = −0.359 489 714 107 03 × 10^10. i = 23: I_i = 2; J_i = 44; n_i = 0.172 273 499 131 97 × 10^10. i = 24: I_i = 3; J_i = 24; n_i = −0.135 513 342 407 75 × 10^5. i = 25: I_i = 3; J_i = 44; n_i = 0.128 487 346 646 50 × 10^8. i = 26: I_i = 4; J_i = 12; n_i = 0.138 657 242 832 26 × 10^1. i = 27: I_i = 4; J_i = 32; n_i = 0.235 988 325 565 14 × 10^6. i = 28: I_i = 4; J_i = 44; n_i = −0.131 052 365 450 54 × 10^8. i = 29: I_i = 5; J_i = 32; n_i = 0.739 998 354 747 66 × 10^4. i = 30: I_i = 5; J_i = 36; n_i = −0.551 966 970 300 60 × 10^6. i = 31: I_i = 5; J_i = 42; n_i = 0.371 540 859 962 33 × 10^7. i = 32: I_i = 6; J_i = 34; n_i = 0.191 277 292 396 60 × 10^5. i = 33: I_i = 6; J_i = 44; n_i = −0.415 351 648 356 34 × 10^6. i = 34: I_i = 7; J_i = 28; n_i = −0.624 598 551 925 07 × 10^2.",
+      "terms": [
+        "Table 20",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-063",
+      "doc_id": "R015",
+      "section": "6.3.1 The Backward Equations T( p,h ) for Subregions 2a, 2b, and 2c",
+      "page_start": 23,
+      "page_end": 23,
+      "text": "The backward equation T(p,h) for subregion 2b in its dimensionless form reads T_2b(p,h)/T^* = θ_2b(π,η) = ∑_{i=1}^{38} n_i (π − 2)^{I_i} (η − 2.6)^{J_i} , (23) (dimensionless temperature of subregion 2b as a function of reduced pressure and reduced enthalpy) where θ = T/T^*, π = p/p^*, and η = h/h^* with T^* = 1 K , p^* = 1 MPa, and h^* = 2000 kJ kg^−1. The coefficients n_i and exponents I_i and J_i of Eq. (23) are listed in Table 21.",
+      "terms": [
+        "Eq. (23)",
+        "subregion 2b",
+        "backward equation",
+        "n_i",
+        "I_i",
+        "J_i",
+        "p^*",
+        "T^*"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-064",
+      "doc_id": "R015",
+      "section": "6.3.1 The Backward Equations T( p,h ) for Subregions 2a, 2b, and 2c",
+      "page_start": 23,
+      "page_end": 23,
+      "text": "Table 21 [rows i = 1 to 13 of 38]. Numerical values of the coefficients and exponents of the backward equation T ( p,h ) for subregion 2b, Eq. (23): i = 1: I_i = 0; J_i = 0; n_i = 0.148 950 410 795 16 × 10^4. i = 2: I_i = 0; J_i = 1; n_i = 0.743 077 983 140 34 × 10^3. i = 3: I_i = 0; J_i = 2; n_i = −0.977 083 187 978 37 × 10^2. i = 4: I_i = 0; J_i = 12; n_i = 0.247 424 647 056 74 × 10^1. i = 5: I_i = 0; J_i = 18; n_i = −0.632 813 200 160 26. i = 6: I_i = 0; J_i = 24; n_i = 0.113 859 521 296 58 × 10^1. i = 7: I_i = 0; J_i = 28; n_i = −0.478 118 636 486 25. i = 8: I_i = 0; J_i = 40; n_i = 0.852 081 234 315 44 × 10^−2. i = 9: I_i = 1; J_i = 0; n_i = 0.937 471 473 779 32. i = 10: I_i = 1; J_i = 2; n_i = 0.335 931 186 049 16 × 10^1. i = 11: I_i = 1; J_i = 6; n_i = 0.338 093 556 014 54 × 10^1. i = 12: I_i = 1; J_i = 12; n_i = 0.168 445 396 719 04. i = 13: I_i = 1; J_i = 18; n_i = 0.738 757 452 366 95.",
+      "terms": [
+        "Table 21",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-065",
+      "doc_id": "R015",
+      "section": "6.3.1 The Backward Equations T( p,h ) for Subregions 2a, 2b, and 2c",
+      "page_start": 23,
+      "page_end": 23,
+      "text": "Table 21 [rows i = 14 to 26 of 38]. Numerical values of the coefficients and exponents of the backward equation T ( p,h ) for subregion 2b, Eq. (23): i = 14: I_i = 1; J_i = 24; n_i = −0.471 287 374 361 86. i = 15: I_i = 1; J_i = 28; n_i = 0.150 202 731 397 07. i = 16: I_i = 1; J_i = 40; n_i = −0.217 641 142 197 50 × 10^−2. i = 17: I_i = 2; J_i = 2; n_i = −0.218 107 553 247 61 × 10^−1. i = 18: I_i = 2; J_i = 8; n_i = −0.108 297 844 036 77. i = 19: I_i = 2; J_i = 18; n_i = −0.463 333 246 358 12 × 10^−1. i = 20: I_i = 2; J_i = 40; n_i = 0.712 803 519 595 51 × 10^−4. i = 21: I_i = 3; J_i = 1; n_i = 0.110 328 317 899 99 × 10^−3. i = 22: I_i = 3; J_i = 2; n_i = 0.189 552 483 879 02 × 10^−3. i = 23: I_i = 3; J_i = 12; n_i = 0.308 915 411 605 37 × 10^−2. i = 24: I_i = 3; J_i = 24; n_i = 0.135 555 045 549 49 × 10^−2. i = 25: I_i = 4; J_i = 2; n_i = 0.286 402 374 774 56 × 10^−6. i = 26: I_i = 4; J_i = 12; n_i = −0.107 798 573 575 12 × 10^−4.",
+      "terms": [
+        "Table 21",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-066",
+      "doc_id": "R015",
+      "section": "6.3.1 The Backward Equations T( p,h ) for Subregions 2a, 2b, and 2c",
+      "page_start": 23,
+      "page_end": 23,
+      "text": "Table 21 [rows i = 27 to 38 of 38]. Numerical values of the coefficients and exponents of the backward equation T ( p,h ) for subregion 2b, Eq. (23): i = 27: I_i = 4; J_i = 18; n_i = −0.764 627 124 548 14 × 10^−4. i = 28: I_i = 4; J_i = 24; n_i = 0.140 523 928 183 16 × 10^−4. i = 29: I_i = 4; J_i = 28; n_i = −0.310 838 143 314 34 × 10^−4. i = 30: I_i = 4; J_i = 40; n_i = −0.103 027 382 121 03 × 10^−5. i = 31: I_i = 5; J_i = 18; n_i = 0.282 172 816 350 40 × 10^−6. i = 32: I_i = 5; J_i = 24; n_i = 0.127 049 022 719 45 × 10^−5. i = 33: I_i = 5; J_i = 40; n_i = 0.738 033 534 682 92 × 10^−7. i = 34: I_i = 6; J_i = 28; n_i = −0.110 301 392 389 09 × 10^−7. i = 35: I_i = 7; J_i = 2; n_i = −0.814 563 652 078 33 × 10^−13. i = 36: I_i = 7; J_i = 28; n_i = −0.251 805 456 829 62 × 10^−10. i = 37: I_i = 9; J_i = 1; n_i = −0.175 652 339 694 07 × 10^−17. i = 38: I_i = 9; J_i = 40; n_i = 0.869 341 563 441 63 × 10^−14.",
+      "terms": [
+        "Table 21",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-067",
+      "doc_id": "R015",
+      "section": "6.3.1 The Backward Equations T( p,h ) for Subregions 2a, 2b, and 2c",
+      "page_start": 23,
+      "page_end": 23,
+      "text": "The backward equation T(p,h) for subregion 2c in its dimensionless form reads T_2c(p,h)/T^* = θ_2c(π,η) = ∑_{i=1}^{23} n_i (π + 25)^{I_i} (η − 1.8)^{J_i} , (24) (dimensionless temperature of subregion 2c as a function of reduced pressure and reduced enthalpy) where θ = T/T^*, π = p/p^*, and η = h/h^* with T^* = 1 K , p^* = 1 MPa, and h^* = 2000 kJ kg^−1. The coefficients n_i and exponents I_i and J_i of Eq. (24) are listed in Table 22.",
+      "terms": [
+        "Eq. (24)",
+        "subregion 2c",
+        "backward equation",
+        "n_i",
+        "I_i",
+        "J_i",
+        "p^*",
+        "T^*"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-068",
+      "doc_id": "R015",
+      "section": "6.3.1 The Backward Equations T( p,h ) for Subregions 2a, 2b, and 2c",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "Table 22 [rows i = 1 to 12 of 23]. Numerical values of the coefficients and exponents of the backward equation T ( p,h ) for subregion 2c, Eq. (24): i = 1: I_i = −7; J_i = 0; n_i = −0.323 683 985 552 42 × 10^13. i = 2: I_i = −7; J_i = 4; n_i = 0.732 633 509 021 81 × 10^13. i = 3: I_i = −6; J_i = 0; n_i = 0.358 250 899 454 47 × 10^12. i = 4: I_i = −6; J_i = 2; n_i = −0.583 401 318 515 90 × 10^12. i = 5: I_i = −5; J_i = 0; n_i = −0.107 830 682 174 70 × 10^11. i = 6: I_i = −5; J_i = 2; n_i = 0.208 255 445 631 71 × 10^11. i = 7: I_i = −2; J_i = 0; n_i = 0.610 747 835 645 16 × 10^6. i = 8: I_i = −2; J_i = 1; n_i = 0.859 777 225 355 80 × 10^6. i = 9: I_i = −1; J_i = 0; n_i = −0.257 457 236 041 70 × 10^5. i = 10: I_i = −1; J_i = 2; n_i = 0.310 810 884 227 14 × 10^5. i = 11: I_i = 0; J_i = 0; n_i = 0.120 823 158 659 36 × 10^4. i = 12: I_i = 0; J_i = 1; n_i = 0.482 197 551 092 55 × 10^3.",
+      "terms": [
+        "Table 22",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-069",
+      "doc_id": "R015",
+      "section": "6.3.1 The Backward Equations T( p,h ) for Subregions 2a, 2b, and 2c",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "Table 22 [rows i = 13 to 23 of 23]. Numerical values of the coefficients and exponents of the backward equation T ( p,h ) for subregion 2c, Eq. (24): i = 13: I_i = 1; J_i = 4; n_i = 0.379 660 012 724 86 × 10^1. i = 14: I_i = 1; J_i = 8; n_i = −0.108 429 848 800 77 × 10^2. i = 15: I_i = 2; J_i = 4; n_i = −0.453 641 726 766 60 × 10^−1. i = 16: I_i = 6; J_i = 0; n_i = 0.145 591 156 586 98 × 10^−12. i = 17: I_i = 6; J_i = 1; n_i = 0.112 615 974 072 30 × 10^−11. i = 18: I_i = 6; J_i = 4; n_i = −0.178 049 822 406 86 × 10^−10. i = 19: I_i = 6; J_i = 10; n_i = 0.123 245 796 908 32 × 10^−6. i = 20: I_i = 6; J_i = 12; n_i = −0.116 069 211 309 84 × 10^−5. i = 21: I_i = 6; J_i = 16; n_i = 0.278 463 670 885 54 × 10^−4. i = 22: I_i = 6; J_i = 20; n_i = −0.592 700 384 741 76 × 10^−3. i = 23: I_i = 6; J_i = 22; n_i = 0.129 185 829 918 78 × 10^−2.",
+      "terms": [
+        "Table 22",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-070",
+      "doc_id": "R015",
+      "section": "6.3.1 The Backward Equations T( p,h ) for Subregions 2a, 2b, and 2c",
+      "page_start": 24,
+      "page_end": 24,
+      "text": "Range of validity. Equations (22), (23), and (24) are only valid in the respective subregion 2a, 2b, and 2c which do not include the metastable-vapor region. The boundaries between these subregions are defined at the beginning of Section 6.3; the lowest pressure for which Eq. (22) is valid amounts to 611.2127 Pa corresponding to the saturation pressure at 273.15 K calculated from Eq. (30).",
+      "terms": [
+        "Range of validity",
+        "611.2127 Pa",
+        "saturation pressure",
+        "metastable-vapor region",
+        "region 2"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-071",
+      "doc_id": "R015",
+      "section": "6.3.1 The Backward Equations T( p,h ) for Subregions 2a, 2b, and 2c",
+      "page_start": 24,
+      "page_end": 25,
+      "text": "Numerical consistency with the basic equation. For ten million random pairs of p and h covering each of the subregions 2a, 2b, and 2c, the differences ΔT between temperatures calculated from Eqs. (22) to (24), respectively, and from Eq. (15) were determined. The corresponding maximum and root-mean-square differences are listed in Table 23 together with the tolerated differences according to the numerical consistency requirements with respect to Eq. (15). Table 23. Maximum differences |ΔT|_max and root-mean-square differences ΔT_RMS between temperatures calculated from Eqs. (22) to (24), and from Eq. (15) in comparison with the tolerated differences |ΔT|_tol: Subregion 2a: Equation = 22; |ΔT|_tol /mK = 10; |ΔT|_max /mK = 9.3; ΔT_RMS /mK = 2.9. Subregion 2b: Equation = 23; |ΔT|_tol /mK = 10; |ΔT|_max /mK = 9.6; ΔT_RMS /mK = 3.9. Subregion 2c: Equation = 24; |ΔT|_tol /mK = 25; |ΔT|_max /mK = 23.7; ΔT_RMS /mK = 10.4.",
+      "terms": [
+        "Table 23",
+        "Numerical consistency",
+        "basic equation",
+        "numerical consistency",
+        "region 2",
+        "subregions 2a, 2b, and 2c",
+        "|ΔT|_max",
+        "ΔT_RMS"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-072",
+      "doc_id": "R015",
+      "section": "6.3.1 The Backward Equations T( p,h ) for Subregions 2a, 2b, and 2c",
+      "page_start": 25,
+      "page_end": 25,
+      "text": "Computer-program verification. To assist the user in computer-program verification of Eqs. (22) to (24), Table 24 contains the corresponding test values. Table 24. Temperature values calculated from Eqs. (22) to (24) for selected values of p and h^a: Eq. (22), p/MPa = 0.001, h/(kJ kg^−1) = 3000: T/K = 0.534 433 241 × 10^3. Eq. (22), p/MPa = 3, h/(kJ kg^−1) = 3000: T/K = 0.575 373 370 × 10^3. Eq. (22), p/MPa = 3, h/(kJ kg^−1) = 4000: T/K = 0.101 077 577 × 10^4. Eq. (23), p/MPa = 5, h/(kJ kg^−1) = 3500: T/K = 0.801 299 102 × 10^3. Eq. (23), p/MPa = 5, h/(kJ kg^−1) = 4000: T/K = 0.101 531 583 × 10^4. Eq. (23), p/MPa = 25, h/(kJ kg^−1) = 3500: T/K = 0.875 279 054 × 10^3. Eq. (24), p/MPa = 40, h/(kJ kg^−1) = 2700: T/K = 0.743 056 411 × 10^3. Eq. (24), p/MPa = 60, h/(kJ kg^−1) = 2700: T/K = 0.791 137 067 × 10^3. Eq. (24), p/MPa = 60, h/(kJ kg^−1) = 3200: T/K = 0.882 756 860 × 10^3. ^a It is recommended to verify the programmed equations using 8 byte real values for all three combinations of p and h given in this table for each of the equations.",
+      "terms": [
+        "computer-program verification",
+        "Table 24",
+        "kJ kg^−1",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-073",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 25,
+      "page_end": 25,
+      "text": "The backward equation T(p,s) for subregion 2a in its dimensionless form reads T_2a(p,s)/T^* = θ_2a(π,σ) = ∑_{i=1}^{46} n_i π^{I_i} (σ − 2)^{J_i} , (25) (dimensionless temperature of subregion 2a as a function of reduced pressure and reduced entropy) where θ = T/T^*, π = p/p^*, and σ = s/s^* with T^* = 1 K , p^* = 1 MPa, and s^* = 2 kJ kg^−1 K^−1. The coefficients n_i and exponents I_i and J_i of Eq. (25) are listed in Table 25.",
+      "terms": [
+        "Eq. (25)",
+        "subregion 2a",
+        "s^* = 2 kJ kg^−1 K^−1",
+        "backward equation",
+        "n_i",
+        "I_i",
+        "J_i",
+        "p^*"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-074",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "Table 25 [rows i = 1 to 16 of 46]. Numerical values of the coefficients and exponents of the backward equation T( p,s ) for subregion 2a, Eq. (25): i = 1: I_i = −1.5; J_i = −24; n_i = −0.392 359 838 619 84 × 10^6. i = 2: I_i = −1.5; J_i = −23; n_i = 0.515 265 738 272 70 × 10^6. i = 3: I_i = −1.5; J_i = −19; n_i = 0.404 824 431 610 48 × 10^5. i = 4: I_i = −1.5; J_i = −13; n_i = −0.321 937 909 239 02 × 10^3. i = 5: I_i = −1.5; J_i = −11; n_i = 0.969 614 242 186 94 × 10^2. i = 6: I_i = −1.5; J_i = −10; n_i = −0.228 678 463 717 73 × 10^2. i = 7: I_i = −1.25; J_i = −19; n_i = −0.449 429 141 243 57 × 10^6. i = 8: I_i = −1.25; J_i = −15; n_i = −0.501 183 360 201 66 × 10^4. i = 9: I_i = −1.25; J_i = −6; n_i = 0.356 844 635 600 15. i = 10: I_i = −1.0; J_i = −26; n_i = 0.442 353 358 481 90 × 10^5. i = 11: I_i = −1.0; J_i = −21; n_i = −0.136 733 888 117 08 × 10^5. i = 12: I_i = −1.0; J_i = −17; n_i = 0.421 632 602 078 64 × 10^6. i = 13: I_i = −1.0; J_i = −16; n_i = 0.225 169 258 374 75 × 10^5. i = 14: I_i = −1.0; J_i = −9; n_i = 0.474 421 448 656 46 × 10^3. i = 15: I_i = −1.0; J_i = −8; n_i = −0.149 311 307 976 47 × 10^3. i = 16: I_i = −0.75; J_i = −15; n_i = −0.197 811 263 204 52 × 10^6.",
+      "terms": [
+        "Table 25",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-075",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "Table 25 [rows i = 17 to 32 of 46]. Numerical values of the coefficients and exponents of the backward equation T( p,s ) for subregion 2a, Eq. (25): i = 17: I_i = −0.75; J_i = −14; n_i = −0.235 543 994 707 60 × 10^5. i = 18: I_i = −0.5; J_i = −26; n_i = −0.190 706 163 020 76 × 10^5. i = 19: I_i = −0.5; J_i = −13; n_i = 0.553 756 698 831 64 × 10^5. i = 20: I_i = −0.5; J_i = −9; n_i = 0.382 936 914 373 63 × 10^4. i = 21: I_i = −0.5; J_i = −7; n_i = −0.603 918 605 805 67 × 10^3. i = 22: I_i = −0.25; J_i = −27; n_i = 0.193 631 026 203 31 × 10^4. i = 23: I_i = −0.25; J_i = −25; n_i = 0.426 606 436 986 10 × 10^4. i = 24: I_i = −0.25; J_i = −11; n_i = −0.597 806 388 727 18 × 10^4. i = 25: I_i = −0.25; J_i = −6; n_i = −0.704 014 639 268 62 × 10^3. i = 26: I_i = 0.25; J_i = 1; n_i = 0.338 367 841 075 53 × 10^3. i = 27: I_i = 0.25; J_i = 4; n_i = 0.208 627 866 351 87 × 10^2. i = 28: I_i = 0.25; J_i = 8; n_i = 0.338 341 726 561 96 × 10^−1. i = 29: I_i = 0.25; J_i = 11; n_i = −0.431 244 284 148 93 × 10^−4. i = 30: I_i = 0.5; J_i = 0; n_i = 0.166 537 913 564 12 × 10^3. i = 31: I_i = 0.5; J_i = 1; n_i = −0.139 862 920 558 98 × 10^3. i = 32: I_i = 0.5; J_i = 5; n_i = −0.788 495 479 998 72.",
+      "terms": [
+        "Table 25",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-076",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "Table 25 [rows i = 33 to 46 of 46]. Numerical values of the coefficients and exponents of the backward equation T( p,s ) for subregion 2a, Eq. (25): i = 33: I_i = 0.5; J_i = 6; n_i = 0.721 324 117 538 72 × 10^−1. i = 34: I_i = 0.5; J_i = 10; n_i = −0.597 548 393 982 83 × 10^−2. i = 35: I_i = 0.5; J_i = 14; n_i = −0.121 413 589 539 04 × 10^−4. i = 36: I_i = 0.5; J_i = 16; n_i = 0.232 270 967 338 71 × 10^−6. i = 37: I_i = 0.75; J_i = 0; n_i = −0.105 384 635 661 94 × 10^2. i = 38: I_i = 0.75; J_i = 4; n_i = 0.207 189 254 965 02 × 10^1. i = 39: I_i = 0.75; J_i = 9; n_i = −0.721 931 552 604 27 × 10^−1. i = 40: I_i = 0.75; J_i = 17; n_i = 0.207 498 870 811 20 × 10^−6. i = 41: I_i = 1.0; J_i = 7; n_i = −0.183 406 579 113 79 × 10^−1. i = 42: I_i = 1.0; J_i = 18; n_i = 0.290 362 723 486 96 × 10^−6. i = 43: I_i = 1.25; J_i = 3; n_i = 0.210 375 278 936 19. i = 44: I_i = 1.25; J_i = 15; n_i = 0.256 812 397 299 99 × 10^−3. i = 45: I_i = 1.5; J_i = 5; n_i = −0.127 990 029 337 81 × 10^−1. i = 46: I_i = 1.5; J_i = 18; n_i = −0.821 981 026 520 18 × 10^−5.",
+      "terms": [
+        "Table 25",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-077",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 26,
+      "page_end": 26,
+      "text": "The backward equation T(p,s) for subregion 2b in its dimensionless form reads T_2b(p,s)/T^* = θ_2b(π,σ) = ∑_{i=1}^{44} n_i π^{I_i} (10 − σ)^{J_i} , (26) (dimensionless temperature of subregion 2b as a function of reduced pressure and reduced entropy) where θ = T/T^*, π = p/p^*, and σ = s/s^* with T^* = 1 K , p^* = 1 MPa, and s^* = 0.7853 kJ kg^−1 K^−1. The coefficients n_i and exponents I_i and J_i of Eq. (26) are listed in Table 26.",
+      "terms": [
+        "Eq. (26)",
+        "subregion 2b",
+        "s^* = 0.7853 kJ kg^−1 K^−1",
+        "backward equation",
+        "n_i",
+        "I_i",
+        "J_i",
+        "p^*"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-078",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 27,
+      "page_end": 27,
+      "text": "Table 26 [rows i = 1 to 15 of 44]. Numerical values of the coefficients and exponents of the backward equation T( p,s ) for subregion 2b, Eq. (26): i = 1: I_i = −6; J_i = 0; n_i = 0.316 876 650 834 97 × 10^6. i = 2: I_i = −6; J_i = 11; n_i = 0.208 641 758 818 58 × 10^2. i = 3: I_i = −5; J_i = 0; n_i = −0.398 593 998 035 99 × 10^6. i = 4: I_i = −5; J_i = 11; n_i = −0.218 160 585 188 77 × 10^2. i = 5: I_i = −4; J_i = 0; n_i = 0.223 697 851 942 42 × 10^6. i = 6: I_i = −4; J_i = 1; n_i = −0.278 417 034 458 17 × 10^4. i = 7: I_i = −4; J_i = 11; n_i = 0.992 074 360 714 80 × 10^1. i = 8: I_i = −3; J_i = 0; n_i = −0.751 975 122 991 57 × 10^5. i = 9: I_i = −3; J_i = 1; n_i = 0.297 086 059 511 58 × 10^4. i = 10: I_i = −3; J_i = 11; n_i = −0.344 068 785 485 26 × 10^1. i = 11: I_i = −3; J_i = 12; n_i = 0.388 155 642 491 15. i = 12: I_i = −2; J_i = 0; n_i = 0.175 112 950 857 50 × 10^5. i = 13: I_i = −2; J_i = 1; n_i = −0.142 371 128 544 49 × 10^4. i = 14: I_i = −2; J_i = 6; n_i = 0.109 438 033 641 67 × 10^1. i = 15: I_i = −2; J_i = 10; n_i = 0.899 716 193 084 95.",
+      "terms": [
+        "Table 26",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-079",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 27,
+      "page_end": 27,
+      "text": "Table 26 [rows i = 16 to 30 of 44]. Numerical values of the coefficients and exponents of the backward equation T( p,s ) for subregion 2b, Eq. (26): i = 16: I_i = −1; J_i = 0; n_i = −0.337 597 400 989 58 × 10^4. i = 17: I_i = −1; J_i = 1; n_i = 0.471 628 858 183 55 × 10^3. i = 18: I_i = −1; J_i = 5; n_i = −0.191 882 419 936 79 × 10^1. i = 19: I_i = −1; J_i = 8; n_i = 0.410 785 804 921 96. i = 20: I_i = −1; J_i = 9; n_i = −0.334 653 781 720 97. i = 21: I_i = 0; J_i = 0; n_i = 0.138 700 347 775 05 × 10^4. i = 22: I_i = 0; J_i = 1; n_i = −0.406 633 261 958 38 × 10^3. i = 23: I_i = 0; J_i = 2; n_i = 0.417 273 471 596 10 × 10^2. i = 24: I_i = 0; J_i = 4; n_i = 0.219 325 494 345 32 × 10^1. i = 25: I_i = 0; J_i = 5; n_i = −0.103 200 500 090 77 × 10^1. i = 26: I_i = 0; J_i = 6; n_i = 0.358 829 435 167 03. i = 27: I_i = 0; J_i = 9; n_i = 0.525 114 537 260 66 × 10^−2. i = 28: I_i = 1; J_i = 0; n_i = 0.128 389 164 507 05 × 10^2. i = 29: I_i = 1; J_i = 1; n_i = −0.286 424 372 193 81 × 10^1. i = 30: I_i = 1; J_i = 2; n_i = 0.569 126 836 648 55.",
+      "terms": [
+        "Table 26",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-080",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 27,
+      "page_end": 27,
+      "text": "Table 26 [rows i = 31 to 44 of 44]. Numerical values of the coefficients and exponents of the backward equation T( p,s ) for subregion 2b, Eq. (26): i = 31: I_i = 1; J_i = 3; n_i = −0.999 629 545 849 31 × 10^−1. i = 32: I_i = 1; J_i = 7; n_i = −0.326 320 377 784 59 × 10^−2. i = 33: I_i = 1; J_i = 8; n_i = 0.233 209 225 767 23 × 10^−3. i = 34: I_i = 2; J_i = 0; n_i = −0.153 348 098 574 50. i = 35: I_i = 2; J_i = 1; n_i = 0.290 722 882 399 02 × 10^−1. i = 36: I_i = 2; J_i = 5; n_i = 0.375 347 027 411 67 × 10^−3. i = 37: I_i = 3; J_i = 0; n_i = 0.172 966 917 024 11 × 10^−2. i = 38: I_i = 3; J_i = 1; n_i = −0.385 560 508 445 04 × 10^−3. i = 39: I_i = 3; J_i = 3; n_i = −0.350 177 122 926 08 × 10^−4. i = 40: I_i = 4; J_i = 0; n_i = −0.145 663 936 314 92 × 10^−4. i = 41: I_i = 4; J_i = 1; n_i = 0.564 208 572 672 69 × 10^−5. i = 42: I_i = 5; J_i = 0; n_i = 0.412 861 500 746 05 × 10^−7. i = 43: I_i = 5; J_i = 1; n_i = −0.206 846 711 188 24 × 10^−7. i = 44: I_i = 5; J_i = 2; n_i = 0.164 093 936 747 25 × 10^−8.",
+      "terms": [
+        "Table 26",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-081",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 27,
+      "page_end": 27,
+      "text": "The backward equation T(p,s) for subregion 2c in its dimensionless form reads T_2c(p,s)/T^* = θ_2c(π,σ) = ∑_{i=1}^{30} n_i π^{I_i} (2 − σ)^{J_i} , (27) (dimensionless temperature of subregion 2c as a function of reduced pressure and reduced entropy) where θ = T/T^*, π = p/p^*, and σ = s/s^* with T^* = 1 K , p^* = 1 MPa, and s^* = 2.9251 kJ kg^−1 K^−1. The coefficients n_i and exponents I_i and J_i of Eq. (27) are listed in Table 27.",
+      "terms": [
+        "Eq. (27)",
+        "subregion 2c",
+        "s^* = 2.9251 kJ kg^−1 K^−1",
+        "backward equation",
+        "n_i",
+        "I_i",
+        "J_i",
+        "p^*"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-082",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 28,
+      "page_end": 28,
+      "text": "Table 27 [rows i = 1 to 15 of 30]. Numerical values of the coefficient s and exponents of the backward equation T( p,s ) for subregion 2c, Eq. (27): i = 1: I_i = −2; J_i = 0; n_i = 0.909 685 010 053 65 × 10^3. i = 2: I_i = −2; J_i = 1; n_i = 0.240 456 670 884 20 × 10^4. i = 3: I_i = −1; J_i = 0; n_i = −0.591 623 263 871 30 × 10^3. i = 4: I_i = 0; J_i = 0; n_i = 0.541 454 041 280 74 × 10^3. i = 5: I_i = 0; J_i = 1; n_i = −0.270 983 084 111 92 × 10^3. i = 6: I_i = 0; J_i = 2; n_i = 0.979 765 250 979 26 × 10^3. i = 7: I_i = 0; J_i = 3; n_i = −0.469 667 729 594 35 × 10^3. i = 8: I_i = 1; J_i = 0; n_i = 0.143 992 746 047 23 × 10^2. i = 9: I_i = 1; J_i = 1; n_i = −0.191 042 042 304 29 × 10^2. i = 10: I_i = 1; J_i = 3; n_i = 0.532 991 671 119 71 × 10^1. i = 11: I_i = 1; J_i = 4; n_i = −0.212 529 753 759 34 × 10^2. i = 12: I_i = 2; J_i = 0; n_i = −0.311 473 344 137 60. i = 13: I_i = 2; J_i = 1; n_i = 0.603 348 408 946 23. i = 14: I_i = 2; J_i = 2; n_i = −0.427 648 397 025 09 × 10^−1. i = 15: I_i = 3; J_i = 0; n_i = 0.581 855 972 552 59 × 10^−2.",
+      "terms": [
+        "Table 27",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-083",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 28,
+      "page_end": 28,
+      "text": "Table 27 [rows i = 16 to 30 of 30]. Numerical values of the coefficient s and exponents of the backward equation T( p,s ) for subregion 2c, Eq. (27): i = 16: I_i = 3; J_i = 1; n_i = −0.145 970 082 847 53 × 10^−1. i = 17: I_i = 3; J_i = 5; n_i = 0.566 311 756 310 27 × 10^−2. i = 18: I_i = 4; J_i = 0; n_i = −0.761 558 645 845 77 × 10^−4. i = 19: I_i = 4; J_i = 1; n_i = 0.224 403 429 193 32 × 10^−3. i = 20: I_i = 4; J_i = 4; n_i = −0.125 610 950 134 13 × 10^−4. i = 21: I_i = 5; J_i = 0; n_i = 0.633 231 326 609 34 × 10^−6. i = 22: I_i = 5; J_i = 1; n_i = −0.205 419 896 753 75 × 10^−5. i = 23: I_i = 5; J_i = 2; n_i = 0.364 053 703 900 82 × 10^−7. i = 24: I_i = 6; J_i = 0; n_i = −0.297 598 977 892 15 × 10^−8. i = 25: I_i = 6; J_i = 1; n_i = 0.101 366 185 297 63 × 10^−7. i = 26: I_i = 7; J_i = 0; n_i = 0.599 257 196 923 51 × 10^−11. i = 27: I_i = 7; J_i = 1; n_i = −0.206 778 701 051 64 × 10^−10. i = 28: I_i = 7; J_i = 3; n_i = −0.208 742 781 818 86 × 10^−10. i = 29: I_i = 7; J_i = 4; n_i = 0.101 621 668 250 89 × 10^−9. i = 30: I_i = 7; J_i = 5; n_i = −0.164 298 282 813 47 × 10^−9.",
+      "terms": [
+        "Table 27",
+        "backward equation",
+        "region 2",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-084",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 28,
+      "page_end": 28,
+      "text": "Range of validity. Equations (25), (26), and (27) are only valid in the respective subregion 2a, 2b, and 2c which do not include the metastable-vapor region. The boundaries between these subregions are defined at the beginning of Section 6.3; the lowest pressure for which Eq. (25) is valid amounts to 611.153 Pa corresponding to the sublimation pressure [10] at 273.15 K.",
+      "terms": [
+        "Range of validity",
+        "611.153 Pa",
+        "metastable-vapor region",
+        "region 2"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-085",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 28,
+      "page_end": 29,
+      "text": "Numerical consistency with the basic equation. For ten million random pairs of p and s covering each of the subregions 2a, 2b, and 2c, the differences ΔT between temperatures calculated from Eqs. (25) to (27), respectively, and from Eq. (15) were determined. The corresponding maximum and root-mean-square differences are listed in Table 28 together with the tolerated differences according to the numerical consistency requirements with respect to Eq. (15). Table 28. Maximum differences |ΔT|_max and root-mean-square differences ΔT_RMS between temperatures calculated from Eqs. (25) to (27), and from Eq. (15) in comparison with the tolerated differences |ΔT|_tol: Subregion 2a: Equation = 25; |ΔT|_tol /mK = 10; |ΔT|_max /mK = 8.8; ΔT_RMS /mK = 1.2. Subregion 2b: Equation = 26; |ΔT|_tol /mK = 10; |ΔT|_max /mK = 6.5; ΔT_RMS /mK = 2.8. Subregion 2c: Equation = 27; |ΔT|_tol /mK = 25; |ΔT|_max /mK = 19.0; ΔT_RMS /mK = 8.3.",
+      "terms": [
+        "Table 28",
+        "Numerical consistency",
+        "basic equation",
+        "numerical consistency",
+        "region 2",
+        "subregions 2a, 2b, and 2c",
+        "|ΔT|_max",
+        "ΔT_RMS"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-086",
+      "doc_id": "R015",
+      "section": "6.3.2 The Backward Equations T( p,s ) for Subregions 2a, 2b, and 2c",
+      "page_start": 29,
+      "page_end": 29,
+      "text": "Computer-program verification. To assist the user in computer-program verification of Eqs. (25) to (27), Table 29 contains the corresponding test values. Table 29. Temperature values calculated from Eqs. (25) to (27) for selected values of p and s^a: Eq. (25), p/MPa = 0.1, s/(kJ kg^−1 K^−1) = 7.5: T/K = 0.399 517 097 × 10^3. Eq. (25), p/MPa = 0.1, s/(kJ kg^−1 K^−1) = 8: T/K = 0.514 127 081 × 10^3. Eq. (25), p/MPa = 2.5, s/(kJ kg^−1 K^−1) = 8: T/K = 0.103 984 917 × 10^4. Eq. (26), p/MPa = 8, s/(kJ kg^−1 K^−1) = 6: T/K = 0.600 484 040 × 10^3. Eq. (26), p/MPa = 8, s/(kJ kg^−1 K^−1) = 7.5: T/K = 0.106 495 556 × 10^4. Eq. (26), p/MPa = 90, s/(kJ kg^−1 K^−1) = 6: T/K = 0.103 801 126 × 10^4. Eq. (27), p/MPa = 20, s/(kJ kg^−1 K^−1) = 5.75: T/K = 0.697 992 849 × 10^3. Eq. (27), p/MPa = 80, s/(kJ kg^−1 K^−1) = 5.25: T/K = 0.854 011 484 × 10^3. Eq. (27), p/MPa = 80, s/(kJ kg^−1 K^−1) = 5.75: T/K = 0.949 017 998 × 10^3. ^a It is recommended to verify the programmed equations using 8 byte real values for all three combinations of p and s given in this table for each of the equations.",
+      "terms": [
+        "computer-program verification",
+        "Table 29",
+        "kJ kg^−1",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-087",
+      "doc_id": "R015",
+      "section": "7 Basic Equation for Region 3",
+      "page_start": 29,
+      "page_end": 30,
+      "text": "This section contains all details relevant for the use of the basic equation of region 3 of IAPWS-IF97. Information about the consistency of the basic equation of this region with the basic equations of regions 1, 2, and 4 along the corresponding region boundaries is summarized in Section 10. The auxiliary equation for defining the boundary between regions 2 and 3 is given in Section 4. Section 11 contains the results of computing-time comparisons between IAPWS-IF97 and IFC-67. The estimates of uncertainty of the most relevant properties can be found in Section 12.",
+      "terms": [
+        "IAPWS-IF97",
+        "IFC-67",
+        "basic equation",
+        "region 3",
+        "uncertainty"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-088",
+      "doc_id": "R015",
+      "section": "7 Basic Equation for Region 3",
+      "page_start": 30,
+      "page_end": 30,
+      "text": "The basic equation for this region is a fundamental equation for the specific Helmholtz free energy f. This equation is expressed in dimensionless form, φ = f / (RT) , and reads f(ρ,T)/(RT) = φ(δ,τ) = n_1 ln δ + ∑_{i=2}^{40} n_i δ^{I_i} τ^{J_i} , (28) (dimensionless Helmholtz free energy of region 3 as a function of reduced density and inverse reduced temperature) where δ = ρ/ρ^*, τ = T^*/T with ρ^* = ρ_c, T^* = T_c and R, T_c, and ρ_c given by Eqs. (1), (2), and (4). The coefficients n_i and exponents I_i and J_i of Eq. (28) are listed in Table 30. In addition to representing the thermodynamic properties in the single-phase region, Eq. (28) meets the phase-equilibrium condition (equality of specific Gibbs free energy for coexisting vapor + liquid states; see Table 31) along the saturation line for T ≥ 623.15 K to T_c. Moreover, Eq. (28) reproduces exactly the critical parameters according to Eqs. (2) to (4) and yields zero for the first two pressure derivatives with respect to density at the critical point.",
+      "terms": [
+        "Eq. (28)",
+        "Helmholtz free energy",
+        "phase-equilibrium condition",
+        "ρ^* = ρ_c",
+        "Gibbs free energy",
+        "basic equation",
+        "saturation line",
+        "critical point"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-089",
+      "doc_id": "R015",
+      "section": "7 Basic Equation for Region 3",
+      "page_start": 30,
+      "page_end": 30,
+      "text": "Table 30 [rows i = 1 to 14 of 40]. Numerical values of the coefficients and exponents of the dimensionless Helmholtz free energy for region 3, Eq. (28): i = 1: I_i = –; J_i = –; n_i = 0.106 580 700 285 13 × 10^1. i = 2: I_i = 0; J_i = 0; n_i = −0.157 328 452 902 39 × 10^2. i = 3: I_i = 0; J_i = 1; n_i = 0.209 443 969 743 07 × 10^2. i = 4: I_i = 0; J_i = 2; n_i = −0.768 677 078 787 16 × 10^1. i = 5: I_i = 0; J_i = 7; n_i = 0.261 859 477 879 54 × 10^1. i = 6: I_i = 0; J_i = 10; n_i = −0.280 807 811 486 20 × 10^1. i = 7: I_i = 0; J_i = 12; n_i = 0.120 533 696 965 17 × 10^1. i = 8: I_i = 0; J_i = 23; n_i = −0.845 668 128 125 02 × 10^−2. i = 9: I_i = 1; J_i = 2; n_i = −0.126 543 154 777 14 × 10^1. i = 10: I_i = 1; J_i = 6; n_i = −0.115 244 078 066 81 × 10^1. i = 11: I_i = 1; J_i = 15; n_i = 0.885 210 439 843 18. i = 12: I_i = 1; J_i = 17; n_i = −0.642 077 651 816 07. i = 13: I_i = 2; J_i = 0; n_i = 0.384 934 601 866 71. i = 14: I_i = 2; J_i = 2; n_i = −0.852 147 088 242 06.",
+      "terms": [
+        "Table 30",
+        "Helmholtz free energy",
+        "region 3",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-090",
+      "doc_id": "R015",
+      "section": "7 Basic Equation for Region 3",
+      "page_start": 30,
+      "page_end": 30,
+      "text": "Table 30 [rows i = 15 to 28 of 40]. Numerical values of the coefficients and exponents of the dimensionless Helmholtz free energy for region 3, Eq. (28): i = 15: I_i = 2; J_i = 6; n_i = 0.489 722 815 418 77 × 10^1. i = 16: I_i = 2; J_i = 7; n_i = −0.305 026 172 569 65 × 10^1. i = 17: I_i = 2; J_i = 22; n_i = 0.394 205 368 791 54 × 10^−1. i = 18: I_i = 2; J_i = 26; n_i = 0.125 584 084 243 08. i = 19: I_i = 3; J_i = 0; n_i = −0.279 993 296 987 10. i = 20: I_i = 3; J_i = 2; n_i = 0.138 997 995 694 60 × 10^1. i = 21: I_i = 3; J_i = 4; n_i = −0.201 899 150 235 70 × 10^1. i = 22: I_i = 3; J_i = 16; n_i = −0.821 476 371 739 63 × 10^−2. i = 23: I_i = 3; J_i = 26; n_i = −0.475 960 357 349 23. i = 24: I_i = 4; J_i = 0; n_i = 0.439 840 744 735 00 × 10^−1. i = 25: I_i = 4; J_i = 2; n_i = −0.444 764 354 287 39. i = 26: I_i = 4; J_i = 4; n_i = 0.905 720 707 197 33. i = 27: I_i = 4; J_i = 26; n_i = 0.705 224 500 879 67. i = 28: I_i = 5; J_i = 1; n_i = 0.107 705 126 263 32.",
+      "terms": [
+        "Table 30",
+        "Helmholtz free energy",
+        "region 3",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-091",
+      "doc_id": "R015",
+      "section": "7 Basic Equation for Region 3",
+      "page_start": 30,
+      "page_end": 30,
+      "text": "Table 30 [rows i = 29 to 40 of 40]. Numerical values of the coefficients and exponents of the dimensionless Helmholtz free energy for region 3, Eq. (28): i = 29: I_i = 5; J_i = 3; n_i = −0.329 136 232 589 54. i = 30: I_i = 5; J_i = 26; n_i = −0.508 710 620 411 58. i = 31: I_i = 6; J_i = 0; n_i = −0.221 754 008 730 96 × 10^−1. i = 32: I_i = 6; J_i = 2; n_i = 0.942 607 516 650 92 × 10^−1. i = 33: I_i = 6; J_i = 26; n_i = 0.164 362 784 479 61. i = 34: I_i = 7; J_i = 2; n_i = −0.135 033 722 413 48 × 10^−1. i = 35: I_i = 8; J_i = 26; n_i = −0.148 343 453 524 72 × 10^−1. i = 36: I_i = 9; J_i = 2; n_i = 0.579 229 536 280 84 × 10^−3. i = 37: I_i = 9; J_i = 26; n_i = 0.323 089 047 037 11 × 10^−2. i = 38: I_i = 10; J_i = 0; n_i = 0.809 648 029 962 15 × 10^−4. i = 39: I_i = 10; J_i = 1; n_i = −0.165 576 797 950 37 × 10^−3. i = 40: I_i = 11; J_i = 26; n_i = −0.449 238 990 618 15 × 10^−4.",
+      "terms": [
+        "Table 30",
+        "Helmholtz free energy",
+        "region 3",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-092",
+      "doc_id": "R015",
+      "section": "7 Basic Equation for Region 3",
+      "page_start": 30,
+      "page_end": 31,
+      "text": "All thermodynamic properties can be derived from Eq. (28) by using the appropriate combinations of the dimensionless Helmholtz free energy and its derivatives. Relations between the relevant thermodynamic properties and φ and its derivatives are summarized in Table 31. All required derivatives of the dimensionless Helmholtz free energy are explicitly given in Table 32.",
+      "terms": [
+        "Helmholtz free energy",
+        "φ"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-093",
+      "doc_id": "R015",
+      "section": "7 Basic Equation for Region 3",
+      "page_start": 31,
+      "page_end": 31,
+      "text": "Table 31. Relations of thermodynamic properties to the dimensionless Helmholtz free energy φ and its derivatives^a when using Eq. (28). Pressure p = ρ^2 (∂f/∂ρ)_T: p(δ,τ)/(ρRT) = δφ_δ. Specific internal energy u = f − T (∂f/∂T)_ρ: u(δ,τ)/(RT) = τφ_τ. Specific entropy s = −(∂f/∂T)_ρ: s(δ,τ)/R = τφ_τ − φ. Specific enthalpy h = f − T (∂f/∂T)_ρ + ρ (∂f/∂ρ)_T: h(δ,τ)/(RT) = τφ_τ + δφ_δ. Specific isochoric heat capacity c_v = (∂u/∂T)_ρ: c_v(δ,τ)/R = −τ^2φ_ττ. Specific isobaric heat capacity c_p = (∂h/∂T)_p: c_p(δ,τ)/R = −τ^2φ_ττ + (δφ_δ − δτφ_δτ)^2/(2δφ_δ + δ^2φ_δδ). Speed of sound w = (∂p/∂ρ)_s^{1/2}: w^2(δ,τ)/(RT) = 2δφ_δ + δ^2φ_δδ − (δφ_δ − δτφ_δτ)^2/(τ^2φ_ττ). Phase-equilibrium condition (Maxwell criterion): p_s/(RTρ′) = δ′φ_δ(δ′,τ) ; p_s/(RTρ″) = δ″φ_δ(δ″,τ) ; p_s/(RT) (1/ρ″ − 1/ρ′) = φ(δ′,τ) − φ(δ″,τ). ^a φ_δ = [∂φ/∂δ]_τ , φ_δδ = [∂^2φ/∂δ^2]_τ , φ_τ = [∂φ/∂τ]_δ , φ_ττ = [∂^2φ/∂τ^2]_δ , φ_δτ = [∂^2φ/∂δ∂τ].",
+      "terms": [
+        "Table 31",
+        "Helmholtz free energy",
+        "Pressure",
+        "Specific enthalpy",
+        "Specific isochoric heat capacity",
+        "Speed of sound",
+        "Phase-equilibrium condition",
+        "Maxwell criterion"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-094",
+      "doc_id": "R015",
+      "section": "7 Basic Equation for Region 3",
+      "page_start": 32,
+      "page_end": 32,
+      "text": "Table 32. The dimensionless Helmholtz free energy equation and its derivatives^a according to Eq. (28). φ = n_1 ln δ + ∑_{i=2}^{40} n_i δ^{I_i} τ^{J_i} (dimensionless Helmholtz free energy); φ_δ = n_1/δ + ∑_{i=2}^{40} n_i I_i δ^{I_i − 1} τ^{J_i} (first derivative with respect to δ); φ_δδ = −n_1/δ^2 + ∑_{i=2}^{40} n_i I_i (I_i − 1) δ^{I_i − 2} τ^{J_i} (second derivative with respect to δ); φ_τ = 0 + ∑_{i=2}^{40} n_i δ^{I_i} J_i τ^{J_i − 1} (first derivative with respect to τ); φ_ττ = 0 + ∑_{i=2}^{40} n_i δ^{I_i} J_i (J_i − 1) τ^{J_i − 2} (second derivative with respect to τ); φ_δτ = 0 + ∑_{i=2}^{40} n_i I_i δ^{I_i − 1} J_i τ^{J_i − 1} (mixed derivative with respect to δ and τ). ^a φ_δ = [∂φ/∂δ]_τ , φ_δδ = [∂^2φ/∂δ^2]_τ , φ_τ = [∂φ/∂τ]_δ , φ_ττ = [∂^2φ/∂τ^2]_δ , φ_δτ = [∂^2φ/∂δ∂τ].",
+      "terms": [
+        "Table 32",
+        "Helmholtz free energy",
+        "φ_δ",
+        "φ_δδ",
+        "φ_τ",
+        "φ_ττ",
+        "φ_δτ",
+        "Eq. (28)"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-095",
+      "doc_id": "R015",
+      "section": "7 Basic Equation for Region 3",
+      "page_start": 32,
+      "page_end": 32,
+      "text": "Range of validity. Equation (28) covers region 3 of IAPWS-IF97 defined by the following range of temperature and pressure, see Fig. 1: 623.15 K ≤ T ≤ T(p)_Eq.(6), p(T)_Eq.(5) ≤ p ≤ 100 MPa . In addition to the properties in the stable single-phase region defined above, Eq. (28) also yields reasonable values in the metastable regions (superheated liquid and subcooled steam) close to the saturated liquid and saturated vapor line.",
+      "terms": [
+        "Range of validity",
+        "superheated liquid",
+        "subcooled steam",
+        "IAPWS-IF97",
+        "metastable",
+        "region 3",
+        "MPa"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-096",
+      "doc_id": "R015",
+      "section": "7 Basic Equation for Region 3",
+      "page_start": 32,
+      "page_end": 32,
+      "text": "Computer-program verification. To assist the user in computer-program verification of Eq. (28), Table 33 contains test values of the most relevant properties. Table 33. Thermodynamic property values calculated from Eq. (28) for selected values of T and ρ^a: p/MPa: (T = 650 K, ρ = 500 kg m^−3) = 0.255 837 018 × 10^2; (T = 650 K, ρ = 200 kg m^−3) = 0.222 930 643 × 10^2; (T = 750 K, ρ = 500 kg m^−3) = 0.783 095 639 × 10^2. h/(kJ kg^−1): (T = 650 K, ρ = 500 kg m^−3) = 0.186 343 019 × 10^4; (T = 650 K, ρ = 200 kg m^−3) = 0.237 512 401 × 10^4; (T = 750 K, ρ = 500 kg m^−3) = 0.225 868 845 × 10^4. u/(kJ kg^−1): (T = 650 K, ρ = 500 kg m^−3) = 0.181 226 279 × 10^4; (T = 650 K, ρ = 200 kg m^−3) = 0.226 365 868 × 10^4; (T = 750 K, ρ = 500 kg m^−3) = 0.210 206 932 × 10^4. s/(kJ kg^−1 K^−1): (T = 650 K, ρ = 500 kg m^−3) = 0.405 427 273 × 10^1; (T = 650 K, ρ = 200 kg m^−3) = 0.485 438 792 × 10^1; (T = 750 K, ρ = 500 kg m^−3) = 0.446 971 906 × 10^1. c_p/(kJ kg^−1 K^−1): (T = 650 K, ρ = 500 kg m^−3) = 0.138 935 717 × 10^2; (T = 650 K, ρ = 200 kg m^−3) = 0.446 579 342 × 10^2; (T = 750 K, ρ = 500 kg m^−3) = 0.634 165 359 × 10^1. w/(m s^−1): (T = 650 K, ρ = 500 kg m^−3) = 0.502 005 554 × 10^3; (T = 650 K, ρ = 200 kg m^−3) = 0.383 444 594 × 10^3; (T = 750 K, ρ = 500 kg m^−3) = 0.760 696 041 × 10^3. ^a It is recommended to verify programmed functions using 8 byte real values for all three combinations of T and ρ given in this table.",
+      "terms": [
+        "computer-program verification",
+        "Table 33",
+        "kJ kg^−1",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-097",
+      "doc_id": "R015",
+      "section": "8 Equations for Region 4",
+      "page_start": 33,
+      "page_end": 33,
+      "text": "This section contains all details relevant for the use of the equations for region 4 of IAPWS-IF97 (saturation line). Information about the consistency of the basic equation for this region, the saturation-pressure equation, and the basic equations of regions 1 to 3 at the corresponding region boundaries is summarized in Section 10. The results of computing-time comparisons between IAPWS-IF97 and IFC-67 are given in Section 11. The estimates of uncertainty of the saturation pressure can be found in Section 12.",
+      "terms": [
+        "IAPWS-IF97",
+        "IFC-67",
+        "basic equation",
+        "saturation-pressure equation",
+        "saturation line",
+        "saturation pressure",
+        "region 4",
+        "uncertainty"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-098",
+      "doc_id": "R015",
+      "section": "8 Equations for Region 4",
+      "page_start": 33,
+      "page_end": 33,
+      "text": "The equation for describing the saturation line is an implicit quadratic equation which can be directly solved with regard to both saturation pressure p_s and saturation temperature T_s. This equation reads β^2ϑ^2 + n_1β^2ϑ + n_2β^2 + n_3βϑ^2 + n_4βϑ + n_5β + n_6ϑ^2 + n_7ϑ + n_8 = 0 , (29) (implicit quadratic equation of the saturation line in β and ϑ) where β = (p_s/p^*)^{1/4} (29a) (transformed pressure) and ϑ = T_s/T^* + n_9/((T_s/T^*) − n_10) (29b) (transformed temperature) with p^* = 1 MPa and T^* = 1 K; for the coefficients n_1 to n_10 see Table 34.",
+      "terms": [
+        "implicit quadratic equation",
+        "β",
+        "ϑ",
+        "p_s",
+        "T_s",
+        "saturation line",
+        "saturation pressure",
+        "saturation temperature"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-099",
+      "doc_id": "R015",
+      "section": "8.1 The Saturation-Pressure Equation (Basic Equation)",
+      "page_start": 33,
+      "page_end": 33,
+      "text": "The solution of Eq. (29) with regard to saturation pressure is as follows: p_s/p^* = [ 2C / (−B + (B^2 − 4AC)^{1/2}) ]^4 , (30) (saturation pressure from the solution of Eq. (29)) where p^* = 1 MPa and A = ϑ^2 + n_1ϑ + n_2 ; B = n_3ϑ^2 + n_4ϑ + n_5 ; C = n_6ϑ^2 + n_7ϑ + n_8 with ϑ according to Eq. (29b). The coefficients n_i of Eq. (30) are listed in Table 34.",
+      "terms": [
+        "Eq. (30)",
+        "saturation pressure",
+        "p_s",
+        "n_i",
+        "p^*",
+        "ϑ",
+        "MPa"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-100",
+      "doc_id": "R015",
+      "section": "8.1 The Saturation-Pressure Equation (Basic Equation)",
+      "page_start": 34,
+      "page_end": 34,
+      "text": "Table 34. Numerical values of the coefficients of the dimensionless saturation equations, Eqs. (29) to (31): i = 1: n_i = 0.116 705 214 527 67 × 10^4. i = 2: n_i = −0.724 213 167 032 06 × 10^6. i = 3: n_i = −0.170 738 469 400 92 × 10^2. i = 4: n_i = 0.120 208 247 024 70 × 10^5. i = 5: n_i = −0.323 255 503 223 33 × 10^7. i = 6: n_i = 0.149 151 086 135 30 × 10^2. i = 7: n_i = −0.482 326 573 615 91 × 10^4. i = 8: n_i = 0.405 113 405 420 57 × 10^6. i = 9: n_i = −0.238 555 575 678 49. i = 10: n_i = 0.650 175 348 447 98 × 10^3.",
+      "terms": [
+        "Table 34",
+        "n_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-101",
+      "doc_id": "R015",
+      "section": "8.1 The Saturation-Pressure Equation (Basic Equation)",
+      "page_start": 34,
+      "page_end": 34,
+      "text": "Equations (29) to (31) reproduce exactly the p-T values at the triple point according to Eq. (9), at the normal boiling point [12] and at the critical point according to Eqs. (2) and (3). Range of validity. Equation (30) is valid along the entire vapor-liquid saturation line from the triple-point temperature T_t to the critical temperature T_c and can be simply extrapolated to 273.15 K so that it covers the temperature range 273.15 K ≤ T ≤ 647.096 K .",
+      "terms": [
+        "normal boiling point",
+        "Range of validity",
+        "saturation line",
+        "triple point",
+        "critical point",
+        "T_c"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-102",
+      "doc_id": "R015",
+      "section": "8.1 The Saturation-Pressure Equation (Basic Equation)",
+      "page_start": 34,
+      "page_end": 34,
+      "text": "Computer-program verification. To assist the user in computer-program verification of Eq. (30), Table 35 contains test values for three selected temperatures. Table 35. Saturation pressures calculated from Eq. (30) for selected values of T^a: T/K = 300: p_s/MPa = 0.353 658 941 × 10^−2. T/K = 500: p_s/MPa = 0.263 889 776 × 10^1. T/K = 600: p_s/MPa = 0.123 443 146 × 10^2. ^a It is recommended to verify the programmed equation using 8 byte real values for all three values of T given in this table.",
+      "terms": [
+        "computer-program verification",
+        "Table 35",
+        "p_s",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-103",
+      "doc_id": "R015",
+      "section": "8.2 The Saturation-Temperature Equation (Backward Equation)",
+      "page_start": 35,
+      "page_end": 35,
+      "text": "The saturation-temperature solution of Eq. (29) reads T_s/T^* = [ n_10 + D − [(n_10 + D)^2 − 4(n_9 + n_10D)]^{1/2} ] / 2 , (31) (saturation temperature from the solution of Eq. (29)) where T^* = 1 K and D = 2G / (−F − (F^2 − 4EG)^{1/2}) with E = β^2 + n_3β + n_6 ; F = n_1β^2 + n_4β + n_7 ; G = n_2β^2 + n_5β + n_8 and β according to Eq. (29a). The coefficients n_i of Eq. (31) are listed in Table 34.",
+      "terms": [
+        "Eq. (31)",
+        "saturation-temperature",
+        "saturation temperature",
+        "T_s",
+        "n_i",
+        "T^*",
+        "β"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-104",
+      "doc_id": "R015",
+      "section": "8.2 The Saturation-Temperature Equation (Backward Equation)",
+      "page_start": 35,
+      "page_end": 35,
+      "text": "Range of validity. Equation (31) has the same range of validity as Eq. (30), which means that it covers the vapor-liquid saturation line according to the pressure range 611.213 Pa ≤ p ≤ 22.064 MPa . The value of 611.213 Pa corresponds to the pressure when Eq. (31) is extrapolated to 273.15 K. Consistency with the basic equation. Since the saturation-pressure equation, Eq. (30), and the saturation-temperature equation, Eq. (31), have been derived from the same implicit equation, Eq. (29), for describing the saturation line, both Eq. (30) and Eq. (31) are completely consistent with each other.",
+      "terms": [
+        "Range of validity",
+        "611.213 Pa",
+        "basic equation",
+        "saturation-pressure equation",
+        "saturation-temperature equation",
+        "saturation line",
+        "MPa"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-105",
+      "doc_id": "R015",
+      "section": "8.2 The Saturation-Temperature Equation (Backward Equation)",
+      "page_start": 35,
+      "page_end": 36,
+      "text": "Computer-program verification. To assist the user in computer-program verification of Eq. (31), Table 36 contains test values for three selected pressures. Table 36. Saturation temperatures calculated from Eq. (31) for selected values of p^a: p/MPa = 0.1: T_s/K = 0.372 755 919 × 10^3. p/MPa = 1: T_s/K = 0.453 035 632 × 10^3. p/MPa = 10: T_s/K = 0.584 149 488 × 10^3. ^a It is recommended to verify the programmed equation using 8 byte real values for all three values of p given in this table.",
+      "terms": [
+        "computer-program verification",
+        "Table 36",
+        "T_s",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-106",
+      "doc_id": "R015",
+      "section": "9 Basic Equation for Region 5",
+      "page_start": 36,
+      "page_end": 36,
+      "text": "This section contains all details relevant for the use of the equations for region 5 of IAPWS-IF97. Information about the consistency at the boundary between regions 2 and 5 is summarized in Section 10. The results of computing-time comparisons between IAPWS-IF97 and IFC-67 are given in Section 11. The estimates of uncertainty of the most relevant properties can be found in Section 12.",
+      "terms": [
+        "IAPWS-IF97",
+        "IFC-67",
+        "region 5",
+        "uncertainty"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-107",
+      "doc_id": "R015",
+      "section": "9 Basic Equation for Region 5",
+      "page_start": 36,
+      "page_end": 36,
+      "text": "The basic equation for this high-temperature region is a fundamental equation for the specific Gibbs free energy g. This equation is expressed in dimensionless form, γ = g/( RT ), and is separated into two parts, an ideal-gas part γ^o and a residual part γ^r, so that g(p,T)/(RT) = γ(π,τ) = γ^o(π,τ) + γ^r(π,τ) , (32) (dimensionless Gibbs free energy of region 5 as the sum of an ideal-gas part and a residual part) where π = p/p^* and τ = T^*/T with R given by Eq. (1). The equation for the ideal-gas part γ^o of the dimensionless Gibbs free energy reads γ^o = ln π + ∑_{i=1}^{6} n_i^o τ^{J_i^o} , (33) (ideal-gas part of the dimensionless Gibbs free energy for region 5) where π = p/p^* and τ = T^*/T with p^* = 1 MPa and T^* = 1000 K. The coefficients n_1^o and n_2^o were adjusted in such a way that the values for the specific internal energy and specific entropy in the ideal-gas state relate to Eq. (8). Table 37 contains the coefficients n_i^o and exponents J_i^o of Eq. (33).",
+      "terms": [
+        "Eq. (33)",
+        "T^* = 1000 K",
+        "Gibbs free energy",
+        "basic equation",
+        "ideal-gas part",
+        "residual part",
+        "specific entropy",
+        "specific internal energy"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-108",
+      "doc_id": "R015",
+      "section": "9 Basic Equation for Region 5",
+      "page_start": 37,
+      "page_end": 37,
+      "text": "Table 37. Numerical values of the coefficients and exponents of the ideal-gas part γ^o of the dimensionless Gibbs free energy for region 5, Eq. (33): i = 1: J_i^o = 0; n_i^o = −0.131 799 836 742 01 × 10^2. i = 2: J_i^o = 1; n_i^o = 0.685 408 416 344 34 × 10^1. i = 3: J_i^o = −3; n_i^o = −0.248 051 489 334 66 × 10^−1. i = 4: J_i^o = −2; n_i^o = 0.369 015 349 803 33. i = 5: J_i^o = −1; n_i^o = −0.311 613 182 139 25 × 10^1. i = 6: J_i^o = 2; n_i^o = −0.329 616 265 389 17.",
+      "terms": [
+        "Table 37",
+        "Gibbs free energy",
+        "ideal-gas part",
+        "region 5",
+        "γ^o",
+        "n_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-109",
+      "doc_id": "R015",
+      "section": "9 Basic Equation for Region 5",
+      "page_start": 37,
+      "page_end": 37,
+      "text": "The form of the residual part γ^r of the dimensionless Gibbs free energy is as follows: γ^r = ∑_{i=1}^{6} n_i π^{I_i} τ^{J_i} , (34) (residual part of the dimensionless Gibbs free energy for region 5) where π = p/p^* and τ = T^*/T with p^* = 1 MPa and T^* = 1000 K. The coefficients n_i and exponents I_i and J_i of Eq. (34) are listed in Table 38. All thermodynamic properties can be derived from Eq. (32) by using the appropriate combinations of the ideal-gas part γ^o, Eq. (33), and the residual part γ^r, Eq. (34), of the dimensionless Gibbs free energy and their derivatives. Relations between the relevant thermodynamic properties and γ^o and γ^r and their derivatives are summarized in Table 39. All required derivatives of the ideal-gas part and of the residual part of the dimensionless Gibbs free energy are explicitly given in Table 40 and Table 41, respectively.",
+      "terms": [
+        "Eq. (34)",
+        "Table 38",
+        "Table 39",
+        "Gibbs free energy",
+        "ideal-gas part",
+        "residual part",
+        "region 5",
+        "γ^o"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-110",
+      "doc_id": "R015",
+      "section": "9 Basic Equation for Region 5",
+      "page_start": 37,
+      "page_end": 37,
+      "text": "Table 38. Numerical values of the coefficients and exponents of the residual part γ^r of the dimensionless Gibbs free energy for region 5, Eq. (34): i = 1: I_i = 1; J_i = 1; n_i = 0.157 364 048 552 59 × 10^−2. i = 2: I_i = 1; J_i = 2; n_i = 0.901 537 616 739 44 × 10^−3. i = 3: I_i = 1; J_i = 3; n_i = −0.502 700 776 776 48 × 10^−2. i = 4: I_i = 2; J_i = 3; n_i = 0.224 400 374 094 85 × 10^−5. i = 5: I_i = 2; J_i = 9; n_i = −0.411 632 754 534 71 × 10^−5. i = 6: I_i = 3; J_i = 7; n_i = 0.379 194 548 229 55 × 10^−7.",
+      "terms": [
+        "Table 38",
+        "Gibbs free energy",
+        "residual part",
+        "region 5",
+        "γ^r",
+        "n_i",
+        "I_i",
+        "J_i"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-111",
+      "doc_id": "R015",
+      "section": "9 Basic Equation for Region 5",
+      "page_start": 38,
+      "page_end": 38,
+      "text": "Table 39. Relations of thermodynamic properties to the ideal-gas part γ^o and the residual part γ^r of the dimensionless Gibbs free energy and their derivatives^a when using Eq. (32). Specific volume v = (∂g/∂p)_T: v(π,τ) p/(RT) = π(γ_π^o + γ_π^r). Specific internal energy u = g − T (∂g/∂T)_p − p (∂g/∂p)_T: u(π,τ)/(RT) = τ(γ_τ^o + γ_τ^r) − π(γ_π^o + γ_π^r). Specific entropy s = −(∂g/∂T)_p: s(π,τ)/R = τ(γ_τ^o + γ_τ^r) − (γ^o + γ^r). Specific enthalpy h = g − T (∂g/∂T)_p: h(π,τ)/(RT) = τ(γ_τ^o + γ_τ^r). Specific isobaric heat capacity c_p = (∂h/∂T)_p: c_p(π,τ)/R = −τ^2(γ_ττ^o + γ_ττ^r). Specific isochoric heat capacity c_v = (∂u/∂T)_v: c_v(π,τ)/R = −τ^2(γ_ττ^o + γ_ττ^r) − (1 + πγ_π^r − τπγ_πτ^r)^2/(1 − π^2γ_ππ^r). Speed of sound w = v[−(∂p/∂v)_s]^{1/2}: w^2(π,τ)/(RT) = (1 + 2πγ_π^r + π^2(γ_π^r)^2) / [ (1 − π^2γ_ππ^r) + (1 + πγ_π^r − τπγ_πτ^r)^2/(τ^2(γ_ττ^o + γ_ττ^r)) ]. ^a γ_π^r = [∂γ^r/∂π]_τ , γ_ππ^r = [∂^2γ^r/∂π^2]_τ , γ_τ^r = [∂γ^r/∂τ]_π , γ_ττ^r = [∂^2γ^r/∂τ^2]_π , γ_πτ^r = [∂^2γ^r/∂π∂τ] , γ_τ^o = [∂γ^o/∂τ]_π , γ_ττ^o = [∂^2γ^o/∂τ^2]_π.",
+      "terms": [
+        "Table 39",
+        "ideal-gas part",
+        "residual part",
+        "Specific volume",
+        "Specific enthalpy",
+        "Specific isobaric heat capacity",
+        "Speed of sound",
+        "Eq. (32)"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-112",
+      "doc_id": "R015",
+      "section": "9 Basic Equation for Region 5",
+      "page_start": 39,
+      "page_end": 39,
+      "text": "Table 40. The ideal-gas part γ^o of the dimensionless Gibbs free energy and its derivatives^a according to Eq. (33). γ^o = ln π + ∑_{i=1}^{6} n_i^o τ^{J_i^o} (ideal-gas part); γ_π^o = 1/π + 0 (first derivative with respect to π); γ_ππ^o = −1/π^2 + 0 (second derivative with respect to π); γ_τ^o = 0 + ∑_{i=1}^{6} n_i^o J_i^o τ^{J_i^o − 1} (first derivative with respect to τ); γ_ττ^o = 0 + ∑_{i=1}^{6} n_i^o J_i^o (J_i^o − 1) τ^{J_i^o − 2} (second derivative with respect to τ); γ_πτ^o = 0 + 0 (mixed derivative). ^a γ_π^o = [∂γ^o/∂π]_τ , γ_ππ^o = [∂^2γ^o/∂π^2]_τ , γ_τ^o = [∂γ^o/∂τ]_π , γ_ττ^o = [∂^2γ^o/∂τ^2]_π , γ_πτ^o = [∂^2γ^o/∂π∂τ].",
+      "terms": [
+        "Table 40",
+        "ideal-gas part",
+        "γ^o",
+        "γ_π^o",
+        "γ_ππ^o",
+        "γ_τ^o",
+        "γ_ττ^o",
+        "γ_πτ^o"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-113",
+      "doc_id": "R015",
+      "section": "9 Basic Equation for Region 5",
+      "page_start": 39,
+      "page_end": 39,
+      "text": "Table 41. The residual part γ^r of the dimensionless Gibbs free energy and its derivatives^a according to Eq. (34). γ^r = ∑_{i=1}^{6} n_i π^{I_i} τ^{J_i} (residual part); γ_π^r = ∑_{i=1}^{6} n_i I_i π^{I_i − 1} τ^{J_i} (first derivative with respect to π); γ_ππ^r = ∑_{i=1}^{6} n_i I_i (I_i − 1) π^{I_i − 2} τ^{J_i} (second derivative with respect to π); γ_τ^r = ∑_{i=1}^{6} n_i π^{I_i} J_i τ^{J_i − 1} (first derivative with respect to τ); γ_ττ^r = ∑_{i=1}^{6} n_i π^{I_i} J_i (J_i − 1) τ^{J_i − 2} (second derivative with respect to τ); γ_πτ^r = ∑_{i=1}^{6} n_i I_i π^{I_i − 1} J_i τ^{J_i − 1} (mixed derivative with respect to π and τ). ^a γ_π^r = [∂γ^r/∂π]_τ , γ_ππ^r = [∂^2γ^r/∂π^2]_τ , γ_τ^r = [∂γ^r/∂τ]_π , γ_ττ^r = [∂^2γ^r/∂τ^2]_π , γ_πτ^r = [∂^2γ^r/∂π∂τ].",
+      "terms": [
+        "Table 41",
+        "residual part",
+        "γ^r",
+        "γ_π^r",
+        "γ_ππ^r",
+        "γ_τ^r",
+        "γ_ττ^r",
+        "γ_πτ^r"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-114",
+      "doc_id": "R015",
+      "section": "9 Basic Equation for Region 5",
+      "page_start": 40,
+      "page_end": 40,
+      "text": "Range of validity. Equation (32) covers region 5 of IAPWS-IF97 defined by the following temperature and pressure range: 1073.15 K ≤ T ≤ 2273.15 K, 0 < p ≤ 50 MPa . Equation (32) is only valid for pure undissociated water; any dissociation will have to be taken into account separately.",
+      "terms": [
+        "Range of validity",
+        "undissociated water",
+        "dissociation",
+        "IAPWS-IF97",
+        "region 5",
+        "MPa"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-115",
+      "doc_id": "R015",
+      "section": "9 Basic Equation for Region 5",
+      "page_start": 40,
+      "page_end": 40,
+      "text": "Computer-program verification. To assist the user in computer-program verification of Eq. (32), Table 42 contains test values of the most relevant properties. Table 42. Thermodynamic property values calculated from Eq. (32) for selected values of T and p^a: v/(m^3 kg^−1): (T = 1500 K, p = 0.5 MPa) = 0.138 455 090 × 10^1; (T = 1500 K, p = 30 MPa) = 0.230 761 299 × 10^−1; (T = 2000 K, p = 30 MPa) = 0.311 385 219 × 10^−1. h/(kJ kg^−1): (T = 1500 K, p = 0.5 MPa) = 0.521 976 855 × 10^4; (T = 1500 K, p = 30 MPa) = 0.516 723 514 × 10^4; (T = 2000 K, p = 30 MPa) = 0.657 122 604 × 10^4. u/(kJ kg^−1): (T = 1500 K, p = 0.5 MPa) = 0.452 749 310 × 10^4; (T = 1500 K, p = 30 MPa) = 0.447 495 124 × 10^4; (T = 2000 K, p = 30 MPa) = 0.563 707 038 × 10^4. s/(kJ kg^−1 K^−1): (T = 1500 K, p = 0.5 MPa) = 0.965 408 875 × 10^1; (T = 1500 K, p = 30 MPa) = 0.772 970 133 × 10^1; (T = 2000 K, p = 30 MPa) = 0.853 640 523 × 10^1. c_p/(kJ kg^−1 K^−1): (T = 1500 K, p = 0.5 MPa) = 0.261 609 445 × 10^1; (T = 1500 K, p = 30 MPa) = 0.272 724 317 × 10^1; (T = 2000 K, p = 30 MPa) = 0.288 569 882 × 10^1. w/(m s^−1): (T = 1500 K, p = 0.5 MPa) = 0.917 068 690 × 10^3; (T = 1500 K, p = 30 MPa) = 0.928 548 002 × 10^3; (T = 2000 K, p = 30 MPa) = 0.106 736 948 × 10^4. ^a It is recommended to verify programmed functions using 8 byte real values for all three combinations of T and p given in this table.",
+      "terms": [
+        "computer-program verification",
+        "Table 42",
+        "kJ kg^−1",
+        "MPa"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-116",
+      "doc_id": "R015",
+      "section": "10 Consistency at Region Boundaries",
+      "page_start": 40,
+      "page_end": 40,
+      "text": "For any calculation of thermodynamic properties of water and steam across the region boundaries, the equations of IAPWS-IF97 have to be sufficiently consistent along the corresponding boundary. For the properties considered in this respect, this section presents the achieved consistencies in comparison to the permitted inconsistencies according to the so-called Prague values [13].",
+      "terms": [
+        "Prague values",
+        "region boundaries",
+        "IAPWS-IF97"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-117",
+      "doc_id": "R015",
+      "section": "10.1 Consistency at Boundaries between Single-Phase Regions",
+      "page_start": 40,
+      "page_end": 41,
+      "text": "For the boundaries between single-phase regions, the consistency investigations were performed for the following basic equations and region boundaries; see Fig. 1: • Equations (7) and (28) along the 623.15 K isotherm for pressures from 16.53 MPa (p_s from Eq. (30) for 623.15 K) to 100 MPa corresponding to the boundary between regions 1 and 3. • Equations (15) and (28) with respect to the boundary between regions 2 and 3 defined by the B23-equation, Eq. (5), for temperatures between 623.15 K and 863.15 K. • Equations (15) and (32) with respect to the 1073.15 K isotherm for p ≤ 50 MPa corresponding to the boundary between regions 2 and 5. The results of the consistency investigations for these three region boundaries are summarized in Table 43. In addition to the permitted inconsistencies corresponding to the Prague values [13], the actual inconsistencies characterized by their maximum and root-mean-square values, |Δx|_max and Δx_RMS , along the three boundaries are given for x = v, h, c_p, s, g, and w. It can be seen that the inconsistencies between the basic equations along the corresponding region boundaries are extremely small.",
+      "terms": [
+        "623.15 K isotherm",
+        "B23-equation",
+        "1073.15 K isotherm",
+        "Table 43",
+        "basic equation",
+        "Prague values",
+        "Δx_RMS",
+        "p_s"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-118",
+      "doc_id": "R015",
+      "section": "10.1 Consistency at Boundaries between Single-Phase Regions",
+      "page_start": 41,
+      "page_end": 41,
+      "text": "Table 43. Inconsistencies between basic equations for single-phase regions at the joint region boundary: |Δv|/%: Prague value = 0.05; Regions 1/3 Eqs. (7)/(28) |Δx|_max = 0.004; Regions 1/3 Eqs. (7)/(28) Δx_RMS^a = 0.002; Regions 2/3 Eqs. (15)/(28) |Δx|_max = 0.018; Regions 2/3 Eqs. (15)/(28) Δx_RMS^a = 0.007; Regions 2/5 Eqs. (15)/(32) |Δx|_max = 0.012; Regions 2/5 Eqs. (15)/(32) Δx_RMS^a = 0.007. |Δh|/(kJ kg^−1): Prague value = 0.2; Regions 1/3 Eqs. (7)/(28) |Δx|_max = 0.031; Regions 1/3 Eqs. (7)/(28) Δx_RMS^a = 0.014; Regions 2/3 Eqs. (15)/(28) |Δx|_max = 0.134; Regions 2/3 Eqs. (15)/(28) Δx_RMS^a = 0.073; Regions 2/5 Eqs. (15)/(32) |Δx|_max = 0.096; Regions 2/5 Eqs. (15)/(32) Δx_RMS^a = 0.070. |Δc_p|/%: Prague value = 1; Regions 1/3 Eqs. (7)/(28) |Δx|_max = 0.195; Regions 1/3 Eqs. (7)/(28) Δx_RMS^a = 0.058; Regions 2/3 Eqs. (15)/(28) |Δx|_max = 0.353; Regions 2/3 Eqs. (15)/(28) Δx_RMS^a = 0.169; Regions 2/5 Eqs. (15)/(32) |Δx|_max = 0.074; Regions 2/5 Eqs. (15)/(32) Δx_RMS^a = 0.049. |Δs|/(J kg^−1 K^−1): Prague value = 0.2; Regions 1/3 Eqs. (7)/(28) |Δx|_max = 0.042; Regions 1/3 Eqs. (7)/(28) Δx_RMS^a = 0.022; Regions 2/3 Eqs. (15)/(28) |Δx|_max = 0.177; Regions 2/3 Eqs. (15)/(28) Δx_RMS^a = 0.094; Regions 2/5 Eqs. (15)/(32) |Δx|_max = 0.142; Regions 2/5 Eqs. (15)/(32) Δx_RMS^a = 0.084. |Δg|/(kJ kg^−1): Prague value = 0.2; Regions 1/3 Eqs. (7)/(28) |Δx|_max = 0.005; Regions 1/3 Eqs. (7)/(28) Δx_RMS^a = 0.005; Regions 2/3 Eqs. (15)/(28) |Δx|_max = 0.005; Regions 2/3 Eqs. (15)/(28) Δx_RMS^a = 0.003; Regions 2/5 Eqs. (15)/(32) |Δx|_max = 0.087; Regions 2/5 Eqs. (15)/(32) Δx_RMS^a = 0.072. |Δw|/%: Prague value = 1^b; Regions 1/3 Eqs. (7)/(28) |Δx|_max = 0.299; Regions 1/3 Eqs. (7)/(28) Δx_RMS^a = 0.087; Regions 2/3 Eqs. (15)/(28) |Δx|_max = 0.403; Regions 2/3 Eqs. (15)/(28) Δx_RMS^a = 0.073; Regions 2/5 Eqs. (15)/(32) |Δx|_max = 0.046; Regions 2/5 Eqs. (15)/(32) Δx_RMS^a = 0.028. ^a The Δx_RMS values (see Nomenclature) were calculated from about 10 000 points evenly distributed along the corresponding boundary. ^b The permitted inconsistency value for w is not included in the Prague values [13].",
+      "terms": [
+        "Table 43",
+        "Inconsistencies",
+        "Prague value",
+        "Regions 1/3",
+        "Regions 2/3",
+        "Regions 2/5",
+        "basic equation",
+        "Δx_RMS"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-119",
+      "doc_id": "R015",
+      "section": "10.2 Consistency at the Saturation Line",
+      "page_start": 41,
+      "page_end": 42,
+      "text": "The consistency investigations along the vapor-liquid saturation line were performed for the properties p_s , T_s , and g. The calculations concern the following basic equations and ranges of the saturation line, see Fig. 1; the way of calculating the inconsistencies Δp_s , ΔT_s , and Δg is also given: • Equations (7), (15) and (30) on the saturation line for temperatures from T_t = 273.15 K to 623.15 K. Δp_s = p_s, Eq.(7), Eq.(15) − p_s, Eq.(30) (35a) ; ΔT_s = T_s, Eq.(7), Eq.(15) − T_s, Eq.(31) (35b) ; Δg = g_Eq.(7) − g_Eq.(15) (35c) (inconsistencies in saturation pressure, saturation temperature and Gibbs free energy between the respective equations). The calculation of p_s and of T_s from Eqs. (7) and (15) is made via the Maxwell criterion (phase-equilibrium condition) for given values of T or p. The g values are determined for given T values and corresponding p_s values from Eq. (30).",
+      "terms": [
+        "Δp_s",
+        "ΔT_s",
+        "Δg",
+        "Maxwell criterion",
+        "saturation line",
+        "Gibbs free energy",
+        "basic equation",
+        "saturation pressure"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-120",
+      "doc_id": "R015",
+      "section": "10.2 Consistency at the Saturation Line",
+      "page_start": 42,
+      "page_end": 42,
+      "text": "• Equations (28) and (30) on the saturation line for temperatures from 623.15 K to T_c = 647.096 K. Δp_s = p_s, Eq.(28) − p_s, Eq.(30) (36a) ; ΔT_s = T_s, Eq.(28) − T_s, Eq.(31) (36b) ; Δg = g′_Eq.(28), Eq.(30) − g″_Eq.(28), Eq.(30) (36c) (inconsistencies of Eq. (28) with Eqs. (30) and (31), and between saturated liquid and vapor Gibbs free energies from Eq. (28)). The calculation of p_s and T_s from Eq. (28) is made via the Maxwell criterion for given temperatures or pressures, respectively. The inconsistency Δg corresponds to the difference g′(ρ′,T) − g″(ρ″,T) which is calculated from Eq. (28) after ρ′ and ρ″ are determined from Eq. (28) by iteration for given T values and corresponding p_s values from Eq. (30).",
+      "terms": [
+        "Δp_s",
+        "ΔT_s",
+        "Maxwell criterion",
+        "T_c = 647.096 K",
+        "saturation line"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-121",
+      "doc_id": "R015",
+      "section": "10.2 Consistency at the Saturation Line",
+      "page_start": 42,
+      "page_end": 42,
+      "text": "• Equations (7), (15) and (28) on the saturation line at 623.15 K. This is the only point on the saturation line where the validity ranges of the fundamental equations of regions 1 to 3 meet each other. Δp_s = p_s, Eq.(7), Eq.(15) − p_s, Eq.(28) (37a) ; ΔT_s = T_s, Eq.(7), Eq.(15) − T_s, Eq.(28) (37b) ; Δg = g_Eq.(7), Eq.(15) − g_Eq.(28) (37c) (inconsistencies between Eqs. (7), (15) and Eq. (28) at 623.15 K). All three properties p_s and T_s and g are calculated via the Maxwell criterion from the corresponding equations.",
+      "terms": [
+        "Δp_s",
+        "ΔT_s",
+        "Maxwell criterion",
+        "623.15 K",
+        "saturation line"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-122",
+      "doc_id": "R015",
+      "section": "10.2 Consistency at the Saturation Line",
+      "page_start": 42,
+      "page_end": 42,
+      "text": "The results of these consistency investigations along the saturation line are summarized in Table 44. In addition to the permitted inconsistencies corresponding to the Prague values [13], the actual inconsistencies characterized by their maximum and root-mean-square values, |Δx|_max and Δx_RMS, for the two sections of the saturation line are given for x = p_s, T_s and g. It can be seen that the inconsistencies between the basic equations for the corresponding single-phase region and the saturation-pressure equation are extremely small. This statement also holds for the fundamental equations, Eqs. (7), (15), and (28), among one another and not only in relation to the saturation-pressure equation, Eq. (30), see the last column in Table 44.",
+      "terms": [
+        "Table 44",
+        "Prague values",
+        "saturation-pressure equation",
+        "basic equation",
+        "saturation line",
+        "Δx_RMS",
+        "p_s",
+        "T_s"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-123",
+      "doc_id": "R015",
+      "section": "10.2 Consistency at the Saturation Line",
+      "page_start": 43,
+      "page_end": 43,
+      "text": "Table 44. Inconsistencies between the basic equations valid at the saturation line: |Δp_s|/%: Prague value = 0.05; T_t ≤ T ≤ 623.15 K Eqs. (7),(15)/(30) |Δx|_max = 0.0069; T_t ≤ T ≤ 623.15 K Eqs. (7),(15)/(30) Δx_RMS^a = 0.0033; 623.15 K ≤ T ≤ T_c Eqs. (28)/(30) |Δx|_max = 0.0026; 623.15 K ≤ T ≤ T_c Eqs. (28)/(30) Δx_RMS^a = 0.0015; T = 623.15 K Eqs. (7),(15)/(28) = 0.0041. |ΔT_s|/%: Prague value = 0.02; T_t ≤ T ≤ 623.15 K Eqs. (7),(15)/(30) |Δx|_max = 0.0006; T_t ≤ T ≤ 623.15 K Eqs. (7),(15)/(30) Δx_RMS^a = 0.0003; 623.15 K ≤ T ≤ T_c Eqs. (28)/(30) |Δx|_max = 0.0003; 623.15 K ≤ T ≤ T_c Eqs. (28)/(30) Δx_RMS^a = 0.0002; T = 623.15 K Eqs. (7),(15)/(28) = 0.0006. |Δg|/(kJ kg^−1): Prague value = 0.2; T_t ≤ T ≤ 623.15 K Eqs. (7),(15)/(30) |Δx|_max = 0.012; T_t ≤ T ≤ 623.15 K Eqs. (7),(15)/(30) Δx_RMS^a = 0.006; 623.15 K ≤ T ≤ T_c Eqs. (28)/(30) |Δx|_max = 0.002; 623.15 K ≤ T ≤ T_c Eqs. (28)/(30) Δx_RMS^a = 0.001; T = 623.15 K Eqs. (7),(15)/(28) = 0.005. ^a The Δx_RMS values (see Nomenclature) were calculated from about 3000 points evenly distributed along the two sections of the saturation line.",
+      "terms": [
+        "Table 44",
+        "Inconsistencies",
+        "Prague value",
+        "saturation line",
+        "basic equation",
+        "Δx_RMS",
+        "p_s",
+        "T_s"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-124",
+      "doc_id": "R015",
+      "section": "11 Computing Time of IAPWS-IF97 in Relation to IFC-67",
+      "page_start": 43,
+      "page_end": 43,
+      "text": "A very important requirement for IAPWS-IF97 was that its computing speed in relation to IFC-67 should be significantly faster. The computation-speed investigations of IAPWS-IF97 in comparison with IFC-67 are based on a special procedure agreed to by IAPWS. The computing times were measured with a benchmark program developed by IAPWS; this program calculates the corresponding functions at a large number of state points well distributed proportionately over each region. The test configuration agreed on was a PC Intel 486 DX 33 processor and the MS Fortran 5.1 compiler. The relevant functions of IAPWS-IF97 were programmed with regard to short computing times. The calculations with IFC-67 were carried out with the ASME program package [14] speeded up by excluding all parts which were not needed for these special benchmark tests.",
+      "terms": [
+        "computing speed",
+        "benchmark program",
+        "PC Intel 486 DX 33",
+        "MS Fortran 5.1",
+        "ASME program package",
+        "IAPWS-IF97",
+        "IFC-67"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-125",
+      "doc_id": "R015",
+      "section": "11 Computing Time of IAPWS-IF97 in Relation to IFC-67",
+      "page_start": 43,
+      "page_end": 43,
+      "text": "The measured computing times were used to calculate computing-time ratios IFC-67/IAPWS-IF97, called CTR values in the following. These CTR values, determined in a different way for regions 1, 2, and 4 (see Section 11.1) and for regions 3 and 5 (see Section 11.2), are the characteristic quantities for the judgment of how much faster the calculations with IAPWS-IF97 are in comparison with IFC-67. Metastable states are not included in these investigations.",
+      "terms": [
+        "computing-time ratios",
+        "CTR values",
+        "IAPWS-IF97",
+        "IFC-67"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-126",
+      "doc_id": "R015",
+      "section": "11.1 Computing-Time Investigations for Regions 1, 2, and 4",
+      "page_start": 43,
+      "page_end": 44,
+      "text": "The computing-time investigations for regions 1, 2, and 4, which are particularly relevant to computing time, were performed for the functions listed in Table 45. Each function is associated with a frequency-of-use value. Both the selection of the functions and the values for the corresponding frequency of use are based on a worldwide survey made among the power plant companies and related industries. For the computing-time comparison between IAPWS-IF97 and IFC-67 for regions 1, 2, and 4, the total CTR value of these three regions together was the decisive criterion, where the frequencies of use have to be taken into account. The total CTR value was calculated as follows: As has been described before, the computing times for each function were determined for IFC-67 and for IAPWS-IF97. Then, these values were weighted by the corresponding frequencies of use and added up for the 16 functions of the three regions. The total CTR value is obtained from the sum of the weighted computing times for IFC-67 divided by the corresponding value for IAPWS-IF97. The total CTR value for regions 1, 2, and 4 amounts to CTR_regions1,2,4 = 5.1 . (38) (total computing-time ratio IFC-67/IAPWS-IF97 for regions 1, 2, and 4) This means that for regions 1, 2, and 4 together the property calculations with IAPWS-IF97 are more than five times faster than with IFC-67.",
+      "terms": [
+        "frequency-of-use",
+        "total CTR value",
+        "CTR_regions1,2,4 = 5.1",
+        "IAPWS-IF97",
+        "IFC-67"
+      ],
+      "content_type": "equation",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-127",
+      "doc_id": "R015",
+      "section": "11.1 Computing-Time Investigations for Regions 1, 2, and 4",
+      "page_start": 44,
+      "page_end": 44,
+      "text": "Table 45. Results of the computing-time investigations of IAPWS-IF97 in relation to IFC-67 for regions 1, 2, and 4^a: Region^b 1: v(p, T): Frequency of use % = 2.9, Computing-time ratio IFC-67 / IF97 = 2.7; h(p, T): Frequency of use % = 9.7, Computing-time ratio IFC-67 / IF97 = 2.9; T( p, h): Frequency of use % = 3.5, Computing-time ratio IFC-67 / IF97 = 24.8; h( p, s): Frequency of use % = 1.2, Computing-time ratio IFC-67 / IF97 = 10.0; Σ region 1: 5.6^c. Region^b 2: v(p, T): Frequency of use % = 6.1, Computing-time ratio IFC-67 / IF97 = 2.1; h(p, T): Frequency of use % = 12.1, Computing-time ratio IFC-67 / IF97 = 2.9; s(p, T): Frequency of use % = 1.4, Computing-time ratio IFC-67 / IF97 = 1.4; T(p, h): Frequency of use % = 8.5, Computing-time ratio IFC-67 / IF97 = 12.4; v(p, h): Frequency of use % = 3.1, Computing-time ratio IFC-67 / IF97 = 6.4; s(p, h): Frequency of use % = 1.7, Computing-time ratio IFC-67 / IF97 = 4.2; T(p, s): Frequency of use % = 1.7, Computing-time ratio IFC-67 / IF97 = 8.1; h(p, s): Frequency of use % = 4.9, Computing-time ratio IFC-67 / IF97 = 5.6; Σ region 2: 5.0^c. Region^b 4: p_s(T): Frequency of use % = 8.0, Computing-time ratio IFC-67 / IF97 = 1.7; T_s(p): Frequency of use % = 30.7, Computing-time ratio IFC-67 / IF97 = 5.6; h′ (p): Frequency of use % = 2.25, Computing-time ratio IFC-67 / IF97 = 4.4; h″ (p): Frequency of use % = 2.25, Computing-time ratio IFC-67 / IF97 = 4.2; Σ region 4: 4.9^c. Σ regions 1, 2 and 4: 5.1^c. ^a Based on the agreed PC Intel 486 DX 33 with MS Fortran 5.1 compiler. ^b For the definition of the regions see Fig. 1. ^c This CTR value is based on the computing times for the single functions weighted by the frequency-of-use values; see text.",
+      "terms": [
+        "Table 45",
+        "Frequency of use",
+        "Computing-time ratio",
+        "CTR value",
+        "IAPWS-IF97",
+        "IFC-67",
+        "region 1",
+        "region 2"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-128",
+      "doc_id": "R015",
+      "section": "11.1 Computing-Time Investigations for Regions 1, 2, and 4",
+      "page_start": 45,
+      "page_end": 45,
+      "text": "Table 45 also contains total CTR values separately for each of regions 1, 2, and 4. In addition, CTR values for each single function are given. When using IAPWS-IF97 the functions depending on p,h and p,s for regions 1 and 2 and on p for region 4 were calculated from the backward equations alone (functions explicit in T) or from the basic equations in combination with the corresponding backward equation. If a faster processor than specified above is used for the described benchmark tests, similar CTR values are obtained. A corresponding statement is also valid for other compilers than the specified one.",
+      "terms": [
+        "Table 45",
+        "CTR values",
+        "backward equations",
+        "IAPWS-IF97",
+        "basic equation",
+        "region 4"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-129",
+      "doc_id": "R015",
+      "section": "11.2 Computing-Time Investigations for Region 3",
+      "page_start": 45,
+      "page_end": 45,
+      "text": "For regions 3 and 5 the CTR values only relate to single functions and are given by the quotient of the computing time needed for IFC-67 calculation and the computing time when using IAPWS-IF97; there are no frequency-of-use values for functions relevant to these two regions. For region 3 of IAPWS-IF97, corresponding to regions 3 and 4 of IFC-67, the computing-time investigations relate to the functions p(v, T), h(v, T), c_p(v, T), and s(v, T) where 10 % of the test points are in region 4 of IFC-67. Table 46 lists the CTR values obtained for the relevant functions of region 3. Roughly speaking, IAPWS-IF97 is more than three times faster than IFC-67 for this region.",
+      "terms": [
+        "CTR values",
+        "frequency-of-use",
+        "region 3",
+        "Table 46",
+        "IAPWS-IF97",
+        "IFC-67",
+        "region 4"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-130",
+      "doc_id": "R015",
+      "section": "11.2 Computing-Time Investigations for Region 3",
+      "page_start": 45,
+      "page_end": 45,
+      "text": "Table 46. Results of the computing-time investigations of IAPWS-IF97 in relation to IFC-67 for region 3^a: p(v, T): Computing time ratio IFC-67/IF97 = 3.8. h(v, T): Computing time ratio IFC-67/IF97 = 4.3. c_p(v, T): Computing time ratio IFC-67/IF97 = 2.9. s(v, T): Computing time ratio IFC-67/IF97 = 3.2. ^a Based on the agreed PC Intel 486 DX 33 with MS Fortran 5.1 compiler.",
+      "terms": [
+        "Table 46",
+        "Computing time ratio",
+        "region 3",
+        "IAPWS-IF97",
+        "IFC-67"
+      ],
+      "content_type": "table",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-131",
+      "doc_id": "R015",
+      "section": "12 Estimates of Uncertainties",
+      "page_start": 46,
+      "page_end": 46,
+      "text": "Estimates have been made of the uncertainty of the specific volume, specific isobaric heat capacity, speed of sound, and saturation pressure when calculated from the corresponding equations of IAPWS-IF97. These estimates were derived from the uncertainties of IAPWS-95 [3], from which the input values for fitting the IAPWS-IF97 equations were calculated, and in addition by taking into account the deviations between the corresponding values calculated from IAPWS-IF97 and IAPWS-95. Since there is no reasonable basis for estimating the uncertainty of specific enthalpy (because specific enthalpy is dependent on the selection of the zero point, only enthalpy differences of different size are of interest), no uncertainty is given for this property. However, the uncertainty of isobaric enthalpy differences is smaller than the uncertainty in the isobaric heat capacity.",
+      "terms": [
+        "uncertainty",
+        "IAPWS-95",
+        "enthalpy differences",
+        "isobaric heat capacity",
+        "IAPWS-IF97",
+        "saturation pressure",
+        "specific volume",
+        "specific enthalpy"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-132",
+      "doc_id": "R015",
+      "section": "12 Estimates of Uncertainties",
+      "page_start": 46,
+      "page_end": 46,
+      "text": "For the single-phase region, tolerances are indicated in Figs. 3 to 5 which give the estimated uncertainties in various areas. As used here \"tolerance\" means the range of possible values as judged by IAPWS, and no statistical significance can be attached to it. With regard to the uncertainty for the speed of sound and the specific isobaric heat capacity, see Figs. 4 and 5, it should be noted that the uncertainties for these properties increase drastically when approaching the critical point. The statement \"no definitive uncertainty estimates possible\" for temperatures above 1273 K is based on the fact that this range is beyond the range of validity of IAPWS-95 and the corresponding input values for IAPWS-IF97 were extrapolated from IAPWS-95. From various tests of IAPWS-95 [3] it is expected that these extrapolations yield reasonable values. For the saturation pressure, the estimate of uncertainty is shown in Fig. 6. Estimated uncertainties in enthalpy, in enthalpy differences in the single-phase region, and in the enthalpy of vaporization are given in IAPWS Advisory Note No. 1 [15].",
+      "terms": [
+        "tolerance",
+        "critical point",
+        "IAPWS Advisory Note No. 1",
+        "enthalpy of vaporization",
+        "IAPWS-IF97",
+        "IAPWS-95",
+        "saturation pressure",
+        "specific isobaric heat capacity"
+      ],
+      "content_type": "text",
+      "source_type": "verbatim"
+    },
+    {
+      "id": "R015-133",
+      "doc_id": "R015",
+      "section": "12 Estimates of Uncertainties",
+      "page_start": 47,
+      "page_end": 48,
+      "text": "Fig. 3. Uncertainties in specific volume, Δv/v, estimated for the corresponding equations of IAPWS-IF97. In the enlarged critical region (triangle), the uncertainty is given as percentage uncertainty in pressure, Δp/p. This region is bordered by the two isochores 0.0019 m^3 kg^−1 and 0.0069 m^3 kg^−1 and by the 30 MPa isobar. The positions of the lines separating the uncertainty regions are approximate. Fig. 4. Uncertainties in specific isobaric heat capacity, Δc_p/c_p, estimated for the corresponding equations of IAPWS-IF97. For the definition of the triangle around the critical point, see Fig. 3. The positions of the lines separating the uncertainty regions are approximate. Fig. 5. Uncertainties in speed of sound, Δw/w, estimated for the corresponding equations of IAPWS-IF97. For the definition of the triangle around the critical point, see Fig. 3. The positions of the lines separating the uncertainty regions are approximate. Fig. 6. Uncertainties in saturation pressure, Δp_s/p_s, estimated for the saturation-pressure equation, Eq.(30).",
+      "terms": [
+        "Fig. 3",
+        "specific volume",
+        "Δv/v",
+        "critical region",
+        "Δc_p/c_p",
+        "Δw/w",
+        "Δp_s/p_s",
+        "saturation-pressure equation"
+      ],
+      "content_type": "caption",
+      "source_type": "verbatim"
+    }
+  ],
+  "report": {
+    "paragraph_count": 133,
+    "pages_processed": "1-49 (전체; 인쇄 쪽번호 2-49 사용)",
+    "last_paragraph_id": "R015-133",
+    "skipped": [
+      "1쪽 저작권 문구(© 2007 IAPWS ... attribution) : 저작권 문구 (license 필드에 요지 반영)",
+      "1쪽 President/Executive Secretary 성명·주소·이메일: 연락처",
+      "2쪽 Contents: 목차",
+      "각 쪽 머리글(쪽번호), 1쪽 문서번호 \"IAPWS R7-97(2012)\" 머리글: 머리글 (venue에 반영)",
+      "49쪽 13 References [1]-[15]: 참고문헌 목록",
+      "Fig. 1-6 그림 내용(영역 구분도·불확도 지도): 캡션만 수록"
+    ],
+    "uncertain": [
+      "1쪽(표지)은 인쇄 쪽번호가 없어 PDF 쪽 번호 1을 사용함 (2-49쪽은 인쇄 번호 = PDF 쪽 번호)",
+      "Table 11 i = 27의 n_i는 PDF에 \"−0.823 113 408 979 98 × 10 1\"로 지수 앞에 공백·부호 없이 인쇄됨 → \"× 10^1\"로 수록. 계수로 Table 15 검증값(T = 700 K, p = 30 MPa)을 재계산하면 10^1일 때만 일치하므로 인쇄값이 맞음",
+      "Table 27 제목의 \"coefficient s\"는 PDF 원문 문자열(공백 포함) 그대로 둠",
+      "Table 30 i = 1의 I_i, J_i는 원문에 \"–\"(해당 없음)로 인쇄됨 → \"–\" 그대로 수록",
+      "수식(Eqs. 6, 7, 11, 13, 15-34, Tables 3, 4, 12-14, 17, 31, 32, 39-41)은 Symbol 글꼴 PDF 추출이 2차원 배치로 깨져 PDF 페이지 이미지를 보고 선형 표기(∑_{i=1}^{N}, ^{…}, [ ]^{1/2})로 재구성함; 괄호 안 한 줄 의미 설명은 추가분",
+      "원문 음수 기호(– 엔대시, − Symbol)는 숫자·지수 앞에서 모두 \"−\"(U+2212)로 통일함; 계수 자릿수 묶음 공백(0.146 329 712 131 67)은 원문대로 유지",
+      "계수표(Tables 1, 2, 6, 8, 10, 11, 16, 19-22, 25-27, 30, 34, 37, 38)는 pdfplumber 문자 추출(위첨자 지수 포함)을 프로그램으로 파싱(가수 14자리 검사)했고, Table 2·11·25 등 이미지 표본 대조 및 각 계산검증표(Tables 5, 7, 9, 15, 18, 24, 29, 33, 35, 36, 42, B23/B2bc 검증점)를 계수로 재계산해 9자리까지 일치함을 확인함",
+      "350단어 초과 계수표는 행 범위로 나누고 \"Table N [rows i = a to b of n]\"로 표기함"
+    ]
+  }
+}

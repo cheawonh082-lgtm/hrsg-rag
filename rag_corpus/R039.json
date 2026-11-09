@@ -1,0 +1,624 @@
+{
+  "document": {
+    "doc_id": "R039",
+    "title": "Energetic and exergetic analysis of a triple-pressure reheat combined cycle power using different primary movers",
+    "authors": [
+      "Abdulrahman Almutairi",
+      "Hamad Alhajeri",
+      "Abdulrahman Alenezi"
+    ],
+    "year": 2019,
+    "venue": "Archives of Thermodynamics, Vol. 40 (2019), No. 2, pp. 87–105",
+    "doi": "10.24425/ather.2019.129543",
+    "url": "",
+    "license": "PDF에 저작권·Creative Commons 라이선스 문구 없음 (머리글 www.czasopisma.pan.pl / www.journals.pan.pl 표기만 있음; 라이선스 불명확 → paraphrase)",
+    "source_type": "paraphrase",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R039-001",
+      "doc_id": "R039",
+      "section": "Abstract",
+      "page_start": 87,
+      "page_end": 88,
+      "text": "The study evaluates the performance of the Sabiya combined cycle power plant in Kuwait by energetic and exergetic analysis built on actual operating data. The configuration examined has advanced gas turbine engines feeding two triple pressure reheat heat recovery steam generators and a single steam turbine. To span a range of types, sizes and technologies, three primary movers were chosen: the frame 9FA gas turbine, the LM6000 and the GT26. Models were set up in specialised software and checked against manufacturer's data, with which they agreed closely, and the plant was then studied under various operating conditions. Exergy destruction is largest with the 9FA engine: its low-pressure ratio means the compressed air enters the combustion chamber at a low temperature, so combustion irreversibility is high. The 9FA also shows the largest exergy loss because its exhaust gases are hot, which in turn lets the steam turbine deliver high useful work. With the lowest waste exergy, 43.93%, against 47.27% for the 9FA and 45.17% for the LM6000, the GT26-reheat engine is the preferred primary mover. The LM6000 aeroderivative ranks second, but a plant built on it needs many more engines than one using industrial gas turbines, which may raise the amount of auxiliary equipment as well as capital and maintenance cost. Keywords: Exergy; Aeroderivative; Gas turbine; Reheat and waste exergy.",
+      "terms": [
+        "Sabiya",
+        "triple pressure reheat",
+        "9FA",
+        "LM6000",
+        "GT26",
+        "exergy destruction",
+        "waste exergy",
+        "43.93%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-002",
+      "doc_id": "R039",
+      "section": "Nomenclature",
+      "page_start": 88,
+      "page_end": 89,
+      "text": "Nomenclature (symbol: meaning). Symbols: Ė: exergy rate; ē_k^ch: molar chemical exergy; h: enthalpy; S: entropy; LHV (overlined): low heating value in molar basis; ṁ: mass flow rate; P: pressure; T: temperature; V: velocity; y: mole fraction; R̄: universal gas constant; R: gas constant. Greek symbols: η_ex: exergetic efficiency; Δ: difference. Subscripts: i: inlet; e: outlet; ch: chemical; ph: physical; ke: kinetic energy; pe: potentials; d: destruction; L: loss; k: component; o: reference state; st: stoichiometric; x: total. Abbreviations: CCPP: combined cycle power plants; GT: gas turbine; G: electric generator; HRSG: heat recovery steam generator; EC: economizer; EV: evaporator; SH: superheater; RH: reheater; HP: high pressure; IP: intermediate pressure; LP: low pressure; Comp.: compressor; AC: axial compressor; HPC: high-pressure compressor; LPC: low-pressure compressor; CC: combustion chamber; HPT: high-pressure turbine; LPT: low-pressure turbine; S: state; st: stoichiometric; x: total.",
+      "terms": [
+        "Ė",
+        "ē_k^ch",
+        "LHV",
+        "η_ex",
+        "HRSG",
+        "CCPP",
+        "reheater",
+        "superheater"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-003",
+      "doc_id": "R039",
+      "section": "1 Introduction",
+      "page_start": 89,
+      "page_end": 89,
+      "text": "Worldwide population growth and modernisation have pushed up electricity demand, which means more fossil fuel burned and more pollutant and greenhouse gas emissions. Non-renewable resources are becoming scarcer and costlier as supply shrinks while demand grows, steering research either toward renewables or toward better conversion efficiency in existing systems that run on non-renewable fuels. Thermal energy systems use large quantities of natural and economic resources and are a major contributor to climate change, so they have to be designed and run efficiently to limit their environmental impact. The first step is a diagnosis with thermal analysis tools that locates the wastes and losses in such a system and quantifies their size and type; knowing where deficiencies sit and how large they are helps in modifying or upgrading the system. Energy analysis and exergy analysis are the main tools for assessing and optimizing thermal energy systems [1–3].",
+      "terms": [
+        "fossil fuel",
+        "greenhouse gas",
+        "non-renewable",
+        "thermal energy systems",
+        "thermal analysis",
+        "energy analysis",
+        "exergy analysis"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-004",
+      "doc_id": "R039",
+      "section": "1 Introduction",
+      "page_start": 89,
+      "page_end": 90,
+      "text": "Given the diversity of energy resources and concern over both the quality and quantity of energy, exergy is important for sustainable development. Exergetic efficiency is regarded as a key sustainability factor, since it rises as resource depletion falls, and the exergy principle bears strongly on energy, environment and sustainable development, with energy conversion efficiency having the largest effect on the latter. Raising the conversion efficiency of future thermal power plants aims at lower fuel use, less pollution and cheaper products, and cutting fossil fuel consumption is needed to postpone exhaustion of non-renewable resources. Among fossil fuels, natural gas is counted as part of sustainable energy because its environmental quality is more favourable.",
+      "terms": [
+        "exergy",
+        "sustainable development",
+        "exergetic efficiency",
+        "resource depletion",
+        "energy conversion efficiency",
+        "natural gas"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-005",
+      "doc_id": "R039",
+      "section": "1 Introduction",
+      "page_start": 90,
+      "page_end": 90,
+      "text": "Industrial and aeroderivative gas turbines (GTs) are widely chosen for power generation thanks to their low installation cost, short installation time, flexible operation and ease of integration with other thermal energy systems, and the gas turbine engine is expected to shape the energy picture of the future, especially up to 2050. Advancing gas turbine technology is a major challenge for researchers and manufacturers. It can be pursued in two ways: developing the gas turbine itself, or coupling it in a thermal integrated system with steam turbines, desalination, cooling and heating.",
+      "terms": [
+        "aeroderivative",
+        "gas turbines (GTs)",
+        "power generation",
+        "flexible operation",
+        "2050",
+        "thermal integrated system",
+        "desalination"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-006",
+      "doc_id": "R039",
+      "section": "1 Introduction",
+      "page_start": 90,
+      "page_end": 90,
+      "text": "A gas turbine on its own is limited in efficiency and discards a large amount of energy through the stack. A combined cycle recovers this simple cycle loss by adding a steam turbine, raising both output and efficiency. Its main parts are the gas turbine unit, the heat recovery steam generator (HRSG) and the steam turbine: the HRSG turns water into steam with the heat in the exhaust gases, and the steam turbine then generates extra power from the same fuel, roughly 50% of the gas turbine units capacity. Combined cycle power plants (CCPP) therefore reach higher thermal efficiency than separate gas turbine and steam power plants, and over the last four decades their use has grown sharply around the world.",
+      "terms": [
+        "stack",
+        "combined cycle",
+        "heat recovery steam generator (HRSG)",
+        "steam turbine",
+        "exhaust gases",
+        "50%",
+        "combined cycle power plants (CCPP)",
+        "thermal efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-007",
+      "doc_id": "R039",
+      "section": "1 Introduction",
+      "page_start": 90,
+      "page_end": 91,
+      "text": "CCPP processes have been examined with exergy analysis by many authors, e.g. Kotas [4], Facchini et al. [5] and Moran and Shapiro [6], who all found the greatest exergy losses in the combustion chambers, caused by chemical reactions. Rahim [7] ran a sensitivity analysis covering all types of HRSG without reheat in a CCPP, using evaporator pinch point, steam pressure and economiser approach as design parameters; net power increment grew with the number of stages at a given steam pressure, and bringing pinch point and approach temperatures down to a minimum was strongly advised to improve the HRSG and the whole plant. Sanjay [8] performed an exergy analysis of a CCPP with several HRSG configurations and found that steam generating capacity depends on the number of stages and on the chosen steam pressure level and temperature; a triple pressure HRSG generated the most steam, with better performance and less exergy destruction than the alternatives. Bassily [9] modelled a triple pressure reheat CCPP thermodynamically in detail and showed that lowering HRSG irreversibilities raises both CCPP efficiency and output, with higher gas turbine inlet temperature and optimisation named as the main routes to better plant efficiency. Deng and Chuang [10] studied part-load CCPP performance and energy utilisation by exergy analysis at various ambient temperatures and with preheated fuel: at 50% load the efficiency was 2.4% below the full-load value, though more HRSG pressure stages, inlet air pre-cooling and fuel preheating can improve it.",
+      "terms": [
+        "exergy analysis",
+        "combustion chambers",
+        "evaporator pinch point",
+        "economiser approach",
+        "triple pressure HRSG",
+        "triple pressure reheat",
+        "part-load",
+        "2.4%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-008",
+      "doc_id": "R039",
+      "section": "1 Introduction",
+      "page_start": 91,
+      "page_end": 92,
+      "text": "Amer et al. [11] analysed the exergy of a 420 MW combined cycle plant in Iran with a dual pressure HRSG; after the combustors, the HRSG was the second largest irreversibility source, so HRSG optimisation strongly influences exergy loss, and a supplementary duct burner, although it increased steam turbine output, worsened overall plant performance. Ersayin and Ozgener [12] recently studied an operating CCPP in Turkey using plant control unit data; the plant consisted of an HRSG, a once-through steam generator (OTSG), a steam turbine and two LM6000 aeroderivative GT engines. They examined how ambient temperature affects every component, found some topping cycle rotating equipment results at odds with Rahim [7], and suggested modifications to improve performance. Sharma and Singh [13] varied the reference state temperature to see its effect on exergy parameters of a dual pressure HRSG, giving guidance for improving the whole system and showing its sensitivity to steam pressure. Dev and Attri [15] used the Engineering Equation Solver – EES [14] for an energetic and exergetic study of how pressure ratio variation affects CCPP efficiency: as pressure ratio increased, the feed water heater, condenser, steam turbine and combustor all showed lower exergy destruction, whereas the intercooler, gas turbine and compressor showed higher destruction. Soo and Yong Lee [16] proposed maximising steam cycle efficiency of a single pressure HRSG by optimising its internal heat transfer process and so minimising waste exergy. Despite this extensive literature, no study has examined a triple pressure reheat HRSG with real data through exergy analysis, nor has any assessed a CCPP with different primary movers by exergy analysis.",
+      "terms": [
+        "420 MW",
+        "dual pressure HRSG",
+        "supplementary duct burner",
+        "LM6000",
+        "once-through steam generator (OTSG)",
+        "Engineering Equation Solver",
+        "pressure ratio",
+        "triple pressure reheat HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-009",
+      "doc_id": "R039",
+      "section": "2 Case study",
+      "page_start": 92,
+      "page_end": 92,
+      "text": "The Sabiya combined cycle power plant, the largest in the Arabian Gulf region, matches the design of the present study model completely, so it was taken as the case study to obtain more accurate results grounded in real industry data. In 2009 Kuwait's ministry of electricity and water (MEW) contracted General Electric (GE) for the engineering, procurement, and construction (EPC) of the plant, including seven years of operation and maintenance counted from commercial operation of the final generating unit. The plant has three blocks; each block has two advanced GE frame 9FA gas turbines, two triple pressure reheat HRSG and one steam turbine (Fig. 1). Phase one, finished in June 2011 in simple cycle mode, added nearly 1.400 MW to the national grid; phase two lifted output to more than 2000 MW and efficiency to 54.5% with no extra fuel consumption.",
+      "terms": [
+        "Sabiya",
+        "Arabian Gulf",
+        "MEW",
+        "General Electric (GE)",
+        "EPC",
+        "9FA",
+        "1.400 MW",
+        "54.5%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-010",
+      "doc_id": "R039",
+      "section": "2 Case study",
+      "page_start": 92,
+      "page_end": 94,
+      "text": "Sabiya's primary mover is the 9FA industrial gas turbine, valued for high power output, low heat rate and low emissions. Manufacturers' concern for environmental impact shows in their continual combustor development and the adoption of robust Dry Low NOx technology; gas turbine emissions can be limited by controlling the fire temperature, the oxygen available in the combustion zone and how long combustion lasts. The study also covers two other primary movers, the LM6000 and GT26 gas turbines (Figs. 2 and 3), modelled on real engines of different technology: the LM6000 is an aero-derivative and the GT26 a reheat industrial gas turbine. Because its exhaust gas temperature is low, the LM6000 is paired with a triple pressure HRSG that has no reheating system.",
+      "terms": [
+        "9FA",
+        "heat rate",
+        "Dry Low NOx",
+        "fire temperature",
+        "LM6000",
+        "GT26",
+        "aero-derivative",
+        "triple pressure HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-011",
+      "doc_id": "R039",
+      "section": "2 Case study",
+      "page_start": 93,
+      "page_end": 94,
+      "text": "Figure 1: Schematic of the Sabiya combined cycle power plant [18]. Figure 2: Schematic of the LM6000 gas turbine engine. Figure 3: Schematic of the GT26 gas turbine engine.",
+      "terms": [
+        "Figure 1",
+        "Figure 2",
+        "Figure 3",
+        "Sabiya",
+        "LM6000",
+        "GT26"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-012",
+      "doc_id": "R039",
+      "section": "3 Exergy analysis methodology",
+      "page_start": 95,
+      "page_end": 95,
+      "text": "The primary movers are compared on the basis of exergy analysis, with the environmental state set at 288 K and 0.101 MPa ambient pressure. Assumptions for the gas turbine model: steady state operation; air and combustion products treated as ideal gas mixtures; negligible gas leakage; kinetic and potential exergies of the streams neglected; complete combustion with inert N2; heat transfer from the combustor equal to 2% of the natural gas lower heating value (LHV); and natural gas as the fuel, with composition listed in Tab. 1.",
+      "terms": [
+        "exergy analysis",
+        "288 K",
+        "0.101 MPa",
+        "steady state",
+        "ideal gas mixture",
+        "N2",
+        "2%",
+        "lower heating value (LHV)"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-013",
+      "doc_id": "R039",
+      "section": "3 Exergy analysis methodology",
+      "page_start": 95,
+      "page_end": 95,
+      "text": "Table 1: Molar fraction of the natural gas components. Methane (CH_4): Molar fraction [%]=93.340; Ethane (C_2H_6): Molar fraction [%]=0.211; Propane (C_3H_8): Molar fraction [%]=0.029; Nitrogen (N_2): Molar fraction [%]=6.420.",
+      "terms": [
+        "Table 1",
+        "Molar fraction",
+        "Methane (CH_4)",
+        "Ethane (C_2H_6)",
+        "Propane (C_3H_8)",
+        "Nitrogen (N_2)"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-014",
+      "doc_id": "R039",
+      "section": "3 Exergy analysis methodology",
+      "page_start": 95,
+      "page_end": 96,
+      "text": "Fuel reaches the combustor at high pressure, with a mass flow rate that changes with load and with the inlet temperature to the annular combustor; the air mass flow in the cold section also varies, and its composition is listed in Tab. 2. Table 2: Molar fraction of air. Nitrogen (N_2): Molar fraction [%]=77.48; Oxygen (O_2): Molar fraction [%]=20.59; Water (H_2O): Molar fraction [%]=1.90; Carbon dioxide (CO_2): Molar fraction [%]=0.03.",
+      "terms": [
+        "annular combustor",
+        "Table 2",
+        "Molar fraction",
+        "Nitrogen (N_2)",
+        "Oxygen (O_2)",
+        "Water (H_2O)",
+        "Carbon dioxide (CO_2)"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-015",
+      "doc_id": "R039",
+      "section": "3 Exergy analysis methodology",
+      "page_start": 95,
+      "page_end": 96,
+      "text": "Exergy, also called availability or available energy, is the largest useful work a system can deliver when operating reversibly. The total exergy of a stream is Ė_x = Ė_ph + Ė_ke + Ė_pe + Ė_ch (1) (total exergy = physical + kinetic + potential + chemical exergy). Dividing by mass flow gives the specific exergy e_x = Ė_x / ṁ (2) (specific exergy = total exergy per unit mass flow), which is therefore the sum of the specific parts: e_x = e_ph + e_ke + e_pe + e_ch (3) (specific exergy = specific physical + kinetic + potential + chemical exergy). Here e_ke and e_pe are dropped because their effect is insignificant.",
+      "terms": [
+        "exergy",
+        "availability",
+        "Ė_x = Ė_ph + Ė_ke + Ė_pe + Ė_ch",
+        "e_x = Ė_x / ṁ",
+        "e_ke",
+        "e_pe",
+        "specific exergy"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-016",
+      "doc_id": "R039",
+      "section": "3 Exergy analysis methodology",
+      "page_start": 96,
+      "page_end": 96,
+      "text": "Physical exergy is the maximum useful work obtainable from a unit mass of substance as it goes, by purely physical processes, from a given state (T_s, p_s) to the environmental or reference state (T_o, p_o) [17]; it has a mechanical and a thermal part: Ė_ph = ṁ[(h_s − h_o) − T_o(s_s − s_o)] (4) (physical exergy rate = mass flow × [enthalpy difference minus reference temperature × entropy difference relative to the reference state]). When the given temperature equals the reference temperature, T_s = T_o, the ideal gas relation turns Eq. (4) into Ė_ph = ṁ_e R T_o ln(P_e/P_o) (5) (physical exergy at reference temperature = mass flow × gas constant × reference temperature × natural log of the pressure ratio to reference pressure).",
+      "terms": [
+        "physical exergy",
+        "reference state",
+        "Ė_ph = ṁ[(h_s − h_o) − T_o(s_s − s_o)]",
+        "T_s = T_o",
+        "ideal gas",
+        "Ė_ph = ṁ_e R T_o ln(P_e/P_o)"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-017",
+      "doc_id": "R039",
+      "section": "3 Exergy analysis methodology",
+      "page_start": 97,
+      "page_end": 97,
+      "text": "Chemical exergy relates to mass flowing from the environmental state to a dead state because concentration and molecular structure differ; chemical exergy is the greatest useful energy this process can yield. For a gas mixture: Ė_ch = ṅ[Σ y_k ē_k^ch + R̄ T_o Σ y_k ln y_k] (6) (chemical exergy of a mixture = molar flow × [mole-fraction-weighted sum of component molar chemical exergies + universal gas constant × reference temperature × Σ y_k ln y_k]), where ṅ is the number of mole and ē_k^ch the molar chemical exergy of component k, taken from a standard chemical exergies table such as in [10]. For the fuel stream: Ė_ch = ṅ_f LHV (7) (fuel chemical exergy = fuel molar flow × molar low heating value, LHV overlined in the original).",
+      "terms": [
+        "chemical exergy",
+        "dead state",
+        "Ė_ch = ṅ[Σ y_k ē_k^ch + R̄ T_o Σ y_k ln y_k]",
+        "ē_k^ch",
+        "Ė_ch = ṅ_f LHV",
+        "molar chemical exergy"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-018",
+      "doc_id": "R039",
+      "section": "3 Exergy analysis methodology",
+      "page_start": 97,
+      "page_end": 97,
+      "text": "Because of exergy destruction and exergy loss, every component discharges less exergy than it receives; at steady state Ė_i = Ė_e + Ė_d + Ė_L (8) (inlet exergy = outlet exergy + exergy destruction + exergy loss), with Ė_d and Ė_L the destruction and loss rates. Destruction in a process scales with the entropy generated by irreversibilities inside each component and is found from the exergy difference across the component: Ė_d = Ė_i − Ė_e (9) (exergy destruction = inlet minus outlet exergy). Exergy loss is tied to energy rejected to the surroundings at the end of a process, e.g. in exhaust gases and water.",
+      "terms": [
+        "exergy destruction",
+        "exergy loss",
+        "Ė_i = Ė_e + Ė_d + Ė_L",
+        "Ė_d = Ė_i − Ė_e",
+        "entropy generated",
+        "irreversibilities",
+        "exhaust gases"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-019",
+      "doc_id": "R039",
+      "section": "3 Exergy analysis methodology",
+      "page_start": 97,
+      "page_end": 98,
+      "text": "Efficiency is a key measure of how well a thermal system converts energy: thermal efficiency tells how much work a given fuel input yields, while exergetic efficiency tells how much of the maximum available work is obtained. Exergetic efficiency is total exergy output divided by total exergy input, or equivalently product exergy over the fuel exergy supplied: η_ex = Ė_e/Ė_i = Ė_p/Ė_f = 1 − (Ė_d + Ė_l)/Ė_f (10) (exergetic efficiency = outlet over inlet exergy = product over fuel exergy = one minus destruction plus loss over fuel exergy). For gas turbine components at steady state: compressor η_ex = (Ė_e − Ė_i)/Ẇ_c (11) (compressor exergetic efficiency = exergy rise of the stream over compressor work); combustor η_ex = Ė_e/(Ė_i1 + Ė_i2) (12) (combustor exergetic efficiency = outlet exergy over the sum of the two inlet exergies); turbine η_ex = Ẇ_t/(Ė_i − Ė_e) (13) (turbine exergetic efficiency = turbine work over exergy drop of the stream).",
+      "terms": [
+        "thermal efficiency",
+        "exergetic efficiency",
+        "η_ex = Ė_e/Ė_i = Ė_p/Ė_f = 1 − (Ė_d + Ė_l)/Ė_f",
+        "compressor",
+        "η_ex = (Ė_e − Ė_i)/Ẇ_c",
+        "combustor",
+        "η_ex = Ė_e/(Ė_i1 + Ė_i2)",
+        "η_ex = Ẇ_t/(Ė_i − Ė_e)"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-020",
+      "doc_id": "R039",
+      "section": "4 Results and discussion",
+      "page_start": 98,
+      "page_end": 98,
+      "text": "Exergy analysis results are given for the proposed systems. Their input data came from a gas turbine model built in IPSEpro, a commercial power plant design and analysis software [19], and validated against data published by the manufacturer. Exergy analysis helps identify where inefficiencies occur, how large they are and what kinds of waste and loss an energy system has. Improving energy conversion systems is an essential goal for lowering product cost and environmental impact and for sustainable development, particularly where fossil fuels are burned.",
+      "terms": [
+        "exergy analysis",
+        "IPSEpro",
+        "gas turbine model",
+        "manufacturer",
+        "energy conversion systems",
+        "fossil fuels"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-021",
+      "doc_id": "R039",
+      "section": "4 Results and discussion",
+      "page_start": 98,
+      "page_end": 98,
+      "text": "Tables 3 and 4 list thermodynamic data and exergy analyses of the bottoming and topping cycles of the original proposed CCPP at ISO condition; equivalent analyses were done for the other primary movers. Figure 4 is a Grossman diagram of exergy flow and exergy destruction through one block of the Al Subiya plant at ISO conditions for each primary mover. In every case the GT engines give the largest useful work, highest with the LM6000; that same engine gives the smallest steam turbine useful work, which may stem from the number of GTs, its high pressure ratio and its exhaust temperature being low relative to the other engines. Exergy destruction peaks with the 9FA engine because the low-pressure ratio delivers compressed air to the combustion chamber at low temperature, making combustion highly irreversible. The 9FA also loses the most exergy owing to its hot exhaust gases, which is what gives the steam turbine high useful work.",
+      "terms": [
+        "Tables 3 and 4",
+        "ISO condition",
+        "Grossman diagram",
+        "Al Subiya",
+        "LM6000",
+        "pressure ratio",
+        "9FA",
+        "exergy destruction"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-022",
+      "doc_id": "R039",
+      "section": "4 Results and discussion",
+      "page_start": 99,
+      "page_end": 99,
+      "text": "Table 3: Exergetic data for bottom cycle in Sabiya CCPP (points 1–17). Point 1: Substance=Steam; Mass [kg/s]=149.65; Temp. [K]=838.35; Pressure [MPa]=11.990; Enthalpy [kJ/kg]=3520.81; Entropy [kJ/kgK]=6.70; Exergy [MW]=238.64. Point 1': Substance=Steam; Mass [kg/s]=149.65; Temp. [K]=837.97; Pressure [MPa]=11.890; Enthalpy [kJ/kg]=3520.81; Entropy [kJ/kgK]=6.71; Exergy [MW]=238.48. Point 2: Substance=Steam; Mass [kg/s]=149.65; Temp. [K]=625.74; Pressure [MPa]=2.789; Enthalpy [kJ/kg]=3126.73; Entropy [kJ/kgK]=6.79; Exergy [MW]=175.73. Point 3: Substance=Steam; Mass [kg/s]=72.00; Temp. [K]=625.74; Pressure [MPa]=2.789; Enthalpy [kJ/kg]=3126.73; Entropy [kJ/kgK]=6.79; Exergy [MW]=84.54. Point 4: Substance=Steam; Mass [kg/s]=77.65; Temp. [K]=625.74; Pressure [MPa]=2.789; Enthalpy [kJ/kg]=3126.73; Entropy [kJ/kgK]=6.79; Exergy [MW]=91.19. Point 5: Substance=Steam; Mass [kg/s]=88.36; Temp. [K]=620.55; Pressure [MPa]=2.731; Enthalpy [kJ/kg]=3115.95; Entropy [kJ/kgK]=6.79; Exergy [MW]=102.76. Point 6: Substance=Steam; Mass [kg/s]=88.36; Temp. [K]=785.00; Pressure [MPa]=2.581; Enthalpy [kJ/kg]=3488.13; Entropy [kJ/kgK]=7.34; Exergy [MW]=121.46. Point 7: Substance=Steam; Mass [kg/s]=88.36; Temp. [K]=765.00; Pressure [MPa]=2.581; Enthalpy [kJ/kg]=3443.52; Entropy [kJ/kgK]=7.29; Exergy [MW]=118.98. Point 8: Substance=Steam; Mass [kg/s]=88.36; Temp. [K]=838.00; Pressure [MPa]=2.461; Enthalpy [kJ/kg]=3607.90; Entropy [kJ/kgK]=7.51; Exergy [MW]=127.71. Point 9: Substance=Steam; Mass [kg/s]=78.00; Temp. [K]=838.00; Pressure [MPa]=2.515; Enthalpy [kJ/kg]=3607.43; Entropy [kJ/kgK]=7.50; Exergy [MW]=113.17. Point 10: Substance=Steam; Mass [kg/s]=166.36; Temp. [K]=837.86; Pressure [MPa]=2.451; Enthalpy [kJ/kg]=3607.68; Entropy [kJ/kgK]=7.51; Exergy [MW]=240.32. Point 10': Substance=Steam; Mass [kg/s]=166.36; Temp. [K]=837.66; Pressure [MPa]=2.400; Enthalpy [kJ/kg]=3607.68; Entropy [kJ/kgK]=7.52; Exergy [MW]=240.29. Point 11: Substance=Steam; Mass [kg/s]=166.36; Temp. [K]=605.13; Pressure [MPa]=0.460; Enthalpy [kJ/kg]=3131.57; Entropy [kJ/kgK]=7.61; Exergy [MW]=156.99. Point 12: Substance=Steam; Mass [kg/s]=184.31; Temp. [K]=602.99; Pressure [MPa]=0.460; Enthalpy [kJ/kg]=3127.14; Entropy [kJ/kgK]=7.61; Exergy [MW]=173.50. Point 13: Substance=Steam; Mass [kg/s]=184.31; Temp. [K]=324.34; Pressure [MPa]=0.013; Enthalpy [kJ/kg]=2515.88; Entropy [kJ/kgK]=7.82; Exergy [MW]=49.62. Point 14: Substance=Water; Mass [kg/s]=192.99; Temp. [K]=322.19; Pressure [MPa]=0.013; Enthalpy [kJ/kg]=205.30; Entropy [kJ/kgK]=0.69; Exergy [MW]=1.96. Point 15: Substance=Water; Mass [kg/s]=192.99; Temp. [K]=322.33; Pressure [MPa]=2.231; Enthalpy [kJ/kg]=207.81; Entropy [kJ/kgK]=0.69; Exergy [MW]=2.40. Point 16: Substance=Water; Mass [kg/s]=96.49; Temp. [K]=322.33; Pressure [MPa]=2.231; Enthalpy [kJ/kg]=207.81; Entropy [kJ/kgK]=0.69; Exergy [MW]=1.21. Point 17: Substance=Water; Mass [kg/s]=193.05; Temp. [K]=367.77; Pressure [MPa]=1.826; Enthalpy [kJ/kg]=397.73; Entropy [kJ/kgK]=1.24; Exergy [MW]=8.36.",
+      "terms": [
+        "Table 3",
+        "Sabiya CCPP",
+        "Steam",
+        "Water",
+        "Exergy [MW]",
+        "Enthalpy [kJ/kg]",
+        "Entropy [kJ/kgK]"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-023",
+      "doc_id": "R039",
+      "section": "4 Results and discussion",
+      "page_start": 99,
+      "page_end": 99,
+      "text": "Table 3: Exergetic data for bottom cycle in Sabiya CCPP (points 17'–31'). Point 17': Substance=Water; Mass [kg/s]=193.05; Temp. [K]=411.17; Pressure [MPa]=1.226; Enthalpy [kJ/kg]=581.20; Entropy [kJ/kgK]=1.72; Exergy [MW]=17.46. Point 18: Substance=Water; Mass [kg/s]=96.55; Temp. [K]=411.15; Pressure [MPa]=1.226; Enthalpy [kJ/kg]=581.20; Entropy [kJ/kgK]=1.72; Exergy [MW]=8.74. Point 18': Substance=Water; Mass [kg/s]=96.55; Temp. [K]=411.27; Pressure [MPa]=0.531; Enthalpy [kJ/kg]=581.20; Entropy [kJ/kgK]=1.72; Exergy [MW]=8.69. Point 19: Substance=Water; Mass [kg/s]=87.58; Temp. [K]=426.56; Pressure [MPa]=0.571; Enthalpy [kJ/kg]=646.91; Entropy [kJ/kgK]=1.88; Exergy [MW]=9.68. Point 20: Substance=Steam; Mass [kg/s]=8.97; Temp. [K]=426.52; Pressure [MPa]=0.521; Enthalpy [kJ/kg]=2749.92; Entropy [kJ/kgK]=6.81; Exergy [MW]=7.12. Point 21: Substance=Steam; Mass [kg/s]=8.97; Temp. [K]=584.85; Pressure [MPa]=0.491; Enthalpy [kJ/kg]=3088.99; Entropy [kJ/kgK]=7.51; Exergy [MW]=8.34. Point 22: Substance=Steam; Mass [kg/s]=8.97; Temp. [K]=582.00; Pressure [MPa]=0.485; Enthalpy [kJ/kg]=3083.24; Entropy [kJ/kgK]=7.51; Exergy [MW]=8.30. Point 23: Substance=Steam; Mass [kg/s]=17.95; Temp. [K]=583.39; Pressure [MPa]=0.485; Enthalpy [kJ/kg]=3086.11; Entropy [kJ/kgK]=7.51; Exergy [MW]=16.63. Point 23': Substance=Steam; Mass [kg/s]=17.95; Temp. [K]=583.28; Pressure [MPa]=0.475; Enthalpy [kJ/kg]=3086.11; Entropy [kJ/kgK]=7.52; Exergy [MW]=16.58. Point 24: Substance=Water; Mass [kg/s]=11.43; Temp. [K]=426.56; Pressure [MPa]=0.571; Enthalpy [kJ/kg]=646.91; Entropy [kJ/kgK]=1.88; Exergy [MW]=1.27. Point 25: Substance=Water; Mass [kg/s]=76.14; Temp. [K]=426.56; Pressure [MPa]=0.571; Enthalpy [kJ/kg]=646.91; Entropy [kJ/kgK]=1.88; Exergy [MW]=8.41. Point 26: Substance=Water; Mass [kg/s]=11.43; Temp. [K]=426.89; Pressure [MPa]=2.938; Enthalpy [kJ/kg]=649.79; Entropy [kJ/kgK]=1.88; Exergy [MW]=1.30. Point 27: Substance=Water; Mass [kg/s]=11.11; Temp. [K]=426.89; Pressure [MPa]=2.938; Enthalpy [kJ/kg]=649.79; Entropy [kJ/kgK]=1.88; Exergy [MW]=1.26. Point 28: Substance=Water; Mass [kg/s]=0.32; Temp. [K]=426.89; Pressure [MPa]=2.938; Enthalpy [kJ/kg]=649.79; Entropy [kJ/kgK]=1.88; Exergy [MW]=0.04. Point 29: Substance=Water; Mass [kg/s]=11.11; Temp. [K]=499.14; Pressure [MPa]=2.898; Enthalpy [kJ/kg]=971.52; Entropy [kJ/kgK]=2.57; Exergy [MW]=2.61. Point 29': Substance=Water; Mass [kg/s]=11.11; Temp. [K]=499.13; Pressure [MPa]=2.888; Enthalpy [kJ/kg]=971.52; Entropy [kJ/kgK]=2.57; Exergy [MW]=2.61. Point 30: Substance=Steam; Mass [kg/s]=11.11; Temp. [K]=504.71; Pressure [MPa]=2.878; Enthalpy [kJ/kg]=2803.15; Entropy [kJ/kgK]=6.20; Exergy [MW]=10.94. Point 31: Substance=Steam; Mass [kg/s]=10.71; Temp. [K]=588.15; Pressure [MPa]=2.788; Enthalpy [kJ/kg]=3037.76; Entropy [kJ/kgK]=6.65; Exergy [MW]=12.08. Point 31': Substance=Steam; Mass [kg/s]=10.71; Temp. [K]=588.13; Pressure [MPa]=2.787; Enthalpy [kJ/kg]=3037.76; Entropy [kJ/kgK]=6.65; Exergy [MW]=12.08.",
+      "terms": [
+        "Table 3",
+        "Sabiya CCPP",
+        "Steam",
+        "Water",
+        "Exergy [MW]",
+        "Enthalpy [kJ/kg]",
+        "Entropy [kJ/kgK]"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-024",
+      "doc_id": "R039",
+      "section": "4 Results and discussion",
+      "page_start": 100,
+      "page_end": 100,
+      "text": "Table 3: Exergetic data for bottom cycle in Sabiya CCPP (continuation, points 32–48). Point 32: Substance=Water; Mass [kg/s]=76.14; Temp. [K]=428.69; Pressure [MPa]=15.880; Enthalpy [kJ/kg]=665.50; Entropy [kJ/kgK]=1.88; Exergy [MW]=9.73. Point 32': Substance=Water; Mass [kg/s]=76.14; Temp. [K]=429.07; Pressure [MPa]=13.280; Enthalpy [kJ/kg]=665.50; Entropy [kJ/kgK]=1.89; Exergy [MW]=9.59. Point 33: Substance=Water; Mass [kg/s]=75.36; Temp. [K]=429.07; Pressure [MPa]=13.280; Enthalpy [kJ/kg]=665.50; Entropy [kJ/kgK]=1.89; Exergy [MW]=9.49. Point 34: Substance=Water; Mass [kg/s]=75.36; Temp. [K]=506.41; Pressure [MPa]=13.275; Enthalpy [kJ/kg]=1007.56; Entropy [kJ/kgK]=2.62; Exergy [MW]=19.39. Point 35: Substance=Water; Mass [kg/s]=75.36; Temp. [K]=576.32; Pressure [MPa]=13.235; Enthalpy [kJ/kg]=1357.35; Entropy [kJ/kgK]=3.27; Exergy [MW]=33.39. Point 36: Substance=Steam; Mass [kg/s]=75.36; Temp. [K]=604.01; Pressure [MPa]=13.230; Enthalpy [kJ/kg]=1530.50; Entropy [kJ/kgK]=3.56; Exergy [MW]=38.41. Point 37: Substance=Steam; Mass [kg/s]=74.65; Temp. [K]=605.09; Pressure [MPa]=13.180; Enthalpy [kJ/kg]=2658.59; Entropy [kJ/kgK]=5.42; Exergy [MW]=82.20. Point 38: Substance=Steam; Mass [kg/s]=74.65; Temp. [K]=684.93; Pressure [MPa]=12.880; Enthalpy [kJ/kg]=3072.24; Entropy [kJ/kgK]=6.08; Exergy [MW]=100.18. Point 39: Substance=Water; Mass [kg/s]=0.78; Temp. [K]=429.07; Pressure [MPa]=13.280; Enthalpy [kJ/kg]=665.50; Entropy [kJ/kgK]=1.89; Exergy [MW]=0.10. Point 40: Substance=Steam; Mass [kg/s]=74.65; Temp. [K]=675.33; Pressure [MPa]=12.870; Enthalpy [kJ/kg]=3038.73; Entropy [kJ/kgK]=6.03; Exergy [MW]=97.05. Point 41: Substance=Steam; Mass [kg/s]=74.65; Temp. [K]=841.65; Pressure [MPa]=12.570; Enthalpy [kJ/kg]=3523.73; Entropy [kJ/kgK]=6.69; Exergy [MW]=119.60. Point 42: Substance=Water; Mass [kg/s]=75.00; Temp. [K]=838.00; Pressure [MPa]=12.200; Enthalpy [kJ/kg]=3517.91; Entropy [kJ/kgK]=6.69; Exergy [MW]=119.60. Point 43: Substance=Water; Mass [kg/s]=8.68; Temp. [K]=294.00; Pressure [MPa]=0.103; Enthalpy [kJ/kg]=87.57; Entropy [kJ/kgK]=0.31; Exergy [MW]=0.02. Point 44: Substance=Water; Mass [kg/s]=3175.36; Temp. [K]=288.00; Pressure [MPa]=0.150; Enthalpy [kJ/kg]=62.50; Entropy [kJ/kgK]=0.22; Exergy [MW]=7.83. Point 45: Substance=Water; Mass [kg/s]=3175.36; Temp. [K]=320.00; Pressure [MPa]=0.149; Enthalpy [kJ/kg]=196.29; Entropy [kJ/kgK]=0.66; Exergy [MW]=29.95. Point 46: Substance=Water; Mass [kg/s]=96.50; Temp. [K]=411.17; Pressure [MPa]=1.226; Enthalpy [kJ/kg]=581.20; Entropy [kJ/kgK]=1.72; Exergy [MW]=8.74. Point 47: Substance=Water; Mass [kg/s]=96.55; Temp. [K]=412.35; Pressure [MPa]=1.226; Enthalpy [kJ/kg]=587.56; Entropy [kJ/kgK]=1.73; Exergy [MW]=9.06. Point 48: Substance=Water; Mass [kg/s]=96.50; Temp. [K]=322.33; Pressure [MPa]=1.226; Enthalpy [kJ/kg]=207.81; Entropy [kJ/kgK]=0.69; Exergy [MW]=1.21.",
+      "terms": [
+        "Table 3",
+        "Sabiya CCPP",
+        "Steam",
+        "Water",
+        "Exergy [MW]",
+        "Enthalpy [kJ/kg]",
+        "Entropy [kJ/kgK]"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-025",
+      "doc_id": "R039",
+      "section": "4 Results and discussion",
+      "page_start": 100,
+      "page_end": 100,
+      "text": "Table 4: Exergetic data for topping cycle in Sabiya CCPP. Point A: Substance=Air; Mass [kg/s]=577.22; Temp. [K]=288.00; Pressure [MPa]=0.101; Enthalpy [kJ/kg]=15.01; Entropy [kJ/kgK]=6.85; Exergy [MW]=0.00. Point B: Substance=Air; Mass [kg/s]=577.22; Temp. [K]=684.64; Pressure [MPa]=1.702; Enthalpy [kJ/kg]=426.47; Entropy [kJ/kgK]=6.93; Exergy [MW]=223.91. Point C: Substance=Fuel; Mass [kg/s]=13.84; Temp. [K]=368.00; Pressure [MPa]=1.891; Enthalpy [kJ/kg]=142.27; Entropy [kJ/kgK]=–; Exergy [MW]=653.40. Point D: Substance=Exhaust gases; Mass [kg/s]=591.06; Temp. [K]=1550.00; Pressure [MPa]=1.652; Enthalpy [kJ/kg]=1531.22; Entropy [kJ/kgK]=8.21; Exergy [MW]=716.29. Point E: Substance=Exhaust gases; Mass [kg/s]=591.06; Temp. [K]=896.84; Pressure [MPa]=0.100; Enthalpy [kJ/kg]=700.39; Entropy [kJ/kgK]=8.35; Exergy [MW]=239.90. Point F: Substance=Exhaust gases; Mass [kg/s]=591.06; Temp. [K]=845.69; Pressure [MPa]=0.100; Enthalpy [kJ/kg]=639.13; Entropy [kJ/kgK]=8.28; Exergy [MW]=224.63. Point G: Substance=Exhaust gases; Mass [kg/s]=591.06; Temp. [K]=825.00; Pressure [MPa]=0.100; Enthalpy [kJ/kg]=614.56; Entropy [kJ/kgK]=8.25; Exergy [MW]=202.50. Point H: Substance=Exhaust gases; Mass [kg/s]=591.06; Temp. [K]=777.80; Pressure [MPa]=0.100; Enthalpy [kJ/kg]=558.92; Entropy [kJ/kgK]=8.18; Exergy [MW]=178.16.",
+      "terms": [
+        "Table 4",
+        "topping cycle",
+        "Sabiya CCPP",
+        "Air",
+        "Fuel",
+        "Exhaust gases",
+        "Exergy [MW]"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-026",
+      "doc_id": "R039",
+      "section": "4 Results and discussion",
+      "page_start": 101,
+      "page_end": 102,
+      "text": "Figure 4: Grossman diagram of the predicted exergy flow, expressed as a percentage of input fuel exergy, for the different primary movers in the Al Subiya CCPP. With the lowest waste exergy, 43.93% versus 47.4% for the 9FA and 45.17% for the LM6000, the GT26-reheat gas turbine engine is the best primary mover. Using the high-pressure-ratio reheat GT26 would markedly improve the Al Subiya CCPP: less fuel is burned and more power produced while the exhaust temperature stays high, which suits the triple pressure reheat HRSG. The LM6000 comes second, but the CCPP would then need more engines than with the other prime movers, possibly raising capital and maintenance costs and the auxiliary equipment needed.",
+      "terms": [
+        "Figure 4",
+        "Grossman diagram",
+        "waste exergy",
+        "43.93%",
+        "47.4%",
+        "45.17%",
+        "GT26",
+        "triple pressure reheat HRSG"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-027",
+      "doc_id": "R039",
+      "section": "4 Results and discussion",
+      "page_start": 102,
+      "page_end": 102,
+      "text": "Fig. 5 gives the CCPP energetic and exergetic efficiency for each primary mover. The GT26 reheat industrial engine scores highest, 56.02% energetic and 55.44% exergetic, probably owing to its high pressure ratio and the reheat effect, followed by the KUW6000 thanks to its high-pressure ratio and technical design. The 9FA has the lowest values, 53.12% and 52.65%, yet it is a heavy-duty machine for power generation compared with the LM6000 aeroderivative. Choosing a suitable primary mover, here the GT26 industrial reheat GT, improves the CCPP. Pressure ratio matters greatly because it cuts fuel use and with it exergy destruction; reheat boosts power generation and turbine efficiency and fits better with advanced HRSGs. Energetic and exergetic efficiencies differ only slightly, the gap coming from irreversibilities. Figure 5: CCPP energetic and exergetic efficiency, in percent, for the different primary movers at ISO condition.",
+      "terms": [
+        "Figure 5",
+        "energetic and exergetic efficiency",
+        "56.02%",
+        "55.44%",
+        "KUW6000",
+        "53.12%",
+        "52.65%",
+        "reheat"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-028",
+      "doc_id": "R039",
+      "section": "4 Results and discussion",
+      "page_start": 102,
+      "page_end": 103,
+      "text": "Fig. 6 presents waste exergy in every major CCPP component at ISO condition for each primary mover. In the compressor, exergy destruction grows in direct proportion to pressure ratio: the 9FA compressor has both the lowest pressure ratio (16.8) and the lowest destruction. Although its pressure ratio exceeds that of the LM6000, the GT26 compressor destroys less exergy, possibly because the LM6000 case uses more engines and so generates more irreversibility. In every case the combustor is the largest irreversibility source; for the 9FA this is due to the cool compressed air entering it because of the low-pressure ratio, while the GT26, despite a higher pressure ratio, has more combustor irreversibility than the LM6000, chiefly from its reheat combustor.",
+      "terms": [
+        "waste exergy",
+        "ISO condition",
+        "pressure ratio",
+        "16.8",
+        "exergy destruction",
+        "irreversibility",
+        "combustor",
+        "reheat combustor"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-029",
+      "doc_id": "R039",
+      "section": "4 Results and discussion",
+      "page_start": 103,
+      "page_end": 103,
+      "text": "The GT turbines rank second as irreversibility sources in all cases, highest for the 9FA, which uses only one turbine; the GT26 and the LM6000 are each built with two turbines, lowering the energy taken from the exhaust gas stream. Reheat in the GT26 clearly raises turbine efficiency and lowers exergy destruction compared with the 9FA, and the aeroderivative LM6000 shows the smallest destruction because its fuel exergy is lowest. HRSG exergy destruction depends strongly on fuel exergy, which is linked to exhaust gas temperature, the two being inversely proportional. For the steam turbine and condenser the trend reverses: their destruction rises with fuel exergy because of aerodynamic and heat transfer losses. Figure 6: Waste exergy, in percent, of every CCPP component at ISO condition for the different primary movers.",
+      "terms": [
+        "turbine efficiency",
+        "GT26",
+        "LM6000",
+        "9FA",
+        "HRSG exergy destruction",
+        "fuel exergy",
+        "condenser",
+        "Figure 6"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R039-030",
+      "doc_id": "R039",
+      "section": "5 Conclusions",
+      "page_start": 104,
+      "page_end": 104,
+      "text": "The paper applies exergetic analysis to a combined cycle power plant with different primary movers and concludes: 1. the combustion chamber is the chief irreversibility source, with high exergy destruction; 2. combustor inefficiency can be lowered by a better combustion process, an added air preheater and an air–fuel ratio brought near the stoichiometric ratio; 3. pressure ratio strongly affects fuel consumption and exhaust gas temperature, so it must be optimized to reach high plant efficiency together with high power output; 4. in the 9FA engine the combustor destroys much exergy because the low-pressure ratio gives a low compressed air inlet temperature; 5. a reheat gas turbine engine with high pressure ratio clearly improves the combined cycle power plant relative to the original Sabiya design.",
+      "terms": [
+        "exergetic analysis",
+        "combustion chamber",
+        "air preheater",
+        "air–fuel ratio",
+        "stoichiometric ratio",
+        "pressure ratio",
+        "9FA",
+        "reheat gas turbine"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 30,
+    "pages_processed": "87-105 (PDF 1-19쪽 전체)",
+    "last_paragraph_id": "R039-030",
+    "skipped": [
+      "87쪽 저자 소속(College of Technological Studies, Kuwait)과 교신저자 이메일 각주: 저자 연락처 (저자명은 document.authors에 기재)",
+      "각 쪽 머리글(PAN 로고, www.czasopisma.pan.pl / www.journals.pan.pl, 저널명·권호·DOI 표기, 러닝헤드)과 쪽번호: 머리글/저널 로고",
+      "104쪽 'Received in 12 October 2017': 서지 부가정보",
+      "104-105쪽 References [1]-[19]: 참고문헌 목록",
+      "그림 1~6 내부 내용(계통도·Grossman 다이어그램·막대그래프): 캡션과 본문 설명만 수록",
+      "감사의 글·저작권 문구: 원문에 없음"
+    ],
+    "uncertain": [
+      "라이선스: PDF 전체에서 'Creative Commons', 'CC BY', 'licen', 'copyright' 문구를 검색했으나 없음 → 지시대로 paraphrase 처리",
+      "쪽번호는 인쇄된 저널 쪽번호(87-105) 사용; 87쪽(첫 쪽)은 인쇄 번호가 보이지 않으나 머리글의 'No. 2, 87–105' 범위로 87로 기재",
+      "수식 (1)-(13)과 Nomenclature는 페이지 이미지로 판독해 전사(점 기호 Ė, ṁ, ṅ, Ẇ, 윗줄 기호 ē_k^ch, R̄, LHV 윗줄)",
+      "Eq. (5)는 Nomenclature의 R̄(universal)가 아닌 R(gas constant)로 인쇄되어 그대로 둠; Eq. (8)은 Ė_L, Eq. (10)은 Ė_l로 대소문자가 다르게 인쇄되어 원문대로 둠",
+      "9FA 폐엑서지 값이 초록에서는 47.27%, 본문(101쪽)에서는 47.4%로 서로 다르게 인쇄되어 각각 원문대로 기재",
+      "102쪽 'KUW6000'은 문맥상 LM6000의 오기로 보이나 원문 표기 그대로 둠; 'Al Subiya'와 'Sabiya' 혼용도 원문대로",
+      "Table 3의 42번 점은 Substance가 'Water'로 인쇄되어 있으나(838.00 K, 12.200 MPa) 원문대로 둠; 44·45번 점 Mass 3175.36은 인쇄본에서 Temp. 열과 붙어 있어 이미지로 확인",
+      "Table 3 '1'' 등 프라임 표기는 아포스트로피(')로 기재",
+      "저자 Nomenclature의 'st'와 'x'가 Subscripts와 Abbreviations에 중복 수록된 것도 원문대로 둠",
+      "원문과 10단어 이상 연속 일치 점검 결과: R039-015의 수식 기호열(Ė_x = Ė_ph + Ė_ke + Ė_pe + Ė_ch)만 일치하며, 수식 기호는 원문대로 두는 규칙에 따른 것임"
+    ]
+  }
+}

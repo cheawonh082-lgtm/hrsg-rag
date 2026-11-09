@@ -1,0 +1,950 @@
+{
+  "document": {
+    "doc_id": "R035",
+    "title": "Energy and exergy analysis of the 1220 MW natural gas-fired Hamitabat combined cycle power plant",
+    "authors": [
+      "Göksel Topal",
+      "Tayfun Tanbay"
+    ],
+    "year": 2023,
+    "venue": "International Journal of Energy Studies (Int J Energy Studies) 2023; 8(4): 781-808, DergiPark (e-ISSN 2717-7513)",
+    "doi": "10.58559/ijes.1327547",
+    "url": "https://dergipark.org.tr/en/pub/ijes",
+    "license": "International Journal of Energy Studies (DergiPark) Research Article, PDF에 CC 등 공개 라이선스 문구·저작권 표기 없음 (PDF 텍스트·메타데이터·1쪽 이미지 확인) → 라이선스 불명확 → paraphrase",
+    "source_type": "paraphrase",
+    "lang": "en"
+  },
+  "paragraphs": [
+    {
+      "id": "R035-001",
+      "doc_id": "R035",
+      "section": "Highlights",
+      "page_start": 781,
+      "page_end": 781,
+      "text": "Highlights of the article: an energy and exergy assessment of the Hamitabat combined cycle power plant is performed. The plant reaches 59.70% thermal efficiency and 58.52% exergy efficiency. The renovation, a 520 million € project finished in 2017, lifted thermal and exergy efficiencies by 13.70% and 13.52%. The combustion chamber produces 77.61% of all exergy destruction and has an improvement potential of 67.992 MW. Raising high- and intermediate-pressure turbine inlet temperatures and lowering condenser and high-pressure turbine pressures can improve both efficiencies.",
+      "terms": [
+        "Hamitabat",
+        "59.70%",
+        "58.52%",
+        "520 million €",
+        "77.61%",
+        "67.992 MW",
+        "combustion chamber",
+        "exergy destruction"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-002",
+      "doc_id": "R035",
+      "section": "Abstract",
+      "page_start": 781,
+      "page_end": 781,
+      "text": "The paper evaluates the 1220 MW Hamitabat combined cycle power plant (CCPP), renovated in 2017 for 520 million €, by energy and exergy analysis. Mass and energy conservation form the thermodynamic model, fed with operating data supplied by the plant operators; an exergy balance gives each component's exergy efficiency and improvement potential, and parametric studies explore ways to raise performance. Thermal and exergy efficiencies are 59.70% and 58.52%, which exceed those of the original plant by 13.70% and 13.52%. The combustion chamber (CC) destroys the most exergy, 77.61% of total irreversibilities, with an improvement potential of 67.992 MW; eliminating CC heat loss would add 3.88% and 3.80% to thermal and exergy efficiencies. Performance improves with higher high- and intermediate-pressure turbine inlet temperatures and lower condenser and high-pressure turbine pressures. Keywords: Combined cycle, Natural gas, Energy analysis, Exergy analysis, Improvement potential.",
+      "terms": [
+        "1220 MW",
+        "CCPP",
+        "exergy balance",
+        "improvement potential",
+        "combustion chamber (CC)",
+        "3.88%",
+        "3.80%",
+        "Improvement potential"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-003",
+      "doc_id": "R035",
+      "section": "1. Introduction",
+      "page_start": 782,
+      "page_end": 782,
+      "text": "Energy demand grows with world population and industrial development, and although national development and welfare track energy consumption, efficient energy use becomes key for sustainable development as GDP per capita rises [1]. The energy crisis triggered by the Covid-19 pandemic made efficient use even more pressing, and fast moves to renewables, with thermal plants shut down under environmental policies, aggravated it. In 2022 the Russia-Ukraine war deepened the crisis and put EU climate targets at risk [2]; thermal plants were brought back and fossil-based generation overtook renewables in the EU [3].",
+      "terms": [
+        "energy crisis",
+        "Covid-19",
+        "renewables",
+        "thermal plants",
+        "Russia-Ukraine war",
+        "fossil"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-004",
+      "doc_id": "R035",
+      "section": "1. Introduction",
+      "page_start": 782,
+      "page_end": 782,
+      "text": "Electricity comes from fossil fuels, renewables and nuclear plants. Renewables are inexhaustible, clean and cheap to maintain, but their low capacity factor means a grid cannot rely on them alone. Nuclear plants are highly available, yet public perception is shaped by Chernobyl and Fukushima and spent fuel final disposal is still unresolved. CCPPs couple gas and steam turbines to reach high thermal efficiency, so they generate electricity from fossil fuels economically, and they can run flexibly and follow varying load [4].",
+      "terms": [
+        "capacity factor",
+        "nuclear",
+        "CCPPs",
+        "gas and steam turbines",
+        "thermal efficiency",
+        "load"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-005",
+      "doc_id": "R035",
+      "section": "1. Introduction",
+      "page_start": 782,
+      "page_end": 783,
+      "text": "Literature on thermodynamic modelling of CCPPs, useful for component and overall performance assessment, is reviewed. Reviews covered CCPP performance optimization [5] and exergy analysis of different CCPP layouts [6]; Garcia et al. [7] examined combined cycles with various energy sources and a trilateral bottoming cycle. Exergy analysis with reheat and closed loop steam cooled gas turbines showed both GT types raising performance [8]. Sue and Chuang [9] found exergy efficiency 2.4% lower when load dropped from 100% to 50%. Ertesvag et al. [10] studied adding an auto-thermal reformer and found that a 200℃ rise in GT inlet temperature (TIT) improved thermal efficiency by 4.4% and cut CO2 emission. For ambient temperatures of 0 − 35℃, power output changed by 75 MW [11].",
+      "terms": [
+        "trilateral bottoming cycle",
+        "closed loop steam cooled",
+        "auto-thermal reformer",
+        "TIT",
+        "200℃",
+        "4.4%",
+        "75 MW",
+        "exergy efficiency"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-006",
+      "doc_id": "R035",
+      "section": "1. Introduction",
+      "page_start": 783,
+      "page_end": 783,
+      "text": "Cziesla et al. [12], using advanced exergoeconomic analysis, concluded that improving the GT section mattered more than improving the bottom cycle. Sanjay et al. [13] reported 62% thermal efficiency with the combustion chamber (CC) as the largest exergy destruction, and a related study with an intercooled GT [14] found intercooling raised power by 20% and rational efficiency by 3.13%. Constrained optimization of a triple-pressure reheat CCPP [15] showed 3.6-3.8% efficiency gain from higher TIT and less heat recovery steam generator (HRSG) entropy generation. Effects of condenser pressure, ambient and cooling water temperatures, load, pressure losses and excess air ratio were studied in [16]. Koch et al. [17] minimized product cost and found a double-pressure HRSG without supplementary firing best for a 240 MW plant.",
+      "terms": [
+        "advanced exergoeconomic",
+        "intercooled GT",
+        "triple-pressure reheat CCPP",
+        "heat recovery steam generator (HRSG)",
+        "entropy generation",
+        "double-pressure HRSG",
+        "supplementary firing",
+        "240 MW"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-007",
+      "doc_id": "R035",
+      "section": "1. Introduction",
+      "page_start": 783,
+      "page_end": 784,
+      "text": "In [18] a CCPP with the duct burner off showed 47% thermal and 45.55% exergy efficiency, with CC destroying the most exergy. Exergoenvironmental optimization [19] found that higher TIT lowered exergy destruction cost and lower fuel use reduced emissions from the CC. Thermoeconomic optimization [20] sought cost-minimizing design conditions and examined power output and fuel cost effects. An exergetic assessment [21] judged 68% of CC irreversibility unavoidable. On HRSG configuration [22], triple pressure HRSGs proved thermodynamically and economically better than double pressure ones; another HRSG study [23] maximized plant efficiency by optimizing flue gas inlet temperature. A CCPP coupled with biomass gasification [24] was analysed parametrically with compressor pressure ratio (CPR), TIT and heat-exchanger temperature difference.",
+      "terms": [
+        "duct burner",
+        "45.55%",
+        "Exergoenvironmental",
+        "68%",
+        "triple pressure HRSGs",
+        "flue gas inlet temperature",
+        "compressor pressure ratio (CPR)",
+        "biomass gasification"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-008",
+      "doc_id": "R035",
+      "section": "1. Introduction",
+      "page_start": 784,
+      "page_end": 784,
+      "text": "An advanced exergoeconomic study of a 55 MW CCPP [25] found large improvement potentials for the condenser, the HRSG, the CC and the high-pressure steam turbine (HPST). Parametric advanced exergy analysis [26] showed efficiency gains from higher TIT and CPR, while a later multiobjective optimization by the same author [27], addressing emission and avoidable irreversibility together, instead favoured higher CPR with lower TIT and duct burner mass flow rate. Replacing natural gas by diesel [28] proved worse in exergy, economy and environment. An exergoeconomic optimization [29] judged designs by levelized cost of electricity, investment cost, and thermal and exergy efficiencies across three weighting scenarios, and the optimum depended on the weights.",
+      "terms": [
+        "55 MW",
+        "high-pressure steam turbine (HPST)",
+        "avoidable irreversibility",
+        "duct burner mass flow rate",
+        "diesel",
+        "levelized cost of electricity",
+        "CPR",
+        "TIT"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-009",
+      "doc_id": "R035",
+      "section": "1. Introduction",
+      "page_start": 784,
+      "page_end": 785,
+      "text": "Comparing Siemens F- and H-class GT technologies [30], the H-class gave 2.3% higher exergy efficiency and 0.8 $/MWh lower levelized cost of electricity. A flameless burner [31] raised thermal efficiency by 6% and cut CO2 emission by 5.63%. Energy-exergy studies of 119.2 MW [32], 180 MW [33], 747 MW [34], 396 MW [35], 820 MW [36] and 400 MW [37] CCPPs all identified the CC as the largest irreversibility source, whereas a steam-cycle-focused study of a 1240 MW CCPP found HRSG heat transfer dominant and noted the influence of low-pressure steam turbine (LPST) exit quality and HRSG superheating and reheating pressures [4]. Pattanayak and Padhi [38] combined compressor precooling and fuel preheating: cooling air from 35℃ to 20℃ at 65% relative humidity raised thermal efficiency by 0.58-2.2%, with CO2 emission peaking at 26-28℃ ambient. Shireef and Ibrahim [39] found lower ambient temperature and higher TIT and CPR raised thermal efficiency.",
+      "terms": [
+        "H-class",
+        "flameless burner",
+        "low-pressure steam turbine (LPST)",
+        "compressor precooling",
+        "fuel preheating",
+        "0.58-2.2%",
+        "1240 MW",
+        "0.8 $/MWh"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-010",
+      "doc_id": "R035",
+      "section": "1. Introduction",
+      "page_start": 785,
+      "page_end": 785,
+      "text": "As of May 2023 Turkey had 105672 MW installed power and in 2022 produced 328.7 TWh of electricity, with source shares given in Fig. 1; natural gas is a major contributor. National policy seeks more renewables, the addition of nuclear, more efficient power plants and efficient energy use in domestic, industrial, agricultural and transport sectors to curb greenhouse gas emissions. Improving natural gas-fired plants, holding a 22.2% share of the mix, is therefore crucial, and better gas use would also help Turkey's macroeconomics because 98.08 % of gas consumed in 2021 was imported [41].",
+      "terms": [
+        "105672 MW",
+        "328.7 TWh",
+        "natural gas",
+        "22.2%",
+        "98.08 %",
+        "greenhouse gas emissions"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-011",
+      "doc_id": "R035",
+      "section": "1. Introduction",
+      "page_start": 785,
+      "page_end": 785,
+      "text": "Figure 1 caption: share of each energy source in Turkey's electricity production [40].",
+      "terms": [
+        "Figure 1",
+        "electricity production"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-012",
+      "doc_id": "R035",
+      "section": "1. Introduction",
+      "page_start": 785,
+      "page_end": 786,
+      "text": "Turkey's first CCPP, Hamitabat, dates from 1985 and occupies 800000 m2 at Lüleburgaz, Kırklareli. Originally 1000 MW, it was fully renovated in 2017 through a 520 million € project, bringing capacity to 1220 MW. The natural gas-fired plant has two units, links Turkey's grid with Bulgaria and Greece via the interconnected network, is connected to the Turusgaz natural gas pipeline, and is important for supply security of the Marmara region. Cihan et al. [42] analysed the original plant and found the CC, GT and HRSG had the largest exergetic losses.",
+      "terms": [
+        "Hamitabat",
+        "Lüleburgaz",
+        "1000 MW",
+        "1220 MW",
+        "Turusgaz",
+        "Marmara",
+        "exergetic losses"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-013",
+      "doc_id": "R035",
+      "section": "1. Introduction",
+      "page_start": 786,
+      "page_end": 786,
+      "text": "This study analyses the renovated Hamitabat CCPP energetically and exergetically for one unit using real operator data, with the model built in Mathematica 11. Contributions claimed: first energy-exergy analysis of the renovated plant; overall thermal and exergy efficiencies together with component-level heat losses/gains, exergy destruction rates and exergy efficiencies; improvement potential of components, said not to have been used before as a CCPP performance indicator; the effect of combustion chamber heat loss; and parametric study of HPST and IPST inlet temperature and HPST and condenser pressure.",
+      "terms": [
+        "Mathematica 11",
+        "heat losses/gains",
+        "exergy destruction rates",
+        "improvement potential",
+        "combustion chamber heat loss",
+        "IPST",
+        "HPST"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-014",
+      "doc_id": "R035",
+      "section": "2. Description of the Plant",
+      "page_start": 786,
+      "page_end": 786,
+      "text": "The plant comprises two combined cycle units. Each has a 400 MW H-class gas turbine (Siemens SGT5-800H), a 210 MW closed-loop steam turbine (Siemens SST-5000) having high-, medium- and low-pressure stages, plus a generator, a natural gas preheater, a gland condenser, a polishing unit, a condenser, the main cooling water system and a triple-stage HRSG. Cooling water comes from two cooling towers 135 m tall with 70 m upper and 121 m lower diameter.",
+      "terms": [
+        "SGT5-800H",
+        "SST-5000",
+        "400 MW",
+        "210 MW",
+        "triple-stage HRSG",
+        "gland condenser",
+        "polishing unit",
+        "cooling towers"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-015",
+      "doc_id": "R035",
+      "section": "2. Description of the Plant",
+      "page_start": 786,
+      "page_end": 787,
+      "text": "Fig. 2 shows the layout, with power produced in a gas and a steam cycle. Ambient air enters the compressor (C), the compressed air reacts with preheated natural gas in the CC, and the cycle peak temperature occurs at GT inlet; combustion gases expand in the GT and then give heat to the steam cycle in the HRSG, the triple-pressure unit linking the two cycles. Feedwater enters at state 26, is warmed in the preheater (PH) packages to state 27, and is then divided into three streams: high pressure at state 40, intermediate pressure at state 30 and low pressure at state 29. The high-pressure stream passes the high-pressure economizer (HP ECO) to state 43, and the high-pressure superheater (HP SH) brings it to HPST inlet conditions (state 8).",
+      "terms": [
+        "compressor (C)",
+        "triple-pressure",
+        "preheater (PH)",
+        "state 26",
+        "high-pressure economizer (HP ECO)",
+        "high-pressure superheater (HP SH)",
+        "state 8",
+        "Feedwater"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-016",
+      "doc_id": "R035",
+      "section": "2. Description of the Plant",
+      "page_start": 787,
+      "page_end": 787,
+      "text": "Figure 2 caption: schematic of the Hamitabat CCPP.",
+      "terms": [
+        "Figure 2",
+        "Hamitabat CCPP"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-017",
+      "doc_id": "R035",
+      "section": "2. Description of the Plant",
+      "page_start": 787,
+      "page_end": 788,
+      "text": "Water of intermediate pressure is warmed first in the intermediate-pressure economizer (IP ECO), then divided at state 32, with a portion (state 33) sent to the natural gas preheater (NGPH); the rest (state 34) enters the IP drum and is superheated (IP SH and IP RH) to IPST inlet conditions (state 11), aided by steam extracted from the HPST at state 9. A little steam is bled from IP RH1 at states 48-50 for turbine sealing. The low-pressure stream goes to the LP drum and the low-pressure superheater (LP SH) to state 13, then joins the IPST exhaust and enters the LPST at state 14. Gas and steam turbine shaft work is converted to electricity by a generator.",
+      "terms": [
+        "intermediate-pressure economizer (IP ECO)",
+        "natural gas preheater (NGPH)",
+        "IP RH",
+        "state 11",
+        "IP RH1",
+        "low-pressure superheater (LP SH)",
+        "state 14",
+        "turbine sealing"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-018",
+      "doc_id": "R035",
+      "section": "2. Description of the Plant",
+      "page_start": 788,
+      "page_end": 788,
+      "text": "LPST exhaust steam goes to a direct contact condenser (COND) and mixes with cooling water of a Heller system. A cooling cycle circulation pump (CCCP) sends water to the cooling tower (CT); a hydraulic turbine (HT), which drops water pressure to LPST outlet pressure, partly covers CCCP power. Downstream of the CCCP most water goes to the CT, while the remainder is pumped by the condenser pump (CP) to a polishing unit (PU) that removes harmful gases and substances. Extraction steam from states 48-50 passes through the gland condenser (GC) before rejoining the main flow.",
+      "terms": [
+        "direct contact condenser (COND)",
+        "Heller system",
+        "cooling cycle circulation pump (CCCP)",
+        "hydraulic turbine (HT)",
+        "condenser pump (CP)",
+        "polishing unit (PU)",
+        "gland condenser (GC)",
+        "cooling tower (CT)"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-019",
+      "doc_id": "R035",
+      "section": "3. Performance Analysis",
+      "page_start": 788,
+      "page_end": 789,
+      "text": "Main assumptions: steady-flow processes; adiabatic turbines, pumps and compressors; natural gas by volume 97.1874% methane (CH_4), 1.5719% ethane (C_2H_6), 0.4939% propane (C_3H_8) and 0.7468% nitrogen (N_2); air 79% N_2 and 21% oxygen (O_2); thermophysical data from the JANAF database [43] for water, air constituents, combustion products and CH_4, and from [44] and [45] for C_2H_6 and C_3H_8; compressor inlet taken as the dead state. Specific heats of natural gas, air and combustion products vary with temperature, and enthalpy change is Δh̄_i(T_j) = ∫_{T_ref}^{T_j} c̄_p,i(T) dT, i = CH_4, C_2H_6, C_3H_8, N_2, O_2, CO_2, H_2O (1) (molar enthalpy change of species i = integral of its molar specific heat from the reference temperature to T_j). Third order polynomials fit c̄_p,i(T) and integration is analytical. CC analysis uses reference conditions T_ref = 25℃ and P_ref = 1 atm (stated on p.789).",
+      "terms": [
+        "steady-flow",
+        "adiabatic",
+        "97.1874%",
+        "JANAF",
+        "dead state",
+        "Δh̄_i(T_j) = ∫_{T_ref}^{T_j} c̄_p,i(T) dT",
+        "Third order polynomials",
+        "T_ref = 25℃"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-020",
+      "doc_id": "R035",
+      "section": "3.1. Energy Analysis",
+      "page_start": 789,
+      "page_end": 789,
+      "text": "Steady-state mass and energy conservation are applied to every component: Σṁ_in = Σṁ_out (2) (mass flow in equals mass flow out) and Q̇_in + Ẇ_in + Σ(ṁh)_in = Q̇_out + Ẇ_out + Σ(ṁh)_out (3) (heat, work and enthalpy flow entering equal those leaving), with ṁ, Q̇ and Ẇ the mass flow, heat transfer and work transfer rates and h enthalpy.",
+      "terms": [
+        "Σṁ_in = Σṁ_out",
+        "Q̇_in + Ẇ_in + Σ(ṁh)_in = Q̇_out + Ẇ_out + Σ(ṁh)_out",
+        "mass flow",
+        "work transfer",
+        "enthalpy"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-021",
+      "doc_id": "R035",
+      "section": "3.1. Energy Analysis",
+      "page_start": 789,
+      "page_end": 789,
+      "text": "For the CC, chemical reaction must be included and no work is exchanged, so steady energy conservation becomes Q̇_in + Σ_r ṅ_r(h̄_f^0 + h̄ − h̄_0) = Q̇_out + Σ_p ṅ_p(h̄_f^0 + h̄ − h̄_0) (4) (heat in plus reactant enthalpy flow including formation enthalpy = heat out plus product enthalpy flow), where ṅ is molar flow rate, h̄_f^0 the formation enthalpy at reference conditions, and r and p mark reactants and products. With measured plant data, Eq. (3) yields turbine power, compressor and pump consumption, CT heat rejection and heat gains/losses of HRSG, COND, PU, GC, NGPH and mixing/separation, while Eq. (4) gives CC heat loss; expressions are in Table 1.",
+      "terms": [
+        "Q̇_in + Σ_r ṅ_r(h̄_f^0 + h̄ − h̄_0) = Q̇_out + Σ_p ṅ_p(h̄_f^0 + h̄ − h̄_0)",
+        "molar flow rate",
+        "formation enthalpy",
+        "reactants",
+        "products",
+        "Table 1"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-022",
+      "doc_id": "R035",
+      "section": "3.1. Energy Analysis",
+      "page_start": 790,
+      "page_end": 790,
+      "text": "Table 1. Energy and exergy analysis of the Hamitabat CCPP components (part 1: C to HRSG). C: Ẇ_C = ṁ_2(h_2 − h_1); Ẋ_dest,C = Ẋ_1 − Ẋ_2 + Ẇ_C. CC: Q̇_CC = Q̇_LHV + Σ_{j∈air} ṅ_jΔh̄_j(T_2) + Σ_{j∈ng} ṅ_jΔh̄_j(T_4) − Σ_{j∈flue} ṅ_jΔh̄_j(T_5); Ẋ_dest,CC = Ẋ_2 + Ẋ_4 − Ẋ_5 − (1 − T_0/T_5)Q̇_CC + Ẋ_fuel; air → N_2, O_2; ng → CH_4, C_2H_6, C_3H_8, N_2; flue → CO_2, H_2O, N_2, O_2. GT: Ẇ_GT = ṁ_5(h_5 − h_6); Ẋ_dest,GT = Ẋ_5 − Ẋ_6 − Ẇ_GT. NGPH: Q̇_NGPH = ṁ_3h_3 + ṁ_33h_33 − (ṁ_4h_4 + ṁ_25h_25); Ẋ_dest,NGPH = Ẋ_3 + Ẋ_33 − (Ẋ_4 + Ẋ_25) − (1 − T_0/T_ave)Q̇_NGPH. HRSG: Q̇_HRSG = ṁ_6h_6 + ṁ_26h_26 + ṁ_29h_29 + ṁ_30h_30 + ṁ_34h_34 + ṁ_37h_37 + ṁ_40h_40 − (ṁ_7h_7 + ṁ_8h_8 + ṁ_11h_11 + ṁ_13h_13 + ṁ_27h_27 + ṁ_32h_32 + ṁ_36h_36 + ṁ_48h_48 + ṁ_49h_49 + ṁ_50h_50); Ẋ_dest,HRSG = (Ẋ_6 + Ẋ_26 + Ẋ_29 + Ẋ_30 + Ẋ_34 + Ẋ_37 + Ẋ_40) [Ẋ_mass in,HRSG] − (1 − T_0/T_ave)Q̇_HRSG [Ẋ_heat out,HRSG] − (Ẋ_7 + Ẋ_8 + Ẋ_11 + Ẋ_13 + Ẋ_27 + Ẋ_32 + Ẋ_36 + Ẋ_48 + Ẋ_49 + Ẋ_50) [Ẋ_mass out,HRSG]. (Each row: energy balance giving work or heat rate, and exergy balance giving exergy destruction rate of the component.)",
+      "terms": [
+        "Table 1",
+        "Ẇ_C = ṁ_2(h_2 − h_1)",
+        "Q̇_LHV",
+        "Ẋ_fuel",
+        "Ẋ_dest,GT",
+        "Q̇_NGPH",
+        "Ẋ_dest,HRSG",
+        "T_ave"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-023",
+      "doc_id": "R035",
+      "section": "3.1. Energy Analysis",
+      "page_start": 790,
+      "page_end": 791,
+      "text": "Table 1. Energy and exergy analysis of the Hamitabat CCPP components (part 2: HPST to mixing/separation). HPST: Ẇ_HPST = ṁ_8h_8 − (ṁ_9h_9 + ṁ_10h_10); Ẋ_dest,HPST = Ẋ_8 − (Ẋ_9 + Ẋ_10) − Ẇ_HPST. IPST: Ẇ_IPST = ṁ_10h_10 + ṁ_11h_11 − ṁ_12h_12; Ẋ_dest,IPST = Ẋ_10 + Ẋ_11 − Ẋ_12 − Ẇ_IPST. LPST: Ẇ_LPST = ṁ_14(h_14 − h_15); Ẋ_dest,LPST = Ẋ_14 − Ẋ_15 − Ẇ_LPST. COND: Q̇_COND = ṁ_15h_15 + ṁ_16h_16 + ṁ_56h_56 − ṁ_18h_18; Ẋ_dest,COND = Ẋ_15 + Ẋ_16 + Ẋ_56 − Ẋ_18 − (1 − T_0/T_ave)Q̇_COND. HT: Ẇ_HT = ṁ_17(h_17 − h_16); Ẋ_dest,HT = Ẋ_17 − Ẋ_16 − Ẇ_HT. CT: Q̇_CT,cooling = ṁ_20(h_20 − h_17); Ẋ_dest,CT = Ẋ_20 − Ẋ_17 − (1 − T_0/T_ave)Q̇_CT,cooling. CCCP: Ẇ_CCCP = ṁ_18(h_19 − h_18); Ẋ_dest,CCCP = Ẋ_18 − Ẋ_19 + Ẇ_CCCP. CP: Ẇ_CP = ṁ_22(h_22 − h_21); Ẋ_dest,CP = Ẋ_21 − Ẋ_22 + Ẇ_CP. PU: Q̇_PU = ṁ_22(h_22 − h_23); Ẋ_dest,PU = Ẋ_22 − Ẋ_23 − (1 − T_0/T_ave)Q̇_PU. GC: Q̇_GC = ṁ_23h_23 + ṁ_55h_55 − (ṁ_24h_24 + ṁ_56h_56); Ẋ_dest,GC = Ẋ_23 + Ẋ_55 − (Ẋ_24 + Ẋ_56) − (1 − T_0/T_ave)Q̇_GC. FWP: Ẇ_FWP = ṁ_30h_30 + ṁ_40h_40 − ṁ_28h_28; Ẋ_dest,FWP = Ẋ_28 − (Ẋ_30 + Ẋ_40) + Ẇ_FWP. Mixing or separation: Q̇ = Σ(ṁh)_in − Σ(ṁh)_out; Ẋ_dest = ΣẊ_in − ΣẊ_out − (1 − T_0/T_ave)Q̇.",
+      "terms": [
+        "Table 1",
+        "Ẇ_HPST",
+        "Ẇ_LPST = ṁ_14(h_14 − h_15)",
+        "Q̇_COND",
+        "Q̇_CT,cooling",
+        "Ẇ_CCCP",
+        "Ẇ_FWP",
+        "Mixing or separation"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-024",
+      "doc_id": "R035",
+      "section": "3.1. Energy Analysis",
+      "page_start": 791,
+      "page_end": 791,
+      "text": "Plant thermal efficiency is η_th = Ẇ_net / Q̇_LHV (5) (thermal efficiency = net power ÷ energy released by combustion), with Ẇ_net = Ẇ_GT + Ẇ_HPST + Ẇ_IPST + Ẇ_LPST + Ẇ_HT − (Ẇ_C + Ẇ_CP + Ẇ_FWP + Ẇ_CCCP) (6) (net power = turbine outputs minus compressor and pump consumption). Q̇_LHV, the energy delivered to the plant by the CC reaction, links air and fuel molar flows to the fuel lower heating value via formation enthalpies: Q̇_LHV = Σ_r ṅ_r,4 h̄°_f,r − Σ_p ṅ_p,5 h̄°_f,p, r = CH_4, C_2H_6, C_3H_8, p = CO_2, H_2O (7) (heat input = formation enthalpy of fuel species at state 4 minus that of CO_2 and H_2O products at state 5).",
+      "terms": [
+        "η_th = Ẇ_net / Q̇_LHV",
+        "Ẇ_net",
+        "Q̇_LHV = Σ_r ṅ_r,4 h̄°_f,r − Σ_p ṅ_p,5 h̄°_f,p",
+        "lower heating value",
+        "formation enthalpies"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-025",
+      "doc_id": "R035",
+      "section": "3.2. Exergy Analysis",
+      "page_start": 791,
+      "page_end": 792,
+      "text": "Component irreversibility follows from the steady exergy balance Ẋ_dest = Σ_{i∈in}Ẋ_i − Σ_{i∈out}Ẋ_i + (1 − T_0/T_b)Q̇_in − (1 − T_0/T_b)Q̇_out + Ẇ_in − Ẇ_out (8) (exergy destruction = net exergy inflow by mass, heat and work), where T_0 is dead state temperature and T_b the boundary temperature of heat transfer. Exergy flow rate is Ẋ_i = ṁ_i[h_i − h_0 − T_0(s_i − s_0)] (9) (flow exergy relative to dead state, subscript 0). For air, natural gas and flue gas, h = Σ_j y_j h̄_j / M_m and s = Σ_j y_j s̄_j / M_m (10) (mixture specific enthalpy and entropy from mole-fraction-weighted molar values divided by molar mass), with j over N_2, O_2 for air, CH_4, C_2H_6, C_3H_8, N_2 for natural gas and CO_2, H_2O, N_2, O_2 for flue gas; y_j is mole fraction, s̄_j molar entropy and M molar mass.",
+      "terms": [
+        "Ẋ_dest",
+        "T_0",
+        "T_b",
+        "Ẋ_i = ṁ_i[h_i − h_0 − T_0(s_i − s_0)]",
+        "h = Σ_j y_j h̄_j / M_m",
+        "s = Σ_j y_j s̄_j / M_m",
+        "dead state",
+        "molar mass"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-026",
+      "doc_id": "R035",
+      "section": "3.2. Exergy Analysis",
+      "page_start": 792,
+      "page_end": 792,
+      "text": "Process exergy efficiency [46] is η_ex = Ẋ_rec/Ẋ_exp = 1 − Ẋ_dest/Ẋ_exp (11) (recovered over expended exergy rate). For exergy transfer by heat, component surface temperature is the mass flow rate-weighted mean T_ave = Σ_i ṁ_iT_i / Σ_i ṁ_i (12) (average of stream temperatures weighted by mass flow). Plant exergy efficiency is η_ex = Ẇ_net / Ẋ_fuel (13) (net power ÷ fuel exergy rate).",
+      "terms": [
+        "η_ex = Ẋ_rec/Ẋ_exp = 1 − Ẋ_dest/Ẋ_exp",
+        "T_ave = Σ_i ṁ_iT_i / Σ_i ṁ_i",
+        "η_ex = Ẇ_net / Ẋ_fuel",
+        "recovered",
+        "expended"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-027",
+      "doc_id": "R035",
+      "section": "3.2. Exergy Analysis",
+      "page_start": 793,
+      "page_end": 793,
+      "text": "Fuel exergy uses Gibbs functions of formation of reactants and products: Ẋ_fuel = Σ_r ṅ_r{h^0_f,r + Δh̄_r(T_0) − T_0[s̄_r(T_1, P_ref) − R_u ln(y_r P_0/P_ref)]} − Σ_p ṅ_p{h^0_f,p + Δh̄_p(T_0) − T_0[s̄_p(T_1, P_ref) − R_u ln(y_p P_0/P_ref)]} (14) (fuel exergy = Gibbs-function flow of reactants minus that of products at dead state), R_u being the universal gas constant. Van Gool's [47] improvement potential is I_p = (1 − Ẋ_out/Ẋ_in)(Ẋ_in − Ẋ_out) (15) (improvement potential = exergy inefficiency × exergy loss), with Ẋ_in and Ẋ_out total incoming and outgoing exergy by heat, work and mass; with Eq. (8) it becomes I_p = Ẋ_dest^2 / Ẋ_in (16) (square of exergy destruction rate ÷ incoming exergy rate).",
+      "terms": [
+        "Gibbs",
+        "Ẋ_fuel",
+        "R_u",
+        "universal gas constant",
+        "Van Gool",
+        "I_p = (1 − Ẋ_out/Ẋ_in)(Ẋ_in − Ẋ_out)",
+        "I_p = Ẋ_dest^2 / Ẋ_in"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-028",
+      "doc_id": "R035",
+      "section": "4. Results and Discussion",
+      "page_start": 793,
+      "page_end": 793,
+      "text": "Table 2 gives operator-supplied temperature, pressure and mass flow for every state of one unit, with the derived enthalpy, entropy and exergy flow rates. Flue gas conditions follow from the volumetric air and natural gas compositions of Section 3, giving the CC reaction in molar flow rates: 1.22759 CH_4 + 0.019855 C_2H_6 + 0.00623874 C_3H_8 + 22.753 N_2 + 6.04882 O_2 → 1.28602 CO_2 + 2.5397 H_2O + 22.753 N_2 + 3.49295 O_2 (17) (combustion of the natural gas mixture with excess air, molar flow basis).",
+      "terms": [
+        "Table 2",
+        "1.22759 CH_4",
+        "6.04882 O_2",
+        "1.28602 CO_2",
+        "2.5397 H_2O",
+        "3.49295 O_2",
+        "molar flow rates",
+        "Flue gas"
+      ],
+      "content_type": "equation",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-029",
+      "doc_id": "R035",
+      "section": "4. Results and Discussion",
+      "page_start": 793,
+      "page_end": 794,
+      "text": "Table 2. Thermodynamic conditions for the states of Hamitabat CCPP (states 1-15). State 1: Fluid=Air; T(℃)=14.8; P(MPa)=0.0992; ṁ(kg/s)=830.680; h(kJ/kg)=256.94; s(kJ/kg·K)=6.8608; Ẋ(kW)=0.000. State 2: Fluid=Air; T(℃)=423.0; P(MPa)=1.6800; ṁ(kg/s)=830.680; h(kJ/kg)=680.93; s(kJ/kg·K)=6.9560; Ẋ(kW)=329.410. State 3: Fluid=Natural gas; T(℃)=15.0; P(MPa)=3.7800; ṁ(kg/s)=20.830; h(kJ/kg)=522.08; s(kJ/kg·K)=9.5460; Ẋ(kW)=11.009. State 4: Fluid=Natural gas; T(℃)=215.0; P(MPa)=3.7800; ṁ(kg/s)=20.830; h(kJ/kg)=1014.37; s(kJ/kg·K)=10.8252; Ẋ(kW)=13.591. State 5: Fluid=Flue gas; T(℃)=1336.0; P(MPa)=1.5600; ṁ(kg/s)=851.510; h(kJ/kg)=1849.86; s(kJ/kg·K)=8.2377; Ẋ(kW)=1058.830. State 6: Fluid=Flue gas; T(℃)=631.9; P(MPa)=0.1021; ṁ(kg/s)=851.510; h(kJ/kg)=956.30; s(kJ/kg·K)=8.3102; Ẋ(kW)=280.172. State 7: Fluid=Flue gas; T(℃)=87.9; P(MPa)=0.1021; ṁ(kg/s)=851.510; h(kJ/kg)=343.24; s(kJ/kg·K)=7.2853; Ẋ(kW)=9.445. State 8: Fluid=Steam; T(℃)=610.0; P(MPa)=16.8000; ṁ(kg/s)=108.654; h(kJ/kg)=3593.20; s(kJ/kg·K)=6.6431; Ẋ(kW)=182.743. State 9: Fluid=Steam; T(℃)=371.8; P(MPa)=3.7330; ṁ(kg/s)=102.482; h(kJ/kg)=3151.07; s(kJ/kg·K)=6.7044; Ẋ(kW)=125.242. State 10: Fluid=Steam; T(℃)=371.0; P(MPa)=3.7000; ṁ(kg/s)=6.172; h(kJ/kg)=3149.95; s(kJ/kg·K)=6.7065; Ẋ(kW)=7.532. State 11: Fluid=Steam; T(℃)=573.0; P(MPa)=3.7000; ṁ(kg/s)=117.629; h(kJ/kg)=3615.50; s(kJ/kg·K)=7.3345; Ẋ(kW)=177.042. State 12: Fluid=Steam; T(℃)=295.0; P(MPa)=0.5000; ṁ(kg/s)=123.801; h(kJ/kg)=3054.24; s(kJ/kg·K)=7.4425; Ẋ(kW)=112.996. State 13: Fluid=Steam; T(℃)=241.1; P(MPa)=0.4820; ṁ(kg/s)=15.000; h(kJ/kg)=2942.90; s(kJ/kg·K)=7.2543; Ẋ(kW)=12.834. State 14: Fluid=Steam; T(℃)=290.0; P(MPa)=0.4950; ṁ(kg/s)=138.801; h(kJ/kg)=3044.01; s(kJ/kg·K)=7.4289; Ẋ(kW)=125.809. State 15: Fluid=Steam; T(℃)=37.1; P(MPa)=0.0063; ṁ(kg/s)=138.801; h(kJ/kg)=2353.70; s(kJ/kg·K)=7.6225; Ẋ(kW)=22.258.",
+      "terms": [
+        "Table 2",
+        "T(℃)",
+        "P(MPa)",
+        "ṁ(kg/s)",
+        "h(kJ/kg)",
+        "s(kJ/kg·K)",
+        "Ẋ(kW)"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-030",
+      "doc_id": "R035",
+      "section": "4. Results and Discussion",
+      "page_start": 794,
+      "page_end": 794,
+      "text": "Table 2. Thermodynamic conditions for the states of Hamitabat CCPP (states 16-31). State 16: Fluid=Water; T(℃)=30.0; P(MPa)=0.0063; ṁ(kg/s)=9000.000; h(kJ/kg)=125.73; s(kJ/kg·K)=0.4367; Ẋ(kW)=13.679. State 17: Fluid=Water; T(℃)=30.0; P(MPa)=0.1700; ṁ(kg/s)=9000.000; h(kJ/kg)=125.89; s(kJ/kg·K)=0.4367; Ẋ(kW)=15.227. State 18: Fluid=Water; T(℃)=36.0; P(MPa)=0.0063; ṁ(kg/s)=9140.301; h(kJ/kg)=150.82; s(kJ/kg·K)=0.5186; Ẋ(kW)=27.896. State 19: Fluid=Water; T(℃)=36.02; P(MPa)=0.3800; ṁ(kg/s)=9140.301; h(kJ/kg)=151.23; s(kJ/kg·K)=0.5187; Ẋ(kW)=31.294. State 20: Fluid=Water; T(℃)=36.02; P(MPa)=0.3800; ṁ(kg/s)=9000.000; h(kJ/kg)=151.23; s(kJ/kg·K)=0.5187; Ẋ(kW)=30.814. State 21: Fluid=Water; T(℃)=36.02; P(MPa)=0.3800; ṁ(kg/s)=140.301; h(kJ/kg)=151.23; s(kJ/kg·K)=0.5187; Ẋ(kW)=0.480. State 22: Fluid=Water; T(℃)=37.1; P(MPa)=2.8520; ṁ(kg/s)=140.301; h(kJ/kg)=157.95; s(kJ/kg·K)=0.5323; Ẋ(kW)=0.872. State 23: Fluid=Water; T(℃)=36.6; P(MPa)=2.8020; ṁ(kg/s)=140.301; h(kJ/kg)=155.82; s(kJ/kg·K)=0.5256; Ẋ(kW)=0.844. State 24: Fluid=Water; T(℃)=38.7; P(MPa)=2.7520; ṁ(kg/s)=140.301; h(kJ/kg)=164.54; s(kJ/kg·K)=0.5539; Ẋ(kW)=0.926. State 25: Fluid=Water; T(℃)=42.0; P(MPa)=4.0000; ṁ(kg/s)=14.330; h(kJ/kg)=179.41; s(kJ/kg·K)=0.5973; Ẋ(kW)=0.129. State 26: Fluid=Water; T(℃)=39.1; P(MPa)=2.8520; ṁ(kg/s)=154.631; h(kJ/kg)=166.29; s(kJ/kg·K)=0.5592; Ẋ(kW)=1.055. State 27: Fluid=Water; T(℃)=151.6; P(MPa)=2.1920; ṁ(kg/s)=154.631; h(kJ/kg)=640.13; s(kJ/kg·K)=1.8561; Ẋ(kW)=16.582. State 28: Fluid=Water; T(℃)=151.6; P(MPa)=2.1920; ṁ(kg/s)=139.631; h(kJ/kg)=640.13; s(kJ/kg·K)=1.8561; Ẋ(kW)=14.973. State 29: Fluid=Water; T(℃)=151.6; P(MPa)=2.1920; ṁ(kg/s)=15.000; h(kJ/kg)=640.13; s(kJ/kg·K)=1.8561; Ẋ(kW)=1.608. State 30: Fluid=Water; T(℃)=152.3; P(MPa)=4.1130; ṁ(kg/s)=30.977; h(kJ/kg)=644.32; s(kJ/kg·K)=1.8610; Ẋ(kW)=3.408. State 31: Fluid=Steam; T(℃)=153.3; P(MPa)=0.5190; ṁ(kg/s)=15.000; h(kJ/kg)=2749.82; s(kJ/kg·K)=6.8077; Ẋ(kW)=11.866.",
+      "terms": [
+        "Table 2",
+        "T(℃)",
+        "P(MPa)",
+        "ṁ(kg/s)",
+        "h(kJ/kg)",
+        "s(kJ/kg·K)",
+        "Ẋ(kW)"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-031",
+      "doc_id": "R035",
+      "section": "4. Results and Discussion",
+      "page_start": 794,
+      "page_end": 794,
+      "text": "Table 2. Thermodynamic conditions for the states of Hamitabat CCPP (states 32-47). State 32: Fluid=Water; T(℃)=241.6; P(MPa)=4.0740; ṁ(kg/s)=30.977; h(kJ/kg)=1045.33; s(kJ/kg·K)=2.7152; Ẋ(kW)=8.210. State 33: Fluid=Water; T(℃)=241.6; P(MPa)=4.0740; ṁ(kg/s)=14.330; h(kJ/kg)=1045.33; s(kJ/kg·K)=2.7152; Ẋ(kW)=3.798. State 34: Fluid=Water; T(℃)=241.6; P(MPa)=4.0740; ṁ(kg/s)=16.647; h(kJ/kg)=1045.33; s(kJ/kg·K)=2.7152; Ẋ(kW)=4.412. State 35: Fluid=Steam; T(℃)=246.9; P(MPa)=3.7710; ṁ(kg/s)=16.647; h(kJ/kg)=2801.81; s(kJ/kg·K)=6.0939; Ẋ(kW)=17.457. State 36: Fluid=Steam; T(℃)=365.0; P(MPa)=3.6860; ṁ(kg/s)=16.647; h(kJ/kg)=3136.07; s(kJ/kg·K)=6.6867; Ẋ(kW)=20.179. State 37: Fluid=Steam; T(℃)=370.0; P(MPa)=3.7200; ṁ(kg/s)=119.129; h(kJ/kg)=3147.12; s(kJ/kg·K)=6.6998; Ẋ(kW)=145.273. State 38: Fluid=Steam; T(℃)=559.2; P(MPa)=3.6370; ṁ(kg/s)=117.629; h(kJ/kg)=3584.64; s(kJ/kg·K)=7.3045; Ẋ(kW)=174.426. State 39: Fluid=Steam; T(℃)=589.1; P(MPa)=3.6130; ṁ(kg/s)=117.629; h(kJ/kg)=3653.05; s(kJ/kg·K)=7.3906; Ẋ(kW)=179.557. State 40: Fluid=Water; T(℃)=156.3; P(MPa)=18.3880; ṁ(kg/s)=108.654; h(kJ/kg)=670.26; s(kJ/kg·K)=1.8854; Ẋ(kW)=14.008. State 41: Fluid=Water; T(℃)=245.3; P(MPa)=18.3040; ṁ(kg/s)=108.654; h(kJ/kg)=1064.48; s(kJ/kg·K)=2.7186; Ẋ(kW)=30.774. State 42: Fluid=Water; T(℃)=336.3; P(MPa)=18.1730; ṁ(kg/s)=108.654; h(kJ/kg)=1552.91; s(kJ/kg·K)=3.5825; Ẋ(kW)=56.814. State 43: Fluid=Water; T(℃)=355.2; P(MPa)=17.9300; ṁ(kg/s)=108.654; h(kJ/kg)=1713.54; s(kJ/kg·K)=3.8422; Ẋ(kW)=66.141. State 44: Fluid=Steam; T(℃)=356.7; P(MPa)=17.9300; ṁ(kg/s)=108.654; h(kJ/kg)=2512.69; s(kJ/kg·K)=5.1113; Ẋ(kW)=113.266. State 45: Fluid=Steam; T(℃)=407.0; P(MPa)=17.8550; ṁ(kg/s)=108.654; h(kJ/kg)=2919.52; s(kJ/kg·K)=5.7392; Ẋ(kW)=137.825. State 46: Fluid=Steam; T(℃)=508.8; P(MPa)=17.7340; ṁ(kg/s)=108.654; h(kJ/kg)=3299.23; s(kJ/kg·K)=6.2657; Ẋ(kW)=162.610. State 47: Fluid=Steam; T(℃)=579.1; P(MPa)=17.6200; ṁ(kg/s)=108.654; h(kJ/kg)=3502.43; s(kJ/kg·K)=6.5169; Ẋ(kW)=176.828.",
+      "terms": [
+        "Table 2",
+        "T(℃)",
+        "P(MPa)",
+        "ṁ(kg/s)",
+        "h(kJ/kg)",
+        "s(kJ/kg·K)",
+        "Ẋ(kW)"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-032",
+      "doc_id": "R035",
+      "section": "4. Results and Discussion",
+      "page_start": 795,
+      "page_end": 795,
+      "text": "Table 2. Thermodynamic conditions for the states of Hamitabat CCPP (states 48-56). State 48: Fluid=Steam; T(℃)=300.0; P(MPa)=0.0035; ṁ(kg/s)=0.500; h(kJ/kg)=3076.91; s(kJ/kg·K)=9.4037; Ẋ(kW)=0.185. State 49: Fluid=Steam; T(℃)=298.0; P(MPa)=0.0035; ṁ(kg/s)=0.500; h(kJ/kg)=3072.94; s(kJ/kg·K)=9.3965; Ẋ(kW)=0.184. State 50: Fluid=Steam; T(℃)=296.0; P(MPa)=0.0035; ṁ(kg/s)=0.500; h(kJ/kg)=3068.98; s(kJ/kg·K)=9.3892; Ẋ(kW)=0.183. State 51: Fluid=Steam; T(℃)=300.0; P(MPa)=0.0035; ṁ(kg/s)=0.500; h(kJ/kg)=3076.91; s(kJ/kg·K)=9.4037; Ẋ(kW)=0.185. State 52: Fluid=Steam; T(℃)=298.0; P(MPa)=0.0035; ṁ(kg/s)=0.500; h(kJ/kg)=3072.94; s(kJ/kg·K)=9.3965; Ẋ(kW)=0.184. State 53: Fluid=Steam; T(℃)=296.0; P(MPa)=0.0035; ṁ(kg/s)=0.500; h(kJ/kg)=3068.98; s(kJ/kg·K)=9.3892; Ẋ(kW)=0.183. State 54: Fluid=Steam; T(℃)=297.0; P(MPa)=0.0035; ṁ(kg/s)=1.000; h(kJ/kg)=3070.96; s(kJ/kg·K)=9.3928; Ẋ(kW)=0.368. State 55: Fluid=Steam; T(℃)=298.0; P(MPa)=0.0035; ṁ(kg/s)=1.500; h(kJ/kg)=3072.94; s(kJ/kg·K)=9.3965; Ẋ(kW)=0.553. State 56: Fluid=Steam; T(℃)=45.0; P(MPa)=0.0020; ṁ(kg/s)=1.500; h(kJ/kg)=2583.47; s(kJ/kg·K)=8.2973; Ẋ(kW)=0.294.",
+      "terms": [
+        "Table 2",
+        "T(℃)",
+        "P(MPa)",
+        "ṁ(kg/s)",
+        "h(kJ/kg)",
+        "s(kJ/kg·K)",
+        "Ẋ(kW)"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-033",
+      "doc_id": "R035",
+      "section": "4.1. Performance of the Plant",
+      "page_start": 795,
+      "page_end": 795,
+      "text": "Table 3 summarizes the energy and exergy results. Cihan et al. [42] had found 46% thermal and 45% exergy efficiency for the original plant, so the 520 million € renovation raised the efficiencies by 13.70% and 13.52%. Computed net output is near the 610 MW rating of one unit. The gas (air) cycle nets 406.682 MW, and in the steam cycle the LPST contributes most power. Among non-adiabatic components, the largest heat losses are at the CC and COND.",
+      "terms": [
+        "Table 3",
+        "46%",
+        "45%",
+        "610 MW",
+        "406.682 MW",
+        "LPST",
+        "non-adiabatic",
+        "COND"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-034",
+      "doc_id": "R035",
+      "section": "4.1. Performance of the Plant",
+      "page_start": 795,
+      "page_end": 795,
+      "text": "Table 3. Main performance indicators of the Hamitabat CCPP. Power production and consumption (MW): Ẇ_GT=760.877; Ẇ_HPST=48.046; Ẇ_IPST=66.611; Ẇ_LPST=95.814; Ẇ_HT=1.437; Ẇ_C=352.195; Ẇ_CCCP=3.734; Ẇ_CP=0.942; Ẇ_FWP=3.404. Heat loss (+) or gain (-) of plant components (MW): Q̇_CC=39.820; Q̇_NGPH=2.154; Q̇_HRSG=-5.588; Q̇_COND=83.522; Q̇_PU=0.299; Q̇_GC=-0.489; Q̇_mix−sep=-0.086. Overall performance indicators: η_th=59.70%; η_ex=58.52%; Ẇ_net=612.511 MW; Q̇_LHV=1026.010 MW; Q̇_CT,cooling=228.128 MW; Ẋ_fuel=1046.690 MW; Ẋ_dest,total=396.084 MW; I_p,total=72.567 MW.",
+      "terms": [
+        "Table 3",
+        "Ẇ_GT=760.877",
+        "Q̇_CC=39.820",
+        "Q̇_HRSG=-5.588",
+        "η_th=59.70%",
+        "Ẇ_net=612.511 MW",
+        "Ẋ_dest,total=396.084 MW",
+        "I_p,total=72.567 MW"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-035",
+      "doc_id": "R035",
+      "section": "4.1. Performance of the Plant",
+      "page_start": 795,
+      "page_end": 796,
+      "text": "Component-level results (exergy destruction rate, improvement potential and exergy efficiency) appear in Table 4, and Fig 3 shows each component's share of total exergy destruction. The CC destroys the most exergy, 77.61% of the total irreversibility, and correspondingly holds 93.70% of the total improvement potential. HRSG, C, GT and LPST also show notable destruction, together with 3.661 MW of improvement potential. The lowest exergy efficiencies belong to the GC, CP and CC.",
+      "terms": [
+        "Table 4",
+        "exergy destruction",
+        "77.61%",
+        "93.70%",
+        "3.661 MW",
+        "improvement potential",
+        "GC",
+        "LPST"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-036",
+      "doc_id": "R035",
+      "section": "4.1. Performance of the Plant",
+      "page_start": 796,
+      "page_end": 796,
+      "text": "Table 4. Exergy destruction rates, exergy efficiencies and improvement potentials of Hamitabat CCPP components. C: Ẋ_dest (MW)=22.785; I_p (MW)=1.474; η_ex=0.935. CC: Ẋ_dest=307.389; I_p=67.992; η_ex=0.706. GT: Ẋ_dest=17.784; I_p=0.299; η_ex=0.977. NGPH: Ẋ_dest=0.488; I_p=0.0161; η_ex=0.867. HRSG: Ẋ_dest=25.287; I_p=1.412; η_ex=0.907. HPST: Ẋ_dest=1.922; I_p=0.020; η_ex=0.961. IPST: Ẋ_dest=4.967; I_p=0.134; η_ex=0.931. LPST: Ẋ_dest=7.737; I_p=0.476; η_ex=0.925. COND: Ẋ_dest=3.355; I_p=0.311; η_ex=0.907. HT: Ẋ_dest=0.111; I_p=0.001; η_ex=0.928. CT: Ẋ_dest=2.018; I_p=0.132; η_ex=0.870. CCCP: Ẋ_dest=0.336; I_p=0.004; η_ex=0.910. CP: Ẋ_dest=0.550; I_p=0.213; η_ex=0.416. PU: Ẋ_dest=0.007; I_p=0.0001; η_ex=-. GC: Ẋ_dest=0.214; I_p=0.033; η_ex=0.173. FWP: Ẋ_dest=0.961; I_p=0.050; η_ex=0.718. Mix-Sep: Ẋ_dest=0.173; I_p=0.0002; η_ex=-.",
+      "terms": [
+        "Table 4",
+        "Ẋ_dest",
+        "I_p",
+        "η_ex",
+        "307.389",
+        "67.992",
+        "25.287",
+        "Mix-Sep"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-037",
+      "doc_id": "R035",
+      "section": "4.1. Performance of the Plant",
+      "page_start": 796,
+      "page_end": 796,
+      "text": "Figure 3 caption: percentage share of exergy destruction for each Hamitabat CCPP component.",
+      "terms": [
+        "Figure 3",
+        "exergy destruction"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-038",
+      "doc_id": "R035",
+      "section": "4.1. Performance of the Plant",
+      "page_start": 797,
+      "page_end": 797,
+      "text": "Hamitabat is compared with plants analysed elsewhere (Table 5: thermal and exergy efficiency and the three largest contributors to exergy destruction); it shows the best energetic and exergetic performance of the seven. The CC always ranks first, but second and third places differ: HRSG and GT appear second, and ST, COND and C third. The GT contributes relatively little to Ẋ_dest at Hamitabat (4.49%) and KOSPO (2%) [37]. The authors explain this by method: [32-34] ignore component heat losses or gains, [35] and [36] assume 2% heat loss at the CC with other components adiabatic, and only [37], like the present paper, accounts for heat transfer from all components.",
+      "terms": [
+        "Table 5",
+        "KOSPO",
+        "Ẋ_dest",
+        "4.49%",
+        "adiabatic",
+        "heat losses",
+        "exergetic"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-039",
+      "doc_id": "R035",
+      "section": "4.1. Performance of the Plant",
+      "page_start": 797,
+      "page_end": 797,
+      "text": "Table 5. Comparison of Hamitabat CCPP's performance with six different plants (Nominal power (MW); η_th; η_ex; Contribution to Ẋ_dest - Component (%) 1, 2, 3). ATAER [32]: 119.2; 45; 24; CC (63), GT (16), ST (8). Garri 2 [33]: 180; 38; 49; CC (63), GT (13.6), ST (6.4). Guddu [34]: 747; 59.12; 58.24; CC (70), HRSG (9), GT (7). Malay [35]: 396; 55.5; -; CC (75.20), HRSG (11.30), GT (7.97). Brazilian [36]: 826; 51.54; 49.32; CC (70.24), GT (10.75), HRSG (7.37). KOSPO [37]: 400; 38; 37; CC (67), HRSG (14), COND (7). Hamitabat: 1220; 59.70; 58.52; CC (77.61), HRSG (6.39), C (5.75).",
+      "terms": [
+        "Table 5",
+        "ATAER",
+        "Garri 2",
+        "Guddu",
+        "Malay",
+        "Brazilian",
+        "KOSPO",
+        "Hamitabat"
+      ],
+      "content_type": "table",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-040",
+      "doc_id": "R035",
+      "section": "4.1. Performance of the Plant",
+      "page_start": 797,
+      "page_end": 798,
+      "text": "Since the CC outlet is the highest cycle temperature, CCPP performance is very sensitive to it; compositional change during combustion and wall heat loss make the CC highly irreversible. To quantify CC heat loss, Eq. (4) is re-solved for adiabatic combustion, giving an adiabatic flame temperature T_5,a = 1644.45 K, 35.3 K above the actual TIT. Repeating the analysis with T_5,a (Fig. 4) lifts the thermal efficiency by 3.88% and the exergy efficiency by 3.80% and reduces CC exergy destruction by 16.353 MW.",
+      "terms": [
+        "adiabatic flame temperature",
+        "T_5,a = 1644.45 K",
+        "35.3 K",
+        "TIT",
+        "3.88%",
+        "3.80%",
+        "16.353 MW",
+        "Eq. (4)"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-041",
+      "doc_id": "R035",
+      "section": "4.1. Performance of the Plant",
+      "page_start": 798,
+      "page_end": 798,
+      "text": "Figure 4 caption: influence of CC heat loss on Hamitabat CCPP thermal and exergy efficiencies.",
+      "terms": [
+        "Figure 4",
+        "CC heat loss"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-042",
+      "doc_id": "R035",
+      "section": "4.2. Parametric Analysis",
+      "page_start": 798,
+      "page_end": 798,
+      "text": "Parametric runs vary HPST and IPST inlet temperature and COND and HPST pressure to find possible improvements. Fig. 5 shows that lowering condenser pressure improves every indicator: reducing P_15 by 1.2kPa, from 6.5kPa to 5.3kPa, raises LPST power by 3.2 MW, lowers its irreversibility by 0.35 MW and improves plant thermal and exergy efficiencies by 0.312% and 0.306%. Ẋ_d,LPST and η_ex move in opposite directions with P_15 because Ẇ_LPST responds more strongly to P_15 than Ẋ_d,LPST (Fig. 5a). Although a higher condenser pressure hurts η_th and η_ex, it raises LPST exit steam quality from 0.9057 to 0.9122, which benefits turbine service life.",
+      "terms": [
+        "condenser pressure",
+        "P_15",
+        "6.5kPa",
+        "5.3kPa",
+        "Ẋ_d,LPST",
+        "Ẇ_LPST",
+        "steam quality",
+        "0.9057"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-043",
+      "doc_id": "R035",
+      "section": "4.2. Parametric Analysis",
+      "page_start": 799,
+      "page_end": 799,
+      "text": "HPST inlet temperature (Fig. 6): raising T_8 by 30℃, from 592℃ to 622℃, increases total steam turbine power Ẇ_ST by 8.6 MW and lowers Ẋ_d,HPST by 2.8 MW, so η_th and η_ex of the plant rise by %0.84 and %0.82. Comparing Figs. 5a and 5b, the authors conclude HPST inlet temperature affects plant performance more than condenser pressure does.",
+      "terms": [
+        "HPST inlet temperature",
+        "T_8",
+        "592℃",
+        "622℃",
+        "Ẇ_ST",
+        "Ẋ_d,HPST",
+        "%0.84",
+        "condenser pressure"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-044",
+      "doc_id": "R035",
+      "section": "4.2. Parametric Analysis",
+      "page_start": 800,
+      "page_end": 801,
+      "text": "High-pressure stream pressure also matters (Fig. 7): increasing HPST pressure by 2.7MPa lowers Ẇ_ST by 2.3MW and raises Ẋ_d,HPST by 2.7MW, so plant efficiencies decline as HPST pressure rises. The slopes in Figs. 6b and 7b show the plant is more sensitive to HPST inlet temperature than to HPST pressure. Finally, IPST inlet temperature (Fig. 8): a 30℃ increase in T_11 raises steam turbine power by 8.1MW and cuts IPST irreversibility by 2.8 MW, increasing plant η_th and η_ex by 0.79% and 0.77%.",
+      "terms": [
+        "HPST pressure",
+        "2.7MPa",
+        "Ẋ_d,HPST",
+        "IPST inlet temperature",
+        "T_11",
+        "8.1MW",
+        "0.79%",
+        "0.77%"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-045",
+      "doc_id": "R035",
+      "section": "4.2. Parametric Analysis",
+      "page_start": 799,
+      "page_end": 802,
+      "text": "Figure 5 caption: (a) Ẇ_LPST and Ẋ_d,LPST and (b) η_th and η_ex as functions of condenser pressure. Figure 6 caption: effect of HPST inlet temperature on (a) Ẇ_ST and Ẋ_d,HPST and (b) plant η_th and η_ex. Figure 7 caption: effect of HPST pressure on (a) Ẇ_ST and Ẋ_d,HPST and (b) plant η_th and η_ex. Figure 8 caption: (a) Ẇ_ST and Ẋ_d,IPST and (b) η_th and η_ex as functions of IPST inlet temperature.",
+      "terms": [
+        "Figure 5",
+        "Figure 6",
+        "Figure 7",
+        "Figure 8",
+        "condenser pressure",
+        "HPST inlet temperature",
+        "IPST inlet temperature",
+        "Ẋ_d,IPST"
+      ],
+      "content_type": "caption",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-046",
+      "doc_id": "R035",
+      "section": "5. Conclusion",
+      "page_start": 802,
+      "page_end": 803,
+      "text": "Hamitabat CCPP, Turkey's first combined cycle plant, was renovated in 2017; the natural gas plant has 1220 MW installed and is central to national energy security. Using operating data for one unit, the study determined component power, heat loss or gain, exergy destruction, exergy efficiency and improvement potential, plus overall thermal and exergy efficiencies, and ran parametric checks on condenser pressure, high- and intermediate-pressure turbine inlet temperature and high-pressure turbine pressure. Findings: η_th 59.70% and exergy efficiency 58.52%, up 13.70% and 13.52% after the 520 million € renovation; the combustion chamber destroys 307.389 MW (77.61% of the total), followed by the heat recovery steam generator (25.287 MW) and compressor (22.785 MW); an adiabatic combustion chamber would raise efficiencies by 3.88% and 3.80%; and higher turbine inlet temperatures with lower condenser and high-pressure turbine pressures improve both efficiencies.",
+      "terms": [
+        "1220 MW",
+        "307.389 MW",
+        "77.61%",
+        "25.287",
+        "22.785 MW",
+        "adiabatic combustion chamber",
+        "condenser pressure",
+        "520 million €"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-047",
+      "doc_id": "R035",
+      "section": "5. Conclusion",
+      "page_start": 803,
+      "page_end": 803,
+      "text": "The authors see the work as useful for judging the renovation outcome and for advising plant engineers and operators on performance improvement. Compressor inlet air precooling and a supplementary firing system could further raise thermal efficiency and environmental performance; their effects are left for future work, for which the present model may serve as a base. Such improvement studies could also be extended to exergoeconomic and exergoenvironmental frameworks to include cost and greenhouse gas emission factors.",
+      "terms": [
+        "precooling",
+        "supplementary firing",
+        "exergoeconomic",
+        "exergoenvironmental",
+        "greenhouse gas"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    },
+    {
+      "id": "R035-048",
+      "doc_id": "R035",
+      "section": "Nomenclature",
+      "page_start": 803,
+      "page_end": 804,
+      "text": "Nomenclature abbreviations: CCPP = Combined cycle power plant; C = Compressor; CCCP = Cooling cycle circulation pump; CC = Combustion chamber; COND = Condenser; CP = Condenser pump; CPR = Compressor pressure ratio; CT = Cooling turbine (as printed); D = Drum; FWP = Feedwater pump; G = Generator; GC = Gland condenser; GT = Gas turbine; HP ECO = High-pressure economizer; HP SH = High-pressure superheater; HPST = High-pressure steam turbine; HRSG = Heat recovery steam generator; HT = Hydraulic turbine; IP ECO = Intermediate-pressure economizer; IP RH = Intermediate-pressure reheater; IP SH = Intermediate-pressure superheater; IPST = Intermediate-pressure steam turbine; JANAF = Joint Army Navy Air Force; LP SH = Low-pressure superheater; LPST = Low-pressure steam turbine; NGPH = Natural gas preheater; PH = Preheater; PU = Polishing unit; ST = Steam turbines; TIT = Turbine inlet temperature.",
+      "terms": [
+        "CCCP",
+        "HP ECO",
+        "IP RH",
+        "JANAF",
+        "NGPH",
+        "TIT",
+        "HRSG",
+        "Feedwater pump"
+      ],
+      "content_type": "text",
+      "source_type": "paraphrase"
+    }
+  ],
+  "report": {
+    "paragraph_count": 48,
+    "pages_processed": "781-808 (PDF 1-28쪽 전체)",
+    "last_paragraph_id": "R035-048",
+    "skipped": [
+      "p.781 저자 소속·ORCID·교신저자 이메일: 저자 연락처 제외",
+      "p.781 저널 로고/표지 이미지, 'You can cite this article as' 인용 안내, Received/Revised/Accepted 날짜: 머리 정보 제외",
+      "p.804-805 Declaration of Ethical Standards, Contribution of the Authors, Conflict of Interest: 행정 문구(감사의 글/저자 정보 성격)로 제외",
+      "p.805-808 References [1]-[47]: 참고문헌 제외",
+      "각 쪽 머리글('Int J Energy Studies 2023; 8(4): 781-808')과 쪽 번호: 머리글/바닥글 제외",
+      "Figure 1-8 그림 내부 수치(원그래프·곡선): 캡션만 수록"
+    ],
+    "uncertain": [
+      "PDF에 Creative Commons 등 라이선스 문구가 없어 지시대로 paraphrase 처리(verbatim 아님)",
+      "url은 PDF 1쪽에 인쇄된 저널 홈페이지(https://dergipark.org.tr/en/pub/ijes)이며 논문 개별 URL은 PDF에 없음",
+      "p.785 본문은 Brazilian 플랜트를 '820 MW [36]'로, Table 5(p.797)는 '826'으로 표기 → 각 위치의 원문 수치 그대로 유지",
+      "p.795 4.1절 본문의 'Hamitabat CCCP'는 CCPP의 오식으로 보임 → 문단에서는 표기 문제 없이 의미만 서술",
+      "p.799 효율 증가값이 원문에 '%0.84', '%0.82'로 인쇄됨 → 그대로 유지",
+      "p.803 Nomenclature에서 CT를 'Cooling turbine'으로 정의했으나 본문(p.788)은 cooling tower (CT) → 'as printed'로 표기",
+      "p.790 Table 1의 'ng → ..., N2f' 아래첨자 f는 판독상 오식 가능성 → N_2로 기재",
+      "Table 1 HRSG 행의 밑중괄호 라벨(Ẋ_mass in,HRSG 등)은 대괄호로 표기"
+    ]
+  }
+}
